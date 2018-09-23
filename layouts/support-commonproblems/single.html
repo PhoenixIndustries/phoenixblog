@@ -1,0 +1,52 @@
+{{ define "title" }}
+<div class="container">
+  <div class="content-center">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="text-center">
+      {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "body" }}
+<div class="row">
+  <div class="col-md-8 ml-auto mr-auto text-left">
+    <section>
+        <div class="container">
+            <div class="fluid-row align-items-center">
+                <div class="text-center">
+                    <div class="center" >
+                      <p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify  }}
+
+                            <table>
+                                <thead>
+                                <tr>
+                                <th></th>
+                                <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    {{ range .Params.support_categories }}
+                                    <tr>
+                                    <td><img src="{{ $.Site.BaseURL }}/img/commonproblems/{{ .icon }}" alt="Icon" /></td>
+                                    <td><strong>{{ .name }}</strong></td>
+                                    </tr>
+                                    {{ range (where (where $.Site.Pages ".Type" "problem-post" ) ".Params.category" .category ) }}
+                                    <tr>
+                                    <td></td>
+                                    <td>• <a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                                    </tr>
+                                    {{ end }}
+                                    {{ end }}
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>   
+</div>
+{{ end }}        
+ 
