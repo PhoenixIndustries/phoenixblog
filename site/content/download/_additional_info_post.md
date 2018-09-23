@@ -16,9 +16,9 @@ To even further enhance the security, verify the downloaded file with a **GPG (G
 
 ![SecurityOverview](/img/download/check_download_pipeline.svg.png)
 
-<!--- ## Getting started
+## Getting started
 ---
 
 If you are ready, click on the following link to find information what to do now.
 
-[First steps#download-primary-xl#](support/firststeps) --->
+<a href="/support/firststeps" class="btn btn-success btn-xl">      First steps      </a>

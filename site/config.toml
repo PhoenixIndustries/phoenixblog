@@ -18,15 +18,20 @@ themesDir = "../.."
     pre = "<i class='now-ui-icons arrows-1_cloud-download-93'></i>"
     weight = 1
 [[menu.main]]
-    name = "Packages"
-    url = "https://repo.manjaro.org/"
-    pre = "<i class='now-ui-icons design_app'></i>"
+    name = "Support"
+    url = "/support/firststeps/"
+    pre = "<i class='now-ui-icons objects_support-17'></i>"
     weight = 1
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 1
+    weight = 2
+[[menu.main]]
+    name = "Packages"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='now-ui-icons design_app'></i>"
+    weight = 2
 #[[menu.main]]
 #    name = "Team"
 #    url = "/profile/"
