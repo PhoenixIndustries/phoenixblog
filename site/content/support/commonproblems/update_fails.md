@@ -1,7 +1,7 @@
 +++
 Name = ""
 type="problem-post"
-category="after_installation"
+category="pacman"
 title = "Update or installation fails"
 +++
 
