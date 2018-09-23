@@ -1,0 +1,28 @@
+{{ define "title" }}
+<div class="container">
+  <div class="content-center">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="text-center">
+      {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "body" }}
+<div class="row">
+  <div class="col-md-8 ml-auto mr-auto text-left">
+	<section>
+		<div class="container text-center">
+			{{ range (where .Site.Pages ".Type" "download-how-to-try") }}
+			<div class="features-post" >
+				<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify  }}
+			</div>
+			{{ end }}
+		</div>
+		{{ partial "editionfinder.html" . }}
+	</section>
+  </div>   
+</div>
+{{ end }}        
+ 
