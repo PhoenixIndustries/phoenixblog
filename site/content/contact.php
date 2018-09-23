@@ -38,13 +38,13 @@ try
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
             if ( $fields[$key] = "Email" ) {
-                $fromEmail = $value
+                $fromEmail = $value;
             }
             if ( $fields[$key] = "Name" ) {
-                $fromName = $value
+                $fromName = $value;
             }
             if ( $fields[$key] = "Surname" ) {
-                $fromSurname = $value
+                $fromSurname = $value;
             }
         }
 
