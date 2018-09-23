@@ -3,18 +3,18 @@
  *  CONFIGURE EVERYTHING HERE
  */
 
-// an email address that will be in the From field of the email.
-$from = 'Manjaro Homepage <webmaster@manjaro.org>';
-
 // an email address that will receive the email with the output of the form
-$sendTo = 'Manjaro LPC-form <support@manjaro.org>';
+$sendTo = 'Manjaro Support <support@manjaro.org>';
 
 // subject of the email
-$subject = '[Manjaro] contact form message';
+$subject = '[Manjaro] Support Request';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
+
+// an email address that will be in the From field of the email.
+$from = "$fields[$name] $fields[$surname] <$fields[$email]>";
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
