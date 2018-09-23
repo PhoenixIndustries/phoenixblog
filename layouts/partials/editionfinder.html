@@ -106,7 +106,7 @@
                 -->
                 {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}<div class="editions-box-hideable {{ range .Params.tags}}editions-box-hideable-{{ . }} {{ end }} col-lg-4 col-sm-6">
                 <a href="{{ .Permalink }}" class="editions-box editions-link" >
-                <img src="{{ .Site.BaseURL }}/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
+                <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                 <div class="editions-box-caption-extended">
                     <div class="editions-box-caption-extended-content">
                         <div class="targetgroup">

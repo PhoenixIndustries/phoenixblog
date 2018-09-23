@@ -16,7 +16,7 @@
       <div class="container text-center">
         <!-- <h2>Manjaro {{ .Params.name }}</h2>
         <hr class="star-primary" /> -->
-        <a href="{{ .Site.BaseURL }}/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="{{ .Site.BaseURL }}/img/editions/{{ .Params.thumbnail }}" class="img-responsive img-centered" alt=""></a>
+        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive img-centered" alt=""></a>
         <br/>
         <p>{{ .Params.shortdescription | markdownify }}</p>
         <p>{{ .Content | markdownify }}</p>
@@ -26,7 +26,7 @@
           <li class="flex-item">
             <div class="content">
               <div class="top">
-                <img src="{{ .Site.BaseURL }}/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                <img src="/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
                 <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
                 <hr/>
                 <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
@@ -48,7 +48,7 @@
           <li class="flex-item">
             <div class="content">
               <div class="top">
-                <img src="{{ .Site.BaseURL }}/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
                 <h3>{{ .Site.Params.download_edition.download_x86_title }}</h3>
                 <hr/>
                 <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
