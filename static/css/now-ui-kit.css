@@ -5224,4 +5224,9 @@ Created using IcoMoon - icomoon.io
     top: 50%;
     transform: translateY(-50%); } }
 
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
+
 /*# sourceMappingURL=now-ui-kit.css.map */
