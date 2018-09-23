@@ -13,6 +13,11 @@ themesDir = "../.."
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
+    name = "Download"
+    url = "/download/"
+    pre = "<i class='now-ui-icons arrows-1_cloud-download-93'></i>"
+    weight = 1
+[[menu.main]]
     name = "Packages"
     url = "https://repo.manjaro.org/"
     pre = "<i class='now-ui-icons design_app'></i>"
@@ -80,6 +85,14 @@ themesDir = "../.."
         purpose = "Donation to Manjaro Linux"
         note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
 
+# Download
 
-    
-
+[params.download_edition]
+    download_x64_title = "64 bit version"
+    download_x86_title = "32 bit version"
+    download_x64_button = "Download 64 bit version"
+    download_x86_button = "Download 32 bit version"
+    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
+    download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
+    download_gpg = "Download GPG signature"
+    download_torrent = "Download Torrent"
