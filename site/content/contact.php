@@ -37,13 +37,13 @@ try
         // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
-            if ( $fields[$key] = "Email" ) {
+            if ( $fields[$key] == "Email" ) {
                 $fromEmail = $value;
             }
-            if ( $fields[$key] = "Name" ) {
+            if ( $fields[$key] == "Name" ) {
                 $fromName = $value;
             }
-            if ( $fields[$key] = "Surname" ) {
+            if ( $fields[$key] == "Surname" ) {
                 $fromSurname = $value;
             }
         }
