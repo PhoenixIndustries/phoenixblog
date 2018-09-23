@@ -13,9 +13,6 @@ $subject = '[Manjaro] Support Request';
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
 
-// an email address that will be in the From field of the email.
-$from = "$fields[$name] $fields[$surname] <$fields[$email]>";
-
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
@@ -40,7 +37,19 @@ try
         // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
+            if ( $fields[$key] = "Email" ) {
+                $fromEmail = $value
+            }
+            if ( $fields[$key] = "Name" ) {
+                $fromName = $value
+            }
+            if ( $fields[$key] = "Surname" ) {
+                $fromSurname = $value
+            }
         }
+
+        // an email address that will be in the From field of the email.
+        $from = "$fromName $fromSurname <$fromEmail>";
     }
 
     // All the neccessary headers for the email.
