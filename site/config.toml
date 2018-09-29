@@ -26,25 +26,25 @@ themesDir = "../.."
 [[menu.main]]
     name = "First Steps"
     url = "/support/firststeps/"
-    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    pre = "<i class='now-ui-icons sport_user-run'></i>"
     weight = 1
     parent = "support"
 [[menu.main]]
     name = "Common Problems"
     url = "/support/commonproblems/"
-    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    pre = "<i class='now-ui-icons health_ambulance'></i>"
     weight = 2
     parent = "support"
 [[menu.main]]
     name = "User Guide"
     url = "/support/userguide/"
-    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
     weight = 3
     parent = "support"
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
-    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 4
     parent = "support"
 [[menu.main]]
@@ -129,6 +129,42 @@ themesDir = "../.."
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 6
     parent = "mailinglists"
+[[menu.main]]
+    name = "About"
+    url = "#"
+    pre = "<i class='now-ui-icons travel_info'></i>"
+    weight = 4
+    identifier = "features"
+[[menu.main]]
+    name = "What is Manjaro"
+    url = "/features/"
+    pre = "<i class='now-ui-icons business_bulb-63'></i>"
+    weight = 1
+    parent = "features"
+[[menu.main]]
+    name = "Under your control"
+    url = "/features/switch/"
+    pre = "<i class='now-ui-icons objects_spaceship'></i>"
+    weight = 2
+    parent = "features"
+[[menu.main]]
+    name = "Configured with one click"
+    url = "/features/tools/"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    weight = 3
+    parent = "features"
+[[menu.main]]
+    name = "Useful for everyone"
+    url = "/features/usercases/"
+    pre = "<i class='now-ui-icons ui-2_like'></i>"
+    weight = 4
+    parent = "features"
+[[menu.main]]
+    name = "Fresh & Stable"
+    url = "/features/background/"
+    pre = "<i class='now-ui-icons ui-1_send'></i>"
+    weight = 5
+    parent = "features"
 [[menu.main]]
     name = "Donate"
     pre = "<i class='now-ui-icons business_money-coins'></i>"
