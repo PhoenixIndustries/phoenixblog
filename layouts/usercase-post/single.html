@@ -43,7 +43,7 @@
 												<tbody>
 												{{ range .Params.software }}
 													<tr>
-														<td><img src="{{ $.Site.BaseURL }}/img/actions/install.svg" alt="Icon" /></td>
+														<td><img src="/img/actions/install.svg" alt="Icon" /></td>
 														<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
 															<strong><a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a></strong><br/>
 															{{ .usage }}
