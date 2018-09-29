@@ -106,7 +106,7 @@ To be able to install or try Manjaro on your computer, you need to put it on a D
 | ![Icon](/img/actions/boot.svg)     | **1. Boot from USB or DVD** |
 |                                             | If you are lucky, just have to plug-in the drive or put the DVD into the tray and restart your computer. |
 |                                             | But sometimes you need to configure your system to allow this.  Then you may find help here:|
-|                                             | • [How to Boot Your Computer From a Disc or USB Drive](/http://www.howtogeek.com/129815/beginner-geek-how-to-change-the-boot-order-in-your-computers-bios/)
+|                                             | • [How to Boot Your Computer From a Disc or USB Drive](https://www.howtogeek.com/129815/beginner-geek-how-to-change-the-boot-order-in-your-computers-bios/)
 |                                             | • [BIOS and UEFI - Manjaro Wiki](https://wiki.manjaro.org/index.php?title=BIOS_and_UEFI) |
 |                                             | • [Manjaro User Guide](/support/userguide/)   |
 | ![Icon](/img/actions/settings.svg)     | **2. Choose the drivers** |

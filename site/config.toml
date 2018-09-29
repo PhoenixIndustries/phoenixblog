@@ -19,14 +19,39 @@ themesDir = "../.."
     weight = 1
 [[menu.main]]
     name = "Support"
+    url = "#"
+    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    weight = 2
+    identifier = "support"
+[[menu.main]]
+    name = "First Steps"
     url = "/support/firststeps/"
     pre = "<i class='now-ui-icons objects_support-17'></i>"
     weight = 1
+    parent = "support"
+[[menu.main]]
+    name = "Common Problems"
+    url = "/support/commonproblems/"
+    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    weight = 2
+    parent = "support"
+[[menu.main]]
+    name = "User Guide"
+    url = "/support/userguide/"
+    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    weight = 3
+    parent = "support"
+[[menu.main]]
+    name = "Wiki"
+    url = "https://wiki.manjaro.org"
+    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    weight = 4
+    parent = "support"
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 2
+    weight = 3
 [[menu.main]]
     name = "Packages"
     url = "https://repo.manjaro.org/"
@@ -38,11 +63,52 @@ themesDir = "../.."
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
 #    weight = 2
 [[menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 4
+    identifier = "mailinglists"
+[[menu.main]]
+    name = "Security"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 1
+    parent = "mailinglists"
+[[menu.main]]
+    name = "General"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 2
+    parent = "mailinglists"
+[[menu.main]]
+    name = "Packages"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 3
+    parent = "mailinglists"
+[[menu.main]]
+    name = "Testing"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 4
+    parent = "mailinglists"
+[[menu.main]]
+    name = "Development"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 5
+    parent = "mailinglists"
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 6
+    parent = "mailinglists"
+[[menu.main]]
     name = "Donate"
     pre = "<i class='now-ui-icons business_money-coins'></i>"
     url = "/donate/"
-    weight = 3
-   
+    weight = 5 
 [[menu.footer]]
     identifier = "twitter"
     pre = "<i class='fa fa-twitter'></i>"
