@@ -3689,6 +3689,22 @@ Created using IcoMoon - icomoon.io
 	background-color: rgb(52, 190, 91);
 }
 
+.feature-screenshot-fan {
+  display: flex;
+}
+
+.feature-screenshot-fan div {
+  min-width: 200px;
+  min-height: 280px;
+}
+
+.feature-screenshot-fan img {
+  width: 65%;
+  height: 65%;
+  box-shadow: 2px 2px 10px grey;
+  margin: 0 20px 0 20px;
+}
+
 .footer {
   padding: 24px 0; }
   .footer.footer-default {
