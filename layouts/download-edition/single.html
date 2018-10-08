@@ -45,7 +45,7 @@
               </div>
             </div>
           </li>
-          <li class="flex-item">
+          <!-- <li class="flex-item">
             <div class="content">
               <div class="top">
                 <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
@@ -66,7 +66,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
         {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
         <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
