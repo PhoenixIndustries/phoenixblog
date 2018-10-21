@@ -314,10 +314,21 @@
     .section-story-overview .image-container:nth-child(2) {
         margin-top: 312px;
     }
-    /* end Mobile changes */
+    
 
 }
 
+@media screen and (max-width: 991px) {
+    .sidebar-collapse .navbar-collapse:before {
+        background: #00a152;
+        opacity: 100;
+    }
+    .dropdown-menu .dropdown-item {
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+}
+/* end Mobile changes */
 .navbar {
     font-weight: bold;
 }
@@ -326,7 +337,7 @@
     margin-right: 10px;
 }
 
-.btn-success {
+.btn-success, .navbar {
     background-color: #00a152 !important;
 }
 
@@ -336,7 +347,7 @@
 }
 
 .profile-page td {
-    padding: 14px;
+    /*padding: 14px;*/
     padding-right: 5px;
 }
 
@@ -361,6 +372,12 @@
     margin-top: 10px;
 }
 
+.profile-page section {
+    margin-bottom: 80px;
+}
+.profile-page section div {
+    text-align: left;
+}
 
 @media (min-width: 769px) {
     .team-player .description {
@@ -370,6 +387,8 @@
 }
 
 /* End Minor fixes */
+
+
 
 /*       Loading dots  */
 
