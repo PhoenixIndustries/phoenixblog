@@ -340,6 +340,10 @@
 .btn-success, .navbar {
     background-color: #00a152;
 }
+.navbar {
+    background-color: #00a152 !important;
+}
+
 
 .profile-page img[src="/img/features/overview.svg.png"] {
     padding-bottom: 60px;
