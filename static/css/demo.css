@@ -391,6 +391,8 @@
     .landing-page .section-team, .section-story-overview {
         padding: 0px;
     }
+    .section-story-overview p.blockquote {
+        top: 476px;
 }
 
 /* End Minor fixes */
