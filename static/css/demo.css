@@ -388,6 +388,9 @@
     /* this needs to be ajusted if you add more content */
     min-height: 125px;
     }
+    .landing-page .section-team, .section-story-overview {
+        padding: 0px;
+    }
 }
 
 /* End Minor fixes */
