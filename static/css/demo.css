@@ -297,8 +297,79 @@
         font-size: 60px;
         width: 270px;
     }
+    
+    /* Minor fixes */
+    /* Mobile changes */
+    .landing-page .section-story-overview .image-container {
+    margin-bottom: 30px;
+    }
+
+    .landing-page .section-team .team-player {
+        margin-bottom: 60px;
+    }
+
+    .section {
+        padding: 0;
+    }
+    .section-story-overview .image-container:nth-child(2) {
+        margin-top: 312px;
+    }
+    /* end Mobile changes */
+
 }
 
+.navbar {
+    font-weight: bold;
+}
+
+.page-header .text-center a {
+    margin-right: 10px;
+}
+
+.btn-success {
+    background-color: #00a152 !important;
+}
+
+.profile-page img[src="/img/features/overview.svg.png"] {
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.profile-page td {
+    padding: 14px;
+    padding-right: 5px;
+}
+
+#how-much-does-it-cost {
+    margin-top: 40px;
+}
+.profile-page p {
+    text-align: left;
+}
+.profile-page h2 {
+    text-align: center;
+}
+.profile-page p:nth-child(2) {
+    text-align: center;
+}
+.flex-item div {
+    border: none !important;
+    margin-bottom: 40px;
+}
+
+.flex-item div div {
+    margin-top: 10px;
+}
+
+
+@media (min-width: 769px) {
+    .team-player .description {
+    /* this needs to be ajusted if you add more content */
+    min-height: 125px;
+    }
+}
+
+/* End Minor fixes */
 
 /*       Loading dots  */
 
