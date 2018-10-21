@@ -314,8 +314,12 @@
     .section-story-overview .image-container:nth-child(2) {
         margin-top: 312px;
     }
-    
-
+    .feature-screenshot-fan {
+        display: block;
+    } 
+    .feature-screenshot-fan img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -393,6 +397,7 @@
     }
     .section-story-overview p.blockquote {
         top: 476px;
+    }
 }
 
 /* End Minor fixes */
