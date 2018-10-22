@@ -335,13 +335,19 @@
     margin-right: 10px;
 }
 
-.btn-success, .navbar {
+.btn-success {
     background-color: #00a152;
 }
+
+.landing-page .btn-success:hover, .landing-page .btn-success:active, .landing-page .btn-success:focus {
+    background-color: #FFFFFF;
+    border: #ffffff;
+    color: #00a152;
+}
+
 .navbar {
     background-color: #00a152 !important;
 }
-
 
 .profile-page img[src="/img/features/overview.svg.png"] {
     padding-bottom: 60px;
