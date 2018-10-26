@@ -139,6 +139,13 @@
     .flex-grid {
         display: flex;
     }
+    .dropdown-menu .now-ui-icons {
+        color: #00a152 !important;
+        position: relative;
+        margin-right: 5px;
+        font-size: 0.8571em;
+        font-weight: bold;
+    }
 }
 
 /* End Minor fixes */
