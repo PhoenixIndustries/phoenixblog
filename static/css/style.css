@@ -123,6 +123,19 @@
     text-align: left;
 }
 
+.editions-tag-checkbutton input[type="checkbox"]:checked + label, .editions-box-caption-extended-subtitle, .editions-box-caption-small, .editions-box-caption-extended {
+    background: #00a152 !important;
+}
+.editions-box .editions-box-caption-small, .editions-box .editions-box-caption-extended-subtitle {
+    margin: 0px;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.editions-box .editions-box-caption-extended .editions-box-caption-extended-content .targetgroup {
+    font-size: 14px !important;
+}
+
 @media (min-width: 769px) {
     .team-player .description {
     /* this needs to be ajusted if you add more content */
