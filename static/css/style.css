@@ -132,6 +132,9 @@
     border-radius: 0px;
     box-shadow: none;
 }
+.landing-page h1.title::first-letter {
+    color: #00a152;
+}
 .editions-box .editions-box-caption-extended .editions-box-caption-extended-content .targetgroup {
     font-size: 14px !important;
 }
