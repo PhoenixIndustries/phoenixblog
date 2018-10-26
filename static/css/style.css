@@ -61,6 +61,12 @@
     color:#00a152;
     font-weight: bold;
 }
+.landing-page h3 {
+    margin-bottom: 0px;
+}
+.landing-page p {
+    margin-bottom: 30px;
+}
 
 .donate-page .features-post p {
     text-align: left;
