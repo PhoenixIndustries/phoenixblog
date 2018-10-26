@@ -47,7 +47,19 @@
 .landing-page .btn-success:hover, .landing-page .btn-success:active, .landing-page .btn-success:focus {
     background-color: #FFFFFF;
     border: #ffffff;
-    color: #00a152;
+    color: #00a152 !important;
+}
+
+.blockquote, .blockquote small {
+    color: #00a152 !important;
+}
+.blockquote {
+    border-color: #00a152 !important;
+}
+
+.landing-page .description a, .team-player .category {
+    color:#00a152;
+    font-weight: bold;
 }
 
 .donate-page .features-post p {
