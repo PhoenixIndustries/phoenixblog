@@ -2,7 +2,7 @@
 date = "2016-09-06T00:36:21+02:00"
 navsection = "features"
 right = false
-title = "Fresh & stable"
+title = "Fresh & Stable"
 type = "features-post"
 weight = 3
 

@@ -1,6 +1,6 @@
 +++
 date = "2016-09-05T21:03:22+02:00"
-title = "User-Guide"
+title = "User Guide"
 type = "support-post"
 weight = 0
 right = true

@@ -1,6 +1,6 @@
 {
   "date": "2016-09-05T21:03:22+02:00",
-  "title": "Common problems",
+  "title": "Common Problems",
   "type": "support-commonproblems",
   "weight": 1,
   "right": false,

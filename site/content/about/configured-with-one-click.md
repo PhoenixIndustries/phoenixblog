@@ -2,7 +2,7 @@
 date = "2016-09-06T00:36:21+02:00"
 navsection = "features"
 right = false
-title = "Configured with one click"
+title = "Configured With One Click"
 type = "features-post"
 weight = 1
 +++
