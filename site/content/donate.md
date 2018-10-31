@@ -1,7 +1,7 @@
 +++
 date = "2016-09-04T15:50:15+02:00"
 draft = false
-title = "Donate to Manjaro"
+title = "Donate"
 type = "donate"
 button_donate_text = "Donate now"
 donate_paypal_title = "Use PayPal"

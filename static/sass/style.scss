@@ -37,6 +37,15 @@ $green:#00a152;
     background-color: $green !important;
 }
 
+.navbar-brand {
+    margin-right: 4px !important;
+}
+
+.page-nav {
+    color: #FFFFFF !important;
+    cursor: default;
+}
+
 .page-header .text-center a {
     margin-right: 10px;
 }
