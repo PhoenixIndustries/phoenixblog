@@ -111,6 +111,27 @@ $green:#00a152;
     }
 }
 
+.download-page {
+
+    p {
+        text-align: left;
+    }
+
+    table {
+        margin: 0 auto;
+        position: relative;
+        border-collapse: separate;
+        border-spacing: 0px 8px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    table a {
+        color: $green;
+        font-weight: bold;
+    }
+}
+
 .profile-page img[src="/img/features/overview.svg.png"] {
     padding-bottom: 60px;
     padding-top: 20px;
@@ -124,12 +145,15 @@ $green:#00a152;
 #how-much-does-it-cost {
     margin-top: 40px;
 }
+
 .profile-page p, .donate-page .features-post h3 {
     text-align: left;
 }
+
 .profile-page h2 {
     text-align: center;
 }
+
 .profile-page p:nth-child(2), .donate-page .features-post p:nth-child(7) {
     text-align: center;
 }
@@ -141,6 +165,7 @@ $green:#00a152;
 .profile-page section {
     margin-bottom: 80px;
 }
+
 .profile-page section div {
     text-align: left;
 }
@@ -177,6 +202,7 @@ $green:#00a152;
         top: 476px;
     }
 }
+
 @media screen and (min-width: 992px) {
     .donate-page .flex-grid {
         display: flex;
