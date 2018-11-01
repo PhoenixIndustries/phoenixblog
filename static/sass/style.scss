@@ -1,4 +1,10 @@
 $green:#00a152;
+$svg-icon-size: 62px;
+
+.icon {
+    width: $svg-icon-size !important;
+    height: $svg-icon-size !important;
+}
 
 @media screen and (max-width: 768px) {
         
@@ -38,12 +44,14 @@ $green:#00a152;
 }
 
 .navbar-brand {
-    margin-right: 4px !important;
+    margin-right: 3px !important;
 }
 
 .page-nav {
     color: #FFFFFF !important;
     cursor: default;
+    text-transform: uppercase;
+    font-size: 0.8571em;
 }
 
 .page-header .text-center a {
@@ -141,7 +149,7 @@ $green:#00a152;
     }
 }
 
-.profile-page img[src="/img/features/overview.svg.png"] {
+.profile-page img[src="/img/features/overview.png"] {
     padding-bottom: 60px;
     padding-top: 20px;
 }

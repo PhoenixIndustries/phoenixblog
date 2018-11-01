@@ -14,7 +14,7 @@ We encourage you to check if the download was not modified by some **malicious p
 To even further enhance the security, verify the downloaded file with a **GPG (GNU Privacy Guard)** signature that will ensure that the file was not modified and was actually created by the Manjaro developers.
 [Here](http://www.howtogeek.com/246332/how-to-verify-a-downloaded-linux-iso-file-wasnt-tampered-with/) you can find information how to use it.
 
-![SecurityOverview](/img/download/check_download_pipeline.svg.png)
+![SecurityOverview](/img/download/check_download_pipeline.png)
 
 ## Getting started
 ---

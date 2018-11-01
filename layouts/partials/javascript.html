@@ -17,7 +17,7 @@
 // hide page title on scroll
     $(window).scroll(function() {
 
-      if ($(this).scrollTop()>50) {
+      if ($(this).scrollTop()>50 && $("body").hasClass("landing-page") == false) {
         $('.title-container').fadeOut();
         $(".navbar-brand").text("Manjaro - ");
         $(".page-nav").text(document.title.slice(10));

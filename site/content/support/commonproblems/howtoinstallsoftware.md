@@ -7,11 +7,11 @@ title = "How to install software?"
 
 |   |   |
 |---|---|
-| ![Icon](/img/actions/information.svg) | **You often don't need to download software from the internet** |
+| <img class="icon" src="/img/actions/information.svg"> | **You often don't need to download software from the internet** |
 |   | Manjaro provides an easy-to-use tool that will do all work for you. |
 |   | More information about this in our [wiki](https://wiki.manjaro.org/index.php?title=Pacman_Overview) |
 |   |   |
-| ![Icon](/img/actions/execute.svg) | **Search and install software** |
+| <img class="icon" src="/img/actions/execute.svg"> | **Search and install software** |
 |   | • Search for "octopi" or "pamac" in your application menu and open it |
 |   | • Browse through the list or search using the search bar |
 |   | • Right-click on the entry and select "install" |
