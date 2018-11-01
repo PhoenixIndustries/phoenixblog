@@ -14,6 +14,20 @@
 <script src="{{ "js/contact.js" | relURL }}" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+// hide page title on scroll
+    $(window).scroll(function() {
+
+      if ($(this).scrollTop()>50) {
+        $('.title-container').fadeOut();
+        $(".navbar-brand").text("Manjaro - ");
+        $(".page-nav").text(document.title.slice(10));
+      }
+      else {
+        $('.title-container').fadeIn();
+        $(".navbar-brand").text("Manjaro - enjoy the simplicity");
+        $(".page-nav").text("");
+      }
+    });
         // the body of this function is in assets/js/now-ui-kit.js
         nowuiKit.initSliders();
     });

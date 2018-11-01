@@ -8,6 +8,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
 publishDir = "../docs"
 themesDir = "../.."
+assetDir = "../static/"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -137,31 +138,31 @@ themesDir = "../.."
     identifier = "features"
 [[menu.main]]
     name = "What is Manjaro"
-    url = "/features/"
+    url = "/what-is-manjaro/"
     pre = "<i class='now-ui-icons business_bulb-63'></i>"
     weight = 1
     parent = "features"
 [[menu.main]]
     name = "Under your control"
-    url = "/features/switch/"
+    url = "/features/under-your-control/"
     pre = "<i class='now-ui-icons objects_spaceship'></i>"
     weight = 2
     parent = "features"
 [[menu.main]]
     name = "Configured with one click"
-    url = "/features/tools/"
+    url = "/features/configured-with-one-click/"
     pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
     weight = 3
     parent = "features"
 [[menu.main]]
     name = "Useful for everyone"
-    url = "/features/usercases/"
+    url = "/features/useful-for-everyone/"
     pre = "<i class='now-ui-icons ui-2_like'></i>"
     weight = 4
     parent = "features"
 [[menu.main]]
     name = "Fresh & Stable"
-    url = "/features/background/"
+    url = "/features/fresh-and-stable/"
     pre = "<i class='now-ui-icons ui-1_send'></i>"
     weight = 5
     parent = "features"

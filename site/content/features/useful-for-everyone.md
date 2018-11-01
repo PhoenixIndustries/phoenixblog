@@ -1,6 +1,6 @@
 +++
 weight = 2
-title = "Useful for everyone"
+title = "Useful For Everyone"
 type = "features-usercases"
 navsection = "features"
 right = false

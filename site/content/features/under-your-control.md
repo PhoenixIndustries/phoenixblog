@@ -1,7 +1,7 @@
 +++
 navsection = "features"
 right = false
-title = "Under your control"
+title = "Under Your Control"
 type = "features-post"
 weight = 0
 +++

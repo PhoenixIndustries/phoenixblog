@@ -1,7 +1,7 @@
 +++
 date = "2016-09-04T15:50:15+02:00"
 draft = false
-title = "Donate to Manjaro"
+title = "Donate"
 type = "donate"
 button_donate_text = "Donate now"
 donate_paypal_title = "Use PayPal"
@@ -30,11 +30,11 @@ You get the feeling that you helped us out and that everybody is thankful to you
 
 ### Why am I donating to a private person?
 
-Manjaro is (for now) no registered organization, as this is extremely expensive and Manjaro is a relatively young and growing distribution. Your donation will go to the leader of Manjaro's core team who will then pass it down to the right people.
+Manjaro is not a registered organization, for now. As this is extremely expensive and Manjaro is a relatively young and growing distribution. Your donation will go to the leader of Manjaro's core team who will then pass it down to the right people.
 
 ### Can I get a tax deduction?
 
-Unfortunately not. We are no registered organization, which means your donation counts as private donation. For those the tax cannot be deducted.
+Unfortunately not, as we are not a registered organization, which means your donation counts as private donation. For those the tax cannot be deducted.
 
 ## How can I donate?
 ---
