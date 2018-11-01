@@ -1,4 +1,10 @@
 $green:#00a152;
+$svg-icon-size: 62px;
+
+.icon {
+    width: $svg-icon-size !important;
+    height: $svg-icon-size !important;
+}
 
 @media screen and (max-width: 768px) {
         
@@ -141,7 +147,7 @@ $green:#00a152;
     }
 }
 
-.profile-page img[src="/img/features/overview.svg.png"] {
+.profile-page img[src="/img/features/overview.png"] {
     padding-bottom: 60px;
     padding-top: 20px;
 }

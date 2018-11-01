@@ -11,7 +11,7 @@ Here are instructions to how to use the terminal to run some command:
 
 |   |   |
 |---|---|
-| ![Icon](/img/actions/execute.svg) | **Run a command** |
+| <img class="icon" src="/img/actions/execute.svg"> | **Run a command** |
 |  | • Open a terminal via application launcher. Search for "Terminal", "Console", "Konsole" etc. |
 |  | • Select the command text and copy it |
 |  | • Paste it into the terminal window |
@@ -24,7 +24,7 @@ The terminal will sometimes prompt for a password or some user interaction. The 
 
 |   |   |
 |---|---|
-| ![Icon](/img/actions/information.svg) | If the terminal wants a password, just type it in and press enter. Don't be confused as while typing you won't see asterisks or other visual information. |
+| <img class="icon" src="/img/actions/information.svg"> | If the terminal wants a password, just type it in and press enter. Don't be confused as while typing you won't see asterisks or other visual information. |
 |   |   |
-| ![Icon](/img/actions/information.svg) | Sometimes the terminal will ask *"Do something? [Y/N]"*. Press Y for answering "yes" and N for answering "no". If there are more options, you often can press ? to show an explanation. |
+| <img class="icon" src="/img/actions/information.svg"> | Sometimes the terminal will ask *"Do something? [Y/N]"*. Press Y for answering "yes" and N for answering "no". If there are more options, you often can press ? to show an explanation. |
 |   |   |
