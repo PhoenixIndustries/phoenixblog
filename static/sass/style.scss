@@ -44,12 +44,14 @@ $svg-icon-size: 62px;
 }
 
 .navbar-brand {
-    margin-right: 4px !important;
+    margin-right: 3px !important;
 }
 
 .page-nav {
     color: #FFFFFF !important;
     cursor: default;
+    text-transform: uppercase;
+    font-size: 0.8571em;
 }
 
 .page-header .text-center a {
