@@ -15,7 +15,8 @@ a {
 }
 
 .donation-manually-field {
-    color: $green !important;
+    color: #484c47 !important;
+    font-size: 14px !important;
 }
 
 .btn-success {
@@ -30,6 +31,10 @@ a {
 .title-container {
     position: fixed !important;
     top: 200px !important;
+}
+
+#acc-details {
+    padding-right: 0px !important;
 }
 
 @media screen and (max-width: 768px) {

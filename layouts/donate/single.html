@@ -1,104 +1,101 @@
 {{ define "title" }}
 <div class="container">
-  <div class="content-center title-container">
-    <h1 class="title">{{ .Title }}</h1>
-    <div class="text-center">
-      {{with .Params.description }} {{ . | safeHTML }} {{ end }}
-    </div>
-  </div>
-</div>
-{{ end }}
-
-{{ define "body" }}
-<div class="row">
-  <div class="col-md-8 ml-auto mr-auto text-left">
-
-  <section id="donate">
-    <div class="container">
-      <div class="row">
+    <div class="content-center title-container">
+        <h1 class="title">{{ .Title }}</h1>
         <div class="text-center">
-          <div class="features-post">
-            <p>{{ .Content | markdownify }}
-          </div>
-          <ul class="flex-grid">
-            <li class="flex-item">
-              <div style="width: 100%; text-align: center; border: 1px solid #ddd;">
-                <div style="width: 200px; height: 200px; display: inline-block; position: relative">
-                  <img src="/img/donation/de-pp-logo-200px.png" alt="Icon" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;" />
-                </div>
-                <h3>{{ .Params.donate_paypal_title }}</h3>
-                <form id="donation_paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="P5T6ZGPVJD9JN">
-                  <a href="#" onclick="donation_paypal.submit();" class="btn btn-success btn-xl" style="margin-bottom: 10px;">{{ .Params.button_donate_text }}</a>
-                </form>
-              </div>
-            </li>
-            <li class="flex-item">
-              <div style="width: 100%; text-align: center; border: 1px solid #ddd;">
-                <img src="/img/donation/manually-alt.svg" alt="Icon" style="width: 202px; height: 202px; margin: auto;" />
-                <h3>{{ .Params.donate_manually_title }}</h3>
-
-                <a href="#" id="donation-manually-show" class="btn btn-success btn-xl" style="margin-bottom: 10px;">{{ .Params.button_donate_text }}</a>
-
-                <div style="text-align: justify; width: 90%; display: inline-block; margin-bottom: 10px">
-
-                  <div id="donation-manually-data">
-                  <hr/>
-                  <p>Note: {{ with $.Site.Params.donate.account.note }}{{.}}{{ end }}</p>
-                  <p></p>
-                  <table  class="dontation-manually-card">
-                    <tr>
-                      <td class="donation-manually-field" >Account holder:</td>
-                      <p></p>
-                      <td>{{ with $.Site.Params.donate.account.account_holder }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >Account Number:</td>
-                      <td>{{ with $.Site.Params.donate.account.account_number }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >Bank Identity Number:</td>
-                      <td>{{ with $.Site.Params.donate.account.bank_identification }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >Bank:</td>
-                      <td>{{ with $.Site.Params.donate.account.bank }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >BIC:</td>
-                      <td>{{ with $.Site.Params.donate.account.bic }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >IBAN:</td>
-                      <td>{{ with $.Site.Params.donate.account.iban }}{{.}}{{ end }}</td>
-                    </tr>
-                    <tr>
-                      <td class="donation-manually-field" >Purpose:</td>
-                      <td>{{ with $.Site.Params.donate.account.purpose }}{{.}}{{ end }}</td>
-                    </tr>
-                  </table>
-                  <div>
-
-                </div>
-              </div>
-            </li>
-          </ul>
+            {{with .Params.description }} {{ . | safeHTML }} {{ end }}
         </div>
-      </div>
     </div>
-  </section>
-
-  <script src="{{ "js/core/jquery.3.2.1.min.js" | relURL }}" type="text/javascript"></script>
-  <script type="text/javascript" >
-  $("#donation-manually-data").hide();
-  $("#donation-manually-show").click( function (e) {
-    $("#donation-manually-data").toggle(500);
-    e.preventDefault();
-  });
-  </script>
-
-  </div>   
 </div>
-{{ end }}        
- 
+{{ end }} {{ define "body" }}
+<div class="row">
+    <div class="col-md-8 ml-auto mr-auto text-left">
+
+        <section id="donate">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <div class="features-post">
+                            <p>{{ .Content | markdownify }}
+                        </div>
+                        <ul class="flex-grid">
+                            <li class="flex-item">
+                                <div style="width: 100%; text-align: center; border: 1px solid #ddd;">
+                                    <div style="width: 200px; height: 200px; display: inline-block; position: relative">
+                                        <img src="/img/donation/de-pp-logo-200px.png" alt="Icon" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;" />
+                                    </div>
+                                    <h3>{{ .Params.donate_paypal_title }}</h3>
+                                    <form id="donation_paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="P5T6ZGPVJD9JN">
+                                        <a href="#" onclick="donation_paypal.submit();" class="btn btn-success btn-xl" style="margin-bottom: 10px;">{{ .Params.button_donate_text }}</a>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="flex-item">
+                                <div style="width: 100%; text-align: center; border: 1px solid #ddd;">
+                                    <img src="/img/donation/manually-alt.svg" alt="Icon" style="width: 202px; height: 202px; margin: auto;" />
+                                    <h3>{{ .Params.donate_manually_title }}</h3>
+
+                                    <a data-toggle="modal" data-target="#acc-details" href="#" id="donation-manually-show" class="btn btn-success btn-xl" style="margin-bottom: 10px;">Get Bank Info</a>
+
+                                    <div id="acc-details" style="text-align: justify;" class="modal" tabindex="-1" role="dialog">
+
+                                        <div id="donation-manually-data" class="modal-dialog modal-dialog-centered " role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Account Details</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <table class="dontation-manually-card">
+                                                        <tr>
+                                                            <td class="donation-manually-field">Account holder:</td>
+                                                            <p></p>
+                                                            <td>{{ with $.Site.Params.donate.account.account_holder }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">Account Number:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.account_number }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">Bank Identity Number:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.bank_identification }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">Bank:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.bank }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">BIC:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.bic }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">IBAN:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.iban }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="donation-manually-field">Purpose:</td>
+                                                            <td>{{ with $.Site.Params.donate.account.purpose }}{{.}}{{ end }}</td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="modal-footer">Note: {{ with $.Site.Params.donate.account.note }}{{.}}{{ end }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <script src="{{ " js/core/jquery.3.2.1.min.js " | relURL }}" type="text/javascript"></script>
+        <script>
+            $('#donation-manually-show').on('hidden.bs.modal', function(e) {
+                $('#acc-details').modal('show');
+            })
+        </script>
+        </div>
+    </div>
+    {{ end }}
