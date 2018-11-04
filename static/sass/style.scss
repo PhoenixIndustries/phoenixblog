@@ -1,5 +1,6 @@
 $green:#44883c;
 $svg-icon-size: 62px;
+
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
@@ -7,9 +8,8 @@ $svg-icon-size: 62px;
 
 a {
     color: $green;
-    &:hover,
-    &:active,
-    &:focus {
+
+    &:hover, &:active, &:focus {
         color: $green;
     }
 }
@@ -20,25 +20,22 @@ a {
 
 .btn-success {
     background-color: $green;
-    &:hover,
-    &:active,
-    &:focus {
+
+    &:hover, &:active, &:focus {
         background-color: $green;
     }
 }
 
-.title-container {
-    position: fixed !important;
-    top: 200px !important;
-}
-
 @media screen and (max-width: 768px) {
+        
     .landing-page .section-story-overview .image-container {
-        margin-bottom: 30px;
+    margin-bottom: 30px;
     }
+
     .landing-page .section-team .team-player {
         margin-bottom: 60px;
     }
+
     .section {
         padding: 0;
     }
@@ -60,10 +57,7 @@ a {
         margin-bottom: 100px;
     }
 }
-
-
 /* end Mobile changes */
-
 .navbar {
     font-weight: bold;
     background-color: $green !important;
@@ -86,42 +80,44 @@ a {
 
 .social-icons-team .btn {
     background-color: $green;
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: #FFFFFF;
-        border: #ffffff;
-        color: $green !important;
+
+    &:hover, &:active, &:focus {
+    background-color: #FFFFFF;
+    border: #ffffff;
+    color: $green !important;
     }
 }
 
 .social-icons-top .btn {
     background-color: #FFFFFF;
     color: $green;
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $green;
-        border: $green;
-        color: #FFFFFF !important;
+
+    &:hover, &:active, &:focus {
+    background-color: $green;
+    border: $green;
+    color: #FFFFFF !important;
     }
 }
 
 .landing-page {
-    .description a,
-    .team-player .category {
+
+    .description a, .team-player .category {
         color: $green;
         font-weight: bold;
     }
+
     h3 {
         margin-bottom: 0px;
     }
+
     p {
         margin-bottom: 30px;
     }
+
     h1.title::first-letter {
-        color: $green;
+        color:$green;
     }
+
     .blockquote {
         border-color: $green !important;
         color: $green !important;
@@ -133,16 +129,20 @@ a {
 }
 
 .donate-page {
+    
     .features-post p {
-        text-align: left;
-        margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 40px;
     }
+
     .features-post h3 {
         margin-bottom: 0px;
     }
+
     .flex-item img {
-        width: 200px !important;
+        width: 200px !important;  
     }
+
     .flex-item:nth-child(2) h3 {
         margin-top: 4px !important;
         margin-bottom: 30px;
@@ -150,9 +150,11 @@ a {
 }
 
 .download-page {
+
     p {
         text-align: left;
     }
+
     table {
         margin: 0 auto;
         position: relative;
@@ -161,6 +163,7 @@ a {
         margin-bottom: 40px;
         margin-top: 40px;
     }
+
     table a {
         color: $green;
         font-weight: bold;
@@ -181,8 +184,7 @@ a {
     margin-top: 40px;
 }
 
-.profile-page p,
-.donate-page .features-post h3 {
+.profile-page p, .donate-page .features-post h3 {
     text-align: left;
 }
 
@@ -190,8 +192,7 @@ a {
     text-align: center;
 }
 
-.profile-page p:nth-child(2),
-.donate-page .features-post p:nth-child(7) {
+.profile-page p:nth-child(2), .donate-page .features-post p:nth-child(7) {
     text-align: center;
 }
 
@@ -207,21 +208,21 @@ a {
     text-align: left;
 }
 
-.editions-tag-checkbutton input[type="checkbox"]:checked+label,
-.editions-box-caption-extended-subtitle,
-.editions-box-caption-small,
+.editions-tag-checkbutton input[type="checkbox"]:checked + label,
+.editions-box-caption-extended-subtitle, .editions-box-caption-small,
 .editions-box-caption-extended {
     background: $green !important;
 }
 
 .editions-box {
-    .editions-box-caption-small,
-    .editions-box-caption-extended-subtitle {
-        margin: 0px;
-        width: 100%;
-        border-radius: 0px;
-        box-shadow: none;
+    
+    .editions-box-caption-small, .editions-box-caption-extended-subtitle {
+    margin: 0px;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
     }
+
     .editions-box-caption-extended .editions-box-caption-extended-content .targetgroup {
         font-size: 14px !important;
     }
@@ -229,11 +230,10 @@ a {
 
 @media (min-width: 769px) {
     .team-player .description {
-        /* this needs to be ajusted if you add more content */
-        min-height: 125px;
+    /* this needs to be ajusted if you add more content */
+    min-height: 125px;
     }
-    .landing-page .section-team,
-    .section-story-overview {
+    .landing-page .section-team, .section-story-overview {
         padding: 0px;
     }
     .section-story-overview p.blockquote {
