@@ -1,9 +1,29 @@
-$green:#00a152;
+$green:#44883c;
 $svg-icon-size: 62px;
 
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
+}
+
+a {
+    color: $green;
+
+    &:hover, &:active, &:focus {
+        color: $green;
+    }
+}
+
+.donation-manually-field {
+    color: $green !important;
+}
+
+.btn-success {
+    background-color: $green;
+
+    &:hover, &:active, &:focus {
+        background-color: $green;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -82,7 +102,7 @@ $svg-icon-size: 62px;
 .landing-page {
 
     .description a, .team-player .category {
-        color:#00a152;
+        color: $green;
         font-weight: bold;
     }
 
@@ -100,11 +120,12 @@ $svg-icon-size: 62px;
 
     .blockquote {
         border-color: $green !important;
-    
-        .blockquote small {
-            color: $green !important;
-        }
+        color: $green !important;
     }
+}
+
+.blockquote-primary small {
+    color: $green !important;
 }
 
 .donate-page {
