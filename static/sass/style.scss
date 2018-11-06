@@ -1,5 +1,6 @@
 $green:#44883c;
 $svg-icon-size: 62px;
+
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
@@ -14,8 +15,17 @@ a {
     }
 }
 
+.section {
+    padding: 0px;
+}
+
+p, .call-to-action {
+    margin-bottom: 40px;
+}
+
 .donation-manually-field {
-    color: $green !important;
+    color: #484c47 !important;
+    font-size: 14px !important;
 }
 
 .btn-success {
@@ -32,6 +42,15 @@ a {
     top: 200px !important;
 }
 
+#acc-details {
+    padding-right: 0px !important;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: visible;
+}
+
 @media screen and (max-width: 768px) {
     .landing-page .section-story-overview .image-container {
         margin-bottom: 30px;
@@ -43,7 +62,7 @@ a {
         padding: 0;
     }
     .section-story-overview .image-container:nth-child(2) {
-        margin-top: 312px;
+        margin-top: 270px;
     }
 }
 
@@ -58,6 +77,11 @@ a {
     }
     .donate-page .flex-item {
         margin-bottom: 100px;
+    }
+
+    .landing-page .container {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -99,47 +123,76 @@ a {
     }
 }
 
-.social-icons-top .btn {
-    background-color: #FFFFFF;
-    color: $green;
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $green;
-        border: $green;
-        color: #FFFFFF !important;
+.social-icons-top {
+     
+    text-align: right;
+    margin-bottom: 40px;
+    margin-top: -26px;
+
+    .btn {
+        background-color: #FFFFFF;
+        color: $green;
+        margin-left: 5px;
+        position: relative;
+        z-index: 99; 
+        height: 3.375rem;
+        min-width: 3.375rem;
+        width: 3.375rem;
+        font-size: 1rem;      
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $green;
+            border: $green;
+            color: #FFFFFF !important;
+        }
     }
 }
 
 .landing-page {
+
     .description a,
     .team-player .category {
         color: $green;
         font-weight: bold;
     }
+
+    .team-player .description {
+        text-align: justify;
+    }
+
     h3 {
         margin-bottom: 0px;
     }
-    p {
-        margin-bottom: 30px;
-    }
+
     h1.title::first-letter {
         color: $green;
     }
+    
     .blockquote {
-        border-color: $green !important;
-        color: $green !important;
-    }
-}
 
-.blockquote-primary small {
-    color: $green !important;
-}
+        width: auto !important;
+        color: #6b6a6a !important;
+        font-size: 1.3rem;
+        border: none;
+        border-left: 4px $green solid;
+        text-align: justify !important;
+
+        small {
+            float: right;
+            color: #6b6a6a !important;
+        }
+    }
+
+    h5, .section-story-overview {
+        text-align: justify;
+    }
+} 
 
 .donate-page {
     .features-post p {
         text-align: left;
-        margin-bottom: 40px;
     }
     .features-post h3 {
         margin-bottom: 0px;
@@ -168,6 +221,20 @@ a {
     table a {
         color: $green;
         font-weight: bold;
+    }
+}
+
+.support-page {
+    h3 {
+        margin-bottom: 10px;
+        margin-top: 60px;
+    }
+    ul {
+        padding-left: 86px;
+    }
+    img {
+        margin-right: 5px;
+        margin-top: -5px;
     }
 }
 
@@ -231,7 +298,7 @@ a {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .team-player .description {
         /* this needs to be ajusted if you add more content */
         min-height: 125px;
@@ -242,6 +309,16 @@ a {
     }
     .section-story-overview p.blockquote {
         top: 476px;
+    }
+    .landing-page .blockquote {
+        right: 100px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .section-story-overview .image-container:nth-child(2) {
+        margin-top: 480px;
     }
 }
 
@@ -256,7 +333,8 @@ a {
         font-size: 0.8571em;
         font-weight: bold;
     }
-    .section-story-overview .image-container:nth-child(2) {
-        margin-left: 0px;
-    }
+}
+
+.section-story-overview .image-container:nth-child(2) {
+    margin-left: 0px;
 }

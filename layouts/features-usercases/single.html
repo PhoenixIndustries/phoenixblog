@@ -2,9 +2,6 @@
 <div class="container">
   <div class="content-center title-container">
     <h1 class="title">{{ .Title }}</h1>
-    <div class="text-center">
-      {{with .Params.description }} {{ . | safeHTML }} {{ end }}
-    </div>
   </div>
 </div>
 {{ end }}
@@ -20,7 +17,7 @@
 						<hr class="star-primary" /> -->
 
 						<div class="features-post">
-							<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
+							<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
 						</div>
 
 						<ul style="display: flex; flex-wrap: wrap;">
