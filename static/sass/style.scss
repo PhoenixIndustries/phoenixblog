@@ -1,5 +1,6 @@
 $green:#44883c;
 $svg-icon-size: 62px;
+
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
@@ -64,6 +65,9 @@ a {
     .donate-page .flex-item {
         margin-bottom: 100px;
     }
+    .social-icons-top {
+        margin-top: -30px;
+    }
 }
 
 
@@ -104,15 +108,29 @@ a {
     }
 }
 
-.social-icons-top .btn {
-    background-color: #FFFFFF;
-    color: $green;
-    &:hover,
-    &:active,
-    &:focus {
-        background-color: $green;
-        border: $green;
-        color: #FFFFFF !important;
+.social-icons-top {
+     
+    text-align: right;
+    margin-bottom: 40px;
+
+    .btn {
+        background-color: #FFFFFF;
+        color: $green;
+        margin-left: 5px;
+        position: relative;
+        z-index: 99; 
+        height: 3.375rem;
+        min-width: 3.375rem;
+        width: 3.375rem;
+        font-size: 1rem;      
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $green;
+            border: $green;
+            color: #FFFFFF !important;
+        }
     }
 }
 
@@ -261,6 +279,9 @@ a {
     }
     .section-story-overview p.blockquote {
         top: 476px;
+    }
+    .social-icons-top {
+        margin-top: -100px;
     }
 }
 

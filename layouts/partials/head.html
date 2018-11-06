@@ -15,7 +15,7 @@
     <link href="{{ $styles.Permalink }}" rel="stylesheet" />
     <!--  Essential META Tags -->
 
-    <meta name="description" content="Manjaro Linux is a linux distribution which is based on arch linux">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
     <meta name="keywords" content="linux, manjaro, open source, free operating system, linux distribution, manjaro linux">
 
     <meta property="og:title" content="Manjaro - {{ .Title }}">
