@@ -15,6 +15,14 @@ a {
     }
 }
 
+.section {
+    padding: 0px;
+}
+
+p, .call-to-action {
+    margin-bottom: 40px;
+}
+
 .donation-manually-field {
     color: #484c47 !important;
     font-size: 14px !important;
@@ -38,6 +46,11 @@ a {
     padding-right: 0px !important;
 }
 
+.modal-open {
+    padding-right: 0px !important;
+    overflow: visible;
+}
+
 @media screen and (max-width: 768px) {
     .landing-page .section-story-overview .image-container {
         margin-bottom: 30px;
@@ -49,7 +62,7 @@ a {
         padding: 0;
     }
     .section-story-overview .image-container:nth-child(2) {
-        margin-top: 312px;
+        margin-top: 270px;
     }
 }
 
@@ -64,9 +77,6 @@ a {
     }
     .donate-page .flex-item {
         margin-bottom: 100px;
-    }
-    .social-icons-top {
-        margin-top: -30px;
     }
 }
 
@@ -112,6 +122,7 @@ a {
      
     text-align: right;
     margin-bottom: 40px;
+    margin-top: -26px;
 
     .btn {
         background-color: #FFFFFF;
@@ -135,34 +146,48 @@ a {
 }
 
 .landing-page {
+
     .description a,
     .team-player .category {
         color: $green;
         font-weight: bold;
     }
+
+    .team-player .description {
+        text-align: justify;
+    }
+
     h3 {
         margin-bottom: 0px;
     }
-    p {
-        margin-bottom: 30px;
-    }
+
     h1.title::first-letter {
         color: $green;
     }
+    
     .blockquote {
-        border-color: $green !important;
-        color: $green !important;
-    }
-}
 
-.blockquote-primary small {
-    color: $green !important;
-}
+        width: auto !important;
+        color: #6b6a6a !important;
+        font-size: 1.3rem;
+        border: none;
+        border-left: 4px $green solid;
+        text-align: justify !important;
+
+        small {
+            color: $green !important;
+            float: right;
+        }
+    }
+
+    h5, .section-story-overview {
+        text-align: justify;
+    }
+} 
 
 .donate-page {
     .features-post p {
         text-align: left;
-        margin-bottom: 40px;
     }
     .features-post h3 {
         margin-bottom: 0px;
@@ -268,7 +293,7 @@ a {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .team-player .description {
         /* this needs to be ajusted if you add more content */
         min-height: 125px;
@@ -280,8 +305,15 @@ a {
     .section-story-overview p.blockquote {
         top: 476px;
     }
-    .social-icons-top {
-        margin-top: -100px;
+    .landing-page .blockquote {
+        right: 100px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .section-story-overview .image-container:nth-child(2) {
+        margin-top: 480px;
     }
 }
 
