@@ -1,6 +1,17 @@
 $green:#44883c;
 $svg-icon-size: 62px;
 
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa-Bold.ttf')  format('truetype')
+         url('/fonts/Comfortaa-Light.ttf')  format('truetype'),
+         url('/fonts/Comfortaa-Regular.ttf')  format('truetype');
+  }
+
+h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
+    font-family: 'Comfortaa', cursive;
+}
+
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
@@ -35,11 +46,6 @@ p, .call-to-action {
     &:focus {
         background-color: $green;
     }
-}
-
-.title-container {
-    position: fixed !important;
-    top: 200px !important;
 }
 
 #acc-details {
