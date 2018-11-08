@@ -182,7 +182,7 @@ p, .call-to-action {
         color: #6b6a6a !important;
         font-size: 1.3rem;
         border: none;
-        border-left: 4px $green solid;
+        border-right: 4px $green solid;
         text-align: justify !important;
 
         small {
@@ -314,7 +314,7 @@ p, .call-to-action {
         padding: 0px;
     }
     .section-story-overview p.blockquote {
-        top: 476px;
+        top: 470px;
     }
     .landing-page .blockquote {
         right: 100px !important;
@@ -324,7 +324,7 @@ p, .call-to-action {
 @media (min-width: 768px) and (max-width: 992px) {
     
     .section-story-overview .image-container:nth-child(2) {
-        margin-top: 480px;
+        margin-top: 446px;
     }
 }
 
