@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
 
 a {
     color: $green;
+    font-weight: bold;
     &:hover,
     &:active,
     &:focus {
@@ -123,7 +124,6 @@ p, .call-to-action {
 
 .navbar-brand {
     margin-right: 3px !important;
-    font-weight: 400;
 }
 
 .page-nav {
@@ -135,7 +135,6 @@ p, .call-to-action {
     line-height: 1.625rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-weight: 400;
 }
 
 .page-header .text-center a {
