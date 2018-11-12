@@ -290,11 +290,20 @@ p, .call-to-action {
     }
     section {
         margin-bottom: 80px;
-        div {
-            text-align: left;
-        }
     }
-       
+    .header-link {
+        width: 100%;
+        margin-bottom: 20px;
+    }       
+}
+
+.useful-for-everyone {
+    table {
+        margin: 0 auto;
+    }
+    li:not(.nav-item) {
+        margin-bottom: 60px;
+    }
 }
 
 .first-steps, .user-guide {
