@@ -1,6 +1,6 @@
 ---
 #background: "img/bg4.jpg"
-title: "What is Manjaro?"
+title: "What is Manjaro"
 
 ---
 

@@ -229,6 +229,7 @@ p, .call-to-action {
     
     .features-post h3 {
         margin-bottom: 0px;
+        text-align: left;
     }
     .flex-item img {
         width: 200px !important;
@@ -294,20 +295,40 @@ p, .call-to-action {
             text-align: left;
         }
     }
-    
+       
+}
+
+.first-steps, .user-guide {
+    .row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.what-is-manjaro {
+    .row {
+        padding-top: 40px;
+    }
+    p:nth-child(2) {
+        text-align:center;
+    }
+}
+
+.user-guide {
+    p:nth-child(1) {
+        text-align: center;
+    }
+}
+
+.configured-with-one-click,
+.under-your-control,
+ {
+    .features-post {
+        padding-top: 40px;
+    }
 }
 
 #how-much-does-it-cost {
     margin-top: 40px;
-}
-
-.donate-page .features-post h3 {
-    text-align: left;
-}
-
-.page 
-.donate-page .features-post p:nth-child(7) {
-    text-align: center;
 }
 
 .flex-item div {
