@@ -8,53 +8,16 @@
 
 {{ define "body" }}
 <div class="row">
-  <div class="col-md-8 ml-auto mr-auto text-left">
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="text-center">
+  <div class="offset-md-2 col-md-8">
+	
+			
+				
 						<!-- <h2 class="section-heading">{{ .Title }}</h2>
 						<hr class="star-primary" /> -->
 
 						<div class="features-post">
 							<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
 						</div>
-
-						<ul style="display: flex; flex-wrap: wrap;">
-						{{ range (where .Site.Pages ".Type" "usercase-post") }}
-							<li style="display: flex; padding: 10px; width: 50%">
-								<div style="width: 100%; text-align: center;">
-									
-									<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
-										<div style="font-weight: 500; font-size: 18px; height: 20px;">
-											{{ .Params.name }}
-										</div>
-										{{ $.Params.linktext }}
-									</a>
-									<table>
-										<thead>
-										<tr>
-										<th></th>
-										<th></th>
-										</tr>
-										</thead>
-
-										<tbody>
-										{{ range first 3 .Params.softwarepresented }}
-											<tr>
-												<td><img src="/img/actions/install.svg" alt="Icon" style="width: 24px; height: 24px;"/></td>
-												<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
-													<strong><a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a></strong><br/>
-													{{ .usage }}
-												</td>
-											</tr>
-										{{ end }}
-									</tbody>
-									</table>
-								</div>
-							</li>
-						{{end}}
-						</ul>
 
 						<!-- <div style="display: flex; flex-warp: wrap">
 						{{ range (where .Site.Pages ".Type" "usercase-post") }}
@@ -112,10 +75,8 @@
 						{{ end }}
 					</div> -->
 
-					</div>
-				</div>
-			</div>
-		</section>
+				
+
 
 
 
@@ -134,6 +95,36 @@
 		        </div>
 		    </div>
 		</section> -->
-  </div>   
+  </div>
+	{{ range (where .Site.Pages ".Type" "usercase-post") }}
+			<div class="offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-lg-4 col-xl-3">
+				<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
+					<div style="font-weight: 500; font-size: 18px; height: 20px;">
+						{{ .Params.name }}
+					</div>
+					{{ $.Params.linktext }}
+				</a>
+				<table>
+					<thead>
+					<tr>
+					<th></th>
+					<th></th>
+					</tr>
+					</thead>
+
+					<tbody>
+					{{ range first 3 .Params.softwarepresented }}
+						<tr>
+							<td><img src="/img/actions/install.svg" alt="Icon" style="width: 24px; height: 24px;"/></td>
+							<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
+								<strong><a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a></strong><br/>
+								{{ .usage }}
+							</td>
+						</tr>
+					{{ end }}
+				</tbody>
+				</table>
+			</div>
+	{{end}}
 </div>
 {{ end }}
