@@ -3,7 +3,7 @@
   "image": "beginners-alt1.jpg",
   "screenshot": "beginners-alt3-full.jpg",
   "icon" : "beginners-icon.svg",
-  "name": "Home-users",
+  "name": "Home Users",
   "quote": "It seems to be solid, yet accessible. I just love it",
   "quoteauthor": "dschelpe",
   "shortdescription": "Everyone is a beginner in something. So we don't forget people, who don't have much experience with computers and want to learn more or just use it for their work.",

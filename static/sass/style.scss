@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
 
 a {
     color: $green;
+    font-weight: bold;
     &:hover,
     &:active,
     &:focus {
@@ -38,6 +39,10 @@ a {
 
 .section {
     padding: 0px;
+
+    p {
+        text-align: justify;
+    }
 }
 
 p, .call-to-action {
@@ -119,7 +124,6 @@ p, .call-to-action {
 
 .navbar-brand {
     margin-right: 3px !important;
-    font-weight: 400;
 }
 
 .page-nav {
@@ -131,7 +135,6 @@ p, .call-to-action {
     line-height: 1.625rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-weight: 400;
 }
 
 .page-header .text-center a {
@@ -184,8 +187,13 @@ p, .call-to-action {
         font-weight: bold;
     }
 
-    .team-player .description {
-        text-align: justify;
+    .team-player {
+        .description {
+          text-align: justify;
+        }
+        .category {
+            text-align: center;
+        }
     }
 
     h3 {
@@ -217,11 +225,10 @@ p, .call-to-action {
 } 
 
 .donate-page {
-    .features-post p {
-        text-align: left;
-    }
+    
     .features-post h3 {
         margin-bottom: 0px;
+        text-align: left;
     }
     .flex-item img {
         width: 200px !important;
@@ -230,12 +237,16 @@ p, .call-to-action {
         margin-top: 4px !important;
         margin-bottom: 30px;
     }
+    .flex-grid {
+        padding-left: 0px;
+    }
+    p:nth-child(7) {
+        text-align: center;
+    }
 }
 
 .download-page {
-    p {
-        text-align: left;
-    }
+    
     table {
         margin: 0 auto;
         position: relative;
@@ -264,44 +275,72 @@ p, .call-to-action {
     }
 }
 
-.profile-page img[src="/img/features/overview.png"] {
-    padding-bottom: 60px;
-    padding-top: 20px;
+.page {
+    img[src="/img/features/overview.png"] {
+      padding-bottom: 60px;
+      padding-top: 20px;
+    }
+
+    td {
+      /*padding: 14px;*/
+      padding-right: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    section {
+        margin-bottom: 80px;
+    }
+    .header-link {
+        width: 100%;
+        margin-bottom: 20px;
+    }       
 }
 
-.profile-page td {
-    /*padding: 14px;*/
-    padding-right: 5px;
+.useful-for-everyone {
+    table {
+        margin: 0 auto;
+    }
+    li:not(.nav-item) {
+        margin-bottom: 60px;
+    }
+}
+
+.first-steps, .user-guide {
+    .row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.what-is-manjaro {
+    .row {
+        padding-top: 40px;
+    }
+    p:nth-child(2) {
+        text-align:center;
+    }
+}
+
+.user-guide {
+    p:nth-child(1) {
+        text-align: center;
+    }
+}
+
+.configured-with-one-click,
+.under-your-control,
+ {
+    .features-post {
+        padding-top: 40px;
+    }
 }
 
 #how-much-does-it-cost {
     margin-top: 40px;
 }
 
-.profile-page p,
-.donate-page .features-post h3 {
-    text-align: left;
-}
-
-.profile-page h2 {
-    text-align: center;
-}
-
-.profile-page p:nth-child(2),
-.donate-page .features-post p:nth-child(7) {
-    text-align: center;
-}
-
 .flex-item div {
     border: none !important;
-}
-
-.profile-page section {
-    margin-bottom: 80px;
-}
-
-.profile-page section div {
-    text-align: left;
 }
 
 .editions-tag-checkbutton input[type="checkbox"]:checked+label,

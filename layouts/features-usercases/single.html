@@ -23,10 +23,15 @@
 						<ul style="display: flex; flex-wrap: wrap;">
 						{{ range (where .Site.Pages ".Type" "usercase-post") }}
 							<li style="display: flex; padding: 10px; width: 50%">
-								<div style="width: 100%; text-align: center; border: 1px solid #ddd;">
-									<img src="/img/usercases/{{.Params.icon}}" alt="Icon" style="width: 100px; height: 100px;" />
-									<span style="font-weight: 500; font-size: 18px">{{ .Params.name }}</span>
-									<table style="margin-left:10px;">
+								<div style="width: 100%; text-align: center;">
+									
+									<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
+										<div style="font-weight: 500; font-size: 18px; height: 20px;">
+											{{ .Params.name }}
+										</div>
+										{{ $.Params.linktext }}
+									</a>
+									<table>
 										<thead>
 										<tr>
 										<th></th>
@@ -46,7 +51,6 @@
 										{{ end }}
 									</tbody>
 									</table>
-									<a href="{{.Permalink}}" class="btn btn-success btn-xl" style="margin-top: 10px; margin-bottom: 10px" >{{ $.Params.linktext }}</a>
 								</div>
 							</li>
 						{{end}}
