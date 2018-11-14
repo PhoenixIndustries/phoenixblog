@@ -176,6 +176,10 @@ p, .call-to-action {
 .navbar {
     font-weight: bold;
     background-color: $green !important;
+    
+    .nav-item:not(.dropdown) {
+        letter-spacing: 1px;
+    }
 }
 
 .navbar-brand {
