@@ -13,180 +13,240 @@ assetDir = "../static/"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+
 [[menu.main]]
     name = "Download"
     url = "/download/"
-    pre = "<i class='now-ui-icons arrows-1_cloud-download-93'></i>"
+    pre = ""
     weight = 1
+
+
 [[menu.main]]
     name = "Support"
     url = "#"
-    pre = "<i class='now-ui-icons objects_support-17'></i>"
+    pre = ""
     weight = 2
     identifier = "support"
+
+
 [[menu.main]]
     name = "First Steps"
     url = "/support/firststeps/"
     pre = "<i class='now-ui-icons sport_user-run'></i>"
     weight = 1
     parent = "support"
+
+
 [[menu.main]]
     name = "Common Problems"
     url = "/support/commonproblems/"
     pre = "<i class='now-ui-icons health_ambulance'></i>"
     weight = 2
     parent = "support"
+
+
 [[menu.main]]
     name = "User Guide"
     url = "/support/userguide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
     weight = 3
     parent = "support"
+
+
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 4
     parent = "support"
+
+
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
-    pre = "<i class='now-ui-icons business_bank'></i>"
+    pre = ""
     weight = 3
+
+
 [[menu.main]]
     name = "Packages"
     url = "https://repo.manjaro.org/"
-    pre = "<i class='now-ui-icons design_app'></i>"
+    pre = ""
     weight = 2
     identifier = "packages"
+
+
 [[menu.main]]
     name = "Mirrors Check"
     url = "https://repo.manjaro.org/"
     pre = "<i class='now-ui-icons objects_globe'></i>"
     weight = 1
     parent = "packages"
+
+
 [[menu.main]]
     name = "Search Stable Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
     weight = 2
     parent = "packages"
+
+
 [[menu.main]]
     name = "Search Testing Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
     weight = 3
     parent = "packages"
+
+
 [[menu.main]]
     name = "Search Unstable Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
     weight = 4
     parent = "packages"
+
+
 #[[menu.main]]
 #    name = "Team"
 #    url = "/profile/"
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
 #    weight = 2
+
+
 [[menu.main]]
     name = "Lists"
     url = "#"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = ""
     weight = 4
     identifier = "mailinglists"
+
+
 [[menu.main]]
     name = "Security"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 1
     parent = "mailinglists"
+
+
 [[menu.main]]
     name = "General"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 2
     parent = "mailinglists"
+
+
 [[menu.main]]
     name = "Packages"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 3
     parent = "mailinglists"
+
+
 [[menu.main]]
     name = "Testing"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 4
     parent = "mailinglists"
+
+
 [[menu.main]]
     name = "Development"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
     parent = "mailinglists"
+    
+
 [[menu.main]]
     name = "Mirrors"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 6
     parent = "mailinglists"
+
+
 [[menu.main]]
     name = "About"
     url = "#"
-    pre = "<i class='now-ui-icons travel_info'></i>"
+    pre = ""
     weight = 4
     identifier = "features"
+
+
 [[menu.main]]
     name = "What is Manjaro"
     url = "/what-is-manjaro/"
     pre = "<i class='now-ui-icons business_bulb-63'></i>"
     weight = 1
     parent = "features"
+
+
 [[menu.main]]
     name = "Under your control"
     url = "/features/under-your-control/"
     pre = "<i class='now-ui-icons objects_spaceship'></i>"
     weight = 2
     parent = "features"
+
+
 [[menu.main]]
     name = "Configured with one click"
     url = "/features/configured-with-one-click/"
     pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
     weight = 3
     parent = "features"
+
+
 [[menu.main]]
     name = "Useful for everyone"
     url = "/features/useful-for-everyone/"
     pre = "<i class='now-ui-icons ui-2_like'></i>"
     weight = 4
     parent = "features"
+
+
 [[menu.main]]
     name = "Fresh & Stable"
     url = "/features/fresh-and-stable/"
     pre = "<i class='now-ui-icons ui-1_send'></i>"
     weight = 5
     parent = "features"
+
+
 [[menu.main]]
     name = "Donate"
-    pre = "<i class='now-ui-icons business_money-coins'></i>"
+    pre = ""
     url = "/donate/"
     weight = 5 
+
+
 [[menu.footer]]
     identifier = "twitter"
     pre = "<i class='fa fa-twitter'></i>"
     url = "https://twitter.com/manjarolinux"
     weight = 1
+
+
 [[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fa fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
+
+
 [[menu.footer]]
     identifier = "copyright"
     name = "2018 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "https://spdx.org/licenses/MIT"
     weight = 3
+
 
 [params]
     background = "/img/header.jpg"
@@ -202,7 +262,7 @@ assetDir = "../static/"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
 
-# Donate
+
 [params.donate]
     headline = "Help us"
     description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
@@ -218,7 +278,6 @@ assetDir = "../static/"
         purpose = "Donation to Manjaro Linux"
         note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
 
-# Download
 
 [params.download_edition]
     download_x64_title = "64 bit version"
