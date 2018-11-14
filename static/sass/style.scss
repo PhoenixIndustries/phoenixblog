@@ -18,6 +18,51 @@ $svg-icon-size: 62px;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa-Light.ttf') format('truetype'),
+         url('/fonts/Comfortaa-Light.woff') format('woff'),
+         url('/fonts/Comfortaa-Light.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-LightItalic.woff2') format('woff2'),
+         url('/fonts/OpenSans-LightItalic.woff') format('woff'), 
+         url('/fonts/OpenSans-LightItalic.ttf')  format('truetype');
+    font-weight: lighter;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Light.woff2') format('woff2'),
+         url('/fonts/OpenSans-Light.woff') format('woff'), 
+         url('/fonts/OpenSans-Light.ttf')  format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('/fonts/OpenSans-Regular.woff') format('woff'), 
+         url('/fonts/OpenSans-Regular.ttf')  format('truetype');
+    font-style: normal; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.01em;
+    
+    p {
+        font-size: 16px;
+        color: #5a5a5a;
+    }
+}
+
 h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
     font-family: 'Comfortaa', cursive;
 }
@@ -25,6 +70,14 @@ h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
 .icon {
     width: $svg-icon-size !important;
     height: $svg-icon-size !important;
+}
+
+h2, h3, h4, h5 {
+    font-size: 1.5em;
+}
+
+h1:not(.title), h2, h3, h4, h5 {
+    font-weight: lighter !important;
 }
 
 a {
@@ -112,6 +165,10 @@ p, .call-to-action {
         width: 100%;
         max-width: 100%;
     }
+    .navbar-translate .page-nav {
+        position: absolute;
+        left: 78px;
+    }
 }
 
 
@@ -120,6 +177,14 @@ p, .call-to-action {
 .navbar {
     font-weight: bold;
     background-color: $green !important;
+    
+    .nav-item:not(.dropdown) {
+        letter-spacing: 1px;
+    }
+
+    .nav-link:not(.dropdown) {
+        font-size: 0.8571em !important;
+    }
 }
 
 .navbar-brand {
@@ -188,11 +253,17 @@ p, .call-to-action {
     }
 
     .team-player {
+
+        .title {
+            font-weight: 500;
+        }
         .description {
           text-align: justify;
+          font-style: italic;
         }
         .category {
             text-align: center;
+            font-size: 14px;
         }
     }
 
@@ -208,7 +279,7 @@ p, .call-to-action {
 
         width: auto !important;
         color: #6b6a6a !important;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         border: none;
         border-right: 4px $green solid;
         text-align: justify !important;
@@ -221,6 +292,23 @@ p, .call-to-action {
 
     h5, .section-story-overview {
         text-align: justify;
+        h3 {
+            text-align: left;
+        }
+    }
+
+    h5.description {
+        font-size: 1.2rem;
+        color: #6b6a6a;
+        margin-top: 16px;
+    }
+
+    h2.title {
+        text-align: center;
+    }
+
+    .section-team h2 {
+        font-size: 1.8em;
     }
 } 
 
@@ -258,6 +346,11 @@ p, .call-to-action {
     table a {
         color: $green;
         font-weight: bold;
+    }
+    
+    .editions-tag-checkbutton label {
+        width: 170px;
+        min-width: 170px;
     }
 }
 
@@ -300,13 +393,12 @@ p, .call-to-action {
 .useful-for-everyone {
     table {
         margin: 0 auto;
-    }
-    li:not(.nav-item) {
         margin-bottom: 60px;
     }
 }
 
 .first-steps, .user-guide {
+    
     .row {
         padding-top: 40px;
         padding-bottom: 40px;

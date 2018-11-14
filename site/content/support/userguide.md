@@ -7,7 +7,8 @@ right = true
 navsection = "support"
 +++
 
-<a href="https://de.osdn.net/projects/manjaro/storage/Manjaro-User-Guide.pdf" class="btn btn-success btn-xl" >Download User Guide (English)</a> <a href="https://de.osdn.net/projects/manjaro/storage/Manjaro-User-Guide-French.pdf" class="btn btn-success btn-xl" >Download User Guide (French)</a>
+<a href="https://de.osdn.net/projects/manjaro/storage/Manjaro-User-Guide.pdf" class="btn btn-success btn-xl" >Download User Guide in English</a>
+<a href="https://de.osdn.net/projects/manjaro/storage/Manjaro-User-Guide-French.pdf" class="btn btn-success btn-xl" >Download User Guide in French</a>
 
 Our team and our community proudly present you the Manjaro User Guide, a over 100 page long book with everything new and advanced users can know about Manjaro. We cover following topics in our guide:
 
