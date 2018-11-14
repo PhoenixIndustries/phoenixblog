@@ -181,6 +181,10 @@ p, .call-to-action {
     .nav-item:not(.dropdown) {
         letter-spacing: 1px;
     }
+
+    .nav-link:not(.dropdown) {
+        font-size: 0.8571em !important;
+    }
 }
 
 .navbar-brand {
