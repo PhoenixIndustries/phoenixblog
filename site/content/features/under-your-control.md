@@ -10,7 +10,7 @@ weight = 0
 
 <div class="row">
     <div class="col-md-6 col-xl-4">
-      <img src="/img/actions/update.svg" alt="Icon"/>
+      <img class="xl-icon" src="/img/actions/update.svg" alt="Icon"/>
       <h3>Update when you want</h3>
       <hr/>
       <p>
@@ -18,7 +18,7 @@ weight = 0
       </p>
     </div>  
     <div class="col-md-6 col-xl-4">
-      <img src="/img/actions/security.svg" alt="Icon"/>
+      <img class="xl-icon" src="/img/actions/security.svg" alt="Icon"/>
       <h3>Your data not ours</h3>
       <hr/>
       <p>
@@ -26,7 +26,7 @@ weight = 0
       </p>
     </div> 
     <div class="col-md-6 col-xl-4">
-      <img src="/img/actions/toolbox.svg" alt="Icon" />
+      <img class="xl-icon" src="/img/actions/toolbox.svg" alt="Icon" />
       <h3>Change everything you need</h3>
       <hr/>
       <p>
