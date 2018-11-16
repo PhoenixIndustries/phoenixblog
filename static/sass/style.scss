@@ -63,6 +63,10 @@ body {
     }
 }
 
+hr {
+    border-top: 1px solid $green;
+}
+
 h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
     font-family: 'Comfortaa', cursive;
 }
@@ -381,9 +385,6 @@ p, .call-to-action {
     h2 {
         text-align: center;
     }
-    section {
-        margin-bottom: 80px;
-    }
     .header-link {
         width: 100%;
         margin-bottom: 20px;
@@ -394,6 +395,16 @@ p, .call-to-action {
     table {
         margin: 0 auto;
         margin-bottom: 60px;
+    }
+}
+
+.under-your-control {
+    img {
+        height: 150px;
+        width: 150px;
+    }
+    h3 {
+        margin-bottom: 0px;
     }
 }
 
