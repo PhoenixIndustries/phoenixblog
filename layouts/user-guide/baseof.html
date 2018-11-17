@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  {{partial "head" . }}
+  
+	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{ replace .Title " " "-" | lower}}">
+    {{ partial "nav" . }}
+    
+    <div class="{{ .Params.wrapper | default "wrapper" }}">
+      
+        <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}" filter-color="{{ .Param "tint" | default "orange" }}">
+           
+            
+            
+        </div>
+        <div class="{{ .Params.section | default "section"}}">
+            
+              
+            {{ block "body" . }}
+	          {{ end }}
+
+            
+        </div>
+      {{ partial "footer" . }}
+    </div>
+  </body>
+{{partial "javascript" . }}
+<script>
+$( ".navbar" ).removeClass( "navbar-transparent" );
+</script>
+</html>
