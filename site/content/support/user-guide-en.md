@@ -1,7 +1,7 @@
 +++
 date = "2016-09-05T21:03:22+02:00"
 title = "User Guide"
-type = "user-guide-en"
+type = "user-guide-pdf"
 weight = 0
 right = true
 navsection = "support"
