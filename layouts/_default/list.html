@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="row">
 			{{ range (.Paginator 6).Pages }}
-			<div class="col-md-6">
+			<div class="col-md-2">
 				<article class="blog-post">
 					{{ with .Params.image }}
 					<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
@@ -20,7 +20,7 @@
 					<p>
 						{{ .Summary }}
 					</p>
-					<a href="{{ .Permalink }}" class="btn btn-main">Read More</a>
+					<a href="{{ .Permalink }}" class="btn btn-success">Read More</a>
 				</article>
 			</div>
 			{{ end }}
