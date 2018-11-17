@@ -16,8 +16,6 @@
 </div>
 {{end}}
 
-
-  {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
    <!-- List pages can get Content and yaml metadata from an _index.md -->
   {{ with .Content }}<div class="article-style" itemprop="articleBody">{{ . }}</div>{{ end }}
 
@@ -29,8 +27,6 @@
     </div>
     {{ end }}
     </div>
-
-
 
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <nav>
