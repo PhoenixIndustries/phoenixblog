@@ -68,9 +68,31 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Shop"
-    url = "/shop/"
+    url = "#"
     pre = ""
     weight = 4
+    identifier = "shop"
+
+[[menu.main]]
+    name = "Merc & Accessories"
+    url = "/shop/"
+    pre = ""
+    weight = 1
+    parent = "shop"
+
+[[menu.main]]
+    name = "Hardware - Bladebook"
+    url = "/shop-bladebook/"
+    pre = ""
+    weight = 2
+    parent = "shop"
+
+[[menu.main]]
+    name = "Hardware - Spitfire"
+    url = "/shop-spitfire/"
+    pre = ""
+    weight = 3
+    parent = "shop"
 
 [[menu.main]]
     name = "Packages"

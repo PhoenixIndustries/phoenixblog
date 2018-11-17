@@ -1,6 +1,6 @@
 ---
 #background: "img/bg4.jpg"
-title: "Shop"
+title: "Merc & Accessories"
 
 ---
 
