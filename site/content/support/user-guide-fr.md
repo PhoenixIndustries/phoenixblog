@@ -7,4 +7,4 @@ right = true
 navsection = "support"
 +++
 
-<embed type="application/pdf" width="100%" height="1200px" src="https://de.osdn.net/projects/manjaro/storage/Manjaro-User-Guide-French.pdf"></embed>
+<embed type="application/pdf" width="100%" height="1200px" src="https://dotsrc.dl.osdn.net/osdn/storage/g/m/ma/manjaro/Manjaro-User-Guide-French.pdf"></embed>

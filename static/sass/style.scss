@@ -173,6 +173,11 @@ p, .call-to-action {
         position: absolute;
         left: 78px;
     }
+    .configured-with-one-click {
+        .row section, .row img{
+            margin-bottom: 40px;
+        }
+    }
 }
 
 
@@ -442,6 +447,9 @@ p, .call-to-action {
     .features-post {
         padding-top: 40px;
     }
+    .row img {
+        height: auto !important;
+    }
 }
 
 #how-much-does-it-cost {
@@ -506,6 +514,20 @@ p, .call-to-action {
         margin-right: 5px;
         font-size: 0.8571em;
         font-weight: bold;
+    }
+    .configured-with-one-click {
+        .row section, .row img{
+            margin-bottom: 120px;
+        }
+        #pamac,
+        #locale,
+        #mhwd,
+        #timeanddate,
+        #useraccounts,
+        #kernel {
+            margin-bottom: auto;
+            margin-top: auto;
+        }
     }
 }
 
