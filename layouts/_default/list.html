@@ -12,17 +12,15 @@
 	<div class="container">
 		<div class="row">
 			{{ range (.Paginator 6).Pages }}
-			<div class="col-md-2">
-				<article class="blog-post">
-					{{ with .Params.image }}
-					<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
-					<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-					<p>
-						{{ .Summary }}
-					</p>
-					<a href="{{ .Permalink }}" class="btn btn-success">Read More</a>
-				</article>
-			</div>
+			<article class="blog-post">
+				{{ with .Params.image }}
+				<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
+				<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+				<p>
+					{{ .Summary }}
+				</p>
+				<a href="{{ .Permalink }}" class="btn btn-success">Read More</a>
+			</article>
 			{{ end }}
 		</div>
 		<div class="col-12 text-center">
