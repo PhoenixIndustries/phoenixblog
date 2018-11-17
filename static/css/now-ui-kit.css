@@ -5475,4 +5475,24 @@ Created using IcoMoon - icomoon.io
     margin-top: 5px;
 }
 
+/* Blog */
+.blog-post{
+  margin-bottom: 50px;
+}
+
+.blog-post img{
+  margin-bottom: 15px;
+}
+.blog-post p{
+  margin: 15px 0 20px;
+}
+
+.post-title{
+  color: #655E7A;
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=now-ui-kit.css.map */
