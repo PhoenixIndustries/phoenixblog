@@ -46,31 +46,24 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "English User Guide"
-    url = "/support/user-guide-en/"
+    name = "User Guide"
+    url = "/support/user-guide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
     weight = 2
-    parent = "support"
-
-[[menu.main]]
-    name = "Guide De L'utilisateur Français"
-    url = "/support/user-guide-fr/"
-    pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
-    weight = 3
     parent = "support"
 
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 4
+    weight = 3
     parent = "support"
 
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
-    weight = 5
+    weight = 4
     parent = "support"
 
 [[menu.main]]
