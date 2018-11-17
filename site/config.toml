@@ -47,7 +47,9 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "User Guide"
-    url = "/support/user-guide/"
+    # fixme: with pdf show seems not to be ready yet ...
+    #url = "/support/user-guide/"
+    url = "/support/userguide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
     weight = 2
     parent = "support"
