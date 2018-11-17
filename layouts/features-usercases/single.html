@@ -99,7 +99,6 @@
 	{{ range (where .Site.Pages ".Type" "usercase-post") }}
 			<div class="offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-lg-4 col-xl-3">
 				<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
-<<<<<<< HEAD
 					<h2>
 						{{ .Params.name }}
 					</h2>
@@ -114,33 +113,6 @@
 						</li>
 					{{ end }}
 				</ul>
-=======
-					<div style="font-weight: 500; font-size: 18px; height: 20px;">
-						{{ .Params.name }}
-					</div>
-					{{ $.Params.linktext }}
-				</a>
-				<table>
-					<thead>
-					<tr>
-					<th></th>
-					<th></th>
-					</tr>
-					</thead>
-
-					<tbody>
-					{{ range first 3 .Params.softwarepresented }}
-						<tr>
-							<td><img src="/img/actions/install.svg" alt="Icon" style="width: 24px; height: 24px;"/></td>
-							<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
-								<strong><a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a></strong><br/>
-								{{ .usage }}
-							</td>
-						</tr>
-					{{ end }}
-				</tbody>
-				</table>
->>>>>>> 2139dd203e5c6d3ef831cb49abf7bec0b4337814
 			</div>
 	{{end}}
 </div>
