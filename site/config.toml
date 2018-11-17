@@ -13,6 +13,11 @@ assetDir = "../static/"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+[[menu.main]]
+    name = "News"
+    url = "/news/"
+    pre = ""
+    weight = 0
 
 [[menu.main]]
     name = "Download"
