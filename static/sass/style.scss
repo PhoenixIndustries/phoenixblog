@@ -426,12 +426,18 @@ p, .call-to-action {
     }
 }
 
-.user-guide {
-    .container:nth-child(1) {
-        text-align: center;
+.user-guide-en, .user-guide-fr {
+     
+    .section {
+        padding-top: 0px;
     }
-    li {
-        text-align: left;
+    .page-header {
+        height: 62px;
+    }
+    footer {
+        position: fixed;
+        bottom: 0 !important;
+        width: 100% !important;
     }
 }
 
