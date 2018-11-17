@@ -7,4 +7,4 @@ right = true
 navsection = "support"
 +++
 
-<embed type="application/pdf" width="100%" height="1200px" src="http://cznic.dl.osdn.jp/storage/g/m/ma/manjaro/Manjaro-User-Guide.pdf"></embed>
+<embed type="application/pdf" width="100%" height="1200px" src="https://osdn.net/frs/redir.php?m=rwthaachen&f=%2Fstorage%2Fg%2Fm%2Fma%2Fmanjaro%2FManjaro-User-Guide.pdf"></embed>

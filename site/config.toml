@@ -60,18 +60,18 @@ assetDir = "../static/"
     parent = "support"
 
 [[menu.main]]
+    name = "Forum"
+    url = "https://forum.manjaro.org/"
+    pre = "<i class='now-ui-icons business_bank'></i>"
+    weight = 4
+    parent = "support"
+
+[[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 5
     parent = "support"
-
-[[menu.main]]
-    name = "Forum"
-    url = "https://forum.manjaro.org/"
-    pre = ""
-    weight = 4
-
 
 [[menu.main]]
     name = "Shop"
