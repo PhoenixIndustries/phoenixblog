@@ -28,7 +28,7 @@
                 <hr/>
                 <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
               </div>
-              <div class="bottom">
+              <div class="bottom text-center">
                 <div style="margin-top: auto; margin-bottom: 10px;">
                   <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x64_button }}</a>
                   <p>{{ with .Params.download_x64_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
