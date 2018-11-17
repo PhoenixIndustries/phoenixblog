@@ -52,20 +52,50 @@ assetDir = "../static/"
     weight = 3
     parent = "support"
 
-
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
-    weight = 4
+    weight = 5
     parent = "support"
-
 
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = ""
+    weight = 4
+
+
+[[menu.main]]
+    name = "Shop"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "shop"
+
+
+[[menu.main]]
+    name = "Merc & Accessories"
+    url = "/shop/"
+    pre = ""
+    weight = 1
+    parent = "shop"
+
+
+[[menu.main]]
+    name = "Hardware - Bladebook"
+    url = "/shop-bladebook/"
+    pre = ""
+    weight = 2
+    parent = "shop"
+
+
+[[menu.main]]
+    name = "Hardware - Spitfire"
+    url = "/shop-spitfire/"
+    pre = ""
     weight = 3
+    parent = "shop"
 
 
 [[menu.main]]
@@ -244,8 +274,24 @@ assetDir = "../static/"
     identifier = "copyright"
     name = "2018 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
-    url = "https://spdx.org/licenses/MIT"
+    url = "/"
     weight = 3
+
+
+[[menu.footer]]
+    identifier = "terms"
+    name = "Terms of Use"
+    pre = ""
+    url = "/terms-of-use/"
+    weight = 4
+    
+
+[[menu.footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
+    weight = 5
 
 
 [params]

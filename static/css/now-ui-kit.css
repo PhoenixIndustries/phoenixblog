@@ -3483,11 +3483,11 @@ Created using IcoMoon - icomoon.io
 }
 
 .download-edition-grid {
-
+  text-align: center;
 }
 
 .download-edition-grid .flex-item .content {
-  width: 100%;
+  width: 90%;
   text-align: center;
   border: 1px solid #ddd;
   display: flex;
