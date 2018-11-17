@@ -67,6 +67,11 @@ assetDir = "../static/"
     pre = ""
     weight = 3
 
+[[menu.main]]
+    name = "Shop"
+    url = "/shop/"
+    pre = ""
+    weight = 4
 
 [[menu.main]]
     name = "Packages"
