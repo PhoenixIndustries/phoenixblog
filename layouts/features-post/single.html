@@ -7,8 +7,6 @@
 {{ end }}
 
 {{ define "body" }}
-<div class="row">
-  <div class="col-md-8 ml-auto mr-auto text-left">
 	<section>
 		<div class="container">
 			<div class="row">
@@ -17,12 +15,10 @@
 					<hr class="star-primary" /> -->
 
 					<div class="features-post">
-						<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
+						{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-  </div>   
-</div>
 {{ end }}
