@@ -270,9 +270,22 @@ assetDir = "../static/"
     identifier = "copyright"
     name = "2018 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
-    url = "https://spdx.org/licenses/MIT"
+    url = "/"
     weight = 3
 
+[[menu.footer]]
+    identifier = "terms"
+    name = "Terms of Use"
+    pre = ""
+    url = "/terms-of-use/"
+    weight = 4
+
+[[menu.footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
+    weight = 5
 
 [params]
     background = "/img/header.jpg"
