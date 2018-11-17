@@ -49,6 +49,13 @@ assetDir = "../static/"
     name = "User Guide"
     url = "/support/userguide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
+    weight = 2
+    parent = "support"
+
+[[menu.main]]
+    name = "Forum"
+    url = "https://forum.manjaro.org/"
+    pre = "<i class='now-ui-icons business_bank'></i>"
     weight = 3
     parent = "support"
 
