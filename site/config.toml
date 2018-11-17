@@ -46,8 +46,15 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "User Guide"
-    url = "/support/userguide/"
+    name = "English User Guide"
+    url = "/support/user-guide-en/"
+    pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
+    weight = 2
+    parent = "support"
+
+[[menu.main]]
+    name = "Guide De L'utilisateur Français"
+    url = "/support/user-guide-fr/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
     weight = 3
     parent = "support"
