@@ -339,17 +339,8 @@ p, .call-to-action {
 
 .download-page {
     
-    table {
-        margin: 0 auto;
-        position: relative;
-        border-collapse: separate;
-        border-spacing: 0px 8px;
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-    table a {
-        color: $green;
-        font-weight: bold;
+    ul li h2 {
+        margin-bottom: 0px;
     }
     
     .editions-tag-checkbutton label {
@@ -387,20 +378,24 @@ p, .call-to-action {
     }
     .header-link {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }       
 }
 
 .useful-for-everyone {
-    table {
-        margin: 0 auto;
-        margin-bottom: 60px;
+    .row h2 {
+       margin-bottom: 0px;
     }
 }
 
 .xl-icon {
     height: 150px;
     width: 150px;
+}
+
+.sm-icon {
+    width: 25px;
+    height: 25px;
 }
 
 .under-your-control {
