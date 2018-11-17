@@ -47,23 +47,23 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "User Guide"
-    url = "/support/userguide/"
+    url = "/support/user-guide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
-    weight = 3
+    weight = 2
     parent = "support"
 
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 4
+    weight = 3
     parent = "support"
 
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
-    weight = 5
+    weight = 4
     parent = "support"
 
 [[menu.main]]
@@ -73,12 +73,14 @@ assetDir = "../static/"
     weight = 4
     identifier = "shop"
 
+
 [[menu.main]]
     name = "Merc & Accessories"
     url = "/shop/"
     pre = ""
     weight = 1
     parent = "shop"
+
 
 [[menu.main]]
     name = "Hardware - Bladebook"
@@ -87,12 +89,14 @@ assetDir = "../static/"
     weight = 2
     parent = "shop"
 
+
 [[menu.main]]
     name = "Hardware - Spitfire"
     url = "/shop-spitfire/"
     pre = ""
     weight = 3
     parent = "shop"
+
 
 [[menu.main]]
     name = "Packages"
@@ -273,12 +277,14 @@ assetDir = "../static/"
     url = "/"
     weight = 3
 
+
 [[menu.footer]]
     identifier = "terms"
     name = "Terms of Use"
     pre = ""
     url = "/terms-of-use/"
     weight = 4
+    
 
 [[menu.footer]]
     identifier = "privacy"
@@ -286,6 +292,7 @@ assetDir = "../static/"
     pre = ""
     url = "/privacy-policy/"
     weight = 5
+
 
 [params]
     background = "/img/header.jpg"
