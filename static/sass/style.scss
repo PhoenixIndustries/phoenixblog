@@ -406,6 +406,29 @@ p, .call-to-action {
     }       
 }
 
+.kde---stable, .xfce---stable, .gnome---stable {
+    img[src="/img/editions/kde.jpg"] {
+        margin-bottom: 30px;
+    }
+    img[src="/img/editions/xfce.jpg"] {
+        margin-bottom: 30px;
+    }
+    img[src="/img/editions/gnome.jpg"] {
+        margin-bottom: 30px;
+    }
+}
+.kde---development-preview, .xfce---development-preview, .gnome---development-preview {
+    img[src="/img/editions/kde-preview.jpg"] {
+        margin-bottom: 30px;
+    }
+    img[src="/img/editions/xfce-preview.jpg"] {
+        margin-bottom: 30px;
+    }
+    img[src="/img/editions/gnome-preview.jpg"] {
+        margin-bottom: 30px;
+    }
+}
+
 .useful-for-everyone {
     .row h2 {
        margin-bottom: 0px;

@@ -15,7 +15,7 @@ TargetGroup = "For testers and developers"
 Thumbnail = "xfce-preview.jpg"
 Version = "18.0.1-pre2"
 date = "2018-10-09T00:16:00+02:00"
-title = "Manjaro XFCE Edition (Developer Preview)"
+title = "XFCE - Development Preview"
 type="download-edition"
 weight = 0
 +++

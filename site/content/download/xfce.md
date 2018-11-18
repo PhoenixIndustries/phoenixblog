@@ -15,7 +15,7 @@ TargetGroup = "For people who want a reliable and fast desktop"
 Thumbnail = "xfce.jpg"
 Version = "18.0"
 date = "2018-08-18T18:17:00+02:00"
-title = "Manjaro XFCE Edition"
+title = "XFCE - Stable"
 type="download-edition"
 weight = 0
 +++
