@@ -53,20 +53,9 @@
     
       <!-- Code highlighting -->
     {{ if  not .Params.nocode }}
-      {{ $v := .Site.Params.highlight_version | default "9.9.0" }}
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/highlight.min.js"></script>
-
-      {{ range .Site.Params.highlight_languages }}
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
-      {{ end }}
-
-      {{ range .Params.highlight_languages }}
-      {{/* Do not double-include languages that are in both .Site.Params and .Params.
-           If Hugo ever grows a "union" function for set union, this range clause can be merged with the one above. */}}
-        {{ if not (in $.Site.Params.highlight_languages .) }}
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
-        {{ end }}
-      {{ end }}
+      <link rel="stylesheet" href="/js/plugin/highlight//styles/default.css">
+      <script src="/js/plugin/highlight/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
       <script>hljs.initHighlightingOnLoad();</script>
     {{ end }}
 
@@ -75,6 +64,6 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
     </script>
-    <script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <script async src="/js/plugin/MathJax.js?config=TeX-AMS_CHTML"></script>
     {{ end }}
     
