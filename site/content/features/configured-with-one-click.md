@@ -6,6 +6,7 @@ title = "Configured With One Click"
 type = "features-post"
 weight = 1
 +++
+
 <div class="row">
 <p class="ml-auto mr-auto col-md-8">
 Manjaro comes with it's own tools that help you configuring your computer the way you want - without searching for scattered settings across the whole system and looking things up on the internet. Just open the system control panel, open the tool and select what you want.
@@ -13,7 +14,8 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
 </div>
 
 <div class="row">
-<section id="pamac" class="col-md-6 offset-md-1">
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_pamac.png"/></div>
+<section id="pamac" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div>
     <h3>Choose, install, finished!</h3>
@@ -21,9 +23,10 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     </div>
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_pamac.png"/></div>
 
-<section id="locale" class="col-md-6 offset-md-1">
+
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_locale.png"/></div>
+<section id="locale" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div >
     <h3>Manjaro speaks your language</h3>
@@ -33,9 +36,10 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_locale.png"/></div>
 
-<section id="mhwd" class="col-md-6 offset-md-1">
+
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_mhwd.png"/></div>
+<section id="mhwd" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div>
     <h3>New graphics card? One click and it's done</h3>
@@ -43,9 +47,9 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     </div>
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_mhwd.png"/></div>
 
-<section id="timeanddate" class="col-md-6 offset-md-1">
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_timeanddate.png"/></div>
+<section id="timeanddate" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div>
     <h3>Traveling a lot?</h3>
@@ -53,9 +57,9 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     </div>
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_timeanddate.png"/></div>
 
-<section id="useraccounts" class="col-md-6 offset-md-1">
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_useraccounts.png"/></div>
+<section id="useraccounts" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div>
     <h3>Divide and conquer</h3>
@@ -63,9 +67,9 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     </div>
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_useraccounts.png"/></div>
 
-<section id="kernel" class="col-md-6 offset-md-1">
+<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/manjaro_kernels.png"/></div>
+<section id="kernel" class="col-md-7">
   <div class="feature-screenshot-fan">
     <div>
     <h3>Switch the core with one click</h3>
@@ -74,5 +78,4 @@ Manjaro comes with it's own tools that help you configuring your computer the wa
     </div>
   </div>
 </section>
-<div class="col-md-4"><img src="/img/applications/manjaro_kernels.png"/></div>
 </div>
