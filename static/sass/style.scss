@@ -335,8 +335,10 @@ p, .call-to-action {
         margin-bottom: 0px;
         text-align: left;
     }
-    .flex-item img {
-        width: 200px !important;
+    .flex-item {
+        img {
+            width: 140px !important;
+        }
     }
     .flex-item:nth-child(2) h3 {
         margin-top: 4px !important;
@@ -347,6 +349,9 @@ p, .call-to-action {
     }
     p:nth-child(7) {
         text-align: center;
+    }
+    .section {
+        padding: 0;
     }
 }
 

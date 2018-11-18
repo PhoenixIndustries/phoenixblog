@@ -3,9 +3,7 @@ date = "2016-09-04T15:50:15+02:00"
 draft = false
 title = "Donate"
 type = "donate"
-button_donate_text = "Donate now"
-donate_paypal_title = "Use PayPal"
-donate_manually_title = "Use bank transfer"
+button_donate_text = "Using Paypal"
 +++
 
 There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help out covering some unavoidable cost, giving developers time and freedom to improve Manjaro's features and to allow spreading word about Manjaro by attending conferences.
