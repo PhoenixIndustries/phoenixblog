@@ -16,17 +16,17 @@
     <!--  Essential META Tags -->
 
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta name="keywords" content="linux, manjaro, open source, free operating system, linux distribution, manjaro linux">
+    <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 
     <meta property="og:title" content="Manjaro - {{ .Title }}">
-    <meta property="og:description" content="Manjaro Linux is a linux distribution which is based on arch linux.">
-    <meta property="og:image" content="todo - http://example.com/thumbnail.jpg">
+    <meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta name="twitter:card" content="todo - summary_large_image">
+    <meta name="twitter:card" content="{{ .Params.twitter_summary }}">
     <!--  Non-Essential, But Recommended -->
 
-    <meta property="og:site_name" content="Manjaro Linux.">
-    <meta name="twitter:image:alt" content="todo - Alt text for image">
+    <meta property="og:site_name" content="Manjaro">
+    <meta name="twitter:image:alt" content="Manjaro {{.Title}}">
     <!--  todo - Non-Essential, But Required for Analytics 
 
     <meta property="fb:app_id" content="your_app_id" />
