@@ -95,8 +95,7 @@ a {
 }
 
 .section {
-    padding: 0px;
-
+    
     p {
         text-align: justify;
     }
@@ -361,6 +360,9 @@ p, .call-to-action {
         width: 170px;
         min-width: 170px;
     }
+    .section {
+        padding: 0;
+    }
 }
 
 .support-page {
@@ -374,6 +376,9 @@ p, .call-to-action {
     img {
         margin-right: 5px;
         margin-top: -5px;
+    }
+    .section {
+        padding: 0;
     }
 }
 
@@ -400,6 +405,9 @@ p, .call-to-action {
     .row h2 {
        margin-bottom: 0px;
     }
+    .section {
+        padding: 0;
+    }
 }
 
 .xl-icon {
@@ -417,9 +425,12 @@ p, .call-to-action {
     h3 {
         margin-bottom: 0px;
     }
+    .section {
+        padding: 0;
+    }
 }
 
-.first-steps, .user-guide-en, .user-guide-fr {
+.first-steps {
     
     .section {
         padding-top: 40px;
@@ -433,6 +444,9 @@ p, .call-to-action {
     p:nth-child(2) {
         text-align:center;
     }
+    .section {
+        padding: 0;
+    }
 }
 
 .user-guide {
@@ -441,6 +455,9 @@ p, .call-to-action {
     }
     li {
         text-align: left;
+    }
+    .section {
+        padding: 0;
     }
 }
 
@@ -491,6 +508,9 @@ p, .call-to-action {
     }
     .row section, .row img {
         margin-bottom: 60px;
+    }
+    .section {
+        padding: 0;
     }
 }
 

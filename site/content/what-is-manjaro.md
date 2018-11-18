@@ -1,6 +1,7 @@
 ---
 #background: "img/bg4.jpg"
 title: "What is Manjaro"
+type: "page"
 
 ---
 
