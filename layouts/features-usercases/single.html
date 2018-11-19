@@ -104,8 +104,9 @@
 					</h2>
 					{{ $.Params.linktext }}
 				</a>
-				{{ range first 3 .Params.softwarepresented }}
-				<ul class="list-group">
+				
+				<ul class="list-group card">
+						{{ range first 3 .Params.softwarepresented }}
 						<li class="list-group-item">
 							<img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>
 							<a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a><br>
