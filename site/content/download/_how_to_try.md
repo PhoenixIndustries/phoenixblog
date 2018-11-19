@@ -4,9 +4,9 @@ type="download-how-to-try"
 
 <!--- ## Try it now
 --- --->
-You can try Manjaro without changing your running system by putting it on a USB stick or on a DVD. If you decide to install Manjaro, you can do it directly from this live-system.
+You can try Manjaro <strong>without modifying your current operating system,</strong> run Manjaro from a USB stick or a DVD. Later on if you decide to install Manjaro, you can do it directly from the live system.
 <div class="row">
- <ul class="list-group col-md-12 offset-xl-1 col-xl-10">
+ <ul class="list-group card col-md-12 offset-xl-1 col-xl-10">
  <li class="list-group-item text-center"><h2>Ways you can try Manjaro</h2></li>
     <li class="list-group-item">
    <img src="/img/try/virtual-machine.svg" class="icon">Using a [virtual machine](/support/firststeps#branching-paths) within your current operating system

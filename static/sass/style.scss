@@ -368,6 +368,13 @@ p, .call-to-action {
     .section {
         padding: 0;
     }
+    ul.card {
+        padding-right:0 !important;
+    }
+    li img {
+        margin-right: 8px;
+    }
+
 }
 
 .support-page {
