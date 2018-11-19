@@ -57,19 +57,22 @@ assetDir = "../static/"
     weight = 2
     parent = "support"
 
+
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 3
+    weight = 4
     parent = "support"
+
 
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
-    weight = 4
+    weight = 5
     parent = "support"
+    
 
 [[menu.main]]
     name = "Shop"
@@ -81,7 +84,7 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Merc & Accessories"
-    url = "/shop/"
+    url = "https://shop.spreadshirt.de/manjaro/"
     pre = ""
     weight = 1
     parent = "shop"
@@ -89,7 +92,7 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Hardware - Bladebook"
-    url = "/shop-bladebook/"
+    url = "https://shop.vivare.ch/index.php?id_product=22&id_product_attribute=0&rewrite=yepo-notebook&controller=product&id_lang=1"
     pre = ""
     weight = 2
     parent = "shop"
@@ -97,7 +100,7 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Hardware - Spitfire"
-    url = "/shop-spitfire/"
+    url = "https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire"
     pre = ""
     weight = 3
     parent = "shop"

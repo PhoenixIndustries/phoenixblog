@@ -15,7 +15,7 @@ TargetGroup = "For people who want a modern and very flexible desktop"
 Thumbnail = "kde.jpg"
 Version = "18.0"
 date = "2018-08-18T17:36:00+02:00"
-title = "Manjaro KDE Edition"
+title = "KDE - Stable"
 type="download-edition"
 weight = 1
 +++

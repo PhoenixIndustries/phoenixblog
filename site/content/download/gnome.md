@@ -15,7 +15,7 @@ TargetGroup = "For people who want a very modern and simple desktop"
 Thumbnail = "gnome.jpg"
 Version = "18.0"
 date = "2018-10-29T21:36:00+02:00"
-title = "Manjaro Gnome Edition"
+title = "Gnome - Stable"
 type="download-edition"
 weigth = ""
 +++
