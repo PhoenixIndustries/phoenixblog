@@ -12,12 +12,15 @@
 	<div class="container">
 		<div class="row">
 			{{ range (.Paginator 6).Pages }}
-			<article class="blog-post col-md-8 offset-md-2 col-sm-12">
+			<article class="blog-post col-md-6 col-sm-12">
 				<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-				<p>
+				<p class="card">
 					{{ .Summary }}
+					<br>
+					<br>
+					<a href="{{ .Permalink }}" class="link">Read More</a>
 				</p>
-				<a href="{{ .Permalink }}" class="btn btn-success">Read More</a>
+				
 			</article>
 			{{ end }}
 		</div>

@@ -504,10 +504,21 @@ p, .call-to-action {
         padding-top: 0;
     }
     .post-title {
-        color: $green !important;
+        color: #ffffff !important;
+        background-color: $green;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 0;
     }
-    .blog-post a.btn {
-        float: right;
+    .blog-post {
+            a.link {
+               float: right;
+            }
+            margin-bottom: 0;
+    }
+    .card {
+        padding: 20px;
+        margin-top: 0;
     }
 }
 
