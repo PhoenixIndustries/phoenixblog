@@ -506,6 +506,9 @@ p, .call-to-action {
     .post-title {
         color: $green !important;
     }
+    .blog-post a.btn {
+        float: right;
+    }
 }
 
 .configured-with-one-click,
