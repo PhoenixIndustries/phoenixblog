@@ -496,6 +496,18 @@ p, .call-to-action {
     }
 }
 
+.news {
+    .section {
+        padding-top: 30px;
+    }
+    .blog {
+        padding-top: 0;
+    }
+    .post-title {
+        color: $green !important;
+    }
+}
+
 .configured-with-one-click,
 .under-your-control,
  {
