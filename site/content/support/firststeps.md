@@ -18,7 +18,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 
 |   |   |
 |---|---|
-| ![Icon](/img/try/virtual-machine.svg) | **Using a virtual machine** |
+| <img class="icon" src="/img/try/virtual-machine.svg"> | **Using a virtual machine** |
 |                                                | + Leaves your current system untouched |
 |                                                | + Experiment without breaking something |
 |                                                | + Work parallel with Manjaro and your current system |
@@ -27,7 +27,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 |                                                | |
 |                                                | **[Find out how this works](#using-a-virtual-machine)** |
 |   |   |
-| ![Icon](/img/try/live-boot.svg) | **Only using the live-system**[¹](#glossary) |
+| <img class="icon" src="/img/try/live-boot.svg"> | **Only using the live-system**[¹](#glossary) |
 |                                                | + Leaves your current system untouched unless you modify it manually |
 |                                                | + Experiment without breaking something |
 |                                                | + All settings are stored on the medium - take it everywhere you want (USB-Drive only) |
@@ -35,7 +35,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 |                                                | |
 |                                                | **[Find out how this works](#making-a-live-system)** |
 |   |   |
-| ![Icon](/img/try/install.svg) | **Install Manjaro** |
+| <img class="icon" src="/img/try/install.svg"> | **Install Manjaro** |
 |                                                | + Maximum performance and support |
 |                                                | + Install it alongside your current system if you want |
 |                                                | - You need to prepare (e.g. backup your data) as with every installation of an operating system|
@@ -50,9 +50,9 @@ A virtual machine is a computer that runs "in" your current computer. If you jus
 
 |   |   |
 |---|---|
-| ![Icon](/img/actions/download.svg) | **1. Download an application that allows creating virtual machines and install it** |
+| <img class="icon" src="/img/actions/download.svg"> | **1. Download an application that allows creating virtual machines and install it** |
 |                                             | You can use for example [VirtualBox](https://www.virtualbox.org/), [VmWare Player](http://www.vmware.com/) or other software |
-| ![Icon](/img/actions/vm.svg) | **2. Create a virtual machine** |
+| <img class="icon" src="/img/actions/vm.svg"> | **2. Create a virtual machine** |
 |                                             | ... for "Arch Linux" if Manjaro is not available as option |                                              
 |                                             | ... with at least 20-30GB virtual harddrive space |                                              
 |                                             | ... with at least 2GB RAM/Memory |                                              
@@ -60,13 +60,13 @@ A virtual machine is a computer that runs "in" your current computer. If you jus
 |                                             | ... give the machine at least 2 CPU cores |     
 |                                             | ... increase the graphics memory |     
 |                                             | ... enable 3D acceleration if possible | 
-| ![Icon](/img/try/install.svg) | **3. Load Manjaro** |
+| <img class="icon" src="/img/try/install.svg"> | **3. Load Manjaro** |
 |                                             | • Start the virtual machine and select the Manjaro ISO to be loaded into the virtual DVD drive | 
 |                                             | • Manjaro will now boot. Select Manjaro (Free drivers) or leave it until it's automatically selected |
 |                                             | • Manjaro now boots into the live environment |
-| ![Icon](/img/features/installation.svg) | **4. Install Manjaro into the virtual machine** |
+| <img class="icon" src="/img/features/installation.svg"> | **4. Install Manjaro into the virtual machine** |
 |                                             | **[Find out how this works](#install-manjaro)** |
-| ![Icon](/img/actions/settings.svg) | **5. Finish the process** |
+| <img class="icon" src="/img/actions/settings.svg"> | **5. Finish the process** |
 |                                             | • Go into the settings of the virtual machine and unload the Manjaro ISO |
 |   |   |
 
@@ -81,35 +81,35 @@ To be able to install or try Manjaro on your computer, you need to put it on a D
 ### Create a bootable USB-Stick
 |   |   |
 |---|---|
-| ![Icon](/img/actions/download.svg) | **1. Download an application that is able to create a bootable USB-Drive** |
+| <img class="icon" src="/img/actions/download.svg"> | **1. Download an application that is able to create a bootable USB-Drive** |
 |                                             | You can use for example [ImageWriter](https://launchpad.net/win32-image-writer/), [Rufus](https://rufus.akeo.ie/) or other software. See our [wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) for more information.  |
-| ![Icon](/img/try/live-boot.svg)     | **2. Select the ISO and the stick and put Manjaro onto it** |
+| <img class="icon" src="/img/try/live-boot.svg">     | **2. Select the ISO and the stick and put Manjaro onto it** |
 |                                             | Please don't forget to backup the data of your stick before doing this. |
 |                                             | If you need more information, just visit our [Wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) |
-| ![Icon](/img/actions/boot.svg)     | **3. Boot from USB** |
+| <img class="icon" src="/img/actions/boot.svg">     | **3. Boot from USB** |
 |                                             | **[Find out how this works](#booting-into-the-live-environment)**   |
 
 
 ### Burn a DVD
 |   |   |
 |---|---|
-| ![Icon](/img/actions/download.svg) | **1. Download an application that is able to burn a disk** |
+| <img class="icon" src="/img/actions/download.svg"> | **1. Download an application that is able to burn a disk** |
 |                                             | You can use for example [DeepBurner](http://www.deepburner.com/), or if available the software that comes with your operating system |
-| ![Icon](/img/actions/burn.svg)     | **2. Burn the Manjaro ISO to the DVD** |
+| <img class="icon" src="/img/actions/burn.svg">     | **2. Burn the Manjaro ISO to the DVD** |
 |                                             | If you need more information, just visit our [Wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) |
-| ![Icon](/img/actions/boot.svg)     | **3. Boot from DVD** |
+| <img class="icon" src="/img/actions/boot.svg">     | **3. Boot from DVD** |
 |                                             | **[Find out how this works](#booting-into-the-live-environment)**   |
 
 ### Booting into the Live-System
 |   |   |
 |---|---|
-| ![Icon](/img/actions/boot.svg)     | **1. Boot from USB or DVD** |
+| <img class="icon" src="/img/actions/boot.svg">     | **1. Boot from USB or DVD** |
 |                                             | If you are lucky, just have to plug-in the drive or put the DVD into the tray and restart your computer. |
 |                                             | But sometimes you need to configure your system to allow this.  Then you may find help here:|
 |                                             | • [How to Boot Your Computer From a Disc or USB Drive](https://www.howtogeek.com/129815/beginner-geek-how-to-change-the-boot-order-in-your-computers-bios/)
 |                                             | • [BIOS and UEFI - Manjaro Wiki](https://wiki.manjaro.org/index.php?title=BIOS_and_UEFI) |
 |                                             | • [Manjaro User Guide](/support/userguide/)   |
-| ![Icon](/img/actions/settings.svg)     | **2. Choose the drivers** |
+| <img class="icon" src="/img/actions/settings.svg">     | **2. Choose the drivers** |
 |                                             | If you boot into the live-system, you can choose between "free" and "proprietary" drivers. |
 |                                             | • Choose "proprietary" if you use a Nvidia graphics card or need wireless  |
 |                                             | • Choose "free" if you are using a virtual machine or know that everything will work without proprietary drivers  |
@@ -123,16 +123,16 @@ There are many different ways to install Manjaro and the process depends heavily
 
 |   |   |
 |---|---|
-| ![Icon](/img/actions/install.svg)  | **1. Start the installer** |
+| <img class="icon" src="/img/actions/install.svg">  | **1. Start the installer** |
 |                                             | If you boot into the live-system, there's a welcome-window that has an option "Install" or "Installation using Calamares". Click on this option to start the installer. |
 |                                             | If you closed the welcome-window, you can find it in the application menu as "Manjaro Welcome". |
-| ![Icon](/img/actions/settings.svg)  | **2. Put in your data** |
+| <img class="icon" src="/img/actions/settings.svg">  | **2. Put in your data** |
 |                                             | Insert your timezone, preferred keyboard layout and language. |
-| ![Icon](/img/actions/partition.svg)  | **3. Determine where Manjaro should be installed** |
+| <img class="icon" src="/img/actions/partition.svg">  | **3. Determine where Manjaro should be installed** |
 |                                             | If you use a virtual machine or want to wipe your whole system (keep in mind that if you use a virtual machine, you only wipe the machine, not your actual computer) choose "erase disk". |
 |                                             | Otherwise the installer offers plenty of options such as installing Manjaro alongside your current operating system. Experienced users also can partition manually. |
 |                                             | We recommend to take a look at the [user guide](/support/userguide/) and our [wiki](https://wiki.manjaro.org/index.php?title=BIOS_and_UEFI) to make sure that nothing goes wrong. Also we recommend to make backups of your important data before installing Manjaro. You can do this directly in the live-environment if you forgot it.   |
-| ![Icon](/img/try/install.svg)  | **4. Finish the installation** |
+| <img class="icon" src="/img/try/install.svg">  | **4. Finish the installation** |
 |                                             | • Insert your account data and wait until the installation is finished. You can use the live-environment while doing an installation to maybe watch some videos or browsing the web.|
 |                                             | • Restart your machine |
 
