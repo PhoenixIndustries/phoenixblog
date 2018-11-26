@@ -515,7 +515,13 @@ p, .call-to-action {
         background-color: $green;
         padding: 10px;
         font-size: 18px;
-        margin-bottom: 0;
+        cursor: pointer;
+        
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: underline !important;
+        }
     }
     .blog-post {
             a.link {
