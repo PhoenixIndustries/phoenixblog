@@ -521,6 +521,9 @@ p, .call-to-action {
     }
     .blog {
         padding-top: 0;
+        div.text-center {
+            margin-bottom: 40px;
+        }
     }
     .post-title {
         
@@ -551,6 +554,14 @@ p, .call-to-action {
             right: 10px;
             top: 5px;
         }
+        .btn-group {
+            text-align: center;
+            float: right;
+            .disabled {
+                cursor: default;
+                color: black;
+            }
+        }
     }
     .modal-footer button, &:active, &:hover, &:focus {
         background: $green;
@@ -560,14 +571,6 @@ p, .call-to-action {
     }
     img {
         margin-bottom: 0;
-    }
-    .btn-group {
-        text-align: center;
-        float: right;
-        .disabled {
-            cursor: default;
-            color: black;
-        }
     }
 }
 
