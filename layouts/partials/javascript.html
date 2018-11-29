@@ -11,7 +11,78 @@
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="{{ "js/now-ui-kit.js?v=1.1.0" | relURL }}" type="text/javascript"></script>
 <!-- Contact Script -->
-<script src="{{ "js/contact.js" | relURL }}" type="text/javascript"></script>
+<script src="{{ "js/contact.js" | relURL }}" ></script>
+{{ if eq .Title "News"}}
+<script src="/js/masonry.pkgd.min.js" type="text/javascript"></script>
+<script>
+ $('.row').masonry({
+            itemSelector: '.grid-item'
+        });
+(function () {
+    var feedUrl = "https://forum.manjaro.org/c/announcements.rss"
+    $.get(feedUrl, function(data) {
+    var $XML = $(data);
+    $XML.find("item").each(function(iter) {
+        iter++
+        var $this = $(this),
+            item = {
+                title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
+                category:    $this.find("category").text(),
+                description: $this.find("description").html().replace(/\]]>/g, "").replace("full topic", "in the forum"),
+                date:        $this.find("pubDate").text().replace(/\+0000/g, ""),
+                link:        $this.find("link").text(),
+            };
+        var el = "news" + iter.toString()
+        var shortDesc = item.description
+        var article = `
+        <article class='blog-post ` + el + ` grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
+            <div class="card">
+                <div class="card-body">
+                <time>` + item.date + `</time>
+                <h5 class="card-title">` + item.title + `</h5>
+                <img class="card-img-top img-fluid" src="" alt="Card image cap">
+                <p class="card-text"></p>
+                <div class="btn-group">
+                <button class="btn-sm btn disabled">Read More:</button>
+                <button data-toggle="modal" data-target='#` + el + `' class="btn btn-sm btn-success btn-primary"><a href="#">Here</a></button>
+                <button class="btn btn-success btn-sm btn-primary"><a href="` + item.link + `">Forum</a></button>
+                </div>
+                </div>
+            </div>
+        </article>`
+        
+        var modal = `<div class="modal fade" id="` + el + `" tabindex="-1" role="dialog" aria-labelledby="` + item.title + `" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">` + item.title + `</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">
+                    &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                ` + item.description + `
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        `
+        $(".blog .row").append(article);
+        $("body").append(modal);
+        var shortDesc = $('#' + el + ' .modal-body').text().trim().slice(1, 300);
+        var img = item.description
+        img = $('#' + el + ' .modal-body').find("img").attr("src")
+        $("." + el + " .card-text").append(shortDesc);
+        $("." + el + " .card-img-top").attr("src", img);
+        $(".row").masonry("reloadItems").masonry("layout");
+    });
+});
+})();
+</script>
+{{ end }}
 <script type="text/javascript">
     $(document).ready(function() {
 // hide page title on scroll
@@ -46,68 +117,27 @@
     }
 </script>
 
-    {{ range .Site.Params.custom_js }}
-    <script src="{{ "/js/" | relURL }}{{ . }}"></script>
-    {{ end }}
-    
-    
-      <!-- Code highlighting -->
-    {{ if  not .Params.nocode }}
-      <link rel="stylesheet" href="/js/plugin/highlight//styles/default.css">
-      <script src="/js/plugin/highlight/highlight.pack.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
-      <script>hljs.initHighlightingOnLoad();</script>
-    {{ end }}
-
-    <!-- LaTeX math rendering -->
-    {{ if not .Params.nomath }}
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    <script async src="/js/plugin/MathJax.js?config=TeX-AMS_CHTML"></script>
-    {{ end }}
-    {{ if eq .Title "News"}}
-    <script>
-    (function () {
-        var feedUrl = "https://forum.manjaro.org/c/announcements.rss"
-        $.get(feedUrl, function(data) {
-        var $XML = $(data);
-        $XML.find("item").each(function(iter) {
-            iter++
-            var $this = $(this),
-                item = {
-                    title:       $this.find("title").text().replace(/\[/g, '').replace(/]/g, ' -'),
-                    category:    $this.find("category").text(),
-                    description: $this.find("description").html(),
-                };
-            var modal = "modal" + iter.toString()
-            var layout = `
-            <article class='blog-post col-sm-12 col-md-10 ml-auto mr-auto'>
-            <a class='post-title card ' data-toggle="modal" data-target='#` + modal + `'>` + item.title + `</a>
-            </article>
-            <div class="modal fade" id="` + modal + `" tabindex="-1" role="dialog" aria-labelledby="` + item.title + `" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">` + item.title + `</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                    ` + item.description + `
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            `
-            $(".blog .row").append(layout);
-        });
-    });
-})();          
-</script>
+{{ range .Site.Params.custom_js }}
+<script src="{{ "/js/" | relURL }}{{ . }}"></script>
 {{ end }}
+
+
+<!-- Code highlighting -->
+{{ if  not .Params.nocode }}
+<link rel="stylesheet" href="/js/plugin/highlight//styles/default.css">
+<script src="/js/plugin/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
+<!-- LaTeX math rendering -->
+{{ if not .Params.nomath }}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+<script async src="/js/plugin/MathJax.js?config=TeX-AMS_CHTML"></script>
+{{ end }}
+
+<!-- Feeds -->
+
     
