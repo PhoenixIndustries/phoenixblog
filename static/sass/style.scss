@@ -518,20 +518,19 @@ p, .call-to-action {
             bottom: 4px;
             font-size: 12px;
         }
+        .title-container {
+            margin-top: 62px;
+            text-align: center;
+            .title {
+                font-size: 22px;
+            }
+        }
     }
     .blog {
         padding-top: 0;
+        margin-top: 60px;
         div.text-center {
             margin-bottom: 40px;
-        }
-    }
-    .post-title {
-        
-        cursor: pointer;
-        &:hover,
-        &:active,
-        &:focus {
-            text-decoration: underline !important;
         }
     }
     .blog-post {
@@ -540,9 +539,23 @@ p, .call-to-action {
     .card {
         padding: 20px;
         margin-top: 0;
+        img[src=""] {
+            display: none;
+         }
+         .btn-group {
+            text-align: center;
+            float: right;
+            .disabled {
+                cursor: default;
+                color: black;
+            }
+        }
     }
     .modal-content {
 
+        *:not(button) {
+            font-size: 14px !important;
+        } 
         h1, h2, h3, h4, h5 {
             margin-bottom: 0;
             font-weight: bold !important;
@@ -553,14 +566,6 @@ p, .call-to-action {
         .modal-header button {
             right: 10px;
             top: 5px;
-        }
-        .btn-group {
-            text-align: center;
-            float: right;
-            .disabled {
-                cursor: default;
-                color: black;
-            }
         }
     }
     .modal-footer button, &:active, &:hover, &:focus {
