@@ -6,4 +6,3 @@ type = "news-post"
 weight = 3
 +++
 
-test manual anoucements

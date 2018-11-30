@@ -4,15 +4,15 @@ $('.row').masonry({
 (function () {
 var feeds = [
 "https://forum.manjaro.org/c/announcements.rss",
-"https://forum.manjaro.org/c/announcements/manjaro32.rss",
 "https://forum.manjaro.org/c/manjaro-arm/announcements.rss"
 ]
-var feeds = feeds.values();
 for (var feed of feeds) {
     $.get(feed, function(data) {
+        console.log(data)
     var $XML = $(data);
     $XML.find("item").each(function(iter) {
         iter++
+        
         var $this = $(this),
             item = {
                 title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
@@ -60,10 +60,10 @@ for (var feed of feeds) {
             </div>
         </div>
         `
-        var dateRegex = "/\d{2,4}[\:|\/]\d{1,2}[\:]\d{1,2}|\[|\]|\(|\)|,/g, ''"
-        var oldDate =  $(".blog-post").find("time:first").text().replace(dateRegex)
-        var newDate = item.date.replace(dateRegex)
-        if (oldDate < newDate) {
+        var oldDate =  $(".blog-post").find("time:first").text().replace(/\d{2,4}[\:|\/]\d{1,2}[\:]\d{1,2}|\[|\]|\(|\)|,/g, '');
+        var newDate = item.date.replace(/\d{2,4}[\:|\/]\d{1,2}[\:]\d{1,2}|\[|\]|\(|\)|,/g, '');
+
+       if (oldDate < newDate) {
             $(".blog .row").append(article);
         } else {
             $(".blog .row").prepend(article);
@@ -73,13 +73,10 @@ for (var feed of feeds) {
         var img = item.description
         img = $('#' + el + ' .modal-body').find("img:first").attr("src")
         $("." + el + " .card-text").append(shortDesc);
-        $(".row").masonry("reloadItems").masonry("layout");
         $("." + el + " .card-img-top").attr("src", img);
-        
-        $('.grid img').imagesLoaded( function() {
-           $(".row").masonry("reloadItems").masonry("layout");
-        });
+        $("." + el + " .card-img-top").imagesLoaded( function() {
+            $(".row").masonry("reloadItems").masonry("layout");
+         });
     });
 });
 }})();
-$(".row").masonry("reloadItems").masonry("layout");
