@@ -1,17 +1,19 @@
+$(".navbar-brand").text("Manjaro - news");
 $('.row').masonry({
     itemSelector: '.grid-item'
 });
-(function () {
 var feeds = [
-"https://forum.manjaro.org/c/announcements.rss",
-"https://forum.manjaro.org/c/manjaro-arm/announcements.rss"
-]
-for (var feed of feeds) {
+    "https://forum.manjaro.org/c/announcements.rss",
+    "https://forum.manjaro.org/c/manjaro-arm/announcements.rss"
+    ]
+function feedreader(feed) {
     $.get(feed, function(data) {
-        console.log(data)
     var $XML = $(data);
     $XML.find("item").each(function(iter) {
-        iter++
+        
+        if (feed == feeds[1] && iter > 0) {
+            // pass
+        } else {
         
         var $this = $(this),
             item = {
@@ -30,7 +32,7 @@ for (var feed of feeds) {
                 <div class="card-body">
                 <time>` + item.date + `</time>
                 <h5 class="card-title">` + item.title + `</h5>
-                <img class="card-img-top img-fluid" src="" alt="Post Image" onerror="this.style.opacity='0'">
+                <img class="card-img-top img-fluid" src="#" data-src="" alt="Post Image" onerror="this.style.opacity='0'">
                 <p class="card-text"></p>
                 <div class="btn-group">
                 <button class="btn-sm btn disabled">Read More:</button>
@@ -68,15 +70,27 @@ for (var feed of feeds) {
         } else {
             $(".blog .row").prepend(article);
         }
+        
         $("body").append(modal);
-        var shortDesc = $('#' + el + ' .modal-body').text().trim().slice(1, 300);
+        $('#' + el + ' .modal-body').find(".meta").remove()
+        shortDesc = $('#' + el + ' .modal-body').text().trim().slice(1, 300);
         var img = item.description
         img = $('#' + el + ' .modal-body').find("img:first").attr("src")
         $("." + el + " .card-text").append(shortDesc);
         $("." + el + " .card-img-top").attr("src", img);
         $("." + el + " .card-img-top").imagesLoaded( function() {
             $(".row").masonry("reloadItems").masonry("layout");
+            if (iter == 1) {
+                $(".loader").hide();
+            } 
          });
-    });
-});
-}})();
+    }});
+});};
+feedreader(feeds[1]);
+feedreader(feeds[0]);
+
+
+
+
+
+

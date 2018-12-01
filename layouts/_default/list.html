@@ -5,6 +5,7 @@
 {{ define "body" }}
 
 <section class="blog section">
+		<div class="loader"></div>
 		<div class="row">
 			{{ range (.Paginator 6).Pages }}
 			{{ if .Summary}}

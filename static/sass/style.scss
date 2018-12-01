@@ -53,6 +53,34 @@ $svg-icon-size: 62px;
     font-style: normal; 
 }
 
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid $green;
+    border-right: 5px solid $green;
+    border-bottom: 5px solid $green;
+    border-left: 5px solid transparent;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+    position: fixed;
+    z-index: 1;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 body {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.01em;
@@ -504,6 +532,12 @@ p, .call-to-action {
 }
 
 .news {
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
     .section {
         padding-top: 30px;
         *:not(button) {
@@ -568,8 +602,11 @@ p, .call-to-action {
             top: 5px;
         }
     }
-    .modal-footer button, &:active, &:hover, &:focus {
+    .modal-footer button {
+        
+        &:active, &:hover, &:focus {
         background: $green;
+        }
     }
     button a {
         color: #FFFFFF;
