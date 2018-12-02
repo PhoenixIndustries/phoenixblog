@@ -53,6 +53,33 @@ $svg-icon-size: 62px;
     font-style: normal; 
 }
 
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 body {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.01em;
@@ -81,7 +108,7 @@ h2, h3, h4, h5 {
 }
 
 h1:not(.title), h2, h3, h4, h5 {
-    font-weight: lighter !important;
+    font-weight: lighter;
 }
 
 a {
@@ -185,6 +212,10 @@ p, .call-to-action {
         .row section p {
             margin-bottom: 0px;
         }
+    }
+    .loader {
+        right: 35px;
+        margin-top: 1px;
     }
 }
 
@@ -504,28 +535,90 @@ p, .call-to-action {
 }
 
 .news {
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
     .section {
         padding-top: 30px;
+        *:not(button) {
+            font-size: 14px;
+        }
+        .btn {
+            float: right;
+        }
+        time {
+            position: absolute;
+            right: 40px;
+            bottom: 4px;
+            font-size: 12px;
+        }
+        .title-container {
+            margin-top: 62px;
+            text-align: center;
+            .title {
+                font-size: 22px;
+            }
+        }
     }
     .blog {
         padding-top: 0;
-    }
-    .post-title {
-        color: #ffffff !important;
-        background-color: $green;
-        padding: 10px;
-        font-size: 18px;
-        margin-bottom: 0;
+        margin-top: 60px;
+        div.text-center {
+            margin-bottom: 40px;
+        }
     }
     .blog-post {
-            a.link {
-               float: right;
-            }
             margin-bottom: 0;
     }
     .card {
         padding: 20px;
         margin-top: 0;
+        img[src=""] {
+            display: none;
+        }
+        .btn-group {
+            text-align: center;
+            float: right;
+            .disabled {
+                cursor: default;
+                color: black;
+            }
+        }
+        a:not([href]):hover {
+            text-decoration: underline;
+        }
+    }
+    .modal-content {
+
+        *:not(button) {
+            font-size: 14px !important;
+        } 
+        h1, h2, h3, h4, h5 {
+            margin-bottom: 0;
+            font-weight: bold !important;
+        }
+        p {
+            margin-bottom: 1.2rem;
+        }
+        .modal-header button {
+            right: 10px;
+            top: 5px;
+        }
+    }
+    .modal-footer button {
+        
+        &:active, &:hover, &:focus {
+        background: $green;
+        }
+    }
+    button a {
+        color: #FFFFFF;
+    }
+    img {
+        margin-bottom: 0;
     }
 }
 

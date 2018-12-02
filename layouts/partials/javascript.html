@@ -1,7 +1,10 @@
 <!--   Core JS Files   -->
 <script src="{{ "js/core/jquery.3.2.1.min.js" | relURL }}" type="text/javascript"></script>
-<script src="{{ "js/core/popper.min.js" | relURL }}" type="text/javascript"></script>
 <script src="{{ "js/core/bootstrap.min.js" | relURL }}" type="text/javascript"></script>
+
+<!-- do not run on news page -->
+{{ if ne .Title "News"}} 
+<script src="{{ "js/core/popper.min.js" | relURL }}" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
 <script src="{{ "js/plugins/bootstrap-switch.js"| relURL }}"></script>
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -11,7 +14,8 @@
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="{{ "js/now-ui-kit.js?v=1.1.0" | relURL }}" type="text/javascript"></script>
 <!-- Contact Script -->
-<script src="{{ "js/contact.js" | relURL }}" type="text/javascript"></script>
+<script src="{{ "js/contact.js" | relURL }}" ></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
 // hide page title on scroll
@@ -27,7 +31,7 @@
         }
       }
       else {
-        $('.title-container').fadeIn();
+        $('.title-container .title').fadeIn();
         $(".navbar-brand").text("Manjaro - enjoy the simplicity");
         $(".page-nav").text("");
       }
@@ -46,24 +50,35 @@
     }
 </script>
 
-    {{ range .Site.Params.custom_js }}
-    <script src="{{ "/js/" | relURL }}{{ . }}"></script>
-    {{ end }}
-    
-    
-      <!-- Code highlighting -->
-    {{ if  not .Params.nocode }}
-      <link rel="stylesheet" href="/js/plugin/highlight//styles/default.css">
-      <script src="/js/plugin/highlight/highlight.pack.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
-      <script>hljs.initHighlightingOnLoad();</script>
-    {{ end }}
+{{ range .Site.Params.custom_js }}
+<script src="{{ "/js/" | relURL }}{{ . }}"></script>
+{{ end }}
 
-    <!-- LaTeX math rendering -->
-    {{ if not .Params.nomath }}
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    <script async src="/js/plugin/MathJax.js?config=TeX-AMS_CHTML"></script>
-    {{ end }}
+
+<!-- Code highlighting -->
+{{ if  not .Params.nocode }}
+<link rel="stylesheet" href="/js/plugin/highlight//styles/default.css">
+<script src="/js/plugin/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
+<!-- LaTeX math rendering -->
+{{ if not .Params.nomath }}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+<script async src="/js/plugin/MathJax.js?config=TeX-AMS_CHTML"></script>
+{{ end }}
+{{ end }}  
+<!-- do not run on news page -->
+
+<!-- only run on news page -->
+{{ if eq .Title "News"}} 
+<script src="/js/masonry.pkgd.min.js" type="text/javascript"></script>
+<script src="/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="/js/feedreader.js" type="text/javascript"></script>
+{{ end }}
+
+
     

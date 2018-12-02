@@ -1,33 +1,32 @@
 {{ define "title" }}
-<div class="container">
-  <div class="content-center title-container">
-    <h1 class="title">{{ .Title }}</h1>
-  </div>
-</div>
+
 {{ end }}
 
 {{ define "body" }}
 
 <section class="blog section">
-	<div class="container">
 		<div class="row">
 			{{ range (.Paginator 6).Pages }}
-			<article class="blog-post col-md-6 col-sm-12">
-				<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-				<p class="card">
-					{{ .Summary }}
-					<br>
-					<br>
-					<a href="{{ .Permalink }}" class="link">Read More</a>
-				</p>
-				
-			</article>
+			{{ if .Summary}}
+			<article class='blog-post grid-item col-md-6 col-xl-4'>
+					<div class="card">
+							<div class="card-body">
+								<time></time>
+								<h5 class="card-title">{{ .Title }}</h5>
+								<img class="card-img-top img-fluid" src="" alt="Card image cap">
+								<p class="card-text">{{ .Summary }}</p>
+								<div class="btn-group">
+								<button class="btn btn-success btn-sm btn-primary"><a href="{{ .Permalink }}">Read More</a></button>
+								</div>
+							</div>
+					 </div>
+				</article>
+			{{ end }}
 			{{ end }}
 		</div>
 		<div class="col-12 text-center">
 			{{ template "_internal/pagination.html" . }}
 		</div>
-	</div>
 </section>
 
 {{ end }}        
