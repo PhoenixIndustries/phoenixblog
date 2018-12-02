@@ -56,16 +56,15 @@ $svg-icon-size: 62px;
 .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 5px solid $green;
-    border-right: 5px solid $green;
-    border-bottom: 5px solid $green;
-    border-left: 5px solid transparent;
-    width: 40px;
-    height: 40px;
-    left: calc(50% - 40px);
-    top: calc(50% - 40px);
-    position: fixed;
-    z-index: 1;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -30px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
   }
@@ -213,6 +212,10 @@ p, .call-to-action {
         .row section p {
             margin-bottom: 0px;
         }
+    }
+    .loader {
+        right: 35px;
+        margin-top: 1px;
     }
 }
 
@@ -575,14 +578,17 @@ p, .call-to-action {
         margin-top: 0;
         img[src=""] {
             display: none;
-         }
-         .btn-group {
+        }
+        .btn-group {
             text-align: center;
             float: right;
             .disabled {
                 cursor: default;
                 color: black;
             }
+        }
+        a:not([href]):hover {
+            text-decoration: underline;
         }
     }
     .modal-content {
