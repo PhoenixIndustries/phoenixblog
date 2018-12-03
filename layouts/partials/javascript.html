@@ -2,7 +2,8 @@
 <script src="{{ "js/core/jquery.3.2.1.min.js" | relURL }}" type="text/javascript"></script>
 <script src="{{ "js/core/popper.min.js" | relURL }}" type="text/javascript"></script>
 <script src="{{ "js/core/bootstrap.min.js" | relURL }}" type="text/javascript"></script>
-
+<!-- needed for mobile menu -->
+<script src="{{ "js/now-ui-kit.js?v=1.1.0" | relURL }}" type="text/javascript"></script>
 <!-- do not run on news page -->
 {{ if ne .Title "News"}} 
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
@@ -12,7 +13,7 @@
 <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
 <script src="{{ "js/plugins/bootstrap-datepicker.js" | relURL }}" type="text/javascript"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="{{ "js/now-ui-kit.js?v=1.1.0" | relURL }}" type="text/javascript"></script>
+
 <!-- Contact Script -->
 <script src="{{ "js/validator.min.js" | relURL }}" ></script>
 <script src="{{ "js/contact.js" | relURL }}" ></script>
