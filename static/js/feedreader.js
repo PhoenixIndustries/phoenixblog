@@ -38,8 +38,8 @@ function feedreader(feed) {
                 <p class="card-text">` + shortText + `</p>
                 <div class="btn-group">
                 <button class="btn-sm btn disabled">Read More:</button>
-                <button data-toggle="modal" data-target='#` + el + `' class="btn btn-sm btn-success btn-primary"><a>Here</a></button>
-                <button class="btn btn-success btn-sm btn-primary"><a href="` + item.link + `">Forum</a></button>
+                <button data-toggle="modal" data-target='#` + el + `' class="btn btn-sm btn-success btn-primary">Here</button>
+                <button class="btn btn-success btn-sm btn-primary" onclick='window.location.href="` + item.link + `"'>Forum</button>
                 </div>
                 </div>
             </div>
