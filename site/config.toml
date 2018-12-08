@@ -91,16 +91,15 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "Hardware - Bladebook"
-    url = "https://shop.vivare.ch/index.php?id_product=22&id_product_attribute=0&rewrite=yepo-notebook&controller=product&id_lang=1"
+    name = "Hardware - Spitfire"
+    url = "https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire"
     pre = ""
     weight = 2
     parent = "shop"
-
-
+    
 [[menu.main]]
-    name = "Hardware - Spitfire"
-    url = "https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire"
+    name = "Hardware - ManjaroBook"
+    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
     weight = 3
     parent = "shop"
