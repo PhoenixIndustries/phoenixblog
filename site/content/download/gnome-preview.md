@@ -17,7 +17,7 @@ Version = "18.0.1-rc1"
 date = "2018-11-26T21:36:00+02:00"
 title = "Gnome - Development Preview"
 type="download-edition"
-weigth = ""
+weigth = "0"
 +++
 
 **Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**

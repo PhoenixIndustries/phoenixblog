@@ -17,7 +17,7 @@ Version = "18.0.1-rc1"
 date = "2018-11-26T00:16:00+02:00"
 title = "KDE - Development Preview"
 type="download-edition"
-weight = 1
+weight = 0
 +++
 
 **Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**
