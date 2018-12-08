@@ -20,7 +20,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 |---|---|
 | <img class="icon" src="/img/try/virtual-machine.svg"> | **Using a virtual machine** |
 |                                                | + Leaves your current system untouched |
-|                                                | + Experiment without breaking something |
+|                                                | + Experiment without modifying your current setup |
 |                                                | + Work parallel with Manjaro and your current system |
 |                                                | - Manjaro runs slower due to emulation |
 |                                                | - Emulation needs many system resources |
