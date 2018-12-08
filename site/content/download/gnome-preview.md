@@ -9,14 +9,15 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "GNOME Edition (Developer Preview)"
 Screenshot = "gnome-preview.jpg"
-ShortDescription = "This edition is supported by the Manjaro community and comes with the GNOME 3 desktop that breaks with traditional concepts and allows users to focus on their tasks. Desktop-specific applications are crafted with care and clearly defined by guidelines that make them more consistent to use."
+ShortDescription = "This edition is supported by the Manjaro community and comes with the GNOME 3 desktop that breaks with traditional concepts and allows users to focus on their tasks. Desktop-specific applications are crafted with care and clearly defined by guidelines that make them more consistent to use. This preview is not suitable for production environment."
 Tags = [ "official", "resourceefficient", "preview" ]
 TargetGroup = "For people who want a very modern and simple desktop"
 Thumbnail = "gnome-preview.jpg"
 Version = "18.0.1-rc1"
 date = "2018-11-26T21:36:00+02:00"
-title = "Gnome - Stable"
+title = "Gnome - Development Preview"
 type="download-edition"
 weigth = ""
 +++
 
+**Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**
