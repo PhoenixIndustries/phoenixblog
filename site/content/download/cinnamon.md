@@ -15,7 +15,7 @@ TargetGroup = "For people who look for a traditional desktop with modern technol
 Thumbnail = "cinnamon.jpg"
 Version = "18.0"
 date = "2018-11-29T17:46:12+01:00"
-title = "cinnamon"
+title = "Cinnamon - Stable"
 type="download-edition"
 weight = 0
 +++
