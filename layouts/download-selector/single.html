@@ -11,13 +11,13 @@
   <div class="col-md-8 ml-auto mr-auto text-left">
 	<section>
 		<div class="container">
-			{{ range (where .Site.Pages ".Type" "download-how-to-try") }}
 			<div class="features-post" >
 				<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify  }}
 			</div>
 			{{ end }}
 		</div>
 		{{ partial "editionfinder.html" . }}
+		{{ range (where .Site.Pages ".Type" "download-how-to-try") }}
 	</section>
   </div>   
 </div>
