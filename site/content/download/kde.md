@@ -17,7 +17,7 @@ Version = "18.0"
 date = "2018-08-18T17:36:00+02:00"
 title = "KDE - Stable"
 type="download-edition"
-weight = 2
+weight = "2"
 +++
 
 KDE is a feature-rich and versatile desktop environment that provides several different styles of menu to access applications. An excellent built-in interface to easily access and install new themes, widgets, etc, from the internet is also worth mentioning. While very user-friendly and certainly flashy, KDE is also quite resource heavy and noticably slower to start and use than a desktop environment such as XFCE. A 64 bit installation of Manjaro running KDE uses about 550MB of memory.
