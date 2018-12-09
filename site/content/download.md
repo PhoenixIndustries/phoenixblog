@@ -13,4 +13,4 @@ For simplicity we have selected XFCE, KDE and GNOME as our flagship editions. If
 
 For example we have editions that use technology that makes them very resource-efficient and makes them a good choice for *old computers*. Other editions focus on breaking away from user interface standards that are decades old and giving users a modern experience. As not everybody wants to have such an experience and likes a more traditional way how everything works, we have editions that focus on this *traditional workflow*.
 
-Simply use our download selector to find your right edition:
+Simply use our download selector below to find your right edition. *You may also checkout our archive for our [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) editions.*
