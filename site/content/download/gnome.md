@@ -17,6 +17,6 @@ Version = "18.0"
 date = "2018-10-29T21:36:00+02:00"
 title = "Gnome - Stable"
 type="download-edition"
-weigth = "1"
+weigth = "3"
 +++
 
