@@ -7,7 +7,7 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "webdad Edition"
+Name = "Webdad Edition (Developer Preview)"
 Screenshot = "webdad-full.jpg"
 ShortDescription = "This edition is supported by the Manjaro community and comes with Just Another Desktop Environment (JADE) made with Web technologies."
 Tags = [ "preview" ]
@@ -15,10 +15,12 @@ TargetGroup = "For people loving the web and thinking out of the box"
 Thumbnail = "webdad-preview.jpg"
 Version = "18.0-alpha-4"
 date = "2018-05-10T08:56:12+02:00"
-title = "webdad - Stable"
+title = "Webdad - Developer Preview"
 type="download-edition"
 weight = "0"
 +++
+
+**Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**
 
 Jade is a completely different DE concept, that changes the way you interact with your desktop, is made to be easy to use, independently of your computer skills.
 
