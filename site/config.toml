@@ -83,7 +83,7 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "Merc & Accessories"
+    name = "Merch & Accessories"
     url = "https://shop.spreadshirt.de/manjaro/"
     pre = ""
     weight = 1
