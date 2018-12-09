@@ -91,17 +91,26 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "Hardware - Spitfire"
-    url = "https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire"
-    pre = ""
-    weight = 2
-    parent = "shop"
-    
-[[menu.main]]
     name = "Hardware - ManjaroBook"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
+    weight = 2
+    parent = "shop"
+
+
+[[menu.main]]
+    name = "Hardware - Spitfire"
+    url = "https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire"
+    pre = ""
     weight = 3
+    parent = "shop"
+
+
+[[menu.main]]
+    name = "Hardware - Bladebook"
+    url = "https://manjaro.org/hardware-bladebook"
+    pre = ""
+    weight = 4
     parent = "shop"
 
 
