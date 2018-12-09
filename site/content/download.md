@@ -4,7 +4,7 @@
   "filters" : [
   { "id" : "official", "description" : "Flagship editions", "default" : "checked" },
   { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "checked" },
-  { "id" : "resourceefficient", "description" : "For old computers", "default" : "" },
+  { "id" : "resourceefficient", "description" : "Recource-efficient", "default" : "" },
   { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" }
   ]
 }
