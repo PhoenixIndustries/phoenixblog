@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc1-stable-x86_64.iso"
-Download_x64_Checksum = "5f0bcbd9d6f8833f6d0950aba902a2400f4e5b23"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc1-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc1-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso"
+Download_x64_Checksum = "71c3edb8301f26b3de96fcc3687e76fb7262edc6"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
