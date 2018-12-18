@@ -2,8 +2,8 @@
   "title" : "Try it now",
   "type" : "download-selector",
   "filters" : [
-  { "id" : "official", "description" : "Flagship editions", "default" : "checked" },
-  { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "checked" },
+  { "id" : "official", "description" : "Flagship editions", "default" : "" },
+  { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "" },
   { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
   { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" }
   ]
