@@ -9,6 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "XFCE Edition (Developer Preview)"
 Screenshot = "xfce-full.jpg"
+Youtube = "zb_9tc-DiIs"
 ShortDescription = "This edition is supported by the Manjaro team and comes with XFCE, a lightweight and reliable desktop with high configurability. This preview is not suitable for production environment."
 Tags = [ "official", "resourceefficient", "traditional_ui", "preview" ]
 TargetGroup = "For testers and developers"
