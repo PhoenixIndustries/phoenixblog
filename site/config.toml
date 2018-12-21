@@ -94,7 +94,7 @@ assetDir = "../static/"
     name = "Hardware - ManjaroBook"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
-    weight = 2
+    weight = 4
     parent = "shop"
 
 
@@ -110,7 +110,7 @@ assetDir = "../static/"
     name = "Hardware - Bladebook"
     url = "/hardware-bladebook"
     pre = ""
-    weight = 4
+    weight = 2
     parent = "shop"
 
 
