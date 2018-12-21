@@ -3,6 +3,7 @@ class: "landing-page"
 background: "/img/bg9.jpg"
 title: "#bladebook"
 description: "description of the page for search engine meta tags"
+Youtube: "rHL-wXSb7SA"
               
 ---
 
@@ -186,6 +187,10 @@ description: "description of the page for search engine meta tags"
             </div>
         </div>
     </div>
+
+    {{ if .Params.Youtube }}
+         <p>{{partial "youtube" .}}</p>
+    {{ end }}
 
     <p>To get more information about the bladebook please <a href="mailto:info-bladebook@manjaro.org">mail us</a> or visit the <a href="https://linux-aarhus.dk/produkt/manjaro-bladebook/">FCS shop</a>.</p>
 </div>
