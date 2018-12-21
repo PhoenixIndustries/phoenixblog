@@ -9,6 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "XFCE Edition"
 Screenshot = "xfce-full.jpg"
+Youtube = "zb_9tc-DiIs"
 ShortDescription = "This edition is supported by the Manjaro team and comes with XFCE, a lightweight and reliable desktop with high configurability."
 Tags = [ "official", "resourceefficient", "beginnerfriendly", "traditional_ui" ]
 TargetGroup = "For people who want a reliable and fast desktop"

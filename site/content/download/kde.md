@@ -9,6 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "KDE Edition"
 Screenshot = "kde-full.jpg"
+Youtube = "FHMBocs2Xc8"
 ShortDescription = "This edition is supported by the Manjaro team and comes with KDE, a very modern and flexible desktop."
 Tags = [ "official", "beginnerfriendly", "resourceefficient", "traditional_ui" ]
 TargetGroup = "For people who want a modern and very flexible desktop"

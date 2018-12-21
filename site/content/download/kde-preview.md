@@ -9,6 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "KDE Edition (Developer Preview)"
 Screenshot = "kde-full.jpg"
+Youtube = "FHMBocs2Xc8"
 ShortDescription = "This edition is supported by the Manjaro team and comes with KDE, a very modern and flexible desktop. This preview is not suitable for production environment."
 Tags = [ "official", "traditional_ui", "resourceefficient", "preview" ]
 TargetGroup = "For testers and developers"

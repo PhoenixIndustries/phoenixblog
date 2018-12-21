@@ -17,6 +17,9 @@
         <br/>
         <p>{{ .Params.shortdescription | markdownify }}</p>
         <p>{{ .Content | markdownify }}</p>
+        {{ if .Params.Youtube }}
+          <p>{{partial "youtube" .}}</p>
+        {{ end }}
         <h2>Download</h2>
         <hr class="star-primary"/>
         <ul class="flex-grid download-edition-grid">
