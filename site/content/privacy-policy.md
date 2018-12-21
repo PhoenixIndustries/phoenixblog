@@ -71,7 +71,7 @@ We may use the email address to send User information and updates pertaining to 
 <p>Visitor comments may be checked through an automated spam detection service.</p>
 
 <h2>Where do I find the privacy policy of the forum</h2>
-<p>The usage of our forums may fary slightly. Please read <a href="https://forum.manjaro.org/privacy">here</a> about the conditions, which will apply to the usage of our forum.</p>
+<p>The usage of our forums may vary slightly. Please read <a href="https://forum.manjaro.org/privacy">here</a> about the conditions, which will apply to the usage of our forums.</p>
 
 <h2>Changes to this privacy policy</h2>
 <p>Our website has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
