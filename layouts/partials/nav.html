@@ -22,7 +22,8 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
             {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+              {{ $exttarget := hasPrefix .URL "http" }}
+              <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ if $exttarget }} target="_blank"{{ end }}>
                 {{ .Pre }}
                 <span>{{ .Name }}</span>
               </a>
