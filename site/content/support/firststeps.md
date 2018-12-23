@@ -82,7 +82,7 @@ To be able to install or try Manjaro on your computer, you need to put it on a D
 |   |   |
 |---|---|
 | <img class="icon" src="/img/actions/download.svg"> | **1. Download an application that is able to create a bootable USB-Drive** |
-|                                             | You can use for example [ImageWriter](https://launchpad.net/win32-image-writer/), [Rufus](https://rufus.akeo.ie/) or other software. See our [wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) for more information.  |
+|                                             | You can use for example [ImageWriter](https://launchpad.net/win32-image-writer/), [Rufus](https://rufus.akeo.ie/) or other software. See our [wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) for more information. Also you need to use **dd** as copy option to make a working bootable USB-Stick. |
 | <img class="icon" src="/img/try/live-boot.svg">     | **2. Select the ISO and the stick and put Manjaro onto it** |
 |                                             | Please don't forget to backup the data of your stick before doing this. |
 |                                             | If you need more information, just visit our [Wiki](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) |
