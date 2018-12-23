@@ -30,7 +30,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 | <img class="icon" src="/img/try/live-boot.svg"> | **Only using the live-system**[¹](#glossary) |
 |                                                | + Leaves your current system untouched unless you modify it manually |
 |                                                | + Experiment without modifying your current setup |
-|                                                | + All settings are stored on the medium - take it everywhere you want (USB-Drive only) |
+|                                                | - No settings get stored on the medium |
 |                                                | - Manjaro runs slower due to slower speed of DVD or USB |
 |                                                | |
 |                                                | **[Find out how this works](#making-a-live-system)** |
