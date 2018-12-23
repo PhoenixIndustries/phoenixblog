@@ -15,7 +15,7 @@ TargetGroup = "For people who want a simple and elegant desktop"
 Thumbnail = "budgie.jpg"
 Version = "18.08.1"
 date = "23.12.2018T02:36:05+01:00"
-title = "budgie"
+title = "Budgie - Stable"
 type="download-edition"
 +++
 
