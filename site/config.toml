@@ -91,10 +91,18 @@ assetDir = "../static/"
 
 
 [[menu.main]]
+    name = "Manjaro Stickers"
+    url = "https://linux-aarhus.dk/produkt-kategori/manjaro/stickers/"
+    pre = ""
+    weight = 2
+    parent = "shop"
+
+
+[[menu.main]]
     name = "Hardware - ManjaroBook"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
-    weight = 4
+    weight = 5
     parent = "shop"
 
 
@@ -102,7 +110,7 @@ assetDir = "../static/"
     name = "Hardware - Spitfire"
     url = "/hardware-spitfire"
     pre = ""
-    weight = 3
+    weight = 4
     parent = "shop"
 
 
@@ -110,7 +118,7 @@ assetDir = "../static/"
     name = "Hardware - Bladebook"
     url = "/hardware-bladebook"
     pre = ""
-    weight = 2
+    weight = 3
     parent = "shop"
 
 
