@@ -92,7 +92,7 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Manjaro Stickers"
-    url = "https://linux-aarhus.dk/produkt-kategori/manjaro/stickers/"
+    url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
     pre = ""
     weight = 2
     parent = "shop"
