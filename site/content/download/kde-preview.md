@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso"
-Download_x64_Checksum = "71c3edb8301f26b3de96fcc3687e76fb7262edc6"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.1-rc2-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-pre1-testing-x86_64.iso"
+Download_x64_Checksum = "de52f6bc07251b5f1e94d3cc1b84a655d8cd0fb5"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-pre1-testing-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-pre1-testing-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -15,7 +15,7 @@ Tags = [ "official", "traditional_ui", "resourceefficient", "preview" ]
 TargetGroup = "For testers and developers"
 Thumbnail = "kde-preview.jpg"
 Version = "18.0.1-rc1"
-date = "2018-11-26T00:16:00+02:00"
+date = "2018-12-27T20:36:00+01:00"
 title = "KDE - Development Preview"
 type="download-edition"
 weight = 0
