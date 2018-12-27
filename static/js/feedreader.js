@@ -1,6 +1,13 @@
 $(".navbar-brand").text("Manjaro - news");
-$('.row').masonry({
-    itemSelector: '.grid-item'
+$('.row').isotope({
+    itemSelector: '.grid-item',
+    getSortData: {
+        date: function (elem) {
+            return Date.parse($(elem).find('time').text());
+        }
+    },
+    sortBy : 'date',
+    sortAscending : false
 });
 var feeds = [
     "https://forum.manjaro.org/c/announcements.rss",
@@ -11,7 +18,7 @@ function feedreader(feed) {
     var $XML = $(data);
     $XML.find("item").each(function(iter) {
         
-        if (feed == feeds[1] && iter > 0) {
+        if (feed == feeds[1] && iter > 1) {
             // pass
         } else {
         
@@ -28,7 +35,7 @@ function feedreader(feed) {
         var shortText = forumHtml.text().trim().slice(1, 300);
         var img = forumHtml.find("img:first").attr("src");
 
-        var article = `
+        var $article = $(`
         <article class='blog-post ` + el + ` grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
             <div class="card">
                 <div class="card-body">
@@ -43,10 +50,9 @@ function feedreader(feed) {
                 </div>
                 </div>
             </div>
-        </article>
+        </article>`)
         
-        <!-- modal -->
-        <div class="modal fade" id="` + el + `" tabindex="-1" role="dialog" aria-labelledby="` + item.title + `" aria-hidden="true">
+        var modal = `<div class="modal fade" id="` + el + `" tabindex="-1" role="dialog" aria-labelledby="` + item.title + `" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -65,10 +71,12 @@ function feedreader(feed) {
             </div>
         </div>
         `
-        $(".blog .row").append(article);
+        $(".blog .row").isotope( 'insert', $article );
+        $(".blog .row").append(modal);
         
         $("." + el + " .card-img-top").imagesLoaded( function() {
-            $(".row").masonry("reloadItems").masonry("layout"); 
+            // reload layout after images are loaded since boxes change sizes
+            $(".row").isotope("reloadItems").isotope("layout"); 
          });
 
         $('#' + el + ' .modal-body').find(".meta").remove()
@@ -79,8 +87,8 @@ function feedreader(feed) {
         }  
     }});
 });};
-feedreader(feeds[1]);
 feedreader(feeds[0]);
+feedreader(feeds[1]);
 
 
 
