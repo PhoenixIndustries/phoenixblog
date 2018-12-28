@@ -17,7 +17,7 @@ Version = "18.0"
 date = "2018-11-28T15:26:00+01:00"
 title = "Architect - Stable"
 type="download-edition"
-weight = "3"
+weight = "1"
 +++
 
 Manjaro-Architect is a fork of the famous Architect Linux installer by Carl Duff, that has been modified to install Manjaro instead of Arch Linux. It is a netinstaller that downloads always the latest packages, so your system is always up to date after installation, regardless of how old your install media is.
