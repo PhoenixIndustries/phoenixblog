@@ -17,6 +17,6 @@ Version = "18.0"
 date = "2018-11-29T17:46:12+01:00"
 title = "Cinnamon - Stable"
 type="download-edition"
-weight = 0
+weight = "5"
 +++
 

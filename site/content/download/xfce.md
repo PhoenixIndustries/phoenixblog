@@ -18,7 +18,7 @@ Version = "18.0.1"
 date = "22.12.2018T20:56:00+01:00"
 title = "XFCE - Stable"
 type="download-edition"
-weight = "3"
+weight = "1"
 +++
 
 Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly. Xfce embodies the traditional UNIX philosophy of modularity and re-usability. It consists of a number of components that provide the full functionality one can expect of a modern desktop environment. They are packaged separately and you can pick among the available packages to create the optimal personal working environment.

@@ -17,5 +17,5 @@ Version = "18.0.1"
 date = "23.12.2018T04:49+01:00"
 title = "Mate - Stable"
 type="download-edition"
-weigth = "0"
+weight = "5"
 +++

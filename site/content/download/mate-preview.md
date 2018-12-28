@@ -17,7 +17,7 @@ Version = "18.0.1-pre1"
 date = "2018-11-19T04:34:54+01:00"
 title = "Mate - Development Preview"
 type="download-edition"
-weigth = "0"
+weight = "6"
 +++
 
 **Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**

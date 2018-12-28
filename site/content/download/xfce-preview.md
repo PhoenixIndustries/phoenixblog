@@ -18,7 +18,7 @@ Version = "18.0.2-pre1"
 date = "2018-12-27T00:19:21+01:00"
 title = "XFCE - Development Preview"
 type="download-edition"
-weight = 0
+weight = "6"
 +++
 
 **Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**

@@ -17,5 +17,6 @@ Version = "18.08.1"
 date = "23.12.2018T02:36:05+01:00"
 title = "Budgie - Stable"
 type="download-edition"
+weight = "5"
 +++
 

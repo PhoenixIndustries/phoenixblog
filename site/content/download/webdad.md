@@ -17,7 +17,7 @@ Version = "18.0-alpha-4"
 date = "2018-05-10T08:56:12+02:00"
 title = "Webdad - Developer Preview"
 type="download-edition"
-weight = "0"
+weight = "5"
 +++
 
 **Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**
