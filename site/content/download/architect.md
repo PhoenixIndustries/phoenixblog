@@ -25,7 +25,6 @@ Manjaro-Architect is a fork of the famous Architect Linux installer by Carl Duff
 Manjaro-Architect offers currently unparalleled customization on your Manjaro installation:
 
 - choose freely which kernel to use from all manjaro kernels. You can also choose multiple kernels.
-- choose your initsystem from systemd and openrc
 - choose any manjaro branch (stable, testing or unstable)
 - choose your desktop from all up to date manjaro editions, regardless of what install media you run the installer from. You can also choose to install just base system without graphical user interface.
 - add any number of unconfigured desktop environments
