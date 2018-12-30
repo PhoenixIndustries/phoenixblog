@@ -704,9 +704,9 @@ p, .call-to-action {
         cursor: zoom-in;  
         }     
         
-        .zoom:hover,  
-        .zoom:active,   
-        .zoom:focus {
+        .configured-with-one-click .zoom:hover,  
+        .configured-with-one-click .zoom:active,   
+        .configured-with-one-click .zoom:focus {
         -ms-transform: scale(2.5);    
         -moz-transform: scale(2.5);  
         -webkit-transform: scale(2.5);  
@@ -717,6 +717,17 @@ p, .call-to-action {
         margin-left: 50%; 
         }
         
+        .news .zoom:hover,  
+        .news .zoom:active,   
+        .news .zoom:focus {
+            -ms-transform: scale(1.2);    
+            -moz-transform: scale(1.2);  
+            -webkit-transform: scale(1.2);  
+            -o-transform: scale(1.2);  
+            transform: scale(1.2);    
+            position:relative;      
+            z-index:100;  
+            }        
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

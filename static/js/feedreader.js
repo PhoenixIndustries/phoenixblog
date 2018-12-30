@@ -36,7 +36,7 @@ function feedreader(feed) {
         var img = forumHtml.find("img:first").attr("src");
 
         var $article = $(`
-        <article class='blog-post ` + el + ` grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
+        <article class='blog-post zoom ` + el + ` grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
             <div class="card">
                 <div class="card-body">
                 <time>` + item.date + `</time>
@@ -89,10 +89,3 @@ function feedreader(feed) {
 });};
 feedreader(feeds[0]);
 feedreader(feeds[1]);
-
-
-
-
-
-
-
