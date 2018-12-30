@@ -36,7 +36,7 @@ function feedreader(feed) {
         var img = forumHtml.find("img:first").attr("src");
 
         var $article = $(`
-        <article class='blog-post zoom ` + el + ` grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
+        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
             <div class="card">
                 <div class="card-body">
                 <time>` + item.date + `</time>
@@ -74,7 +74,7 @@ function feedreader(feed) {
         $(".blog .row").isotope( 'insert', $article );
         $(".blog .row").append(modal);
         
-        $("." + el + " .card-img-top").imagesLoaded( function() {
+        $("#unique" + el + " .card-img-top").imagesLoaded( function() {
             // reload layout after images are loaded since boxes change sizes
             $(".row").isotope("reloadItems").isotope("layout"); 
          });
@@ -83,7 +83,7 @@ function feedreader(feed) {
         //$('#' + el + ' .modal-body').find("strong").contents().unwrap();
         
         if (iter == 24) {
-            setTimeout(function(){ $(".loader").hide(); }, 600);
+            setTimeout(function(){ $(".loader").hide();scrollToNews();}, 600);
         }  
     }});
 });};
