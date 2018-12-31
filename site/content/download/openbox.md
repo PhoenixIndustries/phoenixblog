@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0-stable-x86_64.iso"
-Download_x64_Checksum = "72a72c01e80fcbba2961e272d324bd4324cc7d02"
-Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0.2-stable-x86_64.iso"
+Download_x64_Checksum = "6d84971a32f641893d88c5383b30b34a04f386ef"
+Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0.2-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-openbox-18.0.2-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -13,8 +13,8 @@ ShortDescription = "This edition is supported by the Manjaro community and comes
 Tags = [ "resourceefficient" ]
 TargetGroup = "For power users and developers dealing with every day computing tasks"
 Thumbnail = "openbox.jpg"
-Version = "18.0"
-date = "2018-11-05T00:49:12+01:00"
+Version = "18.0.2"
+date = "2018-12-30T00:49:12+01:00"
 title = "openbox - Stable"
 type="download-edition"
 weight = "5"
