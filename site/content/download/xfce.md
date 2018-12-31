@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.1-stable-x86_64.iso"
-Download_x64_Checksum = "e575856942afd25092531d3c8637f0dbd6c000f4"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.1-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.1-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.2-stable-x86_64.iso"
+Download_x64_Checksum = "221c1305c160c5e4a9e0927d4a030a8db838beee"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.2-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.2-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro team and comes with
 Tags = [ "official", "resourceefficient", "beginnerfriendly", "traditional_ui" ]
 TargetGroup = "For people who want a reliable and fast desktop"
 Thumbnail = "xfce.jpg"
-Version = "18.0.1"
-date = "22.12.2018T20:56:00+01:00"
+Version = "18.0.2"
+date = "31.12.2018T16:42:00+01:00"
 title = "XFCE - Stable"
 type="download-edition"
 weight = "1"
