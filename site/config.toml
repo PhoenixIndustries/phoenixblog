@@ -156,7 +156,7 @@ assetDir = "../static/"
 
 [[menu.main]]
     name = "Search Unstable Branch"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
+    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
     weight = 4
     parent = "packages"
