@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-webdad-18.0-alpha-4-unstable-x86_64.iso"
-Download_x64_Checksum = "50f9d1c1144f5047ab338f7ce47f9779d648b617"
-Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-webdad-18.0-alpha-4-unstable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-webdad-18.0-alpha-4-unstable-x86_64.iso.torrent"
+Download_x64 = "https://sourceforge.net/projects/manjaro-webdad/files/manjaro-webdad-17.1.11-stable-alpha-8-x86_64.iso"
+Download_x64_Checksum = "fd6e1ebb0c68160667acb02061709e0fbaf5f55d"
+Download_x64_Sig = ""
+Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -13,8 +13,8 @@ ShortDescription = "This edition is supported by the Manjaro community and comes
 Tags = [ "preview" ]
 TargetGroup = "For people loving the web and thinking out of the box"
 Thumbnail = "webdad-preview.jpg"
-Version = "18.0-alpha-4"
-date = "2018-05-10T08:56:12+02:00"
+Version = "17.1.11-alpha-8"
+date = "2018-08-27T08:56:12+02:00"
 title = "Webdad - Developer Preview"
 type="download-edition"
 weight = "5"
