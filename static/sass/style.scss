@@ -450,30 +450,13 @@ p, .call-to-action {
     .header-link {
         width: 100%;
         margin-bottom: 0px;
-    }       
-}
-
-.kde---stable, .xfce---stable, .gnome---stable {
-    img[src="/img/editions/kde.jpg"] {
+    } 
+    ul {
+        text-align: left;
+    } 
+    a img:first-child {
         margin-bottom: 30px;
-    }
-    img[src="/img/editions/xfce.jpg"] {
-        margin-bottom: 30px;
-    }
-    img[src="/img/editions/gnome.jpg"] {
-        margin-bottom: 30px;
-    }
-}
-.kde---development-preview, .xfce---development-preview, .gnome---development-preview {
-    img[src="/img/editions/kde-preview.jpg"] {
-        margin-bottom: 30px;
-    }
-    img[src="/img/editions/xfce-preview.jpg"] {
-        margin-bottom: 30px;
-    }
-    img[src="/img/editions/gnome-preview.jpg"] {
-        margin-bottom: 30px;
-    }
+    }     
 }
 
 .privacy-policy, .terms-of-use {
