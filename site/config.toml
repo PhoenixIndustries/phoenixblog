@@ -226,19 +226,11 @@ assetDir = "../static/"
 
 
 [[menu.main]]
-    name = "About"
+    name = "Features"
     url = "#"
     pre = ""
     weight = 4
     identifier = "features"
-
-
-[[menu.main]]
-    name = "What is Manjaro"
-    url = "/what-is-manjaro/"
-    pre = "<i class='now-ui-icons business_bulb-63'></i>"
-    weight = 1
-    parent = "features"
 
 
 [[menu.main]]
