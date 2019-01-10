@@ -193,6 +193,10 @@ h1.title::first-letter {
     font-size: 2em;
 }
 
+::selection {
+    background: $green;
+}
+
 @media screen and (max-width: 768px) {
 
     #scrolltocontent {
@@ -744,6 +748,11 @@ h1.title::first-letter {
 }
 
 @media (min-width: 768px) {
+
+    .landing-page .title-container {
+        max-width: 80% !important;
+        top: 44% !important;
+    }
     .section-story-overview .image-container:nth-child(2) {
         margin-top: 150px;
     }
@@ -799,6 +808,11 @@ h1.title::first-letter {
 
 @media screen and (min-width: 992px) {
 
+    .landing-page .title-container {
+        max-width: 70% !important;
+        top: 44% !important;
+    }
+
     .landing-page .nav-item {
         display: none;
     }
@@ -831,4 +845,11 @@ h1.title::first-letter {
 
 .section-story-overview .image-container:nth-child(2) {
     margin-left: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .landing-page .title-container {
+        max-width: 60% !important;
+        top: 40% !important;
+    }
 }
