@@ -2,10 +2,17 @@
 <div class="container">
   <div class="content-center title-container">
     <h1 class="title">{{ .Title }}</h1>
+    {{ if eq .Params.class "landing-page" }}
+    <div><img class="logo" src="/img/favicon.png"></div>
+    <p>{{ .Params.whatIsManjaro }}</p>
+    <p>{{ .Params.whatIsEditions }}</p>
+    <p>{{ .Params.whatTeamCanDo }}</p>
+  <div class="text-left"><a href="/download/" class="btn btn-success btn-round">Choose Edition and Download</a></div>
+<a id="scrolltocontent" class="btn btn-info btn-round">Learn more <i class="fa fa-arrow-down"></i></a>
+{{ end }}
   </div>
 </div>
 {{ end }}
-
 {{ define "body" }}
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto">

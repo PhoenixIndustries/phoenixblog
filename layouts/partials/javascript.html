@@ -21,23 +21,17 @@
 <script type="text/javascript">
     $(document).ready(function() {
 // hide page title on scroll
+console.log($( window ).height());
+if ($( window ).width() > 992) {
     $(window).scroll(function() {
 
       if ($(this).scrollTop()>50) {
         $('.title-container').fadeOut();
-        // this might not work on webkit browsers
-        var landingPage = $("body").hasClass("landing-page") == false
-        if (landingPage) {
-          $(".navbar-brand").text("Manjaro - ");
-          $(".page-nav").text(document.title.slice(10));
-        }
       }
       else {
         $('.title-container').fadeIn();
-        $(".navbar-brand").text("Manjaro - enjoy the simplicity");
-        $(".page-nav").text("");
       }
-    });
+    });};
         // the body of this function is in assets/js/now-ui-kit.js
         nowuiKit.initSliders();
     });
@@ -92,6 +86,21 @@ function scrollToNews() {
     }, 450);
    });
 };
+</script>
+{{ end }}
+{{ if .IsHome }}
+<script>
+function scrollToContent() {
+    $('html, body').animate({
+                scrollTop: $('#content' ).offset().top
+                }, 500);
+}
+$("#scrolltocontent").on('click', function() {
+    scrollToContent();
+});
+$(window).one("scroll", function(){
+    $('.nav-item').fadeIn("slow");
+});
 </script>
 {{ end }}
 

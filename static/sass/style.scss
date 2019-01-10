@@ -85,8 +85,7 @@ body {
     letter-spacing: 0.01em;
     
     p {
-        font-size: 16px;
-        color: #5a5a5a;
+        color: #5a5a5a;  
     }
 }
 
@@ -103,7 +102,7 @@ h1, h2, h3, h4, h5, a, .navbar, .team-player .category, .blockquote, .btn {
     max-width: $svg-icon-size !important;
 }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     font-size: 1.5em;
 }
 
@@ -163,18 +162,52 @@ p, .call-to-action {
     overflow: visible;
 }
 
+.section-story-overview p.blockquote {
+    top: -20px;
+}
+
+.blockquote {
+
+    width: auto !important;
+    color: #6b6a6a !important;
+    font-size: 1.2rem;
+    border: none;
+    border-right: 4px $green solid !important;
+    text-align: justify !important;
+
+    small {
+        float: right;
+        color: #6b6a6a !important;
+    }
+}
+
+.page-header {
+    height: 146vh !important;
+}
+
 @media screen and (max-width: 768px) {
-    .landing-page .section-story-overview .image-container {
-        margin-bottom: 30px;
+
+    #scrolltocontent {
+        display: none;
+    }
+      .landing-page {
+          .title-container .text-left {
+            text-align: center !important;
+        }
+    }
+    .landing-page {
+        .section-story-overview {
+            margin-top: -100px !important;
+            .image-container {
+              margin-bottom: 30px;
+            }
+        }
     }
     .landing-page .section-team .team-player {
         margin-bottom: 60px;
     }
     .section {
         padding: 0;
-    }
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 270px;
     }
     .configured-with-one-click {
 
@@ -303,6 +336,74 @@ p, .call-to-action {
 
 .landing-page {
 
+    .blockquote {
+        position: initial !important;
+    }
+
+    .logo {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        margin-top: -180px;
+        margin-left: -48px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    .nav-link[href="/download/"] {
+        display: none !important;
+    }
+
+    .fa-arrow-down {
+        font-size: 1.3em;
+        margin-left: 5px;
+    }
+
+    .fa-heart {
+        color: red;
+    }
+
+    .btn-info {
+        position: absolute;
+        margin-top: -2px;
+        right: 0;
+    }
+
+    .page-header {
+        max-height: 100% !important;
+    }
+
+    .image-container span {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        background-color: #2c2c2c;
+        background-color: #2c2c2cbd;
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .title-container {
+        background-color: #2c2c2c;
+        background-color: #2c2c2cbd;
+        padding: 18px !important;
+        z-index: -1;
+        margin-top: 96px;
+    
+      p {
+        color: #FFFFFF;
+        text-align: left;
+        margin-bottom: 15px;
+        margin-top: 15px;
+       }  
+    }
+
     .description a,
     .team-player .category {
         color: $green;
@@ -330,21 +431,6 @@ p, .call-to-action {
 
     h1.title::first-letter {
         color: $green;
-    }
-    
-    .blockquote {
-
-        width: auto !important;
-        color: #6b6a6a !important;
-        font-size: 1.2rem;
-        border: none;
-        border-right: 4px $green solid;
-        text-align: justify !important;
-
-        small {
-            float: right;
-            color: #6b6a6a !important;
-        }
     }
 
     h5, .section-story-overview {
@@ -664,6 +750,9 @@ p, .call-to-action {
 }
 
 @media (min-width: 768px) {
+    .section-story-overview .image-container:nth-child(2) {
+        margin-top: 150px;
+    }
     .team-player .description {
         /* this needs to be ajusted if you add more content */
         min-height: 125px;
@@ -673,10 +762,11 @@ p, .call-to-action {
         padding: 0px;
     }
     .section-story-overview p.blockquote {
-        top: 470px;
+        top: 0;
     }
     .landing-page .blockquote {
-        right: 100px !important;
+        right: 16px !important;
+        padding-right: 30px;
     }
     .zoom {      
         -webkit-transition: all 0.35s ease-in-out;    
@@ -713,14 +803,13 @@ p, .call-to-action {
             }        
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 446px;
-    }
-}
-
 @media screen and (min-width: 992px) {
+
+    .col-left {
+        padding-right: 30px;
+        border-right: 4px $green solid;
+    }
+
     .donate-page .flex-grid {
         display: flex;
     }
@@ -736,6 +825,9 @@ p, .call-to-action {
         .feature-screenshot-fan div {
             min-height: 240px;
         }
+    }
+    .page-header {
+        height: 96vh !important;
     }
 }
 
