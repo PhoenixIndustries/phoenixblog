@@ -203,7 +203,15 @@ h1.title::first-letter {
     #scrolltocontent {
         display: none;
     }
-      .landing-page {
+
+    .btn-group {
+        
+        a:first-child {
+            border-radius: 20px !important;
+        }
+    }
+    
+    .landing-page {
           .title-container .text-left {
             text-align: center !important;
         }
@@ -349,6 +357,17 @@ h1.title::first-letter {
 
 .landing-page {
 
+    .btn-group {
+        a:last-child {
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        a:first-child {
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+    }
+
     .blockquote {
         position: initial !important;
     }
@@ -372,12 +391,6 @@ h1.title::first-letter {
 
     .fa-heart {
         color: red;
-    }
-
-    .btn-info {
-        position: absolute;
-        margin-top: -2px;
-        right: 0;
     }
 
     .page-header {
