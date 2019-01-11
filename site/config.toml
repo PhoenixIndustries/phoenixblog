@@ -288,7 +288,7 @@ assetDir = "../static/"
 
 [[menu.footer]]
     identifier = "copyright"
-    name = "2018 Manjaro Linux"
+    name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/"
     weight = 3
