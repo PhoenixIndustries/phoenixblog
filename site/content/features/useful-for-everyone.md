@@ -1,4 +1,5 @@
 +++
+class = "useful-for-everyone"
 weight = 2
 title = "Useful For Everyone"
 type = "features-usercases"

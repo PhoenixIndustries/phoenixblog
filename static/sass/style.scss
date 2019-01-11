@@ -67,6 +67,7 @@ $svg-icon-size: 62px;
     margin-left: -30px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
+    display: none;
   }
   
   /* Safari */
@@ -536,7 +537,7 @@ h1.title::first-letter {
     } 
     a img:first-child {
         margin-bottom: 30px;
-    }     
+    }    
 }
 
 .privacy-policy, .terms-of-use {
@@ -547,11 +548,17 @@ h1.title::first-letter {
 }
 
 .useful-for-everyone {
-    .row h2 {
+    .row {
+        div a {
+            width: 100%;
+        }
+        h2 {
        margin-bottom: 0px;
+        }
     }
     .section {
         padding: 0;
+        padding-top: 50px;
     }
 }
 
@@ -572,25 +579,22 @@ h1.title::first-letter {
     }
     .section {
         padding: 0;
+        padding-top: 90px;
+        min-height: 93vh;
+    }
+}
+
+.fresh-and-stable {
+    .section {
+        padding-top: 90px;
     }
 }
 
 .first-steps {
     
     .section {
-        padding-top: 40px;
         padding-bottom: 40px;
-    }
-}
-.what-is-manjaro {
-    .row {
-        padding-top: 40px;
-    }
-    p:nth-child(2) {
-        text-align:center;
-    }
-    .section {
-        padding: 0;
+        padding-top: 90px;
     }
 }
 
@@ -603,10 +607,15 @@ h1.title::first-letter {
     }
     .section {
         padding: 0;
+        padding-top: 60px;
     }
 }
 
 .news {
+
+    .loader {
+        display: block;
+    }
 
     .blog .row {
         min-height: 2000px;
@@ -696,9 +705,6 @@ h1.title::first-letter {
 .configured-with-one-click,
 .under-your-control,
  {
-    .features-post {
-        padding-top: 40px;
-    }
     .row img {
         height: auto !important;
     }

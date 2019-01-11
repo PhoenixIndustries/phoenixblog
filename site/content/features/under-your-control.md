@@ -1,4 +1,5 @@
 +++
+class = "under-your-control"
 navsection = "features"
 right = false
 title = "Under Your Control"

@@ -2,8 +2,8 @@
 <html lang="en">
   {{partial "head" . }}
   
-	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{ replace .Title " " "-" | lower}}">
-      {{ if eq .Title "News"}}
+	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{if eq .Title "News"}}{{ replace .Title " " "-" | lower}}{{end}}">
+      {{ if not .IsHome}}
         {{ partial "green-nav" . }} 
       {{ else }}
         {{ partial "nav" . }}
