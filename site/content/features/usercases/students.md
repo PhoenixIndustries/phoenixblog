@@ -7,7 +7,7 @@
   "quote": "Manjaro fits perfectly my computer science student's needs and fresh linux desires. Moreover, accomplishes all the tasks with superb stability and lightness, as my old machine deserves. Kudos to the whole team!",
   "quoteauthor": "lennart",
   "shortdescription": "Students and teachers need software that helps them with learning or teaching about science, art and other subjects. All things also need to be organized, so strict schedules are not missed and the next exam is not forgotten. Manjaro brings everything that will make teachers and students happy.",
-  "title": "Manjaro for Teachers and Students",
+  "title": "for Teachers and Students",
   "type": "usercase-post",
   "software" : [
   {"name" : "Qalculate!", "url" : "https://qalculate.github.io/", "usage" : "Scientific calculator" },
