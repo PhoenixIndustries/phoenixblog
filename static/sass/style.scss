@@ -355,6 +355,10 @@ h1.title::first-letter {
     }
 }
 
+.page-header .page-header-image {
+    will-change: transform;
+}
+
 .landing-page {
 
     .btn-group {
