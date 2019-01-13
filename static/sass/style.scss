@@ -370,6 +370,9 @@ h1.title::first-letter {
 
     .blockquote {
         position: initial !important;
+        .fa {
+            color: $green;
+        }
     }
 
     .logo {
