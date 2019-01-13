@@ -196,6 +196,7 @@ h1.title::first-letter {
 
 ::selection {
     background: $green;
+    color: #ffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -326,6 +327,7 @@ h1.title::first-letter {
     opacity: 1;
     color: #2c2c2c;
     font-family: comfortaa,cursive;
+    font-weight: 700;
   }
 
 .social-icons-top {
@@ -385,10 +387,6 @@ h1.title::first-letter {
         height: 96px;
         margin-top: -180px;
         margin-left: -48px;
-    }
-
-    .nav-link[href="/download/"] {
-        display: none !important;
     }
 
     .fa-arrow-down {
