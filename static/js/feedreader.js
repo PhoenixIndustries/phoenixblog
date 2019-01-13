@@ -1,4 +1,3 @@
-$(".navbar-brand").text("Manjaro - news");
 $('.row').isotope({
     itemSelector: '.grid-item',
     getSortData: {
@@ -18,7 +17,7 @@ function feedreader(feed) {
     var $XML = $(data);
     $XML.find("item").each(function(iter) {
         
-        if (feed == feeds[1] && iter > 1) {
+        if (feed == feeds[1] && iter > 0) {
             // pass
         } else {
         
