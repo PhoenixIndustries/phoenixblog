@@ -536,7 +536,6 @@ h1.title::first-letter {
     li img {
         margin-right: 8px;
     }
-
 }
 
 .support-page {
@@ -863,7 +862,7 @@ h1.title::first-letter {
         top: 44% !important;
     }
 
-    .landing-page .nav-item {
+    .landing-page .nav-item:nth-child(2) {
         display: none;
     }
 
