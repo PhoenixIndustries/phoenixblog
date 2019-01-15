@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1:not(.title), h2, h3, h4, h5 {
-    font-weight: lighter;
+    font-weight: lighter !important;
 }
 
 a {
@@ -122,10 +122,24 @@ a {
 }
 
 .section {
-    
+        
     p {
         text-align: justify;
     }
+}
+
+.landing-page .section,
+.news .section {
+    background-image: url(/img/bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -232px 232px;
+    background-attachment: fixed;
+}
+
+.landing-page .section .container {
+    background: #FFFFFF;
+    background: #ffffffbf;
 }
 
 p, .call-to-action {
@@ -363,6 +377,20 @@ h1.title::first-letter {
 
 .landing-page {
 
+    .section {
+        padding-bottom: 30px !important;
+    }
+
+    .section-team {
+
+        padding-bottom: 30px !important;
+       h2 {
+        padding-top: 15px;
+        text-align: center;
+        font-size: 1.8em;
+       }
+    }
+
     .btn-group {
         a:last-child {
             border-bottom-right-radius: 20px;
@@ -408,14 +436,14 @@ h1.title::first-letter {
 
     .title-container {
         background-color: #2c2c2c;
-        background-color: #2c2c2cbd;
+        background-color: #00000082;
         padding: 18px !important;
         z-index: -1;
         margin-top: 96px;
     
       p {
         color: #FFFFFF;
-        text-align: left;
+        text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
        }  
@@ -457,14 +485,6 @@ h1.title::first-letter {
         font-size: 1.2rem;
         color: #6b6a6a;
         margin-top: 16px;
-    }
-
-    h2.title {
-        text-align: center;
-    }
-
-    .section-team h2 {
-        font-size: 1.8em;
     }
 } 
 
