@@ -91,10 +91,13 @@ function scrollToNews() {
 <script>
 function scrollToContent() {
     $('html, body').animate({
-                scrollTop: $('#content' ).offset().top
+                scrollTop: $('#content' ).offset().top -200
                 }, 500);
 }
 $("#scrolltocontent").on('click', function() {
+    scrollToContent();
+});
+$(window).one("scroll", function(){
     scrollToContent();
 });
 </script>
