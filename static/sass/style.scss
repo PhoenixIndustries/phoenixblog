@@ -279,9 +279,12 @@ h1.title::first-letter {
         width: 100%;
         max-width: 100%;
     }
+    .navbar-brand {
+        margin-top: 4px;
+    }
     .navbar-translate .page-nav {
         position: absolute;
-        left: 78px;
+        left: 100px;
     }
     .configured-with-one-click {
         .row section, .row img{
@@ -311,12 +314,19 @@ h1.title::first-letter {
     .nav-link:not(.dropdown) {
         font-size: 0.8571em !important;
     }
+    .navbar-brand {
+        margin-right: 0px;
+        padding: 0px;
+        padding-right: 5px;
+        text-transform: lowercase !important;
+        font-size: 1.6em  !important;
+    }
+    .navbar-translate {
+        margin-top: -6px;
+    }
 }
 
-.navbar-brand {
-    margin-right: 0px;
-    padding-right: 5px;
-}
+
 
 .page-nav {
     color: #FFFFFF !important;
@@ -326,7 +336,6 @@ h1.title::first-letter {
     display: inline-block;
     line-height: 1.625rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .page-header .text-center a {
@@ -856,6 +865,10 @@ h1.title::first-letter {
 }
 
 @media screen and (min-width: 992px) {
+
+    .navbar-brand {
+        margin-top: -4px;
+    }
 
     .landing-page .title-container {
         max-width: 70% !important;
