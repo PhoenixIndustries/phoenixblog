@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre2-testing-x86_64.iso"
-Download_x64_Checksum = "f9edf911e0fb8bd709013b90732ec52c614c1b30"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre2-testing-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre2-testing-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre3-testing-x86_64.iso"
+Download_x64_Checksum = "d5100fe755c9c39df60d485050e66a726cafd228"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre3-testing-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.0.3-pre3-testing-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro team and comes with
 Tags = [ "official", "resourceefficient", "traditional_ui", "preview" ]
 TargetGroup = "For testers and developers"
 Thumbnail = "xfce-preview.jpg"
-Version = "18.0.3-pre2"
-date = "2019-01-19T11:11:21+01:00"
+Version = "18.0.3-pre3"
+date = "2019-02-16T14:34:00+01:00"
 title = "XFCE - Development Preview"
 type="download-edition"
 weight = "6"
