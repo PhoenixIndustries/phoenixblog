@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-architect-18.0-stable-x86_64.iso"
-Download_x64_Checksum = "823b4e4e2c734c6b4cf95b3f100b5c6397a252e2"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-architect-18.0-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-architect-18.0-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-architect-18.0.2-stable-x86_64.iso"
+Download_x64_Checksum = "fa3740a6206ff45a46425cd73a8657125a7109e4"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-architect-18.0.2-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-architect-18.0.2-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -13,8 +13,8 @@ ShortDescription = "This edition is supported by the Manjaro team and comes with
 Tags = [ "official", "resourceefficient" ]
 TargetGroup = "For people who want to setup and configure Manjaro from the ground up"
 Thumbnail = "architect.jpg"
-Version = "18.0"
-date = "2018-11-28T15:26:00+01:00"
+Version = "18.0.2"
+date = "2019-02-17T11:38:00+01:00"
 title = "Architect - Stable"
 type="download-edition"
 weight = "7"
