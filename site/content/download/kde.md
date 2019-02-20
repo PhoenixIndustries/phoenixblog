@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-stable-x86_64.iso"
-Download_x64_Checksum = "5b51f617f7cbc193fa532e77a8841d059d4f134f"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.2-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.3-stable-x86_64.iso"
+Download_x64_Checksum = "70b0958b3ecc4be1c1af3eed96bad2e25faa8c76"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.3-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.0.3-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro team and comes with
 Tags = [ "official", "beginnerfriendly", "resourceefficient", "traditional_ui" ]
 TargetGroup = "For people who want a modern and very flexible desktop"
 Thumbnail = "kde.jpg"
-Version = "18.0.2"
-date = "03.01.2019T19:17:00+01:00"
+Version = "18.0.3"
+date = "19.02.2019T17:36:00+01:00"
 title = "KDE - Stable"
 type="download-edition"
 weight = "2"

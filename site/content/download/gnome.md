@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.2-stable-x86_64.iso"
-Download_x64_Checksum = "0a8c6e353f15c43887acc76a2c847fc82d0bd9f3"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.2-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.2-stable-x86_64.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.3-stable-x86_64.iso"
+Download_x64_Checksum = "5438950ff38a5550297369ad909ecb6eb3e305ab"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.3-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-18.0.3-stable-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro team and comes with
 Tags = [ "official", "beginnerfriendly" ]
 TargetGroup = "For people who want a very modern and simple desktop"
 Thumbnail = "gnome.jpg"
-Version = "18.0.2"
-date = "03.01.2019T19:15:00+01:00"
+Version = "18.0.3"
+date = "19.02.2019T18:37:00+01:00"
 title = "Gnome - Stable"
 type="download-edition"
 weigth = "3"
