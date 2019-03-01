@@ -26,14 +26,14 @@ function feedreader(feed) {
                 title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
                 category:    $this.find("category").text(),
                 description: $this.find("description").text().replace(/\]]>/g, "").replace("full topic", "in the forum"),
-                date:        $this.find("pubDate").text().replace(/\+0000/g, ""),
+                date:        $this.find("pubDate").text().replace(/\+0000|,/g, "").slice(0, -9).slice(4, 15),
                 link:        $this.find("link").text(),
             };
         var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
         var forumHtml = $($.parseHTML(item.description));
         var shortText = forumHtml.text().trim().slice(1, 300);
         var img = forumHtml.find("img:first").attr("src");
-
+       
         var $article = $(`
         <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
             <div class="card">
@@ -82,7 +82,7 @@ function feedreader(feed) {
         //$('#' + el + ' .modal-body').find("strong").contents().unwrap();
         
         if (iter == 24) {
-            setTimeout(function(){ $(".loader").hide();scrollToNews();}, 600);
+            setTimeout(function(){ $(".loader").hide();}, 600);
         }  
     }});
 });};

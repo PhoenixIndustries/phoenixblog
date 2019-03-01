@@ -682,9 +682,10 @@ h1.title::first-letter {
         }
         time {
             position: absolute;
-            right: 40px;
-            bottom: 4px;
+            right: 10px;
+            top: 5px;
             font-size: 12px;
+            color: red;
         }
         .title-container {
             margin-top: 62px;
@@ -705,6 +706,10 @@ h1.title::first-letter {
             margin-bottom: 0;
     }
     .card {
+        &:hover {
+            box-shadow: 0 5px 25px 0 rgba(0,6,0,.5);
+            color: #000;
+        }
         padding: 20px;
         margin-top: 0;
         img[src=""] {
@@ -713,6 +718,7 @@ h1.title::first-letter {
         .btn-group {
             text-align: center;
             float: right;
+            margin-bottom: -10px;
             .disabled {
                 cursor: default;
                 color: black;
@@ -830,9 +836,9 @@ h1.title::first-letter {
         padding-right: 30px;
     }
     .zoom {      
-        -webkit-transition: all 0.35s ease-in-out;    
-        -moz-transition: all 0.35s ease-in-out;    
-        transition: all 0.35s ease-in-out;     
+        -webkit-transition: all 0.20s ease-in-out;    
+        -moz-transition: all 0.20s ease-in-out;    
+        transition: all 0.20s ease-in-out;     
         cursor: -webkit-zoom-in;      
         cursor: -moz-zoom-in;      
         cursor: zoom-in;  
@@ -854,11 +860,11 @@ h1.title::first-letter {
         .news .zoom:hover,  
         .news .zoom:active,   
         .news .zoom:focus {
-            -ms-transform: scale(1.2);    
-            -moz-transform: scale(1.2);  
-            -webkit-transform: scale(1.2);  
-            -o-transform: scale(1.2);  
-            transform: scale(1.2);    
+            -ms-transform: scale(1.05);    
+            -moz-transform: scale(1.05);  
+            -webkit-transform: scale(1.05);  
+            -o-transform: scale(1.05);  
+            transform: scale(1.05);    
             position:relative;      
             z-index:100;  
             }        
