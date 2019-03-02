@@ -111,8 +111,8 @@ h1:not(.title), h2, h3, h4, h5 {
     font-weight: lighter !important;
 }
 
-a {
-    color: $green;
+a, .description a {
+    color: #673ab7;
     font-weight: bold;
     &:hover,
     &:active,
@@ -354,10 +354,14 @@ h1.title::first-letter {
   }
 
 .social-icons-top {
+
+    .fab {
+       margin-top: 19px;
+    }
      
     text-align: right;
-    margin-bottom: 40px;
-    margin-top: -94px;
+    margin-bottom: 43px;
+    margin-top: -108px;
 
     .btn {
         background-color: #f0f0f0;
@@ -385,6 +389,37 @@ h1.title::first-letter {
 }
 
 .landing-page {
+
+    .row:first-child {
+        div:first-child:not(.col-md-6) {
+        padding-top: 8px;
+        }
+    }
+
+    .section-story-overview {
+        padding-bottom: 15px;
+        .col-md-6:not(last-child) {
+            .col-left {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    background-color: #80cbc46b;
+                    padding: 8px;
+                    color: #424242;
+                }
+            }
+        }       
+    }
+    
+    h3 .fa, h2 img, h3 .fab {
+        margin-right: 10px;
+    }
+
+    h2 img {
+        width: 1em;
+        vertical-align: text-top;
+    }
 
     .section {
         padding-bottom: 30px !important;
@@ -434,6 +469,18 @@ h1.title::first-letter {
     .fa-heart {
         color: red;
     }
+    .fa-users {
+        color: #2196f3;
+    }
+    .fa-dollar-sign {
+        color: #ff6f00;
+    }
+    .fa-download {
+        color: #d81b60;
+    }
+    .fa-linux {
+        color: #616161;
+    }
 
     .page-header {
         max-height: 100% !important;
@@ -458,9 +505,8 @@ h1.title::first-letter {
        }  
     }
 
-    .description a,
     .team-player .category {
-        color: $green;
+        color: inherit;
         font-weight: bold;
     }
 
@@ -479,8 +525,8 @@ h1.title::first-letter {
         }
     }
 
-    h3 {
-        margin-bottom: 0px;
+    h3, h2 {
+        margin-bottom: 15px;
     }
 
     h5, .section-story-overview {
@@ -886,9 +932,21 @@ h1.title::first-letter {
     }
 
     .col-left {
-        padding-right: 30px;
-        border-right: 4px $green solid;
+        padding-right: 10px;
     }
+    
+    .landing-page {
+        .blockquote {
+            border-right: 0 !important;
+        }
+        .col-md-6:nth-child(2) {
+            p, h3 {
+        padding-left: 10px;
+    }}}
+    .section-story-overview .col-md-6:first-child {
+        border-right: 1px $green solid;
+    }
+    
 
     .donate-page .flex-grid {
         display: flex;
