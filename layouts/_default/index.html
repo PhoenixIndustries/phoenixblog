@@ -1,16 +1,14 @@
 {{ define "title" }}
 <div class="container">
   <div class="content-center title-container">
-    <h1 class="title">{{ .Title }}</h1>
-    {{ if eq .Params.class "landing-page" }}
+    <h1 class="title">{{ i18n "title" }}</h1>
     <div><img class="logo" src="/img/logo.svg"></div>
-    <p>{{ .Params.whatIsManjaro }}</p>
+    <p>{{ i18n "whatIsManjaro" }}</p>
   <div class="btn-group" role="group" aria-label="Toolbar with button groups">
-    <a href="/download/" class="btn btn-success ">Choose Edition and Download</a>
-    <a id="scrolltocontent" class="btn btn-info ">Learn more <i class="fa fa-arrow-down"></i>
+    <a href="/download/" class="btn btn-success ">{{ i18n "chooseEditionAndDownload" }}</a>
+    <a id="scrolltocontent" class="btn btn-info ">{{ i18n "learnMore" }} <i class="fa fa-arrow-down"></i>
     </a>
   </div>
-{{ end }}
   </div>
 </div>
 {{ end }}
@@ -21,4 +19,3 @@
   </div>   
 </div>
 {{ end }}        
- 
