@@ -1,6 +1,7 @@
 theme = "manjaro-homepage"
 baseurl = "/"
-languageCode = "en-us"
+#languageCode = "en-us"
+DefaultContentLanguage = "en-us"
 title = "Manjaro - enjoy the simplicity"
 googleAnalytics = ""
 disqusShortname = ""
@@ -13,20 +14,34 @@ assetDir = "../static/"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-[[menu.main]]
+[languages]
+        [languages.en-us]
+        languageName= "English"
+        title = "Manjaro - enjoy the simplicity"
+        weight= 1
+        contentDir= "content/english"
+
+
+        [languages.tr-TR]
+        languageName= "Türkçe"
+        title = "Manjaro - sadeliğin tadını çıkar"
+        weight= 2
+        contentDir= "content/turkce"
+
+[[languages.en-us.menu.main]]
     name = "News"
     url = "/news/"
     pre = ""
     weight = 2
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Download"
     url = "/download/"
     pre = ""
     weight = 1
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Support"
     url = "#"
     pre = ""
@@ -34,7 +49,7 @@ assetDir = "../static/"
     identifier = "support"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "First Steps"
     url = "/support/firststeps/"
     pre = "<i class='now-ui-icons sport_user-run'></i>"
@@ -42,7 +57,7 @@ assetDir = "../static/"
     parent = "support"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Common Problems"
     url = "/support/commonproblems/"
     pre = "<i class='now-ui-icons health_ambulance'></i>"
@@ -50,7 +65,7 @@ assetDir = "../static/"
     parent = "support"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "User Guide"
     url = "/support/userguide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
@@ -58,7 +73,7 @@ assetDir = "../static/"
     parent = "support"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
@@ -66,7 +81,7 @@ assetDir = "../static/"
     parent = "support"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
@@ -74,7 +89,7 @@ assetDir = "../static/"
     parent = "support"
     
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Shop"
     url = "#"
     pre = ""
@@ -82,7 +97,7 @@ assetDir = "../static/"
     identifier = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Merch & Accessories"
     url = "https://shop.spreadshirt.de/manjaro/"
     pre = ""
@@ -90,7 +105,7 @@ assetDir = "../static/"
     parent = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Manjaro Stickers"
     url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
     pre = ""
@@ -98,7 +113,7 @@ assetDir = "../static/"
     parent = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Hardware - ManjaroBook"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
@@ -106,7 +121,7 @@ assetDir = "../static/"
     parent = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Hardware - Spitfire"
     url = "/hardware-spitfire"
     pre = ""
@@ -114,7 +129,7 @@ assetDir = "../static/"
     parent = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Hardware - Bladebook"
     url = "/hardware-bladebook"
     pre = ""
@@ -122,7 +137,7 @@ assetDir = "../static/"
     parent = "shop"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Packages"
     url = "https://repo.manjaro.org/"
     pre = ""
@@ -130,7 +145,7 @@ assetDir = "../static/"
     identifier = "packages"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Mirrors Check"
     url = "https://repo.manjaro.org/"
     pre = "<i class='now-ui-icons objects_globe'></i>"
@@ -138,7 +153,7 @@ assetDir = "../static/"
     parent = "packages"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Search Stable Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
@@ -146,7 +161,7 @@ assetDir = "../static/"
     parent = "packages"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Search Testing Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
@@ -154,7 +169,7 @@ assetDir = "../static/"
     parent = "packages"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Search Unstable Branch"
     url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
     pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
@@ -169,7 +184,7 @@ assetDir = "../static/"
 #    weight = 2
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Lists"
     url = "#"
     pre = ""
@@ -177,7 +192,7 @@ assetDir = "../static/"
     identifier = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Security"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -185,7 +200,7 @@ assetDir = "../static/"
     parent = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "General"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -193,7 +208,7 @@ assetDir = "../static/"
     parent = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Packages"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -201,7 +216,7 @@ assetDir = "../static/"
     parent = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Testing"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -209,7 +224,7 @@ assetDir = "../static/"
     parent = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Development"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -217,7 +232,7 @@ assetDir = "../static/"
     parent = "mailinglists"
     
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Mirrors"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -225,7 +240,7 @@ assetDir = "../static/"
     parent = "mailinglists"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Features"
     url = "#"
     pre = ""
@@ -233,7 +248,7 @@ assetDir = "../static/"
     identifier = "features"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Under your control"
     url = "/features/under-your-control/"
     pre = "<i class='now-ui-icons objects_spaceship'></i>"
@@ -241,7 +256,7 @@ assetDir = "../static/"
     parent = "features"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Configured with one click"
     url = "/features/configured-with-one-click/"
     pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
@@ -249,7 +264,7 @@ assetDir = "../static/"
     parent = "features"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Useful for everyone"
     url = "/features/useful-for-everyone/"
     pre = "<i class='now-ui-icons ui-2_like'></i>"
@@ -257,7 +272,7 @@ assetDir = "../static/"
     parent = "features"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Fresh & Stable"
     url = "/features/fresh-and-stable/"
     pre = "<i class='now-ui-icons ui-1_send'></i>"
@@ -265,28 +280,28 @@ assetDir = "../static/"
     parent = "features"
 
 
-[[menu.main]]
+[[languages.en-us.menu.main]]
     name = "Donate"
     pre = ""
     url = "/donate/"
     weight = 5 
 
 
-[[menu.footer]]
+[[languages.en-us.menu.footer]]
     identifier = "twitter"
     pre = "<i class='fa fa-twitter'></i>"
     url = "https://twitter.com/manjarolinux"
     weight = 1
 
 
-[[menu.footer]]
+[[languages.en-us.menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fa fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
 
 
-[[menu.footer]]
+[[languages.en-us.menu.footer]]
     identifier = "copyright"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
@@ -294,7 +309,7 @@ assetDir = "../static/"
     weight = 3
 
 
-[[menu.footer]]
+[[languages.en-us.menu.footer]]
     identifier = "terms"
     name = "Terms of Use"
     pre = ""
@@ -302,7 +317,7 @@ assetDir = "../static/"
     weight = 4
     
 
-[[menu.footer]]
+[[languages.en-us.menu.footer]]
     identifier = "privacy"
     name = "Privacy Policy"
     pre = ""

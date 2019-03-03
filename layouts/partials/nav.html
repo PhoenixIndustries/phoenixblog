@@ -39,6 +39,26 @@
         </li>
         {{ end }}
       {{ end }}
+
+{{ if .IsTranslated -}}
+<li class="nav-item dropdown">
+    <a href="#" class="nav-link"  id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <span>{{ .Site.Language.Params.LanguageName }}</span>
+          </a>
+ <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+{{ range .Translations }}
+<a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Site.Language.Params.LanguageName }}</a>
+{{ end -}}
+</div>
+{{ else -}}
+{{ range .Site.Languages -}}
+{{ if ne $.Site.Language.Lang .Lang }}
+<li><a rel="alternate" href="/{{ .Lang }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Params.LanguageName }}</a></li>
+{{ end -}}
+{{ end -}}
+{{ end -}}
+</li>
+
                 </ul>
             </div>
         </div>
