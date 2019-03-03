@@ -273,15 +273,8 @@ assetDir = "../static/"
 
 
 [[menu.footer]]
-    identifier = "twitter"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/manjarolinux"
-    weight = 1
-
-
-[[menu.footer]]
     identifier = "gitlab"
-    pre = "<i class='fa fa-gitlab'></i>"
+    pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
 
