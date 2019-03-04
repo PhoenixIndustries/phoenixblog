@@ -412,7 +412,7 @@ h1.title::first-letter {
         }       
     }
     
-    h3 .fa, h2 img, h3 .fab {
+    h3 .fa, h2 img, h3 .fab, h3 .fas {
         margin-right: 10px;
     }
 
@@ -480,6 +480,9 @@ h1.title::first-letter {
     }
     .fa-linux {
         color: #616161;
+    }
+    .fa-compact-disc {
+        color: #d84315;
     }
 
     .page-header {
