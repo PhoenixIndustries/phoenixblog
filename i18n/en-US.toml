@@ -7,5 +7,50 @@ other = "Manjaro is an operating system, suitable as a free replacement to Windo
 [chooseEditionAndDownload]
 other = "Choose Edition and Download"
 
+[slogan]
+other="enjoy the simplicity"
+
 [learnMore]
 other = "Learn more"
+
+[previous]
+other= "previous"
+
+[next]
+other= "next"
+
+[readMore]
+other="Read More"
+
+[usingBankTransfer]
+other="Using Bank Transfer"
+
+[accountDetails]
+other="Account Details"
+
+[accountHolder]
+other="Account holder"
+
+[accountNumber]
+other="Account Number"
+
+[bankIdentityNumber]
+other="Bank Identity Number"
+
+[bic]
+other="BIC"
+
+[iban]
+other="IBAN"
+
+[bank]
+other="Bank"
+
+[purpose]
+other="Purpose"
+
+[note]
+other="Note"
+
+[download]
+other="Download"

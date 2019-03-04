@@ -34,47 +34,47 @@
                                         <div>
                                             <img src="/img/donation/manually-alt.svg" alt="bank icon" style="width: 202px; height: 202px; margin: auto;" />
                                         </div>
-                                    <a data-toggle="modal" data-target="#acc-details" href="#" id="donation-manually-show" class="btn btn-success btn-xl" style="margin-bottom: 10px;">Using Bank Transfer</a>
+                                    <a data-toggle="modal" data-target="#acc-details" href="#" id="donation-manually-show" class="btn btn-success btn-xl" style="margin-bottom: 10px;">{{ i18n "usingBankTransfer" }}</a>
 
                                     <div id="acc-details" style="text-align: justify;" class="modal" tabindex="-1" role="dialog">
 
                                         <div id="donation-manually-data" class="modal-dialog modal-dialog-centered " role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title">Account Details</h5>
+                                                    <h5 class="modal-title">{{ i18n "accountDetails" }}</h5>
                                                 </div>
                                                 <div class="modal-body">
                                                     <table class="dontation-manually-card">
                                                         <tr>
-                                                            <td class="donation-manually-field">Account holder:</td>
+                                                            <td class="donation-manually-field">{{ i18n "accountHolder" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.account_holder }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">Account Number:</td>
+                                                            <td class="donation-manually-field">{{ i18n "accountNumber" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.account_number }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">Bank Identity Number:</td>
+                                                            <td class="donation-manually-field">{{ i18n "bankIdentityNumber" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.bank_identification }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">Bank:</td>
+                                                            <td class="donation-manually-field">{{ i18n "bank" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.bank }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">BIC:</td>
+                                                            <td class="donation-manually-field">{{ i18n "bic" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.bic }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">IBAN:</td>
+                                                            <td class="donation-manually-field">{{ i18n "iban" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.iban }}{{.}}{{ end }}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="donation-manually-field">Purpose:</td>
+                                                            <td class="donation-manually-field">{{ i18n "purpose" }}:</td>
                                                             <td>{{ with $.Site.Params.donate.account.purpose }}{{.}}{{ end }}</td>
                                                         </tr>
                                                     </table>
-                                                    <div class="modal-footer">Note: {{ with $.Site.Params.donate.account.note }}{{.}}{{ end }}</div>
+                                                    <div class="modal-footer">{{ i18n "note" }}: {{ with $.Site.Params.donate.account.note }}{{.}}{{ end }}</div>
                                                 </div>
                                             </div>
                                         </div>
