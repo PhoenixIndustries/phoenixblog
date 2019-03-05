@@ -1,0 +1,295 @@
+  [[languages.tr-tr.menu.main]]
+    name = "Duyurular"
+    url = "/news/"
+    pre = ""
+    weight = 2
+
+[[languages.tr-tr.menu.main]]
+    name = "İndir"
+    url = "/download/"
+    pre = ""
+    weight = 1
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Destek"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Başlangıç"
+    url = "/support/firststeps/"
+    pre = "<i class='now-ui-icons sport_user-run'></i>"
+    weight = 1
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Genel Sorunlar"
+    url = "/support/commonproblems/"
+    pre = "<i class='now-ui-icons health_ambulance'></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kullanıcı Kılavuzu"
+    url = "/support/userguide/"
+    pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Forum"
+    url = "https://forum.manjaro.org/"
+    pre = "<i class='now-ui-icons business_bank'></i>"
+    weight = 4
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Wiki"
+    url = "https://wiki.manjaro.org"
+    pre = "<i class='now-ui-icons location_map-big'></i>"
+    weight = 5
+    parent = "support"
+    
+
+[[languages.tr-tr.menu.main]]
+    name = "Market"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kıyafet ve Aksesuarlar"
+    url = "https://shop.spreadshirt.de/manjaro/"
+    pre = ""
+    weight = 1
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Manjaro Çıkartmaları"
+    url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
+    pre = ""
+    weight = 2
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Donanım - ManjaroBook"
+    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
+    pre = ""
+    weight = 5
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Donanım - Spitfire"
+    url = "/hardware-spitfire"
+    pre = ""
+    weight = 4
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Donanım - Bladebook"
+    url = "/hardware-bladebook"
+    pre = ""
+    weight = 3
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Paketler"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 2
+    identifier = "packages"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirror Kontrolü"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='now-ui-icons objects_globe'></i>"
+    weight = 1
+    parent = "packages"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kararlı Sürümde Ara"
+    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
+    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+    weight = 2
+    parent = "packages"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Test Sürümünde Ara"
+    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
+    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+    weight = 3
+    parent = "packages"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kararsız Sürümde Ara"
+    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
+    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+    weight = 4
+    parent = "packages"
+
+
+#[[menu.main]]
+#    name = "Team"
+#    url = "/profile/"
+#    pre = "<i class='now-ui-icons users_single-02'></i>"
+#    weight = 2
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Listeler"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Güvenlik"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 1
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Genel"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 2
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Paketler"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 3
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Test"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 4
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Geliştirme"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 5
+    parent = "mailinglists"
+    
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirrorlar"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 6
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Özellikler"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kontrol sende"
+    url = "/features/under-your-control/"
+    pre = "<i class='now-ui-icons objects_spaceship'></i>"
+    weight = 2
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Tek tık ile yapılandırma"
+    url = "/features/configured-with-one-click/"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    weight = 3
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Herkes için kullanışlı"
+    url = "/features/useful-for-everyone/"
+    pre = "<i class='now-ui-icons ui-2_like'></i>"
+    weight = 4
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Güncel ve kararlı"
+    url = "/features/fresh-and-stable/"
+    pre = "<i class='now-ui-icons ui-1_send'></i>"
+    weight = 5
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Bağış"
+    pre = ""
+    url = "/donate/"
+    weight = 5 
+
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "twitter"
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/manjarolinux"
+    weight = 1
+
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "gitlab"
+    pre = "<i class='fa fa-gitlab'></i>"
+    url = "https://gitlab.manjaro.org"
+    weight = 2
+
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "telif"
+    name = "2019 Manjaro Linux"
+    pre = "<i class='fa fa-copyright'></i>"
+    url = "/"
+    weight = 3
+
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "şartlar"
+    name = "Terms of Use"
+    pre = ""
+    url = "/terms-of-use/"
+    weight = 4
+    
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "gizlilik"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
+    weight = 5
