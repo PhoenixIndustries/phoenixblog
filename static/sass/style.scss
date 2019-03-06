@@ -220,7 +220,6 @@ h1.title::first-letter {
     }
 
     .btn-group {
-        
         a:first-child {
             border-radius: 20px !important;
         }
@@ -234,9 +233,6 @@ h1.title::first-letter {
     .landing-page {
         .section-story-overview {
             margin-top: -100px !important;
-            .image-container {
-              margin-bottom: 30px;
-            }
         }
     }
     .landing-page .section-team .team-player {
@@ -253,12 +249,6 @@ h1.title::first-letter {
     }
     .social-icons-top {
         margin-top: -24px !important;
-    }
-}
-
-@media screen and (max-width: 368px) {
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 340px;
     }
 }
 
@@ -412,7 +402,7 @@ h1.title::first-letter {
         }       
     }
     
-    h3 .fa, h2 img, h3 .fab {
+    h3 .fa, h2 img, h3 .fab, h3 .fas {
         margin-right: 10px;
     }
 
@@ -480,6 +470,9 @@ h1.title::first-letter {
     }
     .fa-linux {
         color: #616161;
+    }
+    .fa-compact-disc {
+        color: #d84315;
     }
 
     .page-header {
@@ -752,13 +745,20 @@ h1.title::first-letter {
             margin-bottom: 0;
     }
     .card {
+        text-align: center;
+        h5 {
+            text-align: left;
+        }
         &:hover {
             box-shadow: 0 5px 25px 0 rgba(0,6,0,.5);
             color: #000;
         }
         padding: 20px;
         margin-top: 0;
-        img[src=""] {
+        img[src=""], .hide {
+            display: none;
+        }
+        img[src^="https://forum.manjaro.org/images/emoji"] {
             display: none;
         }
         .btn-group {
@@ -768,6 +768,9 @@ h1.title::first-letter {
             .disabled {
                 cursor: default;
                 color: black;
+            }
+            .btn:last-child {
+                border-left: 1px solid #ffff;
             }
         }
         botton:not(.disabled):hover {

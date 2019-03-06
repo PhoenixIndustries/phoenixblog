@@ -31,7 +31,8 @@ function feedreader(feed) {
             };
         var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
         var forumHtml = $($.parseHTML(item.description));
-        var shortText = forumHtml.text().trim().slice(1, 300);
+        var regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
+        var shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
         var img = forumHtml.find("img:first").attr("src");
        
         var $article = $(`
@@ -40,7 +41,7 @@ function feedreader(feed) {
                 <div class="card-body">
                 <time>` + item.date + `</time>
                 <h5 class="card-title">` + item.title + `</h5>
-                <img class="card-img-top img-fluid" src="` + img + `" alt="Post Image" onerror="this.style.opacity='0'">
+                <img class="card-img-top img-fluid" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
                 <p class="card-text">` + shortText + `</p>
                 <div class="btn-group">
                 <button class="btn-sm btn disabled">Read More:</button>

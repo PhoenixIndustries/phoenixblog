@@ -1,4 +1,4 @@
- [[languages.en-us.menu.main]]
+[[languages.en-us.menu.main]]
     name = "News"
     url = "/news/"
     pre = ""
@@ -147,7 +147,7 @@
     parent = "packages"
 
 
-#[[menu.main]]
+#[[languages.en-us.menu.main]]
 #    name = "Team"
 #    url = "/profile/"
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
@@ -258,15 +258,8 @@
 
 
 [[languages.en-us.menu.footer]]
-    identifier = "twitter"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/manjarolinux"
-    weight = 1
-
-
-[[languages.en-us.menu.footer]]
     identifier = "gitlab"
-    pre = "<i class='fa fa-gitlab'></i>"
+    pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
 
@@ -293,4 +286,5 @@
     pre = ""
     url = "/privacy-policy/"
     weight = 5
+
 
