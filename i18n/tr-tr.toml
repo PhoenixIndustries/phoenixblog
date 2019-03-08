@@ -1,0 +1,56 @@
+[title]
+other = "#Profesyonel Linux'ün en iyisi."
+
+[whatIsManjaro]
+other = "Manjaro, Windows veya MacOS ile ücretsiz olarak değiştirilebilecek bir işletim sistemidir. Farklı sürümleri vardır ve hepsi aynı tabanı kullanır ancak mevcut masaüstü ortamlarının çeşitliliğine bağlı olarak farklı bir deneyim sunar. Ayrıca Manjaro'ya özel donanım tasarlamak için ekibimiz donanım üreticileri ile birlikte çalışıyor. Manjaro'ya özel donanımlar için market bölümünü ziyaret ederek daha fazla bilgi alabilirsiniz."
+
+[chooseEditionAndDownload]
+other = "Sürümü Seçin ve İndirin "
+
+[slogan]
+other="sadeliğin tadını çıkarın"
+
+[learnMore]
+other = "Daha fazla bilgi edin"
+
+[previous]
+other= "önceki"
+
+[next]
+other= "sonraki"
+
+[readMore]
+other="Daha fazla oku"
+
+[usingBankTransfer]
+other="Banka Havalesini Kullanarak"
+
+[accountDetails]
+other="Hesap Detayları"
+
+[accountHolder]
+other="Hesap Sahibi"
+
+[accountNumber]
+other="Hesap Numarası"
+
+[bankIdentityNumber]
+other="Banka Kimlik Numarası"
+
+[bic]
+other="BIC"
+
+[iban]
+other="IBAN"
+
+[bank]
+other="Banka"
+
+[purpose]
+other="Amaç"
+
+[note]
+other="Not"
+
+[download]
+other="İndir"

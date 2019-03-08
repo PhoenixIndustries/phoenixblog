@@ -20,11 +20,11 @@ assetDir = "../static/"
         contentDir= "content/english"
 
 
-        [languages.tr-TR]
-        languageName= "Türkçe"
-        title = "Manjaro - sadeliğin tadını çıkar"
-        weight= 1
-        contentDir= "content/turkce"
+        #[languages.tr-TR]
+        #languageName= "Türkçe"
+        #title = "Manjaro - sadeliğin tadını çıkar"
+        #weight= 1
+        #contentDir= "content/turkce"
 
 
 [params]
@@ -42,12 +42,12 @@ assetDir = "../static/"
     highlightjsTheme = "github"
 
 
-[languages.en-us.params.donate]
+[params.donate]
     headline = "Help us"
     description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
     conditions = "A donation counts as a private donation and is kept anonymous by us. That means that we won't share or publish any details about you and your donation. Donators get no rights or privileges - everybody can participate, whether they donated or not. Manjaro is still relatively young and a growing distribution - we are no registered organization. That means that we cannot give you a reciept that deduct taxes. For the same reason, the donation cannot go to a 'Manjaro Linux' organization, but goes to the head of the Manjaro team."
 
-    [languages.en-us.params.donate.account]
+    [params.donate.account]
         account_holder = "Hanns Philip Müller"
         account_number = "1050676905"
         bank_identification = "12030000"
@@ -58,7 +58,7 @@ assetDir = "../static/"
         note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
 
 
-[languages.en-us.params.download_edition]
+[params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
     download_x64_button = "Download 64 bit version"
