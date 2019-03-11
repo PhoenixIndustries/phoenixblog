@@ -32,21 +32,21 @@ function feedreader(feed) {
         var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
         var forumHtml = $($.parseHTML(item.description));
         var regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
-        var shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
         var img = forumHtml.find("img:first").attr("src");
+        var shortText = forumHtml.find(".lightbox-wrapper").remove()
+        shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
        
         var $article = $(`
         <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
-            <div class="card">
+            <div class="card" data-toggle="modal" data-target='#` + el + `'>
                 <div class="card-body">
                 <time>` + item.date + `</time>
                 <h5 class="card-title">` + item.title + `</h5>
                 <img class="card-img-top img-fluid" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
                 <p class="card-text">` + shortText + `</p>
                 <div class="btn-group">
-                <button class="btn-sm btn disabled">Read More:</button>
-                <button data-toggle="modal" data-target='#` + el + `' class="btn btn-sm btn-success btn-primary">Here</button>
-                <button class="btn btn-success btn-sm btn-primary" onclick='window.location.href="` + item.link + `"'>Forum</button>
+                <button class="btn-sm btn disabled">Full Topic Also in:</button>
+                <button class="btn btn-success btn-sm btn-primary" onclick='window.open("` + item.link + `", "_blank")'>Forum</button>
                 </div>
                 </div>
             </div>
