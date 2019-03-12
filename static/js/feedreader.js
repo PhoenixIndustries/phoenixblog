@@ -1,5 +1,16 @@
+var postTypeButtons = $(`
+<div class="btn-group">
+                <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
+                <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
+                <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
+                <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
+                </div>
+                `)
+
+$(".section .container").prepend(postTypeButtons).addClass("text-center");
 $('.row').isotope({
     itemSelector: '.grid-item',
+    layoutMode: 'masonry',
     getSortData: {
         date: function (elem) {
             return Date.parse($(elem).find('time').text());
@@ -8,6 +19,19 @@ $('.row').isotope({
     sortBy : 'date',
     sortAscending : false
 });
+function selectPostType(button, el) {
+    $(".btn-post-type").removeClass("btn-success");
+    $(button).addClass("btn-success");
+    $(".blog-post").removeClass("zoom").addClass("transitionFix");
+    function callback() {
+        setTimeout(function(){
+            $(".blog-post").removeClass("transitionFix").addClass("zoom");
+            console.log("add zoom")
+        }, 550);
+        
+    }
+    $(".row").isotope({ filter: el }, callback());
+}
 var feeds = [
     "https://forum.manjaro.org/c/announcements.rss",
     "https://forum.manjaro.org/c/manjaro-arm/announcements.rss"
@@ -35,9 +59,23 @@ function feedreader(feed) {
         var img = forumHtml.find("img:first").attr("src");
         var shortText = forumHtml.find(".lightbox-wrapper").remove()
         shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
+
+        function detectPostTypeByTitle() {
+            function titleHasString(string) {
+                return item.title.toLowerCase().includes(string)
+            }
+        if (titleHasString("update")) {
+            return "updates"
+        } else if (titleHasString("release") || 
+                   titleHasString("iso") ||
+                   titleHasString("download")) {
+            return "release"
+        } else {
+            return "post-news"
+        }}
        
         var $article = $(`
-        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
+        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle() + `'>
             <div class="card" data-toggle="modal" data-target='#` + el + `'>
                 <div class="card-body">
                 <time>` + item.date + `</time>
