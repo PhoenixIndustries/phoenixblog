@@ -13,11 +13,48 @@ assetDir = "../static/"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+# --- Top Menu
+
 [[menu.main]]
     name = "News"
     url = "/news/"
     pre = ""
+    weight = 3
+
+[[menu.main]]
+    name = "Donate"
+    pre = ""
+    url = "/donate/"
+    weight = 8 
+
+[[menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = ""
+    weight = 6
+    identifier = "mailinglists"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 2
+    parent = "mailinglists"
+
+
+[[menu.main]]
+    name = "Features"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 5
+    identifier = "mirrors"
 
 [[menu.main]]
     name = "Download"
@@ -25,14 +62,25 @@ assetDir = "../static/"
     pre = ""
     weight = 1
 
+[[menu.main]]
+    name = "Shop"
+    url = "#"
+    pre = ""
+    weight = 7
+    identifier = "shop"
 
 [[menu.main]]
     name = "Support"
     url = "#"
     pre = ""
-    weight = 2
+    weight = 4
     identifier = "support"
 
+#
+# --- End Top Menu ---
+#
+
+# --- SubMenu Support ---
 
 [[menu.main]]
     name = "First Steps"
@@ -62,7 +110,7 @@ assetDir = "../static/"
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 4
+    weight = 3
     parent = "support"
 
 
@@ -72,15 +120,12 @@ assetDir = "../static/"
     pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 5
     parent = "support"
-    
 
-[[menu.main]]
-    name = "Shop"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "shop"
+#
+# --- End SubMenu Support 
+#
 
+# --- Submenu Shop ---
 
 [[menu.main]]
     name = "Merch & Accessories"
@@ -121,14 +166,11 @@ assetDir = "../static/"
     weight = 3
     parent = "shop"
 
+#
+# --- End SubMenu Shop --- 
+#
 
-[[menu.main]]
-    name = "Mirrors"
-    url = "https://repo.manjaro.org/"
-    pre = ""
-    weight = 2
-    identifier = "mirrors"
-
+# --- disabled ---
 
 #[[menu.main]]
 #    name = "Mirrors Check"
@@ -168,14 +210,11 @@ assetDir = "../static/"
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
 #    weight = 2
 
+#
+# --- end disabled ---
+#
 
-[[menu.main]]
-    name = "Lists"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "mailinglists"
-
+# --- Submenu Lists ---
 
 [[menu.main]]
     name = "Security"
@@ -215,23 +254,12 @@ assetDir = "../static/"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
     parent = "mailinglists"
-    
 
-[[menu.main]]
-    name = "Mirrors"
-    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 6
-    parent = "mailinglists"
+#
+# --- end Submenu Lists ---
+#
 
-
-[[menu.main]]
-    name = "Features"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "features"
-
+# --- submenu Features ---
 
 [[menu.main]]
     name = "Under your control"
@@ -264,20 +292,18 @@ assetDir = "../static/"
     weight = 5
     parent = "features"
 
+#
+# --- end submenu Features ---
+#
 
-[[menu.main]]
-    name = "Donate"
-    pre = ""
-    url = "/donate/"
-    weight = 5 
-
+# --- others ---
 
 [[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
-
+ 
 
 [[menu.footer]]
     identifier = "copyright"
