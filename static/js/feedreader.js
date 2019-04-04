@@ -1,5 +1,16 @@
+var postTypeButtons = $(`
+<div class="btn-group">
+                <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
+                <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
+                <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
+                <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
+                </div>
+                `)
+
+$(".section .container").prepend(postTypeButtons).addClass("text-center");
 $('.row').isotope({
     itemSelector: '.grid-item',
+    layoutMode: 'masonry',
     getSortData: {
         date: function (elem) {
             return Date.parse($(elem).find('time').text());
@@ -8,6 +19,19 @@ $('.row').isotope({
     sortBy : 'date',
     sortAscending : false
 });
+function selectPostType(button, el) {
+    $(".btn-post-type").removeClass("btn-success");
+    $(button).addClass("btn-success");
+    $(".blog-post").removeClass("zoom").addClass("transitionFix");
+    function callback() {
+        setTimeout(function(){
+            $(".blog-post").removeClass("transitionFix").addClass("zoom");
+            console.log("add zoom")
+        }, 550);
+        
+    }
+    $(".row").isotope({ filter: el }, callback());
+}
 var feeds = [
     "https://forum.manjaro.org/c/announcements.rss",
     "https://forum.manjaro.org/c/manjaro-arm/announcements.rss"
@@ -32,21 +56,35 @@ function feedreader(feed) {
         var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
         var forumHtml = $($.parseHTML(item.description));
         var regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
-        var shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
         var img = forumHtml.find("img:first").attr("src");
+        var shortText = forumHtml.find(".lightbox-wrapper").remove()
+        shortText = forumHtml.text().trim().replace(regex, "").slice(1, 200);
+
+        function detectPostTypeByTitle() {
+            function titleHasString(string) {
+                return item.title.toLowerCase().includes(string)
+            }
+        if (titleHasString("update")) {
+            return "updates"
+        } else if (titleHasString("release") || 
+                   titleHasString("iso") ||
+                   titleHasString("download")) {
+            return "release"
+        } else {
+            return "post-news"
+        }}
        
         var $article = $(`
-        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto'>
-            <div class="card">
+        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle() + `'>
+            <div class="card" data-toggle="modal" data-target='#` + el + `'>
                 <div class="card-body">
                 <time>` + item.date + `</time>
                 <h5 class="card-title">` + item.title + `</h5>
                 <img class="card-img-top img-fluid" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
                 <p class="card-text">` + shortText + `</p>
                 <div class="btn-group">
-                <button class="btn-sm btn disabled">Read More:</button>
-                <button data-toggle="modal" data-target='#` + el + `' class="btn btn-sm btn-success btn-primary">Here</button>
-                <button class="btn btn-success btn-sm btn-primary" onclick='window.location.href="` + item.link + `"'>Forum</button>
+                <button class="btn-sm btn disabled">Full Topic Also in:</button>
+                <button class="btn btn-success btn-sm btn-primary" onclick='window.open("` + item.link + `", "_blank")'>Forum</button>
                 </div>
                 </div>
             </div>

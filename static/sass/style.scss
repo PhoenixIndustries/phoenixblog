@@ -703,7 +703,6 @@ h1.title::first-letter {
 }
 
 .news {
-
     .loader {
         display: block;
     }
@@ -712,6 +711,9 @@ h1.title::first-letter {
         min-height: 2000px;
     }
     .section {
+        .container {
+            margin-top: 46px;
+        }
         padding-top: 30px;
         *:not(button) {
             font-size: 14px;
@@ -736,7 +738,7 @@ h1.title::first-letter {
     }
     .blog {
         padding-top: 0;
-        margin-top: 60px;
+        margin-top: 15px;
         div.text-center {
             margin-bottom: 40px;
         }
@@ -768,9 +770,6 @@ h1.title::first-letter {
             .disabled {
                 cursor: default;
                 color: black;
-            }
-            .btn:last-child {
-                border-left: 1px solid #ffff;
             }
         }
         botton:not(.disabled):hover {
@@ -887,11 +886,16 @@ h1.title::first-letter {
     .zoom {      
         -webkit-transition: all 0.20s ease-in-out;    
         -moz-transition: all 0.20s ease-in-out;    
-        transition: all 0.20s ease-in-out;     
+        transition: all 0.20s ease-in-out;
         cursor: -webkit-zoom-in;      
         cursor: -moz-zoom-in;      
         cursor: zoom-in;  
-        }     
+        } 
+        .transitionFix {
+            -webkit-transition: background 0.4s, box-shadow 0.4s;
+            -moz-transition: background 0.4s, box-shadow 0.4s;
+            transition: background 0.4s, box-shadow 0.4s;
+        }    
         
         .configured-with-one-click .zoom:hover,  
         .configured-with-one-click .zoom:active,   

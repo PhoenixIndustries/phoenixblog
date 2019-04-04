@@ -26,7 +26,6 @@ assetDir = "../static/"
         #weight= 1
         #contentDir= "content/turkce"
 
-
 [params]
     background = "/img/header.jpg"
     tint = "green"

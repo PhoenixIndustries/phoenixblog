@@ -1,25 +1,73 @@
-[[languages.en-us.menu.main]]
+# --- Top Menu
+
+[[menu.main]]
     name = "News"
     url = "/news/"
     pre = ""
-    weight = 2
+    weight = 3
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
+    name = "Donate"
+    pre = ""
+    url = "/donate/"
+    weight = 8 
+
+[[menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = ""
+    weight = 6
+    identifier = "mailinglists"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 2
+    parent = "mailinglists"
+
+
+[[menu.main]]
+    name = "Features"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 5
+    identifier = "mirrors"
+
+[[menu.main]]
     name = "Download"
     url = "/download/"
     pre = ""
     weight = 1
 
+[[menu.main]]
+    name = "Shop"
+    url = "#"
+    pre = ""
+    weight = 7
+    identifier = "shop"
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Support"
     url = "#"
     pre = ""
-    weight = 2
+    weight = 4
     identifier = "support"
 
+#
+# --- End Top Menu ---
+#
 
-[[languages.en-us.menu.main]]
+# --- SubMenu Support ---
+
+[[menu.main]]
     name = "First Steps"
     url = "/support/firststeps/"
     pre = "<i class='now-ui-icons sport_user-run'></i>"
@@ -27,7 +75,7 @@
     parent = "support"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Common Problems"
     url = "/support/commonproblems/"
     pre = "<i class='now-ui-icons health_ambulance'></i>"
@@ -35,7 +83,7 @@
     parent = "support"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "User Guide"
     url = "/support/userguide/"
     pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
@@ -43,31 +91,28 @@
     parent = "support"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 4
+    weight = 3
     parent = "support"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
     pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 5
     parent = "support"
-    
 
-[[languages.en-us.menu.main]]
-    name = "Shop"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "shop"
+#
+# --- End SubMenu Support 
+#
 
+# --- Submenu Shop ---
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Merch & Accessories"
     url = "https://shop.spreadshirt.de/manjaro/"
     pre = ""
@@ -75,7 +120,7 @@
     parent = "shop"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Manjaro Stickers"
     url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
     pre = ""
@@ -83,7 +128,7 @@
     parent = "shop"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Hardware - ManjaroBook"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
@@ -91,7 +136,7 @@
     parent = "shop"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Hardware - Spitfire"
     url = "/hardware-spitfire"
     pre = ""
@@ -99,70 +144,64 @@
     parent = "shop"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Hardware - Bladebook"
     url = "/hardware-bladebook"
     pre = ""
     weight = 3
     parent = "shop"
 
+#
+# --- End SubMenu Shop --- 
+#
 
-[[languages.en-us.menu.main]]
-    name = "Packages"
-    url = "https://repo.manjaro.org/"
-    pre = ""
-    weight = 2
-    identifier = "packages"
+# --- disabled ---
 
-
-[[languages.en-us.menu.main]]
-    name = "Mirrors Check"
-    url = "https://repo.manjaro.org/"
-    pre = "<i class='now-ui-icons objects_globe'></i>"
-    weight = 1
-    parent = "packages"
+#[[menu.main]]
+#    name = "Mirrors Check"
+#    url = "https://repo.manjaro.org/"
+#    pre = "<i class='now-ui-icons objects_globe'></i>"
+#    weight = 1
+#    parent = "packages"
 
 
-[[languages.en-us.menu.main]]
-    name = "Search Stable Branch"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 2
-    parent = "packages"
+#[[menu.main]]
+#    name = "Search Stable Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 2
+#    parent = "packages"
 
 
-[[languages.en-us.menu.main]]
-    name = "Search Testing Branch"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 3
-    parent = "packages"
+#[[menu.main]]
+#    name = "Search Testing Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 3
+#    parent = "packages"
 
 
-[[languages.en-us.menu.main]]
-    name = "Search Unstable Branch"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 4
-    parent = "packages"
+#[[menu.main]]
+#    name = "Search Unstable Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 4
+#    parent = "packages"
 
 
-#[[languages.en-us.menu.main]]
+#[[menu.main]]
 #    name = "Team"
 #    url = "/profile/"
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
 #    weight = 2
 
+#
+# --- end disabled ---
+#
 
-[[languages.en-us.menu.main]]
-    name = "Lists"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "mailinglists"
+# --- Submenu Lists ---
 
-
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Security"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -170,7 +209,7 @@
     parent = "mailinglists"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "General"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -178,7 +217,7 @@
     parent = "mailinglists"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Packages"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -186,7 +225,7 @@
     parent = "mailinglists"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Testing"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
@@ -194,31 +233,20 @@
     parent = "mailinglists"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Development"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
     parent = "mailinglists"
-    
 
-[[languages.en-us.menu.main]]
-    name = "Mirrors"
-    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 6
-    parent = "mailinglists"
+#
+# --- end Submenu Lists ---
+#
 
+# --- submenu Features ---
 
-[[languages.en-us.menu.main]]
-    name = "Features"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "features"
-
-
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Under your control"
     url = "/features/under-your-control/"
     pre = "<i class='now-ui-icons objects_spaceship'></i>"
@@ -226,7 +254,7 @@
     parent = "features"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Configured with one click"
     url = "/features/configured-with-one-click/"
     pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
@@ -234,7 +262,7 @@
     parent = "features"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Useful for everyone"
     url = "/features/useful-for-everyone/"
     pre = "<i class='now-ui-icons ui-2_like'></i>"
@@ -242,29 +270,27 @@
     parent = "features"
 
 
-[[languages.en-us.menu.main]]
+[[menu.main]]
     name = "Fresh & Stable"
     url = "/features/fresh-and-stable/"
     pre = "<i class='now-ui-icons ui-1_send'></i>"
     weight = 5
     parent = "features"
 
+#
+# --- end submenu Features ---
+#
 
-[[languages.en-us.menu.main]]
-    name = "Donate"
-    pre = ""
-    url = "/donate/"
-    weight = 5 
+# --- others ---
 
-
-[[languages.en-us.menu.footer]]
+[[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
+ 
 
-
-[[languages.en-us.menu.footer]]
+[[menu.footer]]
     identifier = "copyright"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
@@ -272,7 +298,7 @@
     weight = 3
 
 
-[[languages.en-us.menu.footer]]
+[[menu.footer]]
     identifier = "terms"
     name = "Terms of Use"
     pre = ""
@@ -280,11 +306,9 @@
     weight = 4
     
 
-[[languages.en-us.menu.footer]]
+[[menu.footer]]
     identifier = "privacy"
     name = "Privacy Policy"
     pre = ""
     url = "/privacy-policy/"
     weight = 5
-
-
