@@ -6,7 +6,7 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
 publishDir = "../docs"
-themesDir = "../.."
+themesDir = "../../"
 i18nDir = "../i18n/"
 assetDir = "../static/"
 
@@ -20,11 +20,11 @@ assetDir = "../static/"
         contentDir= "content/english"
 
 
-        #[languages.tr-TR]
-        #languageName= "Türkçe"
-        #title = "Manjaro - sadeliğin tadını çıkar"
-        #weight= 1
-        #contentDir= "content/turkce"
+        [languages.tr-tr]
+        languageName= "Türkçe"
+        title = "Manjaro - sadeliğin tadını çıkar"
+        weight= 2
+        contentDir= "content/turkish"
 
 [params]
     background = "/img/header.jpg"

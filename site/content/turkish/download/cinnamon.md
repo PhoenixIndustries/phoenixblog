@@ -1,0 +1,21 @@
++++
+Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-x86_64.iso"
+Download_x64_Checksum = "96dd0f5b4d5ec9eba65ae9bc86c843b85915f02b"
+Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-x86_64.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.3-stable-x86_64.iso.torrent"
+Download_x86 = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-minimal-x86_64.iso"
+Download_x86_Checksum = "faf43bf8367587d6c7c105e2bfc70c1ab1f30155"
+Download_x86_Sig = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-minimalx86_64.iso.sig"
+Download_x86_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.3-stable-minimal-x86_64.iso.torrent"
+Name = "Cinnamon Edition"
+Screenshot = "cinnamon-full.jpg"
+ShortDescription = "This edition is supported by the Manjaro community and comes with Cinnamon, a desktop based on modern technology that keeps known and proven concepts."
+Tags = [ "resourceefficient", "beginnerfriendly", "traditional_ui" ]
+TargetGroup = "For people who look for a traditional desktop with modern technology"
+Thumbnail = "cinnamon.jpg"
+Version = "18.0.4"
+date = "2019-03-21T00:13:31+01:00"
+title = "Cinnamon - Stable"
+type="download-edition"
+weight = "5"
++++

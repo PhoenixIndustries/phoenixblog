@@ -1,23 +1,71 @@
-  [[languages.tr-tr.menu.main]]
+# --- Top Menu
+
+[[languages.tr-tr.menu.main]]
     name = "Duyurular"
     url = "/news/"
     pre = ""
-    weight = 2
+    weight = 3
 
 [[languages.tr-tr.menu.main]]
-    name = "İndir"
+    name = "Bağış"
+    pre = ""
+    url = "/donate/"
+    weight = 8 
+
+[[languages.tr-tr.menu.main]]
+    name = "Listeler"
+    url = "#"
+    pre = ""
+    weight = 6
+    identifier = "mailinglists"
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 2
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Özellikler"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 5
+    identifier = "mirrors"
+
+[[languages.tr-tr.menu.main]]
+    name = "Indir"
     url = "/download/"
     pre = ""
     weight = 1
 
+[[languages.tr-tr.menu.main]]
+    name = "Market"
+    url = "#"
+    pre = ""
+    weight = 7
+    identifier = "shop"
 
 [[languages.tr-tr.menu.main]]
     name = "Destek"
     url = "#"
     pre = ""
-    weight = 2
+    weight = 4
     identifier = "support"
 
+#
+# --- End Top Menu ---
+#
+
+# --- SubMenu Support ---
 
 [[languages.tr-tr.menu.main]]
     name = "Başlangıç"
@@ -47,7 +95,7 @@
     name = "Forum"
     url = "https://forum.manjaro.org/"
     pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 4
+    weight = 3
     parent = "support"
 
 
@@ -57,15 +105,12 @@
     pre = "<i class='now-ui-icons location_map-big'></i>"
     weight = 5
     parent = "support"
-    
 
-[[languages.tr-tr.menu.main]]
-    name = "Market"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "shop"
+#
+# --- End SubMenu Support 
+#
 
+# --- Submenu Shop ---
 
 [[languages.tr-tr.menu.main]]
     name = "Kıyafet ve Aksesuarlar"
@@ -106,61 +151,55 @@
     weight = 3
     parent = "shop"
 
+#
+# --- End SubMenu Shop --- 
+#
 
-[[languages.tr-tr.menu.main]]
-    name = "Paketler"
-    url = "https://repo.manjaro.org/"
-    pre = ""
-    weight = 2
-    identifier = "packages"
+# --- disabled ---
 
-
-[[languages.tr-tr.menu.main]]
-    name = "Mirror Kontrolü"
-    url = "https://repo.manjaro.org/"
-    pre = "<i class='now-ui-icons objects_globe'></i>"
-    weight = 1
-    parent = "packages"
+#[[languages.tr-tr.menu.main]]
+#    name = "Mirrors Check"
+#    url = "https://repo.manjaro.org/"
+#    pre = "<i class='now-ui-icons objects_globe'></i>"
+#    weight = 1
+#    parent = "packages"
 
 
-[[languages.tr-tr.menu.main]]
-    name = "Kararlı Sürümde Ara"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 2
-    parent = "packages"
+#[[languages.tr-tr.menu.main]]
+#    name = "Search Stable Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 2
+#    parent = "packages"
 
 
-[[languages.tr-tr.menu.main]]
-    name = "Test Sürümünde Ara"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 3
-    parent = "packages"
+#[[languages.tr-tr.menu.main]]
+#    name = "Search Testing Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 3
+#    parent = "packages"
 
 
-[[languages.tr-tr.menu.main]]
-    name = "Kararsız Sürümde Ara"
-    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
-    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-    weight = 4
-    parent = "packages"
+#[[languages.tr-tr.menu.main]]
+#    name = "Search Unstable Branch"
+#    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
+#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
+#    weight = 4
+#    parent = "packages"
 
 
-#[[menu.main]]
+#[[languages.tr-tr.menu.main]]
 #    name = "Team"
 #    url = "/profile/"
 #    pre = "<i class='now-ui-icons users_single-02'></i>"
 #    weight = 2
 
+#
+# --- end disabled ---
+#
 
-[[languages.tr-tr.menu.main]]
-    name = "Listeler"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "mailinglists"
-
+# --- Submenu Lists ---
 
 [[languages.tr-tr.menu.main]]
     name = "Güvenlik"
@@ -195,28 +234,17 @@
 
 
 [[languages.tr-tr.menu.main]]
-    name = "Geliştirme"
+    name = "Geliştirici"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
     parent = "mailinglists"
-    
 
-[[languages.tr-tr.menu.main]]
-    name = "Mirrorlar"
-    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 6
-    parent = "mailinglists"
+#
+# --- end Submenu Lists ---
+#
 
-
-[[languages.tr-tr.menu.main]]
-    name = "Özellikler"
-    url = "#"
-    pre = ""
-    weight = 4
-    identifier = "features"
-
+# --- submenu Features ---
 
 [[languages.tr-tr.menu.main]]
     name = "Kontrol sende"
@@ -249,30 +277,21 @@
     weight = 5
     parent = "features"
 
+#
+# --- end submenu Features ---
+#
 
-[[languages.tr-tr.menu.main]]
-    name = "Bağış"
-    pre = ""
-    url = "/donate/"
-    weight = 5 
-
-
-[[languages.tr-tr.menu.footer]]
-    identifier = "twitter"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/manjarolinux"
-    weight = 1
-
+# --- others ---
 
 [[languages.tr-tr.menu.footer]]
     identifier = "gitlab"
-    pre = "<i class='fa fa-gitlab'></i>"
+    pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
     weight = 2
-
+ 
 
 [[languages.tr-tr.menu.footer]]
-    identifier = "telif"
+    identifier = "Telif"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/"
@@ -280,7 +299,7 @@
 
 
 [[languages.tr-tr.menu.footer]]
-    identifier = "şartlar"
+    identifier = "Şartlar"
     name = "Terms of Use"
     pre = ""
     url = "/terms-of-use/"
@@ -288,7 +307,7 @@
     
 
 [[languages.tr-tr.menu.footer]]
-    identifier = "gizlilik"
+    identifier = "Gizlilik"
     name = "Privacy Policy"
     pre = ""
     url = "/privacy-policy/"
