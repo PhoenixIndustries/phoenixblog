@@ -1,38 +1,38 @@
 ---
 #background: "img/bg4.jpg"
-title: "What is Manjaro"
+title: "Manjaro Nedir"
 type: "page"
 
 ---
 
-Manjaro is a user-friendly and open-source Linux distribution. It provides all the benefits of cutting edge software combined with a focus on user-friendliness and accessibility, making it suitable for newcomers as well as experienced Linux users.
+Manjaro kullanıcı dostu ve açık kaynaklı bir Linux dağıtımıdır. Kullanıcı dostu ve erişilebilirliğe odaklanan üstün yazılımın tüm avantajlarını sağlar, yeni veya deneyimli Linux kullanıcıları için uygun hale getirir.
 
 ![Overview](/img/features/overview.png)
 
-## Core features
+## Çekirdek özellikleri
 ---
 
 |      |      |
 |------|------|
-| <img src="/img/features/installation.svg" class="icon"> | A simplifed, user-friendly installation process |
-| <img src="/img/features/desktopenvironment.svg" class="icon"> | Pre-installed desktop environments |
-| <img src="/img/features/package.svg" class="icon"> | Pre-installed graphical applications to easily install software and update your system |
-| <img src="/img/features/movie.svg" class="icon"> | Pre-installed codecs to play multimedia files |
-| <img src="/img/features/hardware.svg" class="icon"> | Automatic installation of the necessary software for your hardware (e.g. graphics drivers") |
-| <img src="/img/features/star.svg" class="icon"> | Access to the lastest version of software |
-| <img src="/img/features/kernel.svg" class="icon"> | Support for the easy installation and use of multiple kernels. |
-| <img src="/img/features/aur.svg" class="icon"> | Access to the Arch User Repository (AUR") for more experienced users |
+| <img src="/img/features/installation.svg" class="icon"> | Basitleştirilmiş, kullanıcı dostu bir kurulum süreci |
+| <img src="/img/features/desktopenvironment.svg" class="icon"> | Önceden yüklenmiş masaüstü ortamları |
+| <img src="/img/features/package.svg" class="icon"> | Yazılımı kolayca kurmak ve sisteminizi güncellemek için önceden yüklenmiş grafik uygulamaları |
+| <img src="/img/features/movie.svg" class="icon"> | Multimedya dosyalarını oynatmak için önceden yüklenmiş kodekler |
+| <img src="/img/features/hardware.svg" class="icon"> | Donanımınız için gerekli yazılımın otomatik kurulumu (örneğin, grafik sürücüleri ") |
+| <img src="/img/features/star.svg" class="icon"> | Yazılımın en son sürümüne erişin |
+| <img src="/img/features/kernel.svg" class="icon"> | Çoklu çekirdeklerin kolay kurulum ve kullanımı için destek. |
+| <img src="/img/features/aur.svg" class="icon"> | Daha deneyimli kullanıcılar için Arşiv Kullanıcı Deposuna (AUR ") erişim |
 
 <p></p>
 <p></p>
 
-## How much does it cost?
+## Fiyatı ne kadar?
 ---
 
-Manjaro is completely free and always will be. It was created, so we can have a nice Linux based operating system that is easy to use and stable. As with most Linux distributions, **you the user**, is the main focus, we do not take control away from you. Manjaro considers privacy very important, we do not sell your data.
+Manjaro tamamen ücretsizdir ve her zaman ücretsiz olacaktır. Kullanımı kolay ve kararlı güzel bir Linux tabanlı işletim sistemine sahip olabiliriz. Çoğu Linux dağıtımında olduğu gibi, ** kullanıcı **, ana odak noktasıdır, kontrolü size bırakıyoruz. Manjaro gizliliği çok önem verir ve verilerinizi satmaz.
 
 ---
 
-*Manjaro Linux started as a hobby project and it’s just fun to work and develop with our great community on it!* – Roland Singer
+*Manjaro Linux, hobi projesi olarak başladı ve büyük topluluğumuzla üzerinde çalışmak ve geliştirmek oldukça eğlenceli!* – Roland Singer
 
-*Manjaro Linux targets beginners and advanced users at the same time. We provide user interface tools and scripts to make life easier.* – Philip Müller
+*Manjaro Linux aynı anda hem yeni başlayanları hem de gelişmiş kullanıcıları hedeflemektedir. Hayatı kolaylaştırmak için kullanıcı arabirimi araçları ve komut dosyaları sunuyoruz.* – Philip Müller
