@@ -1,0 +1,21 @@
++++
+Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-bspwm-18.0.4-unstable-x86_64.iso"
+Download_x64_Checksum = "59c9afd11ee88d60403ac3f1cf1e335667d28e05"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-bspwm-18.0.4-unstable-x86_64.iso.sig"
+Download_x64_Torrent = ""
+Download_x86 = ""
+Download_x86_Checksum = ""
+Download_x86_Sig = ""
+Download_x86_Torrent = ""
+Name = "Bspwm Edition"
+Screenshot = "bspwm-full.jpg"
+ShortDescription = "This edition is supported by the Manjaro community and comes with bspwm, a tiling window manager."
+Tags = [ "resourceefficient" ]
+TargetGroup = "For people who want to use a tiling window manager"
+Thumbnail = "bspwm.jpg"
+Version = "18.0.4"
+date = "2019-04-06T14:53+01:00"
+title = "Bpspwm"
+type="download-edition"
+weight = "5"
++++

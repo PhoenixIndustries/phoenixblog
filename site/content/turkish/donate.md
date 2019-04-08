@@ -1,38 +1,38 @@
 +++
 date = "2016-09-04T15:50:15+02:00"
 draft = false
-title = "Donate"
+title = "Bağış"
 type = "donate"
-button_donate_text = "Using Paypal"
+button_donate_text = "Paypal Kullanarak"
 +++
 
-There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help out covering some unavoidable cost, giving developers time and freedom to improve Manjaro's features and to allow spreading word about Manjaro by attending conferences.
+Manjaro'ya yardım etmenin birçok yolu var. Bunun bir yolu, az miktarda para bağışlamak, kaçınılmaz bir maliyetin karşılanmasına yardımcı olmak, geliştiricilere Manjaro'nun özelliklerini geliştirmek için zaman ve özgürlük sağlamak ve konferanslara katılarak Manjaro hakkında konuşmayı sağlamaktır.
 
-### Why does Manjaro ask for donations
+### Manjaro neden bağış istiyor?
 
-Manjaro is not backed by some large corporation and solely held up by the team, the community and some sponsors that are willing to dedicate their time and resources to develop and improve Manjaro.
+Manjaro, bazı büyük şirketler tarafından desteklenmiyor ve yalnızca ekip, topluluk ve Manjaro'yu geliştirmek ve iyileştirmek için zamanlarını ve kaynaklarını adamak isteyenler ve bazı sponsorlar tarafından destekleniyor.
 
-### For what will my donations used for
+### Bağışlarım ne için kullanılacak?
 
-Your donation will be mainly used for keeping all our severs and therefore our website, forums, mailing lists, bugtracker and more running. If some money is left - good servers are quite expensive - your donations will be used for attending conferences or giving a developer the resources to dedicate more time into developing a feature for Manjaro.
+Bağışınız esas olarak tüm sunucularımızı ve dolayısıyla web sitemizi, forumlarımızı, e-posta listelerinizi, hataların tespiti ve daha fazla çalışmayı sürdürmek için kullanılacak. Eğer bir miktar para kalırsa - iyi sunucular oldukça pahalıdır - bağışlarınız konferanslara katılmak veya Manjaro için bir özellik geliştirmek için daha fazla zaman ayırmak için kaynak geliştirici olarak kullanılacaktır.
 
 ![Uses](/img/donation/uses.png)
 
-### Is my donation anonymous
+### Bağışım isimsiz mi?
 
-Yes. We will keep everything you do anonymous. We won't share or publish any details about you and your donation.
+Evet. Yaptığın her şeyi anonim tutacağız. Siz ve bağışınızla ilgili hiçbir bilgiyi paylaşmayacağız veya yayınlamayacağız.
 
-### What do I get if I donate
+### Bağış yaparsam nasıl hissederim?
 
-You get the feeling that you helped us out and that everybody is thankful to you :)
+Bize yardım ettiğinizi ve herkesin size minnettar olduğunu hissediyorsunuz :)
 
-### Why am I donating to a private person
+### Neden özel bir kişiye bağış yapıyorum?
 
-Manjaro is not a registered organization, for now. As this is extremely expensive and Manjaro is a relatively young and growing distribution. Your donation will go to the leader of Manjaro's core team who will then pass it down to the right people.
+Manjaro şimdilik tescilli bir organizasyon değil. Bu son derece pahalı olduğundan ve Manjaro nispeten genç ve büyüyen bir dağıtımdır. Bağışınız Manjaro'nun çekirdek ekibinin lideri olacak ve ardından doğru kişilere aktarılacak.
 
-### Can I get a tax deduction
+### Bir vergi indirimi alabilir miyim?
 
-Unfortunately not, as we are not a registered organization, which means your donation counts as private donation. For those the tax cannot be deducted.
+Ne yazık ki hayır, kayıtlı bir kuruluş olmadığımız için, bağışınız özel bağış olarak kabul edilir. Bunlar için vergi kesilemez.
 
-## Choose a donation method
+## Bir bağış yöntemi seçin
 ---
