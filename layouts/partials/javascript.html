@@ -18,6 +18,9 @@
 <script src="{{ "js/validator.min.js" | relURL }}" ></script>
 <script src="{{ "js/contact.js" | relURL }}" ></script>
 
+<!-- BackToTop Script -->
+<script src="{{ "js/plugins/vanilla-back-to-top.min.js" | relURL }}" ></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
 // hide page title on scroll
@@ -43,6 +46,12 @@ if ($( window ).width() > 992) {
             }, 1000);
         }
     }
+
+    addBackToTop({
+        diameter: 56,
+        backgroundColor: '#44883C',
+        textColor: '#fff'
+    })
 </script>
 
 {{ range .Site.Params.custom_js }}
