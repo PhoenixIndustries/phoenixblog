@@ -5,7 +5,8 @@
   { "id" : "official", "description" : "Flagship editions", "default" : "" },
   { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "" },
   { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
-  { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" }
+  { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" },
+  { "id" : "arm", "description" : "ARM", "default" : "arm" }
   ]
 }
 

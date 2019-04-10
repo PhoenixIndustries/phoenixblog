@@ -1,11 +1,5 @@
 {{ "<!-- ASIDE -->" | safeHTML }}
 <!-- These are functional styles and do not belong to creative.css -->
-<style type="text/css">
-.editions-box-hideable {
-	transition: all .5s;
-	float: none;
-	display: inline-block;
-}
 
 {{ range .Params.filters }}
 .editions-box-hideable-{{ .id }} {
@@ -37,24 +31,24 @@
 		[].forEach.call(els, function (el)
 		{
 			if (tags.length == 0) {
-				//el.style.display = "block";
-				el.style.opacity = "1";
-				el.style.width = "";
-				el.style.visibility = "visible";
+				el.style.display = "none";
+				//el.style.opacity = "1";
+				//el.style.width = "";
+				//el.style.visibility = "visible";
 			}
 			else {
 
 				if(element_is_in_tags(el, tags)) {
-					//el.style.display = "block";
-					el.style.opacity = "1";
-					el.style.width = "";
-					el.style.visibility = "visible";
+					el.style.display = "inline-block";
+					//el.style.opacity = "1";
+					//el.style.width = "";
+					//el.style.visibility = "visible";
 				}
 				else {
-					//el.style.display = "none";
-					el.style.opacity = "0";
-					el.style.width = "0%";
-					el.style.visibility = "hidden";
+					el.style.display = "none";
+					//el.style.opacity = "0";
+					//el.style.width = "0%";
+					//el.style.visibility = "hidden";
 				}
 			}
 		});
@@ -138,4 +132,5 @@
 
 <script type="text/javascript" >
 	update_editions_tags();
+	
 </script>
