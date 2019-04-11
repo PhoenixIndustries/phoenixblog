@@ -1,5 +1,5 @@
 {
-  "title" : "Try it now",
+  "title" : "Şimdi Dene",
   "type" : "download-selector",
   "filters" : [
   { "id" : "official", "description" : "Flagship editions", "default" : "" },
@@ -9,8 +9,8 @@
   ]
 }
 
-For simplicity we have selected XFCE, KDE and GNOME as our flagship editions. If you want to look for other experiences, our community has created many flavours that focus around other desktops.
+Basitlik açısından, resmi sürümlerimizden XFCE, KDE ve GNOME'u seçtik. Başka deneyimler aramak istiyorsanız, topluluğumuz diğer masaüstleri için de farklı lezzetler yarattı.
 
-For example we have editions that use technology that makes them very resource-efficient and makes them a good choice for *old computers*. Other editions focus on breaking away from user interface standards that are decades old and giving users a modern experience. As not everybody wants to have such an experience and likes a more traditional way how everything works, we have editions that focus on this *traditional workflow*.
+Örneğin, masaüstü kaynak tüketimi minimize eden ve *eski bilgisayarlar* için iyi bir seçim olacak sürümlerimiz var. Diğer sürümler, onlarca yıllık kullanıcı arayüzü standartlarından kurtulmaya ve kullanıcılara modern bir deneyim kazandırmaya odaklanmaktadır. Herkes böyle bir deneyime sahip olmak istemediğinden ve geleneksel yöntemleri daha çok sevdiğinden, *geleneksel yöntemlere* odaklanan sürümlerimiz vardır.
 
-Simply use our download selector below to find your right edition. *You may also want to checkout our archive of past released [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) editions.*
+Doğru sürümü bulmak için aşağıdaki indirme seçicimizi kullanın. *Ayrıca yayımlanan geçmiş arşivimizi de kontrol etmek isteyebilirsiniz. [Resmi](https://osdn.net/projects/manjaro/storage) ve [Topluluk](https://osdn.net/projects/manjaro-community/storage) sürümleri.*
