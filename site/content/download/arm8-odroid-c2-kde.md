@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/oc2/kde/19.02/Manjaro-ARM-kde-oc2-19.02.img.xz"
-Download_x64_Checksum = "db042b54bd8db17920079321e2865bbed4617b21"
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/oc2/kde/19.04/Manjaro-ARM-kde-oc2-19.04.img.xz"
+Download_x64_Checksum = "f789dfc483123b0f5923f22e3b98201071821bf8"
 Download_x64_Sig = ""
-Download_x64_Torrent = "https://osdn.net/projects/manjaro-arm/storage/oc2/kde/19.02/Manjaro-ARM-kde-oc2-19.02.img.xz.torrent"
+Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro ARM team and comes 
 Tags = [ "arm" ]
 TargetGroup = "For people who want a reliable and fast desktop"
 Thumbnail = "arm-kde-full.png"
-Version = "19.02"
-date = "13.02.2019T12:31:00+01:00"
+Version = "19.04"
+date = "12.04.2019T12:31:00+01:00"
 title = "Odroid C2 KDE"
 type="download-edition"
 weight = "1"
