@@ -6,7 +6,7 @@
   { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "" },
   { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
   { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" },
-  { "id" : "arm", "description" : "ARM", "default" : "arm" }
+  { "id" : "arm", "description" : "ARM v8", "default" : "arm" }
   ]
 }
 
