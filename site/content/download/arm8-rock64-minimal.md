@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rock64/minimal/19.02/Manjaro-ARM-minimal-rock64-19.02.img.xz"
-Download_x64_Checksum = "aef58f37966507743a0b45b1f4b72f4b439f2502"
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rock64/minimal/19.04/Manjaro-ARM-minimal-rock64-19.04.img.xz"
+Download_x64_Checksum = "aa42a8109d4d22b70ee7d8458bd4989ac686e771"
 Download_x64_Sig = ""
-Download_x64_Torrent = "https://osdn.net/projects/manjaro-arm/storage/rock64/minimal/19.02/Manjaro-ARM-minimal-rock64-19.02.img.xz.torrent"
+Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro ARM team and comes 
 Tags = [ "arm" ]
 TargetGroup = "For people that do not need a desktop"
 Thumbnail = "arm-minimal-full.png"
-Version = "19.02"
-date = "13.02.2019T12:31:00+01:00"
+Version = "19.04"
+date = "12.04.2019T12:31:00+01:00"
 title = "Rock64 - Minimal"
 type="download-edition"
 weight = "1"

@@ -1,6 +1,6 @@
 +++
-Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/pinebook/kde/19.03/Manjaro-ARM-kde-pinebook-19.03.img.xz"
-Download_x64_Checksum = "915d4fe8867d34801f9be0407a1d8c619a9e211b"
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/pinebook/kde/19.04/Manjaro-ARM-kde-pinebook-19.04.img.xz"
+Download_x64_Checksum = "8267921e71bf663202d4b69f78ae7b08d61ccba8"
 Download_x64_Sig = ""
 Download_x64_Torrent = ""
 Download_x86 = ""
@@ -14,8 +14,8 @@ ShortDescription = "This edition is supported by the Manjaro ARM team and comes 
 Tags = [ "arm" ]
 TargetGroup = "For people who want a reliable and fast desktop"
 Thumbnail = "arm-kde-full.png"
-Version = "19.03"
-date = "17.03.2019T12:31:00+01:00"
+Version = "19.04"
+date = "12.04.2019T12:31:00+01:00"
 title = "ARM 8 - Pinebook - KDE"
 type="download-edition"
 weight = "1"
