@@ -21,6 +21,9 @@
 <!-- BackToTop Script -->
 <script src="{{ "js/plugins/vanilla-back-to-top.min.js" | relURL }}" ></script>
 
+<!-- Stepper Script -->
+<script src="{{ "js/plugins/bs-stepper.min.js" | relURL }}" ></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
 // hide page title on scroll
@@ -51,6 +54,15 @@ if ($( window ).width() > 992) {
         diameter: 56,
         backgroundColor: '#44883C',
         textColor: '#fff'
+    })
+</script>
+
+<!-- stepper -->
+<script type="text/javascript" >
+
+    var stepper = new Stepper(document.querySelector('#stepper'), {
+      linear: false,
+      animation: true
     })
 </script>
 

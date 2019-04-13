@@ -1,0 +1,43 @@
+<aside id="stepper" class="bs-stepper">
+    <div class="col-md-12 mt-5">
+          <div id="stepper" class="bs-stepper">
+            
+            <div class="bs-stepper-header">
+                {{ if eq .Type "stepper" }}
+                {{$size:= (len .Params.stepstitles)}}
+                  {{ range $index, $element := .Params.stepstitles}}
+                    {{$indexStartingAt1 := (add $index 1)}}
+                      <div class="step" data-target="#step{{ $index }}">
+                        <button type="button" class="btn step-trigger">
+                          <span class="bs-stepper-circle bg-success">{{ $indexStartingAt1 }}</span>
+                          <span class="bs-stepper-label">{{ . }}</span>
+                        </button>
+                      </div>
+
+                    {{if lt $indexStartingAt1 $size}} 
+                        <div class="line"></div>
+                    {{end}}
+
+              {{ end }}{{ end }}
+            </div>
+            
+            <div class="bs-stepper-content clearfix">
+                {{ if eq .Type "stepper" }}
+                {{$size:= (len .Params.stepstitles)}}
+                  {{ range $index, $element := .Params.stepstitles}}
+                     <div id="step{{ $index }}" class="content">
+                     <p class="text-center">{{ . }}</p>
+                    {{if lt (add $index 1) $size}} 
+                      <button class="btn btn-primary float-lg-right" onclick="stepper.next()">Next</button>
+                    {{end}}
+                    {{if gt $index 0}} 
+                        <button class="btn btn-primary float-lg-right" onclick="stepper.previous()">Previous</button>
+                    {{end}}
+                
+                    </div>
+              {{ end }}{{ end }}
+            </div>
+
+          </div>
+   </div>
+</aside>

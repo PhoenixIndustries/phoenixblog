@@ -17,6 +17,7 @@
     <!-- CSS Files -->
     <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" />
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="stylesheet" />
+    <link href="{{ "css/bs-stepper.min.css" | relURL }}" rel="stylesheet">
     {{ $styles := resources.Get "/sass/style.scss" | toCSS "/css/style.css"| minify}}
     <link href="{{ $styles.Permalink }}?v=1.0.3" rel="stylesheet" />
 

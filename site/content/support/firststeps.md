@@ -2,10 +2,11 @@
 class = "first-steps"
 date = "2016-09-05T21:03:22+02:00"
 title = "First Steps"
-type = "support-post"
+type = "stepper"
 weight = 0
 right = false
 navsection = "support"
+stepstitles = [ "Step 1", "Step 2", "Step 3", "Step 4", "Step 5", "Step 6" ]
 +++
 
 Here are some first steps after you [downloaded](/download) Manjaro. This guide covers only the basic steps, so if you want more information look into the [Manjaro User Guide](/support/userguide/) or the [Manjaro Wiki](https://wiki.manjaro.org/).
