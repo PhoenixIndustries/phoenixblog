@@ -7,8 +7,8 @@
         {{$indexStartingAt1 := (add $index 1)}}
           <div class="step" data-target="#step{{ $index }}">
            <button type="button" class="btn step-trigger">
+              <span class="bs-stepper-label">Step</span>
              <span class="bs-stepper-circle bg-success">{{ $indexStartingAt1 }}</span>
-             <span class="bs-stepper-label">{{ . }}</span>
            </button>
           </div>
           {{if lt $indexStartingAt1 $size}} 
