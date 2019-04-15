@@ -6,7 +6,6 @@ type = "stepper"
 weight = 0
 right = false
 navsection = "support"
-stepstitles = [ "Choose your Manjaro Edition", "Installation of The Edition", "Configuration Your System"]
 stepscontent = ["page1", "page2", "page3"]
 #stepsaspect = "vertical"
 +++

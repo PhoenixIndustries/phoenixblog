@@ -1,5 +1,5 @@
 +++
-name = "page1"
+title = "Choose your Manjaro Edition"
 +++ 
 
 

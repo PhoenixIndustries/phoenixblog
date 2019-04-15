@@ -2,13 +2,16 @@
 <aside id="stepper" class="bs-stepper {{.Params.stepsaspect}}" >
   <div class="bs-stepper-header">
     
-      {{$size:= (len .Params.stepstitles)}}
-      {{ range $index, $element := .Params.stepstitles}}
+      {{$size:= (len .Params.stepscontent)}}
+      {{ range $index, $element := .Params.stepscontent}}
         {{$indexStartingAt1 := (add $index 1)}}
           <div class="step" data-target="#step{{ $index }}">
            <button type="button" class="btn step-trigger">
              <span class="bs-stepper-circle bg-success">{{ $indexStartingAt1 }}</span>
-             <span class="bs-stepper-label">{{ . }}</span>
+
+             {{ with  $.GetPage $element }} 
+             <span class="bs-stepper-label">{{ .Title }}</span>
+             {{ end }}
            </button>
           </div>
           {{if lt $indexStartingAt1 $size}} 
