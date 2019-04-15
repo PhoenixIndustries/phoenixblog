@@ -1,6 +1,7 @@
-<aside id="stepper" class="bs-stepper">
+{{ if eq .Type "stepper" }}
+<aside id="stepper" class="bs-stepper {{.Params.stepsaspect}}" >
   <div class="bs-stepper-header">
-    {{ if eq .Type "stepper" }}
+    
       {{$size:= (len .Params.stepstitles)}}
       {{ range $index, $element := .Params.stepstitles}}
         {{$indexStartingAt1 := (add $index 1)}}
@@ -14,24 +15,26 @@
             <div class="line"></div>
           {{end}}
       {{ end }}
-    {{ end }}
   </div>
             
   <div class="bs-stepper-content clearfix">
-    {{ if eq .Type "stepper" }}
-      {{$size:= (len .Params.stepstitles)}}
-      {{ range $index, $element := .Params.stepstitles}}
+      {{$size:= (len .Params.stepscontent)}}
+      {{ range $index, $element := .Params.stepscontent}}
         <div id="step{{ $index }}" class="content">
-          <p class="text-center">{{ $element}}</p>
+
+            {{ with  $.GetPage $element }} 
+            {{ .Content }}
+            {{ end }}
+         
           {{if lt (add $index 1) $size}} 
-            <button class="btn btn-primary float-lg-right" onclick="stepper.next()">Next</button>
+            <button class="btn btn-primary btn-lg float-lg-right" onclick="stepper.next()">Next</button>
           {{end}}
           {{if gt $index 0}} 
-            <button class="btn btn-primary float-lg-right" onclick="stepper.previous()">Previous</button>
+            <button class="btn btn-primary btn-lg float-lg-right" onclick="stepper.previous()">Previous</button>
           {{end}}
                 
         </div>
       {{ end }}
-    {{ end }}
   </div>
 </aside>
+{{ end }}
