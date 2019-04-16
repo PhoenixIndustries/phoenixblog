@@ -43,7 +43,7 @@ To try out Manjaro, you can either directly load it from a DVD or USB-Drive or u
 |                                                | |
 |                                                | **[Find out how this works](#install-manjaro)** |
 
-![Pipeline](/img/support/firststeps-overview.png)
+![Pipeline](/img/support/firststeps-overview.png#center)
 
 ## Using a virtual machine
 ---
