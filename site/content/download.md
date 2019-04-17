@@ -7,8 +7,7 @@
   { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
   { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" },
   { "id" : "arm", "description" : "ARM v8", "default" : "arm" },
-  { "id" : "32bit", "description" : "32-bit (x86)", "default" : "32bit" },
-  { "id" : "dev", "description" : "Previews", "default" : "dev" }
+   { "id" : "dev", "description" : "Previews", "default" : "dev" }
   ]
 }
 
