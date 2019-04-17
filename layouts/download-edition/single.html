@@ -33,28 +33,6 @@
               </div>
               <div class="bottom">
                 <div style="margin-top: auto; margin-bottom: 10px;">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >
-                      {{ if .Params.download_x64 }}
-                      {{ .Site.Params.download_edition.download_x64_button }} 
-                    {{else}}
-                      {{ .Site.Params.download_edition.download_x86_button }}
-                    {{end}}</a>
-                  <p></p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ if .Params.download_x64_torrent }}
-                        {{.Params.download_x64_torrent }}
-                      {{else if .Params.download_x86_torrent }}
-                         {{.Params.download_x86_torrent }}
-                        <a href="{{ . }}" target="_blank">
-                          {{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
-                      {{ if .Params.download_x64_sig | or .Params.download_x86_sig}} 
-                      <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-<<<<<<< HEAD
-                      SHA1: {{.Params.download_x64_checksum}}
-=======
                   <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x64_button }}</a>
                   <p></p>
                   <div>
@@ -62,19 +40,6 @@
                       {{ with .Params.download_x64_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
                       {{ with .Params.download_x64_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
                       SHA1: {{ .Params.download_x64_checksum }}
->>>>>>> parent of 8cb69c9... add xfce 32bit
-=======
-                      SHA1: {{if .Params.download_x64_checksum}}{{else}}{{.Params.download_x86_checksum }}{{end}}
->>>>>>> parent of bc9dd76... update 32bit
-=======
-                  <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x64_button }}</a>
-                  <p></p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ with .Params.download_x64_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
-                      {{ with .Params.download_x64_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-                      SHA1: {{ .Params.download_x64_checksum }}
->>>>>>> parent of 8cb69c9... add xfce 32bit
                     </div>
                   </div>
                 </div>
@@ -111,5 +76,4 @@
     </section>
   </div>   
 </div>
-{{ end }}        
- 
+{{ end }}   
