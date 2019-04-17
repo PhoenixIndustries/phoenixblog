@@ -13,15 +13,13 @@
       <div class="container">
         <!-- <h2>Manjaro {{ .Params.name }}</h2>
         <hr class="star-primary" /> -->
-        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive img-centered" alt=""></a>
+        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive zoom" alt="Desktop Image" style="width:100%;"></a>
         <br/>
         <p>{{ .Params.shortdescription | markdownify }}</p>
         <p>{{ .Content | markdownify }}</p>
         {{ if .Params.Youtube }}
           <p>{{partial "youtube" .}}</p>
         {{ end }}
-        <h2>Download</h2>
-        <hr class="star-primary"/>
         <ul class="flex-grid download-edition-grid">
           {{ if .Params.download_x64 }}
           <li class="flex-item">
@@ -35,7 +33,7 @@
               <div class="bottom">
                 <div style="margin-top: auto; margin-bottom: 10px;">
                   <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >
-                     {{ .Site.Params.download_edition.download_x64_button }}</a>
+                     {{ .Site.Params.download_edition.download_button }}</a>
                   <p></p>
                   <div>
                     <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
@@ -60,7 +58,7 @@
               </div>
               <div class="bottom">
                 <div style="margin-top: auto; margin-bottom: 10px;">
-                  <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x86_button }}</a>
+                  <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_button }}</a>
                   <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
                   <div>
                     <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
