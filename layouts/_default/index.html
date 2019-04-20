@@ -17,8 +17,32 @@
 {{ define "body" }}
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto">
+      <div id="content" class="social-icons-top">
+        <a href="{{.Params.facebook}}" class="btn btn-icon btn-round">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="{{.Params.twitter}}" class="btn btn-icon btn-round"> 
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="{{.Params.youtube}}" class="btn btn-icon btn-round"> 
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="{{.Params.wikipedia}}" class="btn btn-icon btn-round"> 
+            <i class="fab fa-wikipedia-w"></i>
+        </a>
+        <a href="{{.Params.forum}}" class="btn btn-icon btn-round"> 
+            <i class="fa fa-comments"></i>
+        </a>
+    </div>
+    
   {{ .Content }}
   </div>   
 </div>
+{{ partial "story-overview.html" . }}
+<!-- In my opinion, there is a problem -->
+</div>
+</div>
+<!-- ---- -->
+{{ partial "core-team.html" . }}
 {{ end }}        
  
