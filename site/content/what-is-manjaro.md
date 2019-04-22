@@ -2,12 +2,11 @@
 #background: "img/bg4.jpg"
 title: "What is Manjaro"
 type: "page"
-
 ---
 
 Manjaro is a user-friendly and open-source Linux distribution. It provides all the benefits of cutting edge software combined with a focus on user-friendliness and accessibility, making it suitable for newcomers as well as experienced Linux users.
 
-![Overview](/img/features/overview.png)
+![Overview](/img/features/overview.png#center)
 
 ## Core features
 ---
@@ -22,9 +21,6 @@ Manjaro is a user-friendly and open-source Linux distribution. It provides all t
 | <img src="/img/features/star.svg" class="icon"> | Access to the lastest version of software |
 | <img src="/img/features/kernel.svg" class="icon"> | Support for the easy installation and use of multiple kernels. |
 | <img src="/img/features/aur.svg" class="icon"> | Access to the Arch User Repository (AUR") for more experienced users |
-
-<p></p>
-<p></p>
 
 ## How much does it cost?
 ---

@@ -16,14 +16,15 @@
 						<div class="row">
 							{{ range $index, $element := .Params.subcontent}}
 							{{ with  $.GetPage $element }} 
-								<div class="col-md-6 col-xl-4 text-center">
-									<img class="xl-icon" src="/img/actions/{{ .Params.icon}}.svg" alt="Icon"/>
-									
+							<div class="col-md-3 offset-md-1"><img class="zoom" src="/img/applications/{{ .Params.image}}.png"/></div>
+							<section id="{{ .Params.image}}" class="col-md-7">
+								<div class="feature-screenshot-fan">
+									<div>
 									<h3>{{ .Title }}</h3>
-									<hr/>
-									<p>{{ .Content }}				
-									</p>
-								</div>  
+									<p>{{ .Content }}		</p>
+									</div>
+								</div>
+							</section>
 								{{ end }}
 								{{ end }}
 					</div>

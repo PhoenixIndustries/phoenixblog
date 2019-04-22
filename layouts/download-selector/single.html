@@ -15,6 +15,30 @@
 				{{ range (where .Site.Pages ".Type" "download-how-to-try") }}
 				<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify  }}
 			</div>
+				<div class="row">
+					<ul class="list-group card col-md-12 offset-xl-1 col-xl-10">
+					<li class="list-group-item text-center"><h2>{{.Params.title}}</h2></li>
+					{{ range $index, $element := .Params.listcontent}}
+					{{ with  $.GetPage $element }} 
+						<li class="list-group-item">
+								<div class="row d-inline-flex w-100 ml-2">
+										<div class="col-xs-6">
+												<img src="/img/try/{{ .Params.icon}}.svg" alt="{{ .Params.icon}}" class="icon">
+										</div>
+										<div class="col-xs-6">
+												<br>
+												{{ .Content }}	
+										</div>
+									</div>
+					
+						
+						
+						
+						</li>
+						{{ end }}
+						{{ end }}
+				</ul>
+				</div>
 			{{ end }}
 		</div>
 		{{ partial "editionfinder.html" . }}

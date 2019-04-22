@@ -19,6 +19,6 @@ To even further enhance the security, verify the downloaded file with a **GPG (G
 ## Getting started
 ---
 
-When you are ready, Follow first steps, you should also read the <a href="https://manjaro.org/support/userguide/">MANUAL</a>.
+When you are ready, Follow first steps, you should also read the [MANUAL](https://manjaro.org/support/userguide/).
 
 <a href="/support/firststeps" class="btn btn-success btn-xl">First steps</a>
