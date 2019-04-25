@@ -297,12 +297,6 @@ assetDir = "../static/"
 #
 
 # --- others ---
-
-[[menu.footer]]
-    identifier = "gitlab"
-    pre = "<i class='fab fa-gitlab'></i>"
-    url = "https://gitlab.manjaro.org"
-    weight = 2
  
 
 [[menu.footer]]
@@ -310,6 +304,14 @@ assetDir = "../static/"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/"
+    weight = 2
+
+
+[[menu.footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
     weight = 3
 
 
@@ -319,13 +321,12 @@ assetDir = "../static/"
     pre = ""
     url = "/terms-of-use/"
     weight = 4
-    
+
 
 [[menu.footer]]
-    identifier = "privacy"
-    name = "Privacy Policy"
-    pre = ""
-    url = "/privacy-policy/"
+    identifier = "gitlab"
+    pre = "<i class='fab fa-gitlab'></i>"
+    url = "https://gitlab.manjaro.org"
     weight = 5
 
 
