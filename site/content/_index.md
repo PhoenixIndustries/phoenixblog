@@ -7,8 +7,7 @@ description = "description of the page for search engine meta tags"
 facebook = "https://www.facebook.com/ManjaroLinux"
 twitter = "https://twitter.com/ManjaroLinux"
 youtube = "https://www.youtube.com/channel/UCdGFLV7h9RGeTUX7wa5rqGw"
-wikipedia = "https://wiki.manjaro.org/index.php?title=Main_Page"
-forum = "https://forum.manjaro.org/"
+gitlab = "https://gitlab.manjaro.org"
 +++
 
 

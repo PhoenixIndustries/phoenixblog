@@ -3,15 +3,7 @@
     <div class="container text-center py-3">
       <div class="row justify-content-center py-1">
           {{ range .Site.Menus.footer }}
-          {{ if eq .Identifier "copyright" }}
-            <div class="col-12 col-md-12">
-                <a   href="{{ .URL | relLangURL }}">
-                
-                    <span>{{ .Pre }} {{ .Name }}</span>
-                  </a>
-            </div>
-          </div>
-      {{end}}
+         
       {{ if eq .Identifier "privacy" }}
         <div class="row justify-content-center py-1">
             <div class="col-1 col-md-2 text-right">
@@ -23,6 +15,7 @@
                   •
                 </div>
       {{end}}
+
       {{ if eq .Identifier "terms" }}
               <div class="col-1 col-md-2 text-left">
                   <a href="{{ .URL | relLangURL }}">
@@ -31,18 +24,16 @@
               </div>
         </div>
       {{end}}
-      {{ if eq .Identifier "gitlab" }}
-        <div class="row justify-content-center py-1">
-            <div class="col-12 col-md-12">
-                <a   href="{{ .URL | relLangURL }}">
-                
-                    <span>{{ .Pre }} {{ .Name }}</span>
-                  </a>
-            </div>
-        </div>
-      {{ end }}
-      {{ end }}
+      
+      {{ if eq .Identifier "copyright" }}
+      <div class="col-12 col-md-12">
+          <a href="{{ .URL | relLangURL }}">
+              <span>{{ .Pre }} {{ .Name }}</span>
+            </a>
+      </div>
+    </div>
+{{end}}
+{{ end }}
   </div>
-
 </footer>
 

@@ -350,8 +350,7 @@ h1.title::first-letter {
     }
      
     text-align: right;
-    margin-bottom: 43px;
-    margin-top: -108px;
+    margin-top: -94px;
 
     .btn {
         background-color: #f0f0f0;
@@ -379,14 +378,10 @@ h1.title::first-letter {
 }
 
 .landing-page {
-
-    .row:first-child {
-        div:first-child:not(.col-md-4) {
-        padding-top: 8px;
-        }
-    }
-
     .section-story-overview {
+        .row {
+            padding-top: 15px;
+        }
         padding-bottom: 15px;
         .col-md-6:not(last-child) {
             .col-left {
