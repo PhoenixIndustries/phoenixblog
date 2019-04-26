@@ -213,7 +213,19 @@ h1.title::first-letter {
     color: #ffff;
 }
 
+@media screen and (max-width: 575px) {
+    .footer-dot {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .landing-page {
+        .social-icons-top .btn {
+            background-color: #ffff;
+        }
+    }
 
     #scrolltocontent {
         display: none;
@@ -287,6 +299,14 @@ h1.title::first-letter {
     .loader {
         right: 35px;
         margin-top: 1px;
+    }
+    .landing-page {
+        .social-icons-top .btn {
+            margin-bottom: 40px;
+        }
+    }
+    .section-story-overview p.blockquote {
+        margin-bottom: 40px;
     }
 }
 
