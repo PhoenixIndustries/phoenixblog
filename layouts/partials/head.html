@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" href="{{ "img/favicon.png" | relURL }}">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Manjaro - {{ if .IsHome }}enjoy the simplicity{{ else }}{{.Title}}{{ end }}</title>
+    <title>Manjaro - {{ if .IsHome }}{{ i18n "slogan" }}{{ else }}{{.Title}}{{ end }}</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
     <!-- CSS Files -->

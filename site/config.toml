@@ -8,7 +8,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
 publishDir = "../docs"
 themesDir = "../.."
+i18nDir = "../i18n/"
 assetDir = "../static/"
+DefaultContentLanguage = "en-us"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"

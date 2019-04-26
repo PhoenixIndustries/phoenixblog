@@ -8,7 +8,7 @@ var postTypeButtons = $(`
                 `)
 
 $(".section .container").prepend(postTypeButtons).addClass("text-center");
-$('.row').isotope({
+$('.section .row').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'masonry',
     getSortData: {
