@@ -649,6 +649,16 @@ h1.title::first-letter {
     .row {
         div a {
             width: 100%;
+            border-radius: 0px;
+        }
+        .list-group {
+            min-height: 235px;
+            li:not(:last-child) {
+            border-bottom: 1px solid $green;
+            }
+            li:last-child {
+                border-bottom: 1px solid #ffff;
+                }
         }
         h2 {
        margin-bottom: 0px;
@@ -870,6 +880,10 @@ h1.title::first-letter {
 }
 
 @media (min-width: 768px) {
+
+    .useful-for-everyone .row .list-group {
+        min-height: 255px !important;
+    }
 
     .landing-page .title-container {
         max-width: 80% !important;

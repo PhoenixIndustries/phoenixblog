@@ -18,7 +18,7 @@
     <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" />
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="stylesheet" />
     {{ $styles := resources.Get "/sass/style.scss" | toCSS "/css/style.css"| minify}}
-    <link href="{{ $styles.Permalink }}?v=1.0.6" rel="stylesheet" />
+    <link href="{{ $styles.Permalink }}?v=1.0.7" rel="stylesheet" />
 
     <!--  Essential META Tags -->
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
