@@ -50,24 +50,24 @@ DefaultContentLanguage = "en-us"
     identifier = "features"
 
 [[menu.main]]
-    name = "Others"
+    name = "More"
     url = "#"
     pre = ""
-    identifier = "others"
+    identifier = "more"
     weight = 6
 
 #
 # --- End Top Menu ---
 #
 
-# --- SubMenu Others ---
+# --- SubMenu More ---
 
 [[menu.main]]
     name = "Packages"
     url = "https://repo.manjaro.org/"
     pre = ""
     weight = 3
-    parent = "others"
+    parent = "more"
     identifier = "packages"
 
 [[menu.main]]
@@ -75,7 +75,7 @@ DefaultContentLanguage = "en-us"
     url = "#"
     pre = ""
     weight = 2
-    parent = "others"
+    parent = "more"
     identifier = "support"
 
 [[menu.main]]
@@ -84,7 +84,7 @@ DefaultContentLanguage = "en-us"
     pre = ""
     weight = 2
     identifier = "mailinglists"
-    parent = "others"
+    parent = "more"
 #
 # --- End SubMenu Others 
 #

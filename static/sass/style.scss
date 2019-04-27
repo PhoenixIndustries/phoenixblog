@@ -953,18 +953,19 @@ h1.title::first-letter {
 
 @media screen and (min-width: 992px) {
 
-    .navbar .dropdown.show .dropdown-menu {
-        width: 448px;
+    .jumbo-submenu {
+        width: 508px;
         .menu-block {
             float: left;
+            margin: 10px;
         }
         h6 {
-            color: $green; 
-            border-bottom-color: $green; 
+            color: $green !important; 
+            border-bottom-color: $green !important; 
             border-bottom: 1px solid;
             padding-bottom: .8rem;
             margin-bottom: .6rem;
-            font-size: .8em;
+            font-size: .8em !important;
         }
     }
 
