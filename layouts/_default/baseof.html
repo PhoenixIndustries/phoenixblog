@@ -4,9 +4,9 @@
   
 	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{if eq .Title "News"}}{{ replace .Title " " "-" | lower}}{{end}}">
       {{ if not .IsHome}}
-        {{ partial "green-nav" . }} 
+        {{ partial "navbar" . }} 
       {{ else }}
-        {{ partial "nav" . }}
+        {{ partial "nav-image-header" . }}
         <div class="{{ .Params.wrapper | default "wrapper" }}">
           {{ if eq .Params.class "landing-page" }}
           <div class="page-header {{ .Params.headerstyle | default "page-header-small"}}" filter-color="{{ .Param "tint" | default "orange" }}">
