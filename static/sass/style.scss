@@ -141,21 +141,12 @@ a, .description a {
     background-attachment: fixed;
 }
 
-.landing-page .section .container {
-    background: #FFFFFF;
-    background: #ffffffbf;
-}
-
 p, .call-to-action {
     margin-bottom: 40px;
 }
 
 .separator.separator-primary {
     background-color: $green;
-}
-
-.team-player p {
-    margin-bottom: 16px;
 }
 
 .donation-manually-field {
@@ -251,9 +242,7 @@ h1.title::first-letter {
             margin-top: -100px !important;
         }
     }
-    .landing-page .section-team .team-player {
-        margin-bottom: 60px;
-    }
+    
     .section {
         padding: 0;
     }
@@ -311,6 +300,14 @@ h1.title::first-letter {
     }
     .section-story-overview p.blockquote {
         margin-bottom: 40px;
+    }
+    .section-team {
+        .description {
+          margin-bottom: 80px;
+        }
+        h2 {
+            padding-top: 100px !important;
+        }
     }
 }
 
@@ -402,6 +399,11 @@ h1.title::first-letter {
 }
 
 .landing-page {
+
+    .section:not(.section-team) .container {
+        background: #FFFFFF;
+    }
+
     .section-story-overview {
         .row {
             padding-top: 15px;
@@ -428,15 +430,6 @@ h1.title::first-letter {
     h2 img {
         width: 1em;
         vertical-align: text-top;
-    }
-
-    .section-team {
-
-       h2 {
-        padding-top: 15px;
-        text-align: center;
-        font-size: 1.8em;
-       }
     }
 
     .btn-group {
@@ -510,26 +503,6 @@ h1.title::first-letter {
         margin-bottom: 15px;
         margin-top: 15px;
        }  
-    }
-
-    .team-player .category {
-        color: inherit;
-        font-weight: bold;
-    }
-
-    .team-player {
-
-        .title {
-            font-weight: 500;
-        }
-        .description {
-          text-align: justify;
-          font-style: italic;
-        }
-        .category {
-            text-align: center;
-            font-size: 14px;
-        }
     }
 
     h3, h2 {
@@ -968,6 +941,18 @@ h1.title::first-letter {
             font-size: .8em !important;
         }
     }
+    .section-team {
+
+        .team .team-background:first-child {
+            border-top-left-radius: 100px;
+        }
+        .team .team-background:last-child {
+            border-top-right-radius: 100px;
+        }
+        .description {
+            margin-bottom: 0px;
+        }
+    }
 
     .navbar-brand {
         margin-top: -4px;
@@ -1061,3 +1046,51 @@ img[src$='#floatright']
     margin: 0.7rem;      /* this margin is totally up to you */
     /* whatever else styles you fancy here */
 }
+
+/* core team */
+
+.section-team {
+
+    h2 {
+     padding-top: 15px;
+     text-align: center;
+     font-size: 1.8em;
+     margin-bottom: 108px;
+    }
+    .team-background {
+        background-color: #2c2c2c;
+    }
+    .team-player {
+
+        #philip-müller {
+            margin-top: 40px;
+        }
+
+        img {
+            margin-top: -50px;
+        } 
+        .title {
+            font-weight: 500;
+        }
+        .description {
+        text-align: justify;
+        font-style: italic;
+        color: #ffff !important;
+        }
+        .category {
+            text-align: center;
+            font-size: 14px;
+            color: inherit;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        color: #ffff !important;
+        a {
+            color: $green;
+        }
+        
+    }
+ }
+
+ /* end core team */
+ 
