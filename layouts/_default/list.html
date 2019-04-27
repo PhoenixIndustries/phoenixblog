@@ -5,7 +5,8 @@
 {{ define "body" }}
 
 <section class="blog section">
-		<div class="row">
+		<div {{ if eq .Title "News" }}
+		id="news-grid" {{ end }} class="row">
 			{{ range (.Paginator 6).Pages }}
 			{{ if .Summary}}
 			<article class='blog-post grid-item col-md-6 col-xl-4'>
