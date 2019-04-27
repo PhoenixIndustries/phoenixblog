@@ -21,65 +21,72 @@ DefaultContentLanguage = "en-us"
     name = "News"
     url = "/news/"
     pre = ""
-    weight = 3
-
-[[menu.main]]
-    name = "Donate"
-    pre = ""
-    url = "/donate/"
-    weight = 8 
-
-[[menu.main]]
-    name = "Lists"
-    url = "#"
-    pre = ""
-    weight = 6
-    identifier = "mailinglists"
-
-[[menu.main]]
-    name = "Mirrors"
-    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 2
-    parent = "mailinglists"
-
-
-[[menu.main]]
-    name = "Features"
-    url = "#"
-    pre = ""
-    weight = 2
-    identifier = "features"
-
-[[menu.main]]
-    name = "Mirrors"
-    url = "https://repo.manjaro.org/"
-    pre = ""
-    weight = 5
-    identifier = "mirrors"
-
-[[menu.main]]
-    name = "Download"
-    url = "/download/"
-    pre = ""
     weight = 1
 
 [[menu.main]]
     name = "Shop"
     url = "#"
     pre = ""
-    weight = 7
+    weight = 2
     identifier = "shop"
+
+[[menu.main]]
+    name = "Donate"
+    pre = ""
+    url = "/donate/"
+    weight = 3 
+
+[[menu.main]]
+    name = "Download"
+    url = "/download/"
+    pre = ""
+    weight = 4
+
+[[menu.main]]
+    name = "Features"
+    url = "#"
+    pre = ""
+    weight = 5
+    identifier = "features"
+
+[[menu.main]]
+    name = "Others"
+    url = "#"
+    pre = ""
+    identifier = "others"
+    weight = 6
+
+#
+# --- End Top Menu ---
+#
+
+# --- SubMenu Others ---
+
+[[menu.main]]
+    name = "Packages"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 1
+    parent = "others"
+    identifier = "packages"
 
 [[menu.main]]
     name = "Support"
     url = "#"
     pre = ""
-    weight = 4
+    weight = 2
+    parent = "others"
     identifier = "support"
 
+[[menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = ""
+    weight = 3
+    identifier = "mailinglists"
+    parent = "others"
 #
-# --- End Top Menu ---
+# --- End SubMenu Others 
 #
 
 # --- SubMenu Support ---
@@ -172,7 +179,18 @@ DefaultContentLanguage = "en-us"
 # --- End SubMenu Shop --- 
 #
 
-# --- disabled ---
+#
+# --- Submenu Packages ---
+#
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='now-ui-icons business_globe'></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "mirrors"
+
 
 #[[menu.main]]
 #    name = "Mirrors Check"
@@ -213,7 +231,7 @@ DefaultContentLanguage = "en-us"
 #    weight = 2
 
 #
-# --- end disabled ---
+# --- end submenu ---
 #
 
 # --- Submenu Lists ---
@@ -224,7 +242,6 @@ DefaultContentLanguage = "en-us"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 1
     parent = "mailinglists"
-
 
 [[menu.main]]
     name = "General"
@@ -255,6 +272,13 @@ DefaultContentLanguage = "en-us"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
+    parent = "mailinglists"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 6
     parent = "mailinglists"
 
 #
