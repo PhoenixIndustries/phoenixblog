@@ -953,6 +953,20 @@ h1.title::first-letter {
 
 @media screen and (min-width: 992px) {
 
+    .navbar .dropdown.show .dropdown-menu {
+        width: 447px;
+        .menu-block {
+            float: left;
+        }
+        h6 {
+            color: $green; 
+            border-bottom-color: $green; 
+            border-bottom: 1px solid;
+            padding-bottom: .8rem;
+            margin-bottom: .6rem;
+        }
+    }
+
     .navbar-brand {
         margin-top: -4px;
     }

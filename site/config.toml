@@ -66,7 +66,7 @@ DefaultContentLanguage = "en-us"
     name = "Packages"
     url = "https://repo.manjaro.org/"
     pre = ""
-    weight = 1
+    weight = 3
     parent = "others"
     identifier = "packages"
 
@@ -82,7 +82,7 @@ DefaultContentLanguage = "en-us"
     name = "Lists"
     url = "#"
     pre = ""
-    weight = 3
+    weight = 2
     identifier = "mailinglists"
     parent = "others"
 #

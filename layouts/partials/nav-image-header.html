@@ -23,6 +23,7 @@
           <div class="dropdown-menu dropdown-menu-right multi-level" aria-labelledby="navbarDropdownMenuLink">
             {{ range .Children }}
               {{ if .HasChildren }}
+              <div class="menu-block">
               <h6 class="dropdown-header">{{ .Name }}</h6>
                 {{ range .Children }}
                 
@@ -34,7 +35,7 @@
                 
                 
                 {{end}}
-                <div class="dropdown-divider"></div>
+                </div>
               {{ else }}
               {{ $exttarget := hasPrefix .URL "http" }}
               <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ if $exttarget }} target="_blank"{{ end }}>
