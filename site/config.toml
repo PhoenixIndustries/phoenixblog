@@ -21,13 +21,13 @@ DefaultContentLanguage = "en-us"
     name = "News"
     url = "/news/"
     pre = ""
-    weight = 1
+    weight = 5
 
 [[menu.main]]
     name = "Shop"
     url = "#"
     pre = ""
-    weight = 2
+    weight = 4
     identifier = "shop"
 
 [[menu.main]]
@@ -40,13 +40,13 @@ DefaultContentLanguage = "en-us"
     name = "Download"
     url = "/download/"
     pre = ""
-    weight = 4
+    weight = 1
 
 [[menu.main]]
     name = "Features"
     url = "#"
     pre = ""
-    weight = 5
+    weight = 2
     identifier = "features"
 
 [[menu.main]]
