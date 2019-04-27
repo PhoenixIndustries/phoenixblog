@@ -954,7 +954,7 @@ h1.title::first-letter {
 @media screen and (min-width: 992px) {
 
     .navbar .dropdown.show .dropdown-menu {
-        width: 447px;
+        width: 448px;
         .menu-block {
             float: left;
         }
@@ -964,6 +964,7 @@ h1.title::first-letter {
             border-bottom: 1px solid;
             padding-bottom: .8rem;
             margin-bottom: .6rem;
+            font-size: .8em;
         }
     }
 
