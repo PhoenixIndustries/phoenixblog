@@ -1,19 +1,8 @@
-+++
-title = "Choose your Manjaro Edition"
-+++ 
+## Introduction
+---
+
+Here are some first steps after you [downloaded](/download) Manjaro. This guide covers only the basic steps, so if you want more information look into the [Manjaro User Guide](/support/userguide/) or the [Manjaro Wiki](https://wiki.manjaro.org/).
+
+So you downloaded Manjaro as an ISO file. An ISO file contains all files Manjaro needs to start an installation compressed into a handy file, which you can then use to make a [DVD](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File) or [USB-Stick](https://wiki.manjaro.org/index.php?title=Burn_an_ISO_File#Writing_to_a_USB_Stick_in_Linux) that can be run by your computer. This file can be directly used by a virtual machine if you don't want to try out Manjaro on your actual computer, yet.
 
 
-<div class="row">
- <ul class="list-group card col-md-12 offset-xl-1 col-xl-10">
- <li class="list-group-item text-center"><h2>TEST</h2></li>
-    <li class="list-group-item">
-   <img src="/img/try/virtual-machine.svg" class="icon">Using a [virtual machine](/support/firststeps#using-a-virtual-machine) within your current operating system
-   </li>
-<li class="list-group-item"> 
- <img src="/img/try/live-boot.svg" class="icon">By [running it](/support/firststeps#making-a-live-system) from a DVD or USB Stick
-  </li>
- <li class="list-group-item">
-  <img src="/img/try/virtual-machine.svg" class="icon">[Install](/support/firststeps#install-manjaro) from a DVD or USB Stick
- </li>
-</ul>
-</div>

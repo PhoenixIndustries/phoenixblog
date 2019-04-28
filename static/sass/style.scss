@@ -121,6 +121,10 @@ a, .description a {
     }
 }
 
+#back-to-top {
+    z-index: 99;
+}
+
 .section {
         
     p {
@@ -137,21 +141,12 @@ a, .description a {
     background-attachment: fixed;
 }
 
-.landing-page .section .container {
-    background: #FFFFFF;
-    background: #ffffffbf;
-}
-
 p, .call-to-action {
     margin-bottom: 40px;
 }
 
 .separator.separator-primary {
     background-color: $green;
-}
-
-.team-player p {
-    margin-bottom: 16px;
 }
 
 .donation-manually-field {
@@ -213,7 +208,19 @@ h1.title::first-letter {
     color: #ffff;
 }
 
+@media screen and (max-width: 575px) {
+    .footer-dot {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .landing-page {
+        .social-icons-top .btn {
+            background-color: #ffff;
+        }
+    }
 
     #scrolltocontent {
         display: none;
@@ -235,9 +242,7 @@ h1.title::first-letter {
             margin-top: -100px !important;
         }
     }
-    .landing-page .section-team .team-player {
-        margin-bottom: 60px;
-    }
+    
     .section {
         padding: 0;
     }
@@ -287,6 +292,22 @@ h1.title::first-letter {
     .loader {
         right: 35px;
         margin-top: 1px;
+    }
+    .landing-page {
+        .social-icons-top .btn {
+            margin-bottom: 40px;
+        }
+    }
+    .section-story-overview p.blockquote {
+        margin-bottom: 40px;
+    }
+    .section-team {
+        .description {
+          margin-bottom: 80px;
+        }
+        h2 {
+            padding-top: 100px !important;
+        }
     }
 }
 
@@ -350,8 +371,7 @@ h1.title::first-letter {
     }
      
     text-align: right;
-    margin-bottom: 43px;
-    margin-top: -108px;
+    margin-top: -94px;
 
     .btn {
         background-color: #f0f0f0;
@@ -380,14 +400,17 @@ h1.title::first-letter {
 
 .landing-page {
 
-    .row:first-child {
-        div:first-child:not(.col-md-4) {
-        padding-top: 8px;
-        }
+    .section:not(.section-team) .container {
+        background: #FFFFFF;
     }
 
     .section-story-overview {
-        padding-bottom: 15px;
+        .row {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        }
+
         .col-md-6:not(last-child) {
             .col-left {
                 &:nth-child(2),
@@ -409,20 +432,6 @@ h1.title::first-letter {
     h2 img {
         width: 1em;
         vertical-align: text-top;
-    }
-
-    .section {
-        padding-bottom: 30px !important;
-    }
-
-    .section-team {
-
-        padding-bottom: 30px !important;
-       h2 {
-        padding-top: 15px;
-        text-align: center;
-        font-size: 1.8em;
-       }
     }
 
     .btn-group {
@@ -496,26 +505,6 @@ h1.title::first-letter {
         margin-bottom: 15px;
         margin-top: 15px;
        }  
-    }
-
-    .team-player .category {
-        color: inherit;
-        font-weight: bold;
-    }
-
-    .team-player {
-
-        .title {
-            font-weight: 500;
-        }
-        .description {
-          text-align: justify;
-          font-style: italic;
-        }
-        .category {
-            text-align: center;
-            font-size: 14px;
-        }
     }
 
     h3, h2 {
@@ -639,6 +628,16 @@ h1.title::first-letter {
     .row {
         div a {
             width: 100%;
+            border-radius: 0px;
+        }
+        .list-group {
+            min-height: 235px;
+            li:not(:last-child) {
+            border-bottom: 1px solid $green;
+            }
+            li:last-child {
+                border-bottom: 1px solid #ffff;
+                }
         }
         h2 {
        margin-bottom: 0px;
@@ -861,6 +860,10 @@ h1.title::first-letter {
 
 @media (min-width: 768px) {
 
+    .useful-for-everyone .row .list-group {
+        min-height: 255px !important;
+    }
+
     .landing-page .title-container {
         max-width: 80% !important;
         top: 44% !important;
@@ -924,6 +927,35 @@ h1.title::first-letter {
 }
 
 @media screen and (min-width: 992px) {
+
+    .jumbo-submenu {
+        width: 508px;
+        .menu-block {
+            float: left;
+            margin: 10px;
+            margin-top: 2px;
+        }
+        h6 {
+            color: $green !important; 
+            border-bottom-color: $green !important; 
+            border-bottom: 1px solid;
+            padding-bottom: .8rem;
+            margin-bottom: .6rem;
+            font-size: .8em !important;
+        }
+    }
+    .section-team {
+
+        .team .team-background:first-child {
+            border-top-left-radius: 50%;
+        }
+        .team .team-background:last-child {
+            border-top-right-radius: 50%;
+        }
+        .description {
+            margin-bottom: 0px;
+        }
+    }
 
     .navbar-brand {
         margin-top: -4px;
@@ -993,3 +1025,75 @@ h1.title::first-letter {
         top: 40% !important;
     }
 }
+
+/* For content images*/
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by
+                            whatever floats your boat, but keep the
+                            horizontal 'auto' for this to work */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatleft']
+{
+    float:left;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
+}
+
+img[src$='#floatright']
+{
+    float:right;
+    margin: 0.7rem;      /* this margin is totally up to you */
+    /* whatever else styles you fancy here */
+}
+
+/* core team */
+
+.section-team {
+
+    h2 {
+     padding-top: 15px;
+     text-align: center;
+     font-size: 1.8em;
+     margin-bottom: 108px;
+    }
+    .team-background {
+        background-color: #2c2c2c;
+    }
+    .team-player {
+
+        #philip-müller {
+            margin-top: 40px;
+        }
+
+        img {
+            margin-top: -50px;
+        } 
+        .title {
+            font-weight: 500;
+        }
+        .description {
+        text-align: justify;
+        font-style: italic;
+        color: #ffff !important;
+        }
+        .category {
+            text-align: center;
+            font-size: 14px;
+            color: inherit;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        color: #ffff !important;
+        a {
+            color: $green;
+        }
+        
+    }
+ }
+
+ /* end core team */
+ 

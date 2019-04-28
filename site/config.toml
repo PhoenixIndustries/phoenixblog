@@ -8,7 +8,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
 publishDir = "../docs"
 themesDir = "../.."
+i18nDir = "../i18n/"
 assetDir = "../static/"
+DefaultContentLanguage = "en-us"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -19,28 +21,26 @@ assetDir = "../static/"
     name = "News"
     url = "/news/"
     pre = ""
-    weight = 3
+    weight = 5
+
+[[menu.main]]
+    name = "Shop"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "shop"
 
 [[menu.main]]
     name = "Donate"
     pre = ""
     url = "/donate/"
-    weight = 8 
+    weight = 3 
 
 [[menu.main]]
-    name = "Lists"
-    url = "#"
+    name = "Download"
+    url = "/download/"
     pre = ""
-    weight = 6
-    identifier = "mailinglists"
-
-[[menu.main]]
-    name = "Mirrors"
-    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 2
-    parent = "mailinglists"
-
+    weight = 1
 
 [[menu.main]]
     name = "Features"
@@ -50,34 +50,43 @@ assetDir = "../static/"
     identifier = "features"
 
 [[menu.main]]
-    name = "Mirrors"
-    url = "https://repo.manjaro.org/"
-    pre = ""
-    weight = 5
-    identifier = "mirrors"
-
-[[menu.main]]
-    name = "Download"
-    url = "/download/"
-    pre = ""
-    weight = 1
-
-[[menu.main]]
-    name = "Shop"
+    name = "More"
     url = "#"
     pre = ""
-    weight = 7
-    identifier = "shop"
+    identifier = "more"
+    weight = 6
+
+#
+# --- End Top Menu ---
+#
+
+# --- SubMenu More ---
+
+[[menu.main]]
+    name = "Packages"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 3
+    parent = "more"
+    identifier = "packages"
 
 [[menu.main]]
     name = "Support"
     url = "#"
     pre = ""
-    weight = 4
+    weight = 2
+    parent = "more"
     identifier = "support"
 
+[[menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "mailinglists"
+    parent = "more"
 #
-# --- End Top Menu ---
+# --- End SubMenu Others 
 #
 
 # --- SubMenu Support ---
@@ -170,7 +179,18 @@ assetDir = "../static/"
 # --- End SubMenu Shop --- 
 #
 
-# --- disabled ---
+#
+# --- Submenu Packages ---
+#
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='now-ui-icons business_globe'></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "mirrors"
+
 
 #[[menu.main]]
 #    name = "Mirrors Check"
@@ -211,7 +231,7 @@ assetDir = "../static/"
 #    weight = 2
 
 #
-# --- end disabled ---
+# --- end submenu ---
 #
 
 # --- Submenu Lists ---
@@ -222,7 +242,6 @@ assetDir = "../static/"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 1
     parent = "mailinglists"
-
 
 [[menu.main]]
     name = "General"
@@ -253,6 +272,13 @@ assetDir = "../static/"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
     weight = 5
+    parent = "mailinglists"
+
+[[menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 6
     parent = "mailinglists"
 
 #
@@ -297,12 +323,6 @@ assetDir = "../static/"
 #
 
 # --- others ---
-
-[[menu.footer]]
-    identifier = "gitlab"
-    pre = "<i class='fab fa-gitlab'></i>"
-    url = "https://gitlab.manjaro.org"
-    weight = 2
  
 
 [[menu.footer]]
@@ -310,6 +330,14 @@ assetDir = "../static/"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/"
+    weight = 2
+
+
+[[menu.footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
     weight = 3
 
 
@@ -319,13 +347,12 @@ assetDir = "../static/"
     pre = ""
     url = "/terms-of-use/"
     weight = 4
-    
+
 
 [[menu.footer]]
-    identifier = "privacy"
-    name = "Privacy Policy"
-    pre = ""
-    url = "/privacy-policy/"
+    identifier = "gitlab"
+    pre = "<i class='fab fa-gitlab'></i>"
+    url = "https://gitlab.manjaro.org"
     weight = 5
 
 
@@ -363,8 +390,7 @@ assetDir = "../static/"
 [params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
-    download_x64_button = "Download 64 bit version"
-    download_x86_button = "Download 32 bit version"
+    download_button = "Download"
     download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"

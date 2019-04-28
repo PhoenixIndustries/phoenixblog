@@ -1,10 +1,10 @@
 <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <span class="loader"></span><a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="back" rel="tooltip" data-placement="right" data-toggle="tooltip" data-toggle="tooltip">
+                <span class="loader"></span><a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="back" rel="tooltip" data-placement="right" data-toggle="tooltip">
                     manjaro 
-                </a><span class="page-nav">- {{.Title}}</span>
+                </a><span class="page-nav">- {{ i18n "slogan" }}</span>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
@@ -20,13 +20,29 @@
             {{ .Pre }} <span>{{ .Name }}</span>
             <span class="caret"></span>
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu dropdown-menu-right multi-level {{ if eq .Name "More" }}jumbo-submenu{{end}}" aria-labelledby="navbarDropdownMenuLink">
             {{ range .Children }}
+              {{ if .HasChildren }}
+              <div class="menu-block">
+              <h6 class="dropdown-header">{{ .Name }}</h6>
+                {{ range .Children }}
+                
+                  {{ $exttarget := hasPrefix .URL "http" }}
+                  <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ if $exttarget }} target="_blank"{{ end }}>
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                  </a>
+                
+                
+                {{end}}
+                </div>
+              {{ else }}
               {{ $exttarget := hasPrefix .URL "http" }}
               <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ if $exttarget }} target="_blank"{{ end }}>
                 {{ .Pre }}
                 <span>{{ .Name }}</span>
               </a>
+              {{end}}
             {{end}}
           </div>
         </li>
@@ -38,7 +54,9 @@
             <span>{{ .Name }}</span>
           </a>
         </li>
+        
         {{ end }}
+        
       {{ end }}
                 </ul>
             </div>

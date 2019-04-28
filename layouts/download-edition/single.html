@@ -13,62 +13,65 @@
       <div class="container">
         <!-- <h2>Manjaro {{ .Params.name }}</h2>
         <hr class="star-primary" /> -->
-        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive img-centered" alt=""></a>
+        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="Desktop Image" style="width:100%;"></a>
         <br/>
         <p>{{ .Params.shortdescription | markdownify }}</p>
         <p>{{ .Content | markdownify }}</p>
         {{ if .Params.Youtube }}
           <p>{{partial "youtube" .}}</p>
         {{ end }}
-        <h2>Download</h2>
-        <hr class="star-primary"/>
         <ul class="flex-grid download-edition-grid">
-          <li class="flex-item">
-            <div class="content">
-              <div class="top">
-                <img src="/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
-                <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
-                <hr/>
-                <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
-              </div>
-              <div class="bottom">
-                <div style="margin-top: auto; margin-bottom: 10px;">
-                  <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x64_button }}</a>
-                  <p></p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ with .Params.download_x64_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
-                      {{ with .Params.download_x64_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-                      SHA1: {{ .Params.download_x64_checksum }}
+            {{ if .Params.download_x64 }}
+            <li class="flex-item">
+              <div class="content">
+                <div class="top">
+                  <img src="/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                  <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
+                  <hr/>
+                  <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
+                </div>
+                <div class="bottom">
+                  <div style="margin-top: auto; margin-bottom: 10px;">
+                    <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >
+                       {{ .Site.Params.download_edition.download_button }}</a>
+                    <p></p>
+                    <div>
+                      <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
+                        {{ with .Params.download_x64_torrent }}<a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
+                        {{ with .Params.download_x64_sig}}
+                        <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
+                        SHA1: {{.Params.download_x64_checksum}}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <!-- <li class="flex-item">
-            <div class="content">
-              <div class="top">
-                <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
-                <h3>{{ .Site.Params.download_edition.download_x86_title }}</h3>
-                <hr/>
-                <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
-              </div>
-              <div class="bottom">
-                <div style="margin-top: auto; margin-bottom: 10px;">
-                  <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x86_button }}</a>
-                  <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ with .Params.download_x86_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-                      SHA1: {{ .Params.download_x86_checksum }}
+            </li>
+            {{ else if .Params.download_x86 }}
+            <li class="flex-item">
+              <div class="content">
+                <div class="top">
+                  <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                  <h3>{{ .Site.Params.download_edition.download_x86_title }}</h3>
+                  <hr/>
+                  <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
+                </div>
+                <div class="bottom">
+                  <div style="margin-top: auto; margin-bottom: 10px;">
+                    <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_button }}</a>
+                    <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
+                    <div>
+                      <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
+                        {{ with .Params.download_x86_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
+                        SHA1: {{ .Params.download_x86_checksum }}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li> -->
-        </ul>
+            </li>
+            {{ end }}
+          </ul>
         {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
         <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
         {{ end }}
@@ -76,5 +79,4 @@
     </section>
   </div>   
 </div>
-{{ end }}        
- 
+{{ end }}   

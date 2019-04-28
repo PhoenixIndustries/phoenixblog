@@ -1,14 +1,17 @@
-var postTypeButtons = $(`
-<div class="btn-group">
-                <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
-                <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
-                <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
-                <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
-                </div>
-                `)
+function postTypeButtons() {
+    var postTypeButtons = $(`
+    <div class="btn-group">
+                    <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
+                    <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
+                    <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
+                    <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
+                    </div>
+                    `)
+    return postTypeButtons
+}
 
-$(".section .container").prepend(postTypeButtons).addClass("text-center");
-$('.row').isotope({
+$(".section .container").prepend(postTypeButtons()).addClass("text-center");
+$('#news-grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'masonry',
     getSortData: {
@@ -26,11 +29,10 @@ function selectPostType(button, el) {
     function callback() {
         setTimeout(function(){
             $(".blog-post").removeClass("transitionFix").addClass("zoom");
-            console.log("add zoom")
         }, 550);
         
     }
-    $(".row").isotope({ filter: el }, callback());
+    $("#news-grid").isotope({ filter: el }, callback());
 }
 var feeds = [
     "https://forum.manjaro.org/c/announcements.rss",
@@ -109,12 +111,12 @@ function feedreader(feed) {
             </div>
         </div>
         `
-        $(".blog .row").isotope( 'insert', $article );
-        $(".blog .row").append(modal);
+        $("#news-grid").isotope( 'insert', $article );
+        $("#news-grid").append(modal);
         
         $("#unique" + el + " .card-img-top").imagesLoaded( function() {
             // reload layout after images are loaded since boxes change sizes
-            $(".row").isotope("reloadItems").isotope("layout"); 
+            $("#news-grid").isotope("reloadItems").isotope("layout"); 
          });
 
         $('#' + el + ' .modal-body').find(".meta").remove()
@@ -127,3 +129,4 @@ function feedreader(feed) {
 });};
 feedreader(feeds[0]);
 feedreader(feeds[1]);
+$("#news-grid").isotope("reloadItems").isotope("layout");

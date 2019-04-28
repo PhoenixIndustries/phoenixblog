@@ -1,0 +1,32 @@
+{{ range .Site.Pages }} 
+	{{ if eq .Type "core-team" }}
+		<div class="section section-team text-center">
+			<div class="container">
+				<h2 class="title">{{.Params.title}}</h2>
+				<div class="team">
+					<div class="row">
+						{{$images := .Params.images}}
+						{{ range $index, $element := split .Content "ésplit" }}
+							<div class="team-background col-md-4">
+								<div class="team-player">
+									<img src="/img/{{ (index $images $index) }}.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+									{{ range $subindex, $subelement := split $element "<p>" }}
+										{{if eq $subindex 0}} 
+											<h4 class="title">{{ $subelement | safeHTML }}</h4>
+										{{end}}
+										{{if eq $subindex 1}} 
+											<p class="category">{{ $subelement | safeHTML }}</p>
+										{{end}}
+										{{if eq $subindex 2}} 
+											<p class="description">{{ $subelement | safeHTML }}</p>
+										{{end}}
+									{{end}}
+								</div>
+						</div>
+						{{end}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{end}}
+{{end}}
