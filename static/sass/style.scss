@@ -947,10 +947,10 @@ h1.title::first-letter {
     .section-team {
 
         .team .team-background:first-child {
-            border-top-left-radius: 100px;
+            border-top-left-radius: 50%;
         }
         .team .team-background:last-child {
-            border-top-right-radius: 100px;
+            border-top-right-radius: 50%;
         }
         .description {
             margin-bottom: 0px;
