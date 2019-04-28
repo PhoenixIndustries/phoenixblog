@@ -407,8 +407,10 @@ h1.title::first-letter {
     .section-story-overview {
         .row {
             padding-top: 15px;
+            padding-bottom: 15px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
         }
-        padding-bottom: 15px;
+
         .col-md-6:not(last-child) {
             .col-left {
                 &:nth-child(2),
