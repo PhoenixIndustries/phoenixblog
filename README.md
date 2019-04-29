@@ -27,6 +27,12 @@ git
 
 * [Hugo](https://gohugo.io/getting-started/) - The web framework used
 
+### libraries used, get familiar with them. ( needs update ) 
+* [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+* [Isotope](https://isotope.metafizzy.co/)
+* [Jquery](https://jquery.com/)
+* [Fontawesome](https://fontawesome.com/)
+
 ## Adding/Editing menus
 
 Menus can be edited by opening (/site/config.toml), more examples can be found inside the file.
