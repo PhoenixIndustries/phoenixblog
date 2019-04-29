@@ -1,6 +1,6 @@
 # Manjaro Homepage
 
-This project is being developed for Manjaro.
+This project is being developed for Manjaro, this readme is a work in progress if anything is missing let us know.
 
 ## Getting Started
 
@@ -27,6 +27,28 @@ git
 
 * [Hugo](https://gohugo.io/getting-started/) - The web framework used
 
+## Adding/Editing menus
+
+Menus can be edited by opening (/site/config.toml), more examples can be found inside the file.
+
+```
+[[menu.main]]
+    name = "Features"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+```
+Content
+
+```
+[[menu.main]]
+    name = "Under your control"
+    url = "/features/under-your-control/"
+    pre = "<i class='now-ui-icons objects_spaceship'></i>"
+    weight = 2
+    parent = "features"
+```
 
 ## License
 
