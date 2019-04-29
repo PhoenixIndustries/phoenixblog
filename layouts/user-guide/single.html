@@ -7,46 +7,51 @@
 {{ end }}
 
 {{ define "body" }}
-{{.Content }}
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="container">
+        {{.Content }}
+        </div>
+    </div>
+
+</div>
+
 <p class="text-center">
     {{ range $index, $element := .Params.downloadbuttons}}
-  <a href="https://de.osdn.net/projects/manjaro/storage/{{ replace $element " " "-" }}.pdf" class="btn btn-success btn-xl" >{{ $element }}</a>
+  <a href="https://de.osdn.net/projects/manjaro/storage/{{ replace $element " " "-" }}.pdf" class="btn btn-primary btn-round btn-xl" >{{ $element }}</a>
   {{ end }}
 <p>
-<div class="row">
-  <p class="col-md-10 offset-md-1 offset-xl-2 col-xl-8">
-  </p>
-</div>
-<div class="row">
-  <ul class="col-md-6 col-xl-4 list-group">
-    <img class="xl-icon ml-auto mr-auto" src="/img/actions/download.svg">
-    <h2>Preparation</h2>
-    <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Getting Manjaro</li>
-    <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Downloading Manjaro</li>
-    <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Check downloaded iso image for errors</li>
-    <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Writing iso image</li> 
- </ul>
-<div class="col-md-6 col-xl-4 list-group">
-    <img class="xl-icon ml-auto mr-auto" src="/img/actions/install.svg">
-    <h2>Installation</h2>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Installing Manjaro</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Booting the Live environment</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Assisted installation on a BIOS system with Calamares</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Manual installation on a BIOS system with Calamares</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Assisted installation on a UEFI system with Calamares</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Manual installation on a UEFI system with Calamares</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Dual-booting with Microsoft Windows 10</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Advanced installation methods</li>
-</div>
-<div class="col-md-6 col-xl-4 list-group">
-    <img class="xl-icon ml-auto mr-auto" src="/img/try/install.svg">
-    <h2>Using Manjaro</h2>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Welcome to Manjaro</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>The Manjaro desktop</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Getting help</li>
-   <li class="list-group-item"><img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>Maintaining your system</li>
-</div>
-</div>
 
-
+<div class="row d-flex justify-content-center">
+   
+  	{{ range $index, $element := .Params.subcontent}}
+              {{ with  $.GetPage $element }} 
+              {{$images := .Params.images}}
+              
+              {{$headings := replace .Content "<h4" "<h4 class='card-title text-success d-flex justify-content-center'"}}
+              {{$headings := replace $headings "<table" "<table class='table'"}}
+              {{$headings := replace $headings "<thead>" ""}}
+              {{$headings := replace $headings "<tr>" ""}}
+              {{$headings := replace $headings "<th>" ""}}
+              {{ range $subindex, $subelement := split $headings "ésplit" }}
+              <!-- | safeHTML -->
+              
+    <div class="col-md-4">
+        <div class="card">
+            <div class="d-flex card-header card-header-image justify-content-center">
+                    <img class="img-fluid xl-icon" style="margin-bottom:-80px;" src="{{index $images $subindex}}">
+           </div>
+            <div class="card-body">
+                
+                <p class="card-description">
+                    {{$subelement | safeHTML}}
+                </p>
+            </div>
+        </div>
+      </div>
+      {{end}}
+      {{end}}
+      {{end}}
+</div>
 {{ end }}  
