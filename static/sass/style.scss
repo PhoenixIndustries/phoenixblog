@@ -1054,7 +1054,7 @@ img[src$='#floatright']
     /* whatever else styles you fancy here */
 }
 
-.section-team *, .page-footer * {
+.section-team *:not(h2), .page-footer * {
     color: #cecccc !important;
 } 
 
@@ -1067,6 +1067,7 @@ img[src$='#floatright']
      text-align: center;
      font-size: 1.8em;
      margin-bottom: 108px;
+     color: #2c2c2c !important;
     }
     .team-background {
         background-color: #2c2c2c;
