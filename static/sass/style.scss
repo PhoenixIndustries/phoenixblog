@@ -807,14 +807,6 @@ h1.title::first-letter {
     }
 }
 
-.configured-with-one-click,
-.under-your-control,
- {
-    .row img {
-        height: auto !important;
-    }
-}
-
 #how-much-does-it-cost {
     margin-top: 40px;
 }
@@ -845,16 +837,28 @@ h1.title::first-letter {
 
 .configured-with-one-click {
 
+    .container .row > section {
+        margin-top: -2px;
+    }
+
     h3 {
       text-align: left;
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
     .section {
         padding: 0;
         padding-top: 90px;
+        
+        p {
+            margin-bottom: 0px;
+        }
     }
     img {
         border: 2px solid #ffff;
+    }
+    .features-post, img {
+        margin-bottom: 100px !important;
+        
     }
 }
 
