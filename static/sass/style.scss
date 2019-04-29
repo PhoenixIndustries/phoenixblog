@@ -689,15 +689,39 @@ h1.title::first-letter {
 }
 
 .user-guide {
+
+    .section {
+        padding: 0;
+        padding-top: 90px;
+    }
+
     .container:nth-child(1) {
         text-align: center;
     }
     li {
         text-align: left;
     }
-    .section {
-        padding: 0;
-        padding-top: 60px;
+    
+    .card {
+        overflow: visible;
+        .card-header {
+            padding: 0;
+        }
+        img {
+            position: absolute;
+            margin-top: -70px;
+            z-index: 99;
+        }
+        td {
+            text-align: left;
+        }
+    } 
+    .btn-container {
+        margin-bottom: 140px;
+    }  
+    h4 {
+        margin-top: 60px;
+        color: $green !important;
     }
 }
 

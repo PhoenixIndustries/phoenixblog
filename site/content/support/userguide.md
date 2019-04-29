@@ -1,5 +1,5 @@
 +++
-class = "fresh-and-stable"
+class = "user-guide"
 date = "2016-09-05T21:03:22+02:00"
 title = "User Guide"
 type = "user-guide"
