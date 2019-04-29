@@ -1078,7 +1078,7 @@ img[src$='#floatright']
     /* whatever else styles you fancy here */
 }
 
-.section-team *:not(h2), .page-footer * {
+.section-team *:not(a), .page-footer * {
     color: #cecccc !important;
 } 
 
