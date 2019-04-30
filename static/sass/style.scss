@@ -727,7 +727,7 @@ h1.title::first-letter {
 
 .news {
     .container .btn-success{
-        background-color: #00C851;
+        background-color: $green;
     }
     .loader {
         display: block;
@@ -735,11 +735,11 @@ h1.title::first-letter {
     
     .read{
         font-weight: 900;
-        color: #00C851;
+        color: white;
     }
 
     .bar {
-        background-color: #00C851;
+        background-color: $green;
         padding-bottom: 1px;
         font-weight: 900;
     }
