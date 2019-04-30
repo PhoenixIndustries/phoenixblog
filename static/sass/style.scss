@@ -726,14 +726,43 @@ h1.title::first-letter {
 }
 
 .news {
+    .container .btn-success{
+        background-color: #00C851;
+    }
     .loader {
         display: block;
     }
+    
+    .read{
+        font-weight: 900;
+        color: #00C851;
+    }
 
+    .bar {
+        background-color: #00C851;
+        padding-bottom: 1px;
+        font-weight: 900;
+    }
+    ul{
+        text-align: center;
+        color: white;
+    }
+    .bar a {
+
+        color: white;
+        font-weight: 700;
+    }
+    a {
+        color: $green;
+    }
     .blog .row {
         min-height: 2000px;
     }
+    
     .section {
+        .card-title{
+            font-weight: 900 !important;
+        }
         .container {
             margin-top: 46px;
         }
@@ -770,37 +799,25 @@ h1.title::first-letter {
             margin-bottom: 0;
     }
     .card {
-        text-align: center;
-        h5 {
-            text-align: left;
-        }
         &:hover {
             box-shadow: 0 5px 25px 0 rgba(0,6,0,.5);
             color: #000;
         }
-        padding: 20px;
-        margin-top: 0;
         img[src=""], .hide {
             display: none;
         }
         img[src^="https://forum.manjaro.org/images/emoji"] {
             display: none;
         }
-        .btn-group {
-            text-align: center;
-            float: right;
-            margin-bottom: -10px;
-            .disabled {
-                cursor: default;
-                color: black;
-            }
-        }
-        botton:not(.disabled):hover {
-            text-decoration: underline;
-        }
     }
     .modal-content {
-
+        a{
+            color: #2196f3;
+        }
+        ul{
+            text-align: left;
+            color: #5a5a5a;
+        }
         *:not(button) {
             font-size: 14px !important;
         } 

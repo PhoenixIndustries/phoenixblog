@@ -1,16 +1,17 @@
 function postTypeButtons() {
     var postTypeButtons = $(`
-    <div class="btn-group">
-                    <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
-                    <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
-                    <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
-                    <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
-                    </div>
-                    `)
+    <div class="container text-center">
+        <div class="btn-group">
+        <button onclick="selectPostType(this, '.blog-post');" class="btn-post-type btn-sm btn btn-success">All</button>
+        <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm">Updates</button>
+        <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
+        <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
+        </div>
+    </div>`)
     return postTypeButtons
 }
 
-$(".section .container").prepend(postTypeButtons()).addClass("text-center");
+$(".section .container").prepend(postTypeButtons());
 $('#news-grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'masonry',
@@ -79,15 +80,26 @@ function feedreader(feed) {
         var $article = $(`
         <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle() + `'>
             <div class="card" data-toggle="modal" data-target='#` + el + `'>
-                <div class="card-body">
-                <time>` + item.date + `</time>
-                <h5 class="card-title">` + item.title + `</h5>
-                <img class="card-img-top img-fluid" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
+                 <div class="view overlay">
+                    <img class="card-img-top" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
+                     <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                 </div>
+                 <div class="bar center lighten-3 pt-3">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>` + item.date + `</li>
+                </ul>
+              </div>
+                <div class="card-body " data-background-color="black">
+                
+              <h5 class="card-title">` + item.title + `</h5>
+              <hr>
                 <p class="card-text">` + shortText + `</p>
-                <div class="btn-group">
-                <button class="btn-sm btn disabled">Full Topic Also in:</button>
-                <button class="btn btn-success btn-sm btn-primary" onclick='window.open("` + item.link + `", "_blank")'>Forum</button>
-                </div>
+                <a href="` + item.link + `" target="_blank" class="read d-flex flex-row-reverse p-2">
+                    <h5 class="read waves-effect waves-light">Read more<i class="fas fa-angle-double-right ml-2"></i></h5>
+                </a>
+                
                 </div>
             </div>
         </article>`)
