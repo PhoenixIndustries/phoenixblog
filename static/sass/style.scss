@@ -202,6 +202,49 @@ h1.title::first-letter {
 .hardware .title-container h1 {
     font-size: 2em;
 }
+.card-pricing ul {
+
+    list-style: none;
+    padding: 0;
+    max-width: 240px;
+    margin: 10px auto;
+
+}
+
+.main-raised{
+    margin: -120px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+}
+.main .card-title{
+    font-weight: 900 !important;
+    font-size: 32pt;
+}
+.card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
+    margin-top: 20px;
+    min-height: 400px;
+    background: linear-gradient(60deg,#66BB6A,$green);
+
+}
+.card-raised {
+
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+
+}
+.btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
+
+    background-color: #fff;
+    color: $green;
+
+}
+
+.main {
+
+    background: #fff;
+    position: relative;
+    z-index: 3;
+
+}
 
 ::selection {
     background: $green;
