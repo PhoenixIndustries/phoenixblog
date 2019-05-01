@@ -1,36 +1,92 @@
 {{ if eq .Type "hardware" }}
 <div class="main main-raised">
     <div class="container">
+        <div class="row">
+        {{ range (where .Site.Pages ".Type" "hardware") }}
             <div class="col-md-4">
-                    <div class="card card-pricing card-raised bg-rose">
+                <!-- Add manjaro book pages-->
+        
+                    <div class="card card-raised bg-rose">
+                         
                         <div class="card-body text-center">
-                            <h6 class="card-category text-white">Premium</h6>
-                            <h1 class="card-title text-white">
-                                <small>€</small>359
-                            </h1>
+                          
+                            <h5 class="card-subtitle text-white">{{.Params.subtitle}}</h5>
+                            <h6 class="card-desc text-white">{{.Params.subdescription}}</h6>
+                            
+                            <div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="18000">
+                                <ol class="carousel-indicators">
+                              {{ range $index, $element := .Params.images}}
+                                {{if eq $index 0}} 
+                                  <li data-target="#productCarousel" data-slide-to="{{ $index }}" class="active"></li>
+                                {{else}}
+                                  <li data-target="#productCarousel" data-slide-to="{{ $index }}"></li>
+                                {{end}}
+                              {{ end }}
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                              {{ range $index, $element := .Params.images}}
+                              {{if eq $index 0}} 
+                                <div class="carousel-item active">
+                                  <img class="d-block img-raised" src="/img/hardware/{{ $element }}.jpg" alt="{{ $index }} slide">
+                                </div>
+                              {{else}}
+                              <div class="carousel-item">
+                                  <img class="d-block img-raised" src="/img/hardware/{{ $element }}.jpg" alt="{{ $index }} slide">
+                                </div>
+                              {{ end }}
+                            {{ end }}
+                               </div>
+                               <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                                   <button type="button" class="btn btn-primary btn-icon btn-round btn-sm" name="button">
+                                       <i class="now-ui-icons arrows-1_minimal-left"></i>
+                                   </button>
+                               </a>
+                               <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                                   <button type="button" class="btn btn-primary btn-icon btn-round btn-sm" name="button">
+                                       <i class="now-ui-icons arrows-1_minimal-right"></i>
+                                   </button>
+                               </a>
+                            </div>
+                            <table class="table text-white" cellspacing="0">
+                              <tr>
+                                   <td>{{.Params.pricebefore}} <h2 class="card-title text-white">{{.Params.price}}</h2></td>
+                              </tr>
+                              <tr>
+                                   <td colspan="2">{{.Params.pricetax}}</td>
+                              </tr>
+                          </table>
+                          
+                          <button class="btn btn-white btn-raised btn-round" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              Features
+                            </button>
+                         
+                       
+                            <div class="collapse" id="collapseExample">
                             <table class="table text-white">
                                     <tbody>
-                                      <tr>
-                                        <td><b>1.2</b> Ghz</td>
-                                      </tr>
-                                      <tr>
-                                        <td><b>8</b> GB Ram</td>
-                                      </tr>
-                                      <tr>
-                                        <td><b>4</b> Core</td>
-                                      </tr>
+                                        <tr>
+                                        {{ range $index, $element := .Params.datasheetcontent}}
+                                        {{if (modBool $index 2)}} 
+                                        <th><b>{{$element}}</b></th>
+                                        {{else}}
+                                        <td>{{$element}}</td>
+                                        </tr>
+                                        <tr>
+                                        {{ end }}
+                                      {{ end }}
                                     </tbody>
                                   </table>
+                                </div>
                             <a href="#" class="btn btn-white btn-raised btn-round">
-                                Get Started
+                                Buy
                             </a>
                         </div>
                     </div>
                 </div>
-
+                {{ end }}
+                </div>
     </div>
    
-    
 </div>
 
 
