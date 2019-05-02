@@ -15,8 +15,8 @@
             {{ end }}
             
         </div>
-        <div class="{{ .Params.section | default "section"}}">
-            <div class="container">
+        <div class="{{ .Params.section | default "section"}} d-flex justify-content-center">
+            <div class="container main main-raised">
               
             {{ block "body" . }}
 	          {{ end }}

@@ -1,10 +1,10 @@
 {{ if eq .Type "hardware" }}
-<div class="main main-raised">
+
     <div class="container">
         <div class="row">
-        {{ range (where .Site.Pages ".Type" "hardware") }}
+        {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
+        {{ if isset .Params "datasheetcontent" }}
             <div class="col-md-4">
-                <!-- Add manjaro book pages-->
         
                     <div class="card card-raised bg-rose">
                          
@@ -55,13 +55,13 @@
                                    <td colspan="2">{{.Params.pricetax}}</td>
                               </tr>
                           </table>
-                          
-                          <button class="btn btn-white btn-raised btn-round" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          <!-- dont forget i18-->
+                          <button class="btn btn-white btn-raised btn-round" type="button" data-toggle="collapse" data-target="#collapseExample{{$main_index}}" aria-expanded="false" aria-controls="collapseExample">
                               Features
                             </button>
                          
                        
-                            <div class="collapse" id="collapseExample">
+                            <div class="collapse" id="collapseExample{{$main_index}}">
                             <table class="table text-white">
                                     <tbody>
                                         <tr>
@@ -77,17 +77,21 @@
                                     </tbody>
                                   </table>
                                 </div>
-                            <a href="#" class="btn btn-white btn-raised btn-round">
+                            <a href="{{.Params.buylink}}" target="_blank" class="btn btn-white btn-raised btn-round">
                                 Buy
                             </a>
                         </div>
                     </div>
                 </div>
                 {{ end }}
+                {{ end }}
                 </div>
+                <hr>
+                <h3 class="subtitle text-center">About Our Hardwares</h3>
+                {{ with  $.GetPage "hardware" }} 
+{{ .Content}}
+{{ end }}
     </div>
-   
-</div>
 
 
 

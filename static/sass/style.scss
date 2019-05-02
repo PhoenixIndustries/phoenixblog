@@ -211,6 +211,21 @@ h1.title::first-letter {
 
 }
 
+.hardware hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ECEFF1;
+    margin: 4em 0;
+    padding: 0; 
+}
+
+.hardware .subtitle{
+    font-weight: 1000 !important;
+    margin-top: 15px;
+    color: #424242;
+}
+
 .main-raised{
     margin: -120px 30px 0;
     border-radius: 6px;
@@ -222,6 +237,7 @@ h1.title::first-letter {
 }
 .main .card-desc{
     margin-top: 10px;
+    font-size: 8pt;
     font-weight: 400 !important;
 }
 .main .card-title{
@@ -235,7 +251,7 @@ h1.title::first-letter {
 }
 .card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
     margin-top: 20px;
-    min-height: 400px;
+    min-height: 450px;
     background: linear-gradient(60deg,#66BB6A,$green);
 
 }
