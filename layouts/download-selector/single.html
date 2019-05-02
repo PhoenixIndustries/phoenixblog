@@ -7,17 +7,13 @@
 {{ end }}
 
 {{ define "body" }}
+{{ partial "editionfinder.html" . }}
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto text-left">
 	<section>
 		<div class="container">
 			<div class="features-post" >
-				{{ range (where .Site.Pages ".Type" "download-how-to-try") }}
-				<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify  }}
 			</div>
-				<div class="row">
-					<ul class="list-group card col-md-12 offset-xl-1 col-xl-10">
-					<li class="list-group-item text-center"><h2>{{.Params.title}}</h2></li>
 					{{ range $index, $element := .Params.listcontent}}
 					{{ with  $.GetPage $element }} 
 						<li class="list-group-item">
@@ -29,19 +25,12 @@
 												<br>
 												{{ .Content }}	
 										</div>
-									</div>
-					
-						
-						
-						
+									</div>						
 						</li>
-						{{ end }}
-						{{ end }}
-				</ul>
+					{{ end }}
 				</div>
 			{{ end }}
 		</div>
-		{{ partial "editionfinder.html" . }}
 	</section>
   </div>   
 </div>

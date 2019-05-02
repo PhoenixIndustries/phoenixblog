@@ -71,9 +71,8 @@
 </script>
 
 <aside id="downloads" style="transition: height .5s;">
-    <div class="container text-center">
+    <div class="text-center">
         <div class="call-to-action">
-            <p>{{ .Content | markdownify }}</p>
             <div style="padding: 20px 0px 40px 0px;">
             {{ range .Params.filters }}
 		<div class="editions-tag-checkbutton">
@@ -114,7 +113,10 @@
                 </div>
                 </a>
             </div>{{ end }}{{ end }}
-        </div>
+		</div>
+		<div class="col-md-8 ml-auto mr-auto text-left">
+				<p>{{ .Content | markdownify }}</p>
+		</div>		
     </div>
 </section>
 
