@@ -43,4 +43,4 @@ Our third release of the Manjaro Special Edition Spitfire is a beauty - now with
 
 From intricate kernel tweaks, to streamlined settings, and even custom changes to battery, cpu, and sound settings - our Manjaro Special Edition Spitfire has now become the ULTIMATE Manjaro Machine.
 
-We will ship the **Spitfire** with pre-installed Manjaro from England by our partner shop to most countries within the EU. To get more information about the Spitfire, please visit the [StationX Shop](https://stationx.rocks/products/manjaro-special-edition-spitfire).
+We will ship the **Spitfire** with pre-installed Manjaro from England by our partner shop to most countries within the EU. To get more information about the Spitfire, please visit the [StationX Shop](https://stationx.rocks/collections/laptops/products/manjaro-special-edition-spitfire).
