@@ -2,10 +2,10 @@
   "title" : "Try it now",
   "type" : "download-selector",
   "filters" : [
-  { "id" : "official", "description" : "Flagship editions", "default" : "" },
-  { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "" },
+  { "id" : "official", "description" : "Flagship", "default" : "" },
+  { "id" : "beginnerfriendly", "description" : "Beginner", "default" : "" },
   { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
-  { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" },
+  { "id" : "traditional_ui", "description" : "Traditional", "default" : "" },
   { "id" : "arm", "description" : "ARM v8", "default" : "arm" },
   { "id" : "32bit", "description" : "32-bit (x86)", "default" : "32bit" },
   { "id" : "dev", "description" : "Previews", "default" : "dev" }
