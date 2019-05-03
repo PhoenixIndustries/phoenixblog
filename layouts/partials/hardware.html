@@ -1,6 +1,24 @@
 {{ if eq .Type "hardware" }}
 
     <div class="container">
+  <!-- Carousel Wrapper -->
+  <div id="multi-item-example" class="carousel slide" data-ride="carousel_main">
+      <div class="controls-top">
+          <a class="btn-floating primary-color waves-effect waves-light" href="#multi-item-example" data-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a class="btn-floating primary-color waves-effect waves-light" href="#multi-item-example" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <!-- Controls -->
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li class="primary-color active" data-target="#multi-item-example" data-slide-to="5"></li>
+          <li class="primary-color" data-target="#multi-item-example" data-slide-to="6"></li>
+          <li class="primary-color" data-target="#multi-item-example" data-slide-to="7"></li>
+        </ol>
+
         <div class="row">
         {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
         {{ if isset .Params "datasheetcontent" }}
@@ -86,6 +104,7 @@
                 {{ end }}
                 {{ end }}
                 </div>
+              </div>
                 <hr>
                 <h3 class="subtitle text-center">About Our Hardwares</h3>
                 {{ with  $.GetPage "hardware" }} 
