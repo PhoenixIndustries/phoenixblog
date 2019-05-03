@@ -15,7 +15,7 @@ TargetGroup = "For power users and developers dealing with every day computing t
 Thumbnail = "openbox.jpg"
 Version = "18.0.2-2018520"
 date = "2018-12-30T00:49:12+01:00"
-title = "Openbox - Stable"
+title = "Openbox Stable"
 type="download-edition"
 weight = "5"
 +++

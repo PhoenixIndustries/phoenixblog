@@ -15,7 +15,7 @@ TargetGroup = "For power users and developers dealing with every day computing t
 Thumbnail = "awesome.jpg"
 Version = "18.0"
 date = "2018-11-08T08:02:46:12+01:00"
-title = "Awesome - Stable"
+title = "Awesome Stable"
 type="download-edition"
 weight = "5"
 +++

@@ -16,7 +16,7 @@ TargetGroup = "For people who want a modern and very flexible desktop"
 Thumbnail = "kde.jpg"
 Version = "18.0.4"
 date = "12.03.2019T12:36:00+01:00"
-title = "KDE - Stable"
+title = "KDE Stable"
 type="download-edition"
 weight = "2"
 +++

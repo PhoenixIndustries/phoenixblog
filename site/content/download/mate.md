@@ -15,7 +15,7 @@ TargetGroup = "For people who look for a traditional experience"
 Thumbnail = "mate.jpg"
 Version = "18.0.4"
 date = "2019-04-12"
-title = "Mate - Stable"
+title = "Mate Stable"
 type="download-edition"
 weight = "5"
 +++

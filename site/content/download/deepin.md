@@ -15,7 +15,7 @@ TargetGroup = "For people who want a simple and elegant desktop"
 Thumbnail = "deepin.jpg"
 Version = "18.02"
 date = "02.01.2019T11:21:18+01:00"
-title = "Deepin - Stable"
+title = "Deepin Stable"
 type="download-edition"
 +++
 

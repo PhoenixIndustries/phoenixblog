@@ -1,5 +1,5 @@
 {
-  "title" : "Try it now",
+  "title" : "Downloads",
   "type" : "download-selector",
   "filters" : [
   { "id" : "official", "description" : "Flagship", "default" : "" },
@@ -10,8 +10,10 @@
   ]
 }
 
-For simplicity we have selected XFCE, KDE and GNOME as our flagship editions. If you want to look for other experiences, our community has created many flavours that focus around other desktops.
+Thank you for trying Manjaro Linux, you are awesome.
 
-Some desktops are very resource-efficient and makes them a good choice for *old computers*. Others focus on breaking away from user interface standards, that are decades old, giving a modern experience. There is also the traditional desktop experience.
+XFCE, KDE and GNOME are our flagship editions. If you want to try other DE's (Desktop Enviroments), our community has created many flavours.
+
+Some DE's are resource efficient those are a good choice for old computers, Others focus on breaking away from user interface standards, that are decades old, giving a modern experience. There is also the traditional DE's.
 
 For past releases check our archives on [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) Editions.

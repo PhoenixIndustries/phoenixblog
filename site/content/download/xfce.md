@@ -16,7 +16,7 @@ TargetGroup = "For people who want a reliable and fast desktop"
 Thumbnail = "xfce.jpg"
 Version = "18.0.4"
 date = "12.03.2019T12:31:00+01:00"
-title = "XFCE - Stable"
+title = "XFCE Stable"
 type="download-edition"
 weight = "1"
 +++

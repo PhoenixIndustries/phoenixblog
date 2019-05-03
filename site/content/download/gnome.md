@@ -16,7 +16,7 @@ TargetGroup = "For people who want a very modern and simple desktop"
 Thumbnail = "gnome.jpg"
 Version = "18.0.4"
 date = "12.03.2019T12:37:00+01:00"
-title = "Gnome - Stable"
+title = "Gnome Stable"
 type="download-edition"
 weigth = "3"
 +++

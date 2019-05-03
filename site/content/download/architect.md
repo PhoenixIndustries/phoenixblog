@@ -15,7 +15,7 @@ TargetGroup = "For people who want to setup and configure Manjaro from the groun
 Thumbnail = "architect.jpg"
 Version = "18.0.2"
 date = "2019-02-17T11:38:00+01:00"
-title = "Architect - Stable"
+title = "Architect Stable"
 type="download-edition"
 weight = "7"
 +++
