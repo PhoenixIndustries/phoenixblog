@@ -98,6 +98,12 @@ $(window).one("scroll", function(){
 });
 </script>
 {{ end }}
+{{ if eq .Title "Try it now"}} 
+<script>
+// hide preview button if previws are not available
+if (!$("div").hasClass("editions-box-hideable-dev")) { $("label[for='show-editions-dev']").hide(); }
+</script>
+{{ end }}
 
 
     
