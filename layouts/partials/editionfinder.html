@@ -73,7 +73,7 @@
 <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
-            <div style="padding: 20px 0px 40px 0px;">
+            <div class="btn-container">
             {{ range .Params.filters }}
 		<div class="editions-tag-checkbutton">
 			<input type="checkbox" id="show-editions-{{ .id }}" onchange="update_editions_tags();" {{ .default }}/>
@@ -100,14 +100,14 @@
                 <div class="editions-box-caption-small">
                     <div class="editions-box-caption-small-content">
                         <div class="name">
-                            {{ i18n "download" }} {{ .Params.name }}
+                            {{ .Params.name }}
                         </div>
                     </div>
                 </div>
                 <div class="editions-box-caption-extended-subtitle">
                     <div class="editions-box-caption-extended-subtitle-content">
                         <div class="action">
-                            {{ i18n "download" }} {{ .Params.name }}
+                            {{ .Params.name }}
                         </div>
                     </div>
                 </div>

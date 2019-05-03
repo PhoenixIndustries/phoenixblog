@@ -562,12 +562,25 @@ h1.title::first-letter {
     }
     .section {
         padding: 0;
+        margin-top: 38px;
     }
     ul.card {
         padding-right:0 !important;
     }
     li img {
         margin-right: 8px;
+    }
+    .editions-box {
+        .name, .action {
+            font-size: 18px !important;
+        }
+    }
+    .editions-box-hideable {
+        padding: 5px;
+    }
+    .btn-container {
+        padding: 20px;
+        margin-bottom: -5px;
     }
 }
 
