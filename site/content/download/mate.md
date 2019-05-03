@@ -7,15 +7,18 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "MATE Edition"
+Name = "MATE"
 Screenshot = "mate-full.jpg"
 ShortDescription = "This edition is supported by the Manjaro community and comes with Mate, a desktop environment that continues the legacy of traditional user experience while carefully improving and modernizing it when needed. This preview is not suitable for production environment."
-Tags = [ "resourceefficient", "traditional_ui" ]
+Tags = [ "community"]
 TargetGroup = "For people who look for a traditional experience"
 Thumbnail = "mate.jpg"
 Version = "18.0.4"
 date = "2019-04-12"
-title = "Mate - Stable"
+title = "Mate Stable"
 type="download-edition"
 weight = "5"
 +++
+
+If you are looking for older images check the [Mate](https://osdn.net/projects/manjaro-community/storage/z_release_archive/mate) archive.
+

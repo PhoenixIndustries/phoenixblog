@@ -629,23 +629,32 @@ h1.title::first-letter {
 }
 
 .download-page {
-    
-    ul li h2 {
-        margin-bottom: 0px;
-    }
-    
+        
     .editions-tag-checkbutton label {
         width: 170px;
         min-width: 170px;
     }
     .section {
         padding: 0;
+        margin-top: 38px;
     }
     ul.card {
         padding-right:0 !important;
     }
     li img {
         margin-right: 8px;
+    }
+    .editions-box {
+        .name, .action {
+            font-size: 18px !important;
+        }
+    }
+    .editions-box-hideable {
+        padding: 5px;
+    }
+    .btn-group {
+        margin-bottom: -5px;
+        padding: 12px;
     }
 }
 

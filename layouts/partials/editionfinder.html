@@ -9,9 +9,7 @@
 			}
 
 		}
-
 		return true;
-
 	}
 
 	function show_only_editions_with_tags(tags) {
@@ -22,68 +20,35 @@
 		{
 			if (tags.length == 0) {
 				el.style.display = "none";
-				//el.style.opacity = "1";
-				//el.style.width = "";
-				//el.style.visibility = "visible";
 			}
 			else {
 
 				if(element_is_in_tags(el, tags)) {
 					el.style.display = "inline-block";
-					//el.style.opacity = "1";
-					//el.style.width = "";
-					//el.style.visibility = "visible";
 				}
 				else {
 					el.style.display = "none";
-					//el.style.opacity = "0";
-					//el.style.width = "0%";
-					//el.style.visibility = "hidden";
 				}
 			}
 		});
 	}
-
-	function editions_filter_selected(id) {
-		var e = document.getElementById("show-editions-" + id)
-		return e.checked;
-	}
-
-	function update_editions_tags() {
+	function update_editions_tags(id) {
 		var tag_filter = [];
-
-		{{ range .Params.filters }}
-
-		if (editions_filter_selected( "{{ .id }}" )) {
-			tag_filter.push( "{{ .id }}" );
-		}
-
-		{{ end }}
-
+		tag_filter.push( id );
 		show_only_editions_with_tags(tag_filter)
 	}
-
-	//window.onload = update_editions_tags;
-	//addLoadEvent(update_editions_tags);
-
-	//$( document ).ready(update_editions_tags);
-
 </script>
 
 <aside id="downloads" style="transition: height .5s;">
-    <div class="container text-center">
+    <div class="text-center">
         <div class="call-to-action">
-            <p>{{ .Content | markdownify }}</p>
-            <div style="padding: 20px 0px 40px 0px;">
-            {{ range .Params.filters }}
-		<div class="editions-tag-checkbutton">
-			<input type="checkbox" id="show-editions-{{ .id }}" onchange="update_editions_tags();" {{ .default }}/>
-			<label for="show-editions-{{ .id }}" class="btn btn-success btn-xl" >{{ .description }}</label>
-		</div>
+				<div class="btn-group" role="group" aria-label="Basic example">
+            {{ range .Params.filters }}				
+						<button type="button" class="btn btn-sm" id="show-editions-{{ .id }}" onclick="update_editions_tags('{{ .id }}');" {{ .default }}>{{ .description }}</button>
             {{ end }}
             </div>
             <div class="container-fluid" style="min-height: 503px;">
-                <div class="fluid-row align-items-center no-gutters">
+                <div class="editions-grid fluid-row align-items-center no-gutters">
                 <!--
                 NOTE: The range and end operations are supposed to be in line with the boxes!!!
                 Read more about crazy HTML magic here: http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
@@ -101,26 +66,28 @@
                 <div class="editions-box-caption-small">
                     <div class="editions-box-caption-small-content">
                         <div class="name">
-                            {{ i18n "download" }} {{ .Params.name }}
+                            {{ .Params.name }}
                         </div>
                     </div>
                 </div>
                 <div class="editions-box-caption-extended-subtitle">
                     <div class="editions-box-caption-extended-subtitle-content">
                         <div class="action">
-                            {{ i18n "download" }} {{ .Params.name }}
+                            {{ .Params.name }}
                         </div>
                     </div>
                 </div>
                 </a>
             </div>{{ end }}{{ end }}
-        </div>
+		</div>
+		<div class="content col-md-8 ml-auto mr-auto text-left">
+				<p>{{ .Content | markdownify }}</p>
+		</div>		
     </div>
 </section>
 
 </aside>
 
-<script type="text/javascript" >
+<script type="text/javascript">
 	update_editions_tags();
-	
 </script>

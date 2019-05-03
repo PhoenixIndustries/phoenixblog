@@ -1,19 +1,19 @@
 {
-  "title" : "Try it now",
+  "title" : "Downloads",
   "type" : "download-selector",
   "filters" : [
-  { "id" : "official", "description" : "Flagship editions", "default" : "" },
-  { "id" : "beginnerfriendly", "description" : "Beginner-friendly", "default" : "" },
-  { "id" : "resourceefficient", "description" : "Resource-efficient", "default" : "" },
-  { "id" : "traditional_ui", "description" : "Traditional workflow", "default" : "" },
+  { "id" : "official", "description" : "Flagship", "default" : "" },
+  { "id" : "community", "description" : "Community", "default" : "community" },
   { "id" : "arm", "description" : "ARM v8", "default" : "arm" },
   { "id" : "32bit", "description" : "32-bit (x86)", "default" : "32bit" },
   { "id" : "dev", "description" : "Previews", "default" : "dev" }
   ]
 }
 
-For simplicity we have selected XFCE, KDE and GNOME as our flagship editions. If you want to look for other experiences, our community has created many flavours that focus around other desktops.
+Thank you for trying Manjaro Linux, you are awesome.
 
-For example we have editions that use technology that makes them very resource-efficient and makes them a good choice for *old computers*. Other editions focus on breaking away from user interface standards that are decades old and giving users a modern experience. As not everybody wants to have such an experience and likes a more traditional way how everything works, we have editions that focus on this *traditional workflow*.
+XFCE, KDE and GNOME are our flagship editions. If you want to try other DE's (Desktop Enviroments), our community has created many flavours.
 
-Simply use our download selector below to find your right edition. *You may also want to checkout our archive of past released [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) editions.*
+Some DE's are resource efficient those are a good choice for old computers, Others focus on breaking away from user interface standards, that are decades old, giving a modern experience. There is also the traditional DE's.
+
+For past releases check our archives on [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) Editions.

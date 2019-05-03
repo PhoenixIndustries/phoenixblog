@@ -37,7 +37,7 @@ DefaultContentLanguage = "en-us"
     weight = 3 
 
 [[menu.main]]
-    name = "Download"
+    name = "Downloads"
     url = "/download/"
     pre = ""
     weight = 1

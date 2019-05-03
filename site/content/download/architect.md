@@ -7,15 +7,15 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Architect Edition"
+Name = "Architect"
 Screenshot = "architect-full.jpg"
 ShortDescription = "This edition is supported by the Manjaro team and comes with a TUI installer."
-Tags = [ "official", "resourceefficient" ]
+Tags = [ "official" ]
 TargetGroup = "For people who want to setup and configure Manjaro from the ground up"
 Thumbnail = "architect.jpg"
 Version = "18.0.2"
 date = "2019-02-17T11:38:00+01:00"
-title = "Architect - Stable"
+title = "Architect Stable"
 type="download-edition"
 weight = "7"
 +++
@@ -31,3 +31,6 @@ Manjaro-Architect offers currently unparalleled customization on your Manjaro in
 - choose the default shell for user (bash, zsh or fish)
 - choose your graphics drivers that are installed with mhwd
 - choose arbitrary extra packages to be installed
+
+If you are looking for older images check the [Architect](https://osdn.net/projects/manjaro/storage/z_release_archive/Architect) archive.
+

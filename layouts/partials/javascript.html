@@ -98,6 +98,19 @@ $(window).one("scroll", function(){
 });
 </script>
 {{ end }}
+{{ if eq .Title "Downloads"}} 
+<script>
+// hide preview button if previws are not available
+if (!$("div").hasClass("editions-box-hideable-dev")) { $("#show-editions-dev").remove(); }
+// add green color onclick
+$('button').on('click', function () {
+    $(".btn-group button").removeClass('btn-success');
+    $(this).addClass('btn-success');
+    // hide text content on click
+    $(".content").hide();
+});
+</script>
+{{ end }}
 
 
     
