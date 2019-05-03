@@ -31,3 +31,6 @@ Manjaro-Architect offers currently unparalleled customization on your Manjaro in
 - choose the default shell for user (bash, zsh or fish)
 - choose your graphics drivers that are installed with mhwd
 - choose arbitrary extra packages to be installed
+
+If you are looking for older images check the [Architect](https://osdn.net/projects/manjaro/storage/z_release_archive/Architect) archive.
+

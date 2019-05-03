@@ -19,3 +19,6 @@ title = "Mate Stable"
 type="download-edition"
 weight = "5"
 +++
+
+If you are looking for older images check the [Mate](https://osdn.net/projects/manjaro-community/storage/z_release_archive/mate) archive.
+

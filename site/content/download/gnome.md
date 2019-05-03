@@ -21,3 +21,5 @@ type="download-edition"
 weigth = "3"
 +++
 
+If you are looking for older images check the [GNOME](https://osdn.net/projects/manjaro/storage/z_release_archive/gnome) archive.
+

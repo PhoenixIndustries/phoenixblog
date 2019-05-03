@@ -19,3 +19,6 @@ title = "Deepin Stable"
 type="download-edition"
 +++
 
+If you are looking for older images check the [Deepin](https://osdn.net/projects/manjaro-community/storage/z_release_archive/deepin) archive.
+
+

@@ -20,3 +20,5 @@ type="download-edition"
 weight = "5"
 +++
 
+If you are looking for older images check the [Openbox](https://osdn.net/projects/manjaro-community/storage/z_release_archive/openbox) archive.
+
