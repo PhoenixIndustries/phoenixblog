@@ -735,6 +735,17 @@ h1.title::first-letter {
 }
 
 .news {
+
+    .view.overlay:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom: 60px solid transparent;
+        border-right: 100px solid #e91e63ed;
+    }
     .container .btn-success{
         background-color: $green;
     }
@@ -805,13 +816,15 @@ h1.title::first-letter {
             height: 0;
         }
         .date {
-            position: relative;
-            top: -8px;
-            padding: 10px;
-            background-color: #ffff;
-            color: #e91e63ed;
-            border-radius: 50%;
+            position: absolute;
+            top: 17px;
+            right: 0px;
+            background-color: transparent;
+            color: #ffff;
             font-size: 12px;
+            font-weight: bold;
+            transform: rotate(100dg);
+            transform: rotate(32deg);
         }
         .card-body {
             min-height: auto;
