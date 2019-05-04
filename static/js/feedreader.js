@@ -55,7 +55,7 @@ function feedreader(feed) {
             item = {
                 title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
                 category:    $this.find("category").text(),
-                description: $this.find("description").text().replace(/\]]>/g, "").replace("full topic", "in the forum"),
+                description: $this.find("description").text().replace(/\]]>/g, "").replace("Read full topic", "Go to this topic in the forum."),
                 date:        $this.find("pubDate").text().replace(/\+0000|,/g, "").slice(0, -9).slice(4, 15),
                 link:        $this.find("link").text(),
             };
@@ -82,15 +82,32 @@ function feedreader(feed) {
                 return "post-news"
             }
         }
+
+        function filterImages(img) {
+
+            var imageTemplate = `<img class="card-img-top" src="` + img + `" alt="Post Image">`
+ 
+            if (typeof img === 'undefined') {
+                return ""
+            } else if (img.includes("emoji")) {
+                return ""
+            } else if (img.includes(".ico")) {
+                return ""
+            } else if (img.includes("user_avatar")) {
+                return ""
+            } else {
+                return imageTemplate
+            }         
+        }
         
-        function buildArticleTemplate(el, img, date, title, shortText, link) {
+        function buildArticleTemplate(el, img, date, title, shortText) {
             
             var $article = $(`
                 <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
                     <div class="card">
                         <div data-toggle="modal" data-target='#` + el + `'>
-                            <div class="view overlay">
-                            <img class="card-img-top" src="` + img + `" alt="Post Image" onerror="this.style.display='none'">
+                            <div class="view overlay">` +
+                            filterImages(img) + `
                             <a>
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -103,10 +120,6 @@ function feedreader(feed) {
                                 <p class="card-text">` + shortText + `</p>
                             </div>
                         </div>
-                    <div class="btn-group">
-                        <button class="btn-sm btn">Full Topic Also in:</button>
-                        <button class="btn btn-success btn-sm btn-primary" onclick='window.open("` + link + `", "_blank")'>Forum</button>
-                    </div>
                 </article>`)
             return $article
         }       
