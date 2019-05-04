@@ -1,7 +1,5 @@
 +++
 class= "hardware"
-title = "#Manjaro Hardwares"
-description = "Bladebook with pre-installed Manjaro from Denmark by our partner shop to most countries within the EU."
 subtitle = "Bladebook (Spring 2019 Edition)"
 subdescription = "Netbook with Manjaro pre-installed"
 pricebefore = "Starting from"
@@ -35,7 +33,6 @@ datasheetcontent = [
 	"Weight",
 	"1.2 kg"]
 type = "hardware"
-background = "/img/bg9.jpg"
 images = ["bladebook-1", "bladebook-2", "bladebook-3"]
 blockquote = "The Manjaro guys have optimized the KDE Edition to fly on the Bladebook!"
 blockquotewriter = "-Lisa McCoy"

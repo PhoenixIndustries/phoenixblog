@@ -1,5 +1,6 @@
 +++
 type = "hardware"
+title = "#Manjaro Hardwares"
 +++
 
 Our **Bladebook** is a 13.3" Intel Quad Core 1.3 kg light-weight Laptop optimized for Manjaro Linux, featuring the Intel® Celeron® Processor J3455 (Apollo Lake) with a burst frequency up to 2.30 GHz. It comes with 6 GB DDR3L and a built-in 256 GB SSD. This results in a 20% to 30% stronger CPU performance than with the original spec we had back in Fall 2018. We changed the screen to an IPS panel with 1920x1080 resolution and upped the WIFI to a dual frequency 2.4G + 5G band.
