@@ -22,7 +22,7 @@ $('#news-grid').isotope({
         }
     },
     sortBy : 'date',
-    sortAscending : false
+    sortAscending : true
 });
 
 function selectPostType(button, el) {
@@ -150,11 +150,6 @@ function feedreader(feed) {
 
         $("#news-grid").isotope( 'insert', buildArticleTemplate(el, img, item.date, item.title, shortText, item.link) );
         $("#news-grid").append(buildModalTemplate(el, item.title, item.description));
-        
-        $("#unique" + el + " .card-img-top").imagesLoaded( function() {
-            // reload layout after images are loaded since boxes change sizes
-            $("#news-grid").isotope("reloadItems").isotope("layout"); 
-         });
 
         $('#' + el + ' .modal-body').find(".meta").remove();
         $('#' + el + ' .modal-body').find(".poll").remove();
