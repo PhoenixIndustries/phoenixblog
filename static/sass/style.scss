@@ -438,17 +438,6 @@ h1.title::first-letter {
         vertical-align: text-top;
     }
 
-    .btn-group {
-        a:last-child {
-            border-bottom-right-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        a:first-child {
-            border-bottom-left-radius: 20px;
-            border-top-left-radius: 20px;
-        }
-    }
-
     .blockquote {
         position: initial !important;
         .fa {
@@ -504,11 +493,11 @@ h1.title::first-letter {
         
     
         p {
-        color: $green;
+        color: #ffff;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(13, 95, 79, 0.90);
         padding: 10px;
         } 
 
@@ -606,6 +595,7 @@ h1.title::first-letter {
     }
     .editions-box-hideable {
         padding: 5px;
+        display: inline-block;
     }
     .btn-group {
         margin-bottom: -5px;
