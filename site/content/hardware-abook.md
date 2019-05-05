@@ -27,6 +27,6 @@ datasheetcontent = [
 	"Weight",
 	"2 kg"]
 type = "hardware"
-images = ["manjaro-abook-v142-a", "manjaro-abook-v142-b", "manjaro-abook-v142-c"]
+images = ["manjaro-abook-v142-a", "manjaro-abook-v142-d", "manjaro-abook-v142-c"]
 +++
 
