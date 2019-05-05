@@ -153,7 +153,7 @@ DefaultContentLanguage = "en-us"
 
 
 [[menu.main]]
-    name = "Hardware - ManjaroBook"
+    name = "Hardware - Notebooks & PCs"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = ""
     weight = 5
@@ -168,12 +168,12 @@ DefaultContentLanguage = "en-us"
     parent = "shop"
 
 
-[[menu.main]]
-    name = "Hardware - Bladebook"
-    url = "/hardware-bladebook"
-    pre = ""
-    weight = 3
-    parent = "shop"
+# [[menu.main]]
+#    name = "Hardware - Bladebook"
+#    url = "/hardware-bladebook"
+#    pre = ""
+#    weight = 3
+#    parent = "shop"
 
 #
 # --- End SubMenu Shop --- 
