@@ -396,6 +396,10 @@ h1.title::first-letter {
 
 .page-header .page-header-image {
     will-change: transform;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transition: filter 3.5s ease;
 }
 
 .landing-page {
@@ -493,18 +497,42 @@ h1.title::first-letter {
     }
 
     .title-container {
-        background-color: #2c2c2c;
-        background-color: #00000082;
+        background-color: transparent;
         padding: 18px !important;
         z-index: -1;
         margin-top: 96px;
+        
     
-      p {
+        p {
         color: #FFFFFF;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
-       }  
+        background-color: rgba(0, 0, 0, 0.47843137254901963);
+        padding: 10px;
+        } 
+
+        a {
+            background-color: rgba(0, 0, 0, 0.47843137254901963);
+            font-weight: 600;
+
+            &[href='/download/'] {
+                border: 1px solid #b71c1c; 
+                &:hover {
+                    background-color: #b71c1c;
+                } 
+            }
+        
+            &:last-child {
+                border: 1px solid #1976d2;
+                &:hover {
+                    background-color: #1976d2;
+                } 
+            }
+            &:hover, &:active {
+                border-color: transparent; 
+            }
+        }
     }
 
     h3, h2 {
