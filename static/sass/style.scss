@@ -885,11 +885,8 @@ h1.title::first-letter {
             box-shadow: 0 5px 25px 0 rgba(0,6,0,.5);
             color: #000;
         }
-        img[src=""], .hide {
-            display: none;
-        }
-        img[src^="https://forum.manjaro.org/images/emoji"] {
-            display: none;
+        img {
+            width: auto;
         }
     }
     .modal-content {
