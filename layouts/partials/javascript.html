@@ -27,9 +27,11 @@ if ($( window ).width() > 992) {
       $(window).scroll(function() {
         if ($(this).scrollTop()>50) {
           $('.title-container').fadeOut();
+          $(".page-header-image").css("filter", "grayscale(0%)");
       }
         else {
           $('.title-container').fadeIn();
+          $(".page-header-image").css("filter", "grayscale(100%)");
         }
       });
     };
