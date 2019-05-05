@@ -504,16 +504,16 @@ h1.title::first-letter {
         
     
         p {
-        color: #FFFFFF;
+        color: $green;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
-        background-color: rgba(0, 0, 0, 0.47843137254901963);
+        background-color: rgba(0, 0, 0, 0.65);
         padding: 10px;
         } 
 
         a {
-            background-color: rgba(0, 0, 0, 0.47843137254901963);
+            background-color: rgba(0, 0, 0, 0.48);
             font-weight: 600;
 
             &[href='/download/'] {
