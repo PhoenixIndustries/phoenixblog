@@ -1,5 +1,6 @@
 +++
 type = "hardware"
+class= "hardware"
 title = "#Manjaro Hardwares"
 +++
 

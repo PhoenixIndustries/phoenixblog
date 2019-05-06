@@ -191,96 +191,97 @@ p, .call-to-action {
     }
 }
 
-.page-header {
-    height: 110vh !important;
+.hardware-page{
+    .page-header {
+        height: 110vh !important;
+    }
+    .page-header .page-header-image {
+        will-change: transform;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        transition: filter 3.5s ease;
+    }
+    h1.title::first-letter {
+        color: $green;
+    }
+    
+    .title-container h1 {
+        font-size: 2em;
+    }
+    
+    hr { 
+        display: block; 
+        height: 1px;
+        border: 0; 
+        border-top: 1px solid #ECEFF1;
+        margin: 4em 0;
+        padding: 0; 
+    }
+    
+    .subtitle{
+        font-weight: 1000 !important;
+        margin-top: 15px;
+        color: #424242;
+    }
+    
+    .main-raised{
+        margin: -120px 30px 0;
+        border-radius: 6px;
+        box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+    }
+    .main .card-subtitle{
+        font-weight: 900 !important;
+        margin-top: 15px;
+        max-height: 50px;
+        height: 50px;
+    }
+    .main .card-desc{
+        margin-top: 10px;
+        font-size: 8pt;
+        font-weight: 400 !important;
+    }
+    .main .card-title{
+        font-weight: 800 !important;
+        font-size: 32pt;
+    }
+    .carousel{
+        border-radius: 6px;
+    }
+    .card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
+        min-height: 450px;
+        background: linear-gradient(60deg,#66BB6A,$green);
+    }
+    .carouselimg img {
+        width: auto;
+        height: 225px;
+        max-height: 225px;
+      }
+      .carousel-indicators li { visibility: hidden; }
+    .card-raised {
+    
+        box-shadow: 0 16px 38px -12px rgba(0,0,0,.56),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+    
+    }
+    .btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
+    
+        background-color: #fff;
+        color: $green;
+    
+    }
+    .main .table{
+        margin-top: 50px;
+    }
+    .main {
+    
+        background: #fff;
+        position: relative;
+        z-index: 3;
+    
+    }
 }
 
-h1.title::first-letter {
-    color: $green;
-}
 
-.hardware .title-container h1 {
-    font-size: 2em;
-}
-.card-pricing ul {
-
-    list-style: none;
-    padding: 0;
-    max-width: 240px;
-    margin: 10px auto;
-
-}
-
-.hardware hr { 
-    display: block; 
-    height: 1px;
-    border: 0; 
-    border-top: 1px solid #ECEFF1;
-    margin: 4em 0;
-    padding: 0; 
-}
-
-.hardware .subtitle{
-    font-weight: 1000 !important;
-    margin-top: 15px;
-    color: #424242;
-}
-
-.main-raised{
-    margin: -120px 30px 0;
-    border-radius: 6px;
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
-}
-.main .card-subtitle{
-    font-weight: 900 !important;
-    margin-top: 15px;
-}
-.main .card-desc{
-    margin-top: 10px;
-    font-size: 8pt;
-    font-weight: 400 !important;
-}
-.main .card-title{
-    font-weight: 800 !important;
-    font-size: 32pt;
-}
-.carousel{
-    border-radius: 6px;
-    margin-top: 30px;
-}
-.card.bg-rose, .card .card-header-rose, .card.card-rotate.bg-rose .back, .card.card-rotate.bg-rose .front {
-    margin: 20px;
-    min-height: 450px;
-    background: linear-gradient(60deg,#66BB6A,$green);
-
-}
-.carouselimg img {
-    width: auto;
-    height: 225px;
-    max-height: 225px;
-  }
-  .carousel-indicators li { visibility: hidden; }
-.card-raised {
-
-    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56),0 4px 25px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
-
-}
-.btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
-
-    background-color: #fff;
-    color: $green;
-
-}
-.main .table{
-    margin-top: 50px;
-}
-.main {
-
-    background: #fff;
-    position: relative;
-    z-index: 3;
-
-}
 
 ::selection {
     background: $green;
@@ -517,17 +518,6 @@ h1.title::first-letter {
         vertical-align: text-top;
     }
 
-    .btn-group {
-        a:last-child {
-            border-bottom-right-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        a:first-child {
-            border-bottom-left-radius: 20px;
-            border-top-left-radius: 20px;
-        }
-    }
-
     .blockquote {
         position: initial !important;
         .fa {
@@ -583,11 +573,11 @@ h1.title::first-letter {
         
     
         p {
-        color: $green;
+        color: #ffff;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(13, 95, 79, 0.90);
         padding: 10px;
         } 
 
@@ -685,6 +675,7 @@ h1.title::first-letter {
     }
     .editions-box-hideable {
         padding: 5px;
+        display: inline-block;
     }
     .btn-group {
         margin-bottom: -5px;
