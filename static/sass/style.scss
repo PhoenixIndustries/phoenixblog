@@ -413,10 +413,10 @@ h1.title::first-letter {
         margin-top: 10px;
     }
 
-    .navbar .navbar-nav .nav-item.active .nav-link:not(.btn),
-    .navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
-    .navbar .navbar-nav .nav-item .nav-link:not(.btn):hover,
-    .navbar .navbar-nav .nav-item .nav-link:not(.btn):active {
+    .navbar-transparent .nav-item.active .nav-link:not(.btn),
+    .navbar-transparent .nav-item .nav-link:not(.btn):focus,
+    .navbar-transparent .nav-item .nav-link:not(.btn):hover,
+    .navbar-transparent .nav-item .nav-link:not(.btn):active {
         background-color: rgba(13,95,79,.8);
     }
 
