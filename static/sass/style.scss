@@ -258,6 +258,11 @@ h1.title::first-letter {
 }
 
 @media screen and (max-width: 991px) {
+
+    #contact {
+        margin-top: 40px;
+    }
+
     .sidebar-collapse .navbar-collapse:before {
         background: $green;
         opacity: 100;
@@ -494,6 +499,31 @@ h1.title::first-letter {
         }
     }
 
+    #contact {
+
+        position: absolute;
+        background-color: rgb(191, 54, 12);
+        border: 1px solid rgb(191, 54, 12);
+        font-weight: bolder;
+        font-size: 10px;
+        display: none;
+
+        .fas {
+            font-size: 1.3em;
+            margin-left: 12px;
+        }
+
+        &:visited, &:hover, &:active {
+        border: 1px solid rgba(191, 54, 12, 0.80) !important;
+        background-color: rgba(191, 54, 12, 0.80) !important;
+             
+        }
+
+        &:active:focus {
+            box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
+        }
+    }
+
     .title-container {
         background-color: transparent;
         padding: 18px !important;
@@ -510,7 +540,7 @@ h1.title::first-letter {
         padding: 14px;
         } 
 
-        a {
+        a, button {
             .fa, .fas {
                 font-size: 1.3em;
                 margin-left: 12px;
@@ -519,7 +549,9 @@ h1.title::first-letter {
                 background-color: rgba(0, 0, 0, 0.48);
                 font-weight: 600;
             }
+        }
 
+        a {
             &[href='/download/'] {
                 border: 1px solid rgb(191, 54, 12); 
                 &:hover, &:active {
@@ -530,18 +562,17 @@ h1.title::first-letter {
                     box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5);
                 }
             }
+        }
         
-            &:last-child {
-                border: 1px solid rgb(13,95,79);
-                &:hover, &:active {
-                    background-color: rgba(13,95,79, 0.80);
-                    border: 1px solid rgba(13,95,79, 0.80);
-                } 
-                &:active:focus {
-                    box-shadow: 0 0 0 0.2rem rgba(13,95,79,.5);
-                }
-            }
-            
+        button {
+            border: 1px solid rgb(13,95,79) !important;
+            &:hover, &:active {
+                background-color: rgba(13,95,79, 0.80) !important;
+                border: 1px solid rgba(13,95,79, 0.80) !important;
+            } 
+            &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgba(13,95,79,.5) !important;
+            } 
         }
     }
 
@@ -1069,6 +1100,10 @@ h1.title::first-letter {
 }
 
 @media screen and (min-width: 992px) {
+
+    #contact {
+        margin-top: 10px;
+    }
 
     .jumbo-submenu {
         width: 508px;

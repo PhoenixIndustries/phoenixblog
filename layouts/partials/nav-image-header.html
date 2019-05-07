@@ -5,6 +5,9 @@
                 <span class="loader"></span><a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="Manjaro.org" rel="tooltip" data-placement="bottom" data-toggle="tooltip">
                     manjaro 
                 </a><span class="page-nav">- {{ i18n "slogan" }}</span>
+                {{ if .IsHome }}
+                <button id="contact" class="btn btn-sm btn-primary">{{ i18n "contact" }}<i class="fas fa-smile"></i></button>
+                {{ end }}
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
