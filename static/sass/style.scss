@@ -239,7 +239,7 @@ h1.title::first-letter {
     }
     .landing-page {
         .section-story-overview {
-            margin-top: -124px !important;
+            margin-top: -50px !important;
         }
     }
     
@@ -385,9 +385,12 @@ h1.title::first-letter {
 
     .navbar-transparent .nav-item.active .nav-link:not(.btn),
     .navbar-transparent .nav-item .nav-link:not(.btn):focus,
-    .navbar-transparent .nav-item .nav-link:not(.btn):hover,
-    .navbar-transparent .nav-item .nav-link:not(.btn):active {
+    .navbar-transparent .nav-item .nav-link:not(.btn):hover {
         background-color: rgba(13,95,79,.8);
+    }
+
+    .navbar-transparent .nav-item .nav-link:not(.btn):active {
+        background-color: transparent !important;
     }
 
     .section:not(.section-team) .container {
@@ -513,7 +516,6 @@ h1.title::first-letter {
         }
     
         .btn {
-            background-color: #f0f0f0;
             color: $green;
             margin-left: 5px;
             position: relative;
@@ -1159,6 +1161,10 @@ h1.title::first-letter {
 
 @media screen and (min-width: 992px) {
 
+    .social-icons-top .btn {
+        background-color: #f0f0f0;
+    }
+
     #contact {
         margin-top: 10px;
     }
@@ -1225,7 +1231,7 @@ h1.title::first-letter {
     .donate-page .flex-grid {
         display: flex;
     }
-    .dropdown-menu .now-ui-icons {
+    .dropdown-menu .now-ui-icons, .dropdown-menu .fas, .dropdown-menu .fa {
         color: $green !important;
         position: relative;
         margin-right: 5px;
