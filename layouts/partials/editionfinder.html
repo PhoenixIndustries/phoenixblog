@@ -1,44 +1,3 @@
-<script type="text/javascript" >
-
-	function element_is_in_tags(el, tags) {
-
-		for (var id in tags) {
-
-			if(!el.classList.contains("editions-box-hideable-" + tags[id])){
-				return false;
-			}
-
-		}
-		return true;
-	}
-
-	function show_only_editions_with_tags(tags) {
-
-		var els = document.getElementsByClassName('editions-box-hideable');
-
-		[].forEach.call(els, function (el)
-		{
-			if (tags.length == 0) {
-				el.style.display = "none";
-			}
-			else {
-
-				if(element_is_in_tags(el, tags)) {
-					el.style.display = "inline-block";
-				}
-				else {
-					el.style.display = "none";
-				}
-			}
-		});
-	}
-	function update_editions_tags(id) {
-		var tag_filter = [];
-		tag_filter.push( id );
-		show_only_editions_with_tags(tag_filter)
-	}
-</script>
-
 <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
@@ -85,9 +44,4 @@
 		</div>		
     </div>
 </section>
-
 </aside>
-
-<script type="text/javascript">
-	update_editions_tags();
-</script>
