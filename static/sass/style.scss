@@ -555,7 +555,6 @@ h1.title::first-letter {
         border: 1px solid rgb(191, 54, 12);
         font-weight: bolder;
         font-size: 10px;
-        display: none;
 
         .fas {
             font-size: 1.3em;
@@ -570,6 +569,14 @@ h1.title::first-letter {
 
         &:active:focus {
             box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
+        }
+    }
+    #contact-form {
+        .modal-content {
+            padding: 20px;
+        }
+        .form-group {
+            margin-botton:40px;
         }
     }
 
