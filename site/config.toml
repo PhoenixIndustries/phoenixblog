@@ -139,7 +139,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Merch & Accessories"
     url = "https://shop.spreadshirt.de/manjaro/"
-    pre = ""
+    pre = "<i class='fas fa-tshirt'></i>"
     weight = 1
     parent = "shop"
 
@@ -147,7 +147,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Manjaro Stickers"
     url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
-    pre = ""
+    pre = "<i class='fas fa-ticket-alt'></i>"
     weight = 2
     parent = "shop"
 
@@ -155,7 +155,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Hardware - Notebooks & PCs"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
-    pre = ""
+    pre = "<i class='fas fa-desktop'></i>"
     weight = 5
     parent = "shop"
 
@@ -163,7 +163,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Hardware - Spitfire"
     url = "/hardware-spitfire"
-    pre = ""
+    pre = "<i class='fas fa-laptop'></i>"
     weight = 4
     parent = "shop"
 
