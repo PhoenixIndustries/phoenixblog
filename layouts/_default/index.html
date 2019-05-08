@@ -15,17 +15,18 @@
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto">
       <div id="content" class="social-icons-top">
-        <a href="{{.Params.facebook}}"  target="_blank" class="btn btn-icon btn-round">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="{{.Params.twitter}}"  target="_blank" class="btn btn-icon btn-round"> 
+
+        <a href="{{.Params.gitlab}}"  target="_blank" class="btn btn-icon btn-round gitlab"> 
+            <i class="fab fa-gitlab"></i>
+        </a>        
+        <a href="{{.Params.twitter}}"  target="_blank" class="btn btn-icon btn-round twitter"> 
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="{{.Params.youtube}}"  target="_blank" class="btn btn-icon btn-round"> 
+        <a href="{{.Params.youtube}}"  target="_blank" class="btn btn-icon btn-round youtube"> 
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="{{.Params.gitlab}}"  target="_blank" class="btn btn-icon btn-round"> 
-            <i class="fab fa-gitlab"></i>
+        <a href="{{.Params.facebook}}"  target="_blank" class="btn btn-icon btn-round facebook">
+          <i class="fab fa-facebook-f"></i>
         </a>
     </div>
   {{ .Content }}

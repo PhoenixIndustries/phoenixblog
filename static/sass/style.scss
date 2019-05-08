@@ -369,36 +369,6 @@ h1.title::first-letter {
     font-weight: 700;
   }
 
-.social-icons-top {
-
-    .fab {
-       margin-top: 19px;
-    }
-     
-    text-align: right;
-    margin-top: -94px;
-
-    .btn {
-        background-color: #f0f0f0;
-        color: $green;
-        margin-left: 5px;
-        position: relative;
-        z-index: 99; 
-        height: 3.375rem;
-        min-width: 3.375rem;
-        width: 3.375rem;
-        font-size: 1rem;      
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $green;
-            border: $green;
-            color: #FFFFFF !important;
-        }
-    }
-}
-
 .page-header .page-header-image {
     will-change: transform;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -487,6 +457,79 @@ h1.title::first-letter {
     .fa-compact-disc {
         color: #d84315;
     }
+    .fa-facebook-f {
+        color: #44609c;
+    }
+    .fa-twitter {
+        color: #1da1f2;
+    }
+    .fa-youtube {
+        color: #dd2c00;
+    }
+    .fa-gitlab {
+        color: #e24329;
+    }
+
+    .social-icons-top {
+
+        .fab {
+           margin-top: 19px;
+        }
+         
+        text-align: right;
+        margin-top: -94px;
+
+        .facebook {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #44609c;
+            }
+        }
+        .twitter {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #1da1f2;
+            }
+        }
+        .youtube {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #dd2c00;
+            }
+        }
+        .gitlab {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #e24329;
+            }
+        }
+    
+        .btn {
+            background-color: #f0f0f0;
+            color: $green;
+            margin-left: 5px;
+            position: relative;
+            z-index: 99; 
+            height: 3.375rem;
+            min-width: 3.375rem;
+            width: 3.375rem;
+            font-size: 1.1rem;      
+    
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: none;
+                i {
+                    color: #ffff;
+                    }
+            }
+        }
+    }
+    
 
     .page-header {
         max-height: 100% !important;
