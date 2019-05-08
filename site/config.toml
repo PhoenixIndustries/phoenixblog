@@ -251,7 +251,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Under your control"
     url = "/features/under-your-control/"
-    pre = "<i class='now-ui-icons objects_spaceship'></i>"
+    pre = "<i class='fas fa-thumbs-up'></i></i>"
     weight = 2
     parent = "features"
 
@@ -259,7 +259,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Configured with one click"
     url = "/features/configured-with-one-click/"
-    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    pre = "<i class='fas fa-cog'></i></i>"
     weight = 3
     parent = "features"
 
@@ -267,7 +267,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Useful for everyone"
     url = "/features/useful-for-everyone/"
-    pre = "<i class='now-ui-icons ui-2_like'></i>"
+    pre = "<i class='fas fa-users'></i>"
     weight = 4
     parent = "features"
 
@@ -275,7 +275,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Fresh & Stable"
     url = "/features/fresh-and-stable/"
-    pre = "<i class='now-ui-icons ui-1_send'></i>"
+    pre = "<i class='fas fa-paper-plane'></i>"
     weight = 5
     parent = "features"
 
