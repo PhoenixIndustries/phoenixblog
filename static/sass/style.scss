@@ -1170,19 +1170,38 @@ h1.title::first-letter {
     }
 
     .jumbo-submenu {
-        width: 508px;
+        width: 524px;
         .menu-block {
             float: left;
             margin: 10px;
             margin-top: 2px;
         }
+        
+        .menu-block:first-child {
+            i {
+                color: #1976d2;
+            }
+        }
+
+        .menu-block:last-child {
+            i {
+                color: #d81b60;
+            }
+        }
+
+        .menu-block:nth-child(2) {
+            i {
+                color: #ffb300;
+            }
+        }
+
         h6 {
             color: $green !important; 
             border-bottom-color: $green !important; 
             border-bottom: 1px solid;
             padding-bottom: .8rem;
             margin-bottom: .6rem;
-            font-size: .8em !important;
+            font-size: .9em !important;
         }
     }
     .section-team {
@@ -1232,10 +1251,9 @@ h1.title::first-letter {
         display: flex;
     }
     .dropdown-menu .now-ui-icons, .dropdown-menu .fas, .dropdown-menu .fa {
-        color: $green !important;
+        color: $green;
         position: relative;
         margin-right: 5px;
-        font-size: 0.8571em;
         font-weight: bold;
     }
     .configured-with-one-click {
