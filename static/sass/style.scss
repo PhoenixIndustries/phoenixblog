@@ -239,7 +239,7 @@ h1.title::first-letter {
     }
     .landing-page {
         .section-story-overview {
-            margin-top: -100px !important;
+            margin-top: -124px !important;
         }
     }
     
@@ -392,6 +392,10 @@ h1.title::first-letter {
 
     .section:not(.section-team) .container {
         background: #FFFFFF;
+    }
+
+    .section .container > .row {
+        height: 0;
     }
 
     .section-story-overview {
@@ -849,6 +853,17 @@ h1.title::first-letter {
 }
 
 .news {
+
+
+    .stable .card-title {
+        border-bottom: 3px solid #00c853; 
+    }
+    .testing .card-title {
+        border-bottom: 3px solid #ffd600; 
+    }
+    .unstable .card-title {
+        border-bottom: 3px solid #d50000; 
+    }
 
     .view.overlay:before {
         content: "";
