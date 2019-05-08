@@ -35,7 +35,7 @@ We have a polite, friendly and cheerful [Forum](https://forum.manjaro.org/), eve
 
 Manjaro is Available for 64 Bit architecture, [Gnome](https://www.gnome.org/gnome-3/), and [XFCE](https://www.xfce.org/) [editions](/download/) are officially supported, other flavors are community maintained, so as 32 Bit and ARM architectures.
 
-ARM is available as per device basis, pre built images can be downloaded for the Raspberry Pi and Pinebook 64.
+ARM is available as per device basis, pre built images can be downloaded for the Raspberry Pi 3B, Odroid C2, Rock64 (rev2) and the Pinebook.
 
 ### <i class="fab fa-linux"></i>What is Linux
 
