@@ -6,15 +6,15 @@ type = "donate"
 button_donate_text = "Using Paypal"
 +++
 
-There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help out covering some unavoidable cost, giving developers time and freedom to improve Manjaro's features and to allow spreading word about Manjaro by attending conferences.
-
 ### Why does Manjaro ask for donations
 
-Manjaro is not backed by some large corporation and solely held up by the team, the community and some sponsors that are willing to dedicate their time and resources to develop and improve Manjaro.
+Manjaro is not backed by a corporation and is solely held up by the Core Team and community volunteers. Some sponsors are willing to dedicate their time and resources to develop and improve Manjaro.
+
+There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help covering some costs, giving developers time and freedom to improve Manjaro's features or spreading the word by attending conferences.
 
 ### For what will my donations used for
 
-Your donation will be mainly used for keeping all our severs and therefore our website, forums, mailing lists, bugtracker and more running. If some money is left - good servers are quite expensive - your donations will be used for attending conferences or giving a developer the resources to dedicate more time into developing a feature for Manjaro.
+Servers are expensive. Your donation will be used for keeping the website, forums, mailing lists, bugtracker and others running. If money is left donations will be used for attending conferences or giving developers the resources needed to dedicate time to Manjaro.
 
 ![Uses](/img/donation/uses.png#center)
 
@@ -24,7 +24,7 @@ Yes. We will keep everything you do anonymous. We won't share or publish any det
 
 ### What do I get if I donate
 
-You get the feeling that you helped us out and that everybody is thankful to you :)
+You get a big THANK YOU from the Core Team. Since contributions will keep the servers up and running and make sure you get updates and features within Manjaro.
 
 ### Why am I donating to a private person
 

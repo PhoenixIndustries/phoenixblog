@@ -1101,8 +1101,8 @@ h1.title::first-letter {
         max-width: 80% !important;
         top: 44% !important;
     }
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 150px;
+    .section-story-overview {
+        padding-bottom: 0px; 
     }
     .team-player .description {
         /* this needs to be ajusted if you add more content */
