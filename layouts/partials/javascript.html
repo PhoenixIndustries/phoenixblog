@@ -6,6 +6,8 @@
 <script src="{{ "js/now-ui-kit.js?v=1.1.0" | relURL }}" type="text/javascript"></script>
 <!-- BackToTop Script -->
 <script src="{{ "js/plugins/vanilla-back-to-top.min.js" | relURL }}" ></script>
+
+
 <!-- do not run on news page -->
 {{ if ne .Title "News"}} 
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
@@ -27,10 +29,12 @@
                 if ($(this).scrollTop()>50) {
                 $('.title-container').fadeOut();
                 $(".page-header-image").css("filter", "grayscale(0%)");
+                $("#contact").hide();
             }
                 else {
                 $('.title-container').fadeIn();
                 $(".page-header-image").css("filter", "grayscale(100%)");
+                $("#contact").show();
                 }
             });
             };
@@ -61,6 +65,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 {{ end }}
 
+
 <!-- LaTeX math rendering -->
 {{ if not .Params.nomath }}
 <script type="text/x-mathjax-config">
@@ -77,6 +82,8 @@ addBackToTop({
         textColor: '#fff'
     })
 </script>
+
+
 <!-- only run on news page -->
 {{ if eq .Title "News"}} 
 <script>$("a[href='/news/']").hide();</script>
@@ -85,6 +92,8 @@ addBackToTop({
 <script src="/js/feedreader.js" type="text/javascript"></script>
 
 {{ end }}
+
+
 {{ if .IsHome }}
 <script>
 function scrollToContent() {
@@ -104,40 +113,28 @@ $("#contact").on('click', function() {
     <div id="contact-form" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-            <form id="contact-form" method="post" action="http://localhost:1314/contact-form.php" role="form" >
-
-<div class="messages"></div>
-
-<div class="controls">
-
+            <form id="form" method="post" role="form" >
     <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="form_name">Firstname *</label>
-                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                <div class="help-block with-errors"></div>
-            </div>
+            <div class="col-md-6">
+            <span class="text-muted">All fields are required.</span><br>
+            
+   <span> <input type="checkbox" class="form-check-input" id="humancheck">
+    <label class="form-check-label" for="humancheck">Anti Spam: Check if you are human.</label></span>
+  
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="form_lastname">Lastname *</label>
-                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                <div class="help-block with-errors"></div>
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required">
             </div>
         </div>
     </div>
     <div class="row">
+        
         <div class="col-md-6">
             <div class="form-group">
-                <label for="form_email">Email *</label>
-                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="form_need">Please specify your need *</label>
-                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" class="form-control" required="required">
                     <option value=""></option>
                     <option value="Request support">Request support</option>
                     <option value="Report hardware issue">Report hardware issue</option>
@@ -146,29 +143,29 @@ $("#contact").on('click', function() {
                     <option value="Question about the Spitfire">Question about the Spitfire</option>
                     <option value="Other">Other</option>
                 </select>
-                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
-                <label for="form_message">Message *</label>
-                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                <div class="help-block with-errors"></div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Leave a message" rows="4" required="required"></textarea>
             </div>
         </div>
         <div class="col-md-12">
-            <input type="submit" class="btn btn-success btn-send" value="Send message">
+            <input type="submit" class="btn btn-success btn-send" value="Send">
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <p class="text-muted">
-                <strong>*</strong> These fields are required.</p>
-        </div>
+       
     </div>
-</div>
 </form>
 
 
@@ -177,9 +174,31 @@ $("#contact").on('click', function() {
     
     `
 $( "body" ).append( template );
+$('#form').submit(function(event) {
+    event.preventDefault();
+    if ($("#humancheck").prop('checked')) {
+        var formData = $('#form').serialize();
+        $.ajax({
+            type        : 'POST', 
+            url         : 'http://localhost:1314/contact-form.php', 
+            data        : formData, 
+            dataType    : 'json',
+            encode      : true
+        }).done(function(data) {
+
+               alert(data['message']);
+
+                // todo handle errors and validation messages
+            });
+        }else {
+            alert("Check the box")
+        }
+    });
 });
 </script>
 {{ end }}
+
+
 {{ if eq .Title "Downloads"}} 
 <script>
 $("a[href='/download/']").hide();
@@ -232,6 +251,8 @@ function update_editions_tags(id) {
 update_editions_tags("official");
 </script>
 {{ end }}
+
+
 {{ if eq .Title "Donate"}} 
 <script>$("a[href='/donate/']").hide();</script>
 {{ end }}
