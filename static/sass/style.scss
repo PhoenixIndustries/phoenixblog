@@ -545,11 +545,10 @@ h1.title::first-letter {
     }
 
     h1 {
-        margin-bottom: 26px;
-        margin-top: 26px;
+        margin-bottom: 30px;
+        margin-top: 30px;
         &:first-letter {
-            color: rgb(13,95,79);
-            color: rgba(13,95,79,.9);
+            color: #e91e63;
         }
     }
 
@@ -588,7 +587,7 @@ h1.title::first-letter {
         
     
         p {
-        color: #ffffff;
+        color: white;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
@@ -615,6 +614,7 @@ h1.title::first-letter {
                 &:hover, &:active {
                     background: rgb(191, 54, 12);
                     background-color: rgba(191, 54, 12, 0.80);
+                    border: 1px solid rgb(191, 54, 12);
                     border: 1px solid rgba(191, 54, 12, 0.80);
                 } 
                 &:active:focus {
