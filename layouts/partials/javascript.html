@@ -104,7 +104,6 @@ $(window).one("scroll", function(){
 {{ if eq .Title "Downloads"}} 
 <script>
 $("a[href='/download/']").hide();
-$(".editions-box-hideable-official").css("display", "inline-block");
 $("#show-editions-official").addClass('btn-success');
 // hide preview button if previws are not available
 if (!$("div").hasClass("editions-box-hideable-dev")) { $("#show-editions-dev").remove(); }
@@ -113,6 +112,45 @@ $('button').on('click', function () {
     $(".btn-group button").removeClass('btn-success');
     $(this).addClass('btn-success');
 });
+
+function element_is_in_tags(el, tags) {
+
+    for (var id in tags) {
+
+        if(!el.classList.contains("editions-box-hideable-" + tags[id])){
+            return false;
+        }
+
+    }
+    return true;
+}
+
+function show_only_editions_with_tags(tags) {
+
+    var els = document.getElementsByClassName('editions-box-hideable');
+
+    [].forEach.call(els, function (el)
+    {
+        if (tags.length == 0) {
+            el.style.display = "none";
+        }
+        else {
+
+            if(element_is_in_tags(el, tags)) {
+                el.style.display = "inline-block";
+            }
+            else {
+                el.style.display = "none";
+            }
+        }
+    });
+}
+function update_editions_tags(id) {
+    var tag_filter = [];
+    tag_filter.push( id );
+    show_only_editions_with_tags(tag_filter)
+}
+update_editions_tags("official");
 </script>
 {{ end }}
 {{ if eq .Title "Donate"}} 

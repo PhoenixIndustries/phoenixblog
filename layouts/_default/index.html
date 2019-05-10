@@ -1,12 +1,12 @@
 {{ define "title" }}
 <div class="container">
   <div class="content-center title-container">
+    <img class="logo" src="/img/logo.svg">
     <h1 class="title">{{ .Title }}</h1>
     {{ if eq .Params.class "landing-page" }}
-    <div><img class="logo" src="/img/logo.svg"></div>
     <p class="col-md-12">{{ .Params.whatIsManjaro }}</p>
-    <a class="btn btn-primary" href="/download/">{{ i18n "choose_edition_and_download" }}</a>
-    <a id="scrolltocontent" class="btn btn-primary">{{ i18n "learn_more" }}<i class="fa fa-arrow-down"></i></a>
+    <a class="btn btn-primary" href="/download/">{{ i18n "download_link" }}<i class="fas fa-angle-double-down"></i></a>
+    <button id="scrolltocontent" class="btn btn-primary">{{ i18n "learn_more" }}<i class="fa fa-arrow-down"></i></button>
 {{ end }}
   </div>
 </div>
@@ -15,17 +15,18 @@
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto">
       <div id="content" class="social-icons-top">
-        <a href="{{.Params.facebook}}"  target="_blank" class="btn btn-icon btn-round">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="{{.Params.twitter}}"  target="_blank" class="btn btn-icon btn-round"> 
+
+        <a href="{{.Params.gitlab}}"  target="_blank" class="btn btn-icon btn-round gitlab"> 
+            <i class="fab fa-gitlab"></i>
+        </a>        
+        <a href="{{.Params.twitter}}"  target="_blank" class="btn btn-icon btn-round twitter"> 
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="{{.Params.youtube}}"  target="_blank" class="btn btn-icon btn-round"> 
+        <a href="{{.Params.youtube}}"  target="_blank" class="btn btn-icon btn-round youtube"> 
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="{{.Params.gitlab}}"  target="_blank" class="btn btn-icon btn-round"> 
-            <i class="fab fa-gitlab"></i>
+        <a href="{{.Params.facebook}}"  target="_blank" class="btn btn-icon btn-round facebook">
+          <i class="fab fa-facebook-f"></i>
         </a>
     </div>
   {{ .Content }}

@@ -94,7 +94,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "First Steps"
     url = "/support/firststeps/"
-    pre = "<i class='now-ui-icons sport_user-run'></i>"
+    pre = "<i class='fas fa-shoe-prints'></i></i>"
     weight = 1
     parent = "support"
 
@@ -102,7 +102,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Common Problems"
     url = "/support/commonproblems/"
-    pre = "<i class='now-ui-icons health_ambulance'></i>"
+    pre = "<i class='fas fa-ambulance'></i></i>"
     weight = 2
     parent = "support"
 
@@ -110,7 +110,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "User Guide"
     url = "/support/userguide/"
-    pre = "<i class='now-ui-icons education_agenda-bookmark'></i>"
+    pre = "<i class='fas fa-book-open'></i></i>"
     weight = 2
     parent = "support"
 
@@ -118,7 +118,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Forum"
     url = "https://forum.manjaro.org/"
-    pre = "<i class='now-ui-icons business_bank'></i>"
+    pre = "<i class='fas fa-hands-helping'></i></i>"
     weight = 3
     parent = "support"
 
@@ -126,7 +126,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Wiki"
     url = "https://wiki.manjaro.org"
-    pre = "<i class='now-ui-icons location_map-big'></i>"
+    pre = "<i class='fas fa-user-graduate'></i>"
     weight = 5
     parent = "support"
 
@@ -139,7 +139,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Merch & Accessories"
     url = "https://shop.spreadshirt.de/manjaro/"
-    pre = ""
+    pre = "<i class='fas fa-tshirt'></i>"
     weight = 1
     parent = "shop"
 
@@ -147,7 +147,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Manjaro Stickers"
     url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
-    pre = ""
+    pre = "<i class='fas fa-ticket-alt'></i>"
     weight = 2
     parent = "shop"
 
@@ -155,7 +155,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Hardware - Notebooks & PCs"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
-    pre = ""
+    pre = "<i class='fas fa-desktop'></i>"
     weight = 5
     parent = "shop"
 
@@ -163,7 +163,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Hardware - Spitfire"
     url = "/hardware-spitfire"
-    pre = ""
+    pre = "<i class='fas fa-laptop'></i>"
     weight = 4
     parent = "shop"
 
@@ -186,49 +186,10 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Mirrors"
     url = "https://repo.manjaro.org/"
-    pre = "<i class='now-ui-icons business_globe'></i>"
+    pre = "<i class='fas fa-globe'></i></i>"
     weight = 1
     parent = "packages"
     identifier = "mirrors"
-
-
-#[[menu.main]]
-#    name = "Mirrors Check"
-#    url = "https://repo.manjaro.org/"
-#    pre = "<i class='now-ui-icons objects_globe'></i>"
-#    weight = 1
-#    parent = "packages"
-
-
-#[[menu.main]]
-#    name = "Search Stable Branch"
-#    url = "https://repology.org/metapackages/?inrepo=manjaro_stable"
-#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-#    weight = 2
-#    parent = "packages"
-
-
-#[[menu.main]]
-#    name = "Search Testing Branch"
-#    url = "https://repology.org/metapackages/?inrepo=manjaro_testing"
-#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-#    weight = 3
-#    parent = "packages"
-
-
-#[[menu.main]]
-#    name = "Search Unstable Branch"
-#    url = "https://repology.org/metapackages/?inrepo=manjaro_unstable"
-#    pre = "<i class='now-ui-icons ui-1_zoom-bold'></i>"
-#    weight = 4
-#    parent = "packages"
-
-
-#[[menu.main]]
-#    name = "Team"
-#    url = "/profile/"
-#    pre = "<i class='now-ui-icons users_single-02'></i>"
-#    weight = 2
 
 #
 # --- end submenu ---
@@ -239,14 +200,14 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Security"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 1
     parent = "mailinglists"
 
 [[menu.main]]
     name = "General"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 2
     parent = "mailinglists"
 
@@ -254,7 +215,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Packages"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 3
     parent = "mailinglists"
 
@@ -262,7 +223,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Testing"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 4
     parent = "mailinglists"
 
@@ -270,14 +231,14 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Development"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 5
     parent = "mailinglists"
 
 [[menu.main]]
     name = "Mirrors"
     url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
-    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    pre = "<i class='fas fa-envelope'></i>"
     weight = 6
     parent = "mailinglists"
 
@@ -290,7 +251,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Under your control"
     url = "/features/under-your-control/"
-    pre = "<i class='now-ui-icons objects_spaceship'></i>"
+    pre = "<i class='fas fa-thumbs-up'></i></i>"
     weight = 2
     parent = "features"
 
@@ -298,7 +259,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Configured with one click"
     url = "/features/configured-with-one-click/"
-    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    pre = "<i class='fas fa-cog'></i></i>"
     weight = 3
     parent = "features"
 
@@ -306,7 +267,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Useful for everyone"
     url = "/features/useful-for-everyone/"
-    pre = "<i class='now-ui-icons ui-2_like'></i>"
+    pre = "<i class='fas fa-users'></i>"
     weight = 4
     parent = "features"
 
@@ -314,7 +275,7 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Fresh & Stable"
     url = "/features/fresh-and-stable/"
-    pre = "<i class='now-ui-icons ui-1_send'></i>"
+    pre = "<i class='fas fa-paper-plane'></i>"
     weight = 5
     parent = "features"
 

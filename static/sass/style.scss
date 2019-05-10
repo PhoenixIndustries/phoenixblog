@@ -285,7 +285,7 @@ p, .call-to-action {
 
 ::selection {
     background: $green;
-    color: #ffff;
+    color: white;
 }
 
 @media screen and (max-width: 575px) {
@@ -298,7 +298,7 @@ p, .call-to-action {
 
     .landing-page {
         .social-icons-top .btn {
-            background-color: #ffff;
+            background-color: white;
         }
     }
 
@@ -319,7 +319,7 @@ p, .call-to-action {
     }
     .landing-page {
         .section-story-overview {
-            margin-top: -100px !important;
+            margin-top: -50px !important;
         }
     }
     
@@ -338,6 +338,11 @@ p, .call-to-action {
 }
 
 @media screen and (max-width: 991px) {
+
+    #contact {
+        margin-top: 40px;
+    }
+
     .sidebar-collapse .navbar-collapse:before {
         background: $green;
         opacity: 100;
@@ -444,36 +449,6 @@ p, .call-to-action {
     font-weight: 700;
   }
 
-.social-icons-top {
-
-    .fab {
-       margin-top: 19px;
-    }
-     
-    text-align: right;
-    margin-top: -94px;
-
-    .btn {
-        background-color: #f0f0f0;
-        color: $green;
-        margin-left: 5px;
-        position: relative;
-        z-index: 99; 
-        height: 3.375rem;
-        min-width: 3.375rem;
-        width: 3.375rem;
-        font-size: 1rem;      
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $green;
-            border: $green;
-            color: #FFFFFF !important;
-        }
-    }
-}
-
 .page-header .page-header-image {
     will-change: transform;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -484,8 +459,26 @@ p, .call-to-action {
 
 .landing-page {
 
+    .tooltip.bottom { 
+        margin-top: 10px;
+    }
+
+    .navbar-transparent .nav-item.active .nav-link:not(.btn),
+    .navbar-transparent .nav-item .nav-link:not(.btn):focus,
+    .navbar-transparent .nav-item .nav-link:not(.btn):hover {
+        background-color: rgba(13,95,79,.8);
+    }
+
+    .navbar-transparent .nav-item .nav-link:not(.btn):active {
+        background-color: transparent !important;
+    }
+
     .section:not(.section-team) .container {
         background: #FFFFFF;
+    }
+
+    .section .container > .row {
+        height: 0;
     }
 
     .section-story-overview {
@@ -526,16 +519,9 @@ p, .call-to-action {
     }
 
     .logo {
-        position: absolute;
+        position: relative;
         width: 96px;
         height: 96px;
-        margin-top: -180px;
-        margin-left: -48px;
-    }
-
-    .fa-arrow-down {
-        font-size: 1.3em;
-        margin-left: 5px;
     }
 
     .fa-heart {
@@ -556,13 +542,121 @@ p, .call-to-action {
     .fa-compact-disc {
         color: #d84315;
     }
+    .fa-facebook-f {
+        color: #44609c;
+    }
+    .fa-twitter {
+        color: #1da1f2;
+    }
+    .fa-youtube {
+        color: #dd2c00;
+    }
+    .fa-gitlab {
+        color: #e24329;
+    }
+
+    .social-icons-top {
+
+        .fab {
+           margin-top: 19px;
+        }
+         
+        text-align: right;
+        margin-top: -94px;
+
+        .facebook {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #44609c;
+            }
+        }
+        .twitter {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #1da1f2;
+            }
+        }
+        .youtube {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #dd2c00;
+            }
+        }
+        .gitlab {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #e24329;
+            }
+        }
+    
+        .btn {
+            color: $green;
+            margin-left: 5px;
+            position: relative;
+            z-index: 99; 
+            height: 3.375rem;
+            min-width: 3.375rem;
+            width: 3.375rem;
+            font-size: 1.1rem;      
+    
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: none;
+                i {
+                    color: white;
+                    }
+            }
+        }
+    }
+    
 
     .page-header {
         max-height: 100% !important;
+        & .container > .content-center {
+            -ms-transform: translate(-50%, -70%);
+            -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+        }
     }
 
     h1 {
-        margin-bottom: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        &:first-letter {
+            color: #e91e63;
+        }
+    }
+
+    #contact {
+
+        position: absolute;
+        background-color: rgb(191, 54, 12);
+        border: 1px solid rgb(191, 54, 12);
+        font-weight: bolder;
+        font-size: 10px;
+        display: none;
+
+        .fas {
+            font-size: 1.3em;
+            margin-left: 12px;
+        }
+
+        &:visited, &:hover, &:active {
+            border: 1px solid rgb(191, 54, 12) !important;
+            border: 1px solid rgba(191, 54, 12, 0.80) !important;
+            background: rgb(191, 54, 12) !important;
+            background-color: rgba(191, 54, 12, 0.80) !important;
+        }
+
+        &:active:focus {
+            box-shadow: 0 0 0 0.2rem rgb(191, 54, 12) !important;
+            box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
+        }
     }
 
     .title-container {
@@ -573,34 +667,55 @@ p, .call-to-action {
         
     
         p {
-        color: #ffff;
+        color: white;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
-        background-color: rgba(13, 95, 79, 0.90);
-        padding: 10px;
+        background: rgb(13,95,79);
+        background-color: rgba(13, 95, 79, 0.80);
+        padding: 14px;
         } 
 
-        a {
-            background-color: rgba(0, 0, 0, 0.48);
-            font-weight: 600;
+        a, button {
+            .fa, .fas {
+                font-size: 1.3em;
+                margin-left: 12px;
+            }
+            &, &:visited { 
+                background: transparent;
+                background-color: rgba(0, 0, 0, 0.48);
+                font-weight: 600;
+            }
+        }
 
+        a {
             &[href='/download/'] {
-                border: 1px solid #b71c1c; 
-                &:hover {
-                    background-color: #b71c1c;
+                border: 1px solid rgb(191, 54, 12); 
+                &:hover, &:active {
+                    background: rgb(191, 54, 12);
+                    background-color: rgba(191, 54, 12, 0.80);
+                    border: 1px solid rgb(191, 54, 12);
+                    border: 1px solid rgba(191, 54, 12, 0.80);
                 } 
+                &:active:focus {
+                    box-shadow: 0 0 0 0.2rem rgb(191, 54, 12);
+                    box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5);
+                }
             }
+        }
         
-            &:last-child {
-                border: 1px solid #1976d2;
-                &:hover {
-                    background-color: #1976d2;
-                } 
-            }
+        button {
+            border: 1px solid rgb(13,95,79) !important;
             &:hover, &:active {
-                border-color: transparent; 
-            }
+                background: rgb(13,95,79);
+                background-color: rgba(13,95,79, 0.80) !important;
+                border: 1px solid rgb(13,95,79) !important;
+                border: 1px solid rgba(13,95,79, 0.80) !important;
+            } 
+            &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgb(13,95,79) !important;
+                box-shadow: 0 0 0 0.2rem rgba(13,95,79,.5) !important;
+            } 
         }
     }
 
@@ -744,7 +859,7 @@ p, .call-to-action {
             border-bottom: 1px solid $green;
             }
             li:last-child {
-                border-bottom: 1px solid #ffff;
+                border-bottom: 1px solid white;
                 }
         }
         h2 {
@@ -835,6 +950,17 @@ p, .call-to-action {
 
 .news {
 
+
+    .stable .card-title {
+        border-bottom: 3px solid #00c853; 
+    }
+    .testing .card-title {
+        border-bottom: 3px solid #ffd600; 
+    }
+    .unstable .card-title {
+        border-bottom: 3px solid #d50000; 
+    }
+
     .view.overlay:before {
         content: "";
         width: 0;
@@ -919,7 +1045,7 @@ p, .call-to-action {
             top: 17px;
             right: 0px;
             background-color: transparent;
-            color: #ffff;
+            color: white;
             font-size: 12px;
             font-weight: bold;
             transform: rotate(100dg);
@@ -1051,7 +1177,7 @@ p, .call-to-action {
         }
     }
     img {
-        border: 2px solid #ffff;
+        border: 2px solid white;
     }
     .features-post, img {
         margin-bottom: 100px !important;
@@ -1069,8 +1195,8 @@ p, .call-to-action {
         max-width: 80% !important;
         top: 44% !important;
     }
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 150px;
+    .section-story-overview {
+        padding-bottom: 0px; 
     }
     .team-player .description {
         /* this needs to be ajusted if you add more content */
@@ -1129,20 +1255,47 @@ p, .call-to-action {
 
 @media screen and (min-width: 992px) {
 
+    .social-icons-top .btn {
+        background-color: #f0f0f0;
+    }
+
+    #contact {
+        margin-top: 10px;
+    }
+
     .jumbo-submenu {
-        width: 508px;
+        width: 526px;
         .menu-block {
             float: left;
             margin: 10px;
             margin-top: 2px;
         }
+        
+        .menu-block:first-child {
+            i {
+                color: #1976d2;
+            }
+        }
+
+        .menu-block:last-child {
+            i {
+                color: #d81b60;
+            }
+        }
+
+        .menu-block:nth-child(2) {
+            i {
+                color: #ffb300;
+            }
+        }
+
         h6 {
             color: $green !important; 
             border-bottom-color: $green !important; 
             border-bottom: 1px solid;
             padding-bottom: .8rem;
             margin-bottom: .6rem;
-            font-size: .8em !important;
+            font-size: .9em !important;
         }
     }
     .section-team {
@@ -1191,11 +1344,10 @@ p, .call-to-action {
     .donate-page .flex-grid {
         display: flex;
     }
-    .dropdown-menu .now-ui-icons {
-        color: $green !important;
+    .dropdown-menu .now-ui-icons, .dropdown-menu .fas, .dropdown-menu .fa {
+        color: $green;
         position: relative;
         margin-right: 5px;
-        font-size: 0.8571em;
         font-weight: bold;
     }
     .configured-with-one-click {

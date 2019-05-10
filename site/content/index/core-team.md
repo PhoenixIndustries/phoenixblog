@@ -8,7 +8,7 @@ images = ["philip", "bernhard", "stefano"]
 
 Lead Developer
 
-[Philip](https://forum.manjaro.org/u/philm/summary) started the project together with Roland and Guillaume back in 2011. In mid 2013, Manjaro was in the beta stage. Now he is working with the community to make one of the best Linux distributions.
+He started the project together with Roland and Guillaume back in 2011. In mid 2013 Manjaro was still in beta stage! Now he is working with the community to build an amazing Linux distribution.
 
 ésplit
 
@@ -16,7 +16,7 @@ Lead Developer
 
 Community Manager
 
-[Bernhard](https://forum.manjaro.org/u/oberon/summary) having an eye on the community, maintains most of the Community Editions of Manjaro. Connect with him in our forums to be part of it.
+Having an eye on the community, he maintains most of the Community Editions. Connect with him in our forums to be part of it.
 
 ésplit
 
@@ -24,4 +24,4 @@ Community Manager
 
 Developer
 
-[Stefano](https://forum.manjaro.org/u/Ste74/summary) likes themes and supports the development of Manjaro in multiple ways. Gnome is his day-to-day desktop environment. Talk to him about Gnome, Budgie and all GTK related!
+Supporting the Development in multiple ways. Gnome is his daily desktop environment. Talk to him about Gnome, Budgie and GTK Themes.

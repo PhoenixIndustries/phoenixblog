@@ -72,9 +72,13 @@ function feedreader(feed) {
                 return title.toLowerCase().includes(string)
             }
         
-        if (titleHasString("update")) {
-            return "updates"
-            } else if (titleHasString("release") || 
+            if (titleHasString("unstable update")) {
+                return "unstable updates"
+                } else if (titleHasString("testing update")) {
+                    return "testing updates"
+                    } else if (titleHasString("stable update")) {
+                        return "stable updates"
+                        }else if (titleHasString("release") || 
                     titleHasString("iso") ||
                     titleHasString("download")) {
                 return "release"
@@ -163,4 +167,7 @@ function feedreader(feed) {
 });};
 feedreader(feeds[0]);
 feedreader(feeds[1]);
-$("#news-grid").isotope("reloadItems").isotope("layout");
+setTimeout(function(){ 
+$("#news-grid").isotope("reloadItems").isotope("layout");}, 1300);
+            
+        
