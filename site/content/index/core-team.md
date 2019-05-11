@@ -16,7 +16,7 @@ He started the project together with Roland and Guillaume back in 2011. In mid 2
 
 Developer
 
-coordinating the variety of Manjaro's Community Editions with focus on the Cinnamon, Deepin and i3 editions. Involved in the development of TUI installer manjaro-architect and the manjaro development tools, maintenance of the realtime kernels and desktop optimization for specific hardware projects.
+Coordinating the variety of Manjaro's Community Editions with focus on the Cinnamon, Deepin and i3 editions. Involved in the development of TUI installer manjaro-architect and the manjaro development tools, maintenance of the realtime kernels and desktop optimization for specific hardware projects.
 
 ésplit
 
