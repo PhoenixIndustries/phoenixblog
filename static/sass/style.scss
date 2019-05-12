@@ -379,6 +379,30 @@ h1.title::first-letter {
 
 .landing-page {
 
+    
+    #buorg  {
+        border: 0px solid white !important;
+        
+        .buorg-pad {
+            background: #f44336;
+            border-color: #f44336;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        P {
+            color: white !important;
+            font-size: 1rem; 
+        }
+        .manjaro {
+            color: #212020 !important;
+        }
+        a {
+            border: 1px solid white !important;
+            background: transparent;
+        }
+    }
+
     .tooltip.bottom { 
         margin-top: 10px;
     }
