@@ -46,9 +46,19 @@
     <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" />
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="preload" as="style"/>
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="stylesheet" />
-    {{ $styles := resources.Get "/sass/style.scss" | toCSS "/css/style.css"| minify}}
-    <link href="{{ $styles.Permalink }}?v=1.0.14" rel="preload" as="style"/>
-    <link href="{{ $styles.Permalink }}?v=1.0.14" rel="stylesheet" />
+    
+    {{ $inServerMode := .Site.IsServer }}
+    {{ $sass         := resources.Get "/sass/style.scss" }}
+    {{ $cssTarget    := "/css/style.css" }}
+    {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+    {{ if $inServerMode }}
+    {{ $css := $sass | toCSS $cssOpts | fingerprint}}
+    <link rel="stylesheet" href="{{ $css.Permalink | absURL }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+    {{ else }}
+    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS }}
+    <link href="{{ $css.Permalink }}?v=1.0.14" rel="preload" as="style"/>
+    <link href="{{ $css.Permalink }}?v=1.0.14" rel="stylesheet" media="screen"/>
+    {{ end }}
 
     <!--  Essential META Tags -->
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
