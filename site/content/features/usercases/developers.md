@@ -34,12 +34,12 @@
   ]
 }
 
-Manjaro comes in many different edition, all with an unique workflow and user experience from a traditional desktop environments to window managers that are optimized for maximum performance and work efficience.
+Manjaro comes in many different editions, all with a unique workflow and user experience from a traditional desktop environment to window managers that are optimized for maximum performance and work efficiency.
 
-The system is set up easily, while giving developers all the freedom and space to tinker when wanted. All tools to compile and develop software are pre installed. The integrated package manager allows easy installation of IDE like [Qt Creator](https://www.qt.io/ide/), [KDevelop](https://www.kdevelop.org/) or [Netbeans](https://netbeans.org/) and libraries like [libnoise](http://libnoise.sourceforge.net/), [boost](http://www.boost.org/) or [matplotlib](http://matplotlib.org/).
+The system is set up easily, while giving developers all the freedom and space to tinker when wanted. All tools to compile and develop software are pre installed. The integrated package manager allows easy installation of IDEs like [Qt Creator](https://www.qt.io/ide/), [KDevelop](https://www.kdevelop.org/) or [Netbeans](https://netbeans.org/) and libraries like [libnoise](http://libnoise.sourceforge.net/), [boost](http://www.boost.org/) or [matplotlib](http://matplotlib.org/).
 
-Dependencies are automatically resolved and installing a library automatically install all needed headers to directly use it. Each edition comes preinstalled with powerful editors like [Kate](https://kate-editor.org/) or [Gedit](https://wiki.gnome.org/Apps/Gedit), while more editors like [Emacs](https://www.gnu.org/software/emacs/), [Geany](https://www.geany.org/) or [Bluefish](http://bluefish.openoffice.nl/) are installed with one command or a few clicks.
+Dependencies are automatically resolved and installing a library automatically installs all needed headers to directly use it. Each edition comes preinstalled with powerful editors like [Kate](https://kate-editor.org/) or [Gedit](https://wiki.gnome.org/Apps/Gedit), while others like [Emacs](https://www.gnu.org/software/emacs/), [Geany](https://www.geany.org/) or [Bluefish](http://bluefish.openoffice.nl/) can be installed with one command or a few clicks.
 
-Additional to the repositories, Manjaro supports the Arch User Repository (AUR) that includes cutting edge software and libraries, as well as proprietary applications like [Unity Editor](https://unity3d.com/unity/editor) or [yEd](https://www.yworks.com/products/yed).
+Additionaly to the repositories, Manjaro supports the Arch User Repository (AUR) that includes cutting edge software and libraries, as well as proprietary applications like [Unity Editor](https://unity3d.com/unity/editor) or [yEd](https://www.yworks.com/products/yed).
 
 Manjaro is a rolling release distribution, which means software is updated as soon as possible. This prevents lack of needed dependencies and old or buggy tool versions.

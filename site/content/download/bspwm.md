@@ -20,5 +20,7 @@ type="download-edition"
 weight = "5"
 +++
 
+Bspwm is a slim and snappy tiling window manager with the focus on resource efficiency.
+
 If you are looking for older images check the [Bspwm](https://osdn.net/projects/manjaro-community/storage/z_release_archive/bspwm) archive.
 

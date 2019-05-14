@@ -33,6 +33,7 @@ Manjaro comes preinstalled with [GIMP](http://www.gimp.org/), a very powerful im
 
 For simple or advanced video-editing, [Kdenlive](https://kdenlive.org/) and [OpenShot](http://www.openshot.org/) will do almost anything you need. There are also professional video-editing tools like [Lightworks](https://www.lwks.com/).
 
-3D-Modelling can be done using [Blender](https://www.blender.org/). Codecs for video and audio come pre-installed or are automatically fetched. Most of this software is freely available and can be easily and securely installed using Manjaro integrated package manager.
+3D-Modelling can be done using [Blender](https://www.blender.org/). Codecs for video and audio come pre-installed or are automatically fetched. Most of this software is freely available and can be easily and securely installed using Manjaro's integrated package manager.
 
 Manjaro repositories also contain software useful for musicians such as the easy-to-use recording and editing software [Audacity](http://www.audacityteam.org/). For more professional users [Ardour](http://ardour.org/) brings all the needed features. Sequencing, mixing and synthesizing can be done using [LMMS](https://lmms.io/). Manjaro maintains [realtime](https://forum.manjaro.org/t/a-realtime-kernel-for-manjaro/4066) versions of the Linux kernel that are designed for low latency and optimized for audio-engineering.
+With [Musescore](https://musescore.com/) you have a professional tool for creating, playing and printing scores.

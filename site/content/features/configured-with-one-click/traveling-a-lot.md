@@ -2,4 +2,4 @@
 title = "Traveling a lot?"
 image = "manjaro_timeanddate"
 +++ 
-If you need to change the timezone, because you are on holiday or you need to travel for your business, we provide you a handy tool to quickly switch the time settings to have more time to get things done or enjoy the free time.
+If you need to change your system's timezone because you are on holiday or a business trip, we provide a handy tool. So you have more time to get things done or simply enjoy life.

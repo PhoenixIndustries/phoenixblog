@@ -25,7 +25,7 @@ Manjaro is a user-friendly and open-source Linux distribution. It provides all t
 ## How much does it cost?
 ---
 
-Manjaro is completely free and always will be. It was created, so we can have a nice Linux based operating system that is easy to use and stable. As with most Linux distributions, **you the user**, is the main focus, we do not take control away from you. Manjaro considers privacy very important, we do not sell your data.
+Manjaro is completely free and always will be. It was created, so we can have a nice Linux based operating system that is easy to use and stable. As with most Linux distributions, **you the user** are the main focus, we do not take control away from you. Manjaro considers privacy very important, we do not sell your data.
 
 ---
 

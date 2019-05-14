@@ -9,4 +9,4 @@ subcontent = ["choose-install-finished","manjaro-speaks-your-language","new-grap
 weight = 1
 +++
 
-Manjaro comes with it's own tools that help you configuring your computer the way you want - without searching for scattered settings across the whole system and looking things up on the internet. Just open the system control panel, open the tool and select what you want.
+Manjaro comes with its own tools that help you configuring your computer the way you want - without searching for scattered settings across the whole system and looking things up on the internet. Just open the system control panel, open the tool and select what you want.

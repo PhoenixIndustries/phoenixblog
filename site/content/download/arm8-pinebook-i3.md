@@ -21,3 +21,4 @@ type="download-edition"
 weight = "1"
 +++
 
+I3 is an extremely lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage.
