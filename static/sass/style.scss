@@ -907,6 +907,14 @@ h1.title::first-letter {
 
 .news {
 
+    #updatesModal {
+        .modal-header {
+            padding-top: 14px;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+    }
 
     .stable .card-title {
         border-bottom: 3px solid #00c853; 
