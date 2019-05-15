@@ -20,7 +20,7 @@ Manjaro can represent a perfect middle-ground for experienced Linux users, those
 
 ### <i class="fa fa-dollar-sign"></i> Free is better
 
-Manjaro will always be completely free. We create it, so we can have a Linux based operating system that is easy to use and stable, you the user, are the main focus, we do not take control away from you and consider privacy very important, we do not keep, sell or pass your data to 3rd parties.
+Manjaro will always be completely free. We create it, so we can have a Linux based operating system that is easy to use and stable, you the user, are the main focus, we do not take control away from you and respect your privacy.
 
 ### <i class="fa fa-download"></i> Install Anything
 
