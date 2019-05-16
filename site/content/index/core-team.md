@@ -24,4 +24,4 @@ Coordinating Community Editions with a focus on Cinnamon, Deepin and i3. He work
 
 Developer
 
-Supporting the Development in multiple ways. Gnome is his daily desktop environment. Talk to him about Gnome, Budgie and GTK Themes.
+ Maintainer of Gnome edition and involved in packaging. Stefano is also involved in the manjaro dev tools and developed some themes and features for Gnome edition. When finding time he also  take a look at Budgie and Mate editions.
