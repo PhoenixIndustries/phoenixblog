@@ -19,8 +19,8 @@ git
 
 * Install **hugo** on Manjaro with `pacman -S hugo`
 * clone this repository to your local pc with `git clone https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-homepage`
-* change in the new dir with `cd homepage`
-* do a test run with `hugo server --config config.toml,en-us.toml -D`
+* change in the new dir with `cd manjaro-homepage`
+* do a test run with `hugo server --config config.toml -D`
 * preview the homepage with any webbrowser from `http://localhost:1313/`
 
 ## Built With

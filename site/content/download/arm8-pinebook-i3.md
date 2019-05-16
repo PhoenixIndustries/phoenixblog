@@ -10,9 +10,8 @@ Download_x86_Torrent = ""
 Name = "Pinebook I3"
 Screenshot = "arm-i3-full.png"
 Youtube = ""
-ShortDescription = "This edition is supported by the Manjaro ARM team and comes with i3 WM/desktop"
 Tags = [ "arm" ]
-TargetGroup = "For people who want a reliable and fast desktop"
+shortDescription = "For people who want a reliable and fast desktop"
 Thumbnail = "arm-i3-full.png"
 Version = "19.03"
 date = "17.03.2019T12:31:00+01:00"
@@ -21,3 +20,6 @@ type="download-edition"
 weight = "1"
 +++
 
+This edition is supported by the Manjaro ARM team and comes with i3 WM/desktop.
+
+I3 is an extremely lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage.

@@ -5,16 +5,16 @@ title: "Privacy Policy"
 ---
 ## Who we are
 
-This Privacy Policy governs the manner in which **Manjaro** collects, uses, maintains and discloses information collected from users (each, a “User”) of the [website](https://manjaro.org) will not send us any information, and statistical information will be stored on the user’s website.
+This Privacy Policy governs the manner in which **Manjaro** collects, uses, maintains and discloses information collected from users (each, a “User”) of the [website](https://manjaro.org).
 
 ## What personal data we collect and why we collect it
 
 ### Personal identification information
-We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, place an order, fill out a form, respond to a survey, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, mailing address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.
+We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, place an order, fill out a form, respond to a survey, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, mailing address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personal identification information, except that it may prevent them from engaging in certain Site related activities.
 
 
 ### Non-personal identification information
-We may collect non-personal identification information about Users whenever they interact with our Site. The non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Sites, such as the operating system and the Internet service providers utilized and other similar information.
+We may collect non-personal identification information about Users whenever they interact with our Site. The non-personal identification information may include the browser name, the type of computer and technical information about Users' means of connection to our Sites, such as the operating system and the Internet service providers utilized and other similar information.
 
 ### Contact forms
 Using our contact forms will use our own hosted mail server located in Germany. Your data will be only processed internally and not shared with any 3rd-party group in that case.
@@ -46,9 +46,9 @@ If you upload images to the website, you should avoid uploading images with embe
 We offer to donate to our project via [PayPal](https://www.paypal.com). Provider of this service is PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg. When you chose to donate via PayPal, your entered payment data will be transferred to Paypal. Data transfer will be processed in compliance with the European General Data Protection Regulation. Data processing can be cancelled at any time. This cancellation however won&#8217;t be reflecting to already processed data transfers from the past. Learn more about [PayPal&#8217;s Privacy Policy](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) by visiting their web page.</p>
 
 ## How we use collected information
-Our website may collect and use Users personal information for the following purposes:  
+Our website may collect and use Users' personal information for the following purposes:  
 – To run and operate our Site  
-We may need your information display content on the Site correctly.  
+We may need your information to display content on the Site correctly.  
 – To improve customer service  
 The information you provide helps us respond to your customer service requests and support needs more efficiently.  
 – To personalize user experience  
@@ -56,15 +56,15 @@ We may use information in the aggregate to understand how our Users as a group u
 – To improve our Site  
 We may use feedback you provide to improve our products and services.  
 – To run a promotion, contest, survey or other Site feature  
-To send Users information they agreed to receive about topics we think will be of interest to them.  
+To send Users' information they agreed to receive about topics we think will be of interest to them.  
 – To send periodic emails  
-We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests.  
+We may use the email address to send Users information and updates pertaining to their order. It may also be used to respond to their inquiries, questions and/or other requests.  
 
 ## How we protect your information
 We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.  
 
 ## Sharing your personal information
-We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and the Site or administer activities on our behalfs, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.  
+We do not sell, trade, or rent User's personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and the Site or administer activities on our behalfs, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.  
 
 ## How long we retain your data
 If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.  
@@ -87,4 +87,4 @@ Our website has the discretion to update this privacy policy at any time. When w
 By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.
 
 ## Contacting us
-If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us. Our contact information you may get from our [Terms of Use](/terms-of-use/) page.
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us. You can find our contact information on the [Terms of Use](/terms-of-use/) page.

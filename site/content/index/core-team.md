@@ -14,9 +14,9 @@ He started the project together with Roland and Guillaume back in 2011. In mid 2
 
 #### Bernhard Landauer
 
-Community Manager
+Developer
 
-Having an eye on the community, he maintains most of the Community Editions. Connect with him in our forums to be part of it.
+Coordinating Community Editions with a focus on Cinnamon, Deepin and i3. He works on manjaro-architect and the Manjaro Dev tools, he also maintains real-time kernels and does desktop optimisation for official hardware projects.
 
 ésplit
 

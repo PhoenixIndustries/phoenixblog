@@ -17,8 +17,8 @@
                 <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                 <div class="editions-box-caption-extended">
                     <div class="editions-box-caption-extended-content">
-                        <div class="targetgroup">
-                            {{ .Params.targetgroup }}
+                        <div class="short-description">
+                            {{ .Params.shortDescription }}
                         </div>
                     </div>
                 </div>
@@ -38,9 +38,6 @@
                 </div>
                 </a>
             </div>{{ end }}{{ end }}
-		</div>
-		<div class="content col-md-8 ml-auto mr-auto text-left">
-				<p>{{ .Content | markdownify }}</p>
 		</div>		
     </div>
 </section>

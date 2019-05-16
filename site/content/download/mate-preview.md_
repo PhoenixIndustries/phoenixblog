@@ -9,9 +9,8 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "MATE Edition (Developer Preview)"
 Screenshot = "mate-full.jpg"
-ShortDescription = "This edition is supported by the Manjaro community and comes with Mate, a desktop environment that continues the legacy of traditional user experience while carefully improving and modernizing it when needed. This preview is not suitable for production environment."
-Tags = [ "resourceefficient", "traditional_ui", "preview" ]
-TargetGroup = "For people who look for a traditional experience"
+Tags = [ "dev" ]
+shortDescription = "For testers and developers"
 Thumbnail = "mate-preview.jpg"
 Version = "18.0.1-pre1"
 date = "2018-11-19T04:34:54+01:00"
@@ -20,4 +19,6 @@ type="download-edition"
 weight = "6"
 +++
 
-**Note: This is a preview version for developers and testers and is not suitable for production environment as it may contain bugs**
+**Note: This is a preview version for developers and testers and is not suitable for production environments as it may contain bugs**
+
+This edition is supported by the Manjaro community and comes with Mate, a desktop environment that continues the legacy of traditional user experience while carefully improving and modernizing it when needed. This preview is not suitable for production environment.

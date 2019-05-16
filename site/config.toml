@@ -15,6 +15,48 @@ DefaultContentLanguage = "en-us"
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+[params]
+    website_version = "1.0.15"
+    background = "/img/header.jpg"
+    tint = "green"
+    custom_css = ["css/highlight.min.css"]
+    custom_js = []
+    date_format = "Mon, Jan 2, 2006"
+    description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
+    keywords = "manjaro linux, based on arch linux, free operating system"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+
+[params.donate]
+    headline = "Help us"
+    description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
+    conditions = "A donation counts as a private donation and is kept anonymous by us. That means that we won't share or publish any details about you and your donation. Donators get no rights or privileges - everybody can participate, whether they donated or not. Manjaro is still relatively young and a growing distribution - we are no registered organization. That means that we cannot give you a reciept that deduct taxes. For the same reason, the donation cannot go to a 'Manjaro Linux' organization, but goes to the head of the Manjaro team."
+
+    [params.donate.account]
+        account_holder = "Hanns Philip Müller"
+        account_number = "1050676905"
+        bank_identification = "12030000"
+        bank = "DKB"
+        bic = "BYLADEM1001"
+        iban = "DE90120300001050676905"
+        purpose = "Donation to Manjaro Linux"
+        note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
+
+
+[params.download_edition]
+    download_x64_title = "64 bit version"
+    download_x86_title = "32 bit version"
+    download_button = "Download"
+    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
+    download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
+    download_gpg = "Download GPG signature"
+    download_torrent = "Download Torrent"
+
 # --- Top Menu
 
 [[menu.main]]
@@ -316,43 +358,3 @@ DefaultContentLanguage = "en-us"
     url = "https://gitlab.manjaro.org"
     weight = 5
 
-
-[params]
-    background = "/img/header.jpg"
-    tint = "green"
-    custom_css = ["css/highlight.min.css"]
-    custom_js = []
-    date_format = "Mon, Jan 2, 2006"
-    description = "A website built through Hugo and blogdown."
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
-
-[params.donate]
-    headline = "Help us"
-    description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
-    conditions = "A donation counts as a private donation and is kept anonymous by us. That means that we won't share or publish any details about you and your donation. Donators get no rights or privileges - everybody can participate, whether they donated or not. Manjaro is still relatively young and a growing distribution - we are no registered organization. That means that we cannot give you a reciept that deduct taxes. For the same reason, the donation cannot go to a 'Manjaro Linux' organization, but goes to the head of the Manjaro team."
-
-    [params.donate.account]
-        account_holder = "Hanns Philip Müller"
-        account_number = "1050676905"
-        bank_identification = "12030000"
-        bank = "DKB"
-        bic = "BYLADEM1001"
-        iban = "DE90120300001050676905"
-        purpose = "Donation to Manjaro Linux"
-        note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
-
-
-[params.download_edition]
-    download_x64_title = "64 bit version"
-    download_x86_title = "32 bit version"
-    download_button = "Download"
-    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
-    download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
-    download_gpg = "Download GPG signature"
-    download_torrent = "Download Torrent"

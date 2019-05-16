@@ -100,6 +100,28 @@ $(window).one("scroll", function(){
     scrollToContent();
 });
 </script>
+<script> 
+    var $buoop = {required:{e:-2,f:-2,o:-2,s:-1,c:-2},
+    insecure:true,
+    unsupported:true,
+    style:"corner",
+    api:2019.05,
+    text: `
+    <p class='black-text'>Your browser {brow_name} is out of date.<p>
+    <p>Update your browser or install a new one for more security, speed and best experience on manjaro.org and other websites.</p>
+    <p class='black-text'>Tip: In Manjaro you can update your browser using Pamac or Octopi.</p>
+    <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">More Info</a>
+    <a {ignore_but}>Ignore</a>
+    `,
+    test: false }; 
+    function $buo_f(){ 
+     var e = document.createElement("script"); 
+     e.src = "//browser-update.org/update.min.js"; 
+     document.body.appendChild(e);
+    };
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
+</script>
 {{ end }}
 {{ if eq .Title "Downloads"}} 
 <script>
