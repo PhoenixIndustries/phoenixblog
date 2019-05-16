@@ -35,7 +35,11 @@
                     <p></p>
                     <div>
                       <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                        {{ with .Params.download_x64_torrent }}<a href="{{ . }}" target="_blank" onClick="download_link = '{{ . }}'" data-toggle="modal" data-target="#download-how-to-try">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
+                        {{ if .Params.download_x64_torrent }}
+                          {{ with .Params.download_x64_torrent }}<a href="{{ . }}" target="_blank" onClick="download_link = '{{ . }}'" data-toggle="modal" data-target="#download-how-to-try">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
+                        {{ else }}
+                          <span>Torrent Not Available.</span><br>
+                        {{ end }}
                         {{ with .Params.download_x64_sig}}
                         <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
                         SHA1: {{.Params.download_x64_checksum}}
@@ -57,7 +61,11 @@
                 <div class="bottom">
                   <div style="margin-top: auto; margin-bottom: 10px;">
                     <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" onClick="download_link = '{{ .Params.download_x86 }}'" target="_blank" data-toggle="modal" data-target="#download-how-to-try">{{ .Site.Params.download_edition.download_button }}</a>
-                    <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
+                    {{ if .Params.download_x86_torrent }}
+                      <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
+                    {{ else }}
+                      <span>Torrent Not Available.</span><br>
+                    {{ end }}
                     <div>
                       <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
                         {{ with .Params.download_x86_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
@@ -70,9 +78,15 @@
             </li>
             {{ end }}
           </ul>
-        {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
-        <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
-        {{ end }}
+          {{ if or (.Params.download_x64_torrent) (.Params.download_x86_torrent) }}
+              {{ range (where .Site.Pages ".Type" "download-additional-info-torrent")}}
+                <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
+              {{ end }}
+          {{ else }}
+              {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
+                <p>{{ .Content | markdownify }}
+              {{ end }}
+          {{ end }}
       </div>
     </section>
   </div>   
