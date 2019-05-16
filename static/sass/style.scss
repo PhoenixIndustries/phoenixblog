@@ -927,13 +927,20 @@ h1.title::first-letter {
     }
 
     .stable .card-title {
-        border-bottom: 3px solid #00c853; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #00c853; 
+        }
     }
     .testing .card-title {
-        border-bottom: 3px solid #ffd600; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #ffd600; 
+        }
     }
     .unstable .card-title {
-        border-bottom: 3px solid #d50000; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #d50000;
+        }
+
     }
 
     .view.overlay:before {
