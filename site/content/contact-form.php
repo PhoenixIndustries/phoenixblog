@@ -39,7 +39,7 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
                         }
                         if ( $fields[$key] == "Name" ) {
                             $fromName = $value;
-                            if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                            if (!preg_match("/^[a-zA-Z ]*$/",$fromName)) {
                                 $error_message = "Only letters and white space allowed in name field"; 
                                 $responseArray = array('type' => 'error', 'message' => $error_message);
                             }
