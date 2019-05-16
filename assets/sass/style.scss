@@ -756,12 +756,13 @@ h1.title::first-letter {
         }
     }
     .editions-box-hideable {
-        padding: 5px;
+        padding: 15px;
         display: inline-block;
     }
     .btn-group {
-        margin-bottom: -5px;
         padding: 12px;
+        padding-bottom: 0px;
+        margin-bottom: -2px;
     }
 }
 
@@ -1136,7 +1137,9 @@ h1.title::first-letter {
         box-shadow: none;
     }
     .editions-box-caption-extended .editions-box-caption-extended-content .short-description {
-        font-size: 14px !important;
+        font-size: 13px !important;
+        padding: 15px;
+        text-align: justify;
     }
 }
 
