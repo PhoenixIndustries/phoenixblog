@@ -108,7 +108,7 @@ $(window).one("scroll", function(){
     scrollToContent();
 });
 // contact form
-$("#contact").on('click', function() {
+$("#btn-contact").on('click', function() {
     var template = `
     <div id="contact-form" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
@@ -118,8 +118,8 @@ $("#contact").on('click', function() {
             <div class="col-md-6">
             <span class="text-muted">All fields are required.</span><br>
             
-   <span> <input type="checkbox" class="form-check-input" id="humancheck">
-    <label class="form-check-label text-muted" for="humancheck">Anti Spam: Check if you are human.</label></span>
+   <span> <input type="checkbox" name="human-check" class="form-check-input" id="human-check">
+    <label class="form-check-label text-muted" for="human-check">I am not a Bot.</label></span>
   
         </div>
         <div class="col-md-6">
@@ -135,12 +135,12 @@ $("#contact").on('click', function() {
             <div class="form-group">
                 <label for="subject">Subject</label>
                 <select id="subject" name="subject" class="form-control" required="required">
-                    <option value=""></option>
-                    <option value="Request support">Request support</option>
+                    <option></option>
+                    <option value="Shipping my hardware with Manjaro">Shipping my hardware with Manjaro</option>
                     <option value="Report hardware issue">Report hardware issue</option>
                     <option value="Provide feedback">Provide feedback</option>
-                    <option value="Question about the Bladebook">Question about the Bladebook</option>
-                    <option value="Question about the Spitfire">Question about the Spitfire</option>
+                    <option value="Bladebook inquire">Bladebook inquire</option>
+                    <option value="Spitfire inquire">Spitfire inquire</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
@@ -174,7 +174,7 @@ $("#contact").on('click', function() {
     
     `
 $( "body" ).append( template );
-$('#humancheck').change(function(){
+$('#human-check').change(function(){
     if($(this).is(":checked")) {
         $('.form-check-label').removeClass('text-muted');
     } else {
@@ -183,7 +183,7 @@ $('#humancheck').change(function(){
 });
 $('#form').submit(function(event) {
     event.preventDefault();
-    if ($("#humancheck").prop('checked')) {
+    if ($("#human-check").prop('checked')) {
         var formData = $('#form').serialize();
         $.ajax({
             type        : 'POST', 
@@ -192,13 +192,12 @@ $('#form').submit(function(event) {
             dataType    : 'json',
             encode      : true
         }).done(function(data) {
-
-               alert(data['message']);
-
-                // todo handle errors and validation messages
+            $('#contact-form').hide().remove();
+            alert(data['message']);
+            // todo handle errors and validation messages
             });
-        }else {
-            alert("Check the box")
+        } else {
+            alert("Check Anti Spam box");
         }
     });
 });

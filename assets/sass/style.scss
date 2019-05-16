@@ -269,7 +269,7 @@ h1.title::first-letter {
 
 @media screen and (max-width: 991px) {
 
-    #contact {
+    #btn-contact {
         margin-top: 40px;
     }
 
@@ -599,7 +599,7 @@ h1.title::first-letter {
         }
     }
 
-    #contact {
+    #btn-contact {
 
         position: absolute;
         background-color: rgb(191, 54, 12);
@@ -628,8 +628,20 @@ h1.title::first-letter {
         .modal-content {
             padding: 20px;
         }
-        .form-group {
-            margin-botton:40px;
+        #human-check {
+            margin-left: 0;
+        }
+        .form-check-label {
+            margin-left: 1.25rem;
+        }
+        #message {
+            border: 1px solid transparent;
+        }
+        select option {
+            &:hover, &:focus, &:active {
+                background-color: #44883c;
+            }
+
         }
     }
 
@@ -1248,7 +1260,7 @@ h1.title::first-letter {
         background-color: #f0f0f0;
     }
 
-    #contact {
+    #btn-contact {
         margin-top: 10px;
     }
 
