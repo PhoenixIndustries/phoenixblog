@@ -9,9 +9,8 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Bspwm"
 Screenshot = "bspwm-full.jpg"
-ShortDescription = "This edition is supported by the Manjaro community and comes with bspwm, a tiling window manager."
 Tags = [ "community" ]
-TargetGroup = "For people who want to use a tiling window manager"
+shortDescription = "Slim and snappy tiling window manager with the focus on resource efficiency"
 Thumbnail = "bspwm.jpg"
 Version = "18.0.4"
 date = "2019-04-06T14:53+01:00"
@@ -19,6 +18,8 @@ title = "Bpspwm"
 type="download-edition"
 weight = "5"
 +++
+
+This edition is supported by the Manjaro community and comes with bspwm.
 
 Bspwm is a slim and snappy tiling window manager with the focus on resource efficiency.
 

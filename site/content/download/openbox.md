@@ -9,9 +9,8 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Openbox"
 Screenshot = "openbox-full.jpg"
-ShortDescription = "This edition is supported by the Manjaro community and comes with openbox, a highly configurable, next generation window manager with extensive standards support."
 Tags = [ "community" ]
-TargetGroup = "For power users and developers dealing with every day computing tasks"
+shortDescription = "For power users and developers dealing with every day computing tasks"
 Thumbnail = "openbox.jpg"
 Version = "18.0.2-2018520"
 date = "2018-12-30T00:49:12+01:00"
@@ -19,6 +18,8 @@ title = "Openbox Stable"
 type="download-edition"
 weight = "5"
 +++
+
+This edition is supported by the Manjaro community and comes with openbox, a highly configurable, next generation window manager with extensive standards support.
 
 If you are looking for older images check the [Openbox](https://osdn.net/projects/manjaro-community/storage/z_release_archive/openbox) archive.
 

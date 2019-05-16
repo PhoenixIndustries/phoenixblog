@@ -14,8 +14,6 @@
         <!-- <h2>Manjaro {{ .Params.name }}</h2>
         <hr class="star-primary" /> -->
         <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="Desktop Image" style="width:100%;"></a>
-        <br/>
-        <p>{{ .Params.shortdescription | markdownify }}</p>
         <p>{{ .Content | markdownify }}</p>
         {{ if .Params.Youtube }}
           <p>{{partial "youtube" .}}</p>

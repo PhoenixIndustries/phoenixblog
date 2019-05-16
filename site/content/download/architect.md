@@ -9,9 +9,8 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Architect"
 Screenshot = "architect-full.jpg"
-ShortDescription = "This edition comes with a TUI installer."
 Tags = [ "official" ]
-TargetGroup = "For people who want to setup and configure Manjaro in every detail"
+shortDescription = "Setup and configure Manjaro in every detail using the CLI."
 Thumbnail = "architect.jpg"
 Version = "18.0.2"
 date = "2019-02-17T11:38:00+01:00"
@@ -19,6 +18,8 @@ title = "Architect Stable"
 type="download-edition"
 weight = "7"
 +++
+
+This edition comes with a TUI installer.
 
 Manjaro-Architect is a fork of the famous Architect Linux installer by Carl Duff, that has been modified to install Manjaro. It is a netinstaller that downloads the latest available packages, so your system is up to date right after installation, regardless of how old your install media is.
 

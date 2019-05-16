@@ -10,9 +10,8 @@ Download_x86_Torrent = ""
 Name = "KDE"
 Screenshot = "kde-full.jpg"
 Youtube = "FHMBocs2Xc8"
-ShortDescription = "This edition is supported by the Manjaro team and comes with KDE, a very modern and flexible desktop."
 Tags = [ "official" ]
-TargetGroup = "For people who want a modern and very flexible desktop"
+shortDescription = "Built-in interface to easily access and install themes, widgets, etc. While very user-friendly and certainly flashy, is also quite resource heavy"
 Thumbnail = "kde.jpg"
 Version = "18.0.4"
 date = "12.03.2019T12:36:00+01:00"
@@ -20,6 +19,8 @@ title = "KDE Stable"
 type="download-edition"
 weight = "2"
 +++
+
+This edition is supported by the Manjaro team and comes with KDE, a very modern and flexible desktop.
 
 KDE is a feature-rich and versatile desktop environment that provides several different styles of menu to access applications. An excellent built-in interface to easily access and install new themes, widgets, etc, from the internet is also worth mentioning. While very user-friendly and certainly flashy, KDE is also quite resource heavy and noticably slower to start and use than a desktop environment such as XFCE. A 64 bit installation of Manjaro running KDE uses about 550MB of memory.
 
