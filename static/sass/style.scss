@@ -145,6 +145,16 @@ p, .call-to-action {
     margin-bottom: 40px;
 }
 
+#download-how-to-try {
+    
+    .modal-body p {
+        margin-bottom: 1rem;
+    }
+    .modal-footer button {
+        margin: 0 auto;
+    }
+}
+
 .separator.separator-primary {
     background-color: $green;
 }
