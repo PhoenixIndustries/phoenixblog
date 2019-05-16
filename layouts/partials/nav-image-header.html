@@ -19,7 +19,7 @@
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link"  id="navbarDropdownMenuLink" data-toggle="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown">
             {{ .Pre }} <span>{{ .Name }}</span>
             <span class="caret"></span>
           </a>

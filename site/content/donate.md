@@ -4,17 +4,19 @@ draft = false
 title = "Donate"
 type = "donate"
 button_donate_text = "Using Paypal"
+description = "How can you help keep Manjaro Linux running by donating"
+keywords = "donating manjaro linux, helping manjaro linux, contribute manjaro linux"
 +++
-
-There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help out covering some unavoidable cost, giving developers time and freedom to improve Manjaro's features and to allow spreading word about Manjaro by attending conferences.
 
 ### Why does Manjaro ask for donations
 
-Manjaro is not backed by some large corporation and solely held up by the team, the community and some sponsors that are willing to dedicate their time and resources to develop and improve Manjaro.
+Manjaro is not backed by a corporation and is solely held up by the Core Team and community volunteers. Some sponsors are willing to dedicate their time and resources to develop and improve Manjaro.
 
-### For what will my donations used for
+There are many ways you can help out Manjaro. One way is to donate a small amount of money, to help covering some costs, giving developers time and freedom to improve Manjaro's features or spreading the word by attending conferences.
 
-Your donation will be mainly used for keeping all our severs and therefore our website, forums, mailing lists, bugtracker and more running. If some money is left - good servers are quite expensive - your donations will be used for attending conferences or giving a developer the resources to dedicate more time into developing a feature for Manjaro.
+### For what will my donations be used for
+
+Servers are expensive. Your donation will be used to keep the website, forums, mailing lists and bugtracker up and running. It can also be used to attend conferences and provide resources to developers who dedicate their time and energy to improve Manjaro and carry it forward.
 
 ![Uses](/img/donation/uses.png#center)
 
@@ -24,11 +26,11 @@ Yes. We will keep everything you do anonymous. We won't share or publish any det
 
 ### What do I get if I donate
 
-You get the feeling that you helped us out and that everybody is thankful to you :)
+You get a big THANK YOU from the Core Team, since contributions will keep the servers up and running and ensure the availability of updates and features within Manjaro.
 
 ### Why am I donating to a private person
 
-Manjaro is not a registered organization, for now. As this is extremely expensive and Manjaro is a relatively young and growing distribution. Your donation will go to the leader of Manjaro's core team who will then pass it down to the right people.
+Manjaro is not a registered organization, for now, as this is extremely expensive and Manjaro is a relatively young and growing distribution. Your donation will go to the leader of Manjaro's core team who will then pass it down to the right people.
 
 ### Can I get a tax deduction
 

@@ -9,9 +9,8 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Architect"
 Screenshot = "architect-full.jpg"
-ShortDescription = "This edition is supported by the Manjaro team and comes with a TUI installer."
 Tags = [ "official" ]
-TargetGroup = "For people who want to setup and configure Manjaro from the ground up"
+shortDescription = "Setup and configure Manjaro in every detail using the CLI."
 Thumbnail = "architect.jpg"
 Version = "18.0.2"
 date = "2019-02-17T11:38:00+01:00"
@@ -20,17 +19,19 @@ type="download-edition"
 weight = "7"
 +++
 
-Manjaro-Architect is a fork of the famous Architect Linux installer by Carl Duff, that has been modified to install Manjaro instead of Arch Linux. It is a netinstaller that downloads always the latest packages, so your system is always up to date after installation, regardless of how old your install media is.
+This edition comes with a TUI installer.
 
-Manjaro-Architect offers currently unparalleled customization on your Manjaro installation:
+Manjaro-Architect is a fork of the famous Architect Linux installer by Carl Duff, that has been modified to install Manjaro. It is a netinstaller that downloads the latest available packages, so your system is up to date right after installation, regardless of how old your install media is.
 
-- choose freely which kernel to use from all manjaro kernels. You can also choose multiple kernels.
-- choose any manjaro branch (stable, testing or unstable)
-- choose your desktop from all up to date manjaro editions, regardless of what install media you run the installer from. You can also choose to install just base system without graphical user interface.
-- add any number of unconfigured desktop environments
+Manjaro-Architect offers total customization on your Manjaro installation:
+
+- choose which Manjaro kernels you want to use, or multiple kernels.
+- choose any Manjaro branch (stable, testing or unstable)
+- choose your desktop from all current Manjaro editions, regardless of what install media you run the installer from. You can also install the base system only without graphical user interface.
+- add any unconfigured desktop environment
 - choose the default shell for user (bash, zsh or fish)
-- choose your graphics drivers that are installed with mhwd
-- choose arbitrary extra packages to be installed
+- choose your graphics drivers to be installed with mhwd
+- choose extra packages to be installed
 
 If you are looking for older images check the [Architect](https://osdn.net/projects/manjaro/storage/z_release_archive/Architect) archive.
 

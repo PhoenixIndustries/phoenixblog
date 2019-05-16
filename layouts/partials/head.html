@@ -1,4 +1,5 @@
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <link rel="dns-prefetch" href="https://use.fontawesome.com/releases/v5.7.2/css/">
     <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.7.2/css/">
@@ -23,7 +24,7 @@
     {{ if eq .Title "News"}}
     <link rel="preload" href="/js/isotope.pkgd.min.js" as="script" type="text/javascript">
     <link rel="preload" href="/js/imagesloaded.pkgd.min.js" as="script" type="text/javascript">
-    <link rel="preload" href="/js/feedreader.js?v=1.0.3" as="script" type="text/javascript">
+    <link rel="preload" href="/js/feedreader.js?v={{ .Site.Params.website_version }}" as="script" type="text/javascript">
 
     <link rel="preload" href="https://forum.manjaro.org/c/announcements.rss" as="fetch" type="text/plain" crossorigin>
     <link rel="preload" href="https://forum.manjaro.org/c/announcements/manjaro32.rss" as="fetch" type="text/plain" crossorigin>
@@ -37,7 +38,6 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{ "img/apple-icon.png" | relURL }}">
     <link rel="icon" type="image/png" href="{{ "img/favicon.png" | relURL }}">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Manjaro - {{ if .IsHome }}{{ i18n "slogan" }}{{ else }}{{.Title}}{{ end }}</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 
@@ -46,9 +46,19 @@
     <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" />
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="preload" as="style"/>
     <link href="{{ "css/now-ui-kit.css?v=1.1.0" | relURL }}" rel="stylesheet" />
-    {{ $styles := resources.Get "/sass/style.scss" | toCSS "/css/style.css"| minify}}
-    <link href="{{ $styles.Permalink }}?v=1.0.14" rel="preload" as="style"/>
-    <link href="{{ $styles.Permalink }}?v=1.0.14" rel="stylesheet" />
+    
+    {{ $inServerMode := .Site.IsServer }}
+    {{ $sass         := resources.Get "/sass/style.scss" }}
+    {{ $cssTarget    := "/css/style.css" }}
+    {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+    {{ if $inServerMode }}
+    {{ $css := $sass | toCSS $cssOpts | fingerprint}}
+    <link rel="stylesheet" href="{{ $css.Permalink  | absURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+    {{ else }}
+    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS }}
+    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="preload" as="style"/>
+    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="stylesheet" media="screen"/>
+    {{ end }}
 
     <!--  Essential META Tags -->
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />

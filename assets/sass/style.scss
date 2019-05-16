@@ -145,6 +145,16 @@ p, .call-to-action {
     margin-bottom: 40px;
 }
 
+#download-how-to-try {
+    
+    .modal-body p {
+        margin-bottom: 1rem;
+    }
+    .modal-footer button {
+        margin: 0 auto;
+    }
+}
+
 .separator.separator-primary {
     background-color: $green;
 }
@@ -205,7 +215,7 @@ h1.title::first-letter {
 
 ::selection {
     background: $green;
-    color: #ffff;
+    color: white;
 }
 
 @media screen and (max-width: 575px) {
@@ -218,7 +228,7 @@ h1.title::first-letter {
 
     .landing-page {
         .social-icons-top .btn {
-            background-color: #ffff;
+            background-color: white;
         }
     }
 
@@ -327,8 +337,9 @@ h1.title::first-letter {
         letter-spacing: 1px;
     }
 
-    .nav-link:not(.dropdown) {
-        font-size: 0.8571em !important;
+    .nav-link {
+        font-size: 0.96em !important;
+        text-transform: capitalize !important;
     }
     .navbar-brand {
         margin-right: 0px;
@@ -378,6 +389,42 @@ h1.title::first-letter {
 }
 
 .landing-page {
+
+    
+    #buorg  {
+        border: 0px solid white !important;
+        
+        .buorg-pad {
+            background: #f44336;
+            border-color: #f44336;
+            border: 0px solid white !important;
+            * {
+                font-size: 0.94rem !important;
+                font-family: 'Comfortaa', cursive;
+                font-weight: bold !important;
+                color: white;
+            }
+        }
+        P.black-text {
+                color: #212020 !important;
+        }
+        a {
+            background: transparent;
+            color: white !important;
+            box-shadow: none;
+            margin: 0 4px;
+            font-weight: bold;
+            &:active, &:hover, &:focus {
+                text-decoration: underline;
+                color: white !important;
+            }
+            &:last-child {
+                border-left: 1px solid white;
+                border-radius: 0;
+                padding: 1px 12px;
+            }
+        }
+    }
 
     .tooltip.bottom { 
         margin-top: 10px;
@@ -439,11 +486,9 @@ h1.title::first-letter {
     }
 
     .logo {
-        position: absolute;
+        position: relative;
         width: 96px;
         height: 96px;
-        margin-top: -180px;
-        margin-left: -48px;
     }
 
     .fa-heart {
@@ -530,7 +575,7 @@ h1.title::first-letter {
             &:focus {
                 box-shadow: none;
                 i {
-                    color: #ffff;
+                    color: white;
                     }
             }
         }
@@ -539,12 +584,18 @@ h1.title::first-letter {
 
     .page-header {
         max-height: 100% !important;
+        & .container > .content-center {
+            -ms-transform: translate(-50%, -70%);
+            -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+        }
     }
 
     h1 {
-        margin-bottom: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
         &:first-letter {
-            color: rgba(13,95,79,.9);
+            color: #34be5b;
         }
     }
 
@@ -562,12 +613,14 @@ h1.title::first-letter {
         }
 
         &:visited, &:hover, &:active {
-        border: 1px solid rgba(191, 54, 12, 0.80) !important;
-        background-color: rgba(191, 54, 12, 0.80) !important;
-             
+            border: 1px solid rgb(191, 54, 12) !important;
+            border: 1px solid rgba(191, 54, 12, 0.80) !important;
+            background: rgb(191, 54, 12) !important;
+            background-color: rgba(191, 54, 12, 0.80) !important;
         }
 
         &:active:focus {
+            box-shadow: 0 0 0 0.2rem rgb(191, 54, 12) !important;
             box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
         }
     }
@@ -588,10 +641,11 @@ h1.title::first-letter {
         
     
         p {
-        color: #ffff;
+        color: white;
         text-align: justify;
         margin-bottom: 15px;
         margin-top: 15px;
+        background: rgb(13,95,79);
         background-color: rgba(13, 95, 79, 0.80);
         padding: 14px;
         } 
@@ -602,6 +656,7 @@ h1.title::first-letter {
                 margin-left: 12px;
             }
             &, &:visited { 
+                background: transparent;
                 background-color: rgba(0, 0, 0, 0.48);
                 font-weight: 600;
             }
@@ -611,10 +666,13 @@ h1.title::first-letter {
             &[href='/download/'] {
                 border: 1px solid rgb(191, 54, 12); 
                 &:hover, &:active {
+                    background: rgb(191, 54, 12);
                     background-color: rgba(191, 54, 12, 0.80);
+                    border: 1px solid rgb(191, 54, 12);
                     border: 1px solid rgba(191, 54, 12, 0.80);
                 } 
                 &:active:focus {
+                    box-shadow: 0 0 0 0.2rem rgb(191, 54, 12);
                     box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5);
                 }
             }
@@ -623,10 +681,13 @@ h1.title::first-letter {
         button {
             border: 1px solid rgb(13,95,79) !important;
             &:hover, &:active {
+                background: rgb(13,95,79);
                 background-color: rgba(13,95,79, 0.80) !important;
+                border: 1px solid rgb(13,95,79) !important;
                 border: 1px solid rgba(13,95,79, 0.80) !important;
             } 
             &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgb(13,95,79) !important;
                 box-shadow: 0 0 0 0.2rem rgba(13,95,79,.5) !important;
             } 
         }
@@ -772,7 +833,7 @@ h1.title::first-letter {
             border-bottom: 1px solid $green;
             }
             li:last-child {
-                border-bottom: 1px solid #ffff;
+                border-bottom: 1px solid white;
                 }
         }
         h2 {
@@ -863,15 +924,30 @@ h1.title::first-letter {
 
 .news {
 
+    #updatesModal {
+        .modal-header {
+            padding-top: 14px;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+    }
 
     .stable .card-title {
-        border-bottom: 3px solid #00c853; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #00c853; 
+        }
     }
     .testing .card-title {
-        border-bottom: 3px solid #ffd600; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #ffd600; 
+        }
     }
     .unstable .card-title {
-        border-bottom: 3px solid #d50000; 
+        &, &:hover, &:active &:focus {
+            border-bottom: 3px solid #d50000;
+        }
+
     }
 
     .view.overlay:before {
@@ -958,7 +1034,7 @@ h1.title::first-letter {
             top: 17px;
             right: 0px;
             background-color: transparent;
-            color: #ffff;
+            color: white;
             font-size: 12px;
             font-weight: bold;
             transform: rotate(100dg);
@@ -1066,7 +1142,7 @@ h1.title::first-letter {
         border-radius: 0px;
         box-shadow: none;
     }
-    .editions-box-caption-extended .editions-box-caption-extended-content .targetgroup {
+    .editions-box-caption-extended .editions-box-caption-extended-content .short-description {
         font-size: 14px !important;
     }
 }
@@ -1090,7 +1166,7 @@ h1.title::first-letter {
         }
     }
     img {
-        border: 2px solid #ffff;
+        border: 2px solid white;
     }
     .features-post, img {
         margin-bottom: 100px !important;
@@ -1108,8 +1184,8 @@ h1.title::first-letter {
         max-width: 80% !important;
         top: 44% !important;
     }
-    .section-story-overview .image-container:nth-child(2) {
-        margin-top: 150px;
+    .section-story-overview {
+        padding-bottom: 0px; 
     }
     .team-player .description {
         /* this needs to be ajusted if you add more content */
@@ -1177,7 +1253,7 @@ h1.title::first-letter {
     }
 
     .jumbo-submenu {
-        width: 52px;
+        width: 526px;
         .menu-block {
             float: left;
             margin: 10px;
@@ -1257,11 +1333,26 @@ h1.title::first-letter {
     .donate-page .flex-grid {
         display: flex;
     }
-    .dropdown-menu .now-ui-icons, .dropdown-menu .fas, .dropdown-menu .fa {
+    .dropdown-menu {
+        color: #565758; 
+        
+        .fas, .fa {
         color: $green;
         position: relative;
         margin-right: 5px;
         font-weight: bold;
+        }
+        .dropdown-item {
+            font-weight: bold;
+            &:hover, &:active, &:focus {
+                background: rgb(13, 95, 79);
+                background-color: rgba(13,95,79, 0.80);
+                * {
+                    color: white !important;
+                }
+                transition: all 0.6s ease;
+            }
+        }
     }
     .configured-with-one-click {
 

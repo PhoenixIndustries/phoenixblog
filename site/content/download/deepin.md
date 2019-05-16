@@ -9,15 +9,16 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Deepin"
 Screenshot = "deepin-full.jpg"
-ShortDescription = "This edition is supported by the Manjaro community and comes with the [Deepin](https://www.deepin.org/) desktop that provides a very beginner-friendly and elegant experience."
 Tags = [ "community" ]
-TargetGroup = "For people who want a simple and elegant desktop"
+shortDescription = "Modern and elegant desktop"
 Thumbnail = "deepin.jpg"
 Version = "18.02"
 date = "02.01.2019T11:21:18+01:00"
 title = "Deepin Stable"
 type="download-edition"
 +++
+
+This edition is supported by the Manjaro community and comes with the [Deepin](https://www.deepin.org/) desktop that provides a very beginner-friendly and elegant experience."
 
 If you are looking for older images check the [Deepin](https://osdn.net/projects/manjaro-community/storage/z_release_archive/deepin) archive.
 

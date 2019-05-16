@@ -25,6 +25,6 @@
   ]
 }
 
-Manjaro comes pre installed with a collection of software that makes all daily tasks possible without even searching for them. If some application is not installed, more software can easily and securely installed via the integrated package manager (software Center): Just search for "Office", "Music" or "Internet", select or tick what should be installed and everything else will be done automatically for you.
+Manjaro comes pre installed with a collection of software that makes all daily tasks possible without even searching for them. If some application is not installed, more software can easily and securely be installed via the integrated package manager (software center): Just search for e.g. "Office", "Music" or "Internet", select or tick what should be installed and everything else will be done automatically for you.
 
-All this software is also completely free and will be updated alongside Manjaro. The Manjaro team and community will ensure that it will stay stable, safe and operates correctly.
+All this software is also completely free and will be updated alongside Manjaro. The Manjaro team and community will ensure that it will stay stable and safe and that it operates correctly.

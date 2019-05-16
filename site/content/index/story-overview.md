@@ -20,22 +20,22 @@ Manjaro can represent a perfect middle-ground for experienced Linux users, those
 
 ### <i class="fa fa-dollar-sign"></i> Free is better
 
-Manjaro always will be completely free. We create it, so we can have a Linux based operating system that is easy to use and stable, you the user, are the main focus, we do not take control away from you and consider privacy very important, we do not keep, sell or pass your data to 3rd parties.
+Manjaro will always be completely free. We create it, so we can have a Linux based operating system that is easy to use and stable, you the user, are the main focus, we do not take control away from you and respect your privacy.
 
 ### <i class="fa fa-download"></i> Install Anything
 
-There are thousands of software applications available in the software center, including fully compatible equivalents of popular Windows software such as MS Office, any additional software is also completely free. Searching for applications to install on the internet, is not necessary.
+There are thousands of software applications available in the software center, including fully compatible equivalents of popular Windows software such as MS Office. Any additional software is also completely free. Searching for applications to install on the internet is not necessary.
 
 érightside
 ### <i class="fa fa-users"></i>Great Community
 
-We have a polite, friendly and cheerful [Forum](https://forum.manjaro.org/), everyone is welcoming and supportive. The forum is the right place to share knowledge, talk Linux with the community, we all <i class="fa fa-heart"></i> it.
+We have a polite, friendly and cheerful [Forum](https://forum.manjaro.org/), where everyone is welcoming and supportive. The forum is the right place to share knowledge and talk Linux with the community we all <i class="fa fa-heart"></i> it.
 
 ### <i class="fas fa-compact-disc"></i>Availability
 
-Manjaro is Available for 64 Bit architecture, [Gnome](https://www.gnome.org/gnome-3/), and [XFCE](https://www.xfce.org/) [editions](/download/) are officially supported, other flavors are community maintained, so as 32 Bit and ARM architectures.
+Manjaro is available for 64 Bit architectures. [XFCE](https://www.xfce.org/), [KDE](https://kde.org/) and [Gnome](https://www.gnome.org/gnome-3/) [editions](/download/) are officially supported. Other flavors, including editions for 32 Bit architectures are maintained by the community.
 
-ARM is available as per device basis, pre built images can be downloaded for the Raspberry Pi and Pinebook 64.
+ARM editions are specifically available for certain devices. Pre-built images can be downloaded for the Raspberry Pi 3B, Odroid C2, Rock64 (rev2) and the Pinebook.
 
 ### <i class="fab fa-linux"></i>What is Linux
 
@@ -45,8 +45,8 @@ Originally developed in 1991 by Finnish Programmer [Linus Torvalds](https://en.w
 
 ### <i class="fab fa-linux"></i>Benefits of using Linux
 
-It is highly efficient, very fast and any hardware device works out of the box, only in rare occasions you will need to install a device driver, The 64 bit version of Manjaro with the Xfce desktop, boots up in only a few seconds, it uses only 200MB of memory to run.
+It is highly efficient, very fast and any hardware device works out of the box, only on rare occasions you will need to install a device driver, The 64 bit version of Manjaro with the Xfce desktop, boots up in only a few seconds and uses only 200MB of memory to run.
 
-Linux systems are also very secure, and are not affected by the huge amount of Windows viruses, trojans, worms, or malware out there. Anti-virus software is not required.
+Linux systems are very secure and not affected by the huge amount of Windows viruses, trojans, worms or malware out there. Anti-virus software is not required.
 
-It is also possible to easily run many popular Windows applications on GNU/Linux using compatibility software such as [Wine](https://www.winehq.org/) or [PlayonLinux](https://www.playonlinux.com/) or using [Proton](https://www.protondb.com/) via [Steam](https://store.steampowered.com/about/). The examples given here are far from comprehensive!
+It is easily possible to run many popular Windows applications on GNU/Linux using compatibility software such as [Wine](https://www.winehq.org/), [PlayonLinux](https://www.playonlinux.com/) or [Proton](https://www.protondb.com/) via [Steam](https://store.steampowered.com/about/). The examples given here are far from comprehensive!
