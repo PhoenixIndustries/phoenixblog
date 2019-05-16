@@ -193,21 +193,28 @@ DefaultContentLanguage = "en-us"
     weight = 2
     parent = "shop"
 
-
 [[menu.main]]
-    name = "Hardware - Notebooks & PCs"
-    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
-    pre = "<i class='fas fa-desktop'></i>"
-    weight = 5
-    parent = "shop"
-
-
-[[menu.main]]
-    name = "Hardware - Spitfire"
-    url = "/hardware-spitfire"
+    name = "Hardwares"
+    url = "/hardware"
     pre = "<i class='fas fa-laptop'></i>"
     weight = 4
     parent = "shop"
+
+
+#[[menu.main]]
+#    name = "Hardware - Notebooks & PCs"
+#    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
+#    pre = "<i class='fas fa-desktop'></i>"
+#    weight = 5
+#    parent = "shop"
+
+
+#[[menu.main]]
+#    name = "Hardware - Spitfire"
+#    url = "/hardware-spitfire"
+#    pre = "<i class='fas fa-laptop'></i>"
+#    weight = 4
+#    parent = "shop"
 
 
 # [[menu.main]]
