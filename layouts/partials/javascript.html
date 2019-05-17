@@ -107,10 +107,10 @@ $(window).one("scroll", function(){
     style:"corner",
     api:2019.05,
     text: `
-    <p class='black-text'>Your browser {brow_name} is out of date.<p>
+    <p class='black-text'>Your browser engine {brow_name} is out of date.<p>
     <p>Update your browser or install a new one for more security, speed and best experience on manjaro.org and other websites.</p>
     <p class='black-text'>Tip: In Manjaro you can update your browser using Pamac or Octopi.</p>
-    <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">More Info</a>
+    <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">Browsers Info</a>
     <a {ignore_but}>Ignore</a>
     `,
     {{ if .Site.IsServer }}test: true{{ else }}test: false{{ end }}
