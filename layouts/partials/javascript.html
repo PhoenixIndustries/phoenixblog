@@ -113,7 +113,8 @@ $(window).one("scroll", function(){
     <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">More Info</a>
     <a {ignore_but}>Ignore</a>
     `,
-    test: false }; 
+    {{ if .Site.IsServer }}test: true{{ else }}test: false{{ end }}
+    }; 
     function $buo_f(){ 
      var e = document.createElement("script"); 
      e.src = "//browser-update.org/update.min.js"; 
