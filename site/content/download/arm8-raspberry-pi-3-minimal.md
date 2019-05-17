@@ -10,7 +10,6 @@ Download_x86_Torrent = ""
 Name = "Raspberry Pi 3 Minimal"
 Screenshot = "arm-minimal-full.png"
 Youtube = ""
-ShortDescription = ""
 Tags = [ "arm" ]
 shortDescription = "For people that do not need a desktop"
 Thumbnail = "arm-minimal-full.png"
