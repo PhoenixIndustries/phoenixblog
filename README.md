@@ -1,21 +1,12 @@
-# Manjaro Homepage
+# manjaro.org
 
-This project is being developed for Manjaro, this readme is a work in progress if anything is missing let us know.
+This readme is a work in progress if anything is missing let us know.
 
-## Getting Started
+## Built With
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See Installing and Running for notes on how to deploy the project on a live system.
+* [Hugo](https://gohugo.io/getting-started/) - Static Website Generator
 
-### Prerequisites
-
-What you need to install.
-
-```
-Hugo
-Git
-```
-
-### Installing and Running
+### Installing and running localy 
 
 * Install on Manjaro with `pacman -S hugo, git`
 * clonning repo on local machine `git clone https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-homepage`
@@ -25,10 +16,6 @@ Git
 
 ### Testing in a diferent language
 * (TODO)
-
-## Built With
-
-* [Hugo](https://gohugo.io/getting-started/) - Static Website Generator
 
 ### libraries used, get familiar with them. ( needs update ) 
 * [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
@@ -42,6 +29,7 @@ Git
 Menus can be edited by opening (/site/config.toml), more examples can be found inside the file.
 
 `weight` - link order in the menu.
+
 `parent` - submenu the link belongs to.
 
 If only a link is needed, ignore submenu, set link in `url` field.
@@ -66,6 +54,7 @@ Submenu
 ```
 
 * Adding a Edition
+
 Editions can be added by creating an markdown file in (/site/content/download/my-edition.md), supported edition category, in the `Tags` field ( official, community, arm, 32bit ).
 
 ```
@@ -90,6 +79,10 @@ title = "Gnome Stable"
 type="download-edition"
 weigth = "3"
 +++
+
+This edition is supported by the Manjaro team and comes with the GNOME 3 desktop that breaks with traditional concepts and allows users to focus on their tasks. Desktop-specific applications are crafted with care and clearly defined by guidelines that make them more consistent to use.
+
+If you are looking for older images check the [GNOME](https://osdn.net/projects/manjaro/storage/z_release_archive/gnome) archive.
 ```
 
 ### Adding pages
