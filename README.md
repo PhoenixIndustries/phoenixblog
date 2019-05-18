@@ -1,6 +1,6 @@
-# Manjaro Homepage
+# manjaro.org
 
-This project is being developed for Manjaro, this readme is a work in progress if anything is missing let us know.
+This readme is a work in progress if anything is missing let us know.
 
 ## Getting Started
 
