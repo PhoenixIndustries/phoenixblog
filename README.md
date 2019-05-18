@@ -2,20 +2,11 @@
 
 This readme is a work in progress if anything is missing let us know.
 
-## Getting Started
+## Built With
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See Installing and Running for notes on how to deploy the project on a live system.
+* [Hugo](https://gohugo.io/getting-started/) - Static Website Generator
 
-### Prerequisites
-
-What you need to install.
-
-```
-Hugo
-Git
-```
-
-### Installing and Running
+### Installing and running localy 
 
 * Install on Manjaro with `pacman -S hugo, git`
 * clonning repo on local machine `git clone https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-homepage`
@@ -25,10 +16,6 @@ Git
 
 ### Testing in a diferent language
 * (TODO)
-
-## Built With
-
-* [Hugo](https://gohugo.io/getting-started/) - Static Website Generator
 
 ### libraries used, get familiar with them. ( needs update ) 
 * [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
