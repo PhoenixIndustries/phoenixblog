@@ -22,7 +22,12 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        setTimeout(function(){ $(".logo-overlay-loader").fadeOut(); }, 1000);
+        setTimeout(function(){ 
+            $(".logo-overlay-loader").fadeOut();
+         }, 1000);
+         setTimeout(function(){ 
+            $(".social-animation").removeClass("social-animation");
+         }, 5000);
 // hide page title on scroll
 if ($( window ).width() > 992) {
       $(window).scroll(function() {
