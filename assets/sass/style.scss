@@ -703,12 +703,13 @@ h1.title::first-letter {
         margin-top: 16px;
     }
     .title-container {
-            animation: bottom-t-top 3s;
-            position: relative;   
-                 
+            animation: bottom-t-top 2s;
+            position: relative;  
+            animation-iteration-count: 1                 
     }
     .navbar {
-        animation: top-t-bottom 4s;
+        animation: top-t-bottom 3s;
+        animation-iteration-count: 1
     }
 } 
 
@@ -723,7 +724,7 @@ h1.title::first-letter {
 
 @keyframes top-t-bottom {
     0%   { 
-        transform: translate(0%, -1000%);
+        transform: translate(0%, -800%);
     }
     100% { transform: translate(0%, 0%);
     }
