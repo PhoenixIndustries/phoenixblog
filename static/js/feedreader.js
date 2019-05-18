@@ -190,9 +190,6 @@ function feedreader(url) {
                 $('#' + el + ' .modal-body').find("p:contains('Posts:')").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Participants:')").remove();
                 
-                if (iter == 24) {
-                    
-                }  
             }});
         }});
     };
