@@ -702,7 +702,32 @@ h1.title::first-letter {
         color: #6b6a6a;
         margin-top: 16px;
     }
+    .title-container {
+            animation: bottom-t-top 3s;
+            position: relative;   
+                 
+    }
+    .navbar {
+        animation: top-t-bottom 4s;
+    }
 } 
+
+@keyframes bottom-t-top {
+    0% {
+        transform: translate(-50%, 200%);
+    }
+    100% {
+        transform: translate(-50%, -70%);
+    }
+  }
+
+@keyframes top-t-bottom {
+    0%   { 
+        transform: translate(0%, -1000%);
+    }
+    100% { transform: translate(0%, 0%);
+    }
+}
 
 .donate-page {
     
