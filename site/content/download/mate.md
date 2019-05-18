@@ -2,7 +2,7 @@
 Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-mate-18.0.4-stable-x86_64.iso"
 Download_x64_Checksum = "b5d559e07dbabf5f03cbf841bd68f935c89cde7d"
 Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-mate-18.0.4-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-mate-18.0.4-stable-x86_64.iso.torrent"
+Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
