@@ -67,6 +67,7 @@ Submenu
 ```
 
 * Adding a Edition
+
 Editions can be added by creating an markdown file in (/site/content/download/my-edition.md), supported edition category, in the `Tags` field ( official, community, arm, 32bit ).
 
 ```
