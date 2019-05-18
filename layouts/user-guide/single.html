@@ -18,9 +18,8 @@
 </div>
 
 <p class="text-center btn-container">
-    {{ range $index, $element := .Params.downloadbuttons}}
-  <a href="https://de.osdn.net/projects/manjaro/storage/{{ replace $element " " "-" }}.pdf" class="btn btn-xl" target="_blank" >{{ $element }}</a>
-  {{ end }}
+    <a href="{{.Params.downloadLink}}{{.Params.fileName_en}}.pdf" class="btn btn-primary btn-xl" target="_blank" >{{ .Params.name_en }}</a>
+    <a href="{{.Params.downloadLink}}{{.Params.fileName_fr}}.pdf" class="btn btn-primary btn-xl" target="_blank" >{{ .Params.name_fr }}</a>
 <p>
 
 <div class="row d-flex justify-content-center">

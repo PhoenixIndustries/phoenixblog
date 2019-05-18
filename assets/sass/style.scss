@@ -977,11 +977,13 @@ h1.title::first-letter {
 
         .btn {
             font-weight: bold;
-            &, &:visited, &:hover, &:active {
+            border: 1px solid rgb(191, 54, 12) !important;
+            border: 1px solid rgba(191, 54, 12, 0.80) !important;
+            background: rgb(191, 54, 12) !important;
+            background-color: rgba(191, 54, 12, 0.80) !important;
+            &:visited, &:hover, &:active {
                 border: 1px solid rgb(191, 54, 12) !important;
-                border: 1px solid rgba(191, 54, 12, 0.80) !important;
                 background: rgb(191, 54, 12) !important;
-                background-color: rgba(191, 54, 12, 0.80) !important;
             }
     
             &:active:focus {
