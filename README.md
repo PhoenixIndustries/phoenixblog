@@ -42,6 +42,7 @@ Git
 Menus can be edited by opening (/site/config.toml), more examples can be found inside the file.
 
 `weight` - link order in the menu.
+
 `parent` - submenu the link belongs to.
 
 If only a link is needed, ignore submenu, set link in `url` field.
