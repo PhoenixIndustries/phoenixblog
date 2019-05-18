@@ -99,6 +99,13 @@ body {
     }
 }
 
+.wrapper {
+    overflow-y: initial;
+}
+.landing-page .wrapper, .news .section {
+    overflow-y: hidden;
+}
+
 hr {
     border-top: 1px solid $green;
 }
