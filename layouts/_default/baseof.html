@@ -3,7 +3,13 @@
   {{partial "head" . }}
   
 	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{if eq .Title "News"}}{{ replace .Title " " "-" | lower}}{{end}}">
-      {{ if not .IsHome}}
+    <div class="logo-overlay-loader">
+      <div class="logo-container">
+          <img src="/img/logo.svg" alt="">
+          <span class="">manjaro</span>
+      </div>
+    </div> 
+    {{ if not .IsHome}}
         {{ partial "navbar" . }} 
       {{ else }}
         {{ partial "nav-image-header" . }}

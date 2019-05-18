@@ -3,6 +3,12 @@
   {{partial "head" . }}
   
 	<body class="{{ .Params.class | default "support-page" }} sidebar-collapse">
+      <div class="logo-overlay-loader">
+          <div class="logo-container">
+              <img src="/img/logo.svg" alt="">
+              <span class="">manjaro</span>
+          </div>
+        </div>
     {{ partial "navbar" . }}
     
     <div class="{{ .Params.wrapper | default "wrapper" }}">

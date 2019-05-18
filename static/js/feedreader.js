@@ -191,19 +191,22 @@ function feedreader(url) {
                 $('#' + el + ' .modal-body').find("p:contains('Participants:')").remove();
                 
                 if (iter == 24) {
-                    setTimeout(function(){ $(".loader").hide();}, 600);
+                    
                 }  
             }});
         }});
     };
 feedreader(feeds[0]);
 feedreader(feeds[1]);
-setTimeout(function(){ 
-    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
-    }, 3000);
+
 $("#news-grid").imagesLoaded( function(){
     $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
 });
+
+setTimeout(function(){ 
+    $(".logo-overlay-loader").fadeOut();
+    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+    }, 3000);
 
             
         
