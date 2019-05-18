@@ -711,6 +711,23 @@ h1.title::first-letter {
         animation: top-t-bottom 3s;
         animation-iteration-count: 1
     }
+    .social-icons-top a {
+        animation: right-t-left 1s;
+        transform: translate(2000%, -0%);
+        animation-fill-mode: forwards;
+        &:nth-child(1) { 
+            animation-delay: 2s;
+        }
+        &:nth-child(2) { 
+            animation-delay: 2.2s;
+        }
+        &:nth-child(3) { 
+            animation-delay: 2.4s;
+        }
+        &:nth-child(4) { 
+            animation-delay: 2.6s;
+        }
+    }
 } 
 
 @keyframes bottom-t-top {
@@ -725,6 +742,13 @@ h1.title::first-letter {
 @keyframes top-t-bottom {
     0%   { 
         transform: translate(0%, -800%);
+    }
+    100% { transform: translate(0%, 0%);
+    }
+}
+@keyframes right-t-left {
+    0%   { 
+        transform: translate(2000%, -0%);
     }
     100% { transform: translate(0%, 0%);
     }
