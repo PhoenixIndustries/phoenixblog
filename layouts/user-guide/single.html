@@ -19,7 +19,7 @@
 
 <p class="text-center btn-container">
     {{ range $index, $element := .Params.downloadbuttons}}
-  <a href="https://de.osdn.net/projects/manjaro/storage/{{ replace $element " " "-" }}.pdf" class="btn btn-primary btn-success btn-round btn-xl" target="_blank" >{{ $element }}</a>
+  <a href="https://de.osdn.net/projects/manjaro/storage/{{ replace $element " " "-" }}.pdf" class="btn btn-xl" target="_blank" >{{ $element }}</a>
   {{ end }}
 <p>
 

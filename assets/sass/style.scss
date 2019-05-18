@@ -957,6 +957,9 @@ h1.title::first-letter {
     
     .card {
         overflow: visible;
+        background: #2c2c2c;
+        color: #cecccc;
+
         .card-header {
             padding: 0;
         }
@@ -971,11 +974,27 @@ h1.title::first-letter {
     } 
     .btn-container {
         margin-bottom: 140px;
+
+        .btn {
+            font-weight: bold;
+            &, &:visited, &:hover, &:active {
+                border: 1px solid rgb(191, 54, 12) !important;
+                border: 1px solid rgba(191, 54, 12, 0.80) !important;
+                background: rgb(191, 54, 12) !important;
+                background-color: rgba(191, 54, 12, 0.80) !important;
+            }
+    
+            &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgb(191, 54, 12) !important;
+                box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
+            }
+        }
     }  
     h4 {
         margin-top: 60px;
-        color: $green !important;
+        color: #cecccc !important;
     }
+    
 }
 
 .news {
