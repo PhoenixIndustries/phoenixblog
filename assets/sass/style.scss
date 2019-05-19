@@ -7,6 +7,7 @@ $svg-icon-size: 62px;
     position: absolute;
     background: #262627;
     z-index: 999999;
+    position: fixed;
     img {
         width: 96px;
         height: 96px;
@@ -406,7 +407,16 @@ h1.title::first-letter {
 }
 
 .landing-page {
-
+    
+    .twitter-container {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 400px;
+        z-index: 999;
+    }
     
     #buorg  {
         border: 0px solid white !important;
@@ -1009,6 +1019,38 @@ h1.title::first-letter {
 }
 
 .news {
+
+    .social-icons-top {
+        text-align: right;
+        position: relative;
+        margin-top: -43px;
+        .btn {
+            height: 2.075rem;
+            min-width: 2.075rem;
+            width: 2.075rem;     
+        }
+        i {
+            font-size: 14px !important;
+            padding-top: 11px;
+            color: white;
+        }
+        .facebook {
+            background-color: #44609c;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #44609c;
+            }
+        }
+        .twitter {
+            background-color: #1da1f2;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: #1da1f2;
+            }
+        }
+    }
 
     #updatesModal {
         .modal-header {

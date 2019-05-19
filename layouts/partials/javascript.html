@@ -40,6 +40,7 @@
         setTimeout(function(){ 
             $(".progress-bar").css("width", "100%");
             $(".logo-overlay-loader").fadeOut();
+            $("body").css("overflow", "visible");
          }, 600);
          setTimeout(function(){ 
             $(".social-animation").removeClass("social-animation");
@@ -94,6 +95,7 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
 {{ end }}  
 <!-- do not run on news page -->
 <script>
+$("body").css("overflow", "hidden");
 addBackToTop({
         diameter: 56,
         backgroundColor: '#44883C',

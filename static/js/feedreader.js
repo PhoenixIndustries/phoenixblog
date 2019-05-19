@@ -29,6 +29,12 @@ function postTypeButtons() {
     return postTypeButtons
 }
 
+function stopModal(el) {
+    $(el).on('click', function (e) {
+        e.stopPropagation();  
+        });
+}
+
 $(".section .container").prepend(postTypeButtons());
 
 $('#news-grid').isotope({
@@ -133,7 +139,7 @@ function feedreader(url) {
                     }         
                 }
                 
-                function buildArticleTemplate(el, img, date, title, shortText) {
+                function buildArticleTemplate(el, img, date, title, shortText, link) {
                     
                     var $article = $(`
                         <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
@@ -149,7 +155,15 @@ function feedreader(url) {
                                         <span class="date">` + date + `</date>
                                     </div>
                                     <h5 class="card-title">` + title + `</h5>
-                                    <div class="card-body " data-background-color="black">              
+                                    <div class="card-body " data-background-color="black"> 
+                                    <div id="content" class="social-icons-top">       
+                                    <a onclick="$(this).attr('href');" data-toggle="tooltip" data-placement="top" title="Share" href="https://twitter.com/intent/tweet?via=ManjaroLinux&hashtags=Manjaro,Linux&text=` + title + `&url=` + link + `"  target="_blank" class="btn btn-icon btn-round twitter"> 
+                                      <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a onclick="" data-toggle="tooltip" data-placement="top" title="Share" href="https://www.facebook.com/sharer/sharer.php?u=` + link + `"  target="_blank" class="btn btn-icon btn-round facebook">
+                                      <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>             
                                         <p class="card-text">` + shortText + `</p>
                                     </div>
                                 </div>
@@ -184,7 +198,7 @@ function feedreader(url) {
                 $("#news-grid").isotope( "insert", buildArticleTemplate(el, img, item.date, item.title, shortText, item.link) );//.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
                 $("#news-grid").append(buildModalTemplate(el, item.title, item.description));
                 
-
+                stopModal($('#unique' + el + ' .social-icons-top a'));
                 $('#' + el + ' .modal-body').find(".meta").remove();
                 $('#' + el + ' .modal-body').find(".poll").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Posts:')").remove();
@@ -233,8 +247,7 @@ setTimeout(function(){
 
 setTimeout(function(){ 
     $(".logo-overlay-loader").fadeOut();
+    $("body").css("overflow", "visible");
     $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
-    }, 3000);
-
-            
+    }, 3000);           
         
