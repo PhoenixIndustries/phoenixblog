@@ -992,6 +992,7 @@ h1.title::first-letter {
             text-align: left;
         }
     } 
+    
     .btn-container {
         margin-bottom: -10px;
 
@@ -1010,16 +1011,17 @@ h1.title::first-letter {
                 box-shadow: 0 0 0 0.2rem rgb(191, 54, 12) !important;
                 box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5) !important;
             }
+
+            .fas {
+                margin-left: 15px;
+            }
         }
     }  
+    
     h4 {
         margin-top: 60px;
         color: #cecccc !important;
-    }
-    .fas {
-        margin-left: 15px;
-    }
-    
+    }    
 }
 
 .news {
