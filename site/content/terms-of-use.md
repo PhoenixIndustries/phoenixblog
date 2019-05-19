@@ -26,7 +26,6 @@ We would like to thank everyone who has enabled us to create Manjaro and/or cont
 * The XFCE Project, for their lightweight desktop environment we use as default.
 * The KDE Project, for creating the most powerful desktop environment on planet earth.
 * The Gnome Project, for another great desktop environment.
-* Michael Towers (gradgrind) for creating the awesome [larch](http://larch.berlios.de/) liveCD scripts
 * All people providing download and package mirrors. Without you we wouldn't be here.
 * All testers who took the mission to test our stuff with patience.
 * All people actually reading documentation
