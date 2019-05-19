@@ -963,7 +963,8 @@ h1.title::first-letter {
     .section {
         padding: 0;
         padding-top: 70px;
-        height: 91vh;
+        height: 100%;
+        min-height: 91vh !important;
     }
 
     .section .container:nth-child(1) {
