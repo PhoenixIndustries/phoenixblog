@@ -8,7 +8,7 @@ images = ["philip", "bernhard", "stefano"]
 
 Lead Developer
 
-He started the project together with Roland and Guillaume back in 2011. In mid 2013 Manjaro was still in beta stage! Now he is working with the community to build an amazing Linux distribution.
+Started the project together with Roland and Guillaume back in 2011. In mid 2013 Manjaro was still in beta stage! Now he is working with the community to build an amazing Linux distribution.
 
 ésplit
 
@@ -16,7 +16,7 @@ He started the project together with Roland and Guillaume back in 2011. In mid 2
 
 Developer
 
-Coordinating Community Editions with a focus on Cinnamon, Deepin and i3. He works on manjaro-architect and the Manjaro Dev tools, he also maintains real-time kernels and does desktop optimisation for official hardware projects.
+Coordinating Community Editions with a focus on Cinnamon, Deepin and i3. He is involved in our development tools, package maintaining and optimisation within our hardware projects.
 
 ésplit
 
@@ -24,4 +24,4 @@ Coordinating Community Editions with a focus on Cinnamon, Deepin and i3. He work
 
 Developer
 
- Maintainer of Gnome edition and involved in packaging. Stefano is also involved in the manjaro dev tools and developed some themes and features for Gnome edition. When finding time he also  take a look at Budgie and Mate editions.
+Supporting the Development in multiple ways. Gnome is his daily desktop environment. Talk to him about packaging, Gnome, Budgie and GTK Themes.
