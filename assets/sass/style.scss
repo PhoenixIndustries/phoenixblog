@@ -950,11 +950,12 @@ h1.title::first-letter {
 
     .section {
         padding: 0;
-        padding-top: 90px;
+        padding-top: 70px;
     }
 
-    .container:nth-child(1) {
+    .section .container:nth-child(1) {
         text-align: center;
+        margin-bottom: 90px;
     }
     li {
         text-align: left;
@@ -978,7 +979,7 @@ h1.title::first-letter {
         }
     } 
     .btn-container {
-        margin-bottom: 140px;
+        margin-bottom: -10px;
 
         .btn {
             font-weight: bold;
@@ -1000,6 +1001,9 @@ h1.title::first-letter {
     h4 {
         margin-top: 60px;
         color: #cecccc !important;
+    }
+    .fas {
+        margin-left: 15px;
     }
     
 }

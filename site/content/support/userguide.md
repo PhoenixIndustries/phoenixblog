@@ -13,4 +13,4 @@ fileName_en = "Manjaro-User-Guide"
 name_en = "User's Guide"
 downloadLink = "https://de.osdn.net/projects/manjaro/storage/"
 +++
-Our team and our community proudly present you the Manjaro User Guide, a over 100 page long book with everything new and advanced users can know about Manjaro. We cover following topics in our guide:
+Our Team and and Community proudly present's you, the Manjaro User Guide. Over 100 page book with everything a new or advanced user can learn about Manjaro. We cover the topics bellow in this guide:
