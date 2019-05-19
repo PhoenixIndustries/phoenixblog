@@ -201,6 +201,37 @@ $("#news-grid").imagesLoaded( function(){
 });
 
 setTimeout(function(){ 
+    $(".progress-bar").css("width", "10%");
+ }, 550);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "20%");
+ }, 1000);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "30%");
+ }, 1300);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "40%");
+ }, 1600);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "50%");
+ }, 1800);
+setTimeout(function(){ 
+    $(".progress-bar").css("width", "60%");
+ }, 2000);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "70%");
+ }, 2200);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "80%");
+ }, 2400);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "92%");
+ }, 2600);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "100%");
+ }, 2800);
+
+setTimeout(function(){ 
     $(".logo-overlay-loader").fadeOut();
     $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
     }, 3000);

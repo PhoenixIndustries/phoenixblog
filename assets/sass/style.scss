@@ -9,7 +9,9 @@ $svg-icon-size: 62px;
     z-index: 999999;
     img {
         width: 96px;
-        height: 96px !important;
+        height: 96px;
+        animation: loader 2s infinite linear;
+        margin-bottom: 5px;
     }
     .logo-container {
         position:absolute;
@@ -18,15 +20,18 @@ $svg-icon-size: 62px;
         margin:auto;
         right: 0;
         left: 0;
-        animation: loader 2s infinite linear;
         width: 96px;
-        height: 126px;            
+        height: 160px;            
     }
     span {
         font-weight: bold;
         font-family: 'Comfortaa', cursive;
         font-size: 1.6em;
         color: white !important;
+    }
+    .progress {
+        margin-top: 5px;
+        height: 3px;
     }
 }
 
