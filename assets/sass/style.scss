@@ -147,8 +147,7 @@ a, .description a {
     z-index: 99;
 }
 
-.section {
-        
+.section {        
     p {
         text-align: justify;
     }
@@ -882,7 +881,10 @@ h1.title::first-letter {
     } 
     a img:first-child {
         margin-bottom: 30px;
-    }    
+    }  
+    .section {
+        min-height: 91vh !important;
+    }  
 }
 
 .privacy-policy, .terms-of-use {
@@ -938,7 +940,7 @@ h1.title::first-letter {
     .section {
         padding: 0;
         padding-top: 90px;
-        min-height: 93vh;
+        min-height: 91vh !important;
     }
 }
 
@@ -961,6 +963,7 @@ h1.title::first-letter {
     .section {
         padding: 0;
         padding-top: 70px;
+        height: 91vh;
     }
 
     .section .container:nth-child(1) {
