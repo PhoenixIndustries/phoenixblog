@@ -247,7 +247,6 @@ setTimeout(function(){
 
 setTimeout(function(){ 
     $(".logo-overlay-loader").fadeOut();
-    $("body").css("overflow", "visible");
     $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
     }, 3000);           
         
