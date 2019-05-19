@@ -203,16 +203,16 @@ function feedreader(url) {
                 $('#' + el + ' .modal-body').find(".poll").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Posts:')").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Participants:')").remove();
+
+                $("#news-grid #unique" + el).imagesLoaded( function(){
+                    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+                });
                 
             }});
         }});
     };
 feedreader(feeds[0]);
 feedreader(feeds[1]);
-
-$("#news-grid").imagesLoaded( function(){
-    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
-});
 
 setTimeout(function(){ 
     $(".progress-bar").css("width", "10%");
@@ -247,6 +247,5 @@ setTimeout(function(){
 
 setTimeout(function(){ 
     $(".logo-overlay-loader").fadeOut();
-    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
     }, 3000);           
         
