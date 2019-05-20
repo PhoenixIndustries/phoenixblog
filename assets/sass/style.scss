@@ -1034,7 +1034,7 @@ h1.title::first-letter {
         }
         i {
             font-size: 14px !important;
-            padding-top: 11px;
+            padding-top: 10px;
             color: white;
         }
         .facebook {
@@ -1043,6 +1043,7 @@ h1.title::first-letter {
             &:active,
             &:focus {
                 background-color: #44609c;
+                box-shadow: 0 0 0 0.2rem rgba(68, 96, 156,.5) !important;
             }
         }
         .twitter {
@@ -1051,6 +1052,7 @@ h1.title::first-letter {
             &:active,
             &:focus {
                 background-color: #1da1f2;
+                box-shadow: 0 0 0 0.2rem rgba(29, 161, 242,.5) !important;
             }
         }
     }
