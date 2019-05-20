@@ -1023,6 +1023,15 @@ h1.title::first-letter {
 
 .news {
 
+    .gifffer-play-button {
+        background: #0d5f4f !important;
+        background-color: rgba(13, 95, 79, 0.8) !important;
+        div {
+            border-left: 14px solid white !important;
+            border-left: 14px solid rgba(255, 255, 255,0.8) !important;
+        }
+    }
+
     .social-icons-top {
         text-align: right;
         position: relative;

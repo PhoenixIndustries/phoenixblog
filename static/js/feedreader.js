@@ -128,6 +128,9 @@ function feedreader(url) {
         
                     if (typeof img === 'undefined') {
                         return ""
+                    } else if (img.includes(".gif")) {
+                        imageTemplate = `<img class="card-img-top" data-gifffer="` + img + `" src="` + img + `"alt="Post Image">`
+                        return imageTemplate
                     } else if (img.includes("emoji")) {
                         return ""
                     } else if (img.includes(".ico")) {
@@ -198,6 +201,7 @@ function feedreader(url) {
                 $("#news-grid").isotope( "insert", buildArticleTemplate(el, img, item.date, item.title, shortText, item.link) );//.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
                 $("#news-grid").append(buildModalTemplate(el, item.title, item.description));
                 
+                Gifffer();
                 stopModal($('#unique' + el + ' .social-icons-top a'));
                 $('#' + el + ' .modal-body').find(".meta").remove();
                 $('#' + el + ' .modal-body').find(".poll").remove();
