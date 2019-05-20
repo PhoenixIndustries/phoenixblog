@@ -1101,6 +1101,7 @@ h1.title::first-letter {
         top: 0;
         border-bottom: 60px solid transparent;
         border-right: 100px solid #e91e63;
+        z-index: 1;
     }
     .container .btn-success{
         background-color: $green;
@@ -1176,8 +1177,8 @@ h1.title::first-letter {
             color: white;
             font-size: 12px;
             font-weight: bold;
-            transform: rotate(100dg);
             transform: rotate(32deg);
+            z-index: 2;
         }
         .card-body {
             min-height: auto;
