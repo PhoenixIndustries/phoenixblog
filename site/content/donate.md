@@ -4,8 +4,8 @@ draft = false
 title = "Donate"
 type = "donate"
 button_donate_text = "Using Paypal"
-description = "How can you help keep Manjaro Linux running by donating"
-keywords = "donating manjaro linux, helping manjaro linux, contribute manjaro linux"
+meta_description = "How can you help keep Manjaro Linux running by donating"
+meta_keywords = "donating manjaro linux, helping manjaro linux, contribute manjaro linux"
 +++
 
 ### Why does Manjaro ask for donations

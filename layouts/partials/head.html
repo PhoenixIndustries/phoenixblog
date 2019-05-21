@@ -54,20 +54,20 @@
     {{ $cssTarget    := "/css/style.css" }}
     {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
     {{ if $inServerMode }}
-    {{ $css := $sass | toCSS $cssOpts | fingerprint}}
+    {{ $css := $sass | toCSS $cssOpts | fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink  | absURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
     {{ else }}
-    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS }}
+    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | resources.Minify }}
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="preload" as="style"/>
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="stylesheet" media="screen"/>
     {{ end }}
 
     <!--  Essential META Tags -->
-    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.meta_description }}{{else}}{{.Params.meta_description}}{{end}}" />
+    <meta name="keywords" content="{{ with .Params.meta_keywords }}{{ . }}{{ else }}{{ .Site.Params.meta_keywords }}{{ end }}">
 
     <meta property="og:title" content="Manjaro - {{ .Title }}">
-    <meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+    <meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.meta_description }}{{else}}{{.Params.meta_description}}{{end}}">
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta name="twitter:card" content="{{ .Params.twitter_summary }}">

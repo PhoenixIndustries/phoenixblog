@@ -22,8 +22,8 @@ DefaultContentLanguage = "en-us"
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
-    description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
-    keywords = "manjaro linux, based on arch linux, free operating system"
+    meta_description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
+    meta_keywords = "manjaro linux, based on arch linux, free operating system"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
