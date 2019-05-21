@@ -1,6 +1,15 @@
 $green:#44883c;
 $svg-icon-size: 62px;
 
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa-Bold.ttf') format('truetype'),
+         url('/fonts/Comfortaa-Bold.woff') format('woff'),
+         url('/fonts/Comfortaa-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .logo-overlay-loader {
     width: 100%;
     height: 100%;
@@ -13,6 +22,7 @@ $svg-icon-size: 62px;
         height: 96px;
         animation: loader 2s infinite linear;
         margin-bottom: 5px;
+        will-change: transform;
     }
     .logo-container {
         position:absolute;
@@ -36,7 +46,7 @@ $svg-icon-size: 62px;
     }
 }
 
-@-webkit-keyframes loader {
+@keyframes loader {
   0% {
     transform: rotateY(0deg);
   }
@@ -51,15 +61,6 @@ $svg-icon-size: 62px;
          url('/fonts/Comfortaa-Regular.woff') format('woff'), /* Pretty Modern Browsers */
          url('/fonts/Comfortaa-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
-
-  @font-face {
-    font-family: 'Comfortaa';
-    src: url('/fonts/Comfortaa-Bold.ttf') format('truetype'),
-         url('/fonts/Comfortaa-Bold.woff') format('woff'),
-         url('/fonts/Comfortaa-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Comfortaa';
@@ -728,16 +729,19 @@ h1.title::first-letter {
     .title-container {
             animation: bottom-t-top 2s;
             position: relative;  
-            animation-iteration-count: 1                 
+            animation-iteration-count: 1;
+            will-change: transform;               
     }
     .navbar {
         animation: top-t-bottom 3s;
-        animation-iteration-count: 1
+        animation-iteration-count: 1;
+        will-change: transform;
     }
     .social-animation a {
         animation: right-t-left 1s;
         transform: translate(2000%, -0%);
         animation-fill-mode: forwards;
+        will-change: transform;
         &:nth-child(1) { 
             animation-delay: 2s;
         }
@@ -1023,6 +1027,43 @@ h1.title::first-letter {
 
 .news {
 
+    .btn-rotate {
+        will-change: transform;
+        transition: transform 1s;
+        transform: rotate(180deg) !important;
+    }
+
+    #btn-layout {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transform: rotate(90deg);
+        will-change: transform;
+        transition: transform .4s;
+        .fas{
+        font-size: 28px !important;
+        color: #5d595a;
+        }
+        &:active, &:hover, &:focus {
+            outline: none;
+        }
+    }
+    .btn-group {
+        margin-bottom: -13px;
+        margin-top: -26px;
+    }
+
+    .horizontal {
+        
+        .grid-item {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+        img, button {
+            display: none !important;
+        }
+    }
+
     .gifffer-play-button {
         background: #0d5f4f !important;
         background-color: rgba(13, 95, 79, 0.8) !important;
@@ -1030,6 +1071,11 @@ h1.title::first-letter {
             border-left: 14px solid white !important;
             border-left: 14px solid rgba(255, 255, 255,0.8) !important;
         }
+    }
+
+    .grid-item {
+        transition: background 0.4s, max-width .1s;
+        will-change: transform;
     }
 
     .social-icons-top {
@@ -1082,7 +1128,7 @@ h1.title::first-letter {
     }
     .testing .card-title {
         &, &:hover, &:active &:focus {
-            border-bottom: 3px solid #ffd600; 
+            border-bottom: 3px solid #ffc107; 
         }
     }
     .unstable .card-title {
@@ -1092,16 +1138,19 @@ h1.title::first-letter {
 
     }
 
-    .view.overlay:before {
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border-bottom: 60px solid transparent;
-        border-right: 100px solid #e91e63;
-        z-index: 1;
+    .view.overlay {
+        overflow: hidden;    
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-bottom: 60px solid transparent;
+            border-right: 100px solid #e91e63;
+            z-index: 1;
+        }
     }
     .container .btn-success{
         background-color: $green;

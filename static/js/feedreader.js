@@ -1,8 +1,8 @@
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
+    <button id="btn-layout"><i class="fas fa-bars"></i></button>
         <div class="btn-group" role="group" aria-label="button group">
-            <button class="btn-post-type btn-sm btn disabled">Sort:</button>
             <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
             <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
             <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
@@ -26,7 +26,7 @@ function postTypeButtons() {
         </div>        
     </div>`
     )
-    return postTypeButtons
+    return postTypeButtons 
 }
 
 function stopModal(el) {
@@ -52,14 +52,7 @@ $('#news-grid').isotope({
 function selectPostType(button, el) {
     $(".btn-post-type").removeClass("btn-success");
     $(button).addClass("btn-success");
-    $(".blog-post").removeClass("zoom").addClass("transitionFix");
-    function callback() {
-        setTimeout(function(){
-            $(".blog-post").removeClass("transitionFix").addClass("zoom");
-        }, 550);
-        
-    }
-    $("#news-grid").isotope({ filter: el }, callback());
+    $("#news-grid").isotope({ filter: el });
 }
 
 var feeds = [
@@ -145,8 +138,8 @@ function feedreader(url) {
                 function buildArticleTemplate(el, img, date, title, shortText, link) {
                     
                     var $article = $(`
-                        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
-                            <div class="card">
+                        <article id='unique` + el + `' class='blog-post grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
+                            <div class="card zoom">
                                 <div data-toggle="modal" data-target='#` + el + `'>
                                     <div class="view overlay">` +
                                     filterImages(img) + `
@@ -157,6 +150,7 @@ function feedreader(url) {
                                     <div id="date" class="text-right">
                                         <span class="date">` + date + `</date>
                                     </div>
+                                    <span>
                                     <h5 class="card-title">` + title + `</h5>
                                     <div class="card-body " data-background-color="black"> 
                                     <div id="content" class="social-icons-top">       
@@ -166,6 +160,7 @@ function feedreader(url) {
                                     <a onclick="" data-toggle="tooltip" data-placement="top" title="Share" href="https://www.facebook.com/sharer/sharer.php?u=` + link + `"  target="_blank" class="btn btn-icon btn-round facebook">
                                       <i class="fab fa-facebook-f"></i>
                                     </a>
+                                    </span>
                                 </div>             
                                         <p class="card-text">` + shortText + `</p>
                                     </div>
@@ -218,6 +213,16 @@ function feedreader(url) {
 feedreader(feeds[0]);
 feedreader(feeds[1]);
 
+$("#news-grid article").imagesLoaded( function(){
+    $("#btn-layout").click(function(){ 
+        $("#btn-layout").toggleClass("btn-rotate");
+        $("#news-grid").toggleClass("horizontal");
+        setTimeout(function(){ 
+            $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' }); 
+         }, 400);
+      });
+});
+
 setTimeout(function(){ 
     $(".progress-bar").css("width", "10%");
  }, 550);
@@ -251,5 +256,6 @@ setTimeout(function(){
 
 setTimeout(function(){ 
     $(".logo-overlay-loader").fadeOut();
-    }, 3000);           
+    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+    }, 3000);   
         
