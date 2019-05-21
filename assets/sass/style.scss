@@ -154,7 +154,9 @@ a, .description a {
 
 .landing-page .section,
 .news .section,
-.download-page .section {
+.download-page .section,
+.user-guide .section,
+.useful-for-everyone .section {
     background-image: url(/img/bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -905,9 +907,6 @@ h1.title::first-letter {
         }
         .list-group {
             min-height: 235px;
-            li:not(:last-child) {
-            border-bottom: 1px solid $green;
-            }
             li:last-child {
                 border-bottom: 1px solid white;
                 }
@@ -922,6 +921,11 @@ h1.title::first-letter {
     }
     .btn {
         margin: 0;
+    }
+    .btn-success {
+        &:hover, &:active, a:focus {
+           text-decoration: underline;
+        }
     }
 }
 
