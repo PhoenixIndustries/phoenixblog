@@ -106,10 +106,12 @@ function feedreader(url) {
                             return "testing updates"
                             } else if (titleHasString("stable update")) {
                                 return "stable updates"
-                                }else if (titleHasString("release") || 
-                            titleHasString("iso") ||
-                            titleHasString("download")) {
-                        return "release"
+                                }else if (
+                                    titleHasString("release") || 
+                                    titleHasString("iso") ||
+                                    titleHasString("preview") ||
+                                    titleHasString("download")) {
+                                        return "release"
                     } else {
                         return "post-news"
                     }
