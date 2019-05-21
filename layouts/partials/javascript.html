@@ -174,19 +174,21 @@ function element_is_in_tags(el, tags) {
 function show_only_editions_with_tags(tags) {
 
     var els = document.getElementsByClassName('editions-box-hideable');
-
-    [].forEach.call(els, function (el)
-    {
+    [].forEach.call(els, function (el) {
         if (tags.length == 0) {
-            el.style.display = "none";
+            $(".editions-grid").fadeOut("slow");
+            $(el).hide();
         }
         else {
-
             if(element_is_in_tags(el, tags)) {
-                el.style.display = "inline-block";
-            }
-            else {
-                el.style.display = "none";
+                $(".editions-grid").fadeOut("slow").promise().done(function () {
+                    $(el).show();
+                    $(".editions-grid").fadeIn("slow");
+                });  
+            } else {
+                $(".editions-grid").fadeOut("slow").promise().done(function () {
+                $(el).hide();
+            });
             }
         }
     });
