@@ -59,12 +59,14 @@
                   <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
                 </div>
                 <div class="bottom">
-                  <div style="margin-top: auto; margin-bottom: 10px;">
-                    <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" onClick="download_link = '{{ .Params.download_x86 }}'" target="_blank" data-toggle="modal" data-target="#download-how-to-try">{{ .Site.Params.download_edition.download_button }}</a>
+                  <div style="margin-top: auto; margin-bottom: 10px;font-size: 12px;">
+                    <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" onClick="download_link = '{{ .Params.download_x86 }}'" target="_blank" data-toggle="modal" data-target="#download-how-to-try">
+                      {{ .Site.Params.download_edition.download_button }}</a>
+                    <p></p>
                     {{ if .Params.download_x86_torrent }}
-                      <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
+                      {{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br>
                     {{ else }}
-                      <span>Torrent Not Available.</span><br>
+                      <br><span>Torrent Not Available.</span><br>
                     {{ end }}
                     <div>
                       <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
