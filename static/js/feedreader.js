@@ -1,25 +1,28 @@
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
-    <button id="btn-layout"><i class="fas fa-bars"></i></button>
         <div class="btn-group" role="group" aria-label="button group">
-            <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
+            <button id="btn-updates" onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
             <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
             <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
         </div>
+        <button id="btn-layout">
+          <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Classic Layout" class="fas fa-grip-lines"></i>
+          <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Modern Layout" class="fas fa-grip-horizontal"></i>
+        </button>
         <div id="updatesModal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Showing All Updates, Chose a Branch to sort them.</h2>
+                        <h2 class="modal-title">Chose a Branch.</h2>
                     </div>
                     <div class="modal-footer">
                         <div class="btn-group" role="group" aria-label="button group">
                             <button onclick="selectPostType(this, '.stable');" class="btn-post-type btn btn-sm" data-dismiss="modal">Stable</button>
                             <button onclick="selectPostType(this, '.testing');" class="btn-post-type btn-sm btn" data-dismiss="modal">Testing</button>
                             <button onclick="selectPostType(this, '.unstable');" class="btn-post-type btn-sm btn" data-dismiss="modal">Unstable</button>
+                            <button type="button" class="btn btn-sm btn" data-dismiss="modal">Ignore</button>
                         </div>
-                        <button type="button" class="btn btn-sm btn" data-dismiss="modal">Ignore</button>
                     </div>
                 </div>
             </div>
@@ -49,10 +52,19 @@ $('#news-grid').isotope({
     sortAscending : true
 });
 
-function selectPostType(button, el) {
+function selectPostType(button, branch) {
     $(".btn-post-type").removeClass("btn-success");
     $(button).addClass("btn-success");
-    $("#news-grid").isotope({ filter: el });
+    if (branch == ".unstable") {
+        $("#btn-updates").css("background-color", "#d50000");
+    } else if (branch == ".testing") {
+        $("#btn-updates").css("background-color", "#ffab00");
+    } else if (branch == ".stable") {
+        $("#btn-updates").css("background-color", "#009688");
+    } else {
+        $("#btn-updates").css("background-color", "#888");
+    }
+    $("#news-grid").isotope({ filter: branch, sortBy: 'original-order' });
 }
 
 var feeds = [
@@ -81,9 +93,9 @@ function feedreader(url) {
                 
                 var $this = $(this),
                     item = {
-                        title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
+                        title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)|/g, ""),
                         category:    $this.find("category").text(),
-                        description: $this.find("description").text().replace(/\]]>/g, "").replace("Read full topic", "Go to this topic in the forum."),
+                        description: $this.find("description").text().replace(/\]]>/g, "").replace("Read full topic", "Topic in the forum."),
                         date:        $this.find("pubDate").text().replace(/\+0000|,/g, "").slice(0, -9).slice(4, 15),
                         link:        $this.find("link").text(),
                     };
@@ -136,7 +148,7 @@ function feedreader(url) {
                         return imageTemplate
                     }         
                 }
-                
+
                 function buildArticleTemplate(el, img, date, title, shortText, link) {
                     
                     var $article = $(`
@@ -215,15 +227,27 @@ function feedreader(url) {
 feedreader(feeds[0]);
 feedreader(feeds[1]);
 
-$("#news-grid article").imagesLoaded( function(){
-    $("#btn-layout").click(function(){ 
-        $("#btn-layout").toggleClass("btn-rotate");
-        $("#news-grid").toggleClass("horizontal");
-        setTimeout(function(){ 
-            $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' }); 
-         }, 400);
-      });
+function layoutChanged() {
+    $("#news-grid").toggleClass("horizontal");
+    setTimeout(function(){ 
+        $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' }); 
+     }, 400);
+}
+
+$(".fa-grip-lines").click(function(){ 
+    layoutChanged();
+    $(this).fadeOut().promise().done(function() {
+        $(".fa-grip-horizontal").fadeIn();
+    });
 });
+
+$(".fa-grip-horizontal").click(function(){ 
+    layoutChanged();
+    $(this).fadeOut().promise().done(function() {
+        $(".fa-grip-lines").fadeIn();
+    });
+});
+
 
 setTimeout(function(){ 
     $(".progress-bar").css("width", "10%");

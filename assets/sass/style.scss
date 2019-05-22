@@ -1033,22 +1033,17 @@ h1.title::first-letter {
 
 .news {
 
-    .btn-rotate {
-        will-change: transform;
-        transition: transform 1s;
-        transform: rotate(180deg) !important;
-    }
-
     #btn-layout {
         background: transparent;
         border: none;
         cursor: pointer;
-        transform: rotate(90deg);
-        will-change: transform;
-        transition: transform .4s;
-        .fas{
+        width: 28px;
+        .fas {
         font-size: 28px !important;
         color: #5d595a;
+        }
+        .fa-grip-horizontal {
+            display: none;
         }
         &:active, &:hover, &:focus {
             outline: none;
@@ -1122,6 +1117,9 @@ h1.title::first-letter {
         .modal-header {
             padding-top: 14px;
         }
+        .modal-title, .btn-group {
+            margin: 0 auto;
+        }
         h2 {
             margin-bottom: 0;
         }
@@ -1129,12 +1127,12 @@ h1.title::first-letter {
 
     .stable .card-title {
         &, &:hover, &:active &:focus {
-            border-bottom: 3px solid #00c853; 
+            border-bottom: 3px solid #009688; 
         }
     }
     .testing .card-title {
         &, &:hover, &:active &:focus {
-            border-bottom: 3px solid #ffc107; 
+            border-bottom: 3px solid #ffab00; 
         }
     }
     .unstable .card-title {
@@ -1159,7 +1157,7 @@ h1.title::first-letter {
         }
     }
     .container .btn-success{
-        background-color: $green;
+        background-color: $green !important;
     }
     
     .read{
