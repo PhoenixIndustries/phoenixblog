@@ -14,7 +14,7 @@ shortDescription = "Extremely resource efficient and configurable window manager
 Thumbnail = "bspwm.jpg"
 Version = "18.0.4"
 date = "2019-04-06T14:53+01:00"
-title = "Bpspwm"
+title = "Bspwm"
 type="download-edition"
 weight = "5"
 +++
