@@ -2,7 +2,7 @@
 Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-awesome-18.0-stable-x86_64.iso"
 Download_x64_Checksum = "004032021f803f6ed463dd8704bee30b8dfde39b"
 Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-awesome-18.0-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-awesome-18.0-stable-x86_64.iso.torrent"
+Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""

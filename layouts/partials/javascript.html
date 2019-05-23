@@ -21,7 +21,29 @@
 <script src="{{ "js/contact.js" | relURL }}" ></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function() { 
+        setTimeout(function(){ 
+            $(".progress-bar").css("width", "30%");
+         }, 100);
+         setTimeout(function(){ 
+            $(".progress-bar").css("width", "45%");
+         }, 200);
+         setTimeout(function(){ 
+            $(".progress-bar").css("width", "65%");
+         }, 300);
+         setTimeout(function(){ 
+            $(".progress-bar").css("width", "84%");
+         }, 400);
+         setTimeout(function(){ 
+            $(".progress-bar").css("width", "96%");
+         }, 460);
+        setTimeout(function(){ 
+            $(".progress-bar").css("width", "100%");
+            $(".logo-overlay-loader").fadeOut();
+         }, 600); 
+         setTimeout(function(){ 
+            $(".social-animation").removeClass("social-animation");
+         }, 5000);
 // hide page title on scroll
 if ($( window ).width() > 992) {
       $(window).scroll(function() {
@@ -84,8 +106,9 @@ addBackToTop({
 <script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
 <script src="/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 <script src="/js/feedreader.js" type="text/javascript"></script>
-
+<script src="/js/gifffer.min.js" type="text/javascript"></script>
 {{ end }}
+
 {{ if .IsHome }}
 <script>
 function scrollToContent() {
@@ -107,13 +130,14 @@ $(window).one("scroll", function(){
     style:"corner",
     api:2019.05,
     text: `
-    <p class='black-text'>Your browser {brow_name} is out of date.<p>
+    <p class='black-text'>Your browser engine {brow_name} is out of date.<p>
     <p>Update your browser or install a new one for more security, speed and best experience on manjaro.org and other websites.</p>
     <p class='black-text'>Tip: In Manjaro you can update your browser using Pamac or Octopi.</p>
-    <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">More Info</a>
+    <a id='bourgul' href='http://outdatedbrowser.com/en' target="_blank">Browsers Info</a>
     <a {ignore_but}>Ignore</a>
     `,
-    test: false }; 
+    {{ if .Site.IsServer }}test: true{{ else }}test: false{{ end }}
+    }; 
     function $buo_f(){ 
      var e = document.createElement("script"); 
      e.src = "//browser-update.org/update.min.js"; 
@@ -150,19 +174,21 @@ function element_is_in_tags(el, tags) {
 function show_only_editions_with_tags(tags) {
 
     var els = document.getElementsByClassName('editions-box-hideable');
-
-    [].forEach.call(els, function (el)
-    {
+    [].forEach.call(els, function (el) {
         if (tags.length == 0) {
-            el.style.display = "none";
+            $(".editions-grid").fadeOut("slow");
+            $(el).hide();
         }
         else {
-
             if(element_is_in_tags(el, tags)) {
-                el.style.display = "inline-block";
-            }
-            else {
-                el.style.display = "none";
+                $(".editions-grid").fadeOut("slow").promise().done(function () {
+                    $(el).show();
+                    $(".editions-grid").fadeIn("slow");
+                });  
+            } else {
+                $(".editions-grid").fadeOut("slow").promise().done(function () {
+                $(el).hide();
+            });
             }
         }
     });
