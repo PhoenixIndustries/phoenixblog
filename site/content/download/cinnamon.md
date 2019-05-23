@@ -2,11 +2,11 @@
 Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-x86_64.iso"
 Download_x64_Checksum = "96dd0f5b4d5ec9eba65ae9bc86c843b85915f02b"
 Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.3-stable-x86_64.iso.torrent"
+Download_x64_Torrent = ""
 Download_x86 = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-minimal-x86_64.iso"
 Download_x86_Checksum = "faf43bf8367587d6c7c105e2bfc70c1ab1f30155"
 Download_x86_Sig = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.4-stable-minimalx86_64.iso.sig"
-Download_x86_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-cinnamon-18.0.3-stable-minimal-x86_64.iso.torrent"
+Download_x86_Torrent = ""
 Name = "Cinnamon"
 Screenshot = "cinnamon-full.jpg"
 Tags = [ "community" ]
