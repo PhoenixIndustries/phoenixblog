@@ -1,9 +1,9 @@
 {{ if eq .Type "hardware" }}
 
     <div class="container">
-        <div class="row py-5">
+        <div class="row justify-content-center raised">
         {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
-        {{ if isset .Params "datasheetcontent" }}
+        {{ if and (isset .Params "datasheetcontent") (eq .Params.enable "true") }}
                 <div class="col-md-4">
                         <div class="card card-raised bg-rose">
                           <div id="productCarousel{{$main_index}}" class="carousel slide" data-ride="carousel" data-interval="18000">
@@ -90,7 +90,7 @@
               </div>
                 <hr>
                 <h3 class="subtitle text-center">{{ i18n "about_hardware" }}</h3>
-               <!--  {{ with  $.GetPage "hardware" }} 
+                 
                 <div class="row">
                     <div class="col-md-5 ml-auto">
                         <div class="info info-horizontal">
@@ -127,8 +127,7 @@
                         </div>
                     </div>
                 </div>
-{{ .Content}}
-{{ end }}-->
+
     </div>
 
 
