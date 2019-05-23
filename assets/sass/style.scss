@@ -228,8 +228,8 @@ p, .call-to-action {
     height: 110vh !important;
 }
 
-h1.title::first-letter {
-    color: $green;
+h1:first-letter {
+    color: #34be5b;
 }
 
 .hardware .title-container h1 {
@@ -292,13 +292,23 @@ h1.title::first-letter {
 
 @media screen and (max-width: 991px) {
 
+    .landing-page h2 {
+        margin-top: 26px;
+    }
+
+    .dropdown-header {
+        color: white !important;
+    }
+
     #contact {
         margin-top: 40px;
     }
 
-    .sidebar-collapse .navbar-collapse:before {
+    .sidebar-collapse .navbar-collapse {
+        &:before {
         background: $green;
         opacity: 100;
+        }
     }
     .dropdown-menu .dropdown-item {
         color: #FFFFFF;
@@ -456,17 +466,7 @@ h1.title::first-letter {
 
     .tooltip.bottom { 
         margin-top: 10px;
-    }
-
-    .navbar-transparent .nav-item.active .nav-link:not(.btn),
-    .navbar-transparent .nav-item .nav-link:not(.btn):focus,
-    .navbar-transparent .nav-item .nav-link:not(.btn):hover {
-        background-color: rgba(13,95,79,.8);
-    }
-
-    .navbar-transparent .nav-item .nav-link:not(.btn):active {
-        background-color: transparent !important;
-    }
+    }    
 
     .section:not(.section-team) .container {
         background: #FFFFFF;
@@ -622,9 +622,6 @@ h1.title::first-letter {
     h1 {
         margin-bottom: 30px;
         margin-top: 30px;
-        &:first-letter {
-            color: #34be5b;
-        }
     }
 
     #contact {
@@ -660,7 +657,6 @@ h1.title::first-letter {
         z-index: -1;
         margin-top: 96px;
         
-    
         p {
         color: white;
         text-align: justify;
@@ -729,62 +725,8 @@ h1.title::first-letter {
         font-size: 1.2rem;
         color: #6b6a6a;
         margin-top: 16px;
-    }
-    .title-container {
-            animation: bottom-t-top 2s;
-            position: relative;  
-            animation-iteration-count: 1;
-            will-change: transform;               
-    }
-    .navbar {
-        animation: top-t-bottom 3s;
-        animation-iteration-count: 1;
-        will-change: transform;
-    }
-    .social-animation a {
-        animation: right-t-left 1s;
-        transform: translate(2000%, -0%);
-        animation-fill-mode: forwards;
-        will-change: transform;
-        &:nth-child(1) { 
-            animation-delay: 2s;
-        }
-        &:nth-child(2) { 
-            animation-delay: 2.2s;
-        }
-        &:nth-child(3) { 
-            animation-delay: 2.4s;
-        }
-        &:nth-child(4) { 
-            animation-delay: 2.6s;
-        }
-    }
-   
+    }   
 } 
-
-@keyframes bottom-t-top {
-    0% {
-        transform: translate(-50%, 200%);
-    }
-    100% {
-        transform: translate(-50%, -70%);
-    }
-  }
-
-@keyframes top-t-bottom {
-    0%   { 
-        transform: translate(0%, -800%);
-    }
-    100% { transform: translate(0%, 0%);
-    }
-}
-@keyframes right-t-left {
-    0%   { 
-        transform: translate(2000%, -0%);
-    }
-    100% { transform: translate(0%, 0%);
-    }
-}
 
 .donate-page {
     
@@ -1399,6 +1341,10 @@ h1.title::first-letter {
 
 @media (min-width: 768px) {
 
+    .social-icons-top .btn {
+        background-color: #f0f0f0;
+    }
+
     .useful-for-everyone .row .list-group {
         min-height: 255px !important;
     }
@@ -1467,8 +1413,69 @@ h1.title::first-letter {
 
 @media screen and (min-width: 992px) {
 
-    .social-icons-top .btn {
-        background-color: #f0f0f0;
+    .navbar-transparent .nav-item.active .nav-link:not(.btn),
+    .navbar-transparent .nav-item .nav-link:not(.btn):focus,
+    .navbar-transparent .nav-item .nav-link:not(.btn):hover {
+        background-color: rgba(13,95,79,.8) !important;
+    }
+
+    .landing-page {
+        .title-container {
+            animation: bottom-t-top 2s;
+            position: relative;  
+            animation-iteration-count: 1;
+            will-change: transform;               
+        }
+        
+        .social-animation a {
+            animation: right-t-left 1s;
+            transform: translate(2000%, -0%);
+            animation-fill-mode: forwards;
+            will-change: transform;
+            &:nth-child(1) { 
+                animation-delay: 2s;
+            }
+            &:nth-child(2) { 
+                animation-delay: 2.2s;
+            }
+            &:nth-child(3) { 
+                animation-delay: 2.4s;
+            }
+            &:nth-child(4) { 
+                animation-delay: 2.6s;
+            }
+        }
+        
+        @keyframes bottom-t-top {
+            0% {
+                transform: translate(-50%, 200%);
+            }
+            100% {
+                transform: translate(-50%, -70%);
+            }
+        }
+        
+        @keyframes right-t-left {
+            0%   { 
+                transform: translate(2000%, -0%);
+            }
+            100% { transform: translate(0%, 0%);
+            }
+        }
+
+        .navbar {
+            animation: top-t-bottom 3s;
+            animation-iteration-count: 1;
+            will-change: transform;
+        }
+        
+        @keyframes top-t-bottom {
+            0%   { 
+                transform: translate(0%, -800%);
+            }
+            100% { transform: translate(0%, 0%);
+            }
+        }
     }
 
     #contact {
