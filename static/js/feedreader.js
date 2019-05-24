@@ -21,15 +21,18 @@ function postTypeButtons() {
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title">Chose a Branch.</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </div>
                     <div class="modal-footer">
                         <div class="btn-group" role="group" aria-label="button group">
                             <button onclick="selectPostType(this, '.stable');" class="btn-post-type btn btn-sm" data-dismiss="modal">Stable</button>
                             <button onclick="selectPostType(this, '.testing');" class="btn-post-type btn-sm btn" data-dismiss="modal">Testing</button>
                             <button onclick="selectPostType(this, '.unstable');" class="btn-post-type btn-sm btn" data-dismiss="modal">Unstable</button>
-                            <button type="button" class="btn btn-sm btn" data-dismiss="modal">Ignore</button>
                         </div>
                     </div>
+                    <div></div>
+
                 </div>
             </div>
         </div>        
