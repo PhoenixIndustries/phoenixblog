@@ -14,6 +14,11 @@ This readme is a work in progress if anything is missing let us know.
 * Test run `hugo server -wDEFv --disableFastRender --noHTTPCache`
 * Preview at `http://localhost:1313/`
 
+### Testing News Localy
+* Cors plugins are available 
+  * [Chrome](https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc)
+  * [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/cors-everywhere/)
+  
 ### Testing in a diferent language
 * (TODO)
 
