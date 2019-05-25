@@ -249,6 +249,10 @@ h1:first-letter {
 
 @media screen and (max-width: 768px) {
 
+    .landing-page h2 {
+        margin-top: 26px;
+    }
+
     .landing-page {
         .social-icons-top .btn {
             background-color: white;
@@ -288,10 +292,6 @@ h1:first-letter {
 }
 
 @media screen and (max-width: 991px) { 
-
-    .landing-page h2 {
-        margin-top: 26px;
-    }
 
     .dropdown-header {
         color: white !important;
