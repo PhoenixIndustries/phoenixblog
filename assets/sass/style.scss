@@ -610,9 +610,9 @@ h1:first-letter {
     .page-header {
         max-height: 100% !important;
         & .container > .content-center {
-            -ms-transform: translate(-50%, -70%);
-            -webkit-transform: translate(-50%, -70%);
-            transform: translate(-50%, -70%);
+            -ms-transform: translate(-50.1%, -70.1%);
+            -webkit-transform: translate(-50.1%, -70.1%);
+            transform: translate(-50.1%, -70.1%);
         }
     }
 
@@ -1447,7 +1447,7 @@ h1:first-letter {
                 transform: translate(-50%, 200%);
             }
             100% {
-                transform: translate(-50%, -70%);
+                transform: translate(-50.1%, -70.1%);
             }
         }
         
