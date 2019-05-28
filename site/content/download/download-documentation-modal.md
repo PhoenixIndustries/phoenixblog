@@ -16,6 +16,6 @@ Installing <a href="https://manjaro.org/support/firststeps/#install-manjaro" tar
 
 User <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a>.
 
-For past releases check our archives on [flagship](https://osdn.net/projects/manjaro/storage) and [community](https://osdn.net/projects/manjaro-community/storage) Editions.
+For past releases check our archives on <a href="https://osdn.net/projects/manjaro/storage" target="_blank">Official</a> and <a href="https://osdn.net/projects/manjaro-community/storage" target="_blank">Community</a> Editions.
 
 
