@@ -292,6 +292,10 @@ h1:first-letter {
 }
 
 @media screen and (max-width: 991px) { 
+    
+    .tooltip {
+        display: none !important;
+    }
 
     .dropdown-header {
         color: white !important;
