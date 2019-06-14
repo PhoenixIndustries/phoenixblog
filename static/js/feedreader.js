@@ -97,8 +97,14 @@ function feedreader(url) {
             $XML.find("item").each(function(iter) {
                 
                 if (url == feeds[1] && iter > 0) {
-                    // pass
+                    // only display one feed
                 } else {
+
+                if (url == feeds[1]) {
+                    var feed = "arm" 
+                } else if (url == feeds[0]) {
+                    var feed = "64" 
+                }
                 
                 var $this = $(this),
                     item = {
@@ -108,7 +114,7 @@ function feedreader(url) {
                         date:        $this.find("pubDate").text().replace(/\+0000|,/g, "").slice(0, -9).slice(4, 15),
                         link:        $this.find("link").text(),
                     };
-                var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
+                var el = "news" + feed + item.date.replace(/\ |:|,/g, "") + iter.toString()
                 var forumHtml = $($.parseHTML(item.description));
                 var regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
                 var img = forumHtml.find("img:first").attr("src");
