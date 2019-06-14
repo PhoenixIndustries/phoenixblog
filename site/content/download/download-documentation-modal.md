@@ -1,10 +1,9 @@
 +++
 type = "download-documentation-modal"
-title = "Documentation"
-
+title = "Acknowledgments"
 +++
 
-You can try Manjaro without modifying your current operating system. THANK YOU for trying it, you are Awesome.
+Try Manjaro without modifying your current operating system. Or install it to your hard drive.
 
 How to create a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">bootable USB-Stick</a>.
 
@@ -17,5 +16,7 @@ Installing <a href="https://manjaro.org/support/firststeps/#install-manjaro" tar
 User <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a>.
 
 For past releases check our archives on <a href="https://osdn.net/projects/manjaro/storage" target="_blank">Official</a> and <a href="https://osdn.net/projects/manjaro-community/storage" target="_blank">Community</a> Editions.
+
+YOU are awesome, Enjoy.
 
 
