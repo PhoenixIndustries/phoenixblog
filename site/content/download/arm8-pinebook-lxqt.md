@@ -1,7 +1,7 @@
 +++
 Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/pinebook/lxqt/19.06/Manjaro-ARM-lxqt-pinebook-19.06.img.xz"
 Download_x64_Checksum = "67df0266bd619e77d0b6d9390dba8fd2495aca2d"
-Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/pinebook/lxqt/19.06/Manjaro-ARM-lxqt-pinebook-19.06.img.xz"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/pinebook/lxqt/19.06/Manjaro-ARM-lxqt-pinebook-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
