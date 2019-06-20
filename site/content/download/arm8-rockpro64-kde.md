@@ -1,7 +1,7 @@
 +++
-Download_x64 = ""
-Download_x64_Checksum = ""
-Download_x64_Sig = ""
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/kde/19.06/Manjaro-ARM-kde-rockpro64-19.06.img.xz"
+Download_x64_Checksum = "20aab0b4e74fb841c0557270b05edae63949497c"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/kde/19.06/Manjaro-ARM-kde-rockpro64-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""

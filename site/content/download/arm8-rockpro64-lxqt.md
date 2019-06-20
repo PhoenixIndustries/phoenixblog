@@ -1,7 +1,7 @@
 +++
-Download_x64 = ""
-Download_x64_Checksum = ""
-Download_x64_Sig = ""
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/lxqt/19.06/Manjaro-ARM-lxqt-rockpro64-19.06.img.xz"
+Download_x64_Checksum = "03032598a565768849d3a67f8c53b40881979367"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/lxqt/19.06/Manjaro-ARM-lxqt-rockpro64-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
