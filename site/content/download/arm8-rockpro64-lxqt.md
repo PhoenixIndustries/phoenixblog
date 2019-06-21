@@ -1,13 +1,13 @@
 +++
-Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rpi3/lxqt/19.06/Manjaro-ARM-lxqt-rpi3-19.06.img.xz"
-Download_x64_Checksum = "d4088091cb8f99d07651594a660e9899af15e9cd"
-Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rpi3/lxqt/19.06/Manjaro-ARM-lxqt-rpi3-19.06.img.xz.sig"
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/lxqt/19.06/Manjaro-ARM-lxqt-rockpro64-19.06.img.xz"
+Download_x64_Checksum = "03032598a565768849d3a67f8c53b40881979367"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rockpro64/lxqt/19.06/Manjaro-ARM-lxqt-rockpro64-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Raspberry Pi 3 LXQT"
+Name = "RockPro64 LXQT"
 Screenshot = "arm-lxqt-full.png"
 Youtube = ""
 Tags = [ "arm" ]
@@ -15,7 +15,7 @@ shortDescription = "LXQT on ARM is one of the snappiest and lightweight desktop 
 Thumbnail = "arm-lxqt-full.png"
 Version = "19.06"
 date = "06.2019"
-title = "Raspberry Pi 3 LXQT"
+title = "RockPro64 LXQT"
 type="download-edition"
 weight = "1"
 +++

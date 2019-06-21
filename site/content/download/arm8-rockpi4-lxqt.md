@@ -1,13 +1,13 @@
 +++
-Download_x64 = ""
-Download_x64_Checksum = ""
-Download_x64_Sig = ""
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rockpi4/lxqt/19.06/Manjaro-ARM-lxqt-rockpi4-19.06.img.xz"
+Download_x64_Checksum = "f7f62d407da6f021e5a490b6739b9a4981a38a0f"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rockpi4/lxqt/19.06/Manjaro-ARM-lxqt-rockpi4-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Odroid N2 LXQT"
+Name = "Rock Pi 4 LXQT"
 Screenshot = "arm-lxqt-full.png"
 Youtube = ""
 Tags = [ "arm" ]
@@ -15,7 +15,7 @@ shortDescription = "LXQT on ARM is one of the snappiest and lightweight desktop 
 Thumbnail = "arm-lxqt-full.png"
 Version = "19.06"
 date = "06.2019"
-title = "Odroid N2 LXQT"
+title = "Rock Pi 4 LXQT"
 type="download-edition"
 weight = "1"
 +++

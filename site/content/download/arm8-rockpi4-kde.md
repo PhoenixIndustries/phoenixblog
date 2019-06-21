@@ -1,13 +1,13 @@
 +++
-Download_x64 = ""
-Download_x64_Checksum = ""
-Download_x64_Sig = ""
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/rockpi4/kde/19.06/Manjaro-ARM-kde-rockpi4-19.06.img.xz"
+Download_x64_Checksum = "b2b2121b131d54e89d92d701c6c87ba97c1a35d0"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/rockpi4/kde/19.06/Manjaro-ARM-kde-rockpi4-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "RockPro64 KDE"
+Name = "Rock Pi 4 KDE"
 Screenshot = "arm-kde-full.jpg"
 Youtube = ""
 Tags = [ "arm" ]
@@ -15,7 +15,7 @@ shortDescription = "Plasma on ARM is a full-featured desktop experience and all 
 Thumbnail = "arm-kde-full.png"
 Version = "19.06"
 date = "06.2019"
-title = "RockPro64 KDE"
+title = "Rock Pi 4 KDE"
 type="download-edition"
 weight = "1"
 +++

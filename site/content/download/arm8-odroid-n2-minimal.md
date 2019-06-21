@@ -1,7 +1,7 @@
 +++
-Download_x64 = ""
-Download_x64_Checksum = ""
-Download_x64_Sig = ""
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/on2/minimal/19.06/Manjaro-ARM-minimal-on2-19.06.img.xz"
+Download_x64_Checksum = "ce4281c9af8dd2b8d94c9b3e94e740d980674184"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/on2/minimal/19.06/Manjaro-ARM-minimal-on2-19.06.img.xz.sig"
 Download_x64_Torrent = ""
 Download_x86 = ""
 Download_x86_Checksum = ""
