@@ -1,5 +1,6 @@
 <!--   Core JS Files   -->
 <script src="{{ "js/core/jquery.3.2.1.min.js" | relURL }}" type="text/javascript"></script>
+<!--   required by bootstrap   -->
 <script src="{{ "js/core/popper.min.js" | relURL }}" type="text/javascript"></script>
 <script src="{{ "js/core/bootstrap.min.js" | relURL }}" type="text/javascript"></script>
 <!-- needed for mobile menu -->
@@ -8,17 +9,6 @@
 <script src="{{ "js/plugins/vanilla-back-to-top.min.js" | relURL }}" ></script>
 <!-- do not run on news page -->
 {{ if ne .Title "News"}} 
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="{{ "js/plugins/bootstrap-switch.js"| relURL }}"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="{{ "js/plugins/nouislider.min.js" | relURL }}" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="{{ "js/plugins/bootstrap-datepicker.js" | relURL }}" type="text/javascript"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-
-<!-- Contact Script -->
-<script src="{{ "js/validator.min.js" | relURL }}" ></script>
-<script src="{{ "js/contact.js" | relURL }}" ></script>
 
 <script type="text/javascript">
     $(document).ready(function() { 
@@ -57,8 +47,6 @@ if ($( window ).width() > 992) {
         }
       });
     };
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
     });
 
     function scrollToDownload() {
@@ -75,22 +63,6 @@ if ($( window ).width() > 992) {
 <script src="{{ "/js/" | relURL }}{{ . }}"></script>
 {{ end }}
 
-
-<!-- Code highlighting -->
-{{ if  not .Params.nocode }}
-<link rel="stylesheet" href="/js/plugins/highlight/styles/default.css">
-<script src="/js/plugins/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initHighlightingOnLoad();</script>
-{{ end }}
-
-<!-- LaTeX math rendering -->
-{{ if not .Params.nomath }}
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-</script>
-<script async src="/js/plugins/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
-{{ end }}
 {{ end }}  
 <!-- do not run on news page -->
 <script>
