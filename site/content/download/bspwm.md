@@ -10,11 +10,11 @@ Download_x86_Torrent = ""
 Name = "Bspwm"
 Screenshot = "bspwm-full.jpg"
 Tags = [ "community" ]
-shortDescription = "Slim and snappy tiling window manager with the focus on resource efficiency"
+shortDescription = "Extremely resource efficient and configurable window manager that follows Unix philosophy. It gives the user good control over windows with minimal effort. It has a focus on terminal application and is better suited for experienced Linux users"
 Thumbnail = "bspwm.jpg"
 Version = "18.0.4"
 date = "2019-04-06T14:53+01:00"
-title = "Bpspwm"
+title = "Bspwm"
 type="download-edition"
 weight = "5"
 +++

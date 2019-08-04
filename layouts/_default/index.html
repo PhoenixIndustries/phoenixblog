@@ -7,6 +7,7 @@
     <p class="col-md-12">{{ .Params.whatIsManjaro }}</p>
     <a class="btn btn-primary" href="/download/">{{ i18n "download_link" }}<i class="fas fa-angle-double-down"></i></a>
     <button id="scrolltocontent" class="btn btn-primary">{{ i18n "learn_more" }}<i class="fa fa-arrow-down"></i></button>
+    <button id="btn-contact" class="btn btn-primary" data-toggle="modal" data-target="#contact-form">{{ i18n "contact" }}<i class="fas fa-envelope"></i></button>
 {{ end }}
   </div>
 </div>
@@ -14,7 +15,7 @@
 {{ define "body" }}
 <div class="row">
   <div class="col-md-8 ml-auto mr-auto">
-      <div id="content" class="social-icons-top">
+      <div id="content" class="social-icons-top social-animation">
 
         <a href="{{.Params.gitlab}}"  target="_blank" class="btn btn-icon btn-round gitlab"> 
             <i class="fab fa-gitlab"></i>
@@ -33,5 +34,5 @@
   </div>   
 </div>
 {{ partial "story-overview.html" . }}
-{{ end }}        
+{{ end }}       
  

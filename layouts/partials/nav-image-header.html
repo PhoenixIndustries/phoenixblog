@@ -2,13 +2,10 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <span class="loader"></span><a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="Manjaro.org" rel="tooltip" data-placement="bottom" data-toggle="tooltip">
+                </span><a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}" title="Manjaro.org" rel="tooltip" data-placement="bottom" data-toggle="tooltip">
                     manjaro 
                 </a><span class="page-nav">- {{ i18n "slogan" }}</span>
-                <div class="row"><div class="col">{{if .IsHome }}
-                <button id="btn-contact" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#contact-form">{{ i18n "contact" }}<i class="fas fa-envelope"></i></button>
-                {{ end }}</div></div> 
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
                     <span class="navbar-toggler-bar bar3"></span>

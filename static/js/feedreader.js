@@ -1,17 +1,28 @@
+if (document.cookie.split(';').filter(function(item) {
+    return item.indexOf('layout=classic') >= 0
+}).length) {
+    $("#news-grid").addClass("classic-layout");
+} 
+
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
         <div class="btn-group" role="group" aria-label="button group">
-            <button class="btn-post-type btn-sm btn disabled">Sort:</button>
-            <button onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
+            <button id="btn-updates" onclick="selectPostType(this, '.updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
             <button onclick="selectPostType(this, '.release');" class="btn-post-type btn-sm btn">Releases</button>
             <button onclick="selectPostType(this, '.post-news');" class="btn-post-type btn-sm btn">News</button>
         </div>
+        <button id="btn-layout">
+          <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Classic Layout" class="fas fa-grip-lines"></i>
+          <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Modern Layout" class="fas fa-grip-horizontal"></i>
+        </button>
         <div id="updatesModal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Showing All Updates, Chose a Branch to sort them.</h2>
+                        <h2 class="modal-title">Chose a Branch.</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </div>
                     <div class="modal-footer">
                         <div class="btn-group" role="group" aria-label="button group">
@@ -19,14 +30,21 @@ function postTypeButtons() {
                             <button onclick="selectPostType(this, '.testing');" class="btn-post-type btn-sm btn" data-dismiss="modal">Testing</button>
                             <button onclick="selectPostType(this, '.unstable');" class="btn-post-type btn-sm btn" data-dismiss="modal">Unstable</button>
                         </div>
-                        <button type="button" class="btn btn-sm btn" data-dismiss="modal">Ignore</button>
                     </div>
+                    <div></div>
+
                 </div>
             </div>
         </div>        
     </div>`
     )
-    return postTypeButtons
+    return postTypeButtons 
+}
+
+function stopModal(el) {
+    $(el).on('click', function (e) {
+        e.stopPropagation();  
+        });
 }
 
 $(".section .container").prepend(postTypeButtons());
@@ -43,17 +61,19 @@ $('#news-grid').isotope({
     sortAscending : true
 });
 
-function selectPostType(button, el) {
+function selectPostType(button, branch) {
     $(".btn-post-type").removeClass("btn-success");
     $(button).addClass("btn-success");
-    $(".blog-post").removeClass("zoom").addClass("transitionFix");
-    function callback() {
-        setTimeout(function(){
-            $(".blog-post").removeClass("transitionFix").addClass("zoom");
-        }, 550);
-        
+    if (branch == ".unstable") {
+        $("#btn-updates").css("background-color", "#d50000");
+    } else if (branch == ".testing") {
+        $("#btn-updates").css("background-color", "#ffab00");
+    } else if (branch == ".stable") {
+        $("#btn-updates").css("background-color", "#009688");
+    } else {
+        $("#btn-updates").css("background-color", "#888");
     }
-    $("#news-grid").isotope({ filter: el }, callback());
+    $("#news-grid").isotope({ filter: branch, sortBy: 'original-order' });
 }
 
 var feeds = [
@@ -77,18 +97,24 @@ function feedreader(url) {
             $XML.find("item").each(function(iter) {
                 
                 if (url == feeds[1] && iter > 0) {
-                    // pass
+                    // only display one feed
                 } else {
+
+                if (url == feeds[1]) {
+                    var feed = "arm" 
+                } else if (url == feeds[0]) {
+                    var feed = "64" 
+                }
                 
                 var $this = $(this),
                     item = {
-                        title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)/g, ""),
+                        title:       $this.find("title").text().replace(/\d{2,4}[\-|\/]\d{1,2}[\-]\d{1,2}|\[|\]|\(|\)|/g, ""),
                         category:    $this.find("category").text(),
-                        description: $this.find("description").text().replace(/\]]>/g, "").replace("Read full topic", "Go to this topic in the forum."),
+                        description: $this.find("description").text().replace(/\]]>/g, "").replace("Read full topic", "Topic in the forum."),
                         date:        $this.find("pubDate").text().replace(/\+0000|,/g, "").slice(0, -9).slice(4, 15),
                         link:        $this.find("link").text(),
                     };
-                var el = "news" + item.date.replace(/\ |:|,/g, "") + iter.toString()
+                var el = "news" + feed + item.date.replace(/\ |:|,/g, "") + iter.toString()
                 var forumHtml = $($.parseHTML(item.description));
                 var regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
                 var img = forumHtml.find("img:first").attr("src");
@@ -107,10 +133,12 @@ function feedreader(url) {
                             return "testing updates"
                             } else if (titleHasString("stable update")) {
                                 return "stable updates"
-                                }else if (titleHasString("release") || 
-                            titleHasString("iso") ||
-                            titleHasString("download")) {
-                        return "release"
+                                }else if (
+                                    titleHasString("release") || 
+                                    titleHasString("iso") ||
+                                    titleHasString("preview") ||
+                                    titleHasString("download")) {
+                                        return "release"
                     } else {
                         return "post-news"
                     }
@@ -122,6 +150,9 @@ function feedreader(url) {
         
                     if (typeof img === 'undefined') {
                         return ""
+                    } else if (img.includes(".gif")) {
+                        imageTemplate = `<img class="card-img-top" data-gifffer="` + img + `" src="` + img + `"alt="Post Image">`
+                        return imageTemplate
                     } else if (img.includes("emoji")) {
                         return ""
                     } else if (img.includes(".ico")) {
@@ -132,12 +163,12 @@ function feedreader(url) {
                         return imageTemplate
                     }         
                 }
-                
-                function buildArticleTemplate(el, img, date, title, shortText) {
+
+                function buildArticleTemplate(el, img, date, title, shortText, link) {
                     
                     var $article = $(`
-                        <article id='unique` + el + `' class='blog-post zoom grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
-                            <div class="card">
+                        <article id='unique` + el + `' class='blog-post grid-item col-md-6 col-xl-4 ml-auto mr-auto ` + detectPostTypeByTitle(title) + `'>
+                            <div class="card zoom">
                                 <div data-toggle="modal" data-target='#` + el + `'>
                                     <div class="view overlay">` +
                                     filterImages(img) + `
@@ -148,8 +179,18 @@ function feedreader(url) {
                                     <div id="date" class="text-right">
                                         <span class="date">` + date + `</date>
                                     </div>
+                                    <span>
                                     <h5 class="card-title">` + title + `</h5>
-                                    <div class="card-body " data-background-color="black">              
+                                    <div class="card-body " data-background-color="black"> 
+                                    <div id="content" class="social-icons-top">       
+                                    <a onclick="$(this).attr('href');" data-toggle="tooltip" data-placement="top" title="Share" href="https://twitter.com/intent/tweet?via=ManjaroLinux&hashtags=Manjaro,Linux&text=` + title + `&url=` + link + `"  target="_blank" class="btn btn-icon btn-round twitter"> 
+                                      <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a onclick="" data-toggle="tooltip" data-placement="top" title="Share" href="https://www.facebook.com/sharer/sharer.php?u=` + link + `"  target="_blank" class="btn btn-icon btn-round facebook">
+                                      <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    </span>
+                                </div>             
                                         <p class="card-text">` + shortText + `</p>
                                     </div>
                                 </div>
@@ -184,26 +225,88 @@ function feedreader(url) {
                 $("#news-grid").isotope( "insert", buildArticleTemplate(el, img, item.date, item.title, shortText, item.link) );//.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
                 $("#news-grid").append(buildModalTemplate(el, item.title, item.description));
                 
-
+                Gifffer();
+                stopModal($('#unique' + el + ' .social-icons-top a'));
                 $('#' + el + ' .modal-body').find(".meta").remove();
                 $('#' + el + ' .modal-body').find(".poll").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Posts:')").remove();
                 $('#' + el + ' .modal-body').find("p:contains('Participants:')").remove();
+
+                $("#news-grid #unique" + el).imagesLoaded( function(){
+                    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+                });
                 
-                if (iter == 24) {
-                    setTimeout(function(){ $(".loader").hide();}, 600);
-                }  
             }});
         }});
     };
 feedreader(feeds[0]);
 feedreader(feeds[1]);
-setTimeout(function(){ 
-    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
-    }, 3000);
-$("#news-grid").imagesLoaded( function(){
-    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+
+function saveLayout() {
+    if ($("#news-grid").hasClass("classic-layout")) {
+        type = "classic"
+    } else {
+        type = "modern"
+    }
+    document.cookie = "layout=" + type + "; expires= 31536000";
+  }
+
+function layoutChanged() {
+    $("#news-grid").toggleClass("classic-layout");
+    saveLayout();
+    setTimeout(function(){ 
+        $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' }); 
+     }, 400);
+}
+
+$(".fa-grip-lines").click(function(){ 
+    layoutChanged();
+    $(this).fadeOut().promise().done(function() {
+        $(".fa-grip-horizontal").fadeIn();
+    });
 });
 
-            
+$(".fa-grip-horizontal").click(function(){ 
+    layoutChanged();
+    $(this).fadeOut().promise().done(function() {
+        $(".fa-grip-lines").fadeIn();
+    });
+});
+
+
+setTimeout(function(){ 
+    $(".progress-bar").css("width", "10%");
+ }, 550);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "20%");
+ }, 1000);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "30%");
+ }, 1300);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "40%");
+ }, 1600);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "50%");
+ }, 1800);
+setTimeout(function(){ 
+    $(".progress-bar").css("width", "60%");
+ }, 2000);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "70%");
+ }, 2200);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "80%");
+ }, 2400);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "92%");
+ }, 2600);
+ setTimeout(function(){ 
+    $(".progress-bar").css("width", "100%");
+ }, 2800);
+
+setTimeout(function(){ 
+    $(".logo-overlay-loader").fadeOut();
+    $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
+    }, 3000);   
         

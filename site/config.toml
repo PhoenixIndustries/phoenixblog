@@ -16,21 +16,13 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.15"
+    website_version = "1.0.17"
     background = "/img/header.jpg"
     tint = "green"
-    custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
-    description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
-    keywords = "manjaro linux, based on arch linux, free operating system"
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
+    meta_description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
+    meta_keywords = "manjaro linux, based on arch linux, free operating system"
 
 [params.donate]
     headline = "Help us"
@@ -52,7 +44,7 @@ DefaultContentLanguage = "en-us"
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
     download_button = "Download"
-    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
+    download_x64_description = "Download the 64 bit version if you use a modern computer and want to benefit of your modern hardware."
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"
     download_torrent = "Download Torrent"
