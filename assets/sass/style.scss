@@ -165,6 +165,10 @@ a, .description a {
     }
 }
 
+.form-group .form-control, .input-group .form-control {
+    padding: 5px;
+}
+
 .section {        
     p {
         text-align: justify;

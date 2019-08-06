@@ -195,7 +195,7 @@ $('#form').submit(function(event) {
             dataType    : 'json',
             encode      : true
         }).done(function(data) {
-            $('#contact-form').hide().remove();
+            $('#contact-form, .modal-backdrop').hide().remove();
             alert(data['message']);
             // todo handle errors and validation messages
             });
