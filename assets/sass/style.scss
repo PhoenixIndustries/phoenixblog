@@ -107,6 +107,10 @@ body {
     }
 }
 
+.modal-open .navbar {
+    padding-right: 1rem !important;
+}
+
 .landing-page .wrapper {
     overflow-y: hidden;
 }
@@ -973,7 +977,6 @@ h1:first-letter {
     .card {
         overflow: visible;
         background: #2c2c2c;
-        color: #cecccc;
 
         .card-header {
             padding: 0;
@@ -985,6 +988,7 @@ h1:first-letter {
         }
         td {
             text-align: left;
+            color: #cecccc !important;
         }
     } 
     
