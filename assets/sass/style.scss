@@ -146,6 +146,21 @@ a, .description a {
     z-index: 99;
 }
 
+#form {
+    ::placeholder {
+        color: #6c757d!important;
+    }
+        .form-control {
+            border-radius: 0;
+            &:focus, &:active, &:hover {
+            border: 1px solid #44883c !important;
+            option:hover {
+                background-color: #44883c !important;
+            }
+        }
+    }
+}
+
 .section {        
     p {
         text-align: justify;
@@ -621,10 +636,6 @@ h1:first-letter {
         margin-top: 30px;
     }
 
-    #btn-contact {
-
-        
-    }
     #contact-form {
         .modal-content {
             padding: 20px;
@@ -701,6 +712,19 @@ h1:first-letter {
             &:active:focus {
                 box-shadow: 0 0 0 0.2rem rgb(13,95,79) !important;
                 box-shadow: 0 0 0 0.2rem rgba(13,95,79,.5) !important;
+            } 
+        }
+        #btn-contact {
+            border: 1px solid rgb(74, 20, 140) !important;
+            &:hover, &:active {
+                background: rgb(74, 20, 140);
+                background-color: rgba(74, 20, 140, 0.80) !important;
+                border: 1px solid rgb(74, 20, 140) !important;
+                border: 1px solid rgba(74, 20, 140, 0.80) !important;
+            } 
+            &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgb(74, 20, 140) !important;
+                box-shadow: 0 0 0 0.2rem rgba(74, 20, 140,.5) !important;
             } 
         }
     }
