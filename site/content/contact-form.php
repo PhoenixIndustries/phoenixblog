@@ -9,7 +9,10 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
             $fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); 
             $success_message = 'Message successfully submitted. Thank you, we will get back to you soon!';
 
-            function test_input($data) {
+            function test_input($key, $data) {
+                if(empty($data)):
+                    throw new Exception($key + ' is empty');
+                endif;
                 $data = trim($data);
                 $data = stripslashes($data);
                 $data = htmlspecialchars($data);
@@ -26,7 +29,11 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
                 $emailText = "From: manjaro.org\n=============================================\n";
 
                 foreach ($_POST as $key => $value) {
-                    test_input($value);
+                    try {
+                       $value = test_input($key, $value);
+                    } catch  (Exception $err) {
+                       $error_message = $err->getMessage();
+                    }
                     // If the field exists in the $fields array, include it in the email 
                     if (isset($fields[$key])) {
                         $emailText .= "$fields[$key]: $value\n";
