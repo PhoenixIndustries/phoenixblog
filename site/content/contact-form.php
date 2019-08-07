@@ -4,7 +4,7 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
 
     if (isset($_POST['human-check'])) {
 
-            $sendTo = 'Manjaro Support <vitor@manjaro.org>';
+            $sendTo = 'Manjaro Support <support@manjaro.org>';
             $subject = '[Manjaro] Support Request';
             $fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); 
             $success_message = 'Message successfully submitted. Thank you, we will get back to you soon!';
