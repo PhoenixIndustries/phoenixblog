@@ -784,13 +784,21 @@ h1:first-letter {
             font-size: 18px !important;
         }
     }
-    .editions-box-hideable {
-        padding: 6px;
-        display: inline-block;
-    }
     .btn-group {
         padding: 12px;
         padding-bottom: 6px;
+    }
+    .container-fluid {
+            padding-right: 0px;
+            padding-left: 100px;
+    }
+    li {
+        ul {
+            margin-bottom: 30px;
+        }
+        h4 {
+        margin-top: 0;
+        }
     }
 }
 

@@ -1,43 +1,20 @@
 <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
-				<div class="btn-group" role="group" aria-label="Basic example">
-            {{ range .Params.filters }}				
-						<button type="button" class="btn btn-sm" id="show-editions-{{ .id }}" onclick="update_editions_tags('{{ .id }}');" {{ .default }}>{{ .description }}</button>
-            {{ end }}
-            </div>
-            <div class="container-fluid" style="min-height: 503px;">
+            <div class="container-fluid">
                 <div class="editions-grid fluid-row align-items-center no-gutters">
                 <!--
                 NOTE: The range and end operations are supposed to be in line with the boxes!!!
                 Read more about crazy HTML magic here: http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
                 -->
-                {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}<div class="editions-box-hideable {{ range .Params.tags}}editions-box-hideable-{{ . }} {{ end }} col-lg-4 col-sm-6">
+                {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
+                <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
+                        {{ .Params.name }}
                 <a href="{{ .Permalink }}" class="editions-box editions-link" >
                 <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
-                <div class="editions-box-caption-extended">
-                    <div class="editions-box-caption-extended-content">
-                        <div class="short-description">
-                            {{ .Params.shortDescription }}
-                        </div>
-                    </div>
-                </div>
-                <div class="editions-box-caption-small">
-                    <div class="editions-box-caption-small-content">
-                        <div class="name">
-                            {{ .Params.name }}
-                        </div>
-                    </div>
-                </div>
-                <div class="editions-box-caption-extended-subtitle">
-                    <div class="editions-box-caption-extended-subtitle-content">
-                        <div class="action">
-                            {{ .Params.name }}
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>{{ end }}{{ end }}
+            </a>
+            {{ .Params.shortDescription }}
+                </div>{{ end }}{{ end }}
 		</div>		
     </div>
 </section>

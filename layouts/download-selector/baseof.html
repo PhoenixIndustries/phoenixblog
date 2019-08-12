@@ -22,6 +22,70 @@
             
         </div>
         <div class="{{ .Params.section | default "section"}}">
+            <ul class="nav" style="
+            width:200px !important;
+            height: 100%; 
+            background-color: #2c2c2c;
+            color: #ffff;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 62px;
+  padding: 10px;
+">
+<li class="nav nav-list">	
+  <h4 class="nav-header">Official</h4>
+  <ul >
+      {{ range .Site.Pages }}
+      {{ if eq .Type "download-edition" }}
+      {{ if eq .Params.edition "official" }}
+      <li class="nav-item">	
+          <a href="#" onclick="$('.edition').hide();$('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}').show();">{{ .Params.title }}</a>
+      </li>{{end}}
+      {{ end }}{{ end }}
+  </ul>
+</li>
+
+<li class="nav-item">	
+  <h4>Community</h3>
+<ul>
+    {{ range .Site.Pages }}
+    {{ if eq .Type "download-edition" }}
+    {{ if eq .Params.edition "community" }}
+    <li class="nav-item">	
+        <a href="#" onclick="$('.edition').hide();$('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}').show();">{{ .Params.title }}</a>
+    </li>{{end}}
+    {{ end }}{{ end }}
+</ul>
+</li>
+
+<li class="nav-item">	
+  <h4>32bit</h3>
+<ul>
+    {{ range .Site.Pages }}
+    {{ if eq .Type "download-edition" }}
+    {{ if eq .Params.edition "32bit" }}
+    <li class="nav-item">	
+        <a href="#" onclick="$('.edition').hide();$('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}').show();">{{ .Params.title }}</a>
+    </li>{{end}}
+    {{ end }}{{ end }}
+</ul>
+</li>
+
+<li class="nav-item">	
+  <h4>ARM</h3>
+<ul>
+    {{ range .Site.Pages }}
+    {{ if eq .Type "download-edition" }}
+    {{ if eq .Params.edition "arm" }}
+    <li class="nav-item">	
+        <a href="#" onclick="$('.edition').hide();$('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}').show();">{{ .Params.title }}</a>
+    </li>{{end}}
+    {{ end }}{{ end }}
+</ul>
+</li>
+             
+</ul>
             <div class="container-fluid">
               
             {{ block "body" . }}
