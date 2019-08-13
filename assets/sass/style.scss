@@ -158,7 +158,6 @@ a, .description a {
 
 .landing-page .section,
 .news .section,
-.download-page .section,
 .user-guide .section,
 .useful-for-everyone .section {
     background-image: url(/img/bg.svg);
@@ -772,17 +771,19 @@ h1:first-letter {
         padding: 0;
         margin-top: 38px;
         min-height: 93vh;
+        background-color: #212529;
+        h3, p {
+            color: #ffff;
+        }
     }
     ul.card {
         padding-right:0 !important;
     }
-    li img {
-        margin-right: 8px;
+    img {
+        width: 100%;
     }
-    .editions-box {
-        .name, .action {
-            font-size: 18px !important;
-        }
+    .editions-grid {
+        padding: 10px;
     }
     .btn-group {
         padding: 12px;
@@ -790,15 +791,56 @@ h1:first-letter {
     }
     .container-fluid {
             padding-right: 0px;
-            padding-left: 100px;
+            padding-left: 76px;
     }
+    .edition {
+        height: 88vh;
+        h3 {
+            font-size: 2em !important;
+        }
+        p {
+            font-size: 1.25em;
+        }
+    }
+    #sidebar {
+       
     li {
-        ul {
-            margin-bottom: 30px;
+        list-style-type: none;
+        & > a {
+            &:after {
+                display: none;
+            }
+            font-size: 1.1em !important;
+            color: #ffff !important;
+            font-weight: bold;
+            text-transform: capitalize !important;
+            text-align: right;
         }
-        h4 {
-        margin-top: 0;
+        .dropdown-menu {
+            top:-4px !important;
+            left: 8px !important;
+            &:before {
+                top: 21px;
+                left: -8px;
+                right: auto;
+                transform: rotate(-92deg);
+            }
         }
+        .dropdown-item:hover {
+            color: #ffff;
+        }
+    }
+    
+        width:148px !important;
+        height: 100%; 
+        background-color: #2c2c2c;
+        color: #ffff;
+        position: fixed;
+        z-index: 1; 
+        left: 0;
+        top: 62px;
+        padding: 10px;
+        
     }
 }
 

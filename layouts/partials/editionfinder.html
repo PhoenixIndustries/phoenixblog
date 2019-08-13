@@ -9,12 +9,17 @@
                 -->
                 {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
                 <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
-                        {{ .Params.name }}
-                <a href="{{ .Permalink }}" class="editions-box editions-link" >
+                    <div class="row h-100">
+                        <div class="col-4 my-auto">
+                            <h3>{{ .Params.name }}</h3>
+                            <p>{{ .Params.shortDescription }}</p>
+                        </div>
+                        
+                <a class="col-8 my-auto" href="{{ .Permalink }}" class="editions-box editions-link" >
                 <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
             </a>
-            {{ .Params.shortDescription }}
-                </div>{{ end }}{{ end }}
+            
+                </div></div>{{ end }}{{ end }}
 		</div>		
     </div>
 </section>
