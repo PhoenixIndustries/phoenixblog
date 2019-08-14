@@ -1,5 +1,6 @@
 $green:#44883c;
 $svg-icon-size: 62px;
+$dark-background: #212529;
 
 @font-face {
     font-family: 'Comfortaa';
@@ -14,7 +15,7 @@ $svg-icon-size: 62px;
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #262627;
+    background: $dark-background;
     z-index: 999999;
     position: fixed;
     img {
@@ -97,6 +98,10 @@ $svg-icon-size: 62px;
     font-style: normal; 
 }
 
+.page-footer {
+    background-color: $dark-background;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.01em;
@@ -104,6 +109,24 @@ body {
     
     p {
         color: #5a5a5a;  
+    }
+}
+.btn-download {
+    background-color:  #bf360c;
+    border: 1px solid transparent;
+    font-weight: bold !important;
+    .fas {
+        font-size: 1.3em;
+        margin-left: 12px;
+    }
+    &:hover, &:hover, &:active, &:visited {
+        background-color:  #bf360c;
+        border: 1px solid #bf360c;
+        border: 1px solid rgba(191, 54, 12, 0.8);
+    }
+    &:active:focus {
+        background-color:  #bf360c;
+        box-shadow: 0 0 0 0.2rem rgba(191, 54, 12, 0.5);
     }
 }
 
@@ -295,6 +318,23 @@ h1:first-letter {
 }
 
 @media screen and (max-width: 991px) { 
+
+    .download-page {
+        .image-container:after {
+          width: 200px !important;
+          height: 200px !important;
+        }
+        .image-container img, .video-player {
+          border-radius: 10px !important;
+          border: 10px solid #090909 !important;
+        }
+        .section {
+            margin-top: -1px !important;
+        }
+        #sidebar {
+            top: 52px !important;
+        }
+    }
     
     .tooltip {
         display: none !important;
@@ -314,7 +354,7 @@ h1:first-letter {
         opacity: 100;
         }
     }
-    .dropdown-menu .dropdown-item {
+    .navbar-nav .dropdown-menu .dropdown-item {
         color: #FFFFFF;
         font-weight: bold;
     }
@@ -784,6 +824,7 @@ h1:first-letter {
     }
     .editions-grid {
         padding: 10px;
+        padding-top: 40px;
     }
     .btn-group {
         padding: 12px;
@@ -791,7 +832,7 @@ h1:first-letter {
     }
     .container-fluid {
             padding-right: 0px;
-            padding-left: 76px;
+            padding-left: 80px;
     }
     .edition {
         height: 88vh;
@@ -800,6 +841,27 @@ h1:first-letter {
         }
         p {
             font-size: 1.25em;
+        }
+    }
+
+    .image-container {
+        &:after {  
+            background-image: url(/img/download/monitor-stand.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        img, .video-player {
+            border-radius: 20px;
+            border: 20px solid #090909;
+            margin-bottom: -10px;
+        }
+        .video-player {
+            display: none;
         }
     }
     #sidebar {
@@ -811,7 +873,7 @@ h1:first-letter {
                 display: none;
             }
             font-size: 1.1em !important;
-            color: #ffff !important;
+            color: #efefef !important;
             font-weight: bold;
             text-transform: capitalize !important;
             text-align: right;
@@ -826,14 +888,17 @@ h1:first-letter {
                 transform: rotate(-92deg);
             }
         }
-        .dropdown-item:hover {
+        .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
             color: #ffff;
-        }
+            background: #0d5f4f;
+            background-color: rgba(13, 95, 79, 0.8);
+            transition: all 0.6s ease;
+            }
     }
     
         width:148px !important;
         height: 100%; 
-        background-color: #2c2c2c;
+        background-color: #1b1f23;
         color: #ffff;
         position: fixed;
         z-index: 1; 
@@ -1008,7 +1073,7 @@ h1:first-letter {
     
     .card {
         overflow: visible;
-        background: #2c2c2c;
+        background: $dark-background;
 
         .card-header {
             padding: 0;
@@ -1467,6 +1532,10 @@ h1:first-letter {
 
 @media screen and (min-width: 992px) {
 
+    .download-page .edition h3 {
+        text-align: right;
+    }
+
     .navbar-transparent .nav-item.active .nav-link:not(.btn),
     .navbar-transparent .nav-item .nav-link:not(.btn):focus,
     .navbar-transparent .nav-item .nav-link:not(.btn):hover {
@@ -1689,7 +1758,7 @@ img[src$='#floatright']
      color: #2c2c2c !important;
     }
     .team-background {
-        background-color: #2c2c2c;
+        background-color: $dark-background;
     }
     .team-player {
 

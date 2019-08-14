@@ -9,17 +9,22 @@
                 -->
                 {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
                 <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
-                    <div class="row h-100">
-                        <div class="col-4 my-auto">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 col-xl-3">
                             <h3>{{ .Params.name }}</h3>
                             <p>{{ .Params.shortDescription }}</p>
+                            <a class="btn btn-download btn-xl" href="{{ .Permalink }}" class="editions-box editions-link" >Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
                         </div>
-                        
-                <a class="col-8 my-auto" href="{{ .Permalink }}" class="editions-box editions-link" >
-                <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
-            </a>
-            
-                </div></div>{{ end }}{{ end }}
+                        <div class="image-container col-md-12 col-lg-8 col-xl-9">
+                        <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
+                        {{ if .Params.Youtube }}
+                            {{ partial "youtube" . }}
+                        {{ end }}
+                        </div> 
+                    </div>
+            </div>
+            {{ end }}
+            {{ end }}
 		</div>		
     </div>
 </section>
