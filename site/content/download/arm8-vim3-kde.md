@@ -1,13 +1,13 @@
 +++
-Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/on2/kde/19.08/Manjaro-ARM-kde-on2-19.08.img.xz"
-Download_x64_Checksum = "7d316769e35384acb0938cb069b459ed01b49f85"
-Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/on2/kde/19.08/Manjaro-ARM-kde-on2-19.08.img.xz.sig"
-Download_x64_Torrent = "https://osdn.net/projects/manjaro-arm/storage/on2/kde/19.08/Manjaro-ARM-kde-on2-19.08.img.xz.torrent"
+Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/vim3/kde/19.08/Manjaro-ARM-kde-vim3-19.08.img.xz"
+Download_x64_Checksum = "efd9d33bd0afd1fb35f31e6ddd1e291cce576665"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/vim3/kde/19.08/Manjaro-ARM-kde-vim3-19.08.img.xz.sig"
+Download_x64_Torrent = "https://osdn.net/projects/manjaro-arm/storage/vim3/kde/19.08/Manjaro-ARM-kde-vim3-19.08.img.xz.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Odroid N2 KDE"
+Name = "Khadas Vim 3 KDE"
 Screenshot = "arm-kde-full.jpg"
 Youtube = ""
 Tags = [ "arm" ]
@@ -15,7 +15,7 @@ shortDescription = "Plasma on ARM is a full-featured desktop experience and all 
 Thumbnail = "arm-kde-full.png"
 Version = "19.08"
 date = "08.2019"
-title = "Odroid N2 KDE"
+title = "Khadas Vim 3 KDE"
 type="download-edition"
 weight = "1"
 +++
