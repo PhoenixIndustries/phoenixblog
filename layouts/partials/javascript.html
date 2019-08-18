@@ -136,15 +136,11 @@ function show_editions(editions) {
     $(editions).show();
 }
 
-$('.image-container').hover(function() {
+$('.image-container').click(function() {
     if ($(this).find('.video-player').length) {
         $(this).find('img').hide();
         $(this).find('.video-player').show();
         };
-
-}, function() {
-    $(this).find('.video-player').hide();
-    $(this).find('img').show();
 });
 </script>
 {{ end }}

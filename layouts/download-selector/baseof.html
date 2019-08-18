@@ -22,57 +22,7 @@
             
         </div>
         <div class="{{ .Params.section | default "section"}}">
-        <ul id="sidebar">
-
-<li class="nav-item dropright">	
-  <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">Official</a>
-  <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-      {{ range .Site.Pages }}
-      {{ if eq .Type "download-edition" }}
-      {{ if eq .Params.edition "official" }}
-      <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-      {{end}}
-      {{ end }}{{ end }}
-    </div>
-</li>
-
-<li class="nav-item dropright">	
-    <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">community</a>
-    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-        {{ range .Site.Pages }}
-        {{ if eq .Type "download-edition" }}
-        {{ if eq .Params.edition "community" }}
-        <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-        {{end}}
-        {{ end }}{{ end }}
-      </div>
-  </li>
-
-  <li class="nav-item dropright">	
-      <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">32bit</a>
-      <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-          {{ range .Site.Pages }}
-          {{ if eq .Type "download-edition" }}
-          {{ if eq .Params.edition "32bit" }}
-          <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-          {{end}}
-          {{ end }}{{ end }}
-        </div>
-    </li>
-
-    <li class="nav-item dropright">	
-        <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">arm</a>
-        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-            {{ range .Site.Pages }}
-            {{ if eq .Type "download-edition" }}
-            {{ if eq .Params.edition "arm" }}
-            <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-            {{end}}
-            {{ end }}{{ end }}
-          </div>
-      </li>
-             
-</ul>
+        
             <div class="container-fluid">
               
             {{ block "body" . }}

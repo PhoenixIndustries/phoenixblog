@@ -835,12 +835,16 @@ h1:first-letter {
             padding-left: 80px;
     }
     .edition {
-        height: 88vh;
         h3 {
             font-size: 2em !important;
         }
         p {
-            font-size: 1.25em;
+            font-size: 1.1em;
+        }
+        .modal-content iframe {
+            width: 100%;
+            border: none;
+            height: 92vh;
         }
     }
 
@@ -862,6 +866,15 @@ h1:first-letter {
         }
         .video-player {
             display: none;
+        }
+        #video-btn {
+            position: absolute;
+            top: calc(50% - 164px);
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            color: red;
         }
     }
     #sidebar {

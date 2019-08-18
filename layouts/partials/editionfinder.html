@@ -1,4 +1,55 @@
-<aside id="downloads" style="transition: height .5s;">
+<ul id="sidebar">
+
+    <li class="nav-item dropright">	
+      <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">Official</a>
+      <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
+          {{ range .Site.Pages }}
+          {{ if eq .Type "download-edition" }}
+          {{ if eq .Params.edition "official" }}
+          <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+          {{end}}
+          {{ end }}{{ end }}
+        </div>
+    </li>
+    
+    <li class="nav-item dropright">	
+        <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">community</a>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
+            {{ range .Site.Pages }}
+            {{ if eq .Type "download-edition" }}
+            {{ if eq .Params.edition "community" }}
+            <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+            {{end}}
+            {{ end }}{{ end }}
+          </div>
+      </li>
+    
+      <li class="nav-item dropright">	
+          <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">32bit</a>
+          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
+              {{ range .Site.Pages }}
+              {{ if eq .Type "download-edition" }}
+              {{ if eq .Params.edition "32bit" }}
+              <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+              {{end}}
+              {{ end }}{{ end }}
+            </div>
+        </li>
+    
+        <li class="nav-item dropright">	
+            <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">arm</a>
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
+                {{ range .Site.Pages }}
+                {{ if eq .Type "download-edition" }}
+                {{ if eq .Params.edition "arm" }}
+                <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                {{end}}
+                {{ end }}{{ end }}
+              </div>
+          </li>
+                 
+    </ul>
+    <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
             <div class="container-fluid">
@@ -10,18 +61,46 @@
                 {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
                 <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
                     <div class="row">
-                        <div class="col-md-12 col-lg-4 col-xl-3">
+                        <div class="col-md-12 col-lg-5 col-xl-4">
                             <h3>{{ .Params.name }}</h3>
                             <p>{{ .Params.shortDescription }}</p>
-                            <a class="btn btn-download btn-xl" href="{{ .Permalink }}" class="editions-box editions-link" >Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
+                            <p>{{ .Content | markdownify }}</p>
+                            <a onclick="$(this).parent().parent().parent().find('iframe').attr('src', '{{ .Permalink }}');" class="btn btn-download btn-xl" href="#" class="editions-box editions-link" data-toggle="modal" data-target="#{{ .Params.edition }}{{ .Params.name }}">Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
                         </div>
-                        <div class="image-container col-md-12 col-lg-8 col-xl-9">
-                        <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
+                        <div class="image-container col-md-12 col-lg-7 col-xl-8">
                         {{ if .Params.Youtube }}
+                             <a href="#" id="video-btn"><i class="fas fa-play"></i></a>
                             {{ partial "youtube" . }}
                         {{ end }}
+                        <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                         </div> 
                     </div>
+                    <div class="modal fade" id="{{ .Params.edition }}{{ .Params.name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">{{ .Params.name }}</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <iframe src="" onload="
+                                    $(this).contents().find('.navbar, footer').hide();
+                                    $(this).contents().find('.section .container').css('max-width', '100%');
+                                    $(this).contents().on('click', function (event) {
+                                        event.preventDefault();
+                                        var el = event.originalEvent.srcElement
+                                        document.location.pathname = $(el).attr('href');
+                                        });">
+                             </iframe>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
             </div>
             {{ end }}
             {{ end }}
