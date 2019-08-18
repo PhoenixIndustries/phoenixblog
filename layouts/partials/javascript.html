@@ -142,7 +142,7 @@ $('.image-container').click(function() {
         $(this).find('.video-player').show();
         };
 });
-$('.edition.xfce').show();
+$('.edition.xfce:not(".edition.xfce.32bit")').show();
 </script>
 {{ end }}
 {{ if eq .Title "Donate"}} 
