@@ -1,6 +1,6 @@
 +++
 Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.0-rc9-testing-x86_64.iso"
-Download_x64_Checksum = "d692c7f6501a33bf9c002f82a09c61a3538b6df8"
+Download_x64_Checksum = "0895cb7a5bf5e14c6161cba7ae542a6912de74a8"
 Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.0-rc9-testing-x86_64.iso.sig"
 Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.0-rc9-testing-x86_64.iso.torrent"
 Download_x86 = ""
