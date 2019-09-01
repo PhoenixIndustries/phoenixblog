@@ -9,6 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Under Development KDE"
 Screenshot = "kde-full.jpg"
+Thumbnail = "kde-preview.jpg"
 Youtube = "FHMBocs2Xc8"
 Tags = [ "dev"]
 shortDescription = "For testers and developers"
