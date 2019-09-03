@@ -13,6 +13,88 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{ "img/blurred-image-1.jpg" | relURL }}">
               <ul class="navbar-nav  ml-auto">
+                  {{ if eq .Title "Downloads"}}
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle"  id="dropdown-editions" data-toggle="dropdown">
+                        <span>Editions</span>
+                        <span class="caret"></span>
+                      </a>
+                    <ul class="dropdown-menu dropdown-menu-right multi-level" aria-labelledby="dropdown-editions">
+                      <li class="dropdown-submenu">
+                      <a href="#" onclick="show_editions('.edition.official');" class="dropdown-item" id="official" aria-expanded="Dropright">Official</a>
+                      <ul class="dropdown-menu" aria-labelledby="official">
+                          {{ range (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "official") }}
+                          <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                          {{end}}
+                      </ul>
+                      </li>
+                  
+                      <li class="dropdown-submenu">
+                        <a href="#" onclick="show_editions('.edition.community');" class="dropdown-item" id="community" aria-expanded="Dropright">community</a>
+                        <ul class="dropdown-menu" aria-labelledby="community">
+                            {{ range (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "community") }}
+                            <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                            {{end}}
+                        </ul></li>
+                    
+                          <li class="dropdown-submenu">
+                          <a href="#" onclick="show_editions('.edition.32bit');" class="dropdown-item" id="32bit" aria-expanded="Dropright">32bit</a>
+                          <ul class="dropdown-menu" aria-labelledby="32bit">
+                              {{ range (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "32bit") }}
+                              <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                              {{end}}
+                          </ul></li>
+                    
+                            <li class="dropdown-submenu">
+                            <a href="#" onclick="show_editions('.edition.arm');" class="dropdown-item" id="arm" aria-expanded="Dropright">arm</a>
+                            <ul class="dropdown-menu" aria-labelledby="arm">
+                                <li class="dropdown-submenu">
+                                  <a class="dropdown-item" href="#">Odroid</a>
+                                  <ul class="dropdown-menu" aria-labelledby="odroid">
+                                      {{ range (where (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "arm") ".Params.device" "odroid" ) }}
+                                        <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                                        {{end}}
+                                      </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Pinebook</a>
+                                    <ul class="dropdown-menu" aria-labelledby="pinebook">
+                                        {{ range (where (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "arm") ".Params.device" "pinebook" ) }}
+                                          <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                                          {{end}}
+                                        </ul>
+                                  </li>
+                                  <li class="dropdown-submenu">
+                                      <a class="dropdown-item" href="#">Raspberry Pi 3</a>
+                                      <ul class="dropdown-menu" aria-labelledby="Raspeberry Pi 3">
+                                          {{ range (where (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "arm") ".Params.device" "raspberrypi3" ) }}
+                                            <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                                            {{end}}
+                                          </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Rock Pi 4</a>
+                                        <ul class="dropdown-menu" aria-labelledby="Rock Pi 4">
+                                            {{ range (where (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "arm") ".Params.device" "rockpi4" ) }}
+                                              <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                                              {{end}}
+                                            </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                          <a class="dropdown-item" href="#">Rock Pro 64</a>
+                                          <ul class="dropdown-menu" aria-labelledby="Rock Pro 64">
+                                              {{ range (where (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "arm") ".Params.device" "rockpro64" ) }}
+                                                <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
+                                                {{end}}
+                                              </ul>
+                                        </li>
+                            </ul>
+                          </li>
+              </ul>
+                  </li>
+                  {{ end }}
+               
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">

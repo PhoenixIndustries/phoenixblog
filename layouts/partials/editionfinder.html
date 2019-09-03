@@ -1,54 +1,3 @@
-<ul id="sidebar">
-
-    <li class="nav-item dropright">	
-      <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">Official</a>
-      <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-          {{ range .Site.Pages }}
-          {{ if eq .Type "download-edition" }}
-          {{ if eq .Params.edition "official" }}
-          <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-          {{end}}
-          {{ end }}{{ end }}
-        </div>
-    </li>
-    
-    <li class="nav-item dropright">	
-        <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">community</a>
-        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-            {{ range .Site.Pages }}
-            {{ if eq .Type "download-edition" }}
-            {{ if eq .Params.edition "community" }}
-            <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-            {{end}}
-            {{ end }}{{ end }}
-          </div>
-      </li>
-    
-      <li class="nav-item dropright">	
-          <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">32bit</a>
-          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-              {{ range .Site.Pages }}
-              {{ if eq .Type "download-edition" }}
-              {{ if eq .Params.edition "32bit" }}
-              <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-              {{end}}
-              {{ end }}{{ end }}
-            </div>
-        </li>
-    
-        <li class="nav-item dropright">	
-            <a href="#" class="nav-link dropdown-toggle" id="official" data-toggle="dropdown" aria-expanded="Dropright">arm</a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="official">
-                {{ range .Site.Pages }}
-                {{ if eq .Type "download-edition" }}
-                {{ if eq .Params.edition "arm" }}
-                <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }}</a>
-                {{end}}
-                {{ end }}{{ end }}
-              </div>
-          </li>
-                 
-    </ul>
     <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
@@ -61,13 +10,20 @@
                 {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
                 <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5 col-xl-4">
-                            <h3>{{ .Params.name }}</h3>
+                        <div class="col-md-12 col-lg-6 col-xl-5">
+                            <h3>{{ .Params.name }}
+                                {{ if eq .Params.name "XFCE" }}
+                                <img class="desktop-logo" src="/img/editions/logos/xfce.png">
+                                {{ else if eq .Params.name "KDE" }}
+                                <img class="desktop-logo" src="/img/editions/logos/kde.png">
+                                {{ end }}
+                                
+                              </h3>
                             <p>{{ .Params.shortDescription }}</p>
                             <p>{{ .Content | markdownify }}</p>
-                            <a onclick="$(this).parent().parent().parent().find('iframe').attr('src', '{{ .Permalink }}');" class="btn btn-download btn-xl" href="#" class="editions-box editions-link" data-toggle="modal" data-target="#{{ .Params.edition }}{{ .Params.name }}">Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
+                            <a onclick="$(this).parent().parent().parent().find('#iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}').attr('src', '{{ .Permalink }}');" class="btn btn-download btn-xl" href="#" class="editions-box editions-link" data-toggle="modal" data-target="#{{ .Params.edition }}{{ replace .Params.name " " "-" }}">Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
                         </div>
-                        <div class="image-container col-md-12 col-lg-7 col-xl-8">
+                        <div class="image-container col-md-12 col-lg-6 col-xl-7">
                         {{ if .Params.Youtube }}
                              <a href="#" id="video-btn"><i class="fas fa-play"></i></a>
                             {{ partial "youtube" . }}
@@ -75,7 +31,7 @@
                         <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                         </div> 
                     </div>
-                    <div class="modal fade" id="{{ .Params.edition }}{{ .Params.name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="{{ .Params.edition }}{{ replace .Params.name " " "-" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -85,9 +41,12 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <iframe src="" onload="
-                                    $(this).contents().find('.navbar, footer').hide();
+                              <iframe id="iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}" src="" onload="
+                                    $(this).contents().find('.navbar, footer, #back-to-top').hide();
                                     $(this).contents().find('.section .container').css('max-width', '100%');
+                                    $(this).contents().find('.section .row div').css('background-color', 'white');
+                                    $(this).contents().find('.section').css('padding', '0');
+                                    $(this).contents().find('.btn-success:hover, .btn-success:active, .btn-success:focus').css('box-shadow', 'none').css('background-color', 'transparent');
                                     $(this).contents().on('click', function (event) {
                                         event.preventDefault();
                                         var el = event.originalEvent.srcElement

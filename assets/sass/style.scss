@@ -335,6 +335,12 @@ h1:first-letter {
             top: 52px !important;
         }
     }
+
+    .image-container {
+        #video-btn {
+            top: 35% !important;
+        }
+    }
     
     .tooltip {
         display: none !important;
@@ -830,13 +836,11 @@ h1:first-letter {
         padding: 12px;
         padding-bottom: 6px;
     }
-    .container-fluid {
-            padding-right: 0px;
-            padding-left: 80px;
-    }
     .edition {
+        margin-bottom: 80px;
         h3 {
             font-size: 2em !important;
+            margin-right: 70px;
         }
         p {
             font-size: 1.1em;
@@ -845,6 +849,19 @@ h1:first-letter {
             width: 100%;
             border: none;
             height: 92vh;
+        }
+        ul {
+            color: white;
+            text-align: left;
+        }
+        a {
+            margin-bottom: 40px;
+        }
+        .desktop-logo {
+            top: -10px;
+            width: 52px;
+            position: absolute;
+            margin-left: 18px;
         }
     }
 
@@ -877,48 +894,31 @@ h1:first-letter {
             color: red;
         }
     }
-    #sidebar {
-       
-    li {
-        list-style-type: none;
-        & > a {
-            &:after {
-                display: none;
-            }
-            font-size: 1.1em !important;
-            color: #efefef !important;
-            font-weight: bold;
-            text-transform: capitalize !important;
-            text-align: right;
+    .dropdown-submenu {
+        position: relative;
+        &:hover > .dropdown-menu {
+            display: block;
         }
-        .dropdown-menu {
-            top:-4px !important;
-            left: 8px !important;
+        & > .dropdown-menu {
             &:before {
-                top: 21px;
-                left: -8px;
-                right: auto;
-                transform: rotate(-92deg);
+                display:none;
             }
+            &:before:hover {
+                color: #0d5f4f;
+            }
+            display: none;
+            top: 0;
+            left: 100%;
+            margin-top: -15px;
+            width: 194px;
+            border-top-left-radius: 0; 
         }
-        .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
-            color: #ffff;
-            background: #0d5f4f;
-            background-color: rgba(13, 95, 79, 0.8);
-            transition: all 0.6s ease;
-            }
     }
-    
-        width:148px !important;
-        height: 100%; 
-        background-color: #1b1f23;
+    .dropdown-item:hover {
         color: #ffff;
-        position: fixed;
-        z-index: 1; 
-        left: 0;
-        top: 62px;
-        padding: 10px;
-        
+    }
+    .dropdown-item {
+        text-transform: capitalize;
     }
 }
 
