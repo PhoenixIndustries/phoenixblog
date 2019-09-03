@@ -1,6 +1,6 @@
 +++
 Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.0-rc9-testing-x86_64.iso"
-Download_x64_Checksum = "d0272464e8812fdb0bb2ee51c0f55b79365053da"
+Download_x64_Checksum = "b3b987b88d0a32df11461c12568a80b27d55fb68"
 Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.0-rc9-testing-x86_64.iso.sig"
 Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.0-rc9-testing-x86_64.iso.torrent"
 Download_x86 = ""
@@ -14,8 +14,8 @@ shortDescription = "For testers and developers"
 Tags = [ "dev" ]
 Thumbnail = "kde-preview.jpg"
 Version = "18.1.0-rc9"
-date = "01.09.2019T17:08:00+01:00"
-title = "Under Development KDE"
+date = "03.09.2019T17:08:00+01:00"
+title = "KDE (18.1-rc9 Rev2)"
 type="download-edition"
 weight = "6"
 +++

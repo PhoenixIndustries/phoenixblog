@@ -1,6 +1,6 @@
 +++
 Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.0-rc9-testing-x86_64.iso"
-Download_x64_Checksum = "cda7aa77030525714afb2ee5a07a7f472c8dc2af"
+Download_x64_Checksum = "4fea1264fd6aee12ae2d0dce22937b0698fd6561"
 Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.0-rc9-testing-x86_64.iso.sig"
 Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.0-rc9-testing-x86_64.iso.torrent"
 Download_x86 = ""
@@ -14,8 +14,8 @@ Tags = [ "dev" ]
 shortDescription = "For testers and developers"
 Thumbnail = "gnome-preview.jpg"
 Version = "18.1.0-rc9"
-date = "01.09.2019T17:08:00+01:00"
-title = "Under Development Gnome"
+date = "03.09.2019T17:08:00+01:00"
+title = "Gnome (18.1-rc9 Rev2)"
 type="download-edition"
 weight = "6"
 +++
