@@ -71,9 +71,7 @@ Email: [Direct contact](mailto:content@manjaro.org)
 
 ### Informationen to Dispute resolution:
 
-The EU Commission provides on its website the following link to the ODR platform: http://ec.europa.eu/consumers/odr This platform shall be a point of entry for out-of-court resolutions of disputes arising from online sales and service contracts concluded between consumers and traders.
-
-Manjaro is neither obliged nor prepared to attend a dispute settlement procedure before an alternative dispute resolution entity. 
+The EU Commission provides on its website the following link to the [ODR platform](http://ec.europa.eu/consumers/odr). This platform shall be a point of entry for out-of-court resolutions of disputes arising from online sales and service contracts concluded between consumers and traders. Manjaro is neither obliged nor prepared to attend a dispute settlement procedure before an alternative dispute resolution entity. 
 
 ### Under the Hood
 
