@@ -5,7 +5,7 @@ title: "Terms of Use"
 
 ### Disclaimer
 
-No warranties, either express or implied, are hereby given for anything provided by Manjaro Linux ("Software"). All software is supplied without any accompanying guarantee, whether expressly mentioned, implied or tacitly assumed. This information does not include any guarantees regarding quality, does not describe any fair marketable quality, and does not make any claims as to quality quarantees or quarantees regarding the suitability for a special purpose. The user assumes all responsibility for damages resulting from the use of the software.
+No warranties, either express or implied, are hereby given for anything provided by Manjaro Linux ("Software"). All software is supplied without any accompanying guarantee, whether expressly mentioned, implied or tacitly assumed. This information does not include any guarantees regarding quality, does not describe any fair marketable quality, and does not make any claims as to quality guarantees or guarantees regarding the suitability for a special purpose. The user assumes all responsibility for damages resulting from the use of the software.
 
 ### Free Software and Manjaro Linux
 
