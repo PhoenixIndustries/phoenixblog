@@ -47,30 +47,26 @@ All other trademarks and copyrights are property of their respective owners and 
 
 ### Legal website operator identification
 
-<dl>
-Company: Manjaro GmbH & Co. KG
-Represented: General Managers Philip Müller & Bernhard Landauer
-Street: Adalbert-Stifter-Str. 21a
-City: Grafing b. München
-State/Province: Bavaria
-Postal Code: 85567
-Country: Germany
-Email: [Direct contact](mailto:management@manjaro.org)
-Commercial register: local court Munich
-Commercial register number: Part A of the commercial register - 111192
-</dl>
+...Company: Manjaro GmbH & Co. KG
+...Represented: General Managers Philip Müller & Bernhard Landauer
+...Street: Adalbert-Stifter-Str. 21a
+...City: Grafing b. München
+...State/Province: Bavaria
+...Postal Code: 85567
+...Country: Germany
+...Email: [Direct contact](mailto:management@manjaro.org)
+...Commercial register: local court Munich
+...Commercial register number: Part A of the commercial register - 111192
 
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
-<dl>
-Name: Philip Müller
-Company: Manjaro GmbH & Co. KG
-Street: Adalbert-Stifter-Str. 21a
-City: Grafing b. München
-State/Province: Bavaria
-Postal Code: 85567
-Country: Germany
-</dl>
+...Name: Philip Müller
+...Company: Manjaro GmbH & Co. KG
+...Street: Adalbert-Stifter-Str. 21a
+...City: Grafing b. München
+...State/Province: Bavaria
+...Postal Code: 85567
+...Country: Germany
 
 ### Informationen to Dispute resolution:
 
@@ -80,11 +76,9 @@ Manjaro is neither obliged nor prepared to attend a dispute settlement procedure
 
 ### Under the Hood
 
-<dl>
-This site is powered by:
-[Hugo](https://gohugo.io/)
-[MediaWiki](http://www.mediawiki.org)
-[Gitlab](https://www.gitlab.com/)
-[Discourse](https://www.discourse.org/)
-[Mailman](http://www.list.org/)
-</dl>
+...This site is powered by:
+...[Hugo](https://gohugo.io/)
+...[MediaWiki](http://www.mediawiki.org)
+...[Gitlab](https://www.gitlab.com/)
+...[Discourse](https://www.discourse.org/)
+...[Mailman](http://www.list.org/)
