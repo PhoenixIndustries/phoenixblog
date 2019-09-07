@@ -55,7 +55,7 @@ State/Province: Bavaria
 Postal Code: 85567  
 Country: Germany  
 Email: [Direct contact](mailto:management@manjaro.org)  
-Commercial register: local court Munich  
+Commercial register: District court Munich  
 Commercial register number: Part A of the commercial register - 111192  
 
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
