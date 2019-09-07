@@ -67,6 +67,7 @@ City: Grafing b. München
 State/Province: Bavaria  
 Postal Code: 85567  
 Country: Germany  
+Email: [Direct contact](mailto:content@manjaro.org)  
 
 ### Informationen to Dispute resolution:
 
