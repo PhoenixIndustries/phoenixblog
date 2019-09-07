@@ -48,7 +48,7 @@ All other trademarks and copyrights are property of their respective owners and 
 ### Legal website operator identification
 
 Company: Manjaro GmbH & Co. KG  
-Represented: General Managers Philip Müller & Bernhard Landauer  
+Represented by: General Managers Philip Müller & Bernhard Landauer  
 Street: Adalbert-Stifter-Str. 21a  
 City: Grafing b. München  
 State/Province: Bavaria  
