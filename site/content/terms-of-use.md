@@ -35,8 +35,9 @@ We would like to thank everyone who has enabled us to create Manjaro and/or cont
 
 Manjaro Linux uses several trademarks from different projects. Their rights are not overruled by our license and stay intact.
 
-
+* Manjaro Linux, copyright © 2019 Manjaro GmbH & Co. KG
 * Manjaro Linux, copyright © 2011-2018 Philip Müller and the Manjaro Developers
+* Manjaro is a registed trademark of Manjaro GmbH & Co. KG; Manjaro Community is licensed to use the trade mark with given terms.
 * Arch Linux, copyright © 2002-2018 Judd Vinet and Aaron Griffin
 * GNOME is licensed under the GNOME Foundation's License Agreement
 * KDE® and the K Desktop Environment® logo are registered trademarks of KDE e.V.
@@ -44,23 +45,40 @@ Manjaro Linux uses several trademarks from different projects. Their rights are 
 
 All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes.
 
-### Project representative
+### Legal website operator identification
 
-Name: Philip Müller  
-Organization: Manjaro Linux  
-Street: Dr. Wintrichstr. 43  
-City: Ebersberg  
-State/Province: Bavaria  
-Postal Code: 85560  
-Country: Germany  
-Email: [Direct contact](mailto:support@manjaro.org)
+Company: Manjaro GmbH & Co. KG
+Represented: General Managers Philip Müller & Bernhard Landauer
+Street: Adalbert-Stifter-Str. 21a
+City: Grafing b. München
+State/Province: Bavaria
+Postal Code: 85567
+Country: Germany
+Email: [Direct contact](mailto:management@manjaro.org)
+Commercial register: local court Munich
+Commercial register number: Part A of the commercial register - 111192
+
+### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
+
+Name: Philip Müller
+Company: Manjaro GmbH & Co. KG
+Street: Adalbert-Stifter-Str. 21a
+City: Grafing b. München
+State/Province: Bavaria
+Postal Code: 85567
+Country: Germany
+
+### Informationen to Dispute resolution:
+
+The EU Commission provides on its website the following link to the ODR platform: http://ec.europa.eu/consumers/odr This platform shall be a point of entry for out-of-court resolutions of disputes arising from online sales and service contracts concluded between consumers and traders.
+
+The Manjaro is neither obliged nor prepared to attend a dispute settlement procedure before an alternative dispute resolution entity. 
 
 ### Under the Hood
 
-This site is powered by:  
-[Hugo](https://gohugo.io/)  
-[MediaWiki](http://www.mediawiki.org)  
-[Gitlab](https://www.gitlab.com/)  
-[Discourse](https://www.discourse.org/)  
-[Zammad](https://zammad.org/)  
+This site is powered by:
+[Hugo](https://gohugo.io/)
+[MediaWiki](http://www.mediawiki.org)
+[Gitlab](https://www.gitlab.com/)
+[Discourse](https://www.discourse.org/)
 [Mailman](http://www.list.org/)
