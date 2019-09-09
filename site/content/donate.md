@@ -15,14 +15,14 @@ Most of the Core Team members and community volunteers dedicate their time and e
 ## Choose a donation method
 
 <div style="text-align:center">
-   **Manjaro Europe**  
-   <a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
-
-   **Manjaro UK**  
-   <a href="https://opencollective.com/manjaro-uk/donate" target="_blank"><img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 /></a>  
-
-   **Manjaro US**  
-   <a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 /></a>  
+**Manjaro Europe**  
+<a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
+</div><div style="text-align:center">
+**Manjaro UK**  
+<a href="https://opencollective.com/manjaro-uk/donate" target="_blank"><img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 /></a>  
+</div><div style="text-align:center">
+**Manjaro US**  
+<a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 /></a>  
 </div></br>
 
 ### For what will my donations be used for?
