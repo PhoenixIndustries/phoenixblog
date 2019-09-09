@@ -14,20 +14,14 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
 ## Choose a donation method
 
-**Manjaro Europe**
-<a href="https://opencollective.com/manjaro/donate" target="_blank">
-  <img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 />
-</a>
+   **Manjaro Europe**  
+   <a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
 
-**Manjaro UK**
-<a href="https://opencollective.com/manjaro-uk/donate" target="_blank">
-  <img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 />
-</a>
+   **Manjaro UK**  
+   <a href="https://opencollective.com/manjaro-uk/donate" target="_blank"><img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 /></a>  
 
-**Manjaro US**
-<a href="https://opencollective.com/manjaro-us/donate" target="_blank">
-  <img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 />
-</a>
+   **Manjaro US**  
+   <a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 /></a>  
 </br>
 
 ### For what will my donations be used for?
@@ -72,7 +66,7 @@ Visit the info pages of our fiscal hosts to get more details on the fees:
 Right now we only support credit card payments via Stripe through the platform. It is possible to pay by other means, such as bank transfer or Paypal, depending on the Fiscal Host.
 
 |Host|Credit Card|Bank Transfer|Paypal|
-|---|---|---|---|
+|:---|:---:|:---:|:---:|
 OpenCollective EU|Yes|Yes|No|
 OpenCollective UK|Yes|Yes|No|
 OpenCollective US|Yes|Yes|Yes|
