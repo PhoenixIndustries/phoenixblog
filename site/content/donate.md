@@ -14,6 +14,7 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
 ## Choose a donation method
 
+<div style="text-align:center">
    **Manjaro Europe**  
    <a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
 
@@ -22,7 +23,7 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
    **Manjaro US**  
    <a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 /></a>  
-</br>
+</div></br>
 
 ### For what will my donations be used for?
 
