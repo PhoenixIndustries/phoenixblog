@@ -14,6 +14,8 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
 ### For what will my donations be used for?
 
+Your donations will be used to fund project-related expenses, for example:
+
 - Sponsorship for upstream events and local Manjaro team and community events;
 - Local community costs (e.g. shipping of equipment to Manjaro team and community members);
 - Travel (e.g. coverage of full or part of the expenses for attending an event);
@@ -37,7 +39,7 @@ You get a big THANK YOU from the Core Team, since contributions will keep commun
 
 We use a Transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found [here](https://opencollective.com/how-it-works).
 
-Does the fiscal host take any fee for managing?
+### Does the fiscal host take any fee for managing?
 
 Operating the donations programme involves a lot of complexity surrounding taxes, tracking requests, gathering further information, and ensuring the money is objectively distributed across Manjaro, our community, upstream, and our local community teams. This (a) involves a lot of work, (b) requires some commercial accountability (e.g. taxes) and this should be as thin and non-bureaucratic as possible. The Community Team at Manjaro is in a good position to coordinate this work together with each fiscal host, and will regularly reach out to leaders in the Manjaro project to query requests where further information is needed. Accountability for this work will be provided with regular reports.
 
@@ -57,7 +59,7 @@ OpenCollective EU|Yes|Yes|No|
 OpenCollective UK|Yes|Yes|No|
 OpenCollective US|Yes|Yes|Yes|
 
-Can I get a tax deduction?
+### Can I get a tax deduction?
 
 The [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) is a non-profit that serves as fiscal host to most open source software projects on Open Collective. Donations to Collectives under the Open Source Collective 501(c)(6) are not tax deductible.
 
