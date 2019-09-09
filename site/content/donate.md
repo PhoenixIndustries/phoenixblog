@@ -14,9 +14,21 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
 ## Choose a donation method
 
-<script src="https://opencollective.com/manjaro/donate/button.js" color="blue"></script>
-<script src="https://opencollective.com/manjaro-uk/donate/button.js" color="white"></script>
-<script src="https://opencollective.com/manjaro-us/donate/button.js" color="blue"></script>
+**Manjaro Europe**
+<a href="https://opencollective.com/manjaro/donate" target="_blank">
+  <img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 />
+</a>
+
+**Manjaro UK**
+<a href="https://opencollective.com/manjaro-uk/donate" target="_blank">
+  <img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 />
+</a>
+
+**Manjaro US**
+<a href="https://opencollective.com/manjaro-us/donate" target="_blank">
+  <img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 />
+</a>
+</br>
 
 ### For what will my donations be used for?
 
@@ -64,6 +76,7 @@ Right now we only support credit card payments via Stripe through the platform. 
 OpenCollective EU|Yes|Yes|No|
 OpenCollective UK|Yes|Yes|No|
 OpenCollective US|Yes|Yes|Yes|
+</br>
 
 ### Can I get a tax deduction?
 
