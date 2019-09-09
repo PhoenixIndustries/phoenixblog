@@ -38,7 +38,7 @@ Your donations will be used to fund project-related expenses, for example:
 
 ### Who is deciding on how my donation is used for?
 
-The Community board is approving the use of donations to fund project-related expenses in coordiantion with the fiscal host. The company may advise, but will never interfere with decision-making by the community board.
+The Community board is approving the use of donations to fund project-related expenses in coordination with the fiscal host. The company may advise, but will never interfere with decision-making by the community board.
 
 ### Can my donation be anonymous?
 
