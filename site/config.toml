@@ -64,11 +64,11 @@ DefaultContentLanguage = "en-us"
     weight = 4
     identifier = "shop"
 
-#[[menu.main]]
-#    name = "Donate"
-#    pre = ""
-#    url = "/donate/"
-#    weight = 3 
+[[menu.main]]
+    name = "Donate"
+    pre = ""
+    url = "/donate/"
+    weight = 3 
 
 [[menu.main]]
     name = "Downloads"
