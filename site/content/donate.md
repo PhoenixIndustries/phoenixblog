@@ -46,7 +46,7 @@ You can decided for yourself if you want to donate anonymous or in your name. We
 
 ### What do I get if I donate?
 
-You get a big THANK YOU from the Core Team, since contributions will keep community related activities up and running and ensure the availability of updates and features within Manjaro.
+You get a big THANK YOU from the Core Team, since contributions will keep community related activities up and running and ensure the availability of updates and features within Manjaro Linux.
 
 ### How can I see how the money is spent?
 
