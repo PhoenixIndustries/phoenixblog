@@ -65,7 +65,7 @@ Visit the info pages of our fiscal hosts to get more details on the fees:
 
 Right now we only support credit card payments via Stripe through the platform. It is possible to pay by other means, such as bank transfer or Paypal, depending on the Fiscal Host.
 
-|Host|Credit Card|Bank Transfer|Paypal|
+|Host - |Credit Card - |Bank Transfer - |Paypal|
 |:---|:---:|:---:|:---:|
 OpenCollective EU|Yes|Yes|No|
 OpenCollective UK|Yes|Yes|No|
