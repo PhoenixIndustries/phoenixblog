@@ -50,7 +50,7 @@ You get a big THANK YOU from the Core Team, since contributions will keep commun
 
 ### How can I see how the money is spent?
 
-We use a Transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found [here](https://opencollective.com/how-it-works).
+We use a transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found [here](https://opencollective.com/how-it-works).
 
 ### Does the fiscal host take any fee for managing?
 
