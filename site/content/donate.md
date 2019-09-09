@@ -12,6 +12,12 @@ The mission and goals of Manjaro will remain the same as before – to support t
 
 Most of the Core Team members and community volunteers dedicate their time and energy and resources, to develop and improve Manjaro Linux in their spare time. There will be many other possibilities where community initiatives can be subsidized to help grow the Manjaro project and community. One way is to donate a small amount of money, to help covering some costs, giving developers time and freedom to improve Manjaro’s features or spreading the word by attending conferences.
 
+## Choose a donation method
+
+<script src="https://opencollective.com/manjaro/donate/button.js" color="[white|blue]"></script>
+<script src="https://opencollective.com/manjaro-uk/donate/button.js" color="[white|blue]"></script>
+<script src="https://opencollective.com/manjaro-us/donate/button.js" color="[white|blue]"></script>
+
 ### For what will my donations be used for?
 
 Your donations will be used to fund project-related expenses, for example:
@@ -62,10 +68,4 @@ OpenCollective US|Yes|Yes|Yes|
 ### Can I get a tax deduction?
 
 The [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) is a non-profit that serves as fiscal host to most open source software projects on Open Collective. Donations to Collectives under the Open Source Collective 501(c)(6) are not tax deductible.
-
-## Choose a donation method
-
-<script src="https://opencollective.com/:manjaro/:donate/button.js" color="[white|blue]"></script>
-<script src="https://opencollective.com/:manjaro-uk/:donate/button.js" color="[white|blue]"></script>
-<script src="https://opencollective.com/:manjaro-us/:donate/button.js" color="[white|blue]"></script>
 
