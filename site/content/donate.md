@@ -56,7 +56,7 @@ We use a Transparent ledger, which shows where money comes from and where it goe
 
 Operating the donations programme involves a lot of complexity surrounding taxes, tracking requests, gathering further information, and ensuring the money is objectively distributed across Manjaro, our community, upstream, and our local community teams. This (a) involves a lot of work, (b) requires some commercial accountability (e.g. taxes) and this should be as thin and non-bureaucratic as possible. The Community Team at Manjaro is in a good position to coordinate this work together with each fiscal host, and will regularly reach out to leaders in the Manjaro project to query requests where further information is needed. Accountability for this work will be provided with regular reports.
 
-Visit the info pages of our fiscal hosts to get more details on the fees:
+Visit the info pages of our fiscal hosts to get more details on their fees:
 
 - [Europe: Open Collective Europe ASBL](https://opencollective.com/europe)
 - [United Kingdom: Open Collective UK](https://opencollective.com/uk)
