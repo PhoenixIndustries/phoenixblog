@@ -14,9 +14,9 @@ Most of the Core Team members and community volunteers dedicate their time and e
 
 ## Choose a donation method
 
-<script src="https://opencollective.com/manjaro/donate/button.js" color="[white|blue]"></script>
-<script src="https://opencollective.com/manjaro-uk/donate/button.js" color="[white|blue]"></script>
-<script src="https://opencollective.com/manjaro-us/donate/button.js" color="[white|blue]"></script>
+<script src="https://opencollective.com/manjaro/donate/button.js" color="blue"></script>
+<script src="https://opencollective.com/manjaro-uk/donate/button.js" color="white"></script>
+<script src="https://opencollective.com/manjaro-us/donate/button.js" color="blue"></script>
 
 ### For what will my donations be used for?
 
