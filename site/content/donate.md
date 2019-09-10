@@ -80,5 +80,5 @@ OpenCollective US|Yes|Yes|Yes|
 
 ### Can I get a tax deduction?
 
-The [Linux Foundation 501(c)(6)](https://communitybridge.org/service-terms/) and [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) are non-profits which serve us fiscal hosts to most open source software projects. Donations to Linux Foundation 501(c)(6) and Open Source Collective 501(c)(6) are not tax deductible.
+The [Linux Foundation 501(c)(6)](https://communitybridge.org/service-terms/) and [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) are non-profits, which serve as fiscal hosts to most open source software projects. Donations to Linux Foundation 501(c)(6) and Open Source Collective 501(c)(6) are not tax deductible.
 
