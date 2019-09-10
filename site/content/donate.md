@@ -15,6 +15,9 @@ Most of the Core Team members and community volunteers dedicate their time and e
 ## Choose a donation method
 
 <div style="text-align:center">
+**Manjaro Global**  
+<a href="https://funding.communitybridge.org/projects/manjaro" target="_blank"><img src="/img/donation/donate-cb.png" width=300 /></a>  
+<div style="text-align:center">
 **Manjaro Europe**  
 <a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
 </div><div style="text-align:center">
@@ -50,7 +53,7 @@ You get a big THANK YOU from the Core Team, since contributions will keep commun
 
 ### How can I see how the money is spent?
 
-We use a transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found [here](https://opencollective.com/how-it-works).
+We use a transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found here: [CommunityBridge](https://docs.linuxfoundation.org/display/DOCS/Donate), [OpenCollective](https://opencollective.com/how-it-works).
 
 ### Does the fiscal host take any fee for managing?
 
@@ -58,6 +61,7 @@ Operating the donations programme involves a lot of complexity surrounding taxes
 
 Visit the info pages of our fiscal hosts to get more details on their fees:
 
+- [Global: Linux Foundation 501(c)(6)](https://docs.linuxfoundation.org/display/DOCS/CommunityBridge+FAQs)
 - [Europe: Open Collective Europe ASBL](https://opencollective.com/europe)
 - [United Kingdom: Open Collective UK](https://opencollective.com/uk)
 - [America: Open Source Collective 501(c)(6)](https://opencollective.com/opensource)
@@ -68,6 +72,7 @@ Right now we only support credit card payments via Stripe through the platform. 
 
 |Host|Credit Card - |Bank Transfer - |Paypal|
 |:---|:---:|:---:|:---:|
+CommunityBridge|Yes|Yes|No|
 OpenCollective EU|Yes|Yes|No|
 OpenCollective UK|Yes|Yes|No|
 OpenCollective US|Yes|Yes|Yes|
@@ -75,5 +80,5 @@ OpenCollective US|Yes|Yes|Yes|
 
 ### Can I get a tax deduction?
 
-The [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) is a non-profit that serves as fiscal host to most open source software projects on Open Collective. Donations to Collectives under the Open Source Collective 501(c)(6) are not tax deductible.
+The [Linux Foundation 501(c)(6)](https://communitybridge.org/service-terms/) and [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) are non-profits which serve us fiscal hosts to most open source software projects. Donations to Linux Foundation 501(c)(6) and Open Source Collective 501(c)(6) are not tax deductible.
 
