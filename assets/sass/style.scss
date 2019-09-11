@@ -334,6 +334,9 @@ h1:first-letter {
         #sidebar {
             top: 52px !important;
         }
+        .edition .row > div:first-child {
+            margin-bottom: 40px;
+        }
     }
 
     .image-container {
