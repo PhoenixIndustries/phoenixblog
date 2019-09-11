@@ -15,18 +15,18 @@ Most of the Core Team members and community volunteers dedicate their time and e
 ## Choose a donation method
 
 <div style="text-align:center">
-**Manjaro Global**  
+<p class="donate-option">Manjaro Global ( preferred )</p>
 <a href="https://funding.communitybridge.org/projects/manjaro" target="_blank"><img src="/img/donation/donate-cb.png" width=300 /></a>  
 <div style="text-align:center">
-**Manjaro Europe**  
+<p class="donate-option">Manjaro Europe</p>  
 <a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=300 /></a>  
 </div><div style="text-align:center">
-**Manjaro UK**  
+<p class="donate-option">Manjaro UK</p>  
 <a href="https://opencollective.com/manjaro-uk/donate" target="_blank"><img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=300 /></a>  
-</div><div style="text-align:center">
-**Manjaro US**  
+</div><div style="text-align:center;margin-bottom:80px;">
+<p class="donate-option">Manjaro US</p>  
 <a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=300 /></a>  
-</div></br>
+</div>
 
 ### For what will my donations be used for?
 
