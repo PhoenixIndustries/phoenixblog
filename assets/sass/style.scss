@@ -808,6 +808,12 @@ h1:first-letter {
 }
 
 .download-page {
+
+    .official-logo {
+        width: 12.14px;
+        margin-top: -4px;
+        margin-right: 5px;
+    }
         
     .editions-tag-checkbutton label {
         width: 170px;
@@ -831,6 +837,7 @@ h1:first-letter {
     .editions-grid {
         padding: 10px;
         padding-top: 40px;
+        padding-right: 30px;
     }
     .btn-group {
         padding: 12px;
@@ -840,7 +847,7 @@ h1:first-letter {
         margin-bottom: 80px;
         h3 {
             font-size: 2em !important;
-            margin-right: 70px;
+            text-align: left;
         }
         p {
             font-size: 1.1em;
@@ -854,14 +861,9 @@ h1:first-letter {
             color: white;
             text-align: left;
         }
-        a {
+        a:not(.btn), a:hover:not(.btn), a:active:not(.btn), a:focus:not(.btn) {
+            color: #44883c !important;
             margin-bottom: 40px;
-        }
-        .desktop-logo {
-            top: -10px;
-            width: 52px;
-            position: absolute;
-            margin-left: 18px;
         }
     }
 
@@ -880,18 +882,6 @@ h1:first-letter {
             border-radius: 20px;
             border: 20px solid #090909;
             margin-bottom: -10px;
-        }
-        .video-player {
-            display: none;
-        }
-        #video-btn {
-            position: absolute;
-            top: calc(50% - 164px);
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            font-size: 4em;
-            color: red;
         }
     }
     .dropdown-submenu {
@@ -920,6 +910,13 @@ h1:first-letter {
     .dropdown-item {
         text-transform: capitalize;
     }
+    #d-title {
+        color: white;
+        padding: 10px;
+        &:first-letter {
+            color: white;
+        }  
+    }      
 }
 
 .support-page {
@@ -1544,10 +1541,6 @@ h1:first-letter {
 }
 
 @media screen and (min-width: 992px) {
-
-    .download-page .edition h3 {
-        text-align: right;
-    }
 
     .navbar-transparent .nav-item.active .nav-link:not(.btn),
     .navbar-transparent .nav-item .nav-link:not(.btn):focus,

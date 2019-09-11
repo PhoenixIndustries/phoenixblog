@@ -1,23 +1,20 @@
     <aside id="downloads" style="transition: height .5s;">
     <div class="text-center">
         <div class="call-to-action">
+            
             <div class="container-fluid">
                 <div class="editions-grid fluid-row align-items-center no-gutters">
+                  <h1 id="d-title">Editions - Chose a desktop for your machine.</h1>
                 <!--
                 NOTE: The range and end operations are supposed to be in line with the boxes!!!
                 Read more about crazy HTML magic here: http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
                 -->
-                {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}
-                <div class="edition {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
+                {{ range $index, $element := (where .Site.Pages "Type" "download-edition") }}
+                <section class="edition {{ if .Params.device }}{{ replace .Params.device " " "-" | lower }}{{ end }} {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
                     <div class="row">
                         <div class="col-md-12 col-lg-6 col-xl-5">
-                            <h3>{{ .Params.name }}
-                                {{ if eq .Params.name "XFCE" }}
-                                <img class="desktop-logo" src="/img/editions/logos/xfce.png">
-                                {{ else if eq .Params.name "KDE" }}
-                                <img class="desktop-logo" src="/img/editions/logos/kde.png">
-                                {{ end }}
-                                
+                            <h3>
+                                {{ .Params.name }}
                               </h3>
                             <p>{{ .Params.shortDescription }}</p>
                             <p>{{ .Content | markdownify }}</p>
@@ -25,10 +22,10 @@
                         </div>
                         <div class="image-container col-md-12 col-lg-6 col-xl-7">
                         {{ if .Params.Youtube }}
-                             <a href="#" id="video-btn"><i class="fas fa-play"></i></a>
                             {{ partial "youtube" . }}
+                            {{ else }}
+                            <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                         {{ end }}
-                        <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
                         </div> 
                     </div>
                     <div class="modal fade" id="{{ .Params.edition }}{{ replace .Params.name " " "-" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -41,18 +38,7 @@
                               </button>
                             </div>
                             <div class="modal-body">
-                              <iframe id="iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}" src="" onload="
-                                    $(this).contents().find('.navbar, footer, #back-to-top').hide();
-                                    $(this).contents().find('.section .container').css('max-width', '100%');
-                                    $(this).contents().find('.section .row div').css('background-color', 'white');
-                                    $(this).contents().find('.section').css('padding', '0');
-                                    $(this).contents().find('.btn-success:hover, .btn-success:active, .btn-success:focus').css('box-shadow', 'none').css('background-color', 'transparent');
-                                    $(this).contents().on('click', function (event) {
-                                        event.preventDefault();
-                                        var el = event.originalEvent.srcElement
-                                        document.location.pathname = $(el).attr('href');
-                                        });">
-                             </iframe>
+                              <iframe id="iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}" src="" onload="ajust_iframe($(this));"></iframe>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -60,8 +46,7 @@
                           </div>
                         </div>
                       </div>
-            </div>
-            {{ end }}
+                    </section>
             {{ end }}
 		</div>		
     </div>
