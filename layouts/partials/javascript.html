@@ -135,25 +135,13 @@ function show_editions(editions) {
     $('.edition, .dot-nav').hide();
     $(editions).show();
 }
-function ajust_iframe(iframe) {
-    iframe.contents().find('.navbar, footer, #back-to-top').hide();
-    iframe.contents().find('.section .container').css('max-width', '100%');
-    iframe.contents().find('.section .row div').css('background-color', 'white');
-    iframe.contents().find('.section').css('padding', '0');
-    iframe.contents().find('.btn-success:hover, .btn-success:active, .btn-success:focus').css('box-shadow', 'none').css('background-color', 'transparent');
-    iframe.contents().on('click', function (event) {
-        event.preventDefault();
-        var el = event.originalEvent.srcElement
-        document.location.pathname = $(el).attr('href');
-        });
-}
+
 $('#official').hover( function () {
     $('.official-logo').attr('src', '/img/icon-white.svg');
 }, function () {
      $('.official-logo').attr('src', '/img/icon.svg');
 });
 $('.official').show();
-dotNav('.editions-grid.section', 'easeInOutCubic');
 
 </script>
 {{ end }}
