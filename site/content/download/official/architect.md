@@ -14,7 +14,7 @@ shortDescription = "Setup and configure Manjaro in every detail using the CLI."
 Thumbnail = "architect.jpg"
 Version = "18.0.4"
 date = "2019-08-06"
-title = "Architect Stable"
+title = "Architect"
 type="download-edition"
 weight = "7"
 +++
