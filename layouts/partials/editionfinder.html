@@ -18,7 +18,7 @@
                               </h3>
                             <p>{{ .Params.shortDescription }}</p>
                             <p>{{ .Content | markdownify }}</p>
-                            <a onclick="$(this).parent().parent().parent().find('#iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}').attr('src', '{{ .Permalink }}');" class="btn btn-download btn-xl" href="#" class="editions-box editions-link" data-toggle="modal" data-target="#{{ .Params.edition }}{{ replace .Params.name " " "-" }}">Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
+                            <a onclick="$(this).parent().parent().parent().find('#iframe{{ .Params.edition }}{{ replace .Params.name " " "-" }}').attr('src', '{{ .Permalink }}');" class="btn btn-download btn-xl" href="#" class="editions-box editions-link" data-toggle="modal" data-target="#id{{ .Params.edition }}{{ replace .Params.name " " "-" }}">Download {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
                         </div>
                         <div class="image-container col-md-12 col-lg-6 col-xl-7">
                         {{ if .Params.Youtube }}
@@ -28,11 +28,11 @@
                         {{ end }}
                         </div> 
                     </div>
-                    <div class="modal fade" id="{{ .Params.edition }}{{ replace .Params.name " " "-" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="id{{ .Params.edition }}{{ replace .Params.name " " "-" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">{{ .Params.name }}</h5>
+                              <h5 class="modal-title" id="Label-{{ .Params.edition }}{{ replace .Params.name " " "-" }}">{{ .Params.name }}</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
