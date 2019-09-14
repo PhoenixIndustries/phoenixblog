@@ -123,6 +123,8 @@ $(window).one("scroll", function(){
 <script>
 $("a[href='/download/']").hide();
 
+$('.editions-grid').append($('.architect'));
+
 // hide preview button if previews are not available
 if ( $('.dev ul').children().length === 0 ) { 
     $("#dev").hide();

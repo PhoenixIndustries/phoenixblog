@@ -10,7 +10,7 @@
                 Read more about crazy HTML magic here: http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
                 -->
                 {{ range $index, $element := (where .Site.Pages.ByTitle "Type" "download-edition") }}
-                <section class="edition {{ if .Params.device }}{{ replace .Params.device " " "-" | lower }}{{ end }} {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
+                <section class="edition{{ if .Params.device }} {{ replace .Params.device " " "-" | lower }}{{ end }} {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
                     <div class="row">
                         <div class="col-md-12 col-lg-6 col-xl-5">
                             <h3>
