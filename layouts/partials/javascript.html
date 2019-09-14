@@ -132,8 +132,16 @@ if ( $('.dev ul').children().length === 0 ) {
 
 
 function show_editions(editions) {
-    $('.edition, .dot-nav').hide();
-    $(editions).show();
+    if ($(window).width() > 991) {
+        var space = $(window).width()
+        $('.edition').animate({left: space}, 800).promise().done(function() {
+            $('.edition').hide().css('left', - space);
+            $(editions).show().animate({left: 0}, 800);
+        });
+    } else {
+        $('.edition').hide();
+        $(editions).show();
+    }
 }
 
 if ($(window).width() < 991) {
