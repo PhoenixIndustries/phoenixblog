@@ -136,10 +136,16 @@ function show_editions(editions) {
     $(editions).show();
 }
 
+if ($(window).width() < 991) {
+    $('.official-logo').attr('src', '/img/icon-white.svg');
+}
+
 $('#official').hover( function () {
     $('.official-logo').attr('src', '/img/icon-white.svg');
 }, function () {
-     $('.official-logo').attr('src', '/img/icon.svg');
+    if ($(window).width() > 991) {
+        $('.official-logo').attr('src', '/img/icon.svg');
+}
 });
 $('.official').show();
 
