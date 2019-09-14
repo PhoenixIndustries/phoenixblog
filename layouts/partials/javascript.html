@@ -122,14 +122,12 @@ $(window).one("scroll", function(){
 {{ if eq .Title "Downloads"}} 
 <script>
 $("a[href='/download/']").hide();
-$("#show-editions-official").addClass('btn-success');
-// hide preview button if previws are not available
-if (!$("div").hasClass("editions-box-hideable-dev")) { $("#show-editions-dev").remove(); }
-// add green color onclick
-$('button').on('click', function () {
-    $(".btn-group button").removeClass('btn-success');
-    $(this).addClass('btn-success');
-});
+
+// hide preview button if previews are not available
+if ( $('.dev ul').children().length === 0 ) { 
+    $("#dev").hide();
+     }
+
 
 function show_editions(editions) {
     $('.edition, .dot-nav').hide();

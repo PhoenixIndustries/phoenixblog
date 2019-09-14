@@ -75,8 +75,8 @@
                             </ul>
                       </li>
           </ul>
-          <li class="dropdown-submenu">
-            <a href="#" onclick="show_editions('.dev');" class="dropdown-item" id="32bit" aria-expanded="Dropright"><i class="fas fa-compact-disc"></i>Developer Previews</a>
+          <li class="dropdown-submenu dev">
+            <a href="#" onclick="show_editions('.dev');" class="dropdown-item" id="dev" aria-expanded="Dropright"><i class="fas fa-compact-disc"></i>Developer Previews</a>
             <ul class="dropdown-menu" aria-labelledby="dev">
                 {{ range (where (where .Site.Pages "Type" "download-edition") ".Params.edition" "dev") }}
                 <a class="dropdown-item" href="#" onclick="show_editions('.edition.{{ .Params.edition }}.{{ replace .Params.name " " "-" | lower}}');">{{ .Params.title }} - {{ .Params.Version }}</a>
