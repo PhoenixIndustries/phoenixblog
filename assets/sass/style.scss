@@ -319,6 +319,17 @@ h1:first-letter {
 
 @media screen and (max-width: 991px) { 
 
+    .sidebar-collapse .navbar .dropdown.show .dropdown-submenu .dropdown-menu {
+        display: none !important;
+    }
+    .official-logo {
+        content:url("/img/icon-white.svg");
+    }
+
+    .dropdown-submenu .fas:before, .dropdown-submenu .fa:before {
+        margin-right: 5px;
+    }
+
     .download-page {
         .image-container:after {
           width: 200px !important;
