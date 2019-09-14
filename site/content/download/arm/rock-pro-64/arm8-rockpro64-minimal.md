@@ -16,7 +16,7 @@ shortDescription = "For people that do not need a desktop"
 Thumbnail = "arm-minimal-full.png"
 Version = "19.08.1"
 date = "08.2019"
-title = "RockPro64 - Minimal"
+title = "RockPro64 Minimal"
 type="download-edition"
 weight = "1"
 +++

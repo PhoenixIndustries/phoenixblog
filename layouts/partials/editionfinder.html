@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-6 col-xl-5">
                             <h3>
-                                <a class="btn btn-download btn-xl" href="{{ .Permalink }}" class="editions-box editions-link">Get {{ .Params.name }}<i class="fas fa-angle-double-down"></i></a>
+                                <a class="btn btn-download btn-xl" href="{{ .Permalink }}" class="editions-box editions-link">Get {{ .Params.name }}&nbsp;&nbsp;&nbsp;{{ .Params.Version }}<i class="fas fa-angle-double-down"></i></a>
                               </h3>
                             <p>{{ .Params.shortDescription }}</p>
                             <p>{{ .Content | markdownify }}</p>
