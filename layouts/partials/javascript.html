@@ -124,7 +124,8 @@ $(window).one("scroll", function(){
 $("a[href='/download/']").hide();
 
 $('.editions-grid').append($('.architect'));
-
+$('.editions-grid').prepend($('.kde'));
+$('.editions-grid').prepend($('.xfce'));
 // hide preview button if previews are not available
 if ( $('.dev ul').children().length === 0 ) { 
     $("#dev").hide();

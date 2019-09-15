@@ -821,7 +821,7 @@ h1:first-letter {
     }
     .editions-grid {
         padding: 10px;
-        padding-top: 40px;
+        padding-top: 30px;
         padding-right: 30px;
     }
     .btn-group {
@@ -899,6 +899,8 @@ h1:first-letter {
     #d-title {
         color: white;
         padding: 10px;
+        padding-top: 40px;
+        margin-bottom: 0;
         &:first-letter {
             color: white;
         }  
