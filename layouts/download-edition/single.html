@@ -11,19 +11,12 @@
   <div class="col-md-8 ml-auto mr-auto text-center">
     <section>
       <div class="container">
-        <!-- <h2>Manjaro {{ .Params.name }}</h2>
-        <hr class="star-primary" /> -->
-        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="Desktop Image" style="width:100%;"></a>
-        <p>{{ .Content | markdownify }}</p>
-        {{ if .Params.Youtube }}
-          <p>{{partial "youtube" .}}</p>
-        {{ end }}
         <ul class="flex-grid download-edition-grid">
             {{ if .Params.download_x64 }}
             <li class="flex-item">
               <div class="content">
                 <div class="top">
-                  <img src="/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                  <img src="/img/download/x64.svg" alt="Icon" style="width: 100px; height: 100px;" />
                   <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
                   <hr/>
                   <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
