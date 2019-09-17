@@ -135,11 +135,11 @@ if ( $('.dev ul').children().length === 0 ) {
 function show_editions(editions) {
     if ($(window).width() > 991) {
         var space = $(window).width()
-        $('.editions-grid').animate({left: space}, 500).promise().done(function() {
+        $('.editions-grid').animate({left: space}, 400).promise().done(function() {
             $('.edition').hide()
             $(this).css('left', - space);
             $(editions).show()
-            $(this).animate({left: 0}, 500);
+            $(this).animate({left: 0}, 400);
         });
     } else {
         $('.edition').hide();
@@ -168,13 +168,15 @@ function displayArrow() {
     function timing() { 
         var timer = setTimeout(function () { 
         $('#go-down').hide();
-        }, 1600);
+        }, 4000);
     }
 
     if ($('#go-down').is(':visible')) {
-        clearTimeout(timer);
-        timing();
-        $('#go-down').show();
+        setTimeout(function () { 
+            clearTimeout(timer);
+            timing();
+            $('#go-down').show();
+        }, 500);
     } else {
     $('#go-down').show();
     timing();
