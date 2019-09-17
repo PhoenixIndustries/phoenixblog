@@ -235,55 +235,65 @@ $('#form').submit(function(event) {
 {{ if eq .Title "Downloads"}} 
 <script>
 $("a[href='/download/']").hide();
-$("#show-editions-official").addClass('btn-success');
-// hide preview button if previws are not available
-if (!$("div").hasClass("editions-box-hideable-dev")) { $("#show-editions-dev").remove(); }
-// add green color onclick
-$('button').on('click', function () {
-    $(".btn-group button").removeClass('btn-success');
-    $(this).addClass('btn-success');
-});
 
-function element_is_in_tags(el, tags) {
+$('.editions-grid').append($('.architect'));
+$('.editions-grid').prepend($('.kde'));
+$('.editions-grid').prepend($('.xfce'));
+// hide preview button if previews are not available
+if ( $('.dev ul').children().length === 0 ) { 
+    $("#dev").hide();
+     }
 
-    for (var id in tags) {
 
-        if(!el.classList.contains("editions-box-hideable-" + tags[id])){
-            return false;
-        }
-
+function show_editions(editions) {
+    if ($(window).width() > 991) {
+        var space = $(window).width()
+        $('.editions-grid').animate({left: space}, 500).promise().done(function() {
+            $('.edition').hide()
+            $(this).css('left', - space);
+            $(editions).show()
+            $(this).animate({left: 0}, 500);
+        });
+    } else {
+        $('.edition').hide();
+        $(editions).show();
     }
-    return true;
 }
 
-function show_only_editions_with_tags(tags) {
+if ($(window).width() < 991) {
+    $('.official-logo').attr('src', '/img/icon-white.svg');
+}
 
-    var els = document.getElementsByClassName('editions-box-hideable');
-    [].forEach.call(els, function (el) {
-        if (tags.length == 0) {
-            $(".editions-grid").fadeOut("slow");
-            $(el).hide();
-        }
-        else {
-            if(element_is_in_tags(el, tags)) {
-                $(".editions-grid").fadeOut("slow").promise().done(function () {
-                    $(el).show();
-                    $(".editions-grid").fadeIn("slow");
-                });  
-            } else {
-                $(".editions-grid").fadeOut("slow").promise().done(function () {
-                $(el).hide();
-            });
-            }
-        }
-    });
+$('#official').hover( function () {
+    $('.official-logo').attr('src', '/img/icon-white.svg');
+}, function () {
+    if ($(window).width() > 991) {
+        $('.official-logo').attr('src', '/img/icon.svg');
 }
-function update_editions_tags(id) {
-    var tag_filter = [];
-    tag_filter.push( id );
-    show_only_editions_with_tags(tag_filter)
+});
+$('.official').show();
+setTimeout(function () { 
+    displayArrow();
+        }, 1600);
+
+function displayArrow() {
+
+    function timing() { 
+        var timer = setTimeout(function () { 
+        $('#go-down').hide();
+        }, 1600);
+    }
+
+    if ($('#go-down').is(':visible')) {
+        clearTimeout(timer);
+        timing();
+        $('#go-down').show();
+    } else {
+    $('#go-down').show();
+    timing();
+    }
 }
-update_editions_tags("official");
+
 </script>
 {{ end }}
 
