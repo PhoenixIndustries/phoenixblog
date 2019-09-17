@@ -8,7 +8,7 @@ Learn how to create a <a href="https://manjaro.org/support/firststeps/#making-a-
 use a <a href="https://manjaro.org/support/firststeps/#using-a-virtual-machine" target="_blank">virtual machine</a>,
 setup a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">live system</a>
 and install <a href="https://manjaro.org/support/firststeps/#install-manjaro" target="_blank">Manjaro</a>. 
-Finally check out our <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a> and you all done, Enjoy.
+Finally check out our <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a> and you are done, Enjoy.
 
 YOU are awesome, Please consider <a href="http://manjaro.org/donate/" target="_blank">donating</a> and help guarantee the future of this project.
 
