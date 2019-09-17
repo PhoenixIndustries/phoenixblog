@@ -196,11 +196,14 @@ p, .call-to-action {
 
 #download-how-to-try {
     
-    .modal-body p {
-        margin-bottom: 1rem;
-    }
     .modal-footer button {
         margin: 0 auto;
+    }
+    h5 {
+        font-size: 1.3em;
+    }
+    .modal-body p {
+        font-size: 1em;
     }
 }
 
@@ -314,6 +317,12 @@ h1:first-letter {
     }
     .landing-page .social-icons-top {
         margin-top: -24px !important;
+    }
+    .download-page {
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
 
@@ -822,7 +831,6 @@ h1:first-letter {
     .editions-grid {
         padding: 10px;
         padding-top: 30px;
-        padding-right: 30px;
         position: relative;
     }
     .btn-group {

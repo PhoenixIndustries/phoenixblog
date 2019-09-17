@@ -4,19 +4,12 @@ title = "Acknowledgments"
 +++
 
 Try Manjaro without modifying your current operating system. Or install it to your hard drive.
+Learn how to create a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">bootable USB-Stick</a> and
+use a <a href="https://manjaro.org/support/firststeps/#using-a-virtual-machine" target="_blank">virtual machine</a>,
+setup a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">live system</a>
+and install <a href="https://manjaro.org/support/firststeps/#install-manjaro" target="_blank">Manjaro</a>. 
+Finally check out our <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a> and you all done, Enjoy.
 
-How to create a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">bootable USB-Stick</a>.
-
-How to use a <a href="https://manjaro.org/support/firststeps/#using-a-virtual-machine" target="_blank">virtual machine</a>.
-
-How to make a <a href="https://manjaro.org/support/firststeps/#making-a-live-system" target="_blank">live system</a>
-
-Installing <a href="https://manjaro.org/support/firststeps/#install-manjaro" target="_blank">Manjaro</a>.
-
-User <a href="https://manjaro.org/support/userguide/" target="_blank">Manual</a>.
-
-For past releases check our archives on <a href="https://osdn.net/projects/manjaro/storage" target="_blank">Official</a> and <a href="https://osdn.net/projects/manjaro-community/storage" target="_blank">Community</a> Editions.
-
-YOU are awesome, Enjoy.
+YOU are awesome, Please consider <a href="http://manjaro.org/donate/" target="_blank">donating</a> and help guarantee the future of this project.
 
 
