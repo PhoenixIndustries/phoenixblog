@@ -803,6 +803,24 @@ h1:first-letter {
 
 .download-page {
 
+    #go-down {
+        position: fixed;
+        bottom: 5px;
+        font-size: 3em;
+        color: white;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+        animation-name: bounce;
+        animation-timing-function: ease;
+        display: none;
+    }
+    @keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+    }
+
     .official-logo {
         width: 12.14px;
         margin-top: -4px;

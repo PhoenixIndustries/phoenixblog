@@ -159,6 +159,27 @@ $('#official').hover( function () {
 }
 });
 $('.official').show();
+setTimeout(function () { 
+    displayArrow();
+        }, 1600);
+
+function displayArrow() {
+
+    function timing() { 
+        var timer = setTimeout(function () { 
+        $('#go-down').hide();
+        }, 1600);
+    }
+
+    if ($('#go-down').is(':visible')) {
+        clearTimeout(timer);
+        timing();
+        $('#go-down').show();
+    } else {
+    $('#go-down').show();
+    timing();
+    }
+}
 
 </script>
 {{ end }}
