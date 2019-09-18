@@ -802,6 +802,12 @@ h1:before {
     }   
 } 
 
+.team {
+    .avatar img {
+        max-width: 150px;
+    }
+}
+
 .download-page {
 
     .d-bottom-text {
@@ -1652,7 +1658,7 @@ h1:before {
     }
 
     .jumbo-submenu {
-        width: 526px;
+        width: 650px;
         .menu-block {
             float: left;
             margin: 10px;
@@ -1791,52 +1797,4 @@ img[src$='#floatright']
 .section-team *:not(a), .page-footer * {
     color: #cecccc !important;
 } 
-
-/* core team */
-
-.section-team {
-
-    h2 {
-     padding-top: 15px;
-     text-align: center;
-     font-size: 1.8em;
-     margin-bottom: 108px;
-     color: #2c2c2c !important;
-    }
-    .team-background {
-        background-color: $dark-background;
-    }
-    .team-player {
-
-        #philip-müller {
-            margin-top: 40px;
-        }
-
-        img {
-            margin-top: -50px;
-        } 
-        .title {
-            font-weight: 500;
-        }
-        .description {
-            text-align: justify;
-            font-style: italic;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .category {
-            text-align: center;
-            font-size: 14px;
-            color: inherit;
-            font-weight: bold;
-            margin-bottom: 0;
-        }
-
-        a {
-            color: $green;
-        } 
-    }
- }
-
- /* end core team */
  
