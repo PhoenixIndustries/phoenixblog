@@ -7,21 +7,22 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Lxqt"
+Name = "LXQt"
 Screenshot = "lxqt-full.png"
-shortDescription = "Lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage."
+shortDescription = "Lightweight desktop build with the LXQt toolkit."
 edition = "community"
 Thumbnail = "lxqt-full.png"
 Version = "18.1.0"
 date = "2019-09-33T01:34+01:00"
-title = "Lxqt"
+title = "LXQt"
 type="download-edition"
 weight = "5"
 +++
 
-This edition is supported by the Manjaro community and comes with i3, a tiling window manager.
+Manjaro LXQt provides a lightweight LXQt desktop environment. In addition to LXQt itself it provides a very basic set of applications. As most applications use the same Qt5 toolkit, the desktop provides a unified and style and theming. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.
 
-I3 is an extremely lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage.
+This edition is supported by the Manjaro community and uses Openbox Window Manager.
 
-If you are looking for older images check the [i3](https://osdn.net/projects/manjaro-community/storage/z_release_archive/i3) archive.
+This edition is a minimal edition and you are required to install the applications you need to get the functionality you require.
 
+If you are looking for older images check the [lxqt](https://osdn.net/projects/manjaro-community/storage/z_release_archive/lxqt) archive.
