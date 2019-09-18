@@ -138,6 +138,9 @@ function show_editions(editions) {
         $('.editions-grid').animate({left: space}, 400).promise().done(function() {
             $('.edition').hide()
             $(this).css('left', - space);
+            if ($(editions).length === 1) {
+                $('#go-down').hide();
+            }
             $(editions).show()
             $(this).animate({left: 0}, 400);
         });
@@ -161,25 +164,25 @@ $('#official').hover( function () {
 $('.official').show();
 setTimeout(function () { 
     displayArrow();
-        }, 1600);
+        }, 1400);
 
+var arrowDownTimer
 function displayArrow() {
 
     function timing() { 
-        var timer = setTimeout(function () { 
+        arrowDownTimer = setTimeout(function () { 
         $('#go-down').hide();
         }, 4000);
     }
-
     if ($('#go-down').is(':visible')) {
-        setTimeout(function () { 
-            clearTimeout(timer);
+            clearTimeout(arrowDownTimer);
             timing();
             $('#go-down').show();
-        }, 500);
     } else {
-    $('#go-down').show();
-    timing();
+        setTimeout(function () { 
+            $('#go-down').show();
+            timing();
+        }, 800);
     }
 }
 
