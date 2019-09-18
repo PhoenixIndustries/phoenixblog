@@ -21,7 +21,7 @@ weight = "5"
 
 This edition is supported by the Manjaro community and comes with openbox, a highly configurable window manager with extensive standards support and well known for stability.
 
-The edition is fully featured with GTK3 applications and Manjaro's installer based office selection. Additionally Openbox comes with Manjaro Application Manager for easy installation of popular applications and of course Pamac which is the Manjaro distributions in-house Package Management application.
+The edition is fully featured with GTK3 applications and Manjaro's installer based office selection. Additionally Openbox comes with Manjaro Application Manager for easy installation of popular applications and of course Pamac which is the Manjaro distributions in-house Package Management application.  The Kvantum theme manager helps creating consistent theming for GTK and Qt applications alike.
 
 If you are looking for older images check the [Openbox](https://osdn.net/projects/manjaro-community/storage/z_release_archive/openbox) archive.
 
