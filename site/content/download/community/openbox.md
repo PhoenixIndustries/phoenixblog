@@ -2,7 +2,7 @@
 Download_x64 = "https://osdn.net/projects/manjaro-community/storage/openbox/18.1.0/manjaro-openbox-18.1.0-stable-190916-linux52-x86_64.iso"
 Download_x64_Checksum = "a7b959ec4fcabf65fa726942bf526de817c535dd"
 Download_x64_Sig = "https://osdn.net/projects/manjaro-community/storage/openbox/18.1.0/manjaro-openbox-18.1.0-stable-190916-linux52-x86_64.iso.sig"
-Download_x64_Torrent = ""
+Download_x64_Torrent = "https://osdn.net/projects/manjaro-community/storage/openbox/18.1.0/manjaro-openbox-18.1.0-stable-190916-linux52-x86_64.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
