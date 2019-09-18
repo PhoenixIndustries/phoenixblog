@@ -257,8 +257,9 @@ p, .call-to-action {
     height: 110vh !important;
 }
 
-h1:first-letter {
+h1:before {
     color: #34be5b;
+    content: "#";
 }
 
 .hardware .title-container h1 {

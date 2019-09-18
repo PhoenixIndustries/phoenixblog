@@ -1,6 +1,6 @@
 +++
 class= "hardware"
-title = "#spitfire"
+title = "spitfire"
 description = "Our first release of the Manjaro Special Edition Spitfire is a beauty!"
 subtitle = "Spitfire (Spring 2018 Edition)"
 subdescription = "Notebook with Manjaro XFCE pre-installed"
