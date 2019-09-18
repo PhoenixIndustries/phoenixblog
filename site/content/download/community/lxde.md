@@ -7,21 +7,22 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Lxde"
+Name = "LXDE"
 Screenshot = "lxde-full.png"
-shortDescription = "Lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage."
+shortDescription = "Lightweight desktop build using the GTK toolkit"
 edition = "community"
 Thumbnail = "lxde-full.png"
 Version = "18.1.0"
 date = "2019-09-33T01:34+01:00"
-title = "Lxde"
+title = "LXDE"
 type="download-edition"
 weight = "5"
 +++
 
-This edition is supported by the Manjaro community and comes with i3, a tiling window manager.
+Manjaro LXDE provides a lightweight GTK desktop environment. In addition to LXDE itself it provides a complete set of applications including an installer option to select an Office suite or choose not to install any. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.
 
-I3 is an extremely lightweight tiling window manager, famous for its efficiency with screen space and keyboard controlled workflow. The ideal environment for text and terminal focused usage.
+This edition is supported by the Manjaro community and uses Openbox Window Manager.
 
-If you are looking for older images check the [i3](https://osdn.net/projects/manjaro-community/storage/z_release_archive/i3) archive.
+Manjaro Application Utility is included to easily manage the installation/removal of popular applications.
 
+If you are looking for older images check the [LXDE](https://osdn.net/projects/manjaro-community/storage/z_release_archive/lxde) archive.
