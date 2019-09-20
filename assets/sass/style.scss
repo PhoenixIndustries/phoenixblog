@@ -807,6 +807,14 @@ h1:before {
         max-width: 150px;
     }
 }
+.team-section {
+    .row > div {
+        margin-bottom: 30px !important;
+         p {
+    margin-bottom: 1rem;
+    }
+}
+}
 
 .download-page {
 
