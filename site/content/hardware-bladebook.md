@@ -1,6 +1,6 @@
 +++
 class= "hardware"
-title = "#bladebook"
+title = "bladebook"
 description = "Bladebook with pre-installed Manjaro from Denmark by our partner shop to most countries within the EU."
 subtitle = "Bladebook (Spring 2019 Edition)"
 subdescription = "Netbook with Manjaro pre-installed"
