@@ -7,9 +7,7 @@ meta_keywords = "donating manjaro linux, helping manjaro linux, contribute manja
 type="team"
 +++
 
-### Meet The Team
+### Meet Our Awesome Team
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-    eum porro a pariatur veniam.
+#### We all do our part in bringing Manjaro to your life. 
 

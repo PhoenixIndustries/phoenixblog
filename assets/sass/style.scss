@@ -808,12 +808,19 @@ h1:before {
     }
 }
 .team-section {
+    h4 {
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    h3 {
+        margin-bottom: 14px;
+    }
     .row > div {
         margin-bottom: 30px !important;
          p {
-    margin-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
     }
-}
 }
 
 .download-page {
