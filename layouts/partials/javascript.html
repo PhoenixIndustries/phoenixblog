@@ -189,23 +189,21 @@ $('#human-check').change(function(){
 });
 $('#form').submit(function(event) {
     event.preventDefault();
-    if ($("#human-check").prop('checked')) {
         var formData = $('#form').serialize();
         $.ajax({
             type        : 'POST', 
-            url         : 'https://manjaro.org/contact-form.php', 
+            url         : 'http://localhost:1314/contact-form.php', 
             data        : formData, 
             dataType    : 'json',
             encode      : true
         }).done(function(data) {
-            $('#contact-form, .modal-backdrop').hide().remove();
+            if (data['type'] === 'success') {
+                $('#contact-form, .modal-backdrop').hide().remove();
+            }
             alert(data['message']);
-            // todo handle errors and validation messages
+            console.log(data);
             });
-        } else {
-            alert("Check Anti Spam box");
-        }
-    });
+        });
 });
 </script>
 <script> 

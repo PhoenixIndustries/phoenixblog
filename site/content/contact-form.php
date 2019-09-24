@@ -64,27 +64,25 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
                     'Return-Path: ' . $from,
                 );
                 
-                
                 if(empty($error_message)){
                     mail($sendTo, $subject, $emailText, implode("\n", $headers));
                     $responseArray = array('type' => 'success', 'message' => $success_message);
 
                 } else {
                     $responseArray = array('type' => 'error', 'message' => $error_message);
-                    mail($sendTo, $subject, $emailText, implode("\n", $headers));
                 }
 
             } catch (\Exception $e) {
                 $responseArray = array('type' => 'error', 'message' => "Something went wrong. Please try again later");
             }
-
-            $encoded = json_encode($responseArray);
-            header('Content-Type: application/json');
-            echo $encoded;
             
         } else {
-            die();
+            $error_message = "Check Anti Spam Box.";
+            $responseArray = array('type' => 'error', 'message' => $error_message);
         }
+        $encoded = json_encode($responseArray);
+        header('Content-Type: application/json');
+        echo $encoded;
 
 } else {
     header("HTTP/1.0 404 Not Found");
