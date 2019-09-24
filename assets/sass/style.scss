@@ -279,13 +279,19 @@ h1:before {
 
 @media screen and (max-width: 768px) {
 
-    .landing-page h2 {
-        margin-top: 26px;
-    }
-
     .landing-page {
+
+        div .section {
+            padding: 0;
+        }
+        h2 {
+            margin-top: 26px;
+        }
         .social-icons-top .btn {
-            background-color: white;
+                background-color: white;
+        }
+        .section-story-overview .row {
+            box-shadow: none !important;
         }
     }
 
@@ -328,6 +334,10 @@ h1:before {
 }
 
 @media screen and (max-width: 991px) { 
+
+    .navbar .fa, .navbar .fas, .navbar .fab {
+        color: white !important;
+    }
 
     .sidebar-collapse .navbar .dropdown.show .dropdown-submenu .dropdown-menu {
         display: none !important;
@@ -491,7 +501,44 @@ h1:before {
     transition: filter 3.5s ease;
 }
 
+.linux .row h2:first-child {
+    margin-top: 30px;
+}
+
 .landing-page {
+
+    .title-container > p:before {
+        content: "";
+    background-image: url(/img/mascout.png);
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -74px;
+    top: 150px;
+    }
+
+    .title-container > p:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: #0d5f4f;
+        border-top-color: rgba(13, 95, 79, 0.8);
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -50%;
+        margin-bottom: -20px;
+    }
+
+    .title-container p {
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
     
     .twitter-container {
         position: absolute;
@@ -562,7 +609,8 @@ h1:before {
                 &:nth-child(2),
                 &:nth-child(3),
                 &:nth-child(4),
-                &:nth-child(5) {
+                &:nth-child(5),
+                &:nth-child(6) {
                     background-color: #80cbc46b;
                     padding: 8px;
                     color: #424242;
@@ -804,6 +852,10 @@ h1:before {
 
 .download-page {
 
+    h1:before {
+        display: none;
+    }
+
     .d-bottom-text {
         font-size: 18px;
         text-transform: uppercase;
@@ -958,6 +1010,11 @@ h1:before {
 }
 
 .page {
+
+    #why-does-manjaro-ask-for-donations {
+        margin-top: 30px;
+    }
+
     img[src="/img/features/overview.png"] {
       padding-bottom: 60px;
       padding-top: 20px;
@@ -1652,7 +1709,7 @@ h1:before {
     }
 
     .jumbo-submenu {
-        width: 526px;
+        width: 654px;
         .menu-block {
             float: left;
             margin: 10px;
@@ -1717,7 +1774,7 @@ h1:before {
     .dropdown-menu {
         color: #565758; 
         
-        .fas, .fa {
+        .fas, .fa, .fab {
         color: $green;
         position: relative;
         margin-right: 5px;
