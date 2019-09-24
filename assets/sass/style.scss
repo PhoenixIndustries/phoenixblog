@@ -506,39 +506,6 @@ h1:before {
 }
 
 .landing-page {
-
-    .title-container > p:before {
-        content: "";
-    background-image: url(/img/mascout.png);
-    width: 100px;
-    height: 150px;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    left: -74px;
-    top: 150px;
-    }
-
-    .title-container > p:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 20px solid transparent;
-        border-top-color: #0d5f4f;
-        border-top-color: rgba(13, 95, 79, 0.8);
-        border-bottom: 0;
-        border-left: 0;
-        margin-left: -50%;
-        margin-bottom: -20px;
-    }
-
-    .title-container p {
-        border-radius: 20px;
-        border-bottom-left-radius: 0;
-    }
     
     .twitter-container {
         position: absolute;
