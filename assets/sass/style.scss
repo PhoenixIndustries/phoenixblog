@@ -606,6 +606,15 @@ h1:before {
         position: relative;
         width: 96px;
         height: 96px;
+        margin: 0 auto;
+    }
+    @keyframes color_change {
+        0% { fill: #3cdc69; }
+        50% { fill: white; }
+        100% { fill: #35bf5c; }
+    }
+    #right-piece, #middle-piece, #left-piece {
+        animation: color_change 3s infinite;
     }
 
     .fa-heart {
