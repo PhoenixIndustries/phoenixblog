@@ -104,6 +104,14 @@ DefaultContentLanguage = "en-us"
     identifier = "support"
 
 [[menu.main]]
+    name = "About"
+    url = "#"
+    pre = ""
+    weight = 4
+    parent = "more"
+    identifier = "about"
+
+[[menu.main]]
     name = "Lists"
     url = "#"
     pre = ""
@@ -113,6 +121,15 @@ DefaultContentLanguage = "en-us"
 #
 # --- End SubMenu Others 
 #
+
+# --- SubMenu about ---
+
+[[menu.main]]
+    name = "Linux"
+    url = "/linux/"
+    pre = "<i class='fab fa-linux'></i></i>"
+    weight = 1
+    parent = "about"
 
 # --- SubMenu Support ---
 
