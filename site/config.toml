@@ -125,7 +125,7 @@ DefaultContentLanguage = "en-us"
 # --- SubMenu about ---
 
 [[menu.main]]
-    name = "team"
+    name = "Team"
     url = "/team/"
     pre = "<i class='fa fa-users'></i></i>"
     weight = 1

@@ -818,8 +818,22 @@ h1:before {
 } 
 
 .team {
+    @keyframes enlarge {
+        0% { width: 0; }
+        100% { width: 150px; }
+    }
     .avatar img {
+        width: 0;
         max-width: 150px;
+        animation: enlarge 2s forwards;
+        animation-delay: 2s;
+    }
+    .flag {
+        margin-top: -3px;
+        margin-left: 10px;
+    }
+    .avatar {
+        
     }
 }
 .team-section {
