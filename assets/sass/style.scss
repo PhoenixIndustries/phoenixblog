@@ -823,8 +823,8 @@ h1:before {
 
 .team {
     @keyframes enlarge {
-        0% { width: 0; }
-        100% { width: 150px;}
+        0% { width: 0; opacity: 0;}
+        100% { width: 150px;opacity: 1;}
     }
                 
     .avatar img {
