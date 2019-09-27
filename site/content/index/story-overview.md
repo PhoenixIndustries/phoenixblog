@@ -10,7 +10,7 @@ quotewriter = "Roland Singer"
 Is an accessible, friendly, open-source Linux distribution and community. Based on [Arch Linux](https://www.archlinux.org/), providing all the benefits of cutting-edge software combined with a focus on getting started quickly, automated tools to require less manual intervention, and help readily available when needed. Manjaro is suitable for both newcomers and experienced Linux users.
 
 
-A excellent entry-point into the Linux world. Unlike proprietary operating systems, you full control over your hardware, without restrictions. This makes it ideal for people who want to learn how Linux works and how it is different to other operating systems. From this perspective, is also suitable for beginners similar to the way an Arduino is an excellent entry-point to embedded hardware development.
+A excellent entry-point into the Linux world. Unlike proprietary operating systems, you have full control over your hardware, without restrictions. This makes it ideal for people who want to learn how Linux works and how it is different to other operating systems. From this perspective, it is also suitable for beginners similar to the way an Arduino is an excellent entry-point to embedded hardware development.
 
 It is easily possible to run many popular Windows applications, using compatibility software such as [Wine](https://www.winehq.org/), [PlayonLinux](https://www.playonlinux.com/) or [Proton](https://www.protondb.com/) via [Steam](https://store.steampowered.com/about/). The examples given here are far from comprehensive!
 
