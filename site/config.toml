@@ -125,10 +125,17 @@ DefaultContentLanguage = "en-us"
 # --- SubMenu about ---
 
 [[menu.main]]
+    name = "Team"
+    url = "/team/"
+    pre = "<i class='fa fa-users'></i></i>"
+    weight = 1
+    parent = "about"
+
+[[menu.main]]
     name = "Linux"
     url = "/linux/"
     pre = "<i class='fab fa-linux'></i></i>"
-    weight = 1
+    weight = 2
     parent = "about"
 
 # --- SubMenu Support ---
