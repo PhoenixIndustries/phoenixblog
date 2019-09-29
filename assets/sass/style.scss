@@ -1161,12 +1161,39 @@ h1:before {
 }
 
 .user-guide {
+    @keyframes shake {
+        // https://github.com/daneden/animate.css/blob/master/source/attention_seekers/shake.css
+        from,
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translate3d(-10px, 0, 0);
+        }
+      
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translate3d(10px, 0, 0);
+        }
+      }
+      
 
     .section {
         padding: 0;
-        padding-top: 70px;
+        padding-top: 100px;
         height: 100%;
         min-height: 91vh !important;
+        .container .container p {
+            font-size: 18px;
+            margin-bottom: 110px;
+        }
     }
 
     .section .container:nth-child(1) {
@@ -1197,6 +1224,8 @@ h1:before {
     
     .btn-container {
         margin-bottom: -10px;
+        animation: shake 1s;
+        animation-delay: 2s;
 
         .btn {
             font-weight: bold;
