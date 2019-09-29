@@ -275,9 +275,17 @@ h1:before {
     .footer-dot {
         display: none;
     }
+    .download-page .image-container:after {
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .download-page .image-container:after {
+        width: 150px !important;
+        height: 150px !important;
+    }
 
     .landing-page {
 
@@ -351,10 +359,7 @@ h1:before {
     }
 
     .download-page {
-        .image-container:after {
-          width: 200px !important;
-          height: 200px !important;
-        }
+        
         .image-container img, .video-player {
           border-radius: 10px !important;
           border: 10px solid #090909 !important;
@@ -923,8 +928,6 @@ h1:before {
             background-size: contain;
             background-repeat: no-repeat;
             content: "";
-            width: 300px;
-            height: 300px;
             display: inline-block;
             margin-top: 10px;
         }
@@ -1571,6 +1574,13 @@ h1:before {
 
 @media (min-width: 768px) {
 
+    .download-page {
+        .image-container:after {
+            width: 200px !important;
+            height: 200px !important;
+          }
+    }
+
     .social-icons-top .btn {
         background-color: #f0f0f0;
     }
@@ -1644,6 +1654,10 @@ h1:before {
 @media screen and (min-width: 992px) {
 
     .download-page {
+        .image-container:after {
+            width: 300px !important;
+            height: 300px !important;
+          }
         #go-down {
             position: fixed;
             bottom: 5px;
