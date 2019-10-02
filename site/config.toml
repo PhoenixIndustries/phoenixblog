@@ -33,13 +33,6 @@ DefaultContentLanguage = "en-us"
     download_gpg = "Download GPG signature"
     download_torrent = "Download Torrent"
 
-[params.desktop_description]
-    kde = "64 bit version"
-    gnome = "64 bit version"
-    xfce = "64 bit version"
-    architect = "64 bit version"
-    minimal = "This edition has no desktop environment, it is most suitable for users that are comfortable using the shell."
-
 # --- Top Menu
 
 [[menu.main]]
