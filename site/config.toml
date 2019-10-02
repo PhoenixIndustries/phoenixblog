@@ -16,7 +16,7 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.17"
+    website_version = "1.0.23"
     form_active = "true"
     background = "/img/header.jpg"
     tint = "green"

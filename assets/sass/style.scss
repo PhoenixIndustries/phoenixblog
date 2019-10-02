@@ -294,9 +294,17 @@ h1:before {
     .footer-dot {
         display: none;
     }
+    .download-page .image-container:after {
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .download-page .image-container:after {
+        width: 150px !important;
+        height: 150px !important;
+    }
 
     .landing-page {
 
@@ -370,10 +378,7 @@ h1:before {
     }
 
     .download-page {
-        .image-container:after {
-          width: 200px !important;
-          height: 200px !important;
-        }
+        
         .image-container img, .video-player {
           border-radius: 10px !important;
           border: 10px solid #090909 !important;
@@ -841,8 +846,8 @@ h1:before {
 
 .team {
     @keyframes enlarge {
-        0% { width: 0; }
-        100% { width: 150px;}
+        0% { width: 0; opacity: 0;}
+        100% { width: 150px;opacity: 1;}
     }
                 
     .avatar img {
@@ -884,30 +889,6 @@ h1:before {
     .d-bottom-text {
         font-size: 18px;
         text-transform: uppercase;
-    }
-
-    #go-down {
-        position: fixed;
-        bottom: 5px;
-        font-size: 3em;
-        color: white;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        transform-origin: bottom;
-        animation-name: bounce;
-        animation-timing-function: ease;
-        display: none;
-    }
-    @keyframes bounce {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-20px); }
-        100% { transform: translateY(0); }
-    }
-
-    .official-logo {
-        width: 12.14px;
-        margin-top: -4px;
-        margin-right: 5px;
     }
         
     .editions-tag-checkbutton label {
@@ -969,8 +950,6 @@ h1:before {
             background-size: contain;
             background-repeat: no-repeat;
             content: "";
-            width: 300px;
-            height: 300px;
             display: inline-block;
             margin-top: 10px;
         }
@@ -1183,12 +1162,39 @@ h1:before {
 }
 
 .user-guide {
+    @keyframes shake {
+        // https://github.com/daneden/animate.css/blob/master/source/attention_seekers/shake.css
+        from,
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translate3d(-10px, 0, 0);
+        }
+      
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translate3d(10px, 0, 0);
+        }
+      }
+      
 
     .section {
         padding: 0;
-        padding-top: 70px;
+        padding-top: 100px;
         height: 100%;
         min-height: 91vh !important;
+        .container .container p {
+            font-size: 18px;
+            margin-bottom: 110px;
+        }
     }
 
     .section .container:nth-child(1) {
@@ -1219,6 +1225,8 @@ h1:before {
     
     .btn-container {
         margin-bottom: -10px;
+        animation: shake 1s;
+        animation-delay: 2s;
 
         .btn {
             font-weight: bold;
@@ -1588,6 +1596,13 @@ h1:before {
 
 @media (min-width: 768px) {
 
+    .download-page {
+        .image-container:after {
+            width: 200px !important;
+            height: 200px !important;
+          }
+    }
+
     .social-icons-top .btn {
         background-color: #f0f0f0;
     }
@@ -1659,6 +1674,36 @@ h1:before {
 }
 
 @media screen and (min-width: 992px) {
+
+    .download-page {
+        .image-container:after {
+            width: 300px !important;
+            height: 300px !important;
+          }
+        #go-down {
+            position: fixed;
+            bottom: 5px;
+            font-size: 3em;
+            color: white;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            animation-name: bounce;
+            animation-timing-function: ease;
+            display: none;
+        }
+        @keyframes bounce {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    
+        .official-logo {
+            width: 12.14px;
+            margin-top: -4px;
+            margin-right: 5px;
+        }
+    }
 
     .edition h3 {
             text-align: left;

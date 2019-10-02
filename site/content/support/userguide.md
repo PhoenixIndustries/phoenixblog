@@ -15,4 +15,4 @@ fileName_tr = "Manjaro-User-Guide-Turkish"
 name_tr = "Kullanici rehberi"
 downloadLink = "https://de.osdn.net/projects/manjaro/storage/"
 +++
-Our Team and and Community proudly present's you, the Manjaro User Guide. Over 100 page book with everything a new or advanced user can learn about Manjaro. We cover the topics bellow in this guide:
+Our Team and the Community proudly presents you, the Manjaro User Guide. Over 100 page book with everything a new or advanced user can learn about Manjaro. We cover the topics described below.

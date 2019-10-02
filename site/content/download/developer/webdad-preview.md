@@ -22,6 +22,6 @@ weight = "6"
 
 **Note: This is a preview of a CONCEPT for developers and testers and is not suitable for production environments as it may contain bugs**
 
-WebDad edition is supported by the Community and comes with Jade(Just Another Desktop Enviroment) Modern Desktop concept.
+WebDad edition is supported by the Community and comes with ( Just Another Desktop Enviroment). Modern Desktop concept.
 
-This project is being built as a hobby and is a one man show and should not be compared with major Linux desktops. A New version is in the works, At the moment there is not realease date.
+This project was created to experiment with Technologies, The final product will differ and there is no release date.  
