@@ -17,6 +17,7 @@ DefaultContentLanguage = "en-us"
 
 [params]
     website_version = "1.0.17"
+    form_active = "true"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
