@@ -7,21 +7,21 @@ Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
 Download_x86_Torrent = ""
-Name = "Under Development Webdad"
+Name = "Under Development Manjaro Webdad"
 Screenshot = "webdad-desktop.jpeg"
 Youtube = "WJCTzkEodGM"
 edition = "dev"
 shortDescription = "Desktop Enviroment Concept"
 Thumbnail = "webdad-desktop.jpeg"
-Version = "Alpha 8"
+Version = "Alpha.8"
 date = "2019-03-03T00:33:00+01:00"
-title = "Conceptual Desktop"
+title = "Just Another Desktop Enviroment - Concept -"
 type="download-edition"
 weight = "6"
 +++
 
 **Note: This is a preview of a CONCEPT for developers and testers and is not suitable for production environments as it may contain bugs**
 
-WebDad edition is supported by the Community and comes with ( Just Another Desktop Enviroment). Modern Desktop concept.
+WebDad edition is supported by the Community and comes with ( Just Another Desktop Enviroment ). Modern Desktop concept.
 
 This project was created to experiment with Technologies, The final product will differ and there is no release date.  
