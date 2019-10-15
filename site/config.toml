@@ -16,7 +16,7 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.25"
+    website_version = "1.0.27"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
@@ -203,12 +203,12 @@ DefaultContentLanguage = "en-us"
     parent = "shop"
 
 
-[[menu.main]]
-    name = "Hardware - Spitfire"
-    url = "/hardware-spitfire"
-    pre = "<i class='fas fa-laptop'></i>"
-    weight = 4
-    parent = "shop"
+#[[menu.main]]
+#    name = "Hardware - Spitfire"
+#    url = "/hardware-spitfire"
+#    pre = "<i class='fas fa-laptop'></i>"
+#    weight = 4
+#    parent = "shop"
 
 
 # [[menu.main]]
