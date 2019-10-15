@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53-x86_64.iso"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53.iso"
 Download_x64_Checksum = "6624f4553b90b1277385549fafd43adde4556aa5"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53-x86_64.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.1-191015-linux53.iso.torrent"
 Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.0-stable-minimal-x86_64.iso"
 Download_Minimal_x64_Checksum = "e3c343b9197fd2177b8950e8a568ea7bc908d063"
 Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-18.1.0-stable-minimal-x86_64.iso.sig"

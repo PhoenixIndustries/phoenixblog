@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53-x86_64.iso"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53.iso"
 Download_x64_Checksum = "31735d2de18c0c67b6094eb48e752db2f04004c1"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53-x86_64.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.1-191015-linux53.iso.torrent"
 Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.0-stable-minimal-x86_64.iso"
 Download_Minimal_x64_Checksum = "032cd9ab5d212846325620f2ad3837d636245c75"
 Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-xfce-18.1.0-stable-minimal-x86_64.iso.sig"

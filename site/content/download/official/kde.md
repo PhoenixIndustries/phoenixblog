@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53-x86_64.iso"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53.iso"
 Download_x64_Checksum = "26dd4e81d38dced0959d1287b3aa30d3e94f6a1a"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53-x86_64.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.1-191015-linux53.iso.torrent"
 Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.0-stable-minimal-x86_64.iso"
 Download_Minimal_x64_Checksum = "1cc647ad40d13f4584a20326895ce6a12793b125"
 Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.0-stable-minimal-x86_64.iso.sig"
