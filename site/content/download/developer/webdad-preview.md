@@ -15,7 +15,7 @@ shortDescription = "Desktop Enviroment Concept"
 Thumbnail = "webdad-desktop.jpeg"
 Version = "Alpha.8"
 date = "2019-03-03T00:33:00+01:00"
-title = "Just Another Desktop Enviroment - Concept -"
+title = "Just Another Desktop Enviroment"
 type="download-edition"
 weight = "6"
 +++
@@ -24,4 +24,4 @@ weight = "6"
 
 WebDad edition is supported by the Community and comes with ( Just Another Desktop Enviroment ). Modern Desktop concept.
 
-This project was created to experiment with Technologies, The final product will differ and there is no release date.  
+This project was created to experiment with Technologies, A new version is under development, there is no release date.  

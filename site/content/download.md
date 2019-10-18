@@ -1,11 +1,17 @@
 {
   "title" : "Downloads",
   "type" : "download-selector",
-  "filters" : [
-  { "id" : "official", "description" : "Official", "default" : "" },
-  { "id" : "community", "description" : "Community", "default" : "community" },
-  { "id" : "arm", "description" : "ARM v8", "default" : "arm" },
-  { "id" : "32bit", "description" : "32-bit (x86)", "default" : "32bit" },
-  { "id" : "dev", "description" : "Previews", "default" : "dev" }
+  "editions" : [
+  { "id": "official", "categorie": "Official" },
+  { "id": "community", "categorie": "Community" },
+  { "id": "arm", "categorie": "ARM" },
+  { "id": "32bit", "categorie": "32bit" },
+  { "id": "dev", "categorie": "Developer Previews" }
+  ],
+  "armDevices" : [
+  { "device": "pinebook", "name": "PineBook" },
+  { "device": "rpi4", "name": "Raspberry Pi 4" },
+  { "device": "rockpi4", "name": "Rock Pi 4" },
+  { "device": "rockpro64", "name": "Rock Pro 64" }
   ]
 }
