@@ -15,4 +15,4 @@
 
 Almost nothing is without problems and while our team and our community works hard to get rid of all problems they encounter, some might slip through the cracks or are caused by some external influences. Here are some common problems that other users encountered.
 
-If you encountered something that is not listed here, take a look at our [bugtracker](https://bugs.manjaro.org/) to see if you can provide more information to get rid of the problem. You can always [help out](https://forum.manjaro.org) by pointing out bugs or discussing with other users about them to find a solution.
+If you encountered something that is not listed here, You can always visit the [Forum](https://forum.manjaro.org). Point out bugs or discuss with other users and try to find a solution.

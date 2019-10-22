@@ -5,9 +5,43 @@
   </div>
 </div>
 {{ end }}
-
 {{ define "body" }}
-
-{{.Content }}
-
+<p class="text-center btn-container">
+        <a href="{{.Params.downloadLink}}{{.Params.fileName_en}}.pdf" class="btn btn-primary btn-xl" target="_blank" >{{ .Params.name_en }}<i class="fas fa-book-open"></i></a>
+        <a href="{{.Params.downloadLink}}{{.Params.fileName_fr}}.pdf" class="btn btn-primary btn-xl" target="_blank" >{{ .Params.name_fr }}<i class="fas fa-book-open"></i></a>
+        <a href="{{.Params.downloadLink}}{{.Params.fileName_tr}}.pdf" class="btn btn-primary btn-xl" target="_blank" >{{ .Params.name_tr }}<i class="fas fa-book-open"></i></a>
+    <p>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+            <div class="container">
+        {{.Content }}
+        </div>
+    </div>
+</div>
+<div class="row d-flex justify-content-center">
+  	{{ range $index, $element := .Params.subcontent}}
+              {{ with  $.GetPage $element }} 
+              {{$images := .Params.images}}
+              {{$headings := replace .Content "<h4" "<h4 class='card-title text-success d-flex justify-content-center'"}}
+              {{$headings := replace $headings "<table" "<table class='table'"}}
+              {{$headings := replace $headings "<thead>" ""}}
+              {{$headings := replace $headings "<tr>" ""}}
+              {{$headings := replace $headings "<th>" ""}}
+              {{ range $subindex, $subelement := split $headings "ésplit" }}
+    <div class="col-md-4">
+        <div class="card">
+            <div class="d-flex card-header card-header-image justify-content-center">
+                    <img class="img-fluid xl-icon" style="margin-bottom:-80px;" src="{{index $images $subindex}}">
+           </div>
+            <div class="card-body">
+                <p class="card-description">
+                    {{$subelement | safeHTML}}
+                </p>
+            </div>
+        </div>
+      </div>
+      {{end}}
+      {{end}}
+      {{end}}
+</div>
 {{ end }}  

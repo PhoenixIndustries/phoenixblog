@@ -3,81 +3,88 @@
 title: "Privacy Policy"
 
 ---
-<h2>Biz Kimiz</h2>
+## Who we are
 
-<p>Bu Gizlilik Politikası, <strong>Manjaro</strong>'nun web <a href="https://manjaro.org">sitesinin</a> kullanıcılarından toplanan bilgileri toplama, kullanma, muhafaza etme ve açıklama şeklini yönetir, bize herhangi bir bilgi göndermez ve istatistiksel bilgiler kullanıcının web sitesinde saklanır.</p>
+This Privacy Policy governs the manner in which **Manjaro** collects, uses, maintains and discloses information collected from users (each, a “User”) of the [website](https://manjaro.org).
 
-<h2>Hangi kişisel verileri topluyoruz ve neden topluyoruz?</h2>
+## What personal data we collect and why we collect it
 
-<h3>Kişisel kimlik bilgileri</h3>
-<p>Kullanıcılar tarafından kişisel tanımlama bilgilerini, Kullanıcılar sitemizi ziyaret ettiğinde, siteye kaydolduğunda, sipariş verdiğinde, form doldurduğunda, bir ankete yanıt verdiğinde bunlarla bağlantılı olarak sitemizde sunduğumuz diğer faaliyetler, hizmetler, özellikler veya kaynakları kullandığında ve bunlarla sınırlı olmamak üzere çeşitli şekillerde toplayabiliriz. Kullanıcılardan uygun şekilde ad, e-posta adresi, posta adresi, telefon numarası istenebilir. Ancak, kullanıcılar Sitemizi anonim olarak ziyaret edebilir. Kişisel kimlik bilgilerini, yalnızca bu bilgileri bize gönüllü olarak göndermeleri durumunda, Kullanıcılardan toplayacağız. Kullanıcılar, Siteyle ilgili belirli faaliyetlerde bulunmalarını engellememesi dışında, kişisel kimlik bilgilerini vermeyi her zaman reddedebilir.</p>
+### Personal identification information
+We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, place an order, fill out a form, respond to a survey, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, mailing address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personal identification information, except that it may prevent them from engaging in certain Site related activities.
 
-<h3>Kişisel olmayan kimlik bilgileri</h3>
-<p>Sitemizle etkileşime girdiklerinde, Kullanıcılar hakkında kişisel olmayan kimlik bilgileri toplayabiliriz. Kişisel olmayan kimlik bilgileri tarayıcı adını, bilgisayar tipini ve İşletim sistemi ve kullanılan İnternet servis sağlayıcıları gibi Sitelerimize bağlantı yolları hakkında Kullanıcılar hakkında teknik bilgiler ve kullanılan diğer bilgileri içerebilir.</p>
 
-<h3>İletişim formları</h3>
-<p>İletişim formlarımızı kullandığınızda, Almanya'da barındırılan posta sunucumuzu kullanılacaktır. Verileriniz yalnızca dahili olarak işlenecek ve bu durumda herhangi bir 3. parti grupla paylaşılmayacaktır.</p>
+### Non-personal identification information
+We may collect non-personal identification information about Users whenever they interact with our Site. The non-personal identification information may include the browser name, the type of computer and technical information about Users' means of connection to our Sites, such as the operating system and the Internet service providers utilized and other similar information.
 
-<h3>Çerez Politikası</h3>
-<p>Sitemiz, Kullanıcı deneyimini geliştirmek için “çerezler” kullanabilir. Kullanıcının web tarayıcısı, kayıt tutma amacıyla ve bazen onlar hakkındaki bilgileri izlemek için çerezleri sabit disklerine yerleştirir. Kullanıcı, web tarayıcısını çerezleri reddedecek veya çerez gönderilirken sizi uyaracak şekilde ayarlamayı seçebilir. Bunu yaparlarsa, Sitenin bazı bölümlerinin düzgün çalışmayabileceğini unutmayın.</p>
-<p>Sitemize yorum yaptıysanız adınızı, e-posta adresinizi ve web sitenizi çerezlere kaydetmeyi seçebilirsiniz. Bunlar sizin kolaylığınız içindir, böylece başka bir yorum bıraktığınızda bilgilerinizi tekrar doldurmanız gerekmez. Bu çerezler bir yıl sürecek.</p>
-<p>Bir hesabınız varsa ve bu siteye giriş yaparsanız, tarayıcınızın çerezleri kabul edip etmediğini belirlemek için geçici bir çerez ayarlayacağız. Bu çerez, kişisel veri içermez ve tarayıcınızı kapattığınızda atılır.</p>
-<p>Giriş yaptığınızda, giriş bilgilerinizi ve ekran görüntüleme tercihlerinizi kaydetmek için birkaç çerez de kuracağız. Giriş çerezleri iki gün boyunca dayanır ve ekran seçenekleri çerezleri bir yıl boyunca dayanır. &#8220;Beni hatırla&#8221; seçeneğini seçerseniz, giriş bilgileriniz iki hafta devam edecektir. Hesabınızdan çıkış yaparsanız, giriş çerezleri kaldırılacaktır.</p>
-<p>Bir makaleyi düzenler veya yayınlarsanız, tarayıcınıza ek bir çerez kaydedilir. Bu çerez hiçbir kişisel veri içermez ve yalnızca düzenlediğiniz makalenin posta kimliğini gösterir. 1 gün sonra sona eriyor.</p>
+### Contact forms
+Using our contact forms will use our own hosted mail server located in Germany. Your data will be only processed internally and not shared with any 3rd-party group in that case.
 
-<h3>Diğer web sitelerinden gelen gömülü içerik</h3>
-<p>Bu sitedeki makaleler gömülü içerik içerebilir (ör. Videolar, görüntüler, makaleler vb.). Diğer web sitelerinden gelen gömülü içerik, ziyaretçiler diğer web sitesini ziyaret etmiş gibi davranır.</p>
-<p>Bu web siteleri, hakkınızdaki verileri toplayabilir, çerezleri kullanabilir, üçüncü taraflara ait ek bir izleme ekleyebilir ve bir hesabınız varsa ve o web sitesine giriş yapmışsanız, gömülü içerikle etkileşimlerinizi izleme dahil olmak üzere bu gömülü içerikle etkileşimlerinizi izleyebilir.</p>
+### Cookies
+Our Site may use “cookies” to enhance User experience. User’s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. The user may choose to set their web browser to refuse cookies or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.
 
-<h3>Medya</h3>
-<p>Görüntüleri web sitesine yüklerseniz, dahil edilmiş konum bilgisi (EXIF GPS) içeren görüntüleri yüklemekten kaçınmalısınız. Web sitesini ziyaret edenler, web sitesindeki resimlerden herhangi bir konum verisini indirebilir ve çıkarabilir.</p>
+If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.
+
+If you have an account and you log in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
+
+When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &#8220;Remember Me&#8221;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
+
+If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.
+
+### Embedded content from other websites
+Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
+
+These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracing your interaction with the embedded content if you have an account and are logged in to that website.
+
+### Media
+If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.
 
 <!--<h3>Analytics</h3>
 <p>This website stores some user agent data. These data are used to provide a more personalized experience and to track your whereabouts around our website in compliance with the European General Data Protection Regulation. If you decide to opt-out of any future tracking, a cookie will be set up in your browser to remember this choice for one year. As analytics tool we use <a href="https://wp-statistics.com">WP Statistics</a> with unique hashes enabled. This prevents us from storing your IP address in our database. Visit their web page to learn more about their <a href="https://wp-statistics.com/privacy-and-policy/">Privacy Policy</a>.</p>
 <p>To protect this webpage we use <a href="https://www.wordfence.com/">Wordfence</a> as security plugin which uses Google Analytics. Read their <a href="https://www.wordfence.com/privacy-policy/">Privacy Policy</a> if you want to know more. For more information regarding Google’s use of cookies and collection and use of information see the <a href="https://www.google.com/policies/privacy/">Google Privacy Policy</a>. To opt out of Google Analytics, please visit the <a href="https://support.google.com/analytics/answer/181881?hl=en">Google Analytics Opt-Out Page</a> to learn about opting out and installing the appropriate browser add-on.</p>-->
 
-<h3>Ödeme hizmetleri</h3>
-<p>Projemize <a href="https://www.paypal.com">PayPal</a> üzerinden bağış yapmayı öneriyoruz. Bu hizmetin sağlayıcısı PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg. PayPal aracılığıyla bağış yapmayı seçtiğinizde, girdiğiniz ödeme verileriniz Paypal'a aktarılacaktır. Veri aktarımı, Avrupa Genel Veri Koruma Yönetmeliğine uygun olarak gerçekleştirilecektir. Veri işleme herhangi bir zamanda iptal edilebilir. Ancak bu iptal, geçmişten gelen halihazırda işlenmiş veri transferlerini yansıtmayacak. Web sayfalarını ziyaret ederek <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">PayPal&#8217;ın Gizlilik Politikası</a> hakkında daha fazla bilgi edinin.</p>
+### Payment Services
+We offer to donate to our project via [PayPal](https://www.paypal.com). Provider of this service is PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg. When you chose to donate via PayPal, your entered payment data will be transferred to Paypal. Data transfer will be processed in compliance with the European General Data Protection Regulation. Data processing can be cancelled at any time. This cancellation however won&#8217;t be reflecting to already processed data transfers from the past. Learn more about [PayPal&#8217;s Privacy Policy](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) by visiting their web page.</p>
 
-<h2>Toplanan bilgileri nasıl kullanıyoruz</h2>
-<p>Web sitemiz Kullanıcılar için kişisel bilgileri aşağıdaki amaçlarla toplayabilir ve kullanabilir:<br />
-– Sitemizi çalıştırmak ve işletmek<br />
-Bilgileriniz ile Site’deki içeriğinin doğru bir şekilde gösterilmesi gerekebilir.<br />
-– Müşteri hizmetini geliştirmek<br />
-Sağladığınız bilgiler, müşteri hizmetleri taleplerinize cevap vermemize ve ihtiyaçlarınızı daha verimli bir şekilde desteklememize yardımcı olur.<br />
-– Kullanıcı deneyimini kişiselleştirmek için<br />
-Bir grup olarak Kullanıcılarımızın Sitemizde sağlanan hizmetleri ve kaynakları nasıl kullandıklarını anlamak için toplu olarak bilgileri kullanabiliriz.<br />
-– Sitemizi geliştirmek için<br />
-Ürün ve hizmetlerimizi geliştirmek için verdiğiniz geri bildirimleri kullanabiliriz.<br />
-– Bir promosyon, yarışma, anket veya başka bir Site özelliği çalıştırmak için<br />
-Bilgi almayı kabul ettikleri başlık hakkında bilgi göndermek için<br />
-– Düzenli e-posta göndermek için<br />
-Kullanıcı bilgileri ve siparişleriyle ilgili güncellemeleri göndermek için e-posta adresini kullanabiliriz. Ayrıca soru, soru ve / veya diğer taleplerine cevap vermek için de kullanılabilir.</p>
+## How we use collected information
+Our website may collect and use Users' personal information for the following purposes:
+– To run and operate our Site
+We may need your information to display content on the Site correctly.
+– To improve customer service
+The information you provide helps us respond to your customer service requests and support needs more efficiently.
+– To personalize user experience
+We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+– To improve our Site
+We may use feedback you provide to improve our products and services.
+– To run a promotion, contest, survey or other Site feature
+To send Users' information they agreed to receive about topics we think will be of interest to them.
+– To send periodic emails
+We may use the email address to send Users information and updates pertaining to their order. It may also be used to respond to their inquiries, questions and/or other requests.
 
-<h2>Bilgilerinizi nasıl koruyoruz?</h2>
-<p>Kişisel bilgilerinizin, kullanıcı adınızın, şifrenizin, işlem bilgilerinizin ve Sitemizde saklanan verilerin yetkisiz erişime, değiştirilmesine, ifşa edilmesine veya imha edilmesine karşı korunmak için uygun veri toplama, saklama ve işleme uygulamalarını ve güvenlik önlemlerini sağlıyoruz.</p>
+## How we protect your information
+We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.
 
-<h2>Kişisel bilgilerinizi paylaşma</h2>
-<p>Kullanıcıların kişisel kimlik bilgilerini başkalarına satmayız, takas etmeyiz veya kiralamayız. Ziyaretçiler ve kullanıcılar ile ilgili herhangi bir kişisel kimlik bilgisi ile bağlantılı olmayan genel toplu demografik bilgileri, yukarıda belirtilen amaçlarla iş ortaklarımız ve güvenilir bağlı kuruluşlarımızla paylaşabiliriz. İşimizi ve Siteyi işletmemize ya da bültenleri veya anketleri gönderme gibi bizim adımıza etkinlikleri yönetmemize yardımcı olmak için üçüncü taraf servis sağlayıcıları kullanabiliriz. Bilgilerinizi, bize izninizi vermeniz şartıyla, sınırlı amaçlar için bu üçüncü taraflarla paylaşabiliriz.</p>
+## Sharing your personal information
+We do not sell, trade, or rent User's personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and the Site or administer activities on our behalfs, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.
 
-<h2>Verilerinizi ne kadar süreyle saklarız</h2>
-<p>Bir yorum bırakırsanız, yorum ve meta verileri süresiz olarak korunur. Bu, herhangi bir yorumunu onay sırasında tutmak yerine otomatik olarak tanıyabilir ve onaylayabiliriz.</p>
-<p>Web sitemize kayıt yaptıran kullanıcılar için (varsa), sağladıkları kişisel bilgileri de kullanıcı profillerinde saklarız. Tüm kullanıcılar kişisel bilgilerini istedikleri zaman görebilir, düzenleyebilir veya silebilir (kullanıcı adlarını değiştiremezler). Web sitesi yöneticileri de bu bilgileri görebilir ve düzenleyebilir.</p>
+## How long we retain your data
+If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
 
-<h2>Verileriniz üzerinde hangi haklara sahipsiniz</h2>
-<p>Bu sitede bir hesabınız varsa veya yorum bıraktıysanız, bize sağladığınız veriler de dahil olmak üzere hakkınızda tuttuğumuz kişisel verilere ait ihraç edilmiş bir dosyayı almayı talep edebilirsiniz. Ayrıca, hakkınızda sahip olduğumuz tüm kişisel bilgileri silmemizi de isteyebilirsiniz. Bu, idari, yasal veya güvenlik amaçları için saklamak zorunda olduğumuz verileri içermez.</p>
+For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.
 
-<h2>Verilerinizi nereye gönderiyoruz</h2>
-<p>Ziyaretçi yorumları otomatik bir spam algılama servisi ile kontrol edilebilir.</p>
+## What rights you have over your data
+If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
 
-<h2>Forumun gizlilik politikasını nerede bulabilirim</h2>
-<p>Forumlarımızın kullanımı biraz değişebilir. Lütfen <a href="https://forum.manjaro.org/privacy">burayı</a> okuyunuz.</p>
+## Where we send your data
+Visitor comments may be checked through an automated spam detection service.
 
-<h2>Bu gizlilik politikasında yapılan değişiklikler</h2>
-<p>Web sitemiz, bu gizlilik politikasını herhangi bir zamanda güncelleme yetkisine sahiptir. Bunu yaptığımızda, Sitemizin ana sayfasına bir bildirim göndereceğiz, bu sayfanın altındaki güncellenen tarihi revize edeceğiz. Kullanıcıları, topladığımız kişisel bilgilerin korunmasına nasıl yardımcı olduğumuz hakkında bilgi sahibi olma konusunda herhangi bir değişiklik için sık sık bu sayfayı kontrol etmelerini öneririz. Bu gizlilik politikasını periyodik olarak gözden geçirmenin ve değişikliklerden haberdar olmanın sizin sorumluluğunuz olduğunu kabul ve taahhüt ediyorsunuz.</p>
+## Where do I find the privacy policy of the forum
+The usage of our forums may vary slightly. Please read [here](https://forum.manjaro.org/privacy) about the conditions, which will apply to the usage of our forums.
 
-<h2>Kabul ettiğiniz şartlar</h2>
-<p>Bu Siteyi kullanarak, bu politikayı kabul ettiğinizi belirtirsiniz. Bu politikayı kabul etmiyorsanız, lütfen Sitemizi kullanmayın. Bu politikadaki değişikliklerin yayınlanmasından sonra Siteyi kullanmaya devam etmeniz, bu değişiklikleri kabul ettiğiniz anlamına gelecektir.</p>
+## Changes to this privacy policy
+Our website has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
 
-<h2>Bize Ulaşın</h2>
-<p>Bu Gizlilik Politikası, bu sitenin uygulamaları veya bu siteyle olan ilişkileriniz hakkında herhangi bir sorunuz varsa, lütfen bize ulaşın. İletişim bilgilerimiz <a href="/terms-of-use/">Kullanım Şartları</a> sayfamızdan alabilirsiniz.</p>
+## Your acceptance of these terms
+By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.
+
+## Contacting us
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us via [email](mailto:privacy-policy@manjaro.org).

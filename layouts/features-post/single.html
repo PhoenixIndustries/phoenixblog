@@ -10,14 +10,23 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="text-center">
-					<!-- <h2 class="section-heading">{{ .Title }}</h2>
-					<hr class="star-primary" /> -->
-
-					<div class="features-post">
+					<p class="features-post col-md-8 offset-md-2">
 						{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
+					</p>
+						<div class="row">
+							{{ range $index, $element := .Params.subcontent}}
+							{{ with  $.GetPage $element }} 
+								<div class="col-md-6 col-xl-4 text-center">
+									<img class="xl-icon" src="/img/actions/{{ .Params.icon}}.svg" alt="Icon"/>
+									
+									<h3>{{ .Title }}</h3>
+									<hr/>
+									<p>{{ .Content }}				
+									</p>
+								</div>  
+								{{ end }}
+								{{ end }}
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>

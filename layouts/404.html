@@ -1,0 +1,18 @@
+{{ define "body" }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1 class = "title text-center mt-4">Oops!</h1>
+                <h2 class = "title">404 Not Found</h2>
+                <div>
+                    <p class="text-center description">Sorry, an error has occured, Requested page not found!</p>
+                </div>
+                <div class="text-center">
+                    <a href="{{ .Site.BaseURL | relURL }}" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-home"></span>Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

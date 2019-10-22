@@ -1,17 +1,20 @@
 theme = "manjaro-homepage"
 baseurl = "/"
-DefaultContentLanguage = "en-us"
+languageCode = "en-us"
+title = "Manjaro - enjoy the simplicity"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
 publishDir = "../docs"
-themesDir = "../../"
+themesDir = "../.."
 i18nDir = "../i18n/"
 assetDir = "../static/"
+DefaultContentLanguage = "en-us"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
+
 [languages]
         [languages.en-us]
         languageName= "English"
@@ -19,50 +22,681 @@ assetDir = "../static/"
         weight= 1
         contentDir= "content/english"
 
-
         [languages.tr-tr]
         languageName= "Türkçe"
-        title = "Manjaro - sadeliğin tadını çıkar"
+        title = "Manjaro - basitliğin tadını çıkar"
         weight= 2
         contentDir= "content/turkish"
 
 [params]
+    website_version = "1.0.27"
     background = "/img/header.jpg"
     tint = "green"
-    custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
-    description = "A website built through Hugo and blogdown."
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
-
-[params.donate]
-    headline = "Help us"
-    description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
-    conditions = "A donation counts as a private donation and is kept anonymous by us. That means that we won't share or publish any details about you and your donation. Donators get no rights or privileges - everybody can participate, whether they donated or not. Manjaro is still relatively young and a growing distribution - we are no registered organization. That means that we cannot give you a reciept that deduct taxes. For the same reason, the donation cannot go to a 'Manjaro Linux' organization, but goes to the head of the Manjaro team."
-
-    [params.donate.account]
-        account_holder = "Hanns Philip Müller"
-        account_number = "1050676905"
-        bank_identification = "12030000"
-        bank = "DKB"
-        bic = "BYLADEM1001"
-        iban = "DE90120300001050676905"
-        purpose = "Donation to Manjaro Linux"
-        note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
-
+    meta_description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
+    meta_keywords = "manjaro linux, based on arch linux, free operating system"
 
 [params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
-    download_x64_button = "Download 64 bit version"
-    download_x86_button = "Download 32 bit version"
-    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
+    download_button = "Download"
+    download_button_minimal = "Download Minimal"
+    download_x64_description = "Only 64 bit is available for modern hardware, if you looking for legacy 32 bit go "
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"
     download_torrent = "Download Torrent"
+
+# --- Top Menu
+
+[[languages.en-us.menu.main]]
+    name = "News"
+    url = "/news/"
+    pre = ""
+    weight = 5
+
+[[languages.en-us.menu.main]]
+    name = "Shop"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "shop"
+
+[[languages.en-us.menu.main]]
+    name = "Donate"
+    pre = ""
+    url = "/donate/"
+    weight = 3 
+
+[[languages.en-us.menu.main]]
+    name = "Downloads"
+    url = "/download/"
+    pre = ""
+    weight = 1
+
+[[languages.en-us.menu.main]]
+    name = "Features"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+
+[[languages.en-us.menu.main]]
+    name = "More"
+    url = "#"
+    pre = ""
+    identifier = "more"
+    weight = 6
+
+#
+# --- End Top languages.en-us.menu ---
+#
+
+# --- Sublanguages.en-us.menu More ---
+
+[[languages.en-us.menu.main]]
+    name = "Packages"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 3
+    parent = "more"
+    identifier = "packages"
+
+[[languages.en-us.menu.main]]
+    name = "Support"
+    url = "#"
+    pre = ""
+    weight = 2
+    parent = "more"
+    identifier = "support"
+
+[[languages.en-us.menu.main]]
+    name = "About"
+    url = "#"
+    pre = ""
+    weight = 4
+    parent = "more"
+    identifier = "about"
+
+[[languages.en-us.menu.main]]
+    name = "Lists"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "mailinglists"
+    parent = "more"
+#
+# --- End Sublanguages.en-us.menu Others 
+#
+
+# --- Sublanguages.en-us.menu about ---
+
+[[languages.en-us.menu.main]]
+    name = "Team"
+    url = "/team/"
+    pre = "<i class='fa fa-users'></i></i>"
+    weight = 1
+    parent = "about"
+
+[[languages.en-us.menu.main]]
+    name = "Linux"
+    url = "/linux/"
+    pre = "<i class='fab fa-linux'></i></i>"
+    weight = 2
+    parent = "about"
+
+# --- Sublanguages.en-us.menu Support ---
+
+[[languages.en-us.menu.main]]
+    name = "First Steps"
+    url = "/support/firststeps/"
+    pre = "<i class='fas fa-shoe-prints'></i></i>"
+    weight = 1
+    parent = "support"
+
+
+[[languages.en-us.menu.main]]
+    name = "Common Problems"
+    url = "/support/commonproblems/"
+    pre = "<i class='fas fa-ambulance'></i></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.en-us.menu.main]]
+    name = "User Guide"
+    url = "/support/userguide/"
+    pre = "<i class='fas fa-book-open'></i></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.en-us.menu.main]]
+    name = "Forum"
+    url = "https://forum.manjaro.org/"
+    pre = "<i class='fas fa-hands-helping'></i></i>"
+    weight = 3
+    parent = "support"
+
+
+[[languages.en-us.menu.main]]
+    name = "Wiki"
+    url = "https://wiki.manjaro.org"
+    pre = "<i class='fas fa-user-graduate'></i>"
+    weight = 5
+    parent = "support"
+
+#
+# --- End Sublanguages.en-us.menu Support 
+#
+
+# --- Sublanguages.en-us.menu Shop ---
+
+[[languages.en-us.menu.main]]
+    name = "Merch & Accessories"
+    url = "https://shop.spreadshirt.de/manjaro/"
+    pre = "<i class='fas fa-tshirt'></i>"
+    weight = 1
+    parent = "shop"
+
+
+[[languages.en-us.menu.main]]
+    name = "Manjaro Stickers"
+    url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
+    pre = "<i class='fas fa-ticket-alt'></i>"
+    weight = 2
+    parent = "shop"
+
+
+[[languages.en-us.menu.main]]
+    name = "Hardware - Notebooks & PCs"
+    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
+    pre = "<i class='fas fa-desktop'></i>"
+    weight = 5
+    parent = "shop"
+
+
+#[[languages.en-us.menu.main]]
+#    name = "Hardware - Spitfire"
+#    url = "/hardware-spitfire"
+#    pre = "<i class='fas fa-laptop'></i>"
+#    weight = 4
+#    parent = "shop"
+
+
+# [[languages.en-us.menu.main]]
+#    name = "Hardware - Bladebook"
+#    url = "/hardware-bladebook"
+#    pre = ""
+#    weight = 3
+#    parent = "shop"
+
+#
+# --- End Sublanguages.en-us.menu Shop --- 
+#
+
+#
+# --- Sublanguages.en-us.menu Packages ---
+#
+
+[[languages.en-us.menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='fas fa-globe'></i></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "mirrors"
+
+#
+# --- end sublanguages.en-us.menu ---
+#
+
+# --- Sublanguages.en-us.menu Lists ---
+
+[[languages.en-us.menu.main]]
+    name = "Security"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 1
+    parent = "mailinglists"
+
+[[languages.en-us.menu.main]]
+    name = "General"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 2
+    parent = "mailinglists"
+
+
+[[languages.en-us.menu.main]]
+    name = "Packages"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 3
+    parent = "mailinglists"
+
+
+[[languages.en-us.menu.main]]
+    name = "Testing"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 4
+    parent = "mailinglists"
+
+
+[[languages.en-us.menu.main]]
+    name = "Development"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 5
+    parent = "mailinglists"
+
+[[languages.en-us.menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 6
+    parent = "mailinglists"
+
+#
+# --- end Sublanguages.en-us.menu Lists ---
+#
+
+# --- sublanguages.en-us.menu Features ---
+
+[[languages.en-us.menu.main]]
+    name = "Under your control"
+    url = "/features/under-your-control/"
+    pre = "<i class='fas fa-thumbs-up'></i></i>"
+    weight = 2
+    parent = "features"
+
+
+[[languages.en-us.menu.main]]
+    name = "Configured with one click"
+    url = "/features/configured-with-one-click/"
+    pre = "<i class='fas fa-cog'></i></i>"
+    weight = 3
+    parent = "features"
+
+
+[[languages.en-us.menu.main]]
+    name = "Useful for everyone"
+    url = "/features/useful-for-everyone/"
+    pre = "<i class='fas fa-users'></i>"
+    weight = 4
+    parent = "features"
+
+
+[[languages.en-us.menu.main]]
+    name = "Fresh & Stable"
+    url = "/features/fresh-and-stable/"
+    pre = "<i class='fas fa-paper-plane'></i>"
+    weight = 5
+    parent = "features"
+
+#
+# --- end sublanguages.en-us.menu Features ---
+#
+
+# --- others ---
+ 
+
+[[languages.en-us.menu.footer]]
+    identifier = "copyright"
+    name = "2019 Manjaro Linux"
+    pre = "<i class='fa fa-copyright'></i>"
+    url = "/"
+    weight = 2
+
+
+[[languages.en-us.menu.footer]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    pre = ""
+    url = "/privacy-policy/"
+    weight = 3
+
+
+[[languages.en-us.menu.footer]]
+    identifier = "terms"
+    name = "Terms of Use"
+    pre = ""
+    url = "/terms-of-use/"
+    weight = 4
+
+
+[[languages.en-us.menu.footer]]
+    identifier = "gitlab"
+    pre = "<i class='fab fa-gitlab'></i>"
+    url = "https://gitlab.manjaro.org"
+    weight = 5
+
+#
+# --- Turkish Language ---
+#
+# --- Top Menu
+
+[[languages.tr-tr.menu.main]]
+    name = "Duyurular"
+    url = "/news/"
+    pre = ""
+    weight = 5
+
+[[languages.tr-tr.menu.main]]
+    name = "Market"
+    url = "#"
+    pre = ""
+    weight = 4
+    identifier = "shop"
+
+[[languages.tr-tr.menu.main]]
+    name = "Bağış"
+    pre = ""
+    url = "/donate/"
+    weight = 3 
+
+[[languages.tr-tr.menu.main]]
+    name = "İndir"
+    url = "/download/"
+    pre = ""
+    weight = 1
+
+[[languages.tr-tr.menu.main]]
+    name = "Özellikler"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "features"
+
+[[languages.tr-tr.menu.main]]
+    name = "Daha Fazlası"
+    url = "#"
+    pre = ""
+    identifier = "more"
+    weight = 6
+
+#
+# --- End Top languages.tr-tr.menu ---
+#
+
+# --- Sublanguages.tr-tr.menu More ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Paketler"
+    url = "https://repo.manjaro.org/"
+    pre = ""
+    weight = 3
+    parent = "more"
+    identifier = "packages"
+
+[[languages.tr-tr.menu.main]]
+    name = "Destek"
+    url = "#"
+    pre = ""
+    weight = 2
+    parent = "more"
+    identifier = "support"
+
+[[languages.tr-tr.menu.main]]
+    name = "Hakkında"
+    url = "#"
+    pre = ""
+    weight = 4
+    parent = "more"
+    identifier = "about"
+
+[[languages.tr-tr.menu.main]]
+    name = "Listeler"
+    url = "#"
+    pre = ""
+    weight = 2
+    identifier = "mailinglists"
+    parent = "more"
+#
+# --- End Sublanguages.tr-tr.menu Others 
+#
+
+# --- Sublanguages.tr-tr.menu about ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Takım"
+    url = "/team/"
+    pre = "<i class='fa fa-users'></i></i>"
+    weight = 1
+    parent = "about"
+
+[[languages.tr-tr.menu.main]]
+    name = "Linux"
+    url = "/linux/"
+    pre = "<i class='fab fa-linux'></i></i>"
+    weight = 2
+    parent = "about"
+
+# --- Sublanguages.tr-tr.menu Support ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Başlangıç"
+    url = "/support/firststeps/"
+    pre = "<i class='fas fa-shoe-prints'></i></i>"
+    weight = 1
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Genel Problemler"
+    url = "/support/commonproblems/"
+    pre = "<i class='fas fa-ambulance'></i></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Kullanıcı Kılavuzu"
+    url = "/support/userguide/"
+    pre = "<i class='fas fa-book-open'></i></i>"
+    weight = 2
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Forum"
+    url = "https://forum.manjaro.org/"
+    pre = "<i class='fas fa-hands-helping'></i></i>"
+    weight = 3
+    parent = "support"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Viki"
+    url = "https://wiki.manjaro.org"
+    pre = "<i class='fas fa-user-graduate'></i>"
+    weight = 5
+    parent = "support"
+
+#
+# --- End Sublanguages.tr-tr.menu Support 
+#
+
+# --- Sublanguages.tr-tr.menu Shop ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Kıyafet ve Aksesuarlar"
+    url = "https://shop.spreadshirt.de/manjaro/"
+    pre = "<i class='fas fa-tshirt'></i>"
+    weight = 1
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Manjaro Çıkartmaları"
+    url = "https://linux-aarhus.dk/en/product-category/manjaro-en/stickers-en/"
+    pre = "<i class='fas fa-ticket-alt'></i>"
+    weight = 2
+    parent = "shop"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Donanım - Notebook & PC"
+    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
+    pre = "<i class='fas fa-desktop'></i>"
+    weight = 5
+    parent = "shop"
+
+
+#[[languages.tr-tr.menu.main]]
+#    name = "Hardware - Spitfire"
+#    url = "/hardware-spitfire"
+#    pre = "<i class='fas fa-laptop'></i>"
+#    weight = 4
+#    parent = "shop"
+
+
+# [[languages.tr-tr.menu.main]]
+#    name = "Hardware - Bladebook"
+#    url = "/hardware-bladebook"
+#    pre = ""
+#    weight = 3
+#    parent = "shop"
+
+#
+# --- End Sublanguages.tr-tr.menu Shop --- 
+#
+
+#
+# --- Sublanguages.tr-tr.menu Packages ---
+#
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirrors"
+    url = "https://repo.manjaro.org/"
+    pre = "<i class='fas fa-globe'></i></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "mirrors"
+
+#
+# --- end sublanguages.tr-tr.menu ---
+#
+
+# --- Sublanguages.tr-tr.menu Lists ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Güvenlik"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-security"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 1
+    parent = "mailinglists"
+
+[[languages.tr-tr.menu.main]]
+    name = "Genel"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-general"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 2
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Paketler"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-packages"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 3
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Test"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-testing"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 4
+    parent = "mailinglists"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Geliştirici"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-dev"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 5
+    parent = "mailinglists"
+
+[[languages.tr-tr.menu.main]]
+    name = "Mirrors"
+    url = "https://lists.manjaro.org/mailman/listinfo/manjaro-mirrors"
+    pre = "<i class='fas fa-envelope'></i>"
+    weight = 6
+    parent = "mailinglists"
+
+#
+# --- end Sublanguages.tr-tr.menu Lists ---
+#
+
+# --- sublanguages.tr-tr.menu Features ---
+
+[[languages.tr-tr.menu.main]]
+    name = "Kontrol sende"
+    url = "/features/under-your-control/"
+    pre = "<i class='fas fa-thumbs-up'></i></i>"
+    weight = 2
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Tek tık ile yapılandırma"
+    url = "/features/configured-with-one-click/"
+    pre = "<i class='fas fa-cog'></i></i>"
+    weight = 3
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Herkes için kullanışlı"
+    url = "/features/useful-for-everyone/"
+    pre = "<i class='fas fa-users'></i>"
+    weight = 4
+    parent = "features"
+
+
+[[languages.tr-tr.menu.main]]
+    name = "Güncel ve kararlı"
+    url = "/features/fresh-and-stable/"
+    pre = "<i class='fas fa-paper-plane'></i>"
+    weight = 5
+    parent = "features"
+
+#
+# --- end sublanguages.tr-tr.menu Features ---
+#
+
+# --- others ---
+ 
+
+[[languages.tr-tr.menu.footer]]  
+    name = "2019 Manjaro Linux"
+    pre = "<i class='fa fa-copyright'></i>"
+    url = "/"
+    identifier = "copyright"
+    weight = 2
+
+
+[[languages.tr-tr.menu.footer]]
+    name = "Gizlilik Politikası"
+    pre = ""
+    url = "/privacy-policy/"
+    identifier = "privacy"
+    weight = 3
+
+
+[[languages.tr-tr.menu.footer]]
+    name = "Kullanım Şartları"
+    pre = ""
+    url = "/terms-of-use/"
+    identifier = "terms"
+    weight = 4
+
+
+[[languages.tr-tr.menu.footer]]
+    identifier = "gitlab"
+    pre = "<i class='fab fa-gitlab'></i>"
+    url = "https://gitlab.manjaro.org"
+    weight = 5
+

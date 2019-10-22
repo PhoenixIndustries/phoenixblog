@@ -11,70 +11,120 @@
   <div class="col-md-8 ml-auto mr-auto text-center">
     <section>
       <div class="container">
-        <!-- <h2>Manjaro {{ .Params.name }}</h2>
-        <hr class="star-primary" /> -->
-        <a href="/img/editions/{{ .Params.screenshot }}" target="_blank"><img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive img-centered" alt=""></a>
-        <br/>
-        <p>{{ .Params.shortdescription | markdownify }}</p>
-        <p>{{ .Content | markdownify }}</p>
-        {{ if .Params.Youtube }}
-          <p>{{partial "youtube" .}}</p>
-        {{ end }}
-        <h2>{{ i18n "download" }}</h2>
-        <hr class="star-primary"/>
         <ul class="flex-grid download-edition-grid">
-          <li class="flex-item">
-            <div class="content">
-              <div class="top">
-                <img src="/img/download/x64.svg" alt="Icon" style="width: 200px; height: 200px;" />
-                <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
-                <hr/>
-                <p>{{ .Site.Params.download_edition.download_x64_description }}</p>
+            {{ if .Params.download_x64 }}
+            <li class="flex-item">
+              <div class="content">
+                <div class="top">
+                  <img src="/img/download/x64.svg" alt="Icon" style="width: 100px; height: 100px;" />
+                  <h3>{{ .Site.Params.download_edition.download_x64_title }}</h3>
+                  <hr/>
+                  <p>{{ .Site.Params.download_edition.download_x64_description }} <a href='https://osdn.net/projects/manjaro32/storage/'>here</a>.</p>
+                </div>
+                <div class="bottom full">
+                  <div style="margin-top: auto; margin-bottom: 10px;">
+                    <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" onClick="download_link = '{{ .Params.download_x64 }}'" data-toggle="modal" data-target="#download-how-to-try">
+                       {{ .Site.Params.download_edition.download_button }}</a>
+                    <p></p>
+                    <div>
+                      <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
+                        {{ if .Params.download_x64_torrent }}
+                          {{ with .Params.download_x64_torrent }}<a href="{{ . }}" target="_blank" onClick="download_link = '{{ . }}'" data-toggle="modal" data-target="#download-how-to-try">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
+                        {{ else }}
+                          <span>Torrent Not Available.</span><br>
+                        {{ end }}
+                        {{ with .Params.download_x64_sig}}
+                        <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
+                        SHA1: {{.Params.download_x64_checksum}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {{ if .Params.Download_Minimal_x64 }}
+                <div class="bottom minimal">
+                  <div style="margin-top: 40px; margin-bottom: 10px;">
+                    <a href="{{ .Params.Download_Minimal_x64 }}" class="btn btn-success btn-xl" target="_blank" onClick="download_link = '{{ .Params.Download_Minimal_x64 }}'" data-toggle="modal" data-target="#download-how-to-try">
+                       {{ .Site.Params.download_edition.download_button_minimal }}</a>
+                    <p></p>
+                    <div>
+                      <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
+                        {{ if .Params.download_x64_torrent }}
+                          {{ with .Params.Download_Minimal_x64_torrent }}<a href="{{ . }}" target="_blank" onClick="download_link = '{{ . }}'" data-toggle="modal" data-target="#download-how-to-try">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
+                        {{ else }}
+                          <span>Torrent Not Available.</span><br>
+                        {{ end }}
+                        {{ with .Params.Download_Minimal_x64_sig}}
+                        <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
+                        SHA1: {{.Params.Download_Minimal_x64_checksum}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
               </div>
-              <div class="bottom">
-                <div style="margin-top: auto; margin-bottom: 10px;">
-                  <a href="{{ .Params.download_x64 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x64_button }}</a>
-                  <p></p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ with .Params.download_x64_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br/>
-                      {{ with .Params.download_x64_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-                      SHA1: {{ .Params.download_x64_checksum }}
+            </li>
+            {{ else if .Params.download_x86 }}
+            <li class="flex-item">
+              <div class="content">
+                <div class="top">
+                  <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
+                  <h3>{{ .Site.Params.download_edition.download_x86_title }}</h3>
+                  <hr/>
+                  <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
+                </div>
+                <div class="bottom">
+                  <div style="margin-top: auto; margin-bottom: 10px;font-size: 12px;">
+                    <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" onClick="download_link = '{{ .Params.download_x86 }}'" target="_blank" data-toggle="modal" data-target="#download-how-to-try">
+                      {{ .Site.Params.download_edition.download_button }}</a>
+                    <p></p>
+                    {{ if .Params.download_x86_torrent }}
+                      {{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}<br>
+                    {{ else }}
+                      <br><span>Torrent Not Available.</span><br>
+                    {{ end }}
+                    <div>
+                      <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
+                        {{ with .Params.download_x86_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
+                        SHA1: {{ .Params.download_x86_checksum }}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <!-- <li class="flex-item">
-            <div class="content">
-              <div class="top">
-                <img src="/img/download/x86.svg" alt="Icon" style="width: 200px; height: 200px;" />
-                <h3>{{ .Site.Params.download_edition.download_x86_title }}</h3>
-                <hr/>
-                <p>{{ .Site.Params.download_edition.download_x86_description }}</p>
-              </div>
-              <div class="bottom">
-                <div style="margin-top: auto; margin-bottom: 10px;">
-                  <a href="{{ .Params.download_x86 }}" class="btn btn-success btn-xl" target="_blank" >{{ .Site.Params.download_edition.download_x86_button }}</a>
-                  <p>{{ with .Params.download_x86_torrent }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_torrent }}</a>{{end}}</p>
-                  <div>
-                    <div style="margin-top: auto; margin-bottom: 10px; font-size: 12px;">
-                      {{ with .Params.download_x86_sig }} <a href="{{ . }}" target="_blank">{{ $.Site.Params.download_edition.download_gpg }}</a>{{end}}<br/>
-                      SHA1: {{ .Params.download_x86_checksum }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li> -->
-        </ul>
-        {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
-        <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
-        {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ if or (.Params.download_x64_torrent) (.Params.download_x86_torrent) }}
+              {{ range (where .Site.Pages ".Type" "download-additional-info-torrent")}}
+                <p>{{ .Content | replaceRE ";torrent-x64;" $.Params.download_x64_torrent | replaceRE ";torrent-x86;" $.Params.download_x86_torrent | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
+              {{ end }}
+          {{ else }}
+              {{ range (where .Site.Pages ".Type" "download-additional-info-post")}}
+                <p>{{ .Content | markdownify }}
+              {{ end }}
+          {{ end }}
       </div>
     </section>
   </div>   
 </div>
-{{ end }}        
- 
+<script>var download_link = "";</script>
+{{ range (where .Site.Pages ".Type" "download-documentation-modal")}}        
+        <div class="modal fade" id="download-how-to-try" tabindex="-1" role="dialog" aria-labelledby="how to try manjaro" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">{{ .Params.title }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {{ .Content | markdownify }}
+              </div>{{ end }}
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="window.open(download_link, '_blank');">Great, take me to Download.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+{{ end }}   

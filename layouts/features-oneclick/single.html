@@ -1,0 +1,35 @@
+{{ define "title" }}
+<div class="container">
+  <div class="content-center title-container">
+    <h1 class="title">{{ .Title }}</h1>
+  </div>
+</div>
+{{ end }}
+
+{{ define "body" }}
+	<section>
+		<div class="container">
+			<div class="row">
+					<p class="features-post col-md-8 offset-md-2">
+						{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
+					</p>
+						<div class="row">
+								<div class="col-md-8 offset-md-2">
+										<div class="row">
+												{{ range $index, $element := .Params.subcontent}}
+														{{ with  $.GetPage $element }} 
+														<div class="col-md-4">
+															<img class="zoom" src="/img/applications/{{ .Params.image}}.png"/></div>
+																<section id="{{ .Params.image}}" class="col-md-8">
+																		<h3>{{ .Title }}</h3>
+																		<p>{{ .Content }}</p>
+																</section>
+															{{ end }}
+													{{ end }}
+										</div>
+									</div>
+						</div>
+		  </div>
+		</div>
+	</section>
+{{ end }}

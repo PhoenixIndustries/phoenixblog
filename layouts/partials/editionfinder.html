@@ -1,141 +1,37 @@
-{{ "<!-- ASIDE -->" | safeHTML }}
-<!-- These are functional styles and do not belong to creative.css -->
-<style type="text/css">
-.editions-box-hideable {
-	transition: all .5s;
-	float: none;
-	display: inline-block;
-}
-
-{{ range .Params.filters }}
-.editions-box-hideable-{{ .id }} {
-}
-{{ end }}
-
-</style>
-<!-- Define out script for edition selection -->
-<script type="text/javascript" >
-
-	function element_is_in_tags(el, tags) {
-
-		for (var id in tags) {
-
-			if(!el.classList.contains("editions-box-hideable-" + tags[id])){
-				return false;
-			}
-
-		}
-
-		return true;
-
-	}
-
-	function show_only_editions_with_tags(tags) {
-
-		var els = document.getElementsByClassName('editions-box-hideable');
-
-		[].forEach.call(els, function (el)
-		{
-			if (tags.length == 0) {
-				//el.style.display = "block";
-				el.style.opacity = "1";
-				el.style.width = "";
-				el.style.visibility = "visible";
-			}
-			else {
-
-				if(element_is_in_tags(el, tags)) {
-					//el.style.display = "block";
-					el.style.opacity = "1";
-					el.style.width = "";
-					el.style.visibility = "visible";
-				}
-				else {
-					//el.style.display = "none";
-					el.style.opacity = "0";
-					el.style.width = "0%";
-					el.style.visibility = "hidden";
-				}
-			}
-		});
-	}
-
-	function editions_filter_selected(id) {
-		var e = document.getElementById("show-editions-" + id)
-		return e.checked;
-	}
-
-	function update_editions_tags() {
-		var tag_filter = [];
-
-		{{ range .Params.filters }}
-
-		if (editions_filter_selected( "{{ .id }}" )) {
-			tag_filter.push( "{{ .id }}" );
-		}
-
-		{{ end }}
-
-		show_only_editions_with_tags(tag_filter)
-	}
-
-	//window.onload = update_editions_tags;
-	//addLoadEvent(update_editions_tags);
-
-	//$( document ).ready(update_editions_tags);
-
-</script>
-
-<aside id="downloads" style="transition: height .5s;">
-    <div class="container text-center">
+    <aside id="downloads" style="transition: height .5s;">
+    <div class="text-center">
         <div class="call-to-action">
-            <p>{{ .Content | markdownify }}</p>
-            <div style="padding: 20px 0px 40px 0px;">
-            {{ range .Params.filters }}
-		<div class="editions-tag-checkbutton">
-			<input type="checkbox" id="show-editions-{{ .id }}" onchange="update_editions_tags();" {{ .default }}/>
-			<label for="show-editions-{{ .id }}" class="btn btn-success btn-xl" >{{ .description }}</label>
-		</div>
-            {{ end }}
-            </div>
+            
             <div class="container-fluid">
-                <div class="fluid-row align-items-center no-gutters">
+                    <h1 id="d-title">CHOOSE YOUR EDITION</h1>
+                <div class="editions-grid fluid-row align-items-center no-gutters">
                 <!--
                 NOTE: The range and end operations are supposed to be in line with the boxes!!!
                 Read more about crazy HTML magic here: http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements
                 -->
-                {{ range .Site.Pages }}{{ if eq .Type "download-edition" }}<div class="editions-box-hideable {{ range .Params.tags}}editions-box-hideable-{{ . }} {{ end }} col-lg-4 col-sm-6">
-                <a href="{{ .Permalink }}" class="editions-box editions-link" >
-                <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
-                <div class="editions-box-caption-extended">
-                    <div class="editions-box-caption-extended-content">
-                        <div class="targetgroup">
-                            {{ .Params.targetgroup }}
+                {{ range $index, $element := (where .Site.Pages.ByTitle "Type" "download-edition") }}
+                <section class="edition{{ if .Params.device }} {{ replace .Params.device " " "-" | lower }}{{ end }} {{ .Params.edition }} {{ replace .Params.name " " "-" | lower}} col-12" style="display:none;">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-5">
+                            <h3>
+                                <a class="btn btn-download btn-xl" href="{{ .Permalink }}" class="editions-box editions-link">Get {{ .Params.name }}&nbsp;&nbsp;&nbsp;{{ .Params.Version }}<i class="fas fa-angle-double-down"></i></a>
+                              </h3>
+                            <p>{{ .Params.shortDescription }}</p>
+                            <p>{{ .Content | markdownify }}</p>
                         </div>
+                        <div class="image-container col-md-12 col-lg-6 col-xl-7">
+                        {{ if .Params.Youtube }}
+                            {{ partial "youtube" . }}
+                            {{ else }}
+                            <img src="/img/editions/{{ .Params.thumbnail }}" class="img-responsive" alt="">
+                        {{ end }}
+                        </div> 
                     </div>
-                </div>
-                <div class="editions-box-caption-small">
-                    <div class="editions-box-caption-small-content">
-                        <div class="name">
-                            {{ i18n "download" }} {{ .Params.name }}
-                        </div>
-                    </div>
-                </div>
-                <div class="editions-box-caption-extended-subtitle">
-                    <div class="editions-box-caption-extended-subtitle-content">
-                        <div class="action">
-                            {{ i18n "download" }} {{ .Params.name }}
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>{{ end }}{{ end }}
-        </div>
+                    </section>
+            {{ end }}
+        </div>	
+        <p class="d-bottom-text text-center">If you looking for other Editions. Use the menu in the top toolbar.</p>	
     </div>
+    <span id="go-down"><i class="fas fa-arrow-down"></i></span>
 </section>
-
 </aside>
-
-<script type="text/javascript" >
-	update_editions_tags();
-</script>

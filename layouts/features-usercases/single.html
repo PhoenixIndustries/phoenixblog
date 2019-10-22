@@ -8,7 +8,7 @@
 
 {{ define "body" }}
 <div class="row">
-  <div class="offset-md-2 col-md-8">
+  <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">
 	
 			
 				
@@ -96,8 +96,10 @@
 		    </div>
 		</section> -->
   </div>
+  <div class="row">
+	  <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8"><div class="row">
 	{{ range (where .Site.Pages ".Type" "usercase-post") }}
-			<div class="offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-lg-4 col-xl-3">
+			<div class="offset-sm-0 col-sm-12 offset-md-0 col-md-6 col-lg-4">
 				<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
 					<h2>
 						{{ .Params.name }}
@@ -116,5 +118,6 @@
 				</ul>
 			</div>
 	{{end}}
+</div></div></div>
 </div>
 {{ end }}

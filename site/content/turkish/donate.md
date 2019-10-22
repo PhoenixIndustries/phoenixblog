@@ -1,38 +1,84 @@
 +++
-date = "2016-09-04T15:50:15+02:00"
+date = "2019-09-09T09:00:00+02:00"
 draft = false
-title = "Bağış"
-type = "donate"
-button_donate_text = "Paypal Kullanarak"
+title = "Donate"
+meta_description = "How can you help keep Manjaro Linux running by donating"
+meta_keywords = "donating manjaro linux, helping manjaro linux, contribute manjaro linux"
 +++
 
-Manjaro'ya yardım etmenin birçok yolu var. Bunun bir yolu, az miktarda para bağışlamak, kaçınılmaz bir maliyetin karşılanmasına yardımcı olmak, geliştiricilere Manjaro'nun özelliklerini geliştirmek için zaman ve özgürlük sağlamak ve konferanslara katılarak Manjaro hakkında konuşmayı sağlamaktır.
+### Why does Manjaro ask for donations?
 
-### Manjaro neden bağış istiyor?
+The mission and goals of Manjaro will remain the same as before – to support the collaborative development of Manjaro and its widespread use. This effort will continue to be supported through donations and sponsorship and these will not, under any circumstances, be used by the established company as a German GmbH & Co. KG since September 2019. Manjaro Linux has always and will always be free for its users!
 
-Manjaro, bazı büyük şirketler tarafından desteklenmiyor ve yalnızca ekip, topluluk ve Manjaro'yu geliştirmek ve iyileştirmek için zamanlarını ve kaynaklarını adamak isteyenler ve bazı sponsorlar tarafından destekleniyor.
+Most of the Core Team members and community volunteers dedicate their time and energy and resources, to develop and improve Manjaro Linux in their spare time. There will be many other possibilities where community initiatives can be subsidized to help grow the Manjaro project and community. One way is to donate a small amount of money, to help covering some costs, giving developers time and freedom to improve Manjaro’s features or spreading the word by attending conferences.
 
-### Bağışlarım ne için kullanılacak?
+## Choose a donation method
 
-Bağışınız esas olarak tüm sunucularımızı ve dolayısıyla web sitemizi, forumlarımızı, e-posta listelerinizi, hataların tespiti ve daha fazla çalışmayı sürdürmek için kullanılacak. Eğer bir miktar para kalırsa - iyi sunucular oldukça pahalıdır - bağışlarınız konferanslara katılmak veya Manjaro için bir özellik geliştirmek için daha fazla zaman ayırmak için kaynak geliştirici olarak kullanılacaktır.
+<div style="text-align:center">
+<p class="donate-option">Manjaro Global ( Preferred )</p>
+<a href="https://funding.communitybridge.org/projects/manjaro" target="_blank"><img src="/img/donation/donate-cb.png" width=300 /></a>  
+<div style="text-align:center">
+<p class="donate-option">Manjaro Europe</p>  
+<a href="https://opencollective.com/manjaro/donate" target="_blank"><img src="https://opencollective.com/manjaro/donate/button@2x.png?color=blue" width=240 /></a>  
+</div><div style="text-align:center">
+<p class="donate-option">Manjaro UK</p>  
+<a href="https://opencollective.com/manjaro-uk/donate" target="_blank"><img src="https://opencollective.com/manjaro-uk/donate/button@2x.png?color=white" width=240 /></a>  
+</div><div style="text-align:center;margin-bottom:80px;">
+<p class="donate-option">Manjaro US</p>  
+<a href="https://opencollective.com/manjaro-us/donate" target="_blank"><img src="https://opencollective.com/manjaro-us/donate/button@2x.png?color=blue" width=240 /></a>  
+</div>
 
-![Uses](/img/donation/uses.png)
+### For what will my donations be used for?
 
-### Bağışım isimsiz mi?
+Your donations will be used to fund project-related expenses, for example:
 
-Evet. Yaptığın her şeyi anonim tutacağız. Siz ve bağışınızla ilgili hiçbir bilgiyi paylaşmayacağız veya yayınlamayacağız.
+- Sponsorship for upstream events and local Manjaro team and community events;
+- Local community costs (e.g. shipping of equipment to Manjaro team and community members);
+- Travel (e.g. coverage of full or part of the expenses for attending an event);
+- Hardware and hosting costs of dedicated community projects.
 
-### Bağış yaparsam nasıl hissederim?
+![Uses](/img/donation/uses.png#center)
 
-Bize yardım ettiğinizi ve herkesin size minnettar olduğunu hissediyorsunuz :)
+### Who is deciding on how my donation is used for?
 
-### Neden özel bir kişiye bağış yapıyorum?
+The Community board is approving the use of donations to fund project-related expenses in coordination with the fiscal host. The company may advise, but will never interfere with decision-making by the community board.
 
-Manjaro şimdilik tescilli bir organizasyon değil. Bu son derece pahalı olduğundan ve Manjaro nispeten genç ve büyüyen bir dağıtımdır. Bağışınız Manjaro'nun çekirdek ekibinin lideri olacak ve ardından doğru kişilere aktarılacak.
+### Can my donation be anonymous?
 
-### Bir vergi indirimi alabilir miyim?
+You can decided for yourself if you want to donate anonymous or in your name. We won’t share or publish any details about you, except the amount you had donated. Read more about it [here](https://docs.opencollective.com/help/product/user-profile#using-open-collective-anonymously).
 
-Ne yazık ki hayır, kayıtlı bir kuruluş olmadığımız için, bağışınız özel bağış olarak kabul edilir. Bunlar için vergi kesilemez.
+### What do I get if I donate?
 
-## Bir bağış yöntemi seçin
----
+You get a big THANK YOU from the Core Team, since contributions will keep community related activities up and running and ensure the availability of updates and features within Manjaro Linux.
+
+### How can I see how the money is spent?
+
+We use a transparent ledger, which shows where money comes from and where it goes. This builds accountability and trust. With this we have a transparent budget for our community related activities, while keeping personal info private. More on how it works can be found here: [CommunityBridge](https://docs.linuxfoundation.org/display/DOCS/Donate), [OpenCollective](https://opencollective.com/how-it-works).
+
+### Does the fiscal host take any fee for managing?
+
+Operating the donations programme involves a lot of complexity surrounding taxes, tracking requests, gathering further information, and ensuring the money is objectively distributed across Manjaro, our community, upstream, and our local community teams. This (a) involves a lot of work, (b) requires some commercial accountability (e.g. taxes) and this should be as thin and non-bureaucratic as possible. The Community Team at Manjaro is in a good position to coordinate this work together with each fiscal host, and will regularly reach out to leaders in the Manjaro project to query requests where further information is needed. Accountability for this work will be provided with regular reports.
+
+Visit the info pages of our fiscal hosts to get more details on their fees:
+
+- [Global: Linux Foundation 501(c)(6)](https://docs.linuxfoundation.org/display/DOCS/CommunityBridge+FAQs)
+- [Europe: Open Collective Europe ASBL](https://opencollective.com/europe)
+- [United Kingdom: Open Collective UK](https://opencollective.com/uk)
+- [America: Open Source Collective 501(c)(6)](https://opencollective.com/opensource)
+
+### What payment methods can I use?
+
+Right now we only support credit card payments via Stripe through the platform. It is possible to pay by other means, such as bank transfer or Paypal, depending on the Fiscal Host.
+
+|Host|Credit Card - |Bank Transfer - |Paypal|
+|:---|:---:|:---:|:---:|
+CommunityBridge|Yes|Yes|No|
+OpenCollective EU|Yes|Yes|No|
+OpenCollective UK|Yes|Yes|No|
+OpenCollective US|Yes|Yes|Yes|
+</br>
+
+### Can I get a tax deduction?
+
+The [Linux Foundation 501(c)(6)](https://communitybridge.org/service-terms/) and [Open Source Collective 501(c)(6)](https://opencollective.com/opensource) are non-profits, which serve as fiscal hosts to most open source software projects. Donations to Linux Foundation 501(c)(6) and Open Source Collective 501(c)(6) are not tax deductible.
+
