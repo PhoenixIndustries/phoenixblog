@@ -7,20 +7,14 @@ $("#btn-contact").on('click', function() {
             <form id="form" method="post" role="form" >
     <div class="row">
             <div class="col-md-6">
-            <span class="text-muted">All fields are required.</span><br>
-            
-   <span> <input type="checkbox" name="human-check" class="form-check-input" id="human-check">
-    <label class="form-check-label text-muted" for="human-check">I am not a Bot.</label></span>
-    <br><br>
-    <span>If you are a user looking for support please use the <a href="https://forum.manjaro.org/" target="_blank">forum</a>.</span>
-    <br><br>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your Name" required="required">
-            </div>
-        </div>
+            <span class="text-muted">All fields are required. If you are a user looking for support please use the <a href="https://forum.manjaro.org/" target="_blank">forum</a>.</span>
+            <br>
+            <br>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your Name" required="required">   
+            <br>
+    </div>
+        <div class="g-recaptcha col-md-6" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
     </div>
     <div class="row">
         
@@ -59,19 +53,14 @@ $("#btn-contact").on('click', function() {
     </div>
 </form>
 
-
 </div></div>
 </div>
     
     `
 $( "body" ).append( template );
-$('#human-check').change(function(){
-    if($(this).is(":checked")) {
-        $('.form-check-label').removeClass('text-muted');
-    } else {
-        $('.form-check-label').addClass('text-muted');
-    }
-});
+let script = document.createElement('script');
+script.src = "https://www.google.com/recaptcha/api.js";
+document.head.append(script);
 $('#form').submit(function(event) {
     event.preventDefault();
         var formData = $('#form').serialize();

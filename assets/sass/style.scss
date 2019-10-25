@@ -178,7 +178,9 @@ a, .description a {
         color: #6c757d!important;
     }
         .form-control {
+            padding: 20px 30px !important;
             border-radius: 0;
+            border: 1px solid #E3E3E3 !important;
             &:focus, &:active, &:hover {
             border: 1px solid #44883c !important;
             option:hover {
