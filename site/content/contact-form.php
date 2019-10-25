@@ -2,9 +2,21 @@
     
 if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
 
-    if (isset($_POST['human-check'])) {
-
-            $sendTo = 'Manjaro Support <support@manjaro.org>';
+        // Validate reCAPTCHA box 
+        if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){ 
+            // Google reCAPTCHA API secret key 
+            $secretKey = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'; 
+             
+            // Verify the reCAPTCHA response 
+            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']); 
+             
+            // Decode json data 
+            $responseData = json_decode($verifyResponse); 
+             
+            // If reCAPTCHA response is valid 
+            if($responseData->success){ 
+                // Posted form data 
+                $sendTo = 'Manjaro Support <support@manjaro.org>';
             $subject = '[Manjaro] Support Request';
             $fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); 
             $success_message = 'Message successfully submitted. Thank you, we will get back to you soon!';
@@ -75,11 +87,12 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
             } catch (\Exception $e) {
                 $responseArray = array('type' => 'error', 'message' => "Something went wrong. Please try again later");
             }
-            
-        } else {
-            $error_message = "Check Anti Spam Box.";
-            $responseArray = array('type' => 'error', 'message' => $error_message);
-        }
+            }else{ 
+                $responseArray = array('type' => 'error', 'message' => "Robot verification failed, please try again.");
+            } 
+        }else{ 
+            $responseArray = array('type' => 'error', 'message' => "Please check on the reCAPTCHA box.");
+        } 
         $encoded = json_encode($responseArray);
         header('Content-Type: application/json');
         echo $encoded;
