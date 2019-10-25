@@ -152,11 +152,6 @@ $("a[href='/download/']").hide();
 $('.editions-grid').append($('.architect'));
 $('.editions-grid').prepend($('.kde'));
 $('.editions-grid').prepend($('.xfce'));
-// hide preview button if previews are not available
-if ( $('.dev ul').children().length === 0 ) { 
-    $("#dev").hide();
-     }
-
 
 function show_editions(editions) {
     if ($(window).width() > 991) {

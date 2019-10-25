@@ -16,8 +16,7 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.23"
-    form_active = "true"
+    website_version = "1.0.30"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
@@ -29,17 +28,11 @@ DefaultContentLanguage = "en-us"
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
     download_button = "Download"
+    download_button_minimal = "Download Minimal"
     download_x64_description = "Only 64 bit is available for modern hardware, if you looking for legacy 32 bit go "
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"
     download_torrent = "Download Torrent"
-
-[params.desktop_description]
-    kde = "64 bit version"
-    gnome = "64 bit version"
-    xfce = "64 bit version"
-    architect = "64 bit version"
-    minimal = "This edition has no desktop environment, it is most suitable for users that are comfortable using the shell."
 
 # --- Top Menu
 
@@ -210,12 +203,12 @@ DefaultContentLanguage = "en-us"
     parent = "shop"
 
 
-[[menu.main]]
-    name = "Hardware - Spitfire"
-    url = "/hardware-spitfire"
-    pre = "<i class='fas fa-laptop'></i>"
-    weight = 4
-    parent = "shop"
+#[[menu.main]]
+#    name = "Hardware - Spitfire"
+#    url = "/hardware-spitfire"
+#    pre = "<i class='fas fa-laptop'></i>"
+#    weight = 4
+#    parent = "shop"
 
 
 # [[menu.main]]

@@ -292,6 +292,12 @@ h1:before {
     color: white;
 }
 
+.official-logo {
+    width: 12.14px !important;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
 @media screen and (max-width: 575px) {
     .footer-dot {
         display: none;
@@ -1698,12 +1704,6 @@ h1:before {
             0%   { transform: translateY(0); }
             50%  { transform: translateY(-20px); }
             100% { transform: translateY(0); }
-        }
-    
-        .official-logo {
-            width: 12.14px;
-            margin-top: -4px;
-            margin-right: 5px;
         }
     }
 
