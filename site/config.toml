@@ -24,6 +24,11 @@ DefaultContentLanguage = "en-us"
     meta_description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
     meta_keywords = "manjaro linux, based on arch linux, free operating system"
 
+    form_active = "true"
+    recaptcha_public_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+    form_server_address_testing = "http://localhost:1314/contact-form.php"
+    form_server_address = "https://hacked.manjaro.org/contact-form.php"
+
 [params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"

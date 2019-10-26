@@ -14,7 +14,7 @@ $("#btn-contact").on('click', function() {
             <input id="name" type="text" name="name" class="form-control" placeholder="Please enter your Name" required="required">   
             <br>
     </div>
-        <div class="g-recaptcha col-md-6" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+        <div class="g-recaptcha col-md-6" data-sitekey="{{ .Site.Params.recaptcha_public_key }}"></div>
     </div>
     <div class="row">
         
@@ -66,7 +66,7 @@ $('#form').submit(function(event) {
         var formData = $('#form').serialize();
         $.ajax({
             type        : 'POST', 
-            url         : 'http://localhost:1314/contact-form.php', 
+            url         : '{{ .Site.Params.form_server_address }}', 
             data        : formData, 
             dataType    : 'json',
             encode      : true
