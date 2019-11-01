@@ -1,7 +1,9 @@
----
-title: "Linux"
-class: "linux"
----
++++
+title= "Linux"
+class= "linux"
+meta_description = "Linux"
+meta_keywords = "linux, what is linux"
++++
 ## What is Linux
 
 [Linux](https://en.wikipedia.org/wiki/Linux) is the name of the kernel powering the GNU system. GNU/Linux, also called Linux is a free and [open source](https://en.wikipedia.org/wiki/Open-source_software) operating system, that can be freely used and distributed. 

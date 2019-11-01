@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="pacman"
 title = "Update or installation fails"
+meta_description = "Update or installation fails on Manjaro"
+meta_keywords = "manjaro update fails, manjaro installation fails"
 +++
 
 |   |   |

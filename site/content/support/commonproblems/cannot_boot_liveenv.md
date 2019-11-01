@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="installation"
 title = "The Manjaro USB-stick or DVD won't boot"
+meta_description = "Manjaro USB-stick or DVD won't boot"
+meta_keywords = "manjaro usb-stick, manjaro boot, boot manjaro linux"
 +++
 
 |   |   |

@@ -22,6 +22,8 @@ date = "28.10.2019T18:36:00+01:00"
 title = "Gnome"
 type="download-edition"
 weigth = "3"
+meta_description = "Manjaro gnome for people who want a very modern and simple desktop"
+meta_keywords = "manjaro gnome download, manjaro download"
 +++
 
 This edition is supported by the Manjaro team and comes with the GNOME 3 desktop that breaks with traditional concepts and allows users to focus on their tasks. Desktop-specific applications are crafted with care and clearly defined by guidelines that make them more consistent to use.

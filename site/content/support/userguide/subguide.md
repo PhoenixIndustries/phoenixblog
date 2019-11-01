@@ -1,6 +1,8 @@
 +++
 class = "fresh-and-stable"
 images = ["/img/actions/download.svg","/img/actions/install.svg","/img/try/install.svg"]
+meta_description = "How can I install Manjaro"
+meta_keywords = "manjaro installation, manjaro preparation, using manjaro"
 +++
 #### Preparation
 

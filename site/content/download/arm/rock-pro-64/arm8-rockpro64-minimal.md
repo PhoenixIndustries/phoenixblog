@@ -19,6 +19,8 @@ date = "10.2019"
 title = "RockPro64 Minimal"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro minimal ARM for people that do not need a desktop"
+meta_keywords = "manjaro minimal arm, manjaro download"
 +++
 
 The Minimal edition is Manjaro ARM, but without a Desktop Environment or Xorg at all.

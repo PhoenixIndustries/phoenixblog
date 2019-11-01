@@ -19,6 +19,8 @@ date = "10.2019"
 title = "Raspberry Pi 4 KDE Plasma"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro Plasma on ARM is a full-featured desktop experience and all the bells and whistles you might want."
+meta_keywords = "manjaro plasma arm, manjaro download"
 +++
 
 This edition is supported by the Manjaro ARM team and comes with Plasma desktop.

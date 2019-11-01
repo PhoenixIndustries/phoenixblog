@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="pacman"
 title = "How to install software?"
+meta_description = "How to install software on Manjaro"
+meta_keywords = "manjaro linux software, manjaro install application, manjaro software setup"
 +++
 
 |   |   |

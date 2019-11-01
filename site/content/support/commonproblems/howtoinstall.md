@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="installation"
 title = "How to start the installation?"
+meta_description = "Manjaro how to start installation"
+meta_keywords = "manjaro linux, manjaro installation"
 +++
 
 |   |   |

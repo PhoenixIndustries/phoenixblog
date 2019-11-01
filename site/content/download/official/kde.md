@@ -22,6 +22,8 @@ date = "15.10.2019T18:36:00+01:00"
 title = "KDE Plasma"
 type="download-edition"
 weight = "2"
+meta_description = "Manjaro kde built-in interface to easily access and install themes, widgets, etc. While very user-friendly and certainly flashy.
+meta_keywords = "manjaro kde download, manjaro download"
 +++
 
 This edition is supported by the Manjaro team and comes with KDE Plasma, a very modern and flexible desktop.

@@ -17,6 +17,8 @@ date = "2019-09-17"
 title = "Openbox"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro openbox for power users, developers, music production."
+meta_keywords = "manjaro openbox download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with openbox, a highly configurable window manager with extensive standards support and well known for stability.

@@ -17,6 +17,8 @@ date = "2019-09-33T01:34+01:00"
 title = "LXDE"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro lxde lightweight desktop build using the GTK toolkit"
+meta_keywords = "manjaro lxde download, manjaro download"
 +++
 
 Manjaro LXDE provides a lightweight GTK desktop environment. In addition to LXDE itself it provides a complete set of applications including an installer option to select an Office suite or choose not to install any. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.

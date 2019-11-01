@@ -17,6 +17,8 @@ date = "2019-09-33T01:34+01:00"
 title = "LXQt"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro lxqt lightweight desktop build using the LXQt toolkit"
+meta_keywords = "manjaro lxqt download, manjaro download"
 +++
 
 Manjaro LXQt provides a lightweight LXQt desktop environment. In addition to LXQt itself it provides a very basic set of applications. As most applications use the same Qt5 toolkit, the desktop provides a unified and style and theming. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.

@@ -19,6 +19,8 @@ date = "10.2019"
 title = "Raspberry Pi 4 Minimal"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro minimal ARM for people that do not need a desktop"
+meta_keywords = "manjaro minimal arm, manjaro download"
 +++
 
 This edition is supported by the Manjaro ARM team.
