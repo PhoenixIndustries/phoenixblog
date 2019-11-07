@@ -19,6 +19,8 @@ date = "10.2019"
 title = "Pinebook I3"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro i3 on ARM is lightweight tiling window manager"
+meta_keywords = "manjaro i3 arm, manjaro download"
 +++
 
 This edition is supported by the Manjaro ARM team and comes with i3 WM/desktop.

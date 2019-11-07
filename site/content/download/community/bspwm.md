@@ -17,6 +17,8 @@ date = "2019-04-06T14:53+01:00"
 title = "Bspwm"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro bspwm extremely resource efficient and configurable window manager that follows unix philosophy."
+meta_keywords = "manjaro bspwm download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with bspwm.

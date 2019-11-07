@@ -17,6 +17,8 @@ date = "2019-03-21T00:13:31+01:00"
 title = "Cinnamon"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro cinnamon for people who look for a traditional desktop with modern technology"
+meta_keywords = "manjaro cinnamon download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with Cinnamon, a desktop based on modern technology that keeps known and proven concepts.

@@ -22,6 +22,8 @@ date = "28.10.2019T18:36:00+01:00"
 title = "XFCE"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro xfce for people who want a reliable and fast desktop"
+meta_keywords = "manjaro xfce download, manjaro download"
 +++
 
 This edition is supported by the Manjaro team and comes with XFCE, a reliable desktop with high configurability.

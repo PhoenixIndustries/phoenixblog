@@ -1,8 +1,9 @@
----
++++
 #background: "img/bg4.jpg"
-title: "Privacy Policy"
-
----
+title= "Privacy Policy"
+meta_description = "Manjaro Privacy Policy"
+meta_keywords = "Privacy, privacy policy, privacy manjaro linux"
++++
 ## Who we are
 
 This Privacy Policy governs the manner in which **Manjaro** collects, uses, maintains and discloses information collected from users (each, a “User”) of the [website](https://manjaro.org).

@@ -17,6 +17,8 @@ date = "2019-09-13"
 title = "Architect"
 type="download-edition"
 weight = "7"
+meta_description = "Manjaro setup and configure Manjaro in every detail using the CLI."
+meta_keywords = "manjaro architect download, manjaro download"
 +++
 
 This edition comes with a TUI installer.

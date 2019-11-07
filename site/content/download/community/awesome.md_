@@ -17,6 +17,8 @@ date = "2018-11-08T08:02:46:12+01:00"
 title = "Awesome"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro awesome slim and snappy tiling window manager with the focus on resource efficiency suitable for power users"
+meta_keywords = "manjaro awesome download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with Awesome, a highly configurable, next generation framework window manager for X.

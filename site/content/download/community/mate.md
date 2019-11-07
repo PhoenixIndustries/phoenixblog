@@ -17,6 +17,8 @@ date = "2019-09-13"
 title = "Mate"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro mate for people who look for a traditional experience"
+meta_keywords = "manjaro mate download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with Mate, a desktop environment that continues the legacy of traditional user experience while carefully improving and modernizing it when needed.

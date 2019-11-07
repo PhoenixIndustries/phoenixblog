@@ -19,6 +19,8 @@ date = "10.2019"
 title = "Raspberry Pi 4 XFCE"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro XFCE on ARM is the one of the fastest DE's available and the most stable."
+meta_keywords = "manjaro xfce arm, manjaro download"
 +++
 
 This edition is supported by the Manjaro ARM team and comes with XFCE desktop.

@@ -1,7 +1,9 @@
----
++++
 #background: "img/bg4.jpg"
-title: "Terms of Use"
----
+title= "Terms of Use"
+meta_description = "What is the terms of use Manjaro"
+meta_keywords = "terms of use, terms of use manjaro linux, terms manjaro linux"
++++
 
 ### Disclaimer
 
