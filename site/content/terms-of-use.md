@@ -59,6 +59,7 @@ Country: Germany
 Email: [Direct contact](mailto:management@manjaro.org)  
 Commercial register: District court Munich  
 Commercial register number: Part A of the commercial register - 111192  
+VAT register number: DE326352217  
 
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 

@@ -16,7 +16,7 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.31"
+    website_version = "1.0.32"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
@@ -334,7 +334,7 @@ DefaultContentLanguage = "en-us"
     identifier = "copyright"
     name = "2019 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
-    url = "/"
+    url = "/imprint/"
     weight = 2
 
 
@@ -353,10 +353,17 @@ DefaultContentLanguage = "en-us"
     url = "/terms-of-use/"
     weight = 4
 
+[[menu.footer]]
+    identifier = "imprint"
+    name = "Imprint"
+    pre = ""
+    url = "/imprint/"
+    weight = 5
+
 
 [[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
-    weight = 5
+    weight = 6
 
