@@ -14,19 +14,18 @@
               </div>
               <div class="footer-dot">
                   •
-                </div>
+              </div>
       {{end}}
 
       {{ if eq .Identifier "terms" }}
-        <div class="row justify-content-center py-1">
-            <div class="col-sm-3 col-md-3 text-center text-md-right">
-                <a href="{{ .URL | relLangURL }}">
-                    <span>{{ .Pre }} {{ .Name }}</span>
+              <div class="col-sm-3 col-md-3 text-center text-md-left">
+                  <a href="{{ .URL | relLangURL }}">
+                      <span>{{ .Pre }} {{ .Name }}</span>
                   </a>
               </div>
               <div class="footer-dot">
                   •
-                </div>
+              </div>
       {{end}}
 
       {{ if eq .Identifier "imprint" }}
