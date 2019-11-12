@@ -2,7 +2,7 @@
 #background: "img/bg4.jpg"
 title= "Imprint"
 meta_description = "Imprint of Manjaro.org"
-meta_keywords = imprint, imprint of manjaro linux"
+meta_keywords = "imprint, imprint of manjaro linux"
 +++
 
 ### Legal website operator identification
