@@ -62,6 +62,12 @@ Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879
 Managing board: Philip Müller & Bernhard Landauer  
 VAT-Id.: DE 326352217  
 
+### Web Presence
+
+Concept: Manjaro GmbH & Co. KG, Contact: Philip Müller  
+Design & Programming: Vitor Lopes & Web-Team  
+Email: [Direct contact](mailto:info@manjaro.org)  
+
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
 Name: Philip Müller  
