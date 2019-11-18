@@ -7,13 +7,14 @@ meta_keywords = "imprint, imprint of manjaro linux"
 
 ### Legal website operator identification
 
-Manjaro GmbH & Co. KG  
+Company: Manjaro GmbH & Co. KG  
 Street: Adalbert-Stifter-Str. 21a  
-D-85567 Grafing b. München  
-Germany  
+Town: D-85567 Grafing b. München  
+Country: Germany  
 
-Limited partnership, Munich; Registering Court Munich; HRA 111192  
-Liable associate: Manjaro Verwaltungs-GmbH, Grafing b. München, Registering Court Munich; HRB 250879  
+Company Type: Limited partnership  
+Registering Court: Munich; HRA 111192  
+Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
 Managing board: Philip Müller & Bernhard Landauer  
 VAT-Id.: DE 326352217  
 
