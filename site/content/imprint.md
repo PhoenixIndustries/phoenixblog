@@ -15,7 +15,7 @@ Postal Code: 85567
 Country: Germany  
 
 Company Type: limited partnership with a limited liability company as general partner  
-Registering Court: Munich; HRA 111192  
+Commercial register: Registering Court Munich; HRA 111192  
 Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
 Managing board: Philip Müller & Bernhard Landauer  
 VAT-Id.: DE 326352217  
