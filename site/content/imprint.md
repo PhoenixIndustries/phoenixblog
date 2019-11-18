@@ -9,10 +9,12 @@ meta_keywords = "imprint, imprint of manjaro linux"
 
 Company: Manjaro GmbH & Co. KG  
 Street: Adalbert-Stifter-Str. 21a  
-Town: D-85567 Grafing b. München  
+City: Grafing b. München  
+State/Province: Bavaria  
+Postal Code: 85567  
 Country: Germany  
 
-Company Type: Limited partnership  
+Company Type: limited partnership with a limited liability company as general partner  
 Registering Court: Munich; HRA 111192  
 Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
 Managing board: Philip Müller & Bernhard Landauer  
@@ -26,9 +28,7 @@ Email: [Direct contact](mailto:management@manjaro.org)
 
 #### Content of the online offer
 
-According to Section 7, paragraph 1 German Telemedia Act (TMG), the Manjaro GmbH & Co KG* is responsible for own contents on this website. However, according to Sec. 8 to 10 TMG, service providers are not obligated to permanently monitor submitted third party information or to search for evidences that indicate illegal contents. Our legal obligation to immediately remove or block information at the time we get knowledge about a specific violation of law remains unchallenged.
-
-*limited partnership with a limited liability company as general partner
+According to Section 7, paragraph 1 German Telemedia Act (TMG), the Manjaro GmbH & Co KG is responsible for own contents on this website. However, according to Sec. 8 to 10 TMG, service providers are not obligated to permanently monitor submitted third party information or to search for evidences that indicate illegal contents. Our legal obligation to immediately remove or block information at the time we get knowledge about a specific violation of law remains unchallenged.
 
 #### References/ external links
 
