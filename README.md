@@ -95,5 +95,17 @@ If you are looking for older images check the [GNOME](https://osdn.net/projects/
 
 ## License
 
+## Setting up contact form
+Add config.php outside server pages, the key bellow is a testing key.
+
+We can change destination by changing [ include('../config.php') ] on contact-form.php.
+
+config.php contents:
+```
+<?php // Google reCAPTCHA API secret key 
+$secretKey = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe';
+?>
+```
+
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
