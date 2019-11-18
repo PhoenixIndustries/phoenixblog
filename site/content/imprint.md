@@ -7,19 +7,37 @@ meta_keywords = "imprint, imprint of manjaro linux"
 
 ### Legal website operator identification
 
-Company: Manjaro GmbH & Co. KG  
-Represented by: General Managers Philip Müller & Bernhard Landauer  
+Manjaro GmbH & Co. KG  
 Street: Adalbert-Stifter-Str. 21a  
-City: Grafing b. München  
-State/Province: Bavaria  
-Postal Code: 85567  
-Country: Germany  
-Email: [Direct contact](mailto:management@manjaro.org)  
-Commercial register: District court Munich  
-Commercial register number: Part A of the commercial register - 111192  
-VAT register number: DE326352217  
+D-85567 Grafing b. München  
+Germany  
 
-### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
+Limited partnership, Munich; Registering Court Munich; HRA 111192  
+Liable associate: Manjaro Verwaltungs-GmbH, Grafing b. München, Registering Court Munich; HRB 250879  
+Managing board: Philip Müller & Bernhard Landauer  
+VAT-Id.: DE 326352217  
+
+### Web Presence
+
+Concept: Manjaro GmbH & Co. KG, Contact: Philip Müller  
+Design & Programming: Vitor Lopes & Web-Team  
+Email: [Direct contact](mailto:management@manjaro.org)  
+
+#### Content of the online offer
+
+According to Section 7, paragraph 1 German Telemedia Act (TMG), the Manjaro GmbH & Co KG* is responsible for own contents on this website. However, according to Sec. 8 to 10 TMG, service providers are not obligated to permanently monitor submitted third party information or to search for evidences that indicate illegal contents. Our legal obligation to immediately remove or block information at the time we get knowledge about a specific violation of law remains unchallenged.
+
+*limited partnership with a limited liability company as general partner
+
+#### References/ external links
+
+On our website you find links to external third party websites. The Manjaro GmbH & Co. KG has no influence on the contents and copyrights of those websites. The respective operators of those websites alone are responsible. At the time of the linking we carefully check external websites and make sure that there are no violations of law. A permanent monitoring of the contents of linked websites cannot be imposed without reasonable indications that there has been a violation of law. If you notice illegal contents on linked websites, please inform us by [e-mail](mailto:webmaster@manjaro.org), the respective link will be removed immediately.
+
+#### Copyright / labelling obligation
+
+The layout of this web presence, used images as well as publications and pictures are protected by copyright laws. Copying, distribution and use of the contents for other than the mentioned purposes is not allowed without a written permission of the Manjaro GmbH & Co. KG or - if stated - the third party originator. The texts and images provided of this website may be used for commercial purposes within the scope of journalistic republication. However, the images remain protected property of the Manjaro GmbH & Co. KG and require a respective label of origin. Alienations not authorised or not noticeably carried out by the Manjaro GmbH & Co. KG are prohibited.
+
+#### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
 Name: Philip Müller  
 Company: Manjaro GmbH & Co. KG  
