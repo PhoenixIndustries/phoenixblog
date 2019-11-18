@@ -24,7 +24,7 @@ VAT-Id.: DE 326352217
 
 Concept: Manjaro GmbH & Co. KG, Contact: Philip Müller  
 Design & Programming: Vitor Lopes & Web-Team  
-Email: [Direct contact](mailto:management@manjaro.org)  
+Email: [Direct contact](mailto:info@manjaro.org)  
 
 #### Content of the online offer
 
