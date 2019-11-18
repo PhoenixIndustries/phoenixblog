@@ -60,6 +60,7 @@ Company Type: limited partnership with a limited liability company as general pa
 Commercial register: Registering Court Munich; HRA 111192  
 Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
 Managing board: Philip Müller & Bernhard Landauer  
+Email: [Direct contact](mailto:management@manjaro.org)  
 VAT-Id.: DE 326352217  
 
 ### Web Presence
