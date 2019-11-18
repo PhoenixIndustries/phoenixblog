@@ -50,16 +50,17 @@ All other trademarks and copyrights are property of their respective owners and 
 ### Legal website operator identification
 
 Company: Manjaro GmbH & Co. KG  
-Represented by: General Managers Philip Müller & Bernhard Landauer  
 Street: Adalbert-Stifter-Str. 21a  
 City: Grafing b. München  
 State/Province: Bavaria  
 Postal Code: 85567  
 Country: Germany  
-Email: [Direct contact](mailto:management@manjaro.org)  
-Commercial register: District court Munich  
-Commercial register number: Part A of the commercial register - 111192  
-VAT register number: DE326352217  
+
+Company Type: limited partnership with a limited liability company as general partner  
+Commercial register: Registering Court Munich; HRA 111192  
+Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
+Managing board: Philip Müller & Bernhard Landauer  
+VAT-Id.: DE 326352217  
 
 ### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
