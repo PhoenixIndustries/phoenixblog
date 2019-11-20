@@ -61,6 +61,7 @@ Commercial register: Registering Court Munich; HRA 111192
 Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
 Managing board: Philip Müller & Bernhard Landauer  
 Email: [Direct contact](mailto:management@manjaro.org)  
+Tel: +49 8092 33090 94  
 VAT-Id.: DE 326352217  
 
 ### Web Presence
@@ -79,6 +80,7 @@ State/Province: Bavaria
 Postal Code: 85567  
 Country: Germany  
 Email: [Direct contact](mailto:content@manjaro.org)  
+Tel: +49 8092 33090 96  
 
 ### Informationen to Dispute resolution
 
