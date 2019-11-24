@@ -281,6 +281,10 @@ h1:before {
     .footer-dot {
         display: none;
     }
+    .page-footer a:not(:first-of-type):before {
+        content: "\A";
+        white-space: pre;
+    }
     .download-page .image-container:after {
         width: 100px !important;
         height: 100px !important;
