@@ -9,7 +9,7 @@
   { "id": "dev", "categorie": "Developer Previews" }
   ],
   "armDevices" : [
-  { "device": "pinebook-pro", "name": "PineBookPro" },
+  { "device": "pinebook-pro", "name": "Pinebook Pro" },
   { "device": "rpi4", "name": "Raspberry Pi 4" },
   { "device": "rockpi4", "name": "Rock Pi 4" },
   { "device": "rockpro64", "name": "Rock Pro 64" }
