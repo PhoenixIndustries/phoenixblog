@@ -1,7 +1,7 @@
 +++
 Download_x64 = "https://osdn.net/projects/manjaro-arm/storage/pbpro/kde-plasma/19.12/Manjaro-ARM-kde-plasma-pbpro-19.12.img.xz"
 Download_x64_Checksum = "a98806cfbc2dd45ab6230529a47490e8c3b7dac3"
-Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/p/kde-plbproasma/19.12/Manjaro-ARM-kde-plasma-pbpro-19.12.img.xz.sig"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-arm/storage/pbpro/kde-plasma/19.12/Manjaro-ARM-kde-plasma-pbpro-19.12.img.xz.sig"
 Download_x64_Torrent = "https://osdn.net/projects/manjaro-arm/storage/pbpro/kde-plasma/19.12/Manjaro-ARM-kde-plasma-pbpro-19.12.img.xz.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
