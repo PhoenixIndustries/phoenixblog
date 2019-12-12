@@ -144,17 +144,17 @@ function show_editions(editions) {
 }
 
 if ($(window).width() < 991) {
-    $('.official-logo').attr('src', '/img/icon-white.svg');
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
 }
 
 $('#official').hover( function () {
-    $('.official-logo').attr('src', '/img/icon-white.svg');
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
 }, function () {
     if ($(window).width() > 991) {
-        $('.official-logo').attr('src', '/img/icon.svg');
+        $('.Official-logo').attr('src', '/img/icon.svg');
 }
 });
-$('.official').show();
+$('.Official').show();
 setTimeout(function () { 
     displayArrow();
         }, 1400);
