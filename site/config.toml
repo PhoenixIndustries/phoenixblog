@@ -336,7 +336,7 @@ DefaultContentLanguage = "en-us"
 
 [[menu.footer]]
     identifier = "copyright"
-    name = "2019 Manjaro Linux"
+    name = "2011 - 2020 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/imprint/"
     weight = 2
