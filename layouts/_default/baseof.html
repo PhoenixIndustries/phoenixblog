@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   {{partial "head" . }}
-  
-	<body class="{{ .Params.class | default "page" }} sidebar-collapse {{if eq .Title "News"}}{{ replace .Title " " "-" | lower}}{{end}}">
+  <body class="{{if eq .Title "News"}}{{ .Params.class | default "news" }}{{ else }}{{ .Params.class | default "page" }}{{ end }} sidebar-collapse">
     <div class="logo-overlay-loader">
       <div class="logo-container">
           <img src="/img/logo.svg" alt=""><br>
@@ -29,21 +28,17 @@
                 
                 {{ block "title" . }}
                 {{ end }}
-                
             </div>
       {{ end }}
-    
-    
         <div class="{{ .Params.section | default "section"}}" style="min-height: 90vh;">
             <div class="container">
-              
             {{ block "body" . }}
 	          {{ end }}
-
             </div>
         </div>
       {{ partial "footer" . }}
     </div>
+  </div>
   </body>
 {{partial "javascript" . }}
 </html>
