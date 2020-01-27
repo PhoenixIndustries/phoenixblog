@@ -1251,11 +1251,11 @@ h1:before {
         padding-right: 0 !important;
     }
     
-    #news-grid .modal {
-        .poll, .lightbox .meta {
+    #news-grid {
+        
+        .modal .poll, .lightbox .meta {
             display:none;
         }
-
     }
     .quicksearch {
         &:focus {
@@ -1435,6 +1435,18 @@ h1:before {
             margin-bottom: 0;
     }
     .card {
+
+        .download {
+            padding: 2px 4px;
+            background-color: #26a69a;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 11px;
+            float: left;
+            border-radius: 2px;
+            margin-left: 5px;
+        }
 
         img[src*="https://forum.manjaro.org/images/emoji/"] {
             margin-top: -38px;

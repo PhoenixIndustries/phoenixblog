@@ -33,7 +33,7 @@ function layoutChanged() {
 
 function template() {
     return `
-    <article data-toggle="modal" data-target="#{{ id }}" onclick="$('.modal-body p:contains(Posts:)').hide();$('.modal-body p:contains(Participants:)').hide();"class='blog-post grid-item col-md-6 col-xl-4 ml-auto mr-auto {{ category }}'>
+    <article data-toggle="modal" data-target="#{{ id }}" onclick="$('.modal-body p:contains(Posts:)').hide();$('.modal-body p:contains(Participants:)').hide();"class='{{ id }} blog-post grid-item col-md-6 col-xl-4 ml-auto mr-auto {{ category }}'>
         <div class="card zoom">
             <div style="text-align:right;">
                 {{ img }}
@@ -45,7 +45,8 @@ function template() {
                 <h5 class="card-title">{{ title }}</h5>
                 <div class="card-body" data-background-color="black"> 
                 <div id="content" class="social-icons-top">    
-                <div class="date">{{ pubDate }}</div>   
+                <div class="date">{{ pubDate }}</div> 
+                {{ download }}  
                 <a onclick="$(this).attr('href');" data-toggle="tooltip" data-placement="top" title="Share" href="https://twitter.com/intent/tweet?via=ManjaroLinux&hashtags=Manjaro,Linux&text={title}&url={link}"  target="_blank" class="btn btn-icon btn-round twitter"> 
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -83,6 +84,23 @@ function cleanup(content) {
         let fragment = document.createRange().createContextualFragment(content.description.textContent)
         lightbox = fragment.querySelectorAll(".lightbox-wrapper");
         displayImg = fragment.querySelector("img");
+        if (content.category.textContent.includes("Releases")) {
+            let downloads = fragment.querySelectorAll("a[href*='https://osdn.net/']");
+            if (downloads.length > 0) {
+                downloads.forEach(download => { 
+                    if (download.getAttribute("href").endsWith(".iso")) {
+                        let link = download.getAttribute("href").toString()
+                        content.download = `<a class="download" href="${link}">Download</a>`
+                    }
+                })
+            } else {
+                content.download = `<a class="download" href="https://manjaro.org/download/">Download</a>`
+            }
+        } 
+        if (!content.download) {
+            content.download = ""
+        }
+        console.log("down:" + typeof content.download)
         if (displayImg) {
             displayImg = displayImg.getAttribute("src")
             content.img = `<img class="card-img-top" src="${displayImg}" alt="Post Image">`
@@ -99,9 +117,13 @@ function cleanup(content) {
 }
 
 function updateGrid(content) {
+    $(".id27Jan2020AbouttheReleasescategory").remove();
+    $(".id27Jan2020AbouttheNewscategory").remove();
     $grid.isotope( 'addItems', content.id );
     $grid.isotope('reloadItems');
-    setTimeout(function(){ $grid.isotope({sortBy:"date"}) }, 1200);     
+    setTimeout(function(){ 
+        $grid.isotope({sortBy:"date"});
+    }, 1200);     
 }
 
 function getFeeds() {
@@ -109,7 +131,6 @@ function getFeeds() {
         credentials: 'omit'
         }, {
         feedUrl: "https://forum.manjaro.org/c/announcements/stable-updates.rss",
-        dev: true,
         template: template(),
         beforeTemplate: function(content) {
             cleanup(content)              
@@ -120,14 +141,13 @@ function getFeeds() {
     });
     
     setTimeout(function(){ 
-        $(".progress-bar").css("width", "20%");
-     }, 1000);
+        $(".progress-bar").css("width", "10%");
+     }, 600);
     
     let testing = new CorsFeedReader("#news-grid", {
         credentials: 'omit'
         }, {
         feedUrl: "https://forum.manjaro.org/c/announcements/testing-updates.rss",
-        dev: true,
         template: template(),
         beforeTemplate: function(content) {
             cleanup(content)              
@@ -138,14 +158,13 @@ function getFeeds() {
     });
     
     setTimeout(function(){ 
-        $(".progress-bar").css("width", "40%");
-     }, 1200);
+        $(".progress-bar").css("width", "30%");
+     }, 900);
     
     let unstable = new CorsFeedReader("#news-grid", {
         credentials: 'omit'
         }, {
         feedUrl: "https://forum.manjaro.org/c/announcements/unstable-updates.rss",
-        dev: true,
         template: template(),
         beforeTemplate: function(content) {
             cleanup(content)              
@@ -156,15 +175,14 @@ function getFeeds() {
     });
     
     setTimeout(function(){ 
-        $(".progress-bar").css("width", "60%");
-     }, 1400);
+        $(".progress-bar").css("width", "50%");
+     }, 1200);
     
     let arm = new CorsFeedReader("#news-grid", {
         credentials: 'omit'
         }, {
         feedUrl: "https://forum.manjaro.org/c/manjaro-arm/announcements.rss",
         items: 4,
-        dev: true,
         template: template(),
         beforeTemplate: function(content) {
             cleanup(content)
@@ -175,15 +193,14 @@ function getFeeds() {
     });
     
     setTimeout(function(){ 
-        $(".progress-bar").css("width", "80%");
-     }, 1600);
+        $(".progress-bar").css("width", "70%");
+     }, 1400);
     
      let manjaro32 = new CorsFeedReader("#news-grid", {
         credentials: 'omit'
         }, {
         feedUrl: "https://forum.manjaro.org/c/announcements/manjaro32.rss",
         items: 1,
-        dev: true,
         template: template(),
         beforeTemplate: function(content) {
             cleanup(content)
@@ -192,9 +209,37 @@ function getFeeds() {
             updateGrid(content)
         }
     });
-    
+
+    let news = new CorsFeedReader("#news-grid", {
+        credentials: 'omit'
+        }, {
+        feedUrl: "https://forum.manjaro.org/c/announcements/news.rss",
+        template: template(),
+        beforeTemplate: function(content) {
+            cleanup(content)
+        }, 
+        afterTemplate: function(content) {
+            updateGrid(content)
+        }});
+
     setTimeout(function(){ 
         $(".progress-bar").css("width", "80%");
+        }, 1600);
+
+    let releases = new CorsFeedReader("#news-grid", {
+        credentials: 'omit'
+        }, {
+        feedUrl: "https://forum.manjaro.org/c/announcements/releases.rss",
+        template: template(),
+        beforeTemplate: function(content) {
+            cleanup(content)
+        }, 
+        afterTemplate: function(content) {
+            updateGrid(content)
+        }});
+    
+    setTimeout(function(){ 
+        $(".progress-bar").css("width", "95%");
      }, 1800);
 }
  getFeeds(); 
@@ -202,7 +247,7 @@ function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
     <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
-        <button id="btn-sort" data-toggle="modal" data-target="#sortModal" onclick="selectPostType('.News');" class="btn-post-type btn-sm btn">Sort Post's</button>
+        <button id="btn-sort" data-toggle="modal" data-target="#sortModal" class="btn-post-type btn-sm btn">Sort Post's</button>
         <button id="btn-layout">
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Classic Layout" class="fas fa-grip-lines"></i>
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Modern Layout" class="fas fa-grip-horizontal"></i>
@@ -238,7 +283,7 @@ function postTypeButtons() {
                     <div class="modal-footer">
                         <div class="btn-group" role="group" aria-label="button group">
                             <button data-dismiss="modal" id="btn-updates" onclick="selectPostType('.Updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
-                            <button data-dismiss="modal" onclick="selectPostType('.Release');" class="btn-post-type btn-sm btn">Releases</button>
+                            <button data-dismiss="modal" onclick="selectPostType('.Releases');" class="btn-post-type btn-sm btn">Releases</button>
                             <button data-dismiss="modal" onclick="selectPostType('.News');" class="btn-post-type btn-sm btn">News</button>
                         </div>
                     </div>
@@ -280,7 +325,9 @@ setTimeout(function(){
     $(".progress-bar").css("width", "100%");
     $(".logo-overlay-loader").fadeOut();
     $grid.imagesLoaded().progress( function() {
-        $grid.isotope({sortBy:"date"})
+        setTimeout(function(){ 
+            $grid.isotope({sortBy:"date"});
+        }, 500);
       });
     }, 2000); 
 
