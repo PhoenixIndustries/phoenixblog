@@ -1245,7 +1245,7 @@ h1:before {
 }
 
 .news {
-    
+        
     padding-right: 0 !important;
     .navbar {
         padding-right: 0 !important;
@@ -1449,11 +1449,9 @@ h1:before {
         }
 
         img[src*="https://forum.manjaro.org/images/emoji/"] {
-            margin-top: -38px;
+            margin-top: -20px;
             margin-bottom: -10px;
-            margin-right: 25px;
-            z-index: 9999;
-            position: relative;
+            width: 60px;
         }
 
         *:hover {
@@ -1506,6 +1504,11 @@ h1:before {
         }
         img {
             width: auto;
+        }
+    }
+    .modal-body {
+        .source, img[src*="avatars"] {
+            display:none;
         }
     }
     .modal-content {

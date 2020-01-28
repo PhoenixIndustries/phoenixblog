@@ -27,7 +27,7 @@ function layoutChanged() {
     $("#news-grid").toggleClass("classic-layout");
     saveLayout();
     setTimeout(function(){ 
-        $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' }); 
+        $("#news-grid").isotope({ sortBy: 'date' }); 
      }, 250);
 }
 
@@ -35,7 +35,7 @@ function template() {
     return `
     <article data-toggle="modal" data-target="#{{ id }}" onclick="$('.modal-body p:contains(Posts:)').hide();$('.modal-body p:contains(Participants:)').hide();"class='{{ id }} blog-post grid-item col-md-6 col-xl-4 ml-auto mr-auto {{ category }}'>
         <div class="card zoom">
-            <div style="text-align:right;">
+            <div style="text-align:center;">
                 {{ img }}
                 <a>
                     <div class="mask rgba-white-slight"></div>
@@ -291,7 +291,7 @@ function stopModal(el) {
 
 $(".section .container").prepend(postTypeButtons());
 function selectPostType(category) { 
-    $grid.isotope({ filter: category, sortBy: 'original-order' });
+    $grid.isotope({ filter: category, sortBy: 'date' });
 }
 
 $(".fa-grip-lines").click(function(){ 
