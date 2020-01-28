@@ -93,8 +93,6 @@ function cleanup(content) {
                         content.download = `<a class="download" href="${link}">Download</a>`
                     }
                 })
-            } else {
-                content.download = `<a class="download" href="https://manjaro.org/download/">Download</a>`
             }
         } 
         if (!content.download) {

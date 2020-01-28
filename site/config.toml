@@ -16,7 +16,7 @@ DefaultContentLanguage = "en-us"
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.34"
+    website_version = "1.0.36"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
