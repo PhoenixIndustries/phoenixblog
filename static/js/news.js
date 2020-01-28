@@ -80,7 +80,7 @@ function template() {
 function cleanup(content) {
     let regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
         let excerpt = document.createElement('div'); 
-        content.description.textContent = content.description.textContent.split(' wrote:')[1]       
+        content.description.textContent = content.description.textContent.split(' wrote:')[1]  
         let fragment = document.createRange().createContextualFragment(content.description.textContent)
         lightbox = fragment.querySelectorAll(".lightbox-wrapper");
         displayImg = fragment.querySelector("img");
@@ -108,6 +108,7 @@ function cleanup(content) {
         if (lightbox.length > 0) {
             lightbox.forEach(el => el.remove());
         }
+        
         excerpt.innerHTML = fragment.textContent
         content.excerpt = excerpt
         content.excerpt.textContent = excerpt.textContent.replace(regex, "").slice(1, 200);
@@ -123,13 +124,11 @@ function updateGrid(content) {
     $grid.isotope('reloadItems');
     setTimeout(function(){ 
         $grid.isotope({sortBy:"date"});
-    }, 1200);     
+    }, 400);     
 }
 
 function getFeeds() {
-    let stable = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let stable = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/stable-updates.rss",
         template: template(),
         beforeTemplate: function(content) {
@@ -144,9 +143,7 @@ function getFeeds() {
         $(".progress-bar").css("width", "10%");
      }, 600);
     
-    let testing = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let testing = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/testing-updates.rss",
         template: template(),
         beforeTemplate: function(content) {
@@ -161,9 +158,7 @@ function getFeeds() {
         $(".progress-bar").css("width", "30%");
      }, 900);
     
-    let unstable = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let unstable = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/unstable-updates.rss",
         template: template(),
         beforeTemplate: function(content) {
@@ -178,9 +173,7 @@ function getFeeds() {
         $(".progress-bar").css("width", "50%");
      }, 1200);
     
-    let arm = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let arm = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/manjaro-arm/announcements.rss",
         items: 4,
         template: template(),
@@ -196,9 +189,7 @@ function getFeeds() {
         $(".progress-bar").css("width", "70%");
      }, 1400);
     
-     let manjaro32 = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+     let manjaro32 = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/manjaro32.rss",
         items: 1,
         template: template(),
@@ -210,9 +201,7 @@ function getFeeds() {
         }
     });
 
-    let news = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let news = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/news.rss",
         template: template(),
         beforeTemplate: function(content) {
@@ -226,9 +215,7 @@ function getFeeds() {
         $(".progress-bar").css("width", "80%");
         }, 1600);
 
-    let releases = new CorsFeedReader("#news-grid", {
-        credentials: 'omit'
-        }, {
+    let releases = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/releases.rss",
         template: template(),
         beforeTemplate: function(content) {
@@ -247,7 +234,7 @@ function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
     <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
-        <button id="btn-sort" data-toggle="modal" data-target="#sortModal" class="btn-post-type btn-sm btn">Sort Post's</button>
+        <button id="btn-sort" data-toggle="modal" data-target="#sortModal" class="btn-post-type btn-sm btn">Sort</button>
         <button id="btn-layout">
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Classic Layout" class="fas fa-grip-lines"></i>
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Modern Layout" class="fas fa-grip-horizontal"></i>
@@ -327,7 +314,7 @@ setTimeout(function(){
     $grid.imagesLoaded().progress( function() {
         setTimeout(function(){ 
             $grid.isotope({sortBy:"date"});
-        }, 500);
+        }, 400);
       });
     }, 2000); 
 

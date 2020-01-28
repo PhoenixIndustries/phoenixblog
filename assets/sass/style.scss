@@ -1310,7 +1310,7 @@ h1:before {
     }
 
     .grid-item {
-        transition: background 0.4s, max-width .1s;
+        transition: background 0.1s, max-width .1s;
         will-change: transform;
     }
 
@@ -1452,6 +1452,8 @@ h1:before {
             margin-top: -38px;
             margin-bottom: -10px;
             margin-right: 25px;
+            z-index: 9999;
+            position: relative;
         }
 
         *:hover {
