@@ -1296,6 +1296,16 @@ h1:before {
             outline: none;
         }
     }
+    #feed {
+        margin-right: 30px;
+        position: relative;
+        .fa-rss {
+            font-size: 18px !important;
+            padding-top: 8px;
+            position: absolute;
+            color: #ff6f00;
+        }
+    }
     .btn-group {
         margin-bottom: -13px;
         margin-top: -26px;
