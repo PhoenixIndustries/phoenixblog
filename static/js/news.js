@@ -47,10 +47,10 @@ function template() {
                 <div id="content" class="social-icons-top">    
                 <div class="date">{{ pubDate }}</div> 
                 {{ download }}  
-                <a onclick="$(this).attr('href');" data-toggle="tooltip" data-placement="top" title="Share" href="https://twitter.com/intent/tweet?via=ManjaroLinux&hashtags=Manjaro,Linux&text={title}&url={link}"  target="_blank" class="btn btn-icon btn-round twitter"> 
+                <a onclick="$(this).attr('href');" data-toggle="tooltip" data-placement="top" title="Share" href="https://twitter.com/intent/tweet?via=ManjaroLinux&hashtags=Manjaro,Linux&text={{ title }}&url={{ link }}"  target="_blank" class="btn btn-icon btn-round twitter"> 
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a onclick="" data-toggle="tooltip" data-placement="top" title="Share" href="https://www.facebook.com/sharer/sharer.php?u={link}"  target="_blank" class="btn btn-icon btn-round facebook">
+                <a onclick="" data-toggle="tooltip" data-placement="top" title="Share" href="https://www.facebook.com/sharer/sharer.php?u={{ link }}"  target="_blank" class="btn btn-icon btn-round facebook">
                   <i class="fab fa-facebook-f"></i>
                 </a>
                 </span>
