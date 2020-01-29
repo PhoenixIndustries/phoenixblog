@@ -233,11 +233,24 @@ function getFeeds() {
      }, 1800);
 }
  getFeeds(); 
+function setUnsortLayout() {
+    $grid.isotope({ filter: '.grid-item', sortBy: 'date' });
+}
+
+function sortOnclick() {
+    let btn = $("#btn-sort").text()
+    if (btn == "Unsort") {
+        $("#btn-sort").text("Sort");
+        setUnsortLayout();
+    } else {
+        $('#sortModal').modal('show');
+    }
+}
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
     <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
-        <button onclick="$grid.isotope({ filter: '.grid-item', sortBy: 'date' });" id="btn-sort" data-toggle="modal" data-target="#sortModal" class="btn-post-type btn-sm btn">Sort</button>
+        <button id="btn-sort" onclick="sortOnclick();" class="btn-post-type btn-sm btn">Sort</button>
         <button id="btn-layout">
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Classic Layout" class="fas fa-grip-lines"></i>
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Modern Layout" class="fas fa-grip-horizontal"></i>
@@ -272,7 +285,7 @@ function postTypeButtons() {
                     </div>
                     <div class="modal-footer">
                         <div class="btn-group" role="group" aria-label="button group">
-                            <button data-dismiss="modal" id="btn-updates" onclick="selectPostType('.Updates');" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
+                            <button data-dismiss="modal" id="btn-updates" class="btn-post-type btn btn-sm" data-toggle="modal" data-target="#updatesModal">Updates</button>
                             <button data-dismiss="modal" onclick="selectPostType('.Releases');" class="btn-post-type btn-sm btn">Releases</button>
                             <button data-dismiss="modal" onclick="selectPostType('.News');" class="btn-post-type btn-sm btn">News</button>
                         </div>
@@ -294,6 +307,7 @@ function stopModal(el) {
 
 $(".section .container").prepend(postTypeButtons());
 function selectPostType(category) { 
+    $("#btn-sort").text("Unsort");
     $grid.isotope({ filter: category, sortBy: 'date' });
 }
 
