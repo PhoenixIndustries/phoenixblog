@@ -297,16 +297,18 @@ function selectPostType(category) {
 
 $(".fa-grip-lines").click(function(){ 
     layoutChanged();
-    $(this).fadeOut().promise().done(function() {
+    $(this).fadeOut();
+    setTimeout(function(){ 
         $(".fa-grip-horizontal").fadeIn();
-    });
+    }, 300);
 });
 
 $(".fa-grip-horizontal").click(function(){ 
     layoutChanged();
-    $(this).fadeOut().promise().done(function() {
+    $(this).fadeOut();
+    setTimeout(function(){ 
         $(".fa-grip-lines").fadeIn();
-    });
+    }, 300);
 });
 
 if (document.cookie.split(';').filter(function(value) {
@@ -350,4 +352,8 @@ setTimeout(function(){
         }, 3000);
       });
     }, 2000);
+
+setTimeout(function(){ 
+    $grid.isotope({sortBy:"date"});
+}, 8000);
         
