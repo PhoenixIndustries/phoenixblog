@@ -99,13 +99,15 @@ function cleanup(content) {
         if (!content.download) {
             content.download = ""
         }
-        console.log("down:" + typeof content.download)
         if (displayImg) {
             displayImg = displayImg.getAttribute("src")
             if (!displayImg.startsWith("/")) {
                 content.img = `<img class="card-img-top" src="${displayImg}" alt="Post Image">`
             }
-        } else {content.img = ""}
+        } 
+        if (!content.img) {
+            content.img = ""
+        }
         if (lightbox.length > 0) {
             lightbox.forEach(el => el.remove());
         }
