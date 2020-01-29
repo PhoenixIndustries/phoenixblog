@@ -88,7 +88,8 @@ function cleanup(content) {
             let downloads = fragment.querySelectorAll("a[href*='https://osdn.net/']");
             if (downloads.length > 0) {
                 downloads.forEach(download => { 
-                    if (download.getAttribute("href").endsWith(".iso")) {
+                    let image = download.getAttribute("href")
+                    if (image.endsWith(".iso") && !image.startsWith("/")) {
                         let link = download.getAttribute("href").toString()
                         content.download = `<a class="download" href="${link}">Download</a>`
                     }
@@ -101,7 +102,9 @@ function cleanup(content) {
         console.log("down:" + typeof content.download)
         if (displayImg) {
             displayImg = displayImg.getAttribute("src")
-            content.img = `<img class="card-img-top" src="${displayImg}" alt="Post Image">`
+            if (!displayImg.startsWith("/")) {
+                content.img = `<img class="card-img-top" src="${displayImg}" alt="Post Image">`
+            }
         } else {content.img = ""}
         if (lightbox.length > 0) {
             lightbox.forEach(el => el.remove());
@@ -122,7 +125,7 @@ function updateGrid(content) {
     $grid.isotope('reloadItems');
     setTimeout(function(){ 
         $grid.isotope({sortBy:"date"});
-    }, 400);     
+    }, 2000);     
 }
 
 function getFeeds() {
@@ -306,16 +309,6 @@ $(".fa-grip-horizontal").click(function(){
     });
 });
 
-setTimeout(function(){ 
-    $(".progress-bar").css("width", "100%");
-    $(".logo-overlay-loader").fadeOut();
-    $grid.imagesLoaded().progress( function() {
-        setTimeout(function(){ 
-            $grid.isotope({sortBy:"date"});
-        }, 400);
-      });
-    }, 2000); 
-
 if (document.cookie.split(';').filter(function(value) {
     console.log("cookie:" +value)
     if (value.includes("classic")) {
@@ -348,4 +341,13 @@ return function debounced() {
     timeout = setTimeout( delayed, threshold );
 };
 }
+setTimeout(function(){ 
+    $(".progress-bar").css("width", "100%");
+    $(".logo-overlay-loader").fadeOut();
+    $grid.imagesLoaded().progress( function() {
+        setTimeout(function(){ 
+            $grid.isotope({sortBy:"date"});
+        }, 3000);
+      });
+    }, 2000);
         
