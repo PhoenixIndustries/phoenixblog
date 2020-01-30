@@ -1362,6 +1362,7 @@ h1:before {
     }
 
     .modal {
+        overflow: hidden;
         .modal-header {
             padding-top: 14px;
         }

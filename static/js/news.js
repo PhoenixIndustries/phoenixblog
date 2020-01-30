@@ -372,7 +372,13 @@ setTimeout(function(){
       });
     }, 2000);
 
-setTimeout(function(){ 
-    $grid.isotope({sortBy:"date"});
-}, 8000);
+function gridTimers() {
+    // the grid sometimes fails to ajust, so we use timers to make sure it gets there in diferent browser speeds.
+    timers = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
+    for (time in timers) {
+        setTimeout(function(){ 
+            $grid.isotope({sortBy:"date"});
+        }, time);
+    }
+}
         
