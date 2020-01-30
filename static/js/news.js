@@ -319,7 +319,7 @@ $(".fa-grip-lines").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-horizontal").fadeIn();
-    }, 300);
+    }, 500);
 });
 
 $(".fa-grip-horizontal").click(function(){ 
@@ -327,7 +327,7 @@ $(".fa-grip-horizontal").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-lines").fadeIn();
-    }, 300);
+    }, 500);
 });
 
 if (document.cookie.split(';').filter(function(value) {
