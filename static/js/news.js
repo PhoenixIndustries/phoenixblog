@@ -256,9 +256,6 @@ function postTypeButtons() {
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Classic Layout" class="fas fa-grip-lines"></i>
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Modern Layout" class="fas fa-grip-horizontal"></i>
         </button>
-        
-        
-
         <div id="updatesModal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
