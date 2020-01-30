@@ -5,16 +5,25 @@
     </div>
 </div>
 {{ end }} {{ define "body" }}
-<section class="section bg-gray">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h2 class="section-title">{{ .Title }}</h2>
-                <p class="mb-0">{{ .Content }}</p>
+
+<section class="bg-gray">
+    <div class="container mb-6">
+        <div class="row">
+            <div class="col-12" style="padding: 0px;">
+                <div class="card bg-white shadow text-center mb-4 px-4 py-5">
+                    <h2 class="mb-3 mt-0" style="font-weight: 900 !important;">{{ .Title }}</h2>
+                    <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
+                    <p class="mb-3 mt-0">{{ .Content }}</p>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-6">
+        <div class="row justify-content-center">
+
             {{ range $index, $element := .Params.subcontent}} {{ with $.GetPage $element }}
 
-            <div class="col-lg-4 mb-4 px-4 py-5 bg-white shadow text-center d-block">
+            <div class="card col-lg-4 mb-4 px-4 py-5 bg-white shadow text-center d-block">
                 <i class="fas {{ .Params.icon}} fa-4x text-primary d-block mb-4"></i>
                 <h3 class="mb-3 mt-0">{{ .Title }}</h3>
                 <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
@@ -24,5 +33,6 @@
 
         </div>
     </div>
+
 </section>
 {{ end }}
