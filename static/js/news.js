@@ -239,8 +239,8 @@ function setUnsortLayout() {
 
 function sortOnclick() {
     let btn = $("#btn-sort").text()
-    if (btn == "Unsort") {
-        $("#btn-sort").text("Sort");
+    if (btn == "Clear") {
+        $("#btn-sort").text("Filter");
         setUnsortLayout();
     } else {
         $('#sortModal').modal('show');
@@ -249,13 +249,13 @@ function sortOnclick() {
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
-    <a id="feed" href="https://forum.manjaro.org/c/announcements.rss" target=”_blank”><i class="fas fa-rss"></i></a>
-    <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
-        <button id="btn-sort" onclick="sortOnclick();" class="btn-post-type btn-sm btn">Sort</button>
-        <button id="btn-layout">
+    <button id="btn-layout">
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Classic Layout" class="fas fa-grip-lines"></i>
           <i rel="tooltip" data-placement="top" data-toggle="tooltip" data-original-title="Set Modern Layout" class="fas fa-grip-horizontal"></i>
         </button>
+    <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
+        <button id="btn-sort" onclick="sortOnclick();" class="btn-post-type btn-sm btn">Filter</button>
+        <a id="feed" href="https://forum.manjaro.org/c/announcements.rss" target=”_blank”><i class="fas fa-rss"></i></a>
         <div id="updatesModal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -307,7 +307,7 @@ function stopModal(el) {
 
 $(".section .container").prepend(postTypeButtons());
 function selectPostType(category) { 
-    $("#btn-sort").text("Unsort");
+    $("#btn-sort").text("Clear");
     $grid.isotope({ filter: category, sortBy: 'date' });
 }
 
@@ -316,7 +316,7 @@ $(".fa-grip-lines").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-horizontal").fadeIn();
-    }, 500);
+    }, 800);
 });
 
 $(".fa-grip-horizontal").click(function(){ 
@@ -324,7 +324,7 @@ $(".fa-grip-horizontal").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-lines").fadeIn();
-    }, 500);
+    }, 800);
 });
 
 if (document.cookie.split(';').filter(function(value) {

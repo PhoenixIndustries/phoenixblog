@@ -1280,7 +1280,8 @@ h1:before {
         width: 64px;
     }
     #btn-layout {
-        float: right;
+        position: absolute;
+        margin-left: -54px;
         margin-top: 4px;
         background: transparent;
         border: none;
@@ -1298,12 +1299,12 @@ h1:before {
         }
     }
     #feed {
-        margin-right: 30px;
+        margin-right: 10px;
         position: relative;
-        float: left;
+        float: right;
         .fa-rss {
-            font-size: 28px !important;
-            padding-top: 4px;
+            font-size: 22px !important;
+            padding-top: 10px;
             position: absolute;
             color: #ff6f00;
         }
@@ -1325,7 +1326,7 @@ h1:before {
     }
 
     .grid-item {
-        transition: background 0.2s, max-width .1s;
+        transition: background 0.4s, max-width .1s;
         will-change: transform;
     }
 
