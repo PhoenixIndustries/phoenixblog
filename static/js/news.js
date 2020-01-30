@@ -249,7 +249,7 @@ function sortOnclick() {
 function postTypeButtons() {
     var postTypeButtons = $(`
     <div class="container text-center">
-    <a id="feed" href="https://forum.manjaro.org/c/announcements.rss"><i class="fas fa-rss"></i></a>
+    <a id="feed" href="https://forum.manjaro.org/c/announcements.rss" target=”_blank”><i class="fas fa-rss"></i></a>
     <span><input class="quicksearch" type="text" placeholder="Search..." aria-label="Search"></span>
         <button id="btn-sort" onclick="sortOnclick();" class="btn-post-type btn-sm btn">Sort</button>
         <button id="btn-layout">
