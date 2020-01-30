@@ -1280,7 +1280,7 @@ h1:before {
         width: 64px;
     }
     #btn-layout {
-        position: absolute;
+        float: right;
         margin-top: 4px;
         background: transparent;
         border: none;
@@ -1300,9 +1300,10 @@ h1:before {
     #feed {
         margin-right: 30px;
         position: relative;
+        float: left;
         .fa-rss {
-            font-size: 18px !important;
-            padding-top: 8px;
+            font-size: 28px !important;
+            padding-top: 4px;
             position: absolute;
             color: #ff6f00;
         }
