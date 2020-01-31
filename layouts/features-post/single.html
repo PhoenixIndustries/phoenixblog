@@ -6,33 +6,21 @@
 </div>
 {{ end }} {{ define "body" }}
 
-<section class="bg-gray">
-    <div class="container mb-6">
-        <div class="row">
-            <div class="col-12" style="padding: 0px;">
-                <div class="card bg-white shadow text-center mb-4 px-4 py-5">
-                    <h2 class="mb-3 mt-0" style="font-weight: 900 !important;">{{ .Title }}</h2>
-                    <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
-                    <p class="mb-3 mt-0">{{ .Content }}</p>
-                </div>
-            </div>
+<div class="container-fluid mb-6 pb-5">
+
+    {{ range $index, $element := .Params.subcontent}} {{ with $.GetPage $element }} {{ if mod $index 2 | eq 0 }}
+    <div class="row justify-content-around mt-5">
+        {{end}}
+        <div class="card col-lg-5 mb-4 px-4 py-5 bg-white shadow text-center d-block">
+            <i class="fas {{ .Params.icon}} fa-4x d-block mb-4" style="color: #212529;"></i>
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
+            <p class="mb-0">{{ .Content }}</p>
         </div>
+        {{ if mod $index 2 | ne 0 }}
     </div>
-    <div class="container-fluid mb-6">
-        <div class="row justify-content-center">
+    {{end}} {{ end }} {{ end }}
 
-            {{ range $index, $element := .Params.subcontent}} {{ with $.GetPage $element }}
+</div>
 
-            <div class="card col-lg-4 mb-4 px-4 py-5 bg-white shadow text-center d-block">
-                <i class="fas {{ .Params.icon}} fa-4x text-primary d-block mb-4"></i>
-                <h3 class="mb-3 mt-0">{{ .Title }}</h3>
-                <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
-                <p class="mb-0">{{ .Content }}</p>
-            </div>
-            {{ end }} {{ end }}
-
-        </div>
-    </div>
-
-</section>
 {{ end }}
