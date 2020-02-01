@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://forum.manjaro.org">
 
     {{ if .IsHome }}
+    <link href="{{ .Site.BaseURL }}" rel="canonical">
+    <link href="{{ .Site.BaseURL }}" rel="home">
     <!-- prefetch resources -->
     <link rel="prefetch" href="/js/isotope.pkgd.min.js" as="script" type="text/javascript">
     <link rel="prefetch" href="/js/imagesloaded.pkgd.min.js" as="script" type="text/javascript">
