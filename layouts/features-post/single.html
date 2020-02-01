@@ -1,33 +1,26 @@
 {{ define "title" }}
 <div class="container">
-  <div class="content-center title-container">
-    <h1 class="title">{{ .Title }}</h1>
-  </div>
+    <div class="content-center title-container">
+        <h1 class="title">{{ .Title }}</h1>
+    </div>
 </div>
-{{ end }}
+{{ end }} {{ define "body" }}
 
-{{ define "body" }}
-	<section>
-		<div class="container">
-			<div class="row">
-					<p class="features-post col-md-8 offset-md-2">
-						{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}
-					</p>
-						<div class="row">
-							{{ range $index, $element := .Params.subcontent}}
-							{{ with  $.GetPage $element }} 
-								<div class="col-md-6 col-xl-4 text-center">
-									<img class="xl-icon" src="/img/actions/{{ .Params.icon}}.svg" alt="Icon"/>
-									
-									<h3>{{ .Title }}</h3>
-									<hr/>
-									<p>{{ .Content }}				
-									</p>
-								</div>  
-								{{ end }}
-								{{ end }}
-					</div>
-			</div>
-		</div>
-	</section>
+<div class="container-fluid mb-6 pb-5">
+
+    {{ range $index, $element := .Params.subcontent}} {{ with $.GetPage $element }} {{ if mod $index 2 | eq 0 }}
+    <div class="row justify-content-around mt-5">
+        {{end}}
+        <div class="card col-lg-5 mb-4 px-4 py-5 bg-white shadow text-center d-block">
+            <i class="fas {{ .Params.icon}} fa-4x d-block mb-4" style="color: #212529;"></i>
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <hr style=" background-color: #e8f5e9; height: 1px; border: 0;" />
+            <p class="mb-0">{{ .Content }}</p>
+        </div>
+        {{ if mod $index 2 | ne 0 }}
+    </div>
+    {{end}} {{ end }} {{ end }}
+
+</div>
+
 {{ end }}
