@@ -28,7 +28,7 @@ function layoutChanged() {
     saveLayout();
     setTimeout(function(){ 
         $("#news-grid").isotope(); 
-     }, 500);
+     }, 450);
 }
 
 function template() {
@@ -316,7 +316,7 @@ $(".fa-grip-lines").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-horizontal").fadeIn();
-    }, 800);
+    }, 700);
 });
 
 $(".fa-grip-horizontal").click(function(){ 
@@ -324,7 +324,7 @@ $(".fa-grip-horizontal").click(function(){
     $(this).fadeOut();
     setTimeout(function(){ 
         $(".fa-grip-lines").fadeIn();
-    }, 800);
+    }, 700);
 });
 
 if (document.cookie.split(';').filter(function(value) {
