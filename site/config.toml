@@ -1,5 +1,5 @@
 theme = "manjaro-homepage"
-baseurl = "/"
+baseurl = "https://manjaro.org/"
 languageCode = "en-us"
 title = "Manjaro - enjoy the simplicity"
 googleAnalytics = ""
@@ -11,6 +11,11 @@ themesDir = "../.."
 i18nDir = "../i18n/"
 assetDir = "../static/"
 DefaultContentLanguage = "en-us"
+canonifyURLs = true
+
+[markup.goldmark.renderer]
+unsafe= true
+# https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -336,7 +341,7 @@ DefaultContentLanguage = "en-us"
 
 [[menu.footer]]
     identifier = "copyright"
-    name = "2019 Manjaro Linux"
+    name = "2011 - 2020 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
     url = "/imprint/"
     weight = 2
