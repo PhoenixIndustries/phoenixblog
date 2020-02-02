@@ -27,8 +27,8 @@ function layoutChanged() {
     $("#news-grid").toggleClass("classic-layout");
     saveLayout();
     setTimeout(function(){ 
-        $("#news-grid").isotope({ sortBy: 'date' }); 
-     }, 250);
+        $("#news-grid").isotope(); 
+     }, 500);
 }
 
 function template() {
