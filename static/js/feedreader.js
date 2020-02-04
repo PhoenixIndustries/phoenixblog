@@ -276,37 +276,22 @@ $(".fa-grip-horizontal").click(function(){
 
 setTimeout(function(){ 
     $(".progress-bar").css("width", "10%");
- }, 550);
+ }, 500);
  setTimeout(function(){ 
-    $(".progress-bar").css("width", "20%");
- }, 1000);
+    $(".progress-bar").css("width", "25%");
+ }, 800);
  setTimeout(function(){ 
-    $(".progress-bar").css("width", "30%");
- }, 1300);
+    $(".progress-bar").css("width", "45%");
+ }, 1100);
  setTimeout(function(){ 
-    $(".progress-bar").css("width", "40%");
- }, 1600);
- setTimeout(function(){ 
-    $(".progress-bar").css("width", "50%");
- }, 1800);
-setTimeout(function(){ 
     $(".progress-bar").css("width", "60%");
- }, 2000);
- setTimeout(function(){ 
-    $(".progress-bar").css("width", "70%");
- }, 2200);
+ }, 1500);
  setTimeout(function(){ 
     $(".progress-bar").css("width", "80%");
- }, 2400);
- setTimeout(function(){ 
-    $(".progress-bar").css("width", "92%");
- }, 2600);
- setTimeout(function(){ 
-    $(".progress-bar").css("width", "100%");
- }, 2800);
-
+ }, 2000);
 setTimeout(function(){ 
+    $(".progress-bar").css("width", "100%");
     $(".logo-overlay-loader").fadeOut();
     $("#news-grid").isotope("reloadItems").isotope({ sortBy: 'original-order' });
-    }, 3000);   
+    }, 2700);   
         

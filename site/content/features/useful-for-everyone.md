@@ -6,6 +6,8 @@ type = "features-usercases"
 navsection = "features"
 right = false
 linktext = "Find out more"
+meta_description = "Manjaro useful for everyone"
+meta_keywords = "manjaro features"
 +++
 
 Manjaro is an efficient companion to serve your variety of needs and it is versatile to adapt to all of your needs. Our user base varies from home users to students & teachers, programmers & developers, professionals, art enthusiast, music lovers, multimedia professionals and many more.

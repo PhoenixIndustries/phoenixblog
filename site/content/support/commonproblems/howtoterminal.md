@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="misc"
 title = "How to run something in terminal?"
+meta_description = "How to run something in terminal on Manjaro"
+meta_keywords = "manjaro linux terminal, manjaro application, manjaro run something"
 +++
 
 The terminal is a very powerful tool that almost never fails to work and does exactly the things you want from it. You don't click on something in the terminal - You insert a command and it will do what the command say. Many Linux users like to provide solutions via terminal as it's completely independent from the user interface (which you can heavily modify).

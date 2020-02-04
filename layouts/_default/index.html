@@ -5,7 +5,7 @@
     <h1 class="title">{{ .Title }}</h1>
     {{ if eq .Params.class "landing-page" }}
     <p class="col-md-12">{{ .Params.whatIsManjaro }}</p>
-    <a class="btn btn-primary" href="/download/">{{ i18n "download_link" }}<i class="fas fa-angle-double-down"></i></a>
+    <a class="btn btn-primary btn-try-manjaro" href="/download/">{{ i18n "download_link" }}<i class="fas fa-angle-double-down"></i></a>
     <button id="scrolltocontent" class="btn btn-primary">{{ i18n "learn_more" }}<i class="fa fa-arrow-down"></i></button>
 {{ end }}
   </div>

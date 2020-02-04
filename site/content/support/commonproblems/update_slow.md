@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="pacman"
 title = "Updating is very slow"
+meta_description = "Update is very slow on Manjaro"
+meta_keywords = "manjaro update, manjaro update speed"
 +++
 
 |   |   |

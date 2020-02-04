@@ -16,6 +16,8 @@ Version = "18.02"
 date = "02.01.2019T11:21:18+01:00"
 title = "Deepin Stable"
 type="download-edition"
+meta_description = "Manjaro deepin modern and elegant desktop"
+meta_keywords = "manjaro deepin download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with the [Deepin](https://www.deepin.org/) desktop that provides a very beginner-friendly and elegant experience."

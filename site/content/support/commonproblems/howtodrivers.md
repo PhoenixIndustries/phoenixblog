@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="hardware"
 title = "How to install drivers?"
+meta_description = "Manjaro how to install drivers?"
+meta_keywords = "manjaro drivers, manjaro installation, drivers for manjaro linux"
 +++
 
 |   |   |

@@ -1,8 +1,10 @@
----
++++
 #background: "img/bg4.jpg"
-title: "What is Manjaro"
-type: "page"
----
+title= "What is Manjaro"
+type= "page"
+meta_description = "What is the Manjaro"
+meta_keywords = "what is the manjaro, what is the linux, manjaro linux"
++++
 
 Manjaro is a user-friendly and open-source Linux distribution. It provides all the benefits of cutting edge software combined with a focus on user-friendliness and accessibility, making it suitable for newcomers as well as experienced Linux users.
 
