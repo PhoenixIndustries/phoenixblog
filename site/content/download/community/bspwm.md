@@ -9,7 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Bspwm"
 Screenshot = "bspwm-full.jpg"
-edition = "community"
+edition = "Community"
 shortDescription = "Extremely resource efficient and configurable window manager that follows Unix philosophy. It gives the user good control over windows with minimal effort. It has a focus on terminal application and is better suited for experienced Linux users"
 Thumbnail = "bspwm-full.jpg"
 Version = "18.0.4"
@@ -17,6 +17,8 @@ date = "2019-04-06T14:53+01:00"
 title = "Bspwm"
 type="download-edition"
 weight = "5"
+meta_description = "Manjaro bspwm extremely resource efficient and configurable window manager that follows unix philosophy."
+meta_keywords = "manjaro bspwm download, manjaro download"
 +++
 
 This edition is supported by the Manjaro community and comes with bspwm.

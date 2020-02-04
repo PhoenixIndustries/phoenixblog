@@ -1,5 +1,5 @@
 theme = "manjaro-homepage"
-baseurl = "/"
+baseurl = "https://manjaro.org/"
 languageCode = "en-us"
 title = "Manjaro - enjoy the simplicity"
 googleAnalytics = ""
@@ -11,12 +11,17 @@ themesDir = "../.."
 i18nDir = "../i18n/"
 assetDir = "../static/"
 DefaultContentLanguage = "en-us"
+canonifyURLs = true
+
+[markup.goldmark.renderer]
+unsafe= true
+# https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.30"
+    website_version = "1.0.34"
     background = "/img/header.jpg"
     tint = "green"
     custom_js = []
@@ -28,12 +33,16 @@ DefaultContentLanguage = "en-us"
     recaptcha_public_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
     form_server_address_testing = "http://localhost:1314/contact-form.php"
     form_server_address = "https://hacked.manjaro.org/contact-form.php"
+    ### Download Menus
+    editions = ["Official", "Community", "32Bit", "ARM", "Development"]
+    arm_devices = ["PineBook Pro", "Raspberry Pi 4", "Rock Pi 4", "Rock Pro 64"]
 
 [params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
     download_button = "Download"
     download_button_minimal = "Download Minimal"
+    download_minimal_description = "Minimal provides a basic desktop environment with no additional software packages pre-installed."
     download_x64_description = "Only 64 bit is available for modern hardware, if you looking for legacy 32 bit go "
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"
@@ -336,9 +345,9 @@ DefaultContentLanguage = "en-us"
 
 [[menu.footer]]
     identifier = "copyright"
-    name = "2019 Manjaro Linux"
+    name = "2011 - 2020 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
-    url = "/"
+    url = "/imprint/"
     weight = 2
 
 
@@ -357,10 +366,17 @@ DefaultContentLanguage = "en-us"
     url = "/terms-of-use/"
     weight = 4
 
+[[menu.footer]]
+    identifier = "imprint"
+    name = "Imprint"
+    pre = ""
+    url = "/imprint/"
+    weight = 5
+
 
 [[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
-    weight = 5
+    weight = 6
 

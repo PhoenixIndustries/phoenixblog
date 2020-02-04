@@ -43,6 +43,8 @@
                 {{ if .Params.Download_Minimal_x64 }}
                 <div class="bottom minimal">
                   <div style="margin-top: 40px; margin-bottom: 10px;">
+                    <hr/>
+                    <p>{{ .Site.Params.download_edition.download_minimal_description }}</p>
                     <a href="{{ .Params.Download_Minimal_x64 }}" class="btn btn-success btn-xl" target="_blank" onClick="download_link = '{{ .Params.Download_Minimal_x64 }}'" data-toggle="modal" data-target="#download-how-to-try">
                        {{ .Site.Params.download_edition.download_button_minimal }}</a>
                     <p></p>

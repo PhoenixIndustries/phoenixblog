@@ -292,7 +292,7 @@ h1:before {
     color: white;
 }
 
-.official-logo {
+.Official-logo {
     width: 12.14px !important;
     margin-top: -4px;
     margin-right: 5px;
@@ -301,6 +301,10 @@ h1:before {
 @media screen and (max-width: 575px) {
     .footer-dot {
         display: none;
+    }
+    .page-footer a:not(:first-of-type):before {
+        content: "\A";
+        white-space: pre;
     }
     .download-page .image-container:after {
         width: 100px !important;
@@ -377,7 +381,7 @@ h1:before {
     .sidebar-collapse .navbar .dropdown.show .dropdown-submenu .dropdown-menu {
         display: none !important;
     }
-    .official-logo {
+    .Official-logo {
         content:url("/img/icon-white.svg");
     }
 
@@ -790,19 +794,17 @@ h1:before {
             }
         }
 
-        a {
-            &[href='/download/'] {
-                border: 1px solid rgb(191, 54, 12); 
-                &:hover, &:active {
-                    background: rgb(191, 54, 12);
-                    background-color: rgba(191, 54, 12, 0.80);
-                    border: 1px solid rgb(191, 54, 12);
-                    border: 1px solid rgba(191, 54, 12, 0.80);
-                } 
-                &:active:focus {
-                    box-shadow: 0 0 0 0.2rem rgb(191, 54, 12);
-                    box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5);
-                }
+        .btn-try-manjaro {
+            border: 1px solid rgb(191, 54, 12); 
+            &:hover, &:active {
+                background: rgb(191, 54, 12);
+                background-color: rgba(191, 54, 12, 0.80);
+                border: 1px solid rgb(191, 54, 12);
+                border: 1px solid rgba(191, 54, 12, 0.80);
+            } 
+            &:active:focus {
+                box-shadow: 0 0 0 0.2rem rgb(191, 54, 12);
+                box-shadow: 0 0 0 0.2rem rgba(191, 54, 12,.5);
             }
         }
         
@@ -1125,6 +1127,13 @@ h1:before {
         padding-top: 90px;
         min-height: 91vh !important;
     }
+    .fa-cogs {
+        color:#ec407a !important;
+    }
+    .fa-download {color: #ab47bc !important;}
+    .fa-lock {color: #ffa726 !important;}
+    .fa-sliders-h {color: #1e88e5 !important;}
+    .row:not(:last-child) {margin-bottom: 4.3rem;}
 }
 
 .fresh-and-stable {
@@ -1265,7 +1274,7 @@ h1:before {
 }
 
 .news {
-
+    
     #btn-layout {
         background: transparent;
         border: none;
@@ -1916,4 +1925,12 @@ img[src$='#floatright']
 .section-team *:not(a), .page-footer * {
     color: #cecccc !important;
 } 
+
+.footer-dot {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.page #legal-website-operator-identification {
+    margin-top: 30px;
+}
  

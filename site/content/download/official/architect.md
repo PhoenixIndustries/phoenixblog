@@ -9,7 +9,7 @@ Download_x86_Sig = ""
 Download_x86_Torrent = ""
 Name = "Architect"
 Screenshot = "architect-full.jpg"
-edition = "official"
+edition = "Official"
 shortDescription = "Setup and configure Manjaro in every detail using the CLI."
 Thumbnail = "architect-full.jpg"
 Version = "18.1.0"
@@ -17,6 +17,8 @@ date = "2019-09-13"
 title = "Architect"
 type="download-edition"
 weight = "7"
+meta_description = "Manjaro setup and configure Manjaro in every detail using the CLI."
+meta_keywords = "manjaro architect download, manjaro download"
 +++
 
 This edition comes with a TUI installer.

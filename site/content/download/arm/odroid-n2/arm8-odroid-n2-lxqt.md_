@@ -19,6 +19,8 @@ date = "06.2019"
 title = "Odroid N2 LXQT"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro LXQT on ARM is one of the snappiest and lightweight desktop experiences out there."
+meta_keywords = "manjaro lxqt arm, manjaro download"
 +++
 
 This edition is supported by the Manjaro ARM team and comes with LXQT desktop.

@@ -10,7 +10,7 @@ Download_x86_Torrent = ""
 Name = "Under Development Manjaro Webdad"
 Screenshot = "webdad-desktop.jpeg"
 Youtube = "WJCTzkEodGM"
-edition = "dev"
+edition = "Development"
 shortDescription = "Desktop Enviroment Concept"
 Thumbnail = "webdad-desktop.jpeg"
 Version = "Alpha.8"
@@ -18,6 +18,8 @@ date = "2019-03-03T00:33:00+01:00"
 title = "Just Another Desktop Enviroment"
 type="download-edition"
 weight = "6"
+meta_description = "Manjaro webdad for people who want a reliable and fast desktop"
+meta_keywords = "manjaro webdad download, manjaro download"
 +++
 
 **Note: This is a preview of a CONCEPT for developers and testers and is not suitable for production environments as it may contain bugs**

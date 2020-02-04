@@ -18,21 +18,18 @@
             $(".progress-bar").css("width", "30%");
          }, 100);
          setTimeout(function(){ 
-            $(".progress-bar").css("width", "45%");
+            $(".progress-bar").css("width", "50%");
          }, 200);
          setTimeout(function(){ 
-            $(".progress-bar").css("width", "65%");
+            $(".progress-bar").css("width", "60%");
          }, 300);
          setTimeout(function(){ 
-            $(".progress-bar").css("width", "84%");
+            $(".progress-bar").css("width", "75%");
          }, 400);
          setTimeout(function(){ 
-            $(".progress-bar").css("width", "96%");
-         }, 460);
-        setTimeout(function(){ 
             $(".progress-bar").css("width", "100%");
             $(".logo-overlay-loader").fadeOut();
-         }, 600); 
+         }, 500); 
          setTimeout(function(){ 
             $(".social-animation").removeClass("social-animation");
          }, 5000);
@@ -149,6 +146,7 @@ $(window).one("scroll", function(){
 <script>
 $("a[href='/download/']").hide();
 
+$('.editions-grid').append($('.gnome'));
 $('.editions-grid').append($('.architect'));
 $('.editions-grid').prepend($('.kde'));
 $('.editions-grid').prepend($('.xfce'));
@@ -172,17 +170,17 @@ function show_editions(editions) {
 }
 
 if ($(window).width() < 991) {
-    $('.official-logo').attr('src', '/img/icon-white.svg');
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
 }
 
 $('#official').hover( function () {
-    $('.official-logo').attr('src', '/img/icon-white.svg');
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
 }, function () {
     if ($(window).width() > 991) {
-        $('.official-logo').attr('src', '/img/icon.svg');
+        $('.Official-logo').attr('src', '/img/icon.svg');
 }
 });
-$('.official').show();
+$('.Official').show();
 setTimeout(function () { 
     displayArrow();
         }, 1400);

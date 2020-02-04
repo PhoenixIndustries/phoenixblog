@@ -10,7 +10,7 @@ Download_x86_Torrent = ""
 Name = "XFCE  32 bit"
 Screenshot = "xfce-full.jpg"
 Youtube = "zb_9tc-DiIs"
-edition = "32bit"
+edition = "32Bit"
 shortDescription = "For people who want a reliable and fast desktop"
 Thumbnail = "xfce.jpg"
 Version = "18.0.4"
@@ -18,6 +18,8 @@ date = "12.03.2019T12:31:00+01:00"
 title = "XFCE"
 type="download-edition"
 weight = "1"
+meta_description = "Manjaro xfce 32-bit download"
+meta_keywords = "manjaro download, manjaro xfce 32bit"
 +++
 
 This edition is supported by the Community and comes with XFCE.
