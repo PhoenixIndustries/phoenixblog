@@ -1534,6 +1534,9 @@ h1:before {
         .source, img[src*="avatars"] {
             display:none;
         }
+        pre {
+            max-height: 25em;
+        }
     }
     .modal-content {
         img[src^="https://forum.manjaro.org/images/emoji"] {
