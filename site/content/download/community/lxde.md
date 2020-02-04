@@ -1,24 +1,24 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-lxde-18.1.0-stable-minimal-190913-linux52-x86_64.iso"
-Download_x64_Checksum = "f5c9dbec64e23f2743d5d2efc61df5c5d9c86071"
-Download_x64_Sig = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.0/manjaro-lxde-18.1.0-stable-minimal-190913-linux52-x86_64.iso.sig"
-Download_x64_Torrent = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.0/manjaro-lxde-18.1.0-stable-minimal-190913-linux52-x86_64.iso.torrent"
-Download_x86 = ""
-Download_x86_Checksum = ""
-Download_x86_Sig = ""
-Download_x86_Torrent = ""
+Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-lxde-18.1.5-200124-linux54.iso"
+Download_x64_Checksum = "d3eea782ce2952d89d2d1a15d3f7e2d3c6c30fda"
+Download_x64_Sig = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.5/manjaro-lxde-18.1.5-200124-linux54.iso.sig"
+Download_x64_Torrent = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.5/manjaro-lxde-18.1.5-200124-linux54.iso.torrent"
+
+Download_Minimal_x64 = "https://osdn.net/dl/manjaro-community/manjaro-lxde-18.1.5-minimal-200124-linux54.iso"
+Download_Minimal_x64_Checksum = "4d1605ca36ab1f780e243a82d5cf591330f2487a"
+Download_Minimal_x64_Sig = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.5/manjaro-lxde-18.1.5-minimal-200124-linux54.iso.sig"
+Download_Minimal_x64_Torrent = "https://osdn.net/projects/manjaro-community/storage/lxde/18.1.5/manjaro-lxde-18.1.5-minimal-200124-linux54.iso.torrent"
+
 Name = "LXDE"
 Screenshot = "lxde-full.png"
 shortDescription = "Lightweight desktop build using the GTK toolkit"
-edition = "Community"
+edition = "community"
 Thumbnail = "lxde-full.png"
-Version = "18.1.0"
-date = "2019-09-33T01:34+01:00"
+Version = "18.1.5"
+date = "2020-01-24"
 title = "LXDE"
 type="download-edition"
 weight = "5"
-meta_description = "Manjaro lxde lightweight desktop build using the GTK toolkit"
-meta_keywords = "manjaro lxde download, manjaro download"
 +++
 
 Manjaro LXDE provides a lightweight GTK desktop environment. In addition to LXDE itself it provides a complete set of applications including an installer option to select an Office suite or choose not to install any. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.
