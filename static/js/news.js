@@ -367,7 +367,7 @@ setTimeout(function(){
             $grid.isotope({sortBy:"date"});
         }, 3000);
       });
-    }, 2000);
+    }, 4600);
 
 function gridTimers() {
     // the grid sometimes fails to ajust, so we use timers to make sure it gets there in diferent browser speeds.
