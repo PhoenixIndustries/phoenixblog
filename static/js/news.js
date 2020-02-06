@@ -144,7 +144,7 @@ function getFeeds() {
     
     setTimeout(function(){ 
         $(".progress-bar").css("width", "10%");
-     }, 600);
+     }, 500);
     
     let testing = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/testing-updates.rss",
@@ -159,7 +159,7 @@ function getFeeds() {
     
     setTimeout(function(){ 
         $(".progress-bar").css("width", "30%");
-     }, 900);
+     }, 1000);
     
     let unstable = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/unstable-updates.rss",
@@ -174,7 +174,7 @@ function getFeeds() {
     
     setTimeout(function(){ 
         $(".progress-bar").css("width", "50%");
-     }, 1200);
+     }, 2000);
     
     let arm = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/manjaro-arm/announcements.rss",
@@ -190,7 +190,7 @@ function getFeeds() {
     
     setTimeout(function(){ 
         $(".progress-bar").css("width", "70%");
-     }, 1400);
+     }, 3000);
     
      let manjaro32 = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/manjaro32.rss",
@@ -216,7 +216,7 @@ function getFeeds() {
 
     setTimeout(function(){ 
         $(".progress-bar").css("width", "80%");
-        }, 1600);
+        }, 4000);
 
     let releases = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/releases.rss",
@@ -230,7 +230,7 @@ function getFeeds() {
     
     setTimeout(function(){ 
         $(".progress-bar").css("width", "95%");
-     }, 1800);
+     }, 5000);
 }
  getFeeds(); 
 function setUnsortLayout() {
@@ -367,7 +367,7 @@ setTimeout(function(){
             $grid.isotope({sortBy:"date"});
         }, 3000);
       });
-    }, 4600);
+    }, 6000);
 
 function gridTimers() {
     // the grid sometimes fails to ajust, so we use timers to make sure it gets there in diferent browser speeds.
