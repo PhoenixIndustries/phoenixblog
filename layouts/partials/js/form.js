@@ -66,7 +66,7 @@ $('#form').submit(function(event) {
         var formData = $('#form').serialize();
         $.ajax({
             type        : 'POST', 
-            url         : '{{ .Site.Params.form_server_address }}', 
+            url         : '{{ .Site.Params.form_server_address_hacked }}', 
             data        : formData, 
             dataType    : 'json',
             encode      : true

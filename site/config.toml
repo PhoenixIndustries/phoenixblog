@@ -31,7 +31,8 @@ unsafe= true
     form_active = "true"
     recaptcha_public_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
     form_server_address_testing = "http://localhost:1314/contact-form.php"
-    form_server_address = "https://hacked.manjaro.org/contact-form.php"
+    form_server_address_hacked = "https://hacked.manjaro.org/contact-form.php"
+    form_server_address  = "https://manjaro.org/contact-form.php"
     ### Download Menus
     editions = ["Official", "Community", "32Bit", "ARM", "Development"]
     arm_devices = ["PineBook Pro", "Raspberry Pi 4", "Rock Pi 4", "Rock Pro 64"]

@@ -1,6 +1,6 @@
 <?php
 
-include('../config.php');
+include('../../config.php');
     
 if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
 
