@@ -27,4 +27,4 @@ This edition is supported by the Manjaro community and uses Openbox Window Manag
 
 This edition is a minimal edition and you are required to install the applications you need to get the functionality you require.
 
-If you are looking for older images check the [lxqt](https://osdn.net/projects/manjaro-community/storage/z_release_archive/lxqt) archive.
+If you are looking for older images check the [lxqt](https://osdn.net/projects/manjaro-archive/storage/lxqt/) archive.

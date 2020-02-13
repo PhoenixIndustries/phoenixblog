@@ -23,5 +23,5 @@ meta_keywords = "manjaro cinnamon download, manjaro download"
 
 This edition is supported by the Manjaro community and comes with Cinnamon, a desktop based on modern technology that keeps known and proven concepts.
 
-If you are looking for older images check the [Cinnamon](https://osdn.net/projects/manjaro-community/storage/z_release_archive/cinnamon) archive.
+If you are looking for older images check the [Cinnamon](https://osdn.net/projects/manjaro-archive/storage/cinnamon/) archive.
 

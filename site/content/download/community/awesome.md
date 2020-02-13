@@ -29,4 +29,4 @@ This edition is supported by the Manjaro community and comes with Awesome, a hig
 
 Awesome is a slim and snappy tiling window manager with the focus on resource efficiency.
 
-If you are looking for older images check the [Awesome](https://osdn.net/projects/manjaro-community/storage/z_release_archive/awesome) archive.
+If you are looking for older images check the [Awesome](https://osdn.net/projects/manjaro-archive/storage/awesome) archive.

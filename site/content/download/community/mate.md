@@ -23,5 +23,5 @@ meta_keywords = "manjaro mate download, manjaro download"
 
 This edition is supported by the Manjaro community and comes with Mate, a desktop environment that continues the legacy of traditional user experience while carefully improving and modernizing it when needed.
 
-If you are looking for older images check the [Mate](https://osdn.net/projects/manjaro-community/storage/z_release_archive/mate) archive.
+If you are looking for older images check the [Mate](https://osdn.net/projects/manjaro-archive/storage/mate/) archive.
 
