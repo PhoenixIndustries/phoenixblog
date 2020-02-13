@@ -28,5 +28,5 @@ meta_keywords = "manjaro gnome download, manjaro download"
 
 This edition is supported by the Manjaro team and comes with the GNOME 3 desktop that breaks with traditional concepts and allows users to focus on their tasks. Desktop-specific applications are crafted with care and clearly defined by guidelines that make them more consistent to use.
 
-If you are looking for older images check the [GNOME](https://osdn.net/projects/manjaro/storage/z_release_archive/gnome) archive.
+If you are looking for older images check the [GNOME](https://osdn.net/projects/manjaro-archive/storage/gnome/) archive.
 

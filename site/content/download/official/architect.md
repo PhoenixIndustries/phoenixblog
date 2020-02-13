@@ -35,4 +35,4 @@ Manjaro-Architect offers total customization on your Manjaro installation:
 - choose your graphics drivers to be installed with mhwd
 - choose extra packages to be installed
 
-If you are looking for older images check the [Architect](https://osdn.net/projects/manjaro/storage/z_release_archive/Architect) archive.
+If you are looking for older images check the [Architect](https://osdn.net/projects/manjaro-archive/storage/architect/) archive.

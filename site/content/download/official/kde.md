@@ -30,4 +30,4 @@ This edition is supported by the Manjaro team and comes with KDE Plasma, a very 
 
 KDE Plasma is for people who want a user-friendly and customizable desktop. It is a feature-rich and versatile desktop environment that provides several different styles of menu to access applications. An excellent built-in interface to easily access and install new themes, widgets, etc, from the internet is also worth mentioning. KDE Plasma is simple by default, a clean work area for real-world usage which intends to stay out of your way, so the user is enabled to create the workflow that makes it more effective to complete tasks.
 
-If you are looking for older images check the [KDE](https://osdn.net/projects/manjaro/storage/z_release_archive/kde) archive.
+If you are looking for older images check the [KDE](https://osdn.net/projects/manjaro-archive/storage/kde/) archive.
