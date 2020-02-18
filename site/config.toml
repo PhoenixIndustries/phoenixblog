@@ -238,10 +238,18 @@ unsafe= true
 [[menu.main]]
     name = "Mirrors"
     url = "https://repo.manjaro.org/"
-    pre = "<i class='fas fa-globe'></i></i>"
+    pre = "<i class='fas fa-globe'></i>"
     weight = 1
     parent = "packages"
     identifier = "mirrors"
+
+[[menu.main]]
+    name = "Discover Software"
+    url = "https://discover.manjaro.org/"
+    pre = "<i class='fas fa-compass'></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "discover"
 
 #
 # --- end submenu ---
