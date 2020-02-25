@@ -30,7 +30,7 @@ unsafe= true
 
     ### Download Menus
     editions = ["Official", "Community", "32Bit", "ARM", "Development"]
-    arm_devices = ["PineBook Pro", "Raspberry Pi 4", "Rock Pi 4", "Rock Pro 64"]
+    arm_devices = ["PineBook Pro", "Raspberry Pi 4", "Rock Pi 4", "Rock Pro 64", "Khadas Vim 1", "Khadas Vim 3"]
 
 [params.download_edition]
     download_x64_title = "64 bit version"
