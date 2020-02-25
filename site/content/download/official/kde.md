@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200223-linux54.iso"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200224-linux54.iso"
 Download_x64_Checksum = "c67ea94032ef6eba9b779be67d06671c0d2d596d"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200223-linux54.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200223-linux54.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200224-linux54.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-200224-linux54.iso.torrent"
 Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-minimal-200224-linux54.iso"
 Download_Minimal_x64_Checksum = "1bfc7156f92fad4a6c63db39af66bc0d9c0846f6"
 Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-19.0-minimal-200224-linux54.iso.sig"
