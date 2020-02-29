@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://manjaro-community.osdn.io/openbox/latest.php"
-Download_x64_Checksum = "39bcae8fef31e530b67045ef6539c63c974fdd55"
-Download_x64_Sig = "https://manjaro-community.osdn.io/openbox/latest.sig"
-Download_x64_Torrent = "https://manjaro-community.osdn.io/openbox/latest.torrent"
+Download_x64 = ""
+Download_x64_Checksum = ""
+Download_x64_Sig = ""
+Download_x64_Torrent = ""
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/openbox/latest-minimal.php"
 Download_Minimal_x64_Checksum = "c574382b4b6e16531c4d82844281714782f55235"
