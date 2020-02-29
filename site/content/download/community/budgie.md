@@ -23,6 +23,6 @@ meta_keywords = "manjaro budgie download, manjaro download"
 
 This edition is supported by the Manjaro community and comes with Budgie, the desktop of the [Solus project](https://solus-project.com/). Budgie focuses on providing a simple-to-use and elegant desktop that fulfills the needs of a modern user.
 
-If you are looking for older images check the [Budgie](https://osdn.net/projects/manjaro-community/storage/z_release_archive/budgie) archive.
+If you are looking for older images check the [Budgie](https://osdn.net/projects/manjaro-archive/storage/mate/) archive.
 
 

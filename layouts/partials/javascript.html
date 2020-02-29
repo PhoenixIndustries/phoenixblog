@@ -72,10 +72,10 @@ addBackToTop({
 <!-- only run on news page -->
 {{ if eq .Title "News"}} 
 <script>$("a[href='/news/']").hide();</script>
-<script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
-<script src="/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-<script src="/js/feedreader.js" type="text/javascript"></script>
-<script src="/js/gifffer.min.js" type="text/javascript"></script>
+<script src="/js/isotope.pkgd.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/imagesloaded.pkgd.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/corsFeedReader.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/news.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
 {{ end }}
 
 {{ if .IsHome }}
