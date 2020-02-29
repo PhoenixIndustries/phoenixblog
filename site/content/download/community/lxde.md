@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://manjaro-community.osdn.io/lxde/latest"
-Download_x64_Checksum = "d09cba9fee2e97fa12dbdbff9a98b27fceaad939"
-Download_x64_Sig = "https://manjaro-community.osdn.io/lxde/latest.sig"
-Download_x64_Torrent = "https://manjaro-community.osdn.io/lxde/latest.torrent"
+Download_x64 = ""
+Download_x64_Checksum = ""
+Download_x64_Sig = ""
+Download_x64_Torrent = ""
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/lxde/latest-minimal"
 Download_Minimal_x64_Checksum = "82f1de8e942f82eaeb4d4e7392be565b782723fe"

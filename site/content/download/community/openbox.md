@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://manjaro-community.osdn.io/openbox/latest.php"
-Download_x64_Checksum = "39bcae8fef31e530b67045ef6539c63c974fdd55"
-Download_x64_Sig = "https://manjaro-community.osdn.io/openbox/latest.sig"
-Download_x64_Torrent = "https://manjaro-community.osdn.io/openbox/latest.torrent"
+Download_x64 = ""
+Download_x64_Checksum = ""
+Download_x64_Sig = ""
+Download_x64_Torrent = ""
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/openbox/latest-minimal.php"
 Download_Minimal_x64_Checksum = "c574382b4b6e16531c4d82844281714782f55235"
@@ -27,5 +27,5 @@ This edition is supported by the Manjaro community and comes with openbox, a hig
 
 The edition is fully featured with GTK3 applications and Manjaro's installer based office selection. Additionally Openbox comes with Manjaro Application Manager for easy installation of popular applications and of course Pamac which is the Manjaro distributions in-house Package Management application.  The Kvantum theme manager helps creating consistent theming for GTK and Qt applications alike.
 
-If you are looking for older images check the [Openbox](https://osdn.net/projects/manjaro-archive/storage/mate/) archive.
+If you are looking for older images check the [Openbox](https://osdn.net/projects/manjaro-archive/storage/openbox/) archive.
 
