@@ -27,4 +27,4 @@ This edition is supported by the Manjaro community and uses Openbox Window Manag
 
 Manjaro Application Utility is included to easily manage the installation/removal of popular applications.
 
-If you are looking for older images check the [LXDE](https://osdn.net/projects/manjaro-community/storage/z_release_archive/lxde) archive.
+If you are looking for older images check the [LXDE](https://osdn.net/projects/manjaro-archive/storage/lxde/) archive.

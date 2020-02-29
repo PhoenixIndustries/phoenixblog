@@ -1,12 +1,12 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-191229-linux54.iso"
-Download_x64_Checksum = "995798fd54efe79528dcef558362ce8ec57ad9ce"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-191229-linux54.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-191229-linux54.iso.torrent"
-Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-minimal-191229-linux54.iso"
-Download_Minimal_x64_Checksum = "3b87694ab1b6cf803426374534d2843ab68cb828"
-Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-minimal-191229-linux54.iso.sig"
-Download_Minimal_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-18.1.5-minimal-191229-linux54.iso.torrent"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-200228-linux54.iso"
+Download_x64_Checksum = "c9673f079910406c8c567d5f3501f5bb4dd15f6b"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-200228-linux54.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-200228-linux54.iso.torrent"
+Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-minimal-200228-linux54.iso"
+Download_Minimal_x64_Checksum = "b3364b80766434c6ad834e32716b74113bd2404b"
+Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-minimal-200228-linux54.iso.sig"
+Download_Minimal_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-kde-19.0.1-minimal-200228-linux54.iso.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
@@ -17,8 +17,8 @@ Youtube = "UCbMrLazLME"
 edition = "Official"
 shortDescription = "Built-in interface to easily access and install themes, widgets, etc. While very user-friendly and certainly flashy."
 Thumbnail = "kde.jpg"
-Version = "18.1.5"
-date = "2019-12-29T22:40:00+01:00"
+Version = "19.0.1"
+date = "2020-02-28"
 title = "KDE Plasma"
 type="download-edition"
 weight = "2"
@@ -30,4 +30,4 @@ This edition is supported by the Manjaro team and comes with KDE Plasma, a very 
 
 KDE Plasma is for people who want a user-friendly and customizable desktop. It is a feature-rich and versatile desktop environment that provides several different styles of menu to access applications. An excellent built-in interface to easily access and install new themes, widgets, etc, from the internet is also worth mentioning. KDE Plasma is simple by default, a clean work area for real-world usage which intends to stay out of your way, so the user is enabled to create the workflow that makes it more effective to complete tasks.
 
-If you are looking for older images check the [KDE](https://osdn.net/projects/manjaro/storage/z_release_archive/kde) archive.
+If you are looking for older images check the [KDE](https://osdn.net/projects/manjaro-archive/storage/kde/) archive.

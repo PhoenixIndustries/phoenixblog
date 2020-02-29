@@ -60,10 +60,10 @@ The EU Commission provides on its website the following link to the [ODR platfor
 
 Manjaro Linux uses several trademarks from different projects. Their rights are not overruled by our license and stay intact.
 
-* Manjaro, copyright © 2019 Manjaro GmbH & Co. KG
-* Manjaro name and logo are recognized trademarks of Manjaro GmbH & Co. KG. Some rights reserved. The Manjaro Community is licensed to use the trademark with given terms.
 * Manjaro Linux, copyright © 2011-2018 Philip Müller and the Manjaro Developers
-* Arch Linux, copyright © 2002-2019 Judd Vinet and Aaron Griffin
+* Manjaro Linux, copyright © 2019-2020 Manjaro GmbH & Co. KG
+* Manjaro® name and logo are registered trademarks of Manjaro GmbH & Co. KG. Some rights reserved. The Manjaro Community is licensed to use the trademark with given terms.
+* Arch Linux, copyright © 2002-2020 Judd Vinet and Aaron Griffin
 * GNOME is licensed under the GNOME Foundation's License Agreement
 * KDE® and the K Desktop Environment® logo are registered trademarks of KDE e.V.
 * The registered trademark Linux® is used pursuant to a sublicense from LMI, the exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
