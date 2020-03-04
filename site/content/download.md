@@ -1,4 +1,5 @@
-{
-  "title" : "Downloads",
-  "type" : "download-selector"
-}
++++
+title="Downloads"
+type="download-selector"
+draft=false
++++

@@ -54,11 +54,11 @@
     {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
     {{ if $inServerMode }}
     {{ $css := $sass | toCSS $cssOpts | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.Permalink  | absURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+    <link rel="stylesheet" href="{{ $css.Permalink  | relURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
     {{ else }}
-    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | resources.Minify }}
+    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | resources.Minify  | fingerprint }}
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="preload" as="style"/>
-    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="stylesheet" media="screen"/>
+    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" rel="stylesheet" media="screen"/>
     {{ end }}
 
     <!--  Essential META Tags -->
