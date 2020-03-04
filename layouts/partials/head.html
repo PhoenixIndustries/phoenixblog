@@ -56,7 +56,7 @@
     {{ $css := $sass | toCSS $cssOpts | fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink  | relURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
     {{ else }}
-    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | resources.Minify  | fingerprint }}
+    {{ $css := $sass | toCSS $cssOpts | resources.Minify | fingerprint }}
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="preload" as="style"/>
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" rel="stylesheet" media="screen"/>
     {{ end }}

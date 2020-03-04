@@ -21,10 +21,8 @@ type="download-edition"
 weight = "5"
 +++
 
-Manjaro LXDE provides a lightweight GTK desktop environment. In addition to LXDE itself it provides a complete set of applications including an installer option to select an Office suite or choose not to install any. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.
+Manjaro LXDE provides a lightweight GTK desktop environment. In addition to LXDE itself it comes with Manjaro Hello and the integrated Application utility, providing quick access to popular applications. Additionally the Kvantum theme manager is provided to provide consistent theming for both QT and GTK applications.
 
 This edition is supported by the Manjaro community and uses Openbox Window Manager.
-
-Manjaro Application Utility is included to easily manage the installation/removal of popular applications.
 
 If you are looking for older images check the [LXDE](https://osdn.net/projects/manjaro-archive/storage/lxde/) archive.
