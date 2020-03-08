@@ -71,6 +71,15 @@ addBackToTop({
 
 {{ if .IsHome }}
 <script>
+var options = {
+  strings: ['Try Manjaro', 'Download'],
+  typeSpeed: 80,
+  loop: true,
+  backDelay: 1600
+};
+
+var typed = new Typed('#typed-elem', options);
+
 function scrollToContent() {
     $('html, body').animate({
                 scrollTop: $('#content' ).offset().top -200
