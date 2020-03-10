@@ -141,11 +141,7 @@ function getFeeds() {
             updateGrid(content)
         }
     });
-    
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "10%");
-     }, 500);
-    
+        
     let testing = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/testing-updates.rss",
         template: template(),
@@ -156,11 +152,7 @@ function getFeeds() {
             updateGrid(content)
         }
     });
-    
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "30%");
-     }, 1000);
-    
+       
     let unstable = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/unstable-updates.rss",
         template: template(),
@@ -171,10 +163,6 @@ function getFeeds() {
             updateGrid(content)
         }
     });
-    
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "50%");
-     }, 2000);
     
     let arm = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/manjaro-arm/announcements.rss",
@@ -187,10 +175,6 @@ function getFeeds() {
             updateGrid(content)
         }
     });
-    
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "70%");
-     }, 3000);
     
      let manjaro32 = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/manjaro32.rss",
@@ -214,10 +198,6 @@ function getFeeds() {
             updateGrid(content)
         }});
 
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "80%");
-        }, 4000);
-
     let releases = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/releases.rss",
         template: template(),
@@ -227,10 +207,6 @@ function getFeeds() {
         afterTemplate: function(content) {
             updateGrid(content)
         }});
-    
-    setTimeout(function(){ 
-        $(".progress-bar").css("width", "95%");
-     }, 5000);
 }
  getFeeds(); 
 function setUnsortLayout() {
@@ -360,7 +336,6 @@ return function debounced() {
 };
 }
 setTimeout(function(){ 
-    $(".progress-bar").css("width", "100%");
     $(".logo-overlay-loader").fadeOut();
     $grid.imagesLoaded().progress( function() {
         setTimeout(function(){ 
