@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-architect-19.0-200223-linux54.iso"
+Download_x64 = "https://manjaro.osdn.io/architect/latest"
 Download_x64_Checksum = "8cf5ffce23aeacd3bd58b38d245f337f7e13a429"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-architect-19.0-200223-linux54.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-architect-19.0-200223-linux54.iso.torrent"
+Download_x64_Sig = "https://manjaro.osdn.io/architect/latest.sig"
+Download_x64_Torrent = "https://manjaro.osdn.io/architect/latest.torrent"
 Download_x86 = ""
 Download_x86_Checksum = ""
 Download_x86_Sig = ""
