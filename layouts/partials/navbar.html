@@ -13,6 +13,11 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{ "img/blurred-image-1.jpg" | relURL }}">
               <ul class="navbar-nav  ml-auto">
+                  {{ if eq .Title "Downloads"}}
+                  {{ partial "editions-nav" . }}
+              </ul>
+                  {{ end }}
+               
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">

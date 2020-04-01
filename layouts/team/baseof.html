@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {{partial "head" . }}
+  
+	<body class="{{ .Params.class | default "team" }} sidebar-collapse">
+   {{ partial "loading-screen" . }} 
+   {{ partial "navbar" . }}    
+    
+        <div class="{{ .Params.section | default "section"}}" style="min-height: 90vh;">
+            <div class="container">
+              
+            {{ block "body" . }}
+	          {{ end }}
+
+            </div>
+        </div>
+      {{ partial "footer" . }}
+    </div>
+  </body>
+{{partial "javascript" . }}
+</html>

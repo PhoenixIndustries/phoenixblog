@@ -12,47 +12,33 @@ i18nDir = "../i18n/"
 assetDir = "../static/"
 DefaultContentLanguage = "en-us"
 
+[markup.goldmark.renderer]
+unsafe= true
+# https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [params]
-    website_version = "1.0.16"
+    website_version = "1.0.36"
     background = "/img/header.jpg"
     tint = "green"
-    custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Mon, Jan 2, 2006"
     meta_description = "Free fast and secure Linux based operating system for everyone, suitable replacement to Windows or MacOS with different Desktop Environments"
     meta_keywords = "manjaro linux, based on arch linux, free operating system"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
-
-[params.donate]
-    headline = "Help us"
-    description = "Besides participating in discussions to improve Manjaro, helping other users or help developing new functions, you can always donate money to help keeping our infrastructure funded. Just a few bucks can help to keep our website and forums ad-free, reliable and secure."
-    conditions = "A donation counts as a private donation and is kept anonymous by us. That means that we won't share or publish any details about you and your donation. Donators get no rights or privileges - everybody can participate, whether they donated or not. Manjaro is still relatively young and a growing distribution - we are no registered organization. That means that we cannot give you a reciept that deduct taxes. For the same reason, the donation cannot go to a 'Manjaro Linux' organization, but goes to the head of the Manjaro team."
-
-    [params.donate.account]
-        account_holder = "Hanns Philip Müller"
-        account_number = "1050676905"
-        bank_identification = "12030000"
-        bank = "DKB"
-        bic = "BYLADEM1001"
-        iban = "DE90120300001050676905"
-        purpose = "Donation to Manjaro Linux"
-        note = "On the transfer form the word donation must be mentioned in the purpose area. Who also indicates his email address, receives on request a confirmation of receipt."
-
+    ### Download Menus
+    editions = ["Official", "Community", "32Bit", "ARM", "Development"]
+    arm_devices = ["PineBook Pro", "Raspberry Pi 4", "Rock Pi 4", "Rock Pro 64", "Khadas Vim 1", "Khadas Vim 3"]
 
 [params.download_edition]
     download_x64_title = "64 bit version"
     download_x86_title = "32 bit version"
     download_button = "Download"
-    download_x64_description = "Download the 64 bit version if you use a modern computer and the the maximum performance and full benefits of your modern hardware."
+    download_button_minimal = "Download Minimal"
+    download_minimal_description = "Minimal provides a basic desktop environment with no additional software packages pre-installed."
+    download_x64_description = "Only 64 bit is available for modern hardware, if you looking for legacy 32 bit go "
     download_x86_description = "Download the 32 bit version if you use an older computer or if you are unsure if your computer supports the 64 bit version."
     download_gpg = "Download GPG signature"
     download_torrent = "Download Torrent"
@@ -121,6 +107,14 @@ DefaultContentLanguage = "en-us"
     identifier = "support"
 
 [[menu.main]]
+    name = "About"
+    url = "#"
+    pre = ""
+    weight = 4
+    parent = "more"
+    identifier = "about"
+
+[[menu.main]]
     name = "Lists"
     url = "#"
     pre = ""
@@ -130,6 +124,22 @@ DefaultContentLanguage = "en-us"
 #
 # --- End SubMenu Others 
 #
+
+# --- SubMenu about ---
+
+[[menu.main]]
+    name = "Team"
+    url = "/team/"
+    pre = "<i class='fa fa-users'></i></i>"
+    weight = 1
+    parent = "about"
+
+[[menu.main]]
+    name = "Linux"
+    url = "/linux/"
+    pre = "<i class='fab fa-linux'></i></i>"
+    weight = 2
+    parent = "about"
 
 # --- SubMenu Support ---
 
@@ -194,35 +204,19 @@ DefaultContentLanguage = "en-us"
     parent = "shop"
 
 [[menu.main]]
-    name = "Hardwares"
+    name = "Manjaro Hardware"
     url = "/hardware"
     pre = "<i class='fas fa-laptop'></i>"
     weight = 4
     parent = "shop"
 
 
-#[[menu.main]]
-#    name = "Hardware - Notebooks & PCs"
-#    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
-#    pre = "<i class='fas fa-desktop'></i>"
-#    weight = 5
-#    parent = "shop"
-
-
-#[[menu.main]]
-#    name = "Hardware - Spitfire"
-#    url = "/hardware-spitfire"
-#    pre = "<i class='fas fa-laptop'></i>"
-#    weight = 4
-#    parent = "shop"
-
-
-# [[menu.main]]
-#    name = "Hardware - Bladebook"
-#    url = "/hardware-bladebook"
-#    pre = ""
-#    weight = 3
-#    parent = "shop"
+[[menu.main]]
+    name = "UbuntoShop Hardware"
+    url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
+    pre = "<i class='fas fa-desktop'></i>"
+    weight = 5
+    parent = "shop"
 
 #
 # --- End SubMenu Shop --- 
@@ -235,10 +229,18 @@ DefaultContentLanguage = "en-us"
 [[menu.main]]
     name = "Mirrors"
     url = "https://repo.manjaro.org/"
-    pre = "<i class='fas fa-globe'></i></i>"
+    pre = "<i class='fas fa-globe'></i>"
     weight = 1
     parent = "packages"
     identifier = "mirrors"
+
+[[menu.main]]
+    name = "Discover Software"
+    url = "https://discover.manjaro.org/"
+    pre = "<i class='fas fa-compass'></i>"
+    weight = 1
+    parent = "packages"
+    identifier = "discover"
 
 #
 # --- end submenu ---
@@ -337,9 +339,9 @@ DefaultContentLanguage = "en-us"
 
 [[menu.footer]]
     identifier = "copyright"
-    name = "2019 Manjaro Linux"
+    name = "2011 - 2020 Manjaro Linux"
     pre = "<i class='fa fa-copyright'></i>"
-    url = "/"
+    url = "/imprint/"
     weight = 2
 
 
@@ -358,10 +360,17 @@ DefaultContentLanguage = "en-us"
     url = "/terms-of-use/"
     weight = 4
 
+[[menu.footer]]
+    identifier = "imprint"
+    name = "Imprint"
+    pre = ""
+    url = "/imprint/"
+    weight = 5
+
 
 [[menu.footer]]
     identifier = "gitlab"
     pre = "<i class='fab fa-gitlab'></i>"
     url = "https://gitlab.manjaro.org"
-    weight = 5
+    weight = 6
 

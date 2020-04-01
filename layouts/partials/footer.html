@@ -1,42 +1,36 @@
 <!-- Footer -->
-{{if .IsHome}}
-{{ partial "core-team.html" . }}
-{{end}}
+
 <footer class="page-footer" data-background-color="black">
     <div class="container text-center py-3">
-      <div class="row justify-content-center py-1">
-          {{ range .Site.Menus.footer }}
-         
-      {{ if eq .Identifier "privacy" }}
-        <div class="row justify-content-center py-1">
-            <div class="col-sm-3 col-md-3 text-center text-md-right">
-                <a href="{{ .URL | relLangURL }}">
-                    <span>{{ .Pre }} {{ .Name }}</span>
-                  </a>
-              </div>
-              <div class="footer-dot">
-                  •
-                </div>
-      {{end}}
-
-      {{ if eq .Identifier "terms" }}
-              <div class="col-sm-3 col-md-3 text-center text-md-left">
-                  <a href="{{ .URL | relLangURL }}">
-                      <span>{{ .Pre }} {{ .Name }}</span>
-                    </a>
-              </div>
-        </div>
-      {{end}}
       
-      {{ if eq .Identifier "copyright" }}
-      <div class="col-12 col-md-12">
-          <a href="{{ .URL | relLangURL }}">
+    {{ range .Site.Menus.footer }}
+
+        {{ if eq .Identifier "copyright" }}
+        <div class="row justify-content-center py-1">
+            <span>{{ .Pre }} {{ .Name }}</span>
+        </div>
+        {{end}}
+         
+        {{ if eq .Identifier "privacy" }}
+            <a href="{{ .URL | relLangURL }}">
               <span>{{ .Pre }} {{ .Name }}</span>
             </a>
-      </div>
-    </div>
-{{end}}
-{{ end }}
-  </div>
+            <span class="footer-dot">•</span>
+        {{end}}
+
+        {{ if eq .Identifier "terms" }}
+            <a href="{{ .URL | relLangURL }}">
+                <span>{{ .Pre }} {{ .Name }}</span>
+            </a>
+            <span class="footer-dot">•</span>
+        {{end}}
+
+        {{ if eq .Identifier "imprint" }}
+            <a href="{{ .URL | relLangURL }}">
+                <span>{{ .Pre }} {{ .Name }}</span>
+            </a>
+        {{end}}     
+      
+    {{ end }}
 </footer>
 

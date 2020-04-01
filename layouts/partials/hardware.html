@@ -1,136 +1,58 @@
 {{ if eq .Type "hardware" }}
 
-    <div class="container">
-        <div class="row justify-content-center raised">
+<div class="container">
+    <div class="row justify-content-center">
         {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
         {{ if and (isset .Params "datasheetcontent") (eq .Params.enable "true") }}
-                <div class="col-md-4">
-                        <div class="card card-raised bg-rose">
-                          <div id="productCarousel{{$main_index}}" class="carousel slide" data-ride="carousel" data-interval="18000">
-                            <ol class="carousel-indicators">
-                          {{ range $index, $element := .Params.images}}
-                            {{if eq $index 0}} 
-                              <li data-target="#productCarousel{{$main_index}}" data-slide-to="{{ $index }}" class="active"></li>
-                            {{else}}
-                              <li data-target="#productCarousel{{$main_index}}" data-slide-to="{{ $index }}"></li>
-                            {{end}}
-                          {{ end }}
-                            </ol>
-                          {{ range $index, $element := .Params.images}}
-                          {{if eq $index 0}} 
-                            <div class="carousel-item active">
-                                <div class="item carouselimg">
-                              <img class="d-block" width="300" height="200" style='height: 100%; width: 100%; object-fit: contain' src="/img/hardware/{{ $element }}.png" alt="{{ $index }} slide">
-                            </div>
-                            </div>
-                          {{else}}
-                          <div class="carousel-item">
-                              <div class="item carouselimg">
-                              <img class="d-block" width="300" height="200" style='height: 100%; width: 100%; object-fit: contain' src="/img/hardware/{{ $element }}.png" alt="{{ $index }} slide">
-                            </div>
-                            </div>
-                          {{ end }}
-                        {{ end }}
-                          <a class="carousel-control-prev" href="#productCarousel{{$main_index}}" role="button" data-slide="prev">
-                              <button type="button" class="btn btn-primary btn-icon btn-round btn-sm" name="button">
-                                  <i class="now-ui-icons arrows-1_minimal-left"></i>
-                              </button>
-                          </a>
-                          <a class="carousel-control-next" href="#productCarousel{{$main_index}}" role="button" data-slide="next">
-                              <button type="button" class="btn btn-primary btn-icon btn-round btn-sm" name="button">
-                                  <i class="now-ui-icons arrows-1_minimal-right"></i>
-                              </button>
-                          </a>
-                        </div>
-                            <div class="card-body text-center">
-                              
-                                <h5 class="card-subtitle text-white">{{.Params.subtitle}}</h5>
-                                <h6 class="card-desc text-white">{{.Params.subdescription}}</h6>
-                                
-                                
-                                <table class="table text-white" cellspacing="0">
-                                  <tr>
-                                      <td>{{.Params.pricebefore}} <h2 class="card-title text-white">{{.Params.price}}</h2></td>
-                                  </tr>
-                                  <tr>
-                                      <td colspan="2">{{.Params.pricetax}}</td>
-                                  </tr>
-                              </table>
-                              <!-- dont forget i18-->
-                              <button class="btn btn-white btn-raised btn-round" type="button" data-toggle="collapse" data-target="#collapseExample{{$main_index}}" aria-expanded="false" aria-controls="collapseExample">
-                                {{ i18n "features" }}
-                                </button>
-                            
-                          
-                                <div class="collapse" id="collapseExample{{$main_index}}">
-                                <table class="table text-white">
-                                        <tbody>
-                                            <tr>
-                                            {{ range $index, $element := .Params.datasheetcontent}}
-                                            {{if (modBool $index 2)}} 
-                                            <th><b>{{$element}}</b></th>
-                                            {{else}}
-                                            <td>{{$element}}</td>
-                                            </tr>
-                                            <tr>
-                                            {{ end }}
-                                          {{ end }}
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                <a href="{{.Params.buylink}}" target="_blank" class="btn btn-white btn-raised btn-round">
-                                    {{ i18n "buy" }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-               
+        <div class="col-sm-6 col-lg-4">
+            <div class="card">
+                {{ range $index, $element := .Params.images}}
+                <img class="d-block" src="/img/hardware/{{ $element }}.png"
+                    alt="{{ $index }} slide">
                 {{ end }}
-                {{ end }}
-              </div>
-                <hr>
-                <h3 class="subtitle text-center">{{ i18n "about_hardware" }}</h3>
-                 
-                <div class="row">
-                    <div class="col-md-5 ml-auto">
-                        <div class="info info-horizontal">
-                            <h3 class="subtitle"><i class="fas fa-laptop"></i> Availability</h3>
-                            <div class="description">
-                                <p>Yes, you can cancel and perform other actions on your subscriptions via the My Account page. </p>
-                            </div>
-                        </div>
+                <div class="card-body text-center">
+                    <h5 class="card-subtitle text-dark">{{.Params.subtitle}}</h5>
+                    <h6 class="card-desc text-dark">{{.Params.subdescription}}</h6>
+                    <table class="table text-dark" cellspacing="0">
+                        <tr>
+                            <td>{{.Params.pricebefore}} <h2 class="card-title text-danger">
+                                   {{.Params.price}}</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">{{.Params.pricetax}}</td>
+                        </tr>
+                    </table>
+                    <!-- dont forget i18-->
+                    <button class="btn bg-info btn-round" type="button" data-toggle="collapse"
+                        data-target="#collapseExample{{$main_index}}" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        {{ i18n "features" }}
+                    </button>
+                    <div class="collapse" id="collapseExample{{$main_index}}">
+                        <table class="table text-dark">
+                            <tbody>
+                                <tr>
+                                    {{ range $index, $element := .Params.datasheetcontent}}
+                                    {{if (modBool $index 2)}}
+                                    <th><b>{{$element}}</b></th>
+                                    {{else}}
+                                    <td>{{$element}}</td>
+                                </tr>
+                                <tr>
+                                    {{ end }}
+                                    {{ end }}
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="col-md-5 mr-auto">
-                        <div class="info info-horizontal">
-                            <h3 class="subtitle"><i class="fas fa-user-secret"></i> Privacy</h3>
-                            <div class="description">
-                                <p>Yes, we offer a 40% discount if you choose annual subscription for any plan.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info btn-round">
+                        More Info
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col-md-5 ml-auto">
-                        <div class="info info-horizontal">
-                            <h3 class="subtitle"><i class="fas fa-laptop"></i> Availability</h3>
-                            <div class="description">
-                                <p>Yes, you can cancel and perform other actions on your subscriptions via the My Account page. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 mr-auto">
-                        <div class="info info-horizontal">
-                            <h3 class="subtitle"><i class="fas fa-user-secret"></i> Privacy</h3>
-                            <div class="description">
-                                <p>Yes, we offer a 40% discount if you choose annual subscription for any plan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
     </div>
-
-
-
-
+</div>
 {{ end }}

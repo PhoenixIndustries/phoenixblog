@@ -1,17 +1,8 @@
 <!doctype html>
 <html lang="en">
   {{partial "head" . }}
-  
 	<body class="{{ .Params.class | default "download-page" }} sidebar-collapse">
-      <div class="logo-overlay-loader">
-          <div class="logo-container">
-              <img src="/img/logo.svg" alt=""><br>
-              <span class="">manjaro</span><br>
-              <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-          </div>
-        </div>
+    {{ partial "loading-screen" . }}
     {{ partial "navbar" . }}
     
     <div class="{{ .Params.wrapper | default "wrapper" }}">
@@ -22,6 +13,7 @@
             
         </div>
         <div class="{{ .Params.section | default "section"}}">
+        
             <div class="container-fluid">
               
             {{ block "body" . }}

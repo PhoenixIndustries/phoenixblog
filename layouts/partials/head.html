@@ -12,31 +12,31 @@
     <link rel="preconnect" href="https://forum.manjaro.org">
 
     {{ if .IsHome }}
+    <link href="{{ .Site.BaseURL }}" rel="canonical">
+    <link href="{{ .Site.BaseURL }}" rel="home">
     <!-- prefetch resources -->
     <link rel="prefetch" href="/js/isotope.pkgd.min.js" as="script" type="text/javascript">
     <link rel="prefetch" href="/js/imagesloaded.pkgd.min.js" as="script" type="text/javascript">
-    <link rel="prefetch" href="/js/feedreader.js?{{ .Site.Params.website_version }}" as="script" type="text/javascript">
-
-    <link rel="prefetch" href="https://forum.manjaro.org/c/announcements.rss" as="fetch" type="text/plain" crossorigin>
-    <link rel="prefetch" href="https://forum.manjaro.org/c/announcements/manjaro32.rss" as="fetch" type="text/plain" crossorigin>
-    <link rel="prefetch" href="https://forum.manjaro.org/c/manjaro-arm/announcements.rss" as="fetch" type="text/plain" crossorigin>
+    <link rel="prefetch" href="/js/corsFeedReader.js?{{ .Site.Params.website_version }}" as="script" type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <!-- end prefetch resources -->
     {{ end }}
 
     {{ if eq .Title "News"}}
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro announcements" href="https://forum.manjaro.org/c/announcements.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro 32 bit announcements" href="https://forum.manjaro.org/c/announcements/manjaro32.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro ARM announcements" href="https://forum.manjaro.org/c/manjaro-arm/announcements.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro News" href="https://forum.manjaro.org/c/announcements/news.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro OS releases" href="https://forum.manjaro.org/c/announcements/releases.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro Stable Updates" href="https://forum.manjaro.org/c/announcements/stable-updates.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro Testing Updates" href="https://forum.manjaro.org/c/announcements/testing-updates.rss" />
+    <link rel="alternate" type="application/rss+xml" title="Subscribe to Manjaro Unstable Updates" href="https://forum.manjaro.org/c/announcements/unstable-updates.rss" />
     <link rel="preload" href="/js/isotope.pkgd.min.js" as="script" type="text/javascript">
     <link rel="preload" href="/js/imagesloaded.pkgd.min.js" as="script" type="text/javascript">
-    <link rel="preload" href="/js/feedreader.js?v={{ .Site.Params.website_version }}" as="script" type="text/javascript">
-
-    <link rel="preload" href="https://forum.manjaro.org/c/announcements.rss" as="fetch" type="text/plain" crossorigin>
-    <link rel="preload" href="https://forum.manjaro.org/c/announcements/manjaro32.rss" as="fetch" type="text/plain" crossorigin>
-    <link rel="preload" href="https://forum.manjaro.org/c/manjaro-arm/announcements.rss" as="fetch" type="text/plain" crossorigin>
+    <link rel="preload" href="/js/corsFeedReader.min.js" as="script" type="text/javascript">
+    <link rel="preload" href="/js/news.js" as="script" type="text/javascript">
     {{ end }}
     <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="Manjaro News" href="https://forum.manjaro.org/c/announcements.rss">
-    <link rel="alternate" type="application/rss+xml" title="Manjaro 32Bit News" href="https://forum.manjaro.org/c/announcements/manjaro32.rss">
-    <link rel="alternate" type="application/rss+xml" title="Manjaro ARM News" href="https://forum.manjaro.org/c/manjaro-arm/announcements.rss">
-
     <link rel="apple-touch-icon" sizes="76x76" href="{{ "img/apple-icon.png" | relURL }}">
     <link rel="icon" type="image/png" href="{{ "img/favicon.png" | relURL }}">
 
@@ -55,11 +55,11 @@
     {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
     {{ if $inServerMode }}
     {{ $css := $sass | toCSS $cssOpts | fingerprint }}
-    <link rel="stylesheet" href="{{ $css.Permalink  | absURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+    <link rel="stylesheet" href="{{ $css.Permalink  | relURL }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" media="screen">
     {{ else }}
-    {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | resources.Minify }}
+    {{ $css := $sass | toCSS $cssOpts | resources.Minify | fingerprint }}
     <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="preload" as="style"/>
-    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" rel="stylesheet" media="screen"/>
+    <link href="{{ $css.Permalink }}?v={{ .Site.Params.website_version }}" integrity="{{ $css.Data.Integrity }}" rel="stylesheet" media="screen"/>
     {{ end }}
 
     <!--  Essential META Tags -->
@@ -85,3 +85,16 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
 </head>
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.manjaro.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>

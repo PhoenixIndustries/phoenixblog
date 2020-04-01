@@ -5,6 +5,8 @@ navsection = "features"
 right = false
 title = "Fresh & Stable"
 weight = 3
+meta_description = "Manjaro fresh and stable"
+meta_keywords = "manjaro features"
 +++
 
 Manjaro is based on the independently developed Arch operating system. Within the Linux community, Arch itself is renowned for being an exceptionally fast, powerful, and lightweight distribution that provides access to the very latest cutting edge – and bleeding edge – software. However, Arch is also aimed at more experienced or technically-minded users. As such, it is generally considered to be beyond the reach of those who lack the technical expertise (or persistence) required to use it.

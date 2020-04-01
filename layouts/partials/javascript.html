@@ -1,5 +1,6 @@
 <!--   Core JS Files   -->
-<script src="{{ "js/core/jquery.3.2.1.min.js" | relURL }}" type="text/javascript"></script>
+<script src="{{ "js/core/jquery.3.4.1.min.js" | relURL }}" type="text/javascript"></script>
+<!--   required by bootstrap   -->
 <script src="{{ "js/core/popper.min.js" | relURL }}" type="text/javascript"></script>
 <script src="{{ "js/core/bootstrap.min.js" | relURL }}" type="text/javascript"></script>
 <!-- needed for mobile menu -->
@@ -8,39 +9,12 @@
 <script src="{{ "js/plugins/vanilla-back-to-top.min.js" | relURL }}" ></script>
 <!-- do not run on news page -->
 {{ if ne .Title "News"}} 
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="{{ "js/plugins/bootstrap-switch.js"| relURL }}"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="{{ "js/plugins/nouislider.min.js" | relURL }}" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="{{ "js/plugins/bootstrap-datepicker.js" | relURL }}" type="text/javascript"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-
-<!-- Contact Script -->
-<script src="{{ "js/validator.min.js" | relURL }}" ></script>
-<script src="{{ "js/contact.js" | relURL }}" ></script>
 
 <script type="text/javascript">
     $(document).ready(function() { 
         setTimeout(function(){ 
-            $(".progress-bar").css("width", "30%");
-         }, 100);
-         setTimeout(function(){ 
-            $(".progress-bar").css("width", "45%");
-         }, 200);
-         setTimeout(function(){ 
-            $(".progress-bar").css("width", "65%");
-         }, 300);
-         setTimeout(function(){ 
-            $(".progress-bar").css("width", "84%");
-         }, 400);
-         setTimeout(function(){ 
-            $(".progress-bar").css("width", "96%");
-         }, 460);
-        setTimeout(function(){ 
-            $(".progress-bar").css("width", "100%");
             $(".logo-overlay-loader").fadeOut();
-         }, 600); 
+         }, 500); 
          setTimeout(function(){ 
             $(".social-animation").removeClass("social-animation");
          }, 5000);
@@ -57,40 +31,13 @@ if ($( window ).width() > 992) {
         }
       });
     };
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
     });
-
-    function scrollToDownload() {
-
-        if ($('.section-download').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
-            }, 1000);
-        }
-    }
 </script>
 
 {{ range .Site.Params.custom_js }}
 <script src="{{ "/js/" | relURL }}{{ . }}"></script>
 {{ end }}
 
-
-<!-- Code highlighting -->
-{{ if  not .Params.nocode }}
-<link rel="stylesheet" href="/js/plugins/highlight/styles/default.css">
-<script src="/js/plugins/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initHighlightingOnLoad();</script>
-{{ end }}
-
-<!-- LaTeX math rendering -->
-{{ if not .Params.nomath }}
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-</script>
-<script async src="/js/plugins/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
-{{ end }}
 {{ end }}  
 <!-- do not run on news page -->
 <script>
@@ -103,14 +50,23 @@ addBackToTop({
 <!-- only run on news page -->
 {{ if eq .Title "News"}} 
 <script>$("a[href='/news/']").hide();</script>
-<script src="/js/isotope.pkgd.min.js" type="text/javascript"></script>
-<script src="/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-<script src="/js/feedreader.js" type="text/javascript"></script>
-<script src="/js/gifffer.min.js" type="text/javascript"></script>
+<script src="/js/isotope.pkgd.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/imagesloaded.pkgd.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/corsFeedReader.min.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
+<script src="/js/news.js?v={{ .Site.Params.website_version }}" type="text/javascript"></script>
 {{ end }}
 
 {{ if .IsHome }}
 <script>
+var options = {
+  strings: ['Try Manjaro', 'Download'],
+  typeSpeed: 100,
+  loop: true,
+  backDelay: 2600
+};
+
+var typed = new Typed('#typed-elem', options);
+
 function scrollToContent() {
     $('html, body').animate({
                 scrollTop: $('#content' ).offset().top -200
@@ -150,55 +106,66 @@ $(window).one("scroll", function(){
 {{ if eq .Title "Downloads"}} 
 <script>
 $("a[href='/download/']").hide();
-$("#show-editions-official").addClass('btn-success');
-// hide preview button if previws are not available
-if (!$("div").hasClass("editions-box-hideable-dev")) { $("#show-editions-dev").remove(); }
-// add green color onclick
-$('button').on('click', function () {
-    $(".btn-group button").removeClass('btn-success');
-    $(this).addClass('btn-success');
-});
 
-function element_is_in_tags(el, tags) {
+$('.editions-grid').append($('.gnome'));
+$('.editions-grid').append($('.architect'));
+$('.editions-grid').prepend($('.kde'));
+$('.editions-grid').prepend($('.xfce'));
 
-    for (var id in tags) {
-
-        if(!el.classList.contains("editions-box-hideable-" + tags[id])){
-            return false;
-        }
-
-    }
-    return true;
-}
-
-function show_only_editions_with_tags(tags) {
-
-    var els = document.getElementsByClassName('editions-box-hideable');
-    [].forEach.call(els, function (el) {
-        if (tags.length == 0) {
-            $(".editions-grid").fadeOut("slow");
-            $(el).hide();
-        }
-        else {
-            if(element_is_in_tags(el, tags)) {
-                $(".editions-grid").fadeOut("slow").promise().done(function () {
-                    $(el).show();
-                    $(".editions-grid").fadeIn("slow");
-                });  
-            } else {
-                $(".editions-grid").fadeOut("slow").promise().done(function () {
-                $(el).hide();
-            });
+function show_editions(editions) {
+    if ($(window).width() > 991) {
+        var space = $(window).width()
+        $('.editions-grid').animate({left: space}, 400).promise().done(function() {
+            $('.edition').hide()
+            $(this).css('left', - space);
+            if ($(editions).length === 1) {
+                $('#go-down').hide();
             }
-        }
-    });
+            $(editions).show()
+            $(this).animate({left: 0}, 400);
+        });
+    } else {
+        $('.edition').hide();
+        $(editions).show();
+    }
 }
-function update_editions_tags(id) {
-    var tag_filter = [];
-    tag_filter.push( id );
-    show_only_editions_with_tags(tag_filter)
+
+if ($(window).width() < 991) {
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
 }
-update_editions_tags("official");
+
+$('#official').hover( function () {
+    $('.Official-logo').attr('src', '/img/icon-white.svg');
+}, function () {
+    if ($(window).width() > 991) {
+        $('.Official-logo').attr('src', '/img/icon.svg');
+}
+});
+$('.Official').show();
+setTimeout(function () { 
+    displayArrow();
+        }, 1400);
+
+var arrowDownTimer
+function displayArrow() {
+
+    function timing() { 
+        arrowDownTimer = setTimeout(function () { 
+        $('#go-down').hide();
+        }, 4000);
+    }
+    if ($('#go-down').is(':visible')) {
+            clearTimeout(arrowDownTimer);
+            timing();
+            $('#go-down').show();
+    } else {
+        setTimeout(function () { 
+            $('#go-down').show();
+            timing();
+        }, 800);
+    }
+}
+
 </script>
 {{ end }}
 {{ if eq .Title "Donate"}} 

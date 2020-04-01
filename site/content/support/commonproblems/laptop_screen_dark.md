@@ -3,6 +3,8 @@ Name = ""
 type="problem-post"
 category="hardware"
 title = "Laptop screen is too dark"
+meta_description = "Laptop screen is too dark on Manjaro"
+meta_keywords = "manjaro laptop screen, manjaro screen"
 +++
 
 |   |   |

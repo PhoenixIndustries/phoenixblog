@@ -1,25 +1,23 @@
 {{ define "title" }}
 <div class="container">
-  <div class="content-center title-container">
-    <h1 class="title">{{ .Title }}</h1>
-  </div>
+    <div class="content-center title-container">
+        <h1 class="title">{{ .Title }}</h1>
+    </div>
 </div>
-{{ end }}
-
-{{ define "body" }}
+{{ end }} {{ define "body" }}
 <div class="row">
-  <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">
-	
-			
-				
-						<!-- <h2 class="section-heading">{{ .Title }}</h2>
+    <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">
+
+
+
+        <!-- <h2 class="section-heading">{{ .Title }}</h2>
 						<hr class="star-primary" /> -->
 
-						<div class="features-post">
-							<p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
-						</div>
+        <div class="features-post">
+            <p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
+        </div>
 
-						<!-- <div style="display: flex; flex-warp: wrap">
+        <!-- <div style="display: flex; flex-warp: wrap">
 						{{ range (where .Site.Pages ".Type" "usercase-post") }}
 						<table style="display: flex">
 							<thead>
@@ -75,12 +73,12 @@
 						{{ end }}
 					</div> -->
 
-				
 
 
 
 
-		<!-- <section class="no-padding" id="usercases">
+
+        <!-- <section class="no-padding" id="usercases">
 		    <div class="container-fluid">
 		        <div class="row no-gutter">
 		            {{ range (where .Site.Pages ".Type" "usercase-post") }}
@@ -95,29 +93,32 @@
 		        </div>
 		    </div>
 		</section> -->
-  </div>
-  <div class="row">
-	  <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8"><div class="row">
-	{{ range (where .Site.Pages ".Type" "usercase-post") }}
-			<div class="offset-sm-0 col-sm-12 offset-md-0 col-md-6 col-lg-4">
-				<a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
-					<h2>
-						{{ .Params.name }}
-					</h2>
-					{{ $.Params.linktext }}
-				</a>
-				
-				<ul class="list-group card">
-						{{ range first 3 .Params.softwarepresented }}
-						<li class="list-group-item">
-							<img src="/img/actions/information.svg" alt="Icon" class="sm-icon"/>
-							<a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a><br>
-							<span>{{ .usage }}</span>
-						</li>
-					{{ end }}
-				</ul>
-			</div>
-	{{end}}
-</div></div></div>
+    </div>
+    <div class="row">
+        <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">
+            <div class="row">
+                {{ range (where .Site.Pages ".Type" "usercase-post") }}
+                <div class="offset-sm-0 col-sm-12 offset-md-0 col-md-6 col-lg-4">
+                    <a href="{{.Permalink}}" class="btn btn-success btn-xl header-link">
+                        <h2>
+                            {{ .Params.name }}
+                        </h2>
+                        {{ $.Params.linktext }}
+                    </a>
+
+                    <ul class="list-group card">
+                        {{ range first 3 .Params.softwarepresented }}
+                        <li class="list-group-item">
+                            <img src="/img/actions/information.svg" alt="Icon" class="sm-icon" />
+                            <a href="{{ .url | replaceRE " ;baseurl; " $.Site.BaseURL }}">{{ .name }}</a><br>
+                            <span>{{ .usage }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </div>
 </div>
 {{ end }}

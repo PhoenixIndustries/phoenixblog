@@ -1,8 +1,9 @@
----
++++
 #background: "img/bg4.jpg"
-title: "Privacy Policy"
-
----
+title= "Privacy Policy"
+meta_description = "Manjaro Privacy Policy"
+meta_keywords = "Privacy, privacy policy, privacy manjaro linux"
++++
 ## Who we are
 
 This Privacy Policy governs the manner in which **Manjaro** collects, uses, maintains and discloses information collected from users (each, a “User”) of the [website](https://manjaro.org).
@@ -46,39 +47,39 @@ If you upload images to the website, you should avoid uploading images with embe
 We offer to donate to our project via [PayPal](https://www.paypal.com). Provider of this service is PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg. When you chose to donate via PayPal, your entered payment data will be transferred to Paypal. Data transfer will be processed in compliance with the European General Data Protection Regulation. Data processing can be cancelled at any time. This cancellation however won&#8217;t be reflecting to already processed data transfers from the past. Learn more about [PayPal&#8217;s Privacy Policy](https://www.paypal.com/us/webapps/mpp/ua/privacy-full) by visiting their web page.</p>
 
 ## How we use collected information
-Our website may collect and use Users' personal information for the following purposes:  
-– To run and operate our Site  
-We may need your information to display content on the Site correctly.  
-– To improve customer service  
-The information you provide helps us respond to your customer service requests and support needs more efficiently.  
-– To personalize user experience  
-We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.  
-– To improve our Site  
-We may use feedback you provide to improve our products and services.  
-– To run a promotion, contest, survey or other Site feature  
-To send Users' information they agreed to receive about topics we think will be of interest to them.  
-– To send periodic emails  
-We may use the email address to send Users information and updates pertaining to their order. It may also be used to respond to their inquiries, questions and/or other requests.  
+Our website may collect and use Users' personal information for the following purposes:
+– To run and operate our Site
+We may need your information to display content on the Site correctly.
+– To improve customer service
+The information you provide helps us respond to your customer service requests and support needs more efficiently.
+– To personalize user experience
+We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+– To improve our Site
+We may use feedback you provide to improve our products and services.
+– To run a promotion, contest, survey or other Site feature
+To send Users' information they agreed to receive about topics we think will be of interest to them.
+– To send periodic emails
+We may use the email address to send Users information and updates pertaining to their order. It may also be used to respond to their inquiries, questions and/or other requests.
 
 ## How we protect your information
-We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.  
+We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.
 
 ## Sharing your personal information
-We do not sell, trade, or rent User's personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and the Site or administer activities on our behalfs, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.  
+We do not sell, trade, or rent User's personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and the Site or administer activities on our behalfs, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.
 
 ## How long we retain your data
-If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.  
+If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
 
-For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.  
+For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.
 
 ## What rights you have over your data
-If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.  
+If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
 
 ## Where we send your data
-Visitor comments may be checked through an automated spam detection service.  
+Visitor comments may be checked through an automated spam detection service.
 
 ## Where do I find the privacy policy of the forum
-The usage of our forums may vary slightly. Please read [here](https://forum.manjaro.org/privacy) about the conditions, which will apply to the usage of our forums.  
+The usage of our forums may vary slightly. Please read [here](https://forum.manjaro.org/privacy) about the conditions, which will apply to the usage of our forums.
 
 ## Changes to this privacy policy
 Our website has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
@@ -87,4 +88,4 @@ Our website has the discretion to update this privacy policy at any time. When w
 By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.
 
 ## Contacting us
-If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us. You can find our contact information on the [Terms of Use](/terms-of-use/) page.
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us via [email](mailto:privacy-policy@manjaro.org).

@@ -1,11 +1,13 @@
----
++++
 #background: "img/bg4.jpg"
-title: "Terms of Use"
----
+title= "Terms of Use"
+meta_description = "What is the terms of use Manjaro"
+meta_keywords = "terms of use, terms of use manjaro linux, terms manjaro linux"
++++
 
 ### Disclaimer
 
-No warranties, either express or implied, are hereby given for anything provided by Manjaro Linux ("Software"). All software is supplied without any accompanying guarantee, whether expressly mentioned, implied or tacitly assumed. This information does not include any guarantees regarding quality, does not describe any fair marketable quality, and does not make any claims as to quality quarantees or quarantees regarding the suitability for a special purpose. The user assumes all responsibility for damages resulting from the use of the software, including, but not limited to, frustration, disgust, system abends, disk head-crashes, general malfeasance, floods, fires, shark attack, locust infestation, cyclones, hurricanes, tsunamis, local electromagnetic disruptions, hydraulic brake system failure, invasion, hashing collisions, normal wear and tear of friction surfaces, cosmic radiation, inadvertent destruction of sensitive electronic components, windstorms, the riders of nazgul, infuriated chickens, premature activation of a distant early warning system, peasant uprisings, halitosis, artillery bombardment, explosions, cave-ins, borg-assimilation and/or frogs falling from the sky.
+No warranties, either express or implied, are hereby given for anything provided by Manjaro Linux ("Software"). All software is supplied without any accompanying guarantee, whether expressly mentioned, implied or tacitly assumed. This information does not include any guarantees regarding quality, does not describe any fair marketable quality, and does not make any claims as to quality guarantees or guarantees regarding the suitability for a special purpose. The user assumes all responsibility for damages resulting from the use of the software.
 
 ### Free Software and Manjaro Linux
 
@@ -35,25 +37,54 @@ We would like to thank everyone who has enabled us to create Manjaro and/or cont
 
 Manjaro Linux uses several trademarks from different projects. Their rights are not overruled by our license and stay intact.
 
-
 * Manjaro Linux, copyright © 2011-2018 Philip Müller and the Manjaro Developers
-* Arch Linux, copyright © 2002-2018 Judd Vinet and Aaron Griffin
+* Manjaro Linux, copyright © 2019-2020 Manjaro GmbH & Co. KG
+* Manjaro® name and logo are registered trademarks of Manjaro GmbH & Co. KG. Some rights reserved. The Manjaro Community is licensed to use the trademark with given terms.
+* Arch Linux, copyright © 2002-2020 Judd Vinet and Aaron Griffin
 * GNOME is licensed under the GNOME Foundation's License Agreement
 * KDE® and the K Desktop Environment® logo are registered trademarks of KDE e.V.
 * The registered trademark Linux® is used pursuant to a sublicense from LMI, the exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
 
 All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes.
 
-### Project representative
+### Legal website operator identification
+
+Company: Manjaro GmbH & Co. KG  
+Street: Adalbert-Stifter-Str. 21a  
+City: Grafing b. München  
+State/Province: Bavaria  
+Postal Code: 85567  
+Country: Germany  
+
+Company Type: limited partnership with a limited liability company as general partner  
+Commercial register: Registering Court Munich; HRA 111192  
+Liable associate: Manjaro Verwaltungs-GmbH, Registering Court Munich; HRB 250879  
+Managing board: Philip Müller & Bernhard Landauer  
+Email: [Direct contact](mailto:management@manjaro.org)  
+Tel: +49 8092 33090 94  
+VAT-Id.: DE 326352217  
+
+### Web Presence
+
+Concept: Manjaro GmbH & Co. KG, Contact: Philip Müller  
+Design & Programming: Vitor Lopes & Web-Team  
+Email: [Direct contact](mailto:info@manjaro.org)  
+
+### Responsible for the contents as per § 55 of the RStV (Interstate Broadcasting Agreement)
 
 Name: Philip Müller  
-Organization: Manjaro Linux  
-Street: Dr. Wintrichstr. 43  
-City: Ebersberg  
+Company: Manjaro GmbH & Co. KG  
+Street: Adalbert-Stifter-Str. 21a  
+City: Grafing b. München  
 State/Province: Bavaria  
-Postal Code: 85560  
+Postal Code: 85567  
 Country: Germany  
-Email: [Direct contact](mailto:support@manjaro.org)
+Email: [Direct contact](mailto:content@manjaro.org)  
+Tel: +49 8092 33090 96  
+
+### Informationen to Dispute resolution
+
+The EU Commission provides on its website the following link to the [ODR platform](http://ec.europa.eu/consumers/odr). This platform shall be a point of entry for out-of-court resolutions of disputes arising from online sales and service contracts concluded between consumers and traders. Manjaro is neither obliged nor prepared to attend a dispute settlement procedure before an alternative dispute resolution entity. 
 
 ### Under the Hood
 
@@ -62,5 +93,4 @@ This site is powered by:
 [MediaWiki](http://www.mediawiki.org)  
 [Gitlab](https://www.gitlab.com/)  
 [Discourse](https://www.discourse.org/)  
-[Zammad](https://zammad.org/)  
-[Mailman](http://www.list.org/)
+[Mailman](http://www.list.org/)  
