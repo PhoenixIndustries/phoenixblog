@@ -11,12 +11,12 @@
                     alt="{{ $index }} slide">
                 {{ end }}
                 <div class="card-body text-center">
-                    <h5 class="card-subtitle text-dark">{{.Params.subtitle}}</h5>
-                    <h6 class="card-desc text-dark">{{.Params.subdescription}}</h6>
+                    <h2 class="card-subtitle text-dark">{{.Params.subtitle}}</h2>
+                    <span class="card-desc text-dark">{{.Params.subdescription}}</span>
                     <table class="table text-dark" cellspacing="0">
                         <tr>
-                            <td>{{.Params.pricebefore}} <h2 class="card-title text-danger">
-                                   {{.Params.price}}</h2>
+                            <td>{{.Params.pricebefore}}<div class="card-title text-danger">
+                                   {{.Params.price}}</div>
                             </td>
                         </tr>
                         <tr>
@@ -30,20 +30,14 @@
                         {{ i18n "features" }}
                     </button>
                     <div class="collapse" id="collapseExample{{$main_index}}">
-                        <table class="table text-dark">
-                            <tbody>
-                                <tr>
                                     {{ range $index, $element := .Params.datasheetcontent}}
                                     {{if (modBool $index 2)}}
-                                    <th><b>{{$element}}</b></th>
+                                    <hr>
+                                    <h3><b>{{$element}}</b></h3>
                                     {{else}}
-                                    <td>{{$element}}</td>
-                                </tr>
-                                <tr>
+                                    <p>{{$element}}</p>
                                     {{ end }}
                                     {{ end }}
-                            </tbody>
-                        </table>
                     </div>
                     <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info btn-round">
                         More Info

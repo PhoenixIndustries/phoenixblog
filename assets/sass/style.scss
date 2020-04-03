@@ -257,6 +257,34 @@ p, .call-to-action {
 
 .hardware {
 
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: .8rem;
+        font-weight: 900 !important;
+        margin-bottom: .5rem;
+    }
+
+    h1:before {
+        display: none;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+        color:#efebeb;
+
+        p {
+            color: #dad4d4;
+        }
+    }
+
     .page-header {
         height: 110vh !important;
     }
@@ -271,17 +299,12 @@ p, .call-to-action {
     h1.title::first-letter {
         color: $green;
     }
-    
-    .title-container h1 {
-        font-size: 2em;
-    }
-    
+        
     hr { 
         display: block; 
         height: 1px;
         border: 0; 
         border-top: 1px solid #ECEFF1;
-        margin: 4em 0;
         padding: 0; 
     }
     
@@ -293,8 +316,12 @@ p, .call-to-action {
     .card {
         min-height: 450px;
         background: white;
-        box-shadow: 0 16px 24px 2px black,0 6px 30px 5px black,0 8px 10px -5px black;
-        .card-body { padding-top: 0; }
+        .card-body { 
+            padding-top: 0;
+            button {
+                margin-right: 20px;
+            }
+        }
         img { 
             object-fit: contain;
             padding:20px;
@@ -309,7 +336,6 @@ p, .call-to-action {
 
     .main {
         z-index: 3;
-        padding-top: 20px;
         background: transparent;
         padding-left: 0;
         padding-right: 0;
@@ -326,15 +352,16 @@ p, .call-to-action {
 
         .card-title{
             font-weight: 800 !important;
-        }
+            font-size: 1.1rem;
+            margin-top:10px;      }
 
         .table{
             margin-top: .85rem;
             margin-bottom: 0;
-            h2 {
-                font-size: 1.1rem;
-                margin-top:10px;
-            }
+        }
+
+        .collapse p {
+            margin-bottom: 1rem !important;
         }
     
     }
