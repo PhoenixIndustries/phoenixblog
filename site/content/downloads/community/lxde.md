@@ -1,8 +1,8 @@
 +++
-Download_x64 = ""
+Download_x64 = "https://manjaro-community.osdn.io/lxde/latest.php"
 Download_x64_Checksum = ""
-Download_x64_Sig = ""
-Download_x64_Torrent = ""
+Download_x64_Sig = "https://manjaro-community.osdn.io/lxde/latest.sig"
+Download_x64_Torrent = "https://manjaro-community.osdn.io/lxde/latest.torrent"
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/lxde/latest-minimal.php"
 Download_Minimal_x64_Checksum = "7c78df41f9ba435501b829aced411570f98cd12d"
