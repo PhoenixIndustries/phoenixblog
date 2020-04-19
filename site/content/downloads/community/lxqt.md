@@ -1,8 +1,8 @@
 +++
-Download_x64 = ""
+Download_x64 = "https://manjaro-community.osdn.io/lxqt/latest.php"
 Download_x64_Checksum = ""
-Download_x64_Sig = ""
-Download_x64_Torrent = ""
+Download_x64_Sig = "https://manjaro-community.osdn.io/lxqt/latest.sig"
+Download_x64_Torrent = "https://manjaro-community.osdn.io/lxqt/latest-torrent.sig"
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/lxqt/latest-minimal.php"
 Download_Minimal_x64_Checksum = "71ee7c82c1f8b267bf5f74d9d252871cb8dbcf83"
@@ -25,6 +25,6 @@ Manjaro LXQt provides a lightweight LXQt desktop environment. In addition to LXQ
 
 This edition is supported by the Manjaro community and uses Openbox Window Manager.
 
-This edition is a minimal edition and you are required to install the applications you need to get the functionality you require.
+Chosing the minimal edition requires installation of extra packages for a complete system.
 
 If you are looking for older images check the [lxqt](https://osdn.net/projects/manjaro-archive/storage/lxqt/) archive.
