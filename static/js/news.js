@@ -80,7 +80,7 @@ function template() {
 function cleanup(content) {
     let regex = /\||full edition:|minimal-edition:|Full ISO|Minimal ISO|direct | sig | sha1 |sha256|torrent/gi
         let excerpt = document.createElement('div'); 
-        content.description.textContent = content.description.textContent.split(' wrote:')[1]  
+        //content.description.textContent = content.description.textContent.split(' wrote:')[1]  
         let fragment = document.createRange().createContextualFragment(content.description.textContent)
         lightbox = fragment.querySelectorAll(".lightbox-wrapper");
         displayImg = fragment.querySelector("img");
@@ -111,7 +111,6 @@ function cleanup(content) {
         if (lightbox.length > 0) {
             lightbox.forEach(el => el.remove());
         }
-        
         excerpt.innerHTML = fragment.textContent
         content.excerpt = excerpt
         content.excerpt.textContent = excerpt.textContent.replace(regex, "").slice(1, 200);
