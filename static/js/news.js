@@ -120,8 +120,18 @@ function cleanup(content) {
 }
 
 function updateGrid(content) {
-    $(".id27Jan2020AbouttheReleasescategory").remove();
-    $(".id27Jan2020AbouttheNewscategory").remove();
+    // remove category introductions
+    let removeItems = [
+        ".id27Jan2020AbouttheReleasescategory",
+        ".id27Jan2020AbouttheNewscategory",
+        ".id22Apr2020AbouttheARMStableUpdatescategory",
+        ".id22Apr2020AbouttheARMTestingUpdatescategory",
+        ".id29Jan2020AbouttheARMReleasescategory"
+    ]
+    jQuery.each( removeItems, function( i, val ) {
+        $(val).remove();
+    });
+    
     $grid.isotope( 'addItems', content.id );
     $grid.isotope('reloadItems');
     setTimeout(function(){ 
@@ -163,18 +173,6 @@ function getFeeds() {
         }
     });
     
-    let arm = new CorsFeedReader("#news-grid", {}, {
-        feedUrl: "https://forum.manjaro.org/c/manjaro-arm/announcements.rss",
-        items: 4,
-        template: template(),
-        beforeTemplate: function(content) {
-            cleanup(content)
-        }, 
-        afterTemplate: function(content) {
-            updateGrid(content)
-        }
-    });
-    
      let manjaro32 = new CorsFeedReader("#news-grid", {}, {
         feedUrl: "https://forum.manjaro.org/c/announcements/manjaro32.rss",
         items: 1,
@@ -206,6 +204,40 @@ function getFeeds() {
         afterTemplate: function(content) {
             updateGrid(content)
         }});
+
+    let armReleases = new CorsFeedReader("#news-grid", {}, {
+        feedUrl: "https://forum.manjaro.org/c/manjaro-arm/releases.rss",
+        template: template(),
+        beforeTemplate: function(content) {
+            cleanup(content)
+        }, 
+        afterTemplate: function(content) {
+            updateGrid(content)
+        }
+    });
+    
+    let armStableUpdates = new CorsFeedReader("#news-grid", {}, {
+        feedUrl: "https://forum.manjaro.org/c/manjaro-arm/arm-stable-updates.rss",
+        template: template(),
+        beforeTemplate: function(content) {
+            cleanup(content)
+        }, 
+        afterTemplate: function(content) {
+            updateGrid(content)
+        }
+    });
+
+    let armTestingUpdates = new CorsFeedReader("#news-grid", {}, {
+        feedUrl: "https://forum.manjaro.org/c/manjaro-arm/arm-testing-updates.rss",
+        template: template(),
+        beforeTemplate: function(content) {
+            cleanup(content)
+        }, 
+        afterTemplate: function(content) {
+            updateGrid(content)
+        }
+    });
+    
 }
  getFeeds(); 
 function setUnsortLayout() {
