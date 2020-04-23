@@ -1,11 +1,11 @@
 +++
 Download_x64 = "https://manjaro-community.osdn.io/openbox/latest.php"
-Download_x64_Checksum = "a6b770b1f1e7d033a36c40fdfbadfd7ed8f56c38"
+Download_x64_Checksum = "f03a40df16b295030ef13f748c85513cda558f98"
 Download_x64_Sig = "https://manjaro-community.osdn.io/openbox/latest.sig"
 Download_x64_Torrent = "https://manjaro-community.osdn.io/openbox/latest.torrent"
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/openbox/latest-minimal.php"
-Download_Minimal_x64_Checksum = "113a26434c44b0e647735a3773cad743954f3ebb"
+Download_Minimal_x64_Checksum = "a162209448a39c2aa5c066f985ae0034ddb1d129"
 Download_Minimal_x64_Sig = "https://manjaro-community.osdn.io/openbox/latest-minimal.sig"
 Download_Minimal_x64_Torrent = "https://manjaro-community.osdn.io/openbox/latest-minimal.torrent"
 
@@ -15,7 +15,7 @@ edition = "Community"
 shortDescription = "For power users, developers, music production. It is famous for its endless configuration possibilties. A stacking window manager for extensive keyboard based workflows as well as mouse support."
 Thumbnail = "openbox-full.png"
 Version = "20.0"
-date = "2020-04-22T11:10:57UTC"
+date = "2020-04-23T08:26:10UTC"
 title = "Openbox"
 type="download-edition"
 weight = "5"
