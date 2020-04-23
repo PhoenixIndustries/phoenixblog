@@ -10,18 +10,18 @@
   "title": "for Linux Beginners",
   "type": "usercase-post",
   "software" : [
-  {"name" : "LibreOffice", "url" : "https://www.libreoffice.org/", "usage" : "Complete office-suite" },
-  {"name" : "Thunderbird", "url" : "https://www.mozilla.org/en-US/thunderbird/", "usage" : "E-Mail client" },
-  {"name" : "Firefox", "url" : "https://www.mozilla.org/en-US/firefox/new/", "usage" : "Webbrowser" },
-  {"name" : "Chromium", "url" : "https://www.chromium.org/", "usage" : "Webbrowser" },
+  {"name" : "LibreOffice", "url" : "https://discover.manjaro.org/applications/libreoffice-still", "usage" : "Complete office-suite" },
+  {"name" : "Thunderbird", "url" : "https://discover.manjaro.org/applications/thunderbird", "usage" : "E-Mail client" },
+  {"name" : "Firefox", "url" : "https://discover.manjaro.org/applications/firefox", "usage" : "Webbrowser" },
+  {"name" : "Chromium", "url" : "https://discover.manjaro.org/applications/chromium", "usage" : "Webbrowser" },
   {"name" : "SimpleScan", "url" : "https://launchpad.net/simple-scan", "usage" : "Scan documents" },
   {"name" : "Clementine", "url" : "https://www.clementine-player.org/", "usage" : "Music player" },
   {"name" : "VLC Media Player", "url" : "http://www.videolan.org/", "usage" : "Video player" }
   ],
   "softwarepresented" : [
-  {"name" : "LibreOffice", "url" : "https://www.libreoffice.org/", "usage" : "Complete office-suite" },
-  {"name" : "Thunderbird", "url" : "https://www.mozilla.org/en-US/thunderbird/", "usage" : "E-Mail client" },
-  {"name" : "Firefox", "url" : "https://www.mozilla.org/en-US/firefox/new/", "usage" : "Webbrowser" }
+  {"name" : "LibreOffice", "url" : "https://discover.manjaro.org/applications/libreoffice-still", "usage" : "Complete office-suite" },
+  {"name" : "Thunderbird", "url" : "https://discover.manjaro.org/applications/thunderbird", "usage" : "E-Mail client" },
+  {"name" : "Firefox", "url" : "https://discover.manjaro.org/applications/firefox", "usage" : "Webbrowser" }
   ]
 }
 

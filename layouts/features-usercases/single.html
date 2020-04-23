@@ -7,92 +7,9 @@
 {{ end }} {{ define "body" }}
 <div class="row">
     <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">
-
-
-
-        <!-- <h2 class="section-heading">{{ .Title }}</h2>
-						<hr class="star-primary" /> -->
-
         <div class="features-post">
             <p>{{ .Content | replaceRE ";baseurl;" .Site.BaseURL | markdownify }}</p>
         </div>
-
-        <!-- <div style="display: flex; flex-warp: wrap">
-						{{ range (where .Site.Pages ".Type" "usercase-post") }}
-						<table style="display: flex">
-							<thead>
-							<tr>
-							<th></th>
-							<th></th>
-							</tr>
-							</thead>
-
-							<tbody>
-
-								<tr>
-									<td><img src="/img/usercases/{{.Params.icon}}" alt="Icon" style="width: 100px; height: 100px;" /></td>
-									<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
-										<span style="font-weight: 500; font-size: 18px">{{ .Params.name }}</span>
-									</td>
-								</tr>
-								<tr>
-									<td/>
-									<td>
-										<table>
-											<thead>
-											<tr>
-											<th></th>
-											<th></th>
-											</tr>
-											</thead>
-
-											<tbody>
-											{{ range first 3 .Params.software }}
-												<tr>
-													<td><img src="/img/actions/install.svg" alt="Icon" /></td>
-													<td style="text-align: left; padding-left: 10px; padding-top: 10px;">
-														<strong><a href="{{ .url | replaceRE ";baseurl;" $.Site.BaseURL }}">{{ .name }}</a></strong><br/>
-														{{ .usage }}
-													</td>
-												</tr>
-											{{ end }}
-										</tbody>
-										</table>
-									</td>
-								</tr>
-								<tr>
-									<td/>
-									<td style="text-align: left; padding-top: 20px">
-										<a href="{{.Permalink}}" class="btn btn-success btn-xl">{{ $.Params.linktext }}</a>
-									</td>
-								</tr>
-
-						</tbody>
-						</table>
-
-						{{ end }}
-					</div> -->
-
-
-
-
-
-
-        <!-- <section class="no-padding" id="usercases">
-		    <div class="container-fluid">
-		        <div class="row no-gutter">
-		            {{ range (where .Site.Pages ".Type" "usercase-post") }}
-								<div class="col-lg-3 col-md-6 text-center">
-										<div class="service-box">
-												<img src="{{ printf "%s/img/actions/install.svg" $.Site.BaseURL }}" class="wow bounceIn text-primary" style="width: 64px; height: 64px"/>
-												<h3><a href="{{ .Permalink }}">Software for {{ .Params.name }}</a></h3>
-												<p class="text-muted"></p>
-										</div>
-								</div>
-								{{ end }}
-		        </div>
-		    </div>
-		</section> -->
     </div>
     <div class="row">
         <div class="offset-sm-0 offset-md-2 col-md-10 col-lg-8">

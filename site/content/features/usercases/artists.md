@@ -10,30 +10,20 @@
   "title": "for Artists",
   "type": "usercase-post",
   "software" : [
-  {"name" : "GIMP", "url" : "http://www.gimp.org/", "usage" : "Graphics editing, drawing" },
-  {"name" : "Krita", "url" : "https://krita.org/", "usage" : "Graphics editing, drawing" },
-  {"name" : "Darktable ", "url" : "http://www.darktable.org/", "usage" : "RAW-editing" },
-  {"name" : "Inkscape", "url" : "https://inkscape.org/", "usage" : "Vector drawing" },
-  {"name" : "Kdenlive", "url" : "https://kdenlive.org/", "usage" : "Video editing" },
-  {"name" : "OpenShot", "url" : "http://www.openshot.org/", "usage" : "Video editing" },
-  {"name" : "Lightworks", "url" : "https://www.lwks.com/", "usage" : "Video editing" },
-  {"name" : "Blender", "url" : "https://www.blender.org/", "usage" : "3D modelling" },
-  {"name" : "Audacity", "url" : "http://www.audacityteam.org/", "usage" : "Sound recording & editing" },
-  {"name" : "Ardour", "url" : "http://ardour.org/", "usage" : "Sound recording, mixing & editing" },
-  {"name" : "LMMS", "url" : "https://lmms.io/", "usage" : "Sequencing, mixing & synthesizing" }
+  
   ],
   "softwarepresented" : [
-  {"name" : "Krita", "url" : "https://krita.org/", "usage" : "Graphics editing, drawing" },
-  {"name" : "Kdenlive", "url" : "https://kdenlive.org/", "usage" : "Video editing" },
-  {"name" : "Ardour", "url" : "http://ardour.org/", "usage" : "Sound recording, mixing & editing" }
+  {"name" : "Krita", "url" : "https://discover.manjaro.org/applications/krita", "usage" : "Graphics editing, drawing" },
+  {"name" : "Kdenlive", "url" : "https://discover.manjaro.org/applications/kdenlive", "usage" : "Video editing" },
+  {"name" : "Ardour", "url" : "https://discover.manjaro.org/applications/ardour", "usage" : "Sound recording, mixing & editing" }
   ]
 }
 
-Manjaro comes preinstalled with [GIMP](http://www.gimp.org/), a very powerful image manipulation program. For drawing [Krita](https://krita.org/) will fulfill most of your needs, while [Darktable](http://www.darktable.org/) brings a top-notch and free photography suite. Vector-graphics can be done with programs such as [Inkscape](https://inkscape.org/).
+Manjaro comes preinstalled with [GIMP](https://discover.manjaro.org/applications/gimp), a very powerful image manipulation program. For drawing [Krita](https://discover.manjaro.org/applications/krita) will fulfill most of your needs, while [Darktable](https://discover.manjaro.org/applications/darktable) brings a top-notch and free photography suite. Vector-graphics can be done with programs such as [Inkscape](https://discover.manjaro.org/applications/inkscape).
 
-For simple or advanced video-editing, [Kdenlive](https://kdenlive.org/) and [OpenShot](http://www.openshot.org/) will do almost anything you need. There are also professional video-editing tools like [Lightworks](https://www.lwks.com/).
+For simple or advanced video-editing, [Kdenlive](https://discover.manjaro.org/applications/kdenlive) and [OpenShot](https://discover.manjaro.org/applications/openshot) will do almost anything you need.
 
-3D-Modelling can be done using [Blender](https://www.blender.org/). Codecs for video and audio come pre-installed or are automatically fetched. Most of this software is freely available and can be easily and securely installed using Manjaro's integrated package manager.
+3D-Modelling can be done using [Blender](https://discover.manjaro.org/applications/blender). Codecs for video and audio come pre-installed or are automatically fetched. Most of this software is freely available and can be easily and securely installed using Manjaro's integrated package manager.
 
-Manjaro repositories also contain software useful for musicians such as the easy to use recording and editing software [Audacity](http://www.audacityteam.org/). For more professional users [Ardour](http://ardour.org/) brings all the needed features. Sequencing, mixing and synthesizing can be done using [LMMS](https://lmms.io/). Manjaro maintains [realtime](https://forum.manjaro.org/t/a-realtime-kernel-for-manjaro/4066) versions of the Linux kernel that are designed for low latency and optimized for audio-engineering.
-With [Musescore](https://musescore.com/) you have a professional tool for creating, playing and printing scores.
+Manjaro repositories also contain software useful for musicians such as the easy to use recording and editing software [Audacity](https://discover.manjaro.org/applications/audacity). For more professional users [Ardour](https://discover.manjaro.org/applications/ardour) brings all the needed features. Sequencing, mixing and synthesizing can be done using [LMMS](https://discover.manjaro.org/applications/lmms). Manjaro maintains [realtime](https://forum.manjaro.org/t/a-realtime-kernel-for-manjaro/4066) versions of the Linux kernel that are designed for low latency and optimized for audio-engineering.
+With [Musescore](https://discover.manjaro.org/applications/musescore) you have a professional tool for creating, playing and printing scores.

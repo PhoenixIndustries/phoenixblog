@@ -10,36 +10,21 @@
   "title": "for Developers",
   "type": "usercase-post",
   "software" : [
-  {"name" : "Qt Creator", "url" : "https://www.qt.io/ide/", "usage" : "IDE" },
-  {"name" : "KDevelop", "url" : "https://www.kdevelop.org/", "usage" : "IDE" },
-  {"name" : "Netbeans", "url" : "https://netbeans.org/", "usage" : "IDE" },
-  {"name" : "libnoise", "url" : "http://libnoise.sourceforge.net/", "usage" : "Perlin noise etc." },
-  {"name" : "boost", "url" : "http://www.boost.org/", "usage" : "Useful C++ functions" },
-  {"name" : "matplotlib", "url" : "http://matplotlib.org/", "usage" : "Plotting for Python" },
-  {"name" : "Kate", "url" : "https://kate-editor.org/", "usage" : "Text-Editor" },
-  {"name" : "Gedit", "url" : "https://wiki.gnome.org/Apps/Gedit", "usage" : "Text-Editor" },
-  {"name" : "Emacs", "url" : "https://www.gnu.org/software/emacs/", "usage" : "Text-Editor" },
-  {"name" : "Geany", "url" : "https://www.geany.org/", "usage" : "Text-Editor" },
-  {"name" : "Atom", "url" : "https://atom.io/", "usage" : "Text-Editor" },
-  {"name" : "Bluefish", "url" : "http://bluefish.openoffice.nl/", "usage" : "HTML-Editor" },
-  {"name" : "Unity Editor", "url" : "https://unity3d.com/unity/editor", "usage" : "Game development" },
-  {"name" : "Godot", "url" : "http://godotengine.org/", "usage" : "Game development" },
-  {"name" : "Umbrello", "url" : "https://umbrello.kde.org/", "usage" : "Creating UML" },
-  {"name" : "yEd", "url" : "https://www.yworks.com/products/yed", "usage" : "Creating graphs/UML" }
+  {"name" : "Atom", "url" : "https://discover.manjaro.org/applications/atom", "usage" : "Text-Editor" }
   ],
   "softwarepresented" : [
-  {"name" : "Godot", "url" : "http://godotengine.org/", "usage" : "Game development" },
-  {"name" : "KDevelop", "url" : "https://www.kdevelop.org/", "usage" : "IDE" },
-  {"name" : "Geany", "url" : "https://www.geany.org/", "usage" : "Text-Editor" }
+  {"name" : "Visual Studio Code", "url" : "https://discover.manjaro.org/applications/code", "usage" : "Code editing" },
+  {"name" : "KDevelop", "url" : "https://discover.manjaro.org/applications/kdevelop", "usage" : "IDE" },
+  {"name" : "Geany", "url" : "https://discover.manjaro.org/applications/geany", "usage" : "Text-Editor" }
   ]
 }
 
 Manjaro comes in many different editions, all with a unique workflow and user experience from a traditional desktop environment to window managers that are optimized for maximum performance and work efficiency.
 
-The system is set up easily, while giving developers all the freedom and space to tinker when wanted. All tools to compile and develop software are pre installed. The integrated package manager allows easy installation of IDEs like [Qt Creator](https://www.qt.io/ide/), [KDevelop](https://www.kdevelop.org/) or [Netbeans](https://netbeans.org/) and libraries like [libnoise](http://libnoise.sourceforge.net/), [boost](http://www.boost.org/) or [matplotlib](http://matplotlib.org/).
+The system is set up easily, while giving developers all the freedom and space to tinker when wanted. All tools to compile and develop software are pre installed. The integrated package manager allows easy installation of IDEs like [Qt Creator](https://discover.manjaro.org/applications/qtcreator), [KDevelop](https://discover.manjaro.org/applications/kdevelop) or [Netbeans](https://discover.manjaro.org/packages/netbeans) and libraries like [libnoise](http://libnoise.sourceforge.net/), [boost](https://discover.manjaro.org/packages/boost-libs) or [matplotlib](https://discover.manjaro.org/packages/python-matplotlib).
 
-Dependencies are automatically resolved and installing a library automatically installs all needed headers to directly use it. Each edition comes preinstalled with powerful editors like [Kate](https://kate-editor.org/) or [Gedit](https://wiki.gnome.org/Apps/Gedit), while others like [Emacs](https://www.gnu.org/software/emacs/), [Geany](https://www.geany.org/) or [Bluefish](http://bluefish.openoffice.nl/) can be installed with one command or a few clicks.
+Dependencies are automatically resolved and installing a library automatically installs all needed headers to directly use it. Each edition comes preinstalled with powerful editors like [Kate](https://discover.manjaro.org/applications/kate) or [Gedit](https://discover.manjaro.org/applications/gedit), while others like [Emacs](https://discover.manjaro.org/applications/emacs), [Geany](https://discover.manjaro.org/applications/geany) or [Bluefish](https://discover.manjaro.org/applications/bluefish) can be installed with one command or a few clicks.
 
-Additionaly to the repositories, Manjaro supports the Arch User Repository (AUR) that includes cutting edge software and libraries, as well as proprietary applications like [Unity Editor](https://unity3d.com/unity/editor) or [yEd](https://www.yworks.com/products/yed).
+Additionaly to the repositories, Manjaro supports the Arch User Repository (AUR) that includes cutting edge software and libraries.
 
 Manjaro is a rolling release distribution, which means software is updated as soon as possible. This prevents lack of needed dependencies and old or buggy tool versions.
