@@ -1,11 +1,11 @@
 +++
 Download_x64 = "https://manjaro-community.osdn.io/lxqt/latest.php"
-Download_x64_Checksum = "574f78a5e13cff04c65eb8f138d9af544ec9a384"
+Download_x64_Checksum = "a3d4d2861caaa12fea00dfc9613236d08ce87c27"
 Download_x64_Sig = "https://manjaro-community.osdn.io/lxqt/latest.sig"
 Download_x64_Torrent = "https://manjaro-community.osdn.io/lxqt/latest-torrent.sig"
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/lxqt/latest-minimal.php"
-Download_Minimal_x64_Checksum = "553fa8aea2ab432ad90ad1fae9605e1bbcc47a89"
+Download_Minimal_x64_Checksum = "7df8ed4ab6f42d68ec1368b789f434221e093e48"
 Download_Minimal_x64_Sig = "https://manjaro-community.osdn.io/lxqt/latest-minimal.sig"
 Download_Minimal_x64_Torrent = "https://manjaro-community.osdn.io/lxqt/latest-minimal.torrent"
 
@@ -15,7 +15,7 @@ shortDescription = "Lightweight desktop build with the LXQt toolkit."
 edition = "Community"
 Thumbnail = "lxqt-full.png"
 Version = "20.0"
-date = "2020-04-19T09:43:38UTC"
+date = "2020-04-23T08:38:40UTC"
 title = "LXQt"
 type="download-edition"
 weight = "5"
