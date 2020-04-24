@@ -7,16 +7,10 @@
   "quote": "It seems to be solid, yet accessible. I just love it",
   "quoteauthor": "dschelpe",
   "shortdescription": "Everyone is a beginner in something. So we don't forget people, who don't have much experience with computers and want to learn more or just use it for their work.",
-  "title": "for Linux Beginners",
+  "title": "Linux Beginners",
   "type": "usercase-post",
   "software" : [
-  {"name" : "LibreOffice", "url" : "https://discover.manjaro.org/applications/libreoffice-still", "usage" : "Complete office-suite" },
-  {"name" : "Thunderbird", "url" : "https://discover.manjaro.org/applications/thunderbird", "usage" : "E-Mail client" },
-  {"name" : "Firefox", "url" : "https://discover.manjaro.org/applications/firefox", "usage" : "Webbrowser" },
-  {"name" : "Chromium", "url" : "https://discover.manjaro.org/applications/chromium", "usage" : "Webbrowser" },
-  {"name" : "SimpleScan", "url" : "https://launchpad.net/simple-scan", "usage" : "Scan documents" },
-  {"name" : "Clementine", "url" : "https://www.clementine-player.org/", "usage" : "Music player" },
-  {"name" : "VLC Media Player", "url" : "http://www.videolan.org/", "usage" : "Video player" }
+  
   ],
   "softwarepresented" : [
   {"name" : "LibreOffice", "url" : "https://discover.manjaro.org/applications/libreoffice-still", "usage" : "Complete office-suite" },

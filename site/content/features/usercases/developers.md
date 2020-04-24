@@ -7,10 +7,10 @@
   "quote": "MANJARO, Its an easy to use \"Arch\"itechture that will be admired by both; the first timers as well as professionals / programmers..... it just works !",
   "quoteauthor": "rvc",
   "shortdescription": "Developers want a system that does one thing: be efficient, so there's more time for the actual development. We promise that Manjaro will make development fun, efficient and easier.",
-  "title": "for Developers",
+  "title": "Developers",
   "type": "usercase-post",
   "software" : [
-  {"name" : "Atom", "url" : "https://discover.manjaro.org/applications/atom", "usage" : "Text-Editor" }
+ 
   ],
   "softwarepresented" : [
   {"name" : "Visual Studio Code", "url" : "https://discover.manjaro.org/applications/code", "usage" : "Code editing" },

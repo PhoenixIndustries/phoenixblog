@@ -1050,6 +1050,17 @@ h1:before {
     }
 }
 
+.scientists, .gamers,
+.teachers-and-students,
+.artists, .linux-beginners,
+.developers {
+    .section {
+    margin-top: 40px;
+    .star-primary {
+        display:none;
+    }
+}}
+
 .useful-for-everyone {
     .row {
         div a {
@@ -1065,6 +1076,24 @@ h1:before {
         h2 {
        margin-bottom: 0px;
         }
+    .row .row div:nth-child(1) .btn {
+        background-color: #0288d1;
+    }
+    .row .row div:nth-child(2) .btn {
+        background-color: #c62828;
+    }
+    .row .row div:nth-child(3) .btn {
+        background-color: #9e9d24 ;
+    }
+    .row .row div:nth-child(4) .btn {
+        background-color: #311b92;
+    }
+    .row .row div:nth-child(5) .btn {
+        background-color: #e65100;
+    }
+    .row .row div:nth-child(6) .btn {
+        background-color: #546e7a;
+    }
     }
     .section {
         padding: 0;

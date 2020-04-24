@@ -7,7 +7,7 @@
   "quote": "Manjaro provides the tools to handle difficult tasks like kernel, video driver upgrades, downgrades. [...]  I soon realised I can do all my editing on linux with Darktable for raw files and some retouching or other editing with Gimp.",
   "quoteauthor": "louis_2",
   "shortdescription": "Artists make the graphics we see, the music we hear, and document our lifestyles and places. Manjaro brings all tools for artists, whether being pre-installed or easily installable via a comfortable and secure package manager.",
-  "title": "for Artists",
+  "title": "Artists",
   "type": "usercase-post",
   "software" : [
   

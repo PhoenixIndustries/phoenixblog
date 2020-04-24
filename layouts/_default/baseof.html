@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   {{partial "head" . }}
-  <body class="{{if eq .Title "News"}}{{ .Params.class | default "news" }}{{ else }}{{ .Params.class | default "page" }}{{ end }} sidebar-collapse">
+  <body class="{{ replace .Params.Title " " "-" | lower }} {{if eq .Title "News"}}{{ .Params.class | default "news" }}{{ else }}{{ .Params.class | default "page" }}{{ end }} sidebar-collapse">
     {{ partial "loading-screen" . }} 
     {{ if not .IsHome}}
         {{ partial "navbar" . }} 
