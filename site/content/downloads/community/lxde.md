@@ -1,11 +1,11 @@
 +++
 Download_x64 = "https://manjaro-community.osdn.io/lxde/latest.php"
-Download_x64_Checksum = "3cbac5eed0985d469e70f3a183ac8352eeaeb57b"
+Download_x64_Checksum = "cb9974449b200fec341eca7b908bb3fc43098d42"
 Download_x64_Sig = "https://manjaro-community.osdn.io/lxde/latest.sig"
 Download_x64_Torrent = "https://manjaro-community.osdn.io/lxde/latest.torrent"
 
 Download_Minimal_x64 = "https://manjaro-community.osdn.io/lxde/latest-minimal.php"
-Download_Minimal_x64_Checksum = "e9b95b41f739e52f2eb62e9e991a4fd43eb8e22e"
+Download_Minimal_x64_Checksum = "e03c664dfd42115a2dcec18991829cd22a3bf3aa"
 Download_Minimal_x64_Sig = "https://manjaro-community.osdn.io/lxde/latest-minimal.sig"
 Download_Minimal_x64_Torrent = "https://manjaro-community.osdn.io/lxde/latest-minimal.torrent"
 
@@ -15,7 +15,7 @@ shortDescription = "Lightweight desktop build using the GTK toolkit"
 edition = "Community"
 Thumbnail = "lxde-full.png"
 Version = "20.0"
-date = "2020-04-19T09:34:34UTC"
+date = "2020-04-23T08:49:46UTC"
 title = "LXDE"
 type="download-edition"
 weight = "5"
