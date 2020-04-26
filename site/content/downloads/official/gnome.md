@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200312-linux54.iso"
+Download_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200426-linux56.iso"
 Download_x64_Checksum = "2df3697908483550d4a473815b08c1377e6b6892"
-Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200312-linux54.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200312-linux54.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200426-linux56.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-200426-linux56.iso.torrent"
 Download_Minimal_x64 = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-minimal-200426-linux56.iso"
 Download_Minimal_x64_Checksum = "60acd42cab4f72b96e4971b4aebb4477a7baa8eb"
 Download_Minimal_x64_Sig = "https://osdn.net/dl/manjaro/manjaro-gnome-20.0-minimal-200426-linux56.iso.sig"
