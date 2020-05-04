@@ -255,8 +255,119 @@ p, .call-to-action {
     }
 }
 
-.page-header {
-    height: 110vh !important;
+.hardware {
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+        font-size: .8rem;
+        font-weight: 900 !important;
+        margin-bottom: .5rem;
+    }
+
+    h1:before {
+        display: none;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+        color:#efebeb;
+
+        p {
+            color: #dad4d4;
+        }
+    }
+
+    .page-header {
+        height: 110vh !important;
+    }
+    .page-header .page-header-image {
+        will-change: transform;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        transition: filter 3.5s ease;
+    }
+
+    h1.title::first-letter {
+        color: $green;
+    }
+        
+    hr { 
+        display: block; 
+        height: 1px;
+        border: 0; 
+        border-top: 1px solid #ECEFF1;
+        padding: 0; 
+    }
+    
+    .subtitle{
+        font-weight: 1000 !important;
+        color: #424242;
+    }
+    
+    .card {
+        min-height: 450px;
+        background: white;
+        .card-body { 
+            padding-top: 0;
+            button {
+                margin-right: 20px;
+            }
+        }
+        img { 
+            object-fit: contain;
+            padding:20px;
+            padding-bottom: 0;
+        }
+    }
+    
+    .btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
+        background-color: #fff;
+        color: $green;    
+    }
+
+    .main {
+        z-index: 3;
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
+
+        .card-subtitle{
+            font-weight: 900 !important;
+            margin-bottom: .7rem;
+        }
+
+        .card-desc{
+            font-weight: 400 !important;
+            font-size: .7rem;
+        }
+
+        .card-title{
+            font-weight: 800 !important;
+            font-size: 1.1rem;
+            margin-top:10px;      }
+
+        .table{
+            margin-top: .85rem;
+            margin-bottom: 0;
+        }
+
+        .collapse p {
+            margin-bottom: 1rem !important;
+        }
+    
+    }
+    .section {
+        background: #212529;
+    }
 }
 
 h1:before {
@@ -264,9 +375,6 @@ h1:before {
     content: "#";
 }
 
-.hardware .title-container h1 {
-    font-size: 2em;
-}
 
 ::selection {
     background: $green;

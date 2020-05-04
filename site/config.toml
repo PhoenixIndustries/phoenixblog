@@ -204,27 +204,19 @@ unsafe= true
     parent = "shop"
 
 [[menu.main]]
-    name = "Hardware - InfinityBook"
-    url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo"
+    name = "Manjaro Hardware"
+    url = "/hardware"
     pre = "<i class='fas fa-laptop'></i>"
-    weight = 3
+    weight = 4
     parent = "shop"
 
 
 [[menu.main]]
-    name = "Hardware - Notebooks & PCs"
+    name = "UbuntoShop Hardware"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = "<i class='fas fa-desktop'></i>"
     weight = 5
     parent = "shop"
-
-
-# [[menu.main]]
-#    name = "Hardware - Bladebook"
-#    url = "/hardware-bladebook"
-#    pre = ""
-#    weight = 4
-#    parent = "shop"
 
 #
 # --- End SubMenu Shop --- 
