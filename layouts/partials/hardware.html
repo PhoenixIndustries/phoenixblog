@@ -1,46 +1,32 @@
 {{ if eq .Type "hardware" }}
 
-<div class="container">
+<div class="">
     <div class="row justify-content-center">
         {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
         {{ if and (isset .Params "datasheetcontent") (eq .Params.enable "true") }}
-        <div class="col-sm-6 col-lg-4">
-            <div class="card">
+        <div class="col-12 text-center">
+            <div class="card container">
                 {{ range $index, $element := .Params.images}}
                 <img class="d-block" src="/img/hardware/{{ $element }}.png"
                     alt="{{ $index }} slide">
                 {{ end }}
-                <div class="card-body text-center">
+                <div class="card-body text-left">
+                    <div class=card-header>
                     <h2 class="card-subtitle text-dark">{{.Params.subtitle}}</h2>
-                    <span class="card-desc text-dark">{{.Params.subdescription}}</span>
-                    <table class="table text-dark" cellspacing="0">
-                        <tr>
-                            <td>{{.Params.pricebefore}}<div class="card-title text-danger">
+                    <div class="card-title text-danger">
                                    {{.Params.price}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">{{.Params.pricetax}}</td>
-                        </tr>
-                    </table>
-                    <!-- dont forget i18-->
-                    <button class="btn bg-info btn-round" type="button" data-toggle="collapse"
-                        data-target="#collapseExample{{$main_index}}" aria-expanded="false"
-                        aria-controls="collapseExample">
-                        {{ i18n "features" }}
-                    </button>
-                    <div class="collapse" id="collapseExample{{$main_index}}">
-                                    {{ range $index, $element := .Params.datasheetcontent}}
+                </div>
+                    <div class="card-footer">
+                                  {{ range $index, $element := .Params.datasheetcontent}}
                                     {{if (modBool $index 2)}}
-                                    <hr>
                                     <h3><b>{{$element}}</b></h3>
                                     {{else}}
-                                    <p>{{$element}}</p>
+                                    <span>{{$element}}</span><br>
                                     {{ end }}
                                     {{ end }}
                     </div>
-                    <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info btn-round">
-                        More Info
+                    <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info">
+                        Where to buy
                     </a>
                 </div>
             </div>

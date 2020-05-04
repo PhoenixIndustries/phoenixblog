@@ -2,10 +2,11 @@
 {{ end }}
 
 {{ define "body" }}
-<div class="jumbotron">
-  <h1 class="display-4">Specially tunned Manjaro combined with manufacturer designed hardware.</h1>
-  <hr class="my-4">
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<div class="jumbotron container">
+    <img class="logo" src="/img/logo.svg">
+  <div><h1 class="display-4">Buy hardware with Manjaro.</h1>
+  <p class="lead">Laptops with Manjaro pre-installed that you can get right now.</p>
+</div>
 </div>
 
 {{ partial "hardware.html" . }}
@@ -14,6 +15,9 @@
     {{ .Content }}
     </div>   
   </div>
+  
+
+  
 
 {{ end }}        
  
