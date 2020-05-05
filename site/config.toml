@@ -203,11 +203,26 @@ unsafe= true
     weight = 2
     parent = "shop"
 
+
+[[menu.main]]
+    name = "Hardware - Star Lite Mk II"
+    url = "https://starlabs.systems/pages/star-lite"
+    pre = "<i class='fas fa-laptop'></i>"
+    weight = 3
+    parent = "shop"
+
+[[menu.main]]
+    name = "Hardware - Star LabTop Mk III"
+    url = "https://starlabs.systems/pages/star-labtop"
+    pre = "<i class='fas fa-laptop'></i>"
+    weight = 4
+    parent = "shop"
+
 [[menu.main]]
     name = "Hardware - InfinityBook"
     url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo"
     pre = "<i class='fas fa-laptop'></i>"
-    weight = 3
+    weight = 5
     parent = "shop"
 
 
@@ -215,7 +230,7 @@ unsafe= true
     name = "Hardware - Notebooks & PCs"
     url = "https://www.ubuntushop.be/index.php/en/opensource-notebooks/manjaro-notebooks.html"
     pre = "<i class='fas fa-desktop'></i>"
-    weight = 5
+    weight = 6
     parent = "shop"
 
 
