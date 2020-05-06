@@ -354,8 +354,15 @@ p,
 
     .col-12.text-center {
         text-align: center;
-        margin-bottom: 350px;
         background: white;
+    }
+
+    .col-12.text-center:not(:last-child) {
+        margin-bottom: 350px;
+    }
+
+    .col-12.text-center:last-child {
+        margin-bottom: -70px;
     }
 
     h1.title::first-letter {
@@ -365,39 +372,6 @@ p,
     .subtitle {
         font-weight: 1000 !important;
         color: #424242;
-    }
-
-    .card {
-        padding: 0;
-        margin: 0;
-        box-shadow: none;
-
-        .card-body {
-            float: left;
-            width: 50%;
-            padding-bottom: 0;
-        }
-
-        .card-header,
-        .card-footer {
-            background: transparent;
-            border: none;
-        }
-
-        img {
-            object-fit: contain;
-            width: 50%;
-            float: right;
-        }
-
-        .card-footer {
-            padding: 0;
-        }
-
-        .card-header {
-            margin-bottom: 0;
-            padding-left: 0;
-        }
     }
 
     .btn.btn-white,
@@ -417,17 +391,17 @@ p,
             font-weight: 900 !important;
             margin-bottom: .7rem;
             margin: 0;
-        }
-
-        .card-desc {
-            font-weight: 400 !important;
-            font-size: .7rem;
+            margin-top: 8px;
         }
 
         .card-title {
             font-weight: 800 !important;
             font-size: 1.1rem;
             margin: 0;
+        }
+
+        .card-footer a {
+            margin-top: 20px;
         }
 
     }
