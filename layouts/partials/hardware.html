@@ -1,40 +1,43 @@
 {{ if eq .Type "hardware" }}
-    <div class="row justify-content-center">
-        {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
-        {{ if and (isset .Params "datasheetcontent") (eq .Params.enable "true") }}
-        <div class="col-12 text-center">
-            <div class="container">
-                <div class="row">
-                    {{ range $index, $element := .Params.images}}
-                    <div class="col-sm-12 col-lg-6"><img class="d-block" src="/img/hardware/{{ $element }}.png"
-                            alt="{{ $index }} slide">
+<div class="row">
+    {{ range $main_index, $main_element := (where .Site.Pages ".Type" "hardware") }}
+    {{ if and (isset .Params "datasheetcontent") (eq .Params.enable "true") }}
+    <div class="col-12 text-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-6">
+                    <div class="intro">
+                        <h4>{{ .Params.name }}</h4>
+                        <p>{{ .Params.intro }}</p>
+                        <img class="d-block" src="/img/hardware/{{ .Params.image }}.png">
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                    <div class="card-body text-left">
+                        <div class=card-header>
+                            <h2 class="card-subtitle text-dark">{{.Params.model}}</h2>
+                            <div class="card-title text-danger">{{.Params.pricebefore}} {{.Params.price}}</div>
                         </div>
-                    {{ end }}
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="card-body text-left">
-                            <div class=card-header>
-                                <h2 class="card-subtitle text-dark">{{.Params.subtitle}}</h2>
-                                <div class="card-title text-danger">
-                                    {{.Params.price}}</div>
-                            </div>
-                            <div class="card-footer">
-                                {{ range $index, $element := .Params.datasheetcontent}}
-                                {{if (modBool $index 2)}}
-                                <h3><b>{{$element}}</b></h3>
-                                {{else}}
-                                <span>{{$element}}</span><br>
-                                {{ end }}
-                                {{ end }}
-                                <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info">
-                                        Where to buy
-                                    </a>
-                            </div>
+                        <div class="card-footer">
+                            {{ range $index, $element := .Params.datasheetcontent}}
+                            {{if (modBool $index 2)}}
+                            <h3><b>{{$element}}</b></h3>
+                            {{else}}
+                            <span>{{$element}}</span><br>
+                            {{ end }}
+                            {{ end }}
+                            <a href="{{.Params.buylink}}" target="_blank" class="btn bg-info">
+                                Where to buy
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{ end }}
-        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
 </div>
 {{ end }}

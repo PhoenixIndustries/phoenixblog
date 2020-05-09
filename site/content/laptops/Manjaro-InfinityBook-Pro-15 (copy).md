@@ -1,12 +1,14 @@
 +++
 class= "hardware"
-subtitle = "Tuxedo InfinityBook Pro 15"
+model = "InfinityBook Pro 15"
 subdescription = "Manjaro XFCE pre-installed"
-pricebefore = "Starting from"
+pricebefore = "From "
 price = "1.099,00 EUR"
 enable = "true"
-pricetax = "Prices incl. all taxes and duties within the EU"
-datasheet = "Data sheet"
+name = "Tuxedo Intro"
+intro = "We've partnered with computer manufacturers to provide the best Zorin OS experience out of the box.Every purchase helps contribute to the Zorin OS project."
+type = "hardware"
+image = "Manjaro-InfinityBook-Pro-15"
 buylink = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo#"
 datasheetcontent = [
 	"CPU",
@@ -28,8 +30,7 @@ datasheetcontent = [
 	"Weight",
 	"2 kg",
 	"Battery",
-	"Large 54 Wh lithium-ion battery, 12H"]
-type = "hardware"
-images = ["Manjaro-InfinityBook-Pro-15"]
+	"Large 54 Wh lithium-ion battery, 12H"
+	]
 +++
 

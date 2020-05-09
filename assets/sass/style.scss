@@ -308,11 +308,24 @@ p,
         margin-bottom: 0px;
     }
 
+    .main {
+        overflow: hidden;
+    }
+
     h3 {
         font-size: .8rem;
         font-weight: 900 !important;
         display: inline;
         color: #1e88e5;
+    }
+
+    h4 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .intro {
+        padding: 20px 10px;
     }
 
     h1:before {
@@ -321,10 +334,10 @@ p,
 
     .jumbotron {
         background-color: white;
-        margin-top: 200px;
-        margin-bottom: -48px;
+        margin-top: 100px;
+        margin-bottom: 120px;
         padding: 1.5rem 2rem;
-        border-radius: 40px;
+        border-radius: 0;
 
         .logo {
             float: left;
@@ -336,6 +349,10 @@ p,
         * {
             color: #343a40;
             font-weight: bold !important;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
         }
     }
 
@@ -359,10 +376,6 @@ p,
 
     .col-12.text-center:not(:last-child) {
         margin-bottom: 350px;
-    }
-
-    .col-12.text-center:last-child {
-        margin-bottom: -70px;
     }
 
     h1.title::first-letter {
@@ -414,6 +427,8 @@ p,
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 0;
+        padding: 62px 0;
     }
 }
 
