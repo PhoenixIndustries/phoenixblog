@@ -1,8 +1,8 @@
 +++
-Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-mate-19.0-200226-linux54.iso"
+Download_x64 = "https://osdn.net/dl/manjaro-community/manjaro-mate-20.0.1-200514-linux56.iso"
 Download_x64_Checksum = "35b4e38be12a1320d152aa59aa2d729668c1f526"
-Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-mate-19.0-200226-linux54.iso.sig"
-Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-mate-19.0-200226-linux54.iso.torrent"
+Download_x64_Sig = "https://osdn.net/dl/manjaro-community/manjaro-mate-20.0.1-200514-linux56.iso.sig"
+Download_x64_Torrent = "https://osdn.net/dl/manjaro-community/manjaro-mate-20.0.1-200514-linux56.iso.torrent"
 Name = "MATE"
 Screenshot = "mate-full.jpg"
 edition = "Community"
