@@ -1,6 +1,6 @@
 +++
 Download_x64 = "https://manjaro.osdn.io/architect/latest"
-Download_x64_Checksum = "6b1c2fce12f244c1e32212767a9d3af2cf8263b2"
+Download_x64_Checksum = "dfebddd5cf6b3a18c001373943f4efaf90dd46b9"
 Download_x64_Sig = "https://manjaro.osdn.io/architect/latest.sig"
 Download_x64_Torrent = "https://manjaro.osdn.io/architect/latest.torrent"
 Download_x86 = ""
@@ -12,8 +12,8 @@ Screenshot = "architect-full.jpg"
 edition = "Official"
 shortDescription = "Setup and configure Manjaro in every detail using the CLI."
 Thumbnail = "architect-full.jpg"
-Version = "20.0"
-date = "2020-04-26T20:09:47UTC"
+Version = "20.0.1"
+date = "2020-05-21T20:58:11UTC"
 title = "Architect"
 type="download-edition"
 weight = "7"
@@ -23,7 +23,7 @@ meta_keywords = "manjaro architect download, manjaro download"
 
 This edition comes with a TUI installer.
 
-date = "2020-04-26T20:09:47UTC"
+date = "2020-05-21T20:58:11UTC"
 
 Manjaro-Architect offers total customization on your Manjaro installation:
 
