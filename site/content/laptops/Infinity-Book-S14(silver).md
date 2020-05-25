@@ -1,6 +1,6 @@
 +++
 class= "hardware"
-model = "InfinityBook Pro 15"
+model = "InfinityBook S 14 Silver"
 subdescription = "Manjaro XFCE pre-installed"
 pricebefore = "From "
 price = "1.099,00 EUR"
