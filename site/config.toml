@@ -219,18 +219,31 @@ unsafe= true
     parent = "shop"
 
 [[menu.main]]
-    name = "Hardware - InfinityBook"
-    url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo"
+    name = "Hardware - InfinityBook S14 (Silver)"
+    url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/10-14-inch/Manjaro-InfinityBook-S-14-v5_1.tuxedo"
     pre = "<i class='fas fa-laptop'></i>"
     weight = 5
     parent = "shop"
 
+[[menu.main]]
+    name = "Hardware - InfinityBook 15 (Red)"
+    url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo"
+    pre = "<i class='fas fa-laptop'></i>"
+    weight = 6
+    parent = "shop"
+
+[[menu.main]]
+    name = "Hardware - InfinityBook 15 (Silver)"
+    url = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15-SILVER.tuxedo"
+    pre = "<i class='fas fa-laptop'></i>"
+    weight = 7
+    parent = "shop"
 
 [[menu.main]]
     name = "Hardware - Notebooks & PCs"
     url = "https://manjarocomputer.eu/"
     pre = "<i class='fas fa-desktop'></i>"
-    weight = 6
+    weight = 8
     parent = "shop"
 
 
