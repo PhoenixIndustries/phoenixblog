@@ -335,7 +335,7 @@ p,
     .jumbotron {
         background-color: white;
         margin-top: 100px;
-        margin-bottom: 120px;
+        margin-bottom: 0;
         padding: 1.5rem 2rem;
         border-radius: 0;
 
@@ -375,7 +375,7 @@ p,
     }
 
     .col-12.text-center:not(:last-child) {
-        margin-bottom: 120px;
+        margin-bottom: 0;
     }
 
     h1.title::first-letter {
