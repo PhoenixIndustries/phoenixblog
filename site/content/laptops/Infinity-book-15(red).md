@@ -22,8 +22,7 @@ datasheetcontent = [
 	"Keyboard",
 	"multicolor illuminated full-size with Manjaro super-key",
 	"Ports",
-	"2x USB 3.1 Typ-A Gen1 up to 5Gbit/s, 1x USB Typ-C 3.1 Gen2 with Thunderbolt 3
-1x MiniDisplayPort 1.3 (max. 3840x2160@60Hz), 1x HDMI 1.4b with HDCP (max. 2560x1600@60Hz; 3840x2160@30Hz), 1x Headphones, 1x Microphone, 1x Gigabit-LAN-Port, 1x Charging port, 1x Card-Reader, 1x Kensington",
+	"2x USB 3.1 Typ-A Gen1 up to 5Gbit/s, 1x USB Typ-C 3.1 Gen2 with Thunderbolt 3 1x MiniDisplayPort 1.3 (max. 3840x2160@60Hz), 1x HDMI 1.4b with HDCP (max. 2560x1600@60Hz; 3840x2160@30Hz), 1x Headphones, 1x Microphone, 1x Gigabit-LAN-Port, 1x Charging port, 1x Card-Reader, 1x Kensington",
 	"Dimension",
 	"360mm x 244.5mm x 19.9mm",
 	"Weight",
