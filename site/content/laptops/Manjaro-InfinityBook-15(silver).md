@@ -1,36 +1,34 @@
 +++
 class= "hardware"
 model = "InfinityBook 15 Silver"
-subdescription = "Manjaro XFCE pre-installed"
+subdescription = "Manjaro KDE Plasma or XFCE pre-installed"
 pricebefore = "From "
-price = "1.099,00 EUR"
+price = "1.199,00 EUR"
 enable = "true"
-name = "Tuxedo Intro"
-intro = "We've partnered with computer manufacturers to provide the best Zorin OS experience out of the box.Every purchase helps contribute to the Zorin OS project."
+name = "Tuxedo"
+intro = "TUXEDO Computers are individually built, assembled and installed in Germany and delivered in such a way that you only have to unpack, connect and switch them on!"
 type = "hardware"
-image = "Manjaro-InfinityBook-Pro-15"
-buylink = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15.tuxedo#"
+image = "Manjaro-InfinityBook-Pro-15-Silver"
+buylink = "https://www.tuxedocomputers.com/en/Linux-Hardware/Linux-Notebooks/15-16-inch/Manjaro-InfinityBook-Pro-15-SILVER.tuxedo"
 datasheetcontent = [
 	"CPU",
-	"Intel® i5 to i7",
-	"GPU",
-	"from 17.4.2020: Intel Core i5-10210U (4x 1.6-4.2GHz Quad-Core, 8 Threads, 6MB Cache, 15W TDP) or i7",
+	"Intel Core i5-10210U i7-10510U (4x 1.8-4.9GHz Quad-Core, 8 Threads, 8MB Cache, 15W TDP)",
 	"RAM",
-	"from 8 GB 1x 8GB 2666Mhz to 64GB",
+	"8GB to 64GB",
 	"Storage",
-	"250GB Samsung 860 EVO M.2 SATAIII to 2000GB",
+	"250GB to 2000GB",
 	"Display",
-	"13.3\"",
+	"15.6\", Full-HD IPS-Panel, 1920 x 1080, matte/non-glare",
 	"Keyboard",
-	"backlit with Manjaro super-key",
+	"multicolor illuminated full-size with Manjaro super-key",
 	"Ports",
-	"2x USB 3.1 Typ-A Gen1 up to 5Gbit/s, 1x USB Typ-C 3.1 Gen2 with Thunderbolt 3 incl. DisplayPort (max. 3840x2160@60Hz) and Charging-Function (USB Power-Delivery /USB-PD / DC-IN; Needs 19-20V charger) Additionally, external dedicated graphics cards (eGPU) are supported by the Thunderbolt 3 port! 1x MiniDisplayPort 1.3 (max.3840x2160@60Hz) 1x HDMI 1.4b with HDCP (max. 2560x1600@60Hz; 3840x2160@30Hz) 1x Headphones 1x Microphone 1x Gigabit-LAN-Port 1x Charging port 1x Card-Reader 1x Kensington",
+	"2x USB 3.1 Typ-A Gen1 up to 5Gbit/s, 1x USB Typ-C 3.1 Gen2 with Thunderbolt 3
+1x MiniDisplayPort 1.3 (max. 3840x2160@60Hz), 1x HDMI 1.4b with HDCP (max. 2560x1600@60Hz; 3840x2160@30Hz), 1x Headphones, 1x Microphone, 1x Gigabit-LAN-Port, 1x Charging port, 1x Card-Reader, 1x Kensington",
 	"Dimension",
-	"45cm x 27cm x 7cm",
+	"360mm x 244.5mm x 19.9mm",
 	"Weight",
-	"2 kg",
+	"approx. 1.7 kg incl. battery, depending on equipment",
 	"Battery",
-	"Large 54 Wh lithium-ion battery, 12H"
+	"up to 12H"
 	]
 +++
-
