@@ -1,4 +1,4 @@
-theme = "manjaro-homepage"
+theme = "phoenixblog"
 baseurl = "/"
 languageCode = "en-us"
 title = "Manjaro - enjoy the simplicity"
